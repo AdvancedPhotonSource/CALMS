@@ -1,0 +1,43 @@
+Scientists map one of biology's critical light-sensing structures
+
+For plants, the ability to accurately sense light governs everything from seed germination, photosynthesis and pigmentation to patterns of growth and flowering.
+
+Now, for the first time, scientists have obtained a detailed map of one of biology's most important light detectors, a protein found in many species across life's plant, fungal, and bacterial kingdoms. By resolving the three-dimensional structure of the protein known as phytochrome, scientists can now tease out the secrets of how plants, in particular, react to light, opening the door for a host of manipulations that could have sweeping implications for agriculture.
+
+Writing in the Nov. 17 issue of the journal Nature, a team of scientists from UW-Madison report that they have obtained the crystal structure of a phytochrome from a bacterium, the first such light-gathering structure depicted for all of biology. The structure of the bacterial phytochrome, according to the report, suggests its architecture first arose a billion or so years ago in a common ancestor and is shared among not only bacteria, but also by plants and fungi.
+
+"This is probably the most important light regulator in agriculture," says Richard Vierstra, a UW-Madison plant geneticist and one of two collaborating senior authors of the Nature paper. "It tells plants when to germinate. It tells them where to grow to absorb the most light and to avoid competition. It tells them when to flower. It tells them when to die at the end of the growing season."
+
+The accomplishment of the Wisconsin researchers, including first author graduate student Jeremiah Wagner, caps a 30-year quest by biologists to drill down to the inner workings of how plants, fungi and bacteria use light to guide their development. It will likely spur a rush by scientists to capitalize on the new knowledge and may one day lead to such things as plants whose growth, flowering and death can be precisely manipulated.
+
+"We can now start changing how phytochromes work in a rational way to improve how plants respond to light," says Wagner. "People have been trying to do this for a long time. Practically speaking, we can now try to re-engineer the vision system of a plant."
+
+According to Vierstra, there are many kinds of phytochromes found in every plant, and they exist in virtually all cells. They occur in greater concentrations in cells that respond directly to light, such as in root tips and new shoots.
+
+The phytochrome revealed by the Wisconsin team was derived from a microbe known as Deinococcus radiodurans, a bacterium renowned for its tolerance to ionizing radiation. It was only within the last eight years that scientists from Vierstra's and other labs discovered that, like plants, some bacteria harbor phytochromes. That finding opened the way for the Wisconsin team to define the structure of a phytochrome, as bacteria are easy to grow in the lab and their proteins are easier to purify and manipulate than plant proteins.
+
+Once isolated, the phytochrome was crystallized and its molecular structure was mapped using a beam of X-rays to develop a three-dimensional picture of the protein. That three-dimensional portrait, which reveals the atom-by-atom configuration of the molecule, is the key to understanding the "nuts and bolts" of how the photoreceptor senses light and triggers a series of downstream events that control growth and development, according to Katrina Forest, the other senior member of the team and a UW-Madison professor of bacteriology.
+
+"There were some surprises," says Forest of the ribbon-like protein. "This protein has a knot."
+
+That is a startling feature, she notes, observed in only a handful of proteins out of tens of thousands whose structures are known. The group speculates the knot may help stabilize the protein so it can do its job of capturing light and triggering the cascade of downstream events under its control.
+
+"We think that without the knot, the protein conformational changes (prompted by light) would be too floppy to be efficiently channeled to downstream proteins," Forest explains.
+
+Phytochromes have unique properties that enable them to switch between two stable states that sense red and far-red light. The light is actually detected by a specialized pigment that sits within a pocket on the protein. Red and far-red light, says Forest, have the effect of reversibly changing the structure of the pigment in the pocket, which then flips a switch on the protein to trigger the events of growth and development.
+
+Intriguingly, the phytochrome has the ability to store the light it has detected, initiating a response days after it is sensed, Vierstra says. "This memory allows the plant to predict where the light will come from each day and measure the length of daylight so that they flower in the correct season."
+
+By deducing the architecture of the phytochrome protein, according to Vierstra and Forest, it may be possible to engineer and introduce into crops phytochromes that respond to different wavelengths of light, or are more or less active. These changes, in turn, could allow plants to grow under different climate regimes or flower at different times of the year, for example.
+
+Gaining precise control over flowering events, says Vierstra, is a key to the success or failure of most crops, as most of what we eat comes from seeds and fruits produced by flowers. In another scenario, it may be possible to dampen the role of phytochromes in crop plants to avoid having them compete with each other for light when grown close together in a field.
+
+In addition to Wagner, Vierstra and Forest, the paper was authored by Joseph S. Brunzelle of Northwestern University. The work was funded primarily by the National Science Foundation. Funding was also provided by the U.S. Department of Energy and the W.M. Keck Foundation.
+
+Note: Published in Nature, Nature 438, 325-331 (17 November 2005) | doi:10.1038/nature04118; Jeremiah R. Wagner, Joseph S. Brunzelle, Katrina T. Forest and Richard D. Vierstra; "A light-sensing knot revealed by the structure of the chromophore-binding domain of phytochrome"
+
+MAD data were collected at sector 32-ID-B at the Advanced Photon Source (Argonne National Laboratory). Argonne National Laboratory is funded by the U.S. Department of Energy's Office of Science. - lightsources.org
+
+Published Date
+
+11.16.2005

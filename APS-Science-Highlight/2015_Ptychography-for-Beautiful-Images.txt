@@ -1,0 +1,29 @@
+Ptychography: Difficult To Pronounce,  But Easy to Use for Beautiful Images
+
+Ptychography is a coherent x-ray microscopy method that uses multiple overlapping illumination spots to reconstruct an image from far-field diffraction patterns.It is able to work at a resolution limited not by optics, but by the scattering strength of the sample, and it delivers a phase image that can have a contrast hundreds of times higher than absorption contrast for lighter atoms using high-energy x-rays.A team from Argonne and Northwestern University has worked together to achieve three separate advances in x-ray pytchography.  
+
+Northwestern Ph.D. student Junjing Deng showed the use of two imaging methods at once to obtain complementary information on cells that were quickly frozen from the living state: structural information at sub-30-nm resolution by ptychography, and x-ray fluorescence measurements of trace element distributions at sub-100-nm resolution [1].This puts elemental distributions into their proper biological context. The figure shows an image of a green alga (Chlamydomonas reinhardtii) and demonstrates the significance of this work. The ptychographs reveal in amazing detail the organelles and membranes which do not fluoresce. Taken together the ptychographs aid identification of the cellular components and the quantified elemental concentrations may reveal the underlying cause of diseases and disorders in studies of mammalian cells.
+
+In another advance, Deng and co-workers have shown that data collection can be sped up by the use of continuous scanning [2], rather than having to repeat a stop-measure-move sequence for each illumination spot. The stop-measure-move sequence is notoriously inefficient because measurements cannot be made while the stage accelerates, moves, and then decelerates. Using the continuous scanning approach, the time required to complete one scan is reduced by about threefold at present, but with the planned high-brightness upgrade of the APS, the speedup can reach a factor of 100 or more.  
+
+Finally, Dr. Youssef Nashed of the Mathematics and Computer Science Division at Argonne and others have developed a ptychography computer code [3] that runs at the Argonne Leadership Computing Facility to speed up image reconstruction by more than a factor of 100 relative to previously-used code by employing graphical processing units on individual compute nodes and distributing the task over more than 100 nodes in the cluster.They pioneered a new approach to partitioning the data across many compute nodes, which then communicated their results to each other during the reconstruction. The results from each node are then stitched together seamlessly as if the reconstruction was performed using a single node. This work allows experimenters to see their images immediately, rather than waiting for days.
+
+Together, these advances point the way toward high-speed imaging without lens limits to resolution, and this capability is central to the planned multi-bend achromat lattice upgrade of the APS.
+
+Contact: cjacobsen@anl.gov, dvine@aps.anl.gov
+
+References
+
+[1]  J. Deng, D. Vine, S. Chen, Y.S.G. Nashed, Q. Jin, N.W. Philips, T. Peterka, R. Ross, S. Vogt and C. Jacobsen, “Simultaneous cryo X-ray ptychographic and fluorescence microscopy of green algae,” Proc. Natl. Acad. Sci. USA 112(8), 2314 (February 24, 2015).
+
+[2]  J. Deng, Y.S.G. Nashed, S. Chen, N.W.Phillips, T. Peterka, R. Ross, S. Vogt, C. Jacobsen, and D. Vine, “Continuous motion scan ptychography: characterization for increased speed in coherent x-ray imaging,” Opt. Express 23(5), 5438 (2015).
+
+[3]  Y.S.G Nashed, D. Vine, T. Peterka, J. Deng, R. Ross, and C. Jacobsen. “Parallel ptychographic reconstruction,” Opt. Express 22(26) 32082 (2014).
+
+This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+03.30.2015

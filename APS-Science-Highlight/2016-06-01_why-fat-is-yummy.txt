@@ -1,0 +1,63 @@
+Why Fat is Yummy
+
+The original Argonne feature story by Katie Elyce Jones can be found here.
+
+Fat-free ice cream, for all its healthy merits, melts the wrong way. Two seconds on the tongue and it's a slush of milk, flavoring and water instead of the rich glob of slowly melting cream we grew to love as kids. When it comes to taste memories, fats are forever.
+
+Now x-ray science is contributing to the long quest to understand what makes chocolate and cheese taste so good and how the taste and "mouth feel" of yummy fats could be mimicked in healthier alternatives.
+
+To study the molecular structure of edible fats, researchers from the University of Guelph in Ontario, Canada, are using x-rays at the Advanced Photon Source (APS), a U.S. Department of Energy (DOE) Office of Science User Facility at DOE's Argonne National Laboratory in Illinois.
+
+The basic molecules making up edible fats are triglycerides (TAGs), or three hydrocarbon chains known as fatty acids and a sweet-tasting glycerol molecule. The good news is that TAGs are essential to the body, but the bad news is that excess build-up of TAGs can cause health problems, such as type II diabetes and obesity, which is why scientists are interested in learning what it is about their structure that makes them irresistible.
+
+"Fats are complex systems," said Fernanda Peyronel, research associate at the University of Guelph. "Some edible fats like plant oils might contain only a few TAGs while milk fat contains more than 200. And when fat is manufactured for human consumption, TAGs from different sources are melted, blended and cooled. Other ingredients may be added before cooling as well, creating many different crystal structures."
+
+Beyond taste, understanding structural changes during food production could lead to more energy-efficient manufacturing and distribution practices or more cost-effective ingredient substitutions.
+
+"Food production is very much like chemistry," said Jan Ilavsky, a scientist in Argonne's X-ray Science Division. "You can keep testing ingredients and trying out substitutes, but that isn't very efficient. If you know what you're looking for and have the tools to model your prototype recipes or processes, you can find solutions faster and cheaper."
+
+Over the past three years, Peyronel and the University of Guelph team have brought increasingly complex samples of edible fat to the APS for research. The fats we eat are semi-solid, meaning some TAG molecules are solid and some liquid at room temperature. When fats are melted then cooled, solid fats crystallize first, trapping the liquid fats into a network of pools within a larger structure known as the crystal network. The ratio of solids to liquids is an important characteristic that influences a fat's properties. For example, at room temperature, cocoa butter is about 60 percent solid and often used to make chocolate, whereas olive oil is only 14 percent solid and often used for cooking.
+
+Saturated fats linked to heart disease and other illnesses are usually solid fats, and liquid fats tend to be the healthier, unsaturated fats. When food manufacturers replace saturated fats with unsaturated alternatives to improve nutrition, the product can lose its mouthwatering taste and structure and store differently.
+
+"Sometimes with zero trans-fat products, customers open the package and it's oily because that solid fat structure isn't holding up as well as trans fats do," Peyronel said.
+
+In 2013, the team initially investigated fat structure at the APS by starting with a simple binary system of tristearin, a saturated solid found in some animal meat and plant fats, and an unsaturated liquid fat, triolein. The next year, they brought edible oils such as fully hydrogenated canola oil and soybean, cotton seed and sunflower oils. This year, they brought anhydrous milk fat, a product derived from cream or butter that is more than 99 percent fat, as well as "about 25 kilograms' worth of butter, cheese and cream," Ilavsky said. Milk fat, which is present in dairy and a common additive to other products, has a wide melting range, making it a complex system to study.
+
+The team also investigates fat samples at their home laboratory with x-ray diffraction and cryogenic-transmission electron microscopy (TEM), which requires treating the sample to remove oil.
+
+"With cryo-TEM we have to manipulate the sample to isolate the crystal networks, so we always had the question in our minds: Did we destroy something in the sample?" Peyronel said. "The advantage of the APS is we don't have to extract the oil or manipulate the sample."
+
+X-ray scattering data taken with the ultra-small angle-scattering (USAXS) camera on X-ray Science Division beamline 9-ID-D at the APS allows users to closely examine their samples in three dimensions at different temperatures without altering those samples. Ultra-small-angle-scattering cameras provide a high contrast between solid and liquid components, and the USAXS instrument can determine the size or structure of a sample's components across multiple length scales from angstroms (10-10 meters) to about 20 micrometers (10-6 m).
+
+"If you want to look at a liquid under a microscope, even a great microscope, there is not a lot of optical contrast," said Ilavsky, who is the beamline scientist for the USAXS program at beamline 9-ID-D. "Small-angle and ultra-small-angle scattering characterizes the structure in a similar way but with greater contrast."
+
+These techniques are well suited for probing the hierarchical structure of edible fats, going from crystalline nanoplatelets (CNPs) that form during cooling as TAGs aggregate together, to micro-range clusters of CNPs, to the crystal networks created by clusters. As the structural blueprint to edible fats, you may think of TAGs as the bricks used to build a house, the CNPs as the rooms, the clusters as the houses on a block, and the crystal network the blocks in a neighborhood.
+
+In the recent milk fat study, the team measured the CNPs after the milk fat was melted at 70°C (158°F), cooled to almost 0°C (32° F) and stored in a refrigerator at 5°C (40°F) for two months prior to the study, replicating realistic processing and storage conditions from the processing of raw materials to consumption. The milk fat CNPs were observed to be smooth platelets composed of TAGs that melt at higher temperatures and are about three times as long (600–900 nm) as they are wide. The results from the recent milk fat study are available in Food Chemistry.
+
+The team is using APS data to help develop and validate a computational model that predicts the formation of edible fat structures during cooling, heating, shearing (mixing) and other production processes.
+
+"By changing the model and simulation to represent different processing methods and CNP morphologies — such as smooth, rough or fuzzy — different structures or shapes of CNP aggregation appeared," Peyronel said.
+
+The team has worked closely with the APS to incorporate more complex TAG systems into the analysis and development of the model. Their next step is to analyze data from the more recent USAXS observations of products containing milk fat, such as butter and cheese. They are also exploring ways to collect data with the USAXS instrument at slightly longer spatial length-scales and replicate the impact of shearing to better understand how added non-fat ingredients and manufacturing practices could affect the morphology of CNPs and their aggregation.
+
+Ilavsky said a computational model could be a particularly useful predictive tool for edible fats because it is so difficult to characterize their nanoscale structure without the use of unique resources like the APS.
+
+"Models will help calculate the cooling and heating rates, composition, mechanical properties and other parameters to predict a desired structure, which is true for many materials we see at USAXS, not just milk fat," Ilavsky said. "The thing that is usually missing from models for materials at these scales is precise material parameters. This facility is helping researchers prove their ideas by getting them real measurements with real materials."
+
+See: Pere Randy R. Ramel Jr.*, Fernanda Peyronel**, and Alejandro G. Marangoni***, “Characterization of the nanoscale structure of milk fat,” Food Chem. 203, 224 (2016). DOI: 10.1016/j.foodchem.2016.02.064
+
+Author affiliation: University of Guelph
+
+Correspondence: *pramel@uoguelph.ca, **fsvaikau@uoguelph.ca, ***amarango@uoguelph.ca
+
+The research was supported by the Natural Sciences and Engineering Research Council of Canada. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+06.01.2016

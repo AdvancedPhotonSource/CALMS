@@ -1,0 +1,55 @@
+Splitting Water Molecules for a Renewable Energy Future
+
+The original Virginia Tech press release by Andrew Tie can be read here.
+
+The future economy based on renewable and sustainable energy sources might utilize battery-powered cars, large-scale solar and wind farms, and energy reserves stored in batteries and chemical fuels. Although there are examples of sustainable energy sources in use already, scientific and engineering breakthroughs will determine the timeline for widespread adoption. One proposed paradigm for shifting away from fossil fuels is the hydrogen economy, in which hydrogen gas powers society’s electrical needs. To mass produce hydrogen gas, some scientists are studying the process of splitting water — two hydrogen atoms and one oxygen atom — which would result in hydrogen fuel and breathable oxygen gas.
+
+Feng Lin, an assistant professor of chemistry in the Virginia Tech College of Science, is focusing on energy storage and conversion research. This current work is based on research at two U.S. Department of Energy x-ray light sources including the Advanced Photon Source (APS) at Argonne National Laboratory. It is part of a new study published as the cover article in the journal Nature Catalysis that solves a key, fundamental barrier in the electrochemical water splitting process where the Lin Lab demonstrates a new technique to reassemble, revivify, and reuse a catalyst that allows for energy-efficient water splitting.
+
+The core idea of this study goes back to a subject in general chemistry classes: catalysts. These substances increase the rate of a reaction without being consumed in the chemical process. One way a catalyst increases the reaction rate is by decreasing the amount of energy needed for the reaction to commence.
+
+Water may seem basic as a molecule made up of just three atoms, but the process of splitting it is quite difficult. But Lin’s lab has done so. Even moving one electron from a stable atom can be energy-intensive, but this reaction requires the transfer of four to oxidize oxygen to produce oxygen gas.
+
+“In an electrochemical cell, the four-electron transfer process will make the reaction quite sluggish, and we need to have a higher electrochemical level to make it happen,” Lin said. “With a higher energy needed to split water, the long-term efficiency and catalyst stability become key challenges.”
+
+In order to meet that high energy requirement, the Lin Lab introduces a common catalyst called mixed nickel iron hydroxide (MNF) to lower the threshold. Water splitting reactions with MNF work well, but due to the high reactivity of MNF, it has a short lifespan and the catalytic performance decreases quickly.
+
+Lin and his team discovered a new technique that would allow for periodic reassembling to MNF’s original state, thus allowing the process of splitting water to continue. (The team used fresh water in their experiments, but Lin suggests salt water – the most abundant form of water on Earth – could work as well.)
+
+MNF has a long history with energy studies. When Thomas Edison tinkered with batteries more than a century ago, he also used the same nickel and iron elements in nickel hydroxide-based batteries. Edison observed the formation of oxygen gas in his nickel hydroxide experiments, which is bad for a battery, but in the case of splitting water, production of oxygen gas is the goal.
+
+“Scientists have realized for a long time that the addition of iron into the nickel hydroxide lattice is the key for the reactivity enhancement of water splitting.” Kuai said. “But under the catalytic conditions, the structure of the pre-designed MNF is highly dynamic due to the highly corrosive environment of the electrolytic solution.”
+
+During Lin’s experiments, MNF degrades from a solid form into metal ions in the electrolytic solution — a key limitation to this process. But Lin’s team observed that when the electrochemical cell flips from the high, electrocatalytic potential to a low, reducing potential, just for a period of two minutes, the dissolved metal ions reassemble into the ideal MNF catalyst. This occurs due to a reversal of the pH gradient within the interface between the catalyst and the electrolytic solution.
+
+“During the low potential for two minutes, we demonstrated we not only get nickel and iron ions deposited back into the electrode, but mixing them very well together and creating highly active catalytic sites,” Lin said. “This is truly exciting, because we rebuild the catalytic materials at the atomic length scale within a few nanometer electrochemical interface.”
+
+Another reason that the reformation works so well is that the Lin Lab synthesized novel MNF as thin sheets that are easier to reassemble than a bulk material.
+
+To corroborate these findings, Lin’s team conducted synchrotron x-ray measurements at the Advanced Photon Source at Argonne, and at the Stanford Synchrotron Radiation Lightsource (SSRL) at SLAC National Accelerator Laboratory; both are Office of Science user facilities. The investigations used x-ray fluorescence microscopy (XFM, Fig. 1) at APS beamlines 2-ID-E and 34-ID-E operated by the Microscopy Group and Surface Scattering & Microdiffraction Group, respectively, both in the APS X-ray Science Division (XSD). Hard x-ray absorption spectroscopy (XAS) was carried out at APS beamline 20-ID operated by the XSD Spectroscopy Group; XAS data were also obtained at the SSRL beamine 4-1.
+
+“We wanted to observe what had happened during this entire process,” Kuai said. “We can use x-ray imaging to literally see the dissolution and re-deposition of these metal irons to provide a fundamental picture of the chemical reactions.”
+
+The synchrotron x-ray facilities provide Lin high levels of data under the catalytic operating conditions. The study also provides insights into a range of other important electrochemical energy sciences, such as nitrogen reduction, carbon dioxide reduction, and zinc-air batteries.
+
+“Beyond imaging, numerous x-ray spectroscopic measurements have allowed us to study how individual metal ions come together and form clusters with different chemical compositions,” Lin said. “This has really opened the door for probing electrochemical reactions in real chemical reaction environments.”
+
+This discovery won’t lead to hydrogen-powered cars tomorrow, but it is a significant step forward in application-driven fundamental science to achieving a sustainable, renewable energy future. 
+
+See: Chunguang Kuai1,2, Zhengrui Xu1,6, Cong Xi2,6, Anyang Hu1, Zhijie Yang1, Yan Zhang2,3, Cheng-Jun Sun4, Luxi Li4*, Dimosthenis Sokaras3, Cunku Dong2, Shi-Zhang Qiao5, Xi-Wen Du2**, and Feng Lin1***, “Phase segregation reversibility in mixed-metal hydroxide water oxidation catalysts,” Nat. Catal. 4 , 743 (24 August 2020).   DOI: 10.1038/s41929-020-0496-z
+
+Author affiliations: 1Virginia Tech, 2Tianjin University, 3SLAC National Accelerator Laboratory, 4Argonne National Laboratory, 5The University of Adelaide
+
+Correspondence: *luxili@anl.gov, **xwdu@tju.edu.cn, ***fenglin@vt.edu
+
+This work was supported by the Department of Chemistry Startup Funds and the Institute for Critical Technology and Applied Science at Virginia Tech. The work at Tianjin University was supported by the Natural Science Foundation of China (grant nos. 51871160, 51671141 and 51471115). Use of the Stanford Synchrotron Radiation Lightsource, SLAC National Accelerator Laboratory, was supported by the U.S. Department of Energy (DOE) Office of Science-Basic Energy Sciences under contract no. DE-AC02-76SF00515. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.22.2020

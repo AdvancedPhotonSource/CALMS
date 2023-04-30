@@ -1,0 +1,15 @@
+Ion Distributions Near a Liquid-Liquid Interface
+
+Researchers from the University of Illinois at Chicago; Northern Illinois University; the University of California, Santa Cruz; and ChemMatCARS (sector 15 at the APS) used x-ray reflectivity from ion distributions at the liquid-liquid interface to provide strong evidence that the interfacial structure of a liquid alters the ion distributions near a charged interface, contrary to earlier theories about ions at charged surfaces.
+
+Coulomb’s Law describes the interaction between two, otherwise isolated, point charges. If many charges are present in the region between these two charges, the net interaction between them is modified. This is commonly found in real systems, such as a plasma gas of electrons and ionized molecules, or electrolyte solutions containing many ions, or biological systems that contain highly charged biopolymers interacting with themselves and smaller ions. Debye suggested that an ion in solution is surrounded by other ions that act to screen its long-range Coulomb interaction. Earlier, Gouy and Chapman had described the electric double layer of ions that arises near a charged surface immersed in a solution with counterions. This double layer also screens long-range Coulomb interactions of the charged surface. These early theories ignored the liquid structure, such as the ion or solvent sizes and interactions between ion and solvent molecules that can lead to packing effects and spatial correlations. Although subsequent theoretical work treated these effects, experiments have not confirmed or denied these structural effects in a satisfactory manner.
+
+Electric double layers exist on either side of an interface formed when an aqueous solution of TBA Br is placed in contact with a nitrobenzene solution of TBA TPB. X-ray reflectivity probed the electron density profile of the ion distributions in these double layers. The experiments revealed a discrepancy of 25 standard deviations from the predictions of Gouy-Chapman theory, which ignores liquid structure. A solution of the Poisson-Boltzmann equation that utilized a potential of mean force determined ion distributions in agreement with the x-ray reflectivity measurements. The potential of mean force characterized the relevant liquid structure. This method allows the potential of mean force, produced by analytic theory or computer simulations, to be tested. These experiments were carried out on the ChemMatCARS 15-ID beamline.
+
+Work supported by NSF-CHE0315691 and NSF-CHE0345361. ChemMatCARS is supported by NSF-CHE, NSF-DMR, and the U.S. DOE. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. W-31-109-Eng-38.
+
+See: Guangming Luo, Sarka Malkova, Jaesung Yoon, David G. Schultz, Binhua Lin, Mati Meron, Ilan Benjamin, Petr Vanysek, and Mark L. Schlossman, “Ion Distributions Near a Liquid-Liquid Interface,” Science 311, 216 (2006)
+
+Published Date
+
+04.13.2006

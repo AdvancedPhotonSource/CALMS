@@ -1,0 +1,37 @@
+Brain Iron as an Early Predictor of Alzheimer’s Disease
+
+Early and correct diagnosis of Alzheimer’s disease (AD) is important for reasons that go beyond treatment. These include more time to make critical life decisions, planning for future care, and maximizing the safety of the person with Alzheimer's disease and their family. New scientific information relevant to this pernicious disease has been obtained by researchers utilizing the U. S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory and National Synchrotron Light Source (NSLS) at Brookhaven National Laboratory, and published in the journal NeuroImage. This work points to the use of elevated brain iron content, already observed in late-stage AD, as a potential tool for early diagnosis. Since the disease is usually diagnosed only in later stages after cognitive symptoms appear and treatment may not be effective, a method for early detection would be a major breakthrough in fighting this debilitating neurological illness.
+
+It has been known for some time that the formation of amyloid plaques in brain tissue is associated with AD. These plaques may form for years before the patient actually suffers neurological symptoms. So, much recent research has focused on finding a way to detect the disease in its very early stages when treatment would be most effective.
+
+One line of research has centered on the observation that the brains of patients in late stages of the disease showed elevated levels of metal ions such as iron, copper, and zinc. Measuring metal concentrations in cerebrospinal fluid or using magnetic resonance imaging would be an attractive technique for early diagnosis because it is noninvasive. Until recently, however, not much was known about how metal ions were distributed in plaque and non-plaque tissues during various stages of the disease.
+
+Now, thanks to the efforts of the researchers from Stony Brook University, Brookhaven, the University of Chicago, the Illinois Institute of Technology, and Argonne, new light has been shed on the relationship between metal content, plaque formation, and Alzheimer’s disease.
+
+The scientists used a model system of amyloid plaque formation in mice to investigate how iron was distributed in the brain cortex and hippocampus over time. The cortex is the center of higher brain functions such as thought and reasoning, while the hippocampus is important for long-term memory storage. Malfunction of both of these brain regions is associated with AD, though the hippocampus appears to be the first and most drastically affected.
+
+The x-ray fluorescence microscopy (XFM) technique employed at the APS and the NSLS allowed the researchers to determine how iron content changes as the diseased brain ages. Their results show that iron content is significantly higher in the cortex early in the disease and that it corresponds with the onset of plaque formation; interestingly, the iron was not found within the plaques.
+
+Given these findings, it is clear that quantifying brain iron content could be a powerful early indicator of AD and has great potential as a diagnostic tool.
+
+Lisa M. Miller, biophysical chemist at the NSLS and Stony Brook University, recalls how the project came into being: “About eight years ago, we used XFM to analyze the plaques of end-stage human Alzheimer’s disease and found the plaques to be loaded with iron, copper, and zinc. So we wanted to know whether metal ions were involved in plaque formation and/or brain cell toxicity. To do this, we needed the mouse model to study metal accumulation in AD plaques over the course of the disease. Interestingly, we found that the mouse plaques never accumulated metal, except for a small amount of zinc in the late stages. These mice also exhibited very little brain cell death. This was in stark contrast to humans, where the plaques take up a lot of metal and brain cell death is significant.”
+
+Having the right tools and techniques was critical to moving the work forward. According to Miller, “Access to synchrotron light sources such as the NSLS and APS, where we could employ XFM, was instrumental in this work because there is really no other way besides XFM to simultaneously image all of the physiological metals (calcium, iron, copper, and zinc) in the brain. We were able to use the NSLS to study the plaques, but needed the high brightness and small beams at the Bio-CAT 18-ID-D beamline at the APS to efficiently image the large cortex and hippocampus regions.”
+
+Miller says that the team’s work “now leads us to question whether metals in the plaques are a sign of metal ion imbalance in Alzheimer’s disease, causing brain cell toxicity. Perhaps the ‘metallated’ plaques are even toxic themselves. Understanding this mechanism is our direction for the future.” — Mona Mort
+
+See: Andreana C. Leskovjan1,2, Ariane Kretlow2‡, Antonio Lanzirotti3, Raul Barrea4, Stefan Vogt5, and Lisa M. Miller1,2*: “Increased brain iron coincides with early plaque formation in a mouse model of Alzheimer’s disease,” NeuroImage 55(1), 32 (1 March 2011). DOI:10.1016/j.neuroimage.2010.11.073
+
+Author affiliations: 1Stony Brook University, 2Brookhaven National Laboratory, 3The University of Chicago, 4Illinois Institute of Technology, 5Argonne National Laboratory. ‡Present address: BfR-Federal Institute for Risk Assessment
+
+Correspondence: *lmiller@bnl.gov
+
+This work was funded by National Institutes of Health Grant R01-GM66873. The NSLS is funded by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract DE-AC02-98CH10886. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science, Office of Basic Energy Sciences (DOE-BES). The APS is the source of the Western Hemisphere’s brightest high-energy x-ray beams for research in virtually every scientific discipline. More than 3,500 scientists representing universities, industry, and academic institutions from every U.S. state and several foreign nations visit the APS each year to carry out applied and basic research in support of the BES mission to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels in order to provide the foundations for new energy technologies and to support DOE missions in energy, environment, and national security. To learn more about the Office of Basic Energy Sciences and its x-ray user facilities.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+06.15.2011

@@ -1,0 +1,43 @@
+Peering Deep inside Nongraphitic Anodes with Synchrotron Microtomography
+
+With so much of our 21st century technology dependent on ever smaller and more efficient rechargeable lithium-ion (Li-ion) batteries, finding new ways to non-destructively peer inside an operating battery is of critical importance, because so many of the physical characteristics of each battery material change during the cycling process. Understanding what those changes are is the first step in choosing and developing new and better battery components, such as moving to metallic electrodes instead of the traditional graphitic carbon materials. X-ray-based microcomputed tomography (MicroCT) can provide a valuable window into Li-ion batteries, although with a somewhat slow collection rate. To overcome that problem, a group of researchers from MIT and Argonne National Laboratory working at U.S. Department of Energy’s Advanced Photon Source (APS) has developed a synchrotron-based, full-field MicroCT technique that can capture high-resolution tomography images in as fast as 15 seconds. The research provides the first detailed observations of structural and electrochemical phenomena in candidates for new, high-capacity Li-ion battery anode materials.
+
+Using X-ray Science Division beamline 2-BM of the APS, an Office of Science user facility, the investigators examined two non-graphitic, high-capacity anode materials. One was a copper-tin alloy (Cu6Sn5) electrodeposited onto copper foam; the other was a silicon (Si)-based laminate. Both were studied ex situ and in situ before and after cycling to determine changes in three-dimensional structure and other properties.
+
+Metal foams are a promising substrate for rechargeable Li-ion battery electrodes for several reasons, including the facts that they can provide void volume to accommodate electrode expansion, their porosity supports high-power systems, and the deposition of electrochemically active materials is a good method to produce economically viable electrodes.
+
+The fine three-dimensional structure of the Cu foam in the Cu6Sn5/Cu foam electrode model, as well as the overlying copper-tin anode, was clearly discernible with high detail on microtomographic images (see the figure). Upon cycling in coin cells, these electrodes displayed stable lithiation/delithiation for 20-30 cycles before beginning to decay.
+
+Utilizing filtered white beam, synchrotron MicroCT is able to visualize the alterations in the Cu6Sn5 layer by showing how the surface area-to-volume ratio (SA/V) changes with cycling. The SA/V in these electrodes showed an increase of about 10-15% over cycling, without any changes in thickness. The current experiments represent the first time it has been possible to observe such structural and electrochemical phenomena in this way and with this detail.
+
+The Si laminate electrodes were investigated using monochromatic 50-keV x-ray energy and a suitable sample-to-detector distance as to enable phase contrast imaging. With quantitative phase retrieval, the separate components of the laminate electrodes, including Si particles, carbonaceous material, and voids, were readily distinguished from one another.
+
+These anodes were also cycled inside coin cells and examined, showing a considerably different response than the foam electrodes.
+
+After cycling, large Si particles were seen to break down into smaller pieces and the amount of carbonaceous material and void space increased. This was accompanied by an increased SA/V ratio, growth in the solid-electrolyte interphase (SEI) layer, and decreased porosity. Most significantly, the overall thickness of the laminate electrode increased by about 267% compared to the foam electrode, which showed no increase in thickness.
+
+The researchers note that these in situ full-field microtomography studies, the first to be published on high-capacity Li-ion anodes operando, promise an exciting direction for further research and the design of new types of materials for rechargeable Li-ion batteries.
+
+As the techniques demonstrated here are improved and expanded, they can provide more detailed and precise data on the various physical characteristics of potential battery materials for better modeling and simulations.
+
+The MicroCT methods used in this work also reveal phenomena that could lead to electrode breakdown and failure (such as the thickening observed in the Si laminate) that might be overlooked by other imaging modalities.
+
+Synchrotron MicroCT should prove to be an invaluable addition to the scientific toolbox as the search for fresh approaches to developing and perfecting the next generation of rechargeable batteries continues.
+
+— Mark Wolverton
+
+See: Fikile R. Brushett1, Lynn Trahey2, Xianghui Xiao2, and John T. Vaughey2, “Full-Field Synchrotron Tomography of Nongraphitic Foam and Laminate Anodes for Lithium-Ion Batteries,” Appl. Mater. Interfaces 6, 4524 (2014). DOI: 10.1021/am5003124
+
+Author affiliations: 1Massachusetts Institute of Technology, 2Argonne National Laboratory
+
+Correspondence: * brushett@mit.edu, * trahey@anl.gov
+
+Support from the Vehicle Technologies Program, Hybrid and Electric Systems at the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, is gratefully acknowledged. F.R.B. was supported by a Director’s Postdoctoral Fellowship. This research used resources of the Advanced Photon Source, a U.S. Department of Energy Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+ 
+
+Published Date
+
+10.22.2014

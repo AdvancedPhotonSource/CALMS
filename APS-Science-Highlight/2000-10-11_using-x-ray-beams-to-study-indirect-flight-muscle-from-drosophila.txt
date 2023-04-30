@@ -1,0 +1,23 @@
+Using X-ray Beams to Study Indirect Flight Muscle from Drosophila Melanogaster
+
+Researchers applied high-brilliance x-ray beams from the Bio-CAT undulator insertion device beamline at the Advanced Photon Source (APS) to small-angle x-ray diffraction and obtained high-quality, in vivo patterns from the flight muscles of live fruit flies (Drosophila melanogaster). They compared and contrasted the patterns from Drosophila with those reported from isolated, glycerinated flight muscle fibres of the giant waterbug, Lethocerus. D. melanogaster was chosen because, among insects, it is readily amenable to genetic manipulation and therefore of greatest interest for studies of mutants designed to probe specific aspects of muscle function.
+
+The experiments produced detailed, two-dimensional x-ray diffraction patterns of working muscle in a living organism. Precise measurements at 1-millisecond time resolution indicate that the myofilament lattice spacing does not change significantly during oscillatory contraction. This result is consistent with the notion that a net radial force maintains the thick filaments at an "equilibrium" inter-filament spacing of ~56 nm throughout the contractile cycle. Studies of mutant organisms indicated changes in the radial disposition of force producing crossbridges that can explain flight impairment in these organisms
+
+This demonstrated a new application of coupling the molecular genetic toolkit of Drosophila to high-resolution biophysical measurements. The in vivo technique complements experiments on excised, skinned preparations, and advances Drosophilaas a model system for studying integrative biology (Maughan and Vigoreaux, 1999). The demonstrated ability to carry out x-ray studies in transgenic flies with defined alterations of muscle proteins will increase our understanding of how they functionin vivo.
+
+This new experimental system facilitates investigation of the relation between molecular structure and muscle function in living organisms.
+
+T.C. Irving(1) and D. W. Maughan(2)
+
+(1) Biophysics Collaborative Access Team (BioCAT), CSRRI & Dept. Biological, Chemical & Physical Sciences, Illinois Institute of Technology, Chicago, IL 60616
+
+(2) Dept. Molecular Physiology & Biophysics, U. Vermont, Burlington, VT 05405
+
+Correspondence should be addressed to: Tom C. Irving, Dept. Biological, Chemical and Physical Sciences, 3101 S. Dearborn St., Illinois Institute of Technology, Chicago, IL 60616; email: irving@biocat1.iit.edu
+
+- From "In Vivo X-Ray Diffraction of Indirect Flight Muscle from Drosophila melanogaster," Biophys. J., 78, 2511-2515 (May 2000). © 2000 by the Biophysical Society
+
+Published Date
+
+10.11.2000

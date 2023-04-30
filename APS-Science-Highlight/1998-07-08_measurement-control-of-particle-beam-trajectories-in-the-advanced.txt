@@ -1,0 +1,9 @@
+Measurement & Control of Particle-Beam Trajectories in the Advanced Photon Source Storage Ring
+
+The orbit stability requirements for the APS storage ring were specified during the accelerator-design phase. In order to provide stable x-ray beams, the rms beam motion must be less than 5% of the particle-beam dimensions at the source point.
+
+Read More
+
+Published Date
+
+07.08.1998

@@ -1,0 +1,41 @@
+Creating a New Vision for Multifunctional Materials
+
+The original press release of the Wyss Institute at Harvard University can be read here.
+
+Multifunctional materials with sensory capabilities like those of vision, touch, or even smell could profoundly expand the possibilities of industrial design in many areas. Taking a cue from nature, a cross-institutional collaboration involving researchers from the Wyss Institute for Biologically Inspired Engineering at Harvard University and MIT has utilized the U.S. Department of Energy’s Advanced Photon Source (APS) to help decipher how the biomineral making up the body armor of a chiton mollusk has evolved to create functional eyes embedded in the animal's protective shell. The findings could help determine so far still elusive rules for generating man-made multifunctional materials and were reported in the November 20, 2015, issue of Science.
+
+Multifunctional materials that can sense physical stimuli in their environments could enable us to build houses that make use of their environments, to constantly monitor wear-and-tear and look for signs of damage in materials, or even to better deliver some drugs and produce bioengineered organs.
+
+“To date, artificial materials that have the ability to perform multiple and often structurally opposite functions are not available. We cannot yet rationally design them but studying different multifunctional biomaterials present in nature should ultimately allow us to deduct the key principles for this relatively new area of materials science,” said Joanna Aizenberg, a Core Faculty member at the Wyss Institute, leader of the Wyss Adaptive Material Technologies platform, and also is the Amy Smith Berylson Professor of Materials Science at the Harvard John A. Paulson School of Engineering and Applied Sciences (SEAS). Early work by Aizenberg on a sea-dwelling brittlestar that uses the same mineralized material to grow both a skeleton and visual organs had set the stage for the exploration into multifunctional biomaterials.
+
+Now, inspired by previous biological research performed by Daniel Speiser, Aizenberg and Christine Ortiz, the Morris Cohen Professor of Materials Science and Engineering at MIT, formed a multi-disciplinary team to study another tell-tale example offered by nature: the outer protective shell of the chiton Acanthopleura granulata, a tropical sea water mollusk that is endowed with hundreds of tiny eyes. Speiser is a Professor at the University of South Carolina who joined the Harvard/MIT-led effort.
+
+Most eyes in nature are made of organic molecules. In contrast, the chiton's eyes are inorganic and made of the same crystalline mineral called aragonite that also assembles the body armor. They enable the chiton to perceive changes in light and thus to respond to approaching predators by tightening their grip to surfaces under water.
+
+Using a suite of highly resolving microscopic and crystallographic techniques, including micro-computed tomography at the X-ray Science Division 2-BM-A,B x-ray beamline at the Argonne APS (an Office of Science user facility), the researchers unraveled the three-dimensional architecture and geometry of the eyes, complete with an outer cornea, a lens, and an underlying chamber that houses the photoreceptive cells necessary to feed focused images to the chiton's nervous system.
+
+Importantly, the researchers found that aragonite crystals in the lens are larger than in the shell and organized into more regular alignments that allow light to be gathered and bundled.
+
+“By studying isolated eyes, we identified how exactly the lens material generates a defined focal point within the chamber which, like a retina, can render images of objects such as predatory fish,” said Ling Li, a postdoctoral fellow working with Aizenberg and a co-first author of the study.
+
+We also learned that optical performance was developed as a second function to the otherwise protective shell with mutual trade-offs in both functionalities. The material properties that are favored for optical performance are usually not favored for mechanical robustness so that the evolving chiton had to balance out its mechanical vulnerabilities by limiting the size of the eyes and placing them in regions protected by strong protrusions,” said Li.
+
+“The investigation of nature's finest 'multitasking artists' can provide insight into functional synergies and trade-offs in multifunctional materials and guide us in other studies toward the development of revolutionary biomimetic materials. We thus are probably one step closer to construct houses made of a material that is not only mechanically robust, but also furnished with lenses capable of flexibly regulating light and temperature inside and sense environmental conditions,” said Aizenberg.
+
+“This study shows just how amazing nature is at solving complex problems in simple and elegant ways. By uncovering the design rules that this simple organism uses to self-assemble a multi-functional shell that simultaneously provides physical protection from the environment and an eye that can sense oncoming invaders, the team is now in a position to leverage these insights to engineer synthetic materials that could lead to entirely new solutions for both industrial and medical applications,” said Wyss Institute Founding Director Don Ingber, who also is the Judah Folkman Professor of Vascular Biology at Harvard Medical School and Boston Children's Hospital, and Professor of Bioengineering at SEAS.
+
+Note: This article was the subject of “Crystalline eyes of chitons inspire materials scientists,” by Elizabeth Pennisi, Science, In Depth, Biomaterials. Science 350(6263), 952 (20 November 2015). DOI: 10.1126/science.350.6263.899
+
+See: Ling Li1,2, Matthew J. Connors1, Mathias Kolle3, Grant T. England2, Daniel I. Speiser4, Xianghui Xiao5, Joanna Aizenberg2, Christine Ortiz1*, “Multifunctionality of chiton biomineralized armor with an integrated visual system,” Science 359(6263), 952 (20 November 2015). DOI: 10.1126/science.aad1246
+
+Author affiliations: 1Massachusetts Institute of Technology, 2Harvard University, 3Massachusetts Institute of Technology, 4University of South Carolina, 5Argonne National Laboratory
+
+Correspondence: *cortiz@mit.edu
+
+We gratefully acknowledge support from the U.S. Army Research Office through the Massachusetts Institute of Technology (MIT) Institute for Soldier Nanotechnologies (contract W911NF-07-D- 0004) and the National Security Science and Engineering Faculty Fellowship Program (N00244-09-1-0064). This work made use of the Materials Research Science and Engineering Center Shared Experimental Facilities at MIT, supported by the National Science Foundation (NSF) under award number DMR-08-19762. M.K. and J.A. gratefully acknowledge support by the NSF Designing Materials to Revolutionize and Engineer our Future program (DMR 1533985). M.K. thanks the Alexander von Humboldt Foundation for a Feodor Lynen Research Fellowship and gratefully acknowledges financial support from the MIT Department of Mechanical Engineering. D.I.S. gratefully acknowledges support by the NSF (DEB-1354831). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+11.23.2015

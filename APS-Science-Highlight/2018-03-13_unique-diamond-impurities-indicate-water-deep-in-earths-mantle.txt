@@ -1,0 +1,47 @@
+Unique Diamond Impurities Indicate Water Deep in Earth's Mantle
+
+The original UNLV press release by Francis McCabe can be read here.
+
+Scientists carrying out research at the U.S. Department of Energy’s Advanced Photon Source (APS) and Advanced Light Source (ALS) national synchrotron x-ray research facilities discovered the first direct evidence that fluid water pockets may exist as far as 500 miles deep into the Earth’s mantle.
+
+Groundbreaking research by University of Nevada, Las Vegas (UNLV) geoscientist Oliver Tschauner and colleagues from UNLV, The University of Chicago, the California Institute of Technology, the China University of Geosciences, the University of Hawaii at Manoa,, and the Royal Ontario Museum (Canada) found diamonds pushed up from the Earth’s interior had traces of unique crystallized water called Ice-VII, a high-pressure form of water ice that is stable above 2.4 gigapascals. Ice-VII has recently been recognized as a mineral by the International Mineralogical Association.
+
+The study, “Ice-VII inclusions in Diamonds: Evidence for aqueous fluid in Earth’s deep Mantle,” was published in the journal Science.
+
+In the jewelry business, diamonds with impurities hold less value. But for Tschauner and other scientists, those impurities, known as inclusions, have infinite value, as they may hold the key to understanding the inner workings of our planet.
+
+For this study, the researchers used diamonds that surged up from inside Earth in southern Africa (Orapa [Fig. 1], Namaqualand), China (Shandong), Zaire, and Sierra Leone. “This shows that this is a global phenomenon,” Tschauner said.
+
+The diamonds were examined by x-ray diffraction at The University of Chicago’s GeoSoilEnviroCARS (GSECARS) undulator beamline 13-ID-D at the APS, and x-ray micro-fluorescence at the GSECARS 13-ID-E beamline. Additional diffraction data were collected at the High Pressure Collaborative Access Team (HP-CAT) 16-ID-B beamline, also at the APS. (The APS is an Office of Science user facility at Argonne National Laboratory). Characterization by infrared spectroscopy was carried out at Caltech, and at the ALS bending magnet beamline 1.4 (the ALS is an Office of Science user facility at Lawrence Berkeley National Laboratory.)
+
+Scientists theorize the diamonds used in the study were born in the mantle under temperatures reaching more than 1,000-degrees Fahrenheit. The mantle - which makes up more than 80 percent of the Earth’s volume - is made of silicate minerals containing mostly magnesium, and smaller amounts of iron, aluminum, and calcium among others.
+
+And now we can add water to the list.
+
+The discovery of Ice-VII in the diamonds is the first known natural occurrence of the aqueous fluid from the deep mantle. Ice-VII had been found in prior lab testing of materials under intense pressure. Tschauner also found that while under the confines of hardened diamonds found on the surface of the planet, Ice-VII is solid. But in the mantle, it is fluid.
+
+“These discoveries are important in understanding that water-rich regions in the Earth’s interior can play a role in the global water budget and the movement of heat-generating radioactive elements,” Tschauner said.
+
+This discovery can help scientists create new, more accurate models of what’s going on inside the Earth, specifically how and where heat is generated under the Earth’s crust.
+
+In other words: “It’s another piece of the puzzle in understanding how our planet works,” Tschauner said.
+
+Of course, as it often goes with discoveries, this one was found by accident, explained Tschauner.
+
+"We were looking for carbon dioxide," he said. "We're still looking for it, actually,"
+
+See: O. Tschauner1*, S. Huang1, E. Greenberg2, V.B. Prakapenka2, C. Ma3, G.R. Rossman3, A.H. Shen4, D. Zhang2,5, M. Newville2, A. Lanzirotti2, and K. Tait6, “Ice-VII inclusions in diamonds: Evidence for aqueous fluid in Earth’s deep mantle,” Science 359, 1136 (9 March 2018). DOI: 10.1126/science.aao3030
+
+Author affiliations: 1University of Nevada, Las Vegas, 2The University of Chicago, 3California Institute of Technology, 4China University of Geosciences, 5University of Hawaii at Manoa, 6Royal Ontario Museum
+
+Correspondence: * olivert@physics.unlv.edu
+
+This work was supported by U.S. Department of Energy (DOE) awards DESC0005278, DE-FG02-94ER14466, and DE-NA0001974, and by NSF grants EAR-1634415, EAR-1128799, EAR-1322082, EAR-0318518, and DMR-0080065. The Advanced Light Source is a DOE Office of Science User Facility under contract no. DE-AC02-05CH11231. GSECARS is supported by the National Science Foundation-Earth Sciences (EAR-1634415) and U.S. DOE-GeoSciences (DE-FG02-94ER14466). HP-CAT operations are supported by DOE-NNSA under Award No. DE-NA0001974, with partial instrumentation funding by NSF. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+03.13.2018

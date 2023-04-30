@@ -1,0 +1,33 @@
+Manipulating Genes with Hidden TALENs
+
+A better understanding of gene function in model plant and animal systems could be used to develop useful traits in livestock and crop plants, and might someday lead to developments in stem cell research and new treatments for human genetic disorders. Those are the projected outcomes of experiments carried out at two U.S. Department of Energy (DOE) Office of Science synchrotron x-ray facilities, including the Advanced Photon Source (APS) at Argonne National Laboratory.
+
+A team of researchers from Iowa State University (ISU) and the Fred Hutchinson Cancer Research Center utilized the Life Sciences Collaborative Access Team 21-ID-F x-ray beamline at the APS and beamline 5.0.2 at the Advanced Light Source at the Lawrence Berkeley National Laboratory to take a close look at a group of fused proteins that can control genes. Their work has revealed the crystallographic structure of a protein encoded by an important group of harmful plant pathogens that has evolved to manipulate host gene expression in a specific yet highly adaptable manner.
+
+Xanthomonas bacteria inject TAL effector proteins into the cells of plants that they infect. The proteins wind themselves into the major groove of specific sections of the plants' DNA. This switches-on genes that benefit the invading bacteria. Conversely, the same binding might activate genes that stimulate the plants' defense systems against the pathogens. The DNA binding step, which involves a molecular recognition process, requires tandem repeat units of the protein building blocks, amino acids, usually 34 amino acids long and ending with a half repeat. The repeating patterns have allowed researchers to predict the likely targets for these binding regions and so engineer novel sequences that can also bind to specific strands of DNA.
+
+This research has stimulated renewed interest in the possibility of designing artificial "TAL nuclease" (TALEN) proteins that could target DNA and thereby modify specific genes for a wide variety of purposes in crop plants or possibly to even treat human genetic diseases. Adam Bogdanove, of Iowa State University, and colleagues have been building on these discoveries for several years. In 2011, Bogdanove and a team at the University of Minnesota, led by Dan Voytas, formerly of ISU, and a second ISU group led by Bing Yang demonstrated in the laboratory that such a notion was potentially viable as they could create TALENs to manipulate genes and gene functions.
+
+Now, writing in the journal Science in January 2012, Barry Stoddard and colleagues at the Fred Hutchinson Cancer Research Center in Seattle, including post-doc Amanda Mak and faculty member Phil Bradley, have collaborated with Bogdanove and Andres Cernadas to use multiple expression clones and data relating to target site sequences for co-crystallization. The team used a TAL effector, PthXo1, produced by the rice pathogen Xanthomonas oryzae and used x-ray diffraction data collected at the two DOE light sources to solve its three-dimensional (3-D) structure bound to a 36-base pair DNA duplex containing a sequence found in the rice genome itself.
+
+To solve the structure, Bradley developed a high-throughput computational structure prediction method for TAL effectors using the Rosetta software package to generate a highly accurate molecular model for molecular replacement phasing. The resulting structure was then validated against the peaks obtained for selenomethionyl derivative, in which anomalous peaks would match up with the original data only if the model were correct.
+
+Having obtained the 3-D structure of a TAL effector and shown how it physically interacts with double-stranded DNA, the researchers can now figure out the details of the recognition and binding process involved and so get a clearer picture of how they work in nature and how they might be manipulated in the laboratory.
+
+They conclude in their latest Science paper that the work "reveals the hitherto enigmatic structural nature of a simple solution that an important group of pathogens has evolved to manipulate host gene expression in a specific yet highly adaptable manner." Bogdanove describes the structure the team has obtained as "really quite beautiful." "So far there is nothing else in nature quite like it," he said.
+
+See: Amanda Nga-Sze Mak1, Philip Bradley1, Raul A. Cernadas2, Adam J. Bogdanove2, and Barry L. Stoddard1*, “The Crystal Structure of TAL Effector PthXo1 Bound to Its DNA Target,” Science 335(6069), 716 (10 February, 2012).
+
+Author affiliations: 1Fred Hutchinson Cancer Research Center, 2Iowa State University
+
+Correspondence: *bstoddar@fhcrc.org
+
+This project was funded by the National Institutes of Health (grants RL1 0CA833133 to B.L.S., R01GM098861 to B.L.S. and A.J.B., and R01 GM088277 to P.H.B.), National Science Foundation grant 0820831 to A.J.B., and a Searles Scholars Fellowship to P.H.B. A.N-S.M. was supported by a training grant from the Northwest Genome Engineering Consortium. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the DOE’s Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+02.10.2012

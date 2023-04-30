@@ -1,0 +1,41 @@
+A New Material that Combines Useful, Typically Incompatible Properties
+
+The original University of Wisconsin-Madison press release by Sam Million-Weaver can be read here.
+
+Mild-mannered Dr. Jekyll and malicious Mr. Hyde were opposite aspects of the same man, and their story ended in tragedy because the two couldn’t peacefully coexist. Most materials, too, are capable of being only one thing at a time, but a team of engineers and physicists at the University of Wisconsin-Madison have created an entirely new material in which completely contradictory properties can coexist. The compound, which the researchers characterized at the U.S. Department of Energy’s Advanced Photon Source (APS), an Office of Science user facility at Argonne and described in a study published April 20, 2016, by the journal Nature, is a polar metal.
+
+“Polar metals should not be possible,” said Prof. Chang-Beom Eom of the University of Wisconsin-Madison, who led the research.
+
+Undeterred by the laws of the universe, Eom and colleagues created a compound that is a scientific oxymoron. Through a new synthesis approach supported by computational modeling, the group made a crystal with multiple personalities: being both polar and metallic.
+
+Metals conduct electricity because electrons flow freely throughout them. Polar materials, by contrast, impede the free flow of electrons and work as electrical insulators.
+
+Eom’s team needed to find something that can demonstrate both insulating and conducting properties. First, they spatially separated the polar and metallic parts of the crystal whereby both behaviors are linked to different constituent elements. Some electrons gave rise to the metallic nature, moving within the material to conduct electricity. Other electrons contributed to the polar properties.
+
+However, because the natural molecular structure of the material is symmetrical, even after separating the two components, the material as a whole would not act polar. Equal and opposite arrangements of electrons canceled each other out. To overcome this obstacle, the researchers synthesized the substance with slightly off-kilter atoms, which threw off the internal symmetry enough to make the material polar.
+
+“The initial calculations that the theory suggested did not show the polar nature so we experimentally tested the materials, then went back and improved the models,” said Eom. “We looped between theory and experiments, but most importantly, we actually created the material, demonstrated its polar and metallic properties, and developed an understanding of how this is happening.”
+
+Ultimately, Eom and colleagues made the polar metal by painstakingly growing thin films of material one atom at a time. Crucially, they grew the substance on top of a supporting lattice with a slightly offset molecular organization. Tightly clamping the growing film to this support skewed the internal arrangement of their material, stabilizing its internal geometry in the asymmetrical orientation necessary to maintain polarity.
+
+Synthesizing and characterizing this first-of-its-kind material required patience and precision. The researchers counted every atom deposited on the surface, as the substance slowly grew one layer at a time. They then used multiple complex optical and electronic and structural measurements to determine its properties (see the figure). These included x-ray crystal truncation rod measurements at the X-ray Science Division (XSD) 12-ID-D and 33-ID-D beamlines of the APS. Additionally, resonant x-ray diffraction and spectroscopy experiments at the Ni K edge were performed at the XSD 4-ID-D and 6-ID-B beamlines of the APS. 
+
+Their approach is an attempt to accelerate the discovery of multifunctional materials with unusual coexisting properties, paving the way to devices with the ability to perform simultaneous electrical, magnetic and optical functions.
+
+“This has been a complex effort, and theoretical and experimental contributions from all collaboration members has been essential. The project would not succeed otherwise,” said Eom.
+
+See: T.H. Kim1, D. Puggioni2, Y. Yuan3, L. Xie4,5, H. Zhou6, N. Campbell1, P.J. Ryan6, Y. Choi6, J.-W. Kim6, J.R. Patzner1, S. Ryu1, J.P. Podkaminer1, J. Irwin1, Y. Ma1, C.J. Fennie1, M.S. Rzchowski1, X.Q. Pan4, V. Gopalan3, J.M. Rondinelli2, and C.B. Eom1*, “Polar metals by geometric design,” Nature (2016). Published online 20 April 2016. DOI: 10.1038/nature17628
+
+Author affiliations: 1University of Wisconsin-Madison, 2Northwestern University, 3Pennsylvania State University, 4University of California, Irvine, 5Nanjing University, 6Argonne National Laboratory, 7Cornell University
+
+Correspondence: *ceom@wisc.edu
+
+This work was supported by the National Science Foundation under Designing Materials to Revolutionize and Engineer our Future grant number DMR-1234096. Transport measurement at the University of Wisconsin–Madison was supported by the U.S. Department of Energy (DOE) Office of Science-Basic Energy Sciences (BES), under award number DE-FG02-06ER46327. The work at Pennsylvania State University was supported by the DOE–BES, under award number DE-SC0012375 (Y.Y., V.G.). The work at Northwestern University was supported by the Army Research Office under award numbers W911NF-15-1-0017 (J.M.R.) and DOE–BES DE-SC0012375 (D.P.). This research used resources of the Advanced Photon Source, a U.S. Department of Energy Office of Science User Facility operated for the U.S. Department of Energy Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.21.2016

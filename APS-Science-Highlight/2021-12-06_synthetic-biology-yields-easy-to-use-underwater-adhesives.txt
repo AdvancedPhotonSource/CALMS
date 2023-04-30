@@ -1,0 +1,55 @@
+Synthetic Biology Yields Easy-to-Use Underwater Adhesives
+
+The Washington University in St. Louis news release by Brandie Jefferson can be read here.
+
+Several marine organisms, such as mussels, secrete adhesive proteins that allow them to stick to different surfaces under sea water. This attractive underwater adhesion property has inspired decades of research to create biomimetic glues for underwater repair or biological tissue repair. However, existing glues often do not have the desirable adhesion, are hard to use underwater, or are not biocompatible for medical applications. Now, there is a solution from synthetic biology. Researchers at the McKelvey School of Engineering at Washington University in St. Louis have developed a method that uses engineered microbes to produce the necessary ingredients for a biocompatible adhesive hydrogel that is as strong as spider silk and as adhesive as mussel foot protein (Mfp), which means it can stick to myriad surfaces underwater. They employed a variety of techniques to study and characterize the material, including wide-angle x-ray diffraction (WAXD) at the BioCARS 14-BM x-ray beamline at the U.S. Department of Energy’s (DOE’s) Advanced Photon Source at Argonne National Laboratory.  Their results were published in the journal ACS Applied Materials & Interfaces.
+
+“Researchers have been trying to develop adhesives that can work underwater, or even just when they are wet, for quite some time,” said Eugene Kim, currently an assistant professor at George Mason University. Kim is first author of the paper and worked on this project as a PhD student in Zhang’s Washington University lab.
+
+The research team also included Young-Shin Jun, professor of energy, environmental and chemical engineering, and Guy Genin, the Harold and Kathleen Faught Professor of Mechanical Engineering.
+
+In 2018, Zhang’s lab showed that Mfp made by engineered bacteria has similar underwater adhesive properties as natural Mfps — and they could make Mfp oligomers that are even stickier.
+
+Even though the microbial Mfp was incredibly sticky, they are difficult to handle underwater as the protein molecules quickly diffuse once added to water.
+
+“When underwater, we had to make sure the adhesive Mfp could remain on a surface during repair,” Kim said.
+
+One common solution to prevent diffusion is to formulate the adhesive Mfp protein into a hydrogel. The hydrogel has to be strong, or ideally, stronger than the adhesive force. However, it is extremely challenging to make a material that is both strong and adhesive as there is commonly a trade-off between these two properties, Kim said. “Many Mfp-inspired adhesives are weak. When you use them to adhere two surfaces underwater, the glue sticks to each of the two surfaces, but breaks apart, akin to separating an Oreo cookie and being left with cream on both sides.”
+
+That’s where spider silk came in. 
+
+For years, Zhang’s lab has also been using synthetic biology to engineer and produce spider silk proteins. Earlier this year, they produced a silk-amyloid hybrid protein that was stronger than steel and tougher than Kevlar. The high strength of this silk-amyloid hybrid—which keeps the material intact—was just what was needed for their adhesive. 
+
+The team integrated the silk-amyloid protein with Mfp and, using a synthetic biology approach, synthesized a tri-hybrid protein that has the benefits of both the strong adhesion of Mfp and the high strength of spider silk. Using the tri-hybrid protein, they prepared adhesive hydrogels.
+
+“We developed a design principle that allowed us to control both cohesion and adhesion of the hydrogel,” Zhang said. “The gel is slightly denser than water so you can easily use it underwater, putting it on or between two surfaces.”
+
+Because the protein-based adhesive can be biocompatible and biodegradable, the lab is particularly excited about its potential applications in tissue repair. This protein, they write in the paper, is particularly attractive for tendon-bone repair, which suffers from a high failure rate from current suture-based strategies.
+
+“Spiders, bacteria, slimy sea creatures, and rotator cuff tears have very little in common,” Jun noted. “It is fascinating that the Zhang lab was able to combine the best parts of the first three and to make the new elastic materials with molecular-scale crystalline structures that can serve as a stronger and flexible adhesive. It would be even cooler when we can use it in medical care for repairing shoulder injuries.”
+
+By controlling bacteria to modify each motif of the protein, including parts from spider silk and mussel foot proteins, they can control the adhesion and strength of the hydrogel, tailoring it to meet the specific requirements for tendon-bone repair and other tissue repair needs.
+
+Genin put the research into the context of humans’ longstanding, complicated relationships with bacteria.
+
+“We’ve gotten bacteria to help heal a wound — for the first time, ever,” Genin said. “Bacteria caused our ancestors to cut their limbs off and now, for the first time, we’ve been able to hijack bacteria to make a material that’s unattainable any other way, with biomedical applications including rotator cuff surgeries that actually make limbs work again.
+
+“This is unbelievably cool.”
+
+See: Eugene Kim, Juya Jeon, Yaguang Zhu, Ethan D. Hoppe, Young-Shin Jun, Guy M. Genin, and Fuzhong Zhang*, “A Biosynthetic Hybrid Spidroin-Amyloid-Mussel Foot Protein for Underwater Adhesion on Diverse Surfaces,” ACS Appl. Mater. Interfaces 13, 48457 (2021). DOI: /10.1021/acsami.1c14182
+
+Author affiliation: Washington University I St. Louis
+
+Correspondence: * fzhang@seas.wustl.edu
+
+The authors thank Dr. Robert Henning at BioCARS for his assistance in conducting the WAXD experiments. This work was supported by the Office of Naval Research under the award number N000141912126 awarded to F.Z., the National Science Foundation Science and Technology Center for Engineering MechanoBiology (CMMI 1548571). Use of BioCARS was supported by the National Institute of General Medical Sciences of the National Institutes of Health under grant number P41 GM118217. The NIGMS-MS facility at Washington University was supported by grant NIH-P41GM103422. This research used resources from the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02- 06CH11357.
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+12.06.2021

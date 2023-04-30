@@ -1,0 +1,35 @@
+The “Missing Evolutionary Link” of a Widely Used Natural Drug Source
+
+The original Scripps Research Institute press release can be read here.
+
+A well-known family of natural compounds, called “terpenoids,” have a curious evolutionary origin. In particular, one question relevant to future drug discovery has puzzled scientists: exactly how does Nature make these molecules?
+
+A study from scientists from the Florida campus of The Scripps Research Institute (TSRI) aided by the U.S. Department of Energy’s Advanced Photon Source (APS) has now filled in a missing piece of the evolutionary puzzle, determining a previously unknown structure of a family of proteins that are key to making these compounds.
+
+Terpenoids, mostly produced by plants, are a family of molecules that encompass some of the most well-known and successful drugs derived from natural sources, for example the cancer treatment Taxol®. In total, there are more than 65,000 known terpenoids.
+
+Natural compounds, such as terpenoids, are typically made by numerous enzymes that stitch the parts together, like building a model from Lego®. In the new study, the team focused on enzymes known as terpene synthases, which are found in both plants and bacteria.
+
+The study, led by TSRI Professor Ben Shen, was recently published online ahead of print by the Journal of the American Chemical Society. In addition to the advance in the structural biology of this class of proteins, the new findings could also affect drug discovery, making engineering of these proteins, and thus the compounds they make, easier in the future.
+
+Using x-ray crystallography—freezing the atomic structure of a protein, then bombarding it with x-rays to create a snapshot of it—carried out at the Structural Biology Center Collaborative Access Team 19-ID-D x-ray beamline at the Argonne APS, Shen and his colleagues developed a detailed structural model that provides a far better understanding of bacterial diterpene synthases and how this class of enzymes work in a natural setting.
+
+“What we found out is that the bacterial version is structurally very similar to the plant version and may support the idea of a gene fusion event that created the bifunctional plant enzymes,” said TSRI Research Associate Jeffrey Rudolf, a co-first author of the paper with TSRI Research Associate Liao-Bin Dong. “We were also able to map which parts of the enzyme are important, giving us an idea of how to engineer the protein for structural diversity.”
+
+Dong added, “This new information not only allows us to engineer structural diversity into both bacterial and plant terpenoids, it also helps us identify new diterpenoids of bacterial origin, which are rare and could lead to exciting new natural compounds with interesting biological activities.”
+
+See: Jeffrey D. Rudolf1, Liao-Bin Dong1, Hongnan Cao2, Catherine Hatzos-Skintges3, Jerzy Osipiuk3, Michael Endres3, Chin-Yuan Chang1, Ming Ma1, Gyorgy Babnigg3, Andrzej Joachimiak3, George N. Phillips, Jr.2, and Ben Shen1*, “Structure of the ent-Copalyl Diphosphate Synthase PtmT2 from Streptomyces platensis CB00739, a Bacterial Type II Diterpene Synthase,” J. Am. Chem. Soc., Article ASAP, (Web August 04, 2016). DOI: 10.1021/jacs.6b04317
+
+Author affiliations: 1The Scripps Research Institute, 2Rice University, 3Argonne National Laboratory
+
+Correspondence: *shenb@scripps.edu
+
+This work is supported in part by the National Institute of General Medical Sciences Protein Structure Initiative Grants GM094585 (AJ) and GM098248 (G.N.P.), and National Institutes of Health Grants GM109456 (G.N.P.) and GM114353 (BS). The use of Structural Biology Center beamlines at the Advanced Photon Source was supported by U.S. Department of Energy (DOE) Office of Biological and Environmental Research grant DE-AC02-06CH11357 (AJ). This research used resources of the APS, a DOE Office of Science user facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02- 06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+08.19.2016

@@ -1,0 +1,35 @@
+Revelations about the Center of the Earth
+
+-Press Release Number: PR-CARNEGIE-05-3 
+
+-Source: Carnegie Institution of Washington 
+
+-Date issued: July 20, 2005 
+
+-Contact: Jung-Fu Lin +1 (925) 424-4157, j.lin@gl.ciw.edu; Viktor Struzhkin, +1 (202) 478-8952, v.struzhkin@gl.ciw.edu; or Steve Jacobsen, +1 (202) 478-7975, s.jacobsen@gl.ciw.edu
+
+Washington, D.C. Recently, seismologists have observed that the speed and direction of seismic waves in Earth’s lower mantle, between 400 and 1,800 miles below the surface, vary tremendously. “I think we may have discovered why the seismic waves travel so inconsistently there,” stated Jung-Fu Lin.* Lin was with the Carnegie Institution’s Geophysical Laboratory at the time of the study and lead author of the paper published in the July 21, issue of Nature. “Until this research, scientists have simplified the effects of iron on mantle materials. It is the most abundant transition metal in the planet and our results are not what scientists have predicted,” he continued. “We may have to reconsider what we think is going in that hidden zone. It’s much more complex than we imagined.”
+
+The crushing pressures in the lower mantle squeeze atoms and electrons so closely together that they interact differently from under normal conditions, even forcing spinning electrons to pair up in orbits. In theory, seismic-wave behavior at those depths may result from the vice-gripping pressure effect on the electron spin-state of iron in lower-mantle materials. Lin’s team performed ultra high-pressure experiments on the most abundant oxide material there, magnesiowüstite (Mg,Fe)O, and found that the changing electron spin states of iron in that mineral drastically affect the elastic properties of magnesiowüstite. The research may explain the complex seismic wave anomalies observed in the lowermost mantle.
+
+As co-author of the study Viktor Struzhkin elaborated: “This is the first study to demonstrate experimentally that the elasticity of magnesiowüstite significantly changes under lower-mantle pressures ranging from over 500,000 to 1 million times the pressure at sea level (1 atmosphere). Magnesiowüstite, containing 20% iron oxide and 80% magnesium oxide, is believed to constitute roughly 20% of the lower mantle by volume. We found that when subjected to pressures between 530,000 and 660,000 atmospheres the iron’s electron spins went from a high-spin state (unpaired) to a low-spin state (spin-paired). While monitoring the spin-state of iron, we also measured the rate-of-change in the volume (density) of magnesiowüstite through the electronic transition. That information enabled us to determine how seismic velocities will vary across the transition.”
+
+“Surprisingly, bulk seismic waves travel about 15% faster once the electrons of iron are spin-paired in the magnesium-iron oxide,” commented co-author Steven Jacobsen. “The measured velocity jump across the transition might, therefore, be detectable seismically in the deep mantle.” The experiments were conducted inside a diamond-anvil pressure cell using the intense X-ray light source at the nation's third-generation synchrotron source, Argonne National Laboratory near Chicago.
+
+“The mysterious lower mantle region can’t be sampled directly. So we have to rely on experimentation and theory. Since what happens in Earth’s interior affects the dynamics of the entire planet, it’s important for us to find out what is causing the unusual behavior of seismic waves in that region,” stated Lin. “Up to now, earth scientists have understood Earth’s interior by only considering pure oxides and silicates. Our results simply point out that iron, the most abundant transition metal throughout the entire Earth, gives rise to very complex properties in that deep region. We look forward to our next experiments to see if we can refine our understanding of what is happening there,” he concluded.
+
+*Dr. Lin joined Lawrence Livermore National Laboratory in early July.
+
+This work and the use of the Advanced Photon Source are supported by the U.S. Department of Energy, Basic Energy Sciences (DOE/BES), Office of Science, and the state of Illinois, under HECA. Work at Carnegie was supported by DOE/BES, DOE/NNSA (CDAC), the National Science Foundation (NSF), the W. M. Keck Foundation, and Carnegie.
+
+The Carnegie Institution of Washington (www.CarnegieInstitution.org) has been a pioneering force in basic scientific research since 1902. It is a private, nonprofit organization with six research departments throughout the U.S. Carnegie scientists are leaders in plant biology, developmental biology, astronomy, materials science, global ecology, and Earth and planetary science.
+
+The original press release can be found here
+
+[Note: Published in [Nature 436, 377-380 (21 July 2005) | doi: 10.1038/nature03825]; Jung-Fu Lin, Viktor V. Struzhkin, Steven D. Jacobsen, Michael Y. Hu, Paul Chow, Jennifer Kung, Haozhe Liu, Ho-kwang Mao and Russell J. Hemley; "Spin transition of iron in magnesiowüstite in the Earth's lower mantle" 
+
+The HP-CAT X-ray facilities at the Advanced Photon Source (Argonne National Laboratory) were used for data collection, and GSECARS provided the use of the Raman system. Argonne National Laboratory is funded by the U.S. Department of Energy's Office of Science. - lightsources.org]
+
+Published Date
+
+07.25.2005

@@ -1,0 +1,45 @@
+Higher Temperature at the Earth’s Core
+
+Exactly how hot is the center of the Earth? Apparently hotter than we had thought. In 2011, researchers from the California Institute of Technology in pursuit of a definitive answer to that question utilized diamond anvil cells to apply enormous pressures — equivalent to pressure at the center of the Earth — to samples of iron, the main element of the Earth’s core. They were able to get a closer estimate of the melting point of iron. At the time, their measurements were unprecedented in detail.
+
+Now, those researchers have taken their investigation one step further by adding infrared laser beams to the mix. They found that iron melts at higher temperatures than what had been reported in the past.
+
+"This is the first time that anyone has combined synchrotron Mössbauer spectroscopy [SMS] and heating lasers to detect melting in compressed samples," said Jennifer Jackson, Professor of Mineral Physics at Caltech, whose group carried out the initial experiments and who is the lead author of a recent paper in the journal Earth and Planetary Science Letters that outlined the team's new method.
+
+The lasers are a source of heat that, when sent through the compressed iron samples, warm them up to the melting point.  And because the Earth's core consists of a solid inner region surrounded by a liquid outer shell, the melting temperature of iron at high pressure provides an important reference point for the temperature distribution within the earth's core.
+
+To develop and perform these experiments, Jackson and her colleagues from the California Institute of Technology along with researchers from the University of Illinois at Urbana-Champaign worked closely with members of the Inelastic X-ray and Nuclear Resonant Scattering Group at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory.
+
+They laser heated an iron sample while applying pressure in a diamond-anvil cell and utilized the SMS technique to monitor the dynamics of the iron atoms in experiments carried out at the X-ray Science Division 3-ID beamline at the APS.
+
+The group was able to pinpoint a melting temperature for iron at a given pressure. The SMS signal is sensitively related to the dynamical behavior of the atoms, and can therefore detect when a group of atoms is in a molten state.
+
+Earlier research by other teams done at similar compressions — around 80 gigapascals —reported a range of possible melting points that topped out around 2600 Kelvin (K). Jackson's latest study indicates an iron melting point at this pressure of approximately 3025 K, suggesting that the Earth's core is likely warmer than previously thought.
+
+Knowing more about the temperature, composition, and behavior of the Earth's core is essential to understanding the dynamics of our planet’s interior, including the processes responsible for maintaining the Earth's magnetic field. While iron makes up roughly 90% of the core, the rest is thought to be nickel and light elements — like silicon, sulfur, or oxygen — that are alloyed, or mixed, with the iron.
+
+The Caltech team has begun experiments on iron alloys at even higher pressures, using their new approach.
+
+"What we're working toward is a very tight constraint on the temperature of the Earth's core," said Jackson. "A number of important geophysical quantities, such as the movement and expansion of materials at the base of the mantle, are dictated by the temperature of the Earth's core."
+
+"Our approach is a very elegant way to look at melting because it takes advantage of the physical principle of recoilless absorption of x-rays by nuclear resonances — the basis of the Mössbauer effect — for which Rudolf Mössbauer was awarded the Nobel Prize in Physics in 1961," said Jackson. "The method is elegant because it uses the dynamics of the atoms instead of the spatial order to determine melting. This particular approach to study melting has not been done at high pressures until now."
+
+These findings not only tell us more about our own planet, but could indicate that other planets with iron-rich cores, like Mercury and Mars, may have warmer internal temperatures as well.
+
+See: Jennifer M. Jackson1, Wolfgang Sturhahn2, Michael Lerche2, Jiyong Zhao2, Thomas S.Toellner2, E. Ercan Alp2, Stanislav V. Sinogeikin3, Jay D. Bass4, Caitlin A. Murphy1, June K. Wicks1, “Melting of compressed iron by monitoring atomic dynamics,” Earth Planet, Sci. Lett. 362, 143 (2013). DOI: /10.1016/j.epsl.2012.11.048
+
+Author affiliations: 1California Institute of Technology, 2Argonne National Laboratory, 3Carnegie Institution of Washington, 4University of Illinois at Urbana-Champaign
+
+Correspondence: jackson@gps.caltech.edu
+
+Sector 3 operations are partially supported by COMPRES (NSF EAR 06-49658). Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under Contract No. DE-AC02-06CH11357.
+
+The original Caltech press release by Katie Neith can be read here.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+01.21.2013

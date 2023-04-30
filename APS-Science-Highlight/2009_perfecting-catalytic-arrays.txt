@@ -1,0 +1,41 @@
+Perfecting Catalytic Arrays
+
+Catalysts speed up chemical reactions and remain largely unchanged themselves at the end of the process. This apparently simple statement harbors a chemical secret: Catalysts are much more complicated than that. Now, work carried out at the Argonne Advanced Photon Source (APS), Center for Nanoscale Materials (CNM), and Electron Microscopy Center (EMC) for Materials Research could improve our understanding of at least one class of industrially important catalyst: metal nanoparticle catalysts.
+
+Chemists can disperse metal nanoparticles on high-surface-area support materials to produce an enormous area of catalyst to interact with the starting materials in a reaction mixture. This allows those materials to come together very readily, to then react and transform into large quantities of product with little waste.
+
+The added advantage of this type of catalyst is that it can reduce the need for energy-intensive pressurization or high temperatures. In other words, it can make a process that would be otherwise environmentally unfriendly into a greener way to manufacture a chemical product. The same principle applies whether that chemical is a pharmaceutical drug, a technological material, or an agrochemical such as a pesticide or herbicide.
+
+Vladimir Komanicky of Safarik University, in Slovakia, worked at Argonne with colleagues there and at the Paul Scherrer Institute in Switzerland to investigate how metal nanoparticle catalysts might themselves be produced more consistently. They reasoned that various factors could further improve these catalysts. For instance, if it were possible to constrain the sizes of the nanoparticles to a tighter range of diameters, then the catalytic process would be more consistent. It might also be possible to optimize the nanoparticle size and shape, as well as the detailed nature of their surface structure, to improve industrial catalytic reactions.
+
+The researchers have used density functional theory (DFT) calculations to guide their studies on arrays of nanoparticles made from platinum. Their calculations allowed them to control the growth of identical platinum nanoparticles, which form arrays on a strontium titanate (STO) substrate, using electron beam lithography at the CNM. The team points out that they can produce three distinct shapes of nanoparticle. These can be produced selectively simply by changing the crystallographic surface features of the strontium titanate substrate on which they form and the physical conditions used to anneal, or fix, the nanoparticles to that surface.
+
+In order to characterize the resulting nanoparticle arrays, the team turned to scanning electron microscopy (SEM) at the EMC and synchrotron x-ray scattering at X-ray Operations and Research/BESSRC beamline 11-ID-D at the APS. They found that they could produce nanoparticles in a small size range from 30 to 40 nm by annealing at a temperature of 1450K under a flow of the relatively unreactive gas, nitrogen.
+
+The team demonstrated that each array on the strontium titanate surface contains 75 million particles in a square lattice, with a spacing of 200 nm between the particles. The x-ray diffraction and SEM measurements show that the particles lock on to the crystal structure of the substrate and are shaped like a cuboctahedron cut in half. The researchers once more used DFT calculations to explain how this particular shape arises during the process and suggest that it is due to the partial “wetting” of platinum on the strontium titanate during annealing.
+
+Having produced such perfect platinum nanoparticle arrays, the team then carried out some bulk tests of their catalytic prowess. Oxygen-reduction electrocatalytic activity was used to test each of the three arrays produced on different crystal surfaces of strontium titanate with good results. This catalytic test, the researchers say, is one of the most important ways of evaluating electrocatalytic activity.
+
+Intriguingly, the crystallographic surface form of the nanoparticles displayed activity opposite to what is seen with conventional non-nanoscopic platinum catalysts traditionally modeled with single-crystal extended surfaces. The one that would conventionally be most reactive turned out to be the least catalytically active form, and vice versa. The researchers suggest that this is due to a “division of labor” effect arising through the close proximity of the facets of the divided cuboctahedrons, which allows oxygen to be adsorbed onto the conventionally less catalytic surface more effectively than it otherwise would be.
+
+Such insights regarding the behavior of catalysts are allowing researchers to lay bare the simplistic notion that catalysts simply speed up reactions and are helping them develop novel materials with a wide range of potential applications.
+
+“This work demonstrates for the first time full control over all possible variables connected with high surface area catalysts, such as size, shape, number, and even the orientation of particles,” said team member Hoydoo You. “From the standpoint of x-ray scientists, control over spatial orientation of particles and their arrangement in a relatively perfect square lattice would allow single nanoparticle scattering experiments to be performed, but with millions of nanoparticles.”
+
+The team concedes that electron beam lithography, being a serial—or sequential—rather than parallel technique, limits how much surface can be covered with catalytic nanoparticles in a given time. However, they also point out that parallel nanofabrication techniques could be developed to overcome such a limitation.
+
+Komanicky adds that, “The APS played a crucial role in the characterization of the arrays produced. Since the coverage of platinum catalyst on the STO substrate is relatively low, use of a high-brilliance x-ray source was necessary for confident characterization of the epitaxial relation between the catalyst particles and the substrate, and detection of misoriented particles.” — David Bradley
+
+Correspondence: *vladimir.komanicky@upjs.sk; **hyou@anl.gov
+
+See: Vladimir Komanicky1,2*, Hakim Iddir2, Kee-Chul Chang2, Andreas Menzel2,3, Goran Karapetrov2, Daniel Hennessy2, Peter Zapol2, and Hoydoo You2**, “Shape-Dependent Activity of Platinum Array Catalyst,” J. Am. Chem. Soc. 131, 5732 (2009). DOI: 10.1021/ja900459w
+
+Author affiliations: 1Safarik University, 2Argonne National Laboratory, 3Paul Scherrer Institut
+
+This work and use of the Advanced Photon Source, the Center for Nanoscale Materials, and the Electron Microscopy Center for Materials Research were supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+08.13.2009

@@ -1,0 +1,33 @@
+Immune System's Fat Problem Solved
+
+Understanding how the human immune system functions helps science develop pharmaceuticals to combat disease. We now have new information on this process, thanks to scientists from Monash University and the University of Melbourne using Industrial Macromolecular Crystallography Association Center for Advancing Therapeutics (IMCA-CAT) beamline 17-ID at the Argonne Advanced Photon Source. Their research, which also helps to unlock a 15-year-old mystery, has been and published in the journal Nature.
+
+The findings could ultimately lead to the development of drugs that strengthen the human immune-system response to microbes and cancer cells.
+
+Typically, when the body is threatened with bacterial or viral infection, molecules called T-cell receptors that are found on the surface of T-cells (white blood cells that play a critical role in the immune response) interact with molecules known as major histocompatibility complex (MHC) that present a protein fragment (called a peptide) from the bacterium or virus, triggering the immune response. This process has been widely studied and leads to the killing of microbes and certain types of cancer cells.
+
+The team of researchers has discovered how T-cell receptors recognize certain fats called glycolipids, which are found in several types of bacteria and some cancer cells, thereby initiating an immune response.
+
+Jamie Rossjohn, of the Department of Biochemistry and Molecular at Biology Monash University and principal investigator on the Nature paper, said the discovery was also relevant for many significant diseases because glyco lipid recognition by T cells has been implicated in allergy, atherosclerosis, graft rejection, and autoimmune diseases such as type-1 diabetes.
+
+"The immune system normally recognizes peptide fragments of viruses or bacteria presented by MHC molecules. But also presented by the immune system are glycolipids that are presented by MHC-like molecules called CD1," Rossjohn said.
+
+James McCluskey, Head of Microbiology and Immunology at the University of Melbourne and a coauthor on the Nature paper, said the work would help our understanding of how a range of different glycolipids are recognized by specialized T cells.
+
+"Until now it was not known how the immune system interacted with molecules that present glycolipids; it's very different to the mechanism underlying peptide-mediated recognition," said coauthor Dale Godfrey, also of the Department of Microbiology and Immunology at the University of Melbourne.
+
+The Melbourne-Monash collaboration studied the interaction between T-cell receptors (in this case, NKT TCR), a member of the CD1 family called CD1d, and a lipid that is being independently investigated for its anti-cancer activity. Using synchrotron radiation the team deduced how T-cell receptors recognize foreign lipids presented by CD1d molecules, a process that had remained unclear for 15 years.
+
+Rossjohn: "Glycolipids are potent regulators of the immune response. By understanding how the immune system responds to them, there's potential to make them more potent by subtly altering their structure."
+
+This work was supported by the Australian Research Council (ARC), the National Health and Medical Research Council of Australia (NHMRC), the Cancer Council of Victoria and a Monash Early Career Research grant (N.A.B.). D.G.P. and D.I.G. receive support from an RO1 grant from the National Institutes of Health and the Association of International Cancer Research. G.S.B. acknowledges support in the form of a Personal Research Chair from J. Bardrick, as a former Lister Institute-Jenner Research Fellow, the Medical Research Council (UK) and the Wellcome Trust; N.A.B. is supported by an NHMRC Peter Doherty Fellowship, D.I.G. by an NHMRC Principal Research Fellowship, and M.C.J.W. by an NHMRC Senior Research Fellowship. J.R. is supported by an ARC Federation Fellowship. IMCA-CAT is operated for the Industrial Macromolecular Crystallography Association through a contract with The Center for Advanced Radiation Sources (CARS) at The University of Chicago. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+See: Natalie A. Borg, Kwok S. Wun, Lars Kjer-Nielsen, Matthew C.J. Wilce, Daniel G. Pellicci, Ruide Koh, Gurdyal S. Besra, Mandvi Bharadwaj, Dale I. Godfrey, James McCluskey, and Jamie Rossjohn, “CD1d–lipid-antigen recognition by the semi-invariant NKT T-cell receptor,” Nature , advance online publication 20 June 2007. DOI:10.1038/nature05907.
+
+Contacts: J. Rossjohn, mailto:jamie.rossjohn@med.monash.edu.au, or J. McClusky, jamesm1@unimelb.edu.au
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC.
+
+Published Date
+
+06.22.2007

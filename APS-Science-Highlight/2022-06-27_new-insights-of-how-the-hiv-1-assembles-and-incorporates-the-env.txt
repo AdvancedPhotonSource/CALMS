@@ -1,0 +1,47 @@
+New Insights of How the HIV-1 Assembles and Incorporates the Env Protein
+
+The original University of Alabama “UAB News” article by Jess Hansen can be read here.
+
+Assembly of HIV-1, which causes AIDS, takes place on the inner plasma membrane leaflet of infected cells, a geometric building process that creates hexamers out of trimers of the viral Gag protein, as guided by Gag’s N-terminal matrix domain.
+
+Yet certain details of that virion assembly have been lacking for four decades. In a study published in the journal Proceedings of the National Academy of Sciences of the United States of America, Jamil Saad, Ph.D., University of Alabama at Birmingham (UAB), and colleagues provide the first atomic view of the matrix lattice, a step that advances the understanding of key mechanisms of viral assembly and viral envelope protein incorporation.
+
+“Our findings may facilitate the development of new therapeutic agents that inhibit HIV-1 assembly, envelope incorporation and ultimately virus production,” said Saad, a professor of microbiology at UAB.
+
+The Gag protein is post-translationally modified, in which a lipid-like myristate group is added to help Gag bind to the plasma membrane. How the myristoylated matrix domain, or myrMA, of Gag assembles into lattice eluded detection until now. 
+
+Techniques with low molecular resolution — such as cryo-electron diffraction and cryo-electron tomography — suggested that the myrMA protein organizes as trimers, and these trimers then undergo higher-order organization to form hexamers of trimers. Saad’s study is consistent with a recent study, which suggested that the myrMA protein undergoes dramatic structural changes to allow the formation of distinct hexameric lattices in immature and mature viral particles. Virus maturation is the last step of the virus replication cycle, as the capsid core forms inside the assembled virus, yielding infectious particles.
+
+The envelope protein of HIV-1, or Env, is a transmembrane protein delivered to the plasma membrane by the cell’s secretory pathway. The bulk of the Env protein extends beyond the membrane, but a tail hangs through the membrane back into the inside of the cell. Genetic and biochemical studies have suggested that incorporation of the viral Env protein into the virus particles also depends on interaction between the myrMA domain and the cytoplasmic tail of Env. In 2017, Saad’s lab solved the high-resolution structure of the cytoplasmic tail of Env, which was the last unknown protein structure of HIV-1.
+
+Env is a key infectivity protein. As a mature HIV-1 virus approaches a target cell, Env attaches to proteins on the outside of the uninfected cell, and then the Env protein snaps like a mousetrap to fuse the viral membrane with the cell membrane. 
+
+The structures described by Saad and UAB colleagues showing molecular details at 2.1- angstroms resolution were determined via x-ray diffraction data collected at the Southeast Regional Collaborative Access Team (SER-CAT) beamline 22-ID at the Advance Photon Source. The structures show that the myristic acid of myrMA plays a key role in stabilizing the lattice structure, so the ability to form crystals of myrMA was important. They achieved this elusive technical challenge by removing 20 amino acids from the end of the 132-amino acid myrMA. Formation of a Gag lattice on the plasma membrane is known to be obligatory for the assembly of immature HIV-1 and Env incorporation. 
+
+Saad and colleagues report that their myrMA lattice is arranged as a hexamer of trimers with a central hole, thought to accommodate the C-terminal tail of Env to promote incorporation into virions. Their myrMA crystals allowed them to observe the attached myr group in the lattice. They found that the myr group of one subunit of myrMA inserts in the hydrophobic cavity of the subunit across the two-fold axis, introducing a “myristoyl swap,” and they also reported other molecular interactions between trimers. The researchers described additional molecular details that help stabilize the hexamer of trimer lattice.
+
+By conducting mutagenesis studies coupled with a nuclear magnetic resonance, or NMR, technique, the researchers provided evidence that a single amino acid substitution in matrix — Leucine-13 or Leucine-31 to a glutamic acid — induced a conformational change in myrMA that may destabilize the trimer–trimer interactions within the lattice. Previous genetic studies indicated that substitution of Leucine-13 or Leucine-31 has adverse effects on Env incorporation. 
+
+Another important discovery in this study is the evidence of an alternating membrane binding mechanism of Gag, which is known to be mediated by interactions of the myrMA domain with phosphatidylinositol 4,5-bisphosphate, or PI(4,5)P2, a lipid exclusively localized on the inner leaflet of the plasma membrane. The UAB researchers showed that PI(4,5)P2 is capable of binding to alternate sites on MA. This is consistent with a novel mechanism for alternating MA–membrane binding to PI(4,5)P2 during assembly of the immature particle and during maturation.
+
+“In conclusion, we provided an atomic view for the HIV-1 myrMA lattice that revealed invaluable structural insights on the arrangement of the myrMA subunits, trimers, the trimer–trimer interface, myr swapping, the impact of MA mutations defective of Env incorporation on the structure of myrMA and consequently lattice formation,” Saad said. “Our data also supported an alternating MA–PI(4,5)P2 binding mechanism during virus assembly and maturation. These findings have filled a major gap in our understanding of the mechanisms of Gag assembly on the plasma membrane and Env incorporation into virus particles.”
+
+© 2022 The University of Alabama at Birmingham
+
+See: Alexandra B. Samal , Todd J. Green , and Jamil S. Saad*, “Atomic view of the HIV-1 matrix lattice; implications on virus assembly and envelope incorporation,” Proc. Natl. Acad. Sci. U.S.A. 119(23), e2200794119 (2022).  DOI: 10.1073/pnas.2200794119
+
+Author affiliation: University of Alabama at Birmingham
+
+Correspondence: *  saad@uab.edu
+
+This work was supported by NIH Grant 9 R01 AI150901-10 (to J.S.S.). SER-CAT is supported by its member institutions, and equipment grants (S10_RR25528, S10_RR028976 and S10_OD027000) from the National Institutes of Health. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science user facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+06.27.2022

@@ -1,0 +1,27 @@
+Demonstration of the Influence of Local Icosahedral Order on the Nucleation Barrier of Metallic Liquids
+
+It has been known for over 50 years that, under carefully controlled conditions, metallic liquids can be cooled far below their equilibrium melting temperatures (undercooled) before crystallization takes place. This suggests that the homogeneous nucleation mechanism responsible for formation of the solid phase must present a large barrier to phase change. To explain this surprising result, F. C. Frank [1] theorized that as metallic liquids cool, (1) local structures develop in the liquid phase containing icosahedral short-range order (ISRO), which is incompatible with the long-range periodicity of the crystalline phase, and that (2) this incompatibility creates a barrier to the formation of the crystalline phase.
+
+Several experimental studies have supported this hypothesis, but have shopped short of providing direct proof of it. It has been found, for example, that an increase in the maximum undercooling before crystallization is associated with decreasing ISRO of the crystallized phases of Al-Cu-Fe, Al-Cu-Co, and Ti-Zr-Ni liquids. Direct observations of ISRO in the undercooled liquids, however, were not made. Similarly, ISRO was recently found in undercooled Ni, Fe, and Zr liquids, but these results did not establish a link between the ISRO and the nucleation barrier for the solid phase.
+
+The first direct experimental confirmation of Frank's hypothesis took place at MU-CAT's 6-ID-D beamline at the APS [2]. Using the recently developed Beamline Electrostatic Levitation technique, which allows in situ x-ray diffraction experiments on electrostatically levitated droplets (Fig. 1), researchers from Washington University, NASA Marshall Space Flight Center, and MU-CAT studied the undercooling behavior of Ti39.5Zr39.5Ni21. Electrostatic levitation in vacuum (~10-7 Torr) was used to create a containerless environment, which was needed to avoid the masking effects of heterogeneous nucleation. The levitated droplets were approximately equal to 2.5 mm in diameter and were positively charged by induction. The charge was maintained through the photoelectric effect by using intense ultraviolet light. Samples were melted with a fiber-coupled diode laser and then allowed to drop in temperature through free radiation cooling. Optical pyrometers measured sample temperature, and high-energy x-rays (125 keV, 0.099 Å) provided a scattering range of 0 [equal to or less than] q [equal to or less than] 9 Å-1.
+
+The researchers measured an increasing ISRO in the Ti-Zr-Ni liquid with undercooling, finding that this increasing ISRO in the liquid phase is responsible for the nucleation of a metastable Ti-Zr-Ni icosahedral quasicrystal phase (i phase) instead of the stable polytetrahedral C14 Laves phase, which also tends to nucleate easily over a wide composition range. Two recalescence events were observed (see Fig. 2): in the first, the temperature rose from 953K to 1058K, followed within a few seconds by a second rise in temperature to 1083K. In situ x-ray diffraction analysis showed that the metastable i phase nucleates and grows during the primary recalescence from 953K, releasing evolved heat of fusion, which causes sample temperature to rise. This i phase subsequently transforms within a few seconds to the stable C14 Laves phase during the second recalescence event from 1058 to 1083K, which is the equilibrium solidus temperature.
+
+In summary, the researchers demonstrated an enhanced icosahedral short-range order with undercooling in Ti-Zr-Ni liquids that decreases the barrier for the nucleation of a metastable i phase to below that for the formation of stable polytetrahedral crystal phases. In this way, the data demonstrate the connection between the local order of the liquid and the nucleation barrier. This verifies Frank's hypothesis that the origin of the barrier to nucleation of crystallographic phases is the formation of local icosahedral order in the liquid.
+
+The data demonstrate that local order in the liquid phase strongly influences the nucleation of specific phases even in metallic liquids, in which atomic interactions are weak and relatively isotropic. This indicates that the influence of preexisting local order in the liquid is an important ingredient in the liquid/solid phase transition that should be considered in theoretical treatments of nucleation.
+
+References
+
+[1] F.C. Frank, Proc. R. Soc. London A 215, 43 (1952).
+
+[2] K.F. Kelton, G.W. Lee, A.K. Gangopadhyay, R.W. Hyers, T.J. Rathz, J.R. Rogers, M.B. Robinson, and D.S. Robinson, Phys. Rev. Lett. 90(19), 195504-1 to 195504-4 (16 May 2003).
+
+Reference [2] is the source for this article. The work in this paper was the basis for the cover story of the July 2003 issue of Physics Today.
+
+The work at Washington University was supported by the National Aeronautics and Space Administration under Contract No. NCC 8-85 and the National Science Foundation under Grant No. DMR 00-72787. Use of the Advanced Photon Source was supported by the U.S. DOE, Basic Energy Sciences, Office of Science, under Contract No. W-31-109-Eng-38, and MU-CAT by Contract No.W-7405-Eng-82 through the Ames Laboratory.
+
+Published Date
+
+09.26.2003

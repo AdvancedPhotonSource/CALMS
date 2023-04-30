@@ -1,0 +1,31 @@
+Structure of new DNA enzyme family member found
+
+ITHACA, N.Y. -- Cornell University researchers, who are trying to understand how proteins evolve and function by looking at their structural features, have uncovered the crystal structure of a protein involved in making the building blocks of DNA correctly.
+
+The protein is AIRs kinase, and to the researchers' surprise, its shape is similar to other members of the riboside kinase family, proteins that are important in making DNA and RNA, the molecules that make up genes. As a result, the research group now has nine members of the riboside kinase family that are thought to have evolved from a common protein ancestor.
+
+Writing in a recent issue of the journal Structure, Steven Ealick, professor of chemistry and chemical biology, and his graduate student Yan Zhang report that revealing the structure of AIRs kinase is another step in deciphering what proteins look like, a major goal of the National Institutes of Health, which funds the Ealick research group's work.
+
+"Often, two proteins with the same function have no sequence similarity," says Ealick, whose research group works with crystallized proteins, the building blocks of all living organisms, and has solved 50 protein structures over the past 20 years. "From knowing the genetic sequence alone, we wouldn't necessarily guess that two proteins play a similar role in an organism."
+
+Zhang took just two months of "trial and error" -- an unusually short time -- to get the AIRs kinase protein to crystallize. Then, using the Northeastern Collaborative Access Team (NE-CAT) beamline at the Advanced Photon Source at Argonne National Laboratory and the Cornell High Energy Synchrotron Source, two of only five sources of high-energy X-ray beams, she obtained the protein's "optical transform," the intermediate stage between the crystal and the ultimate model of the structure.
+
+Ealick explains, "Optical transform is what happens when you scatter light from a microscope onto a specimen, but until you have an objective lens that refocuses that light you can't actually see an image." Structural protein chemists don't have the equivalent of a microscope's objective lens, so they "refocus" the image using computers.When the Ealick group compared the AIRs kinase protein to other known protein structures, they found that the shape was similar to other members of riboside kinase protein family. Ealick explains that even though the family members don't have appreciable sequence similarity, they all contain three invariable amino acids. The similar shapes of the proteins position these three important pieces at the right place in the protein, and as a result, they all have a similar function -- the addition of a phosphate group to a DNA or RNA precursor.
+
+"When we saw how very similar these proteins look, we began to ask whether there might be a common ancestor or whether proteins might evolve using similar kinds of rules that whole organisms use to evolve," Ealick reasons. In fact, his group is finding numerous examples of this.
+
+Says Ealick, "I view this like the drawing you often see in textbooks on human evolution that first shows a primitive chimpanzee, and then you go through various morphological changes until you finally get to modern man. You can see the same sort of trends in the evolution of protein shapes."
+
+The primitive protein began as a general kinase, playing lots of roles in the cell, he says. Eventually, it evolved and diverged into a group of different proteins, each of which could focus on a specialized task.
+
+Ealick's group now hopes to design a broad specificity riboside kinase as a laboratory tool for testing anticancer drugs and other pharmaceuticals. The group also is working to get the structure of other riboside kinase family members in order to be able to predict the proteins' function.
+
+This release was reported and written by Cornell News Service science writer intern Sarah Davidson.
+
+Related article:
+
+Crystal Structure of an Aminoimidazole Riboside Kinase from Salmonella enterica: Implications for the Evolution of the Ribokinase Superfamily.  Structure, Volume 12, Issue  10, Pages  1809- 1821.  Zhang.  (doi:10.1016/j.str.2004.07.020)
+
+Published Date
+
+11.05.2004

@@ -1,0 +1,27 @@
+Sharper Focusing of Hard X-rays
+
+FROM: Physics News Update
+
+Number 773 #1, April 12, 2006, by Phil Schewe and Ben Stein
+
+Note: This text has been slightly modified from the original.
+
+Sharper focusing of hard x-rays has been achieved with a device developed at Argonne National Lab.
+
+Because of their high energy, x-rays are hard to focus: they can be reflected from a surface but only at a glancing angle (less than a tenth of a degree); they can be refracted but the index of refraction is very close to 1, so that making efficient lenses becomes a problem; and they can be diffracted, but the relatively thick, variable pitch grating required for focusing is tricky to achieve.
+
+The Argonne device is of the diffraction type, and it consists of a stack of alternating layers of metal and silicon, made by depositing progressively thicker layers. When the x-rays fall on such a structure, nearly edge-on, what they see is a grating (called a linear zone plate) consisting of a sort of bar-code pattern.
+
+The Argonne device succeeds so well in focusing x-rays because the position of the zones can be controlled to within nanometer tolerances through the deposition process, and the depth of the zones that the x-rays experience can be made arbitrarily long (many microns long) by merely cutting a thicker section of the multilayer wafer. In tests so far, one of these zone plates, very slightly tilted to the x-rays coming out of a synchrotron source, has focused 20-kiloelectronvolt x-rays to a line only 30 nanometer wide, better than previously possible.
+
+According to Argonne researcher Brian Stephenson, an ideal version of this kind of x-ray lens, which they call a Multilayer Laue Lens (MLL), should be able to focus x-rays to a spot of 1 nanometer or less. The likely use for a better x-ray lens is in scanning-probe microscopy (by scanning the beam across a sample).
+
+See: H. C. Kang, J. Maser, G. B. Stephenson, C. Liu, R. Conley, A. T. Macrander, and S. Vogt, “Nanometer Linear Focusing of Hard X Rays by a Multilayer Laue Lens,” Phys. Rev. Lett. 96, 127401 (2006). Contact Brian Stephenson, stephenson@anl.gov, 630-252-3214
+
+Credit: American Institute of Physics.
+
+Work supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. W-31-109-ENG-38.
+
+Published Date
+
+04.14.2006

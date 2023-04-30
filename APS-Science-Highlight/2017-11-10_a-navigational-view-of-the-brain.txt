@@ -1,0 +1,61 @@
+A Navigational View of the Brain
+
+The original Georgia Tech press release by Ben Brumfield can be read here.
+
+If brain imaging could be compared to Google Earth, neuroscientists would already have a pretty good “satellite view’ of the brain, and a great “street view” of neuron details. But navigating how the brain computes is arguably where the action is, and neuroscience's “navigational map view” has been a bit meager. Now, a research team led by Eva Dyer, a Georgia Tech computational neuroscientist and electrical engineer, has imaged brains at that map-like or "meso" scale using the brightest high-energy x-ray beams in the country at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory. The imaging scale gives an overview of the intercellular landscape of the brain at a level relevant to small neural networks, which are at the core of the brain's ability to compute.
+
+Dyer, who recently joined the Georgia Institute of Technology and Emory University, also studies how the brain computes via its signaling networks, and this imaging technique could someday open new windows onto how they work. She co-led this new study with Bobby Kasthuri of Argonne and The University of Chicago.
+
+The X-ray Science Division 2-BM x-ray beamline at the APS, an Office of Science user facility, provided x-ray tomography data that allowed the researchers to image particularly thick sections of the brains of mice, which afforded them views into intact neural areas much larger than are customary in microscope imaging. The technique also revealed capillary grids interlacing brain tissues. They dominated the images, with cell bodies of brain cells evenly speckling capillaries like pebbles in a steel wool sponge.
+
+"Our brain cells are embedded in this sea of vasculature," said Dyer, an assistant professor at Georgia Tech and Emory University.
+
+Electron microscopy already captures neuronal details in impressive clarity. Functional magnetic resonance imaging (fMRI) makes great visuals of brain structures and broad neural signaling. So, why do researchers even need mesoscale imaging?
+
+"FMRIs image at a high level, and with many microscopes, you're zoomed in too far to recognize the forest for the trees," Dyer said. "Though you can see a lot with them, you also can miss a lot."
+
+"If you look at brain signaling on the level of individual neurons, it looks very mysterious, but if you take a step back and observe the activity of a population of hundreds of neurons instead, you might see simpler, clearer patterns that intuitively make more sense."
+
+In an earlier study, Dyer discovered that hand motion directions corresponded with reliable neural signaling patterns in the brain's motor neocortex. The signals did not occur across single neurons or a few dozen but instead across groups of hundreds of neurons. Mesoscale imaging reveals a spatial view on that same order of hundreds of neurons.
+
+The researchers in this study, from Johns Hopkins University, The University of Chicago, Northwestern University, Argonne National Laboratory, the Rehabilitation Institute of Chicago, and the University of Pennsylvania in addition to Georgia Tech, have also been able to couple their new meso-level imaging technique with extremely detailed electron microscopy. And that has the potential to take them closer to a kind of Google Earth for the brain by combining mesoscale or map-like views with zoomed-in or street-like views.
+
+"We have begun doing x-ray tomography on large brain tissues, then we've gone deeper into specific tiny regions of interest in the same tissue with an electron microscope to see the full connectome there," Dyer said. The connectome refers to the total scheme of the hundreds of individual connections between neurons.
+
+The researchers hope to someday be able to switch from a mesoscale view to close-up view, a bit like Google Earth.
+
+"I think what we're going to need in neuroscience is this ability to traverse across different scales," Dyer said. She envisions a future multi-scale imaging technology that is useful in understanding neurological diseases.
+
+"We want to be able to tell somebody researching a disease what the underlying anatomy of their lab sample is in an automated way," she said. "You could navigate using this mesoscale view to get the context of where the damage is."
+
+Then the user could zoom in on a blocked artery or destroyed tissue analogous to the way satellite imagery can zoom in on traffic jams to see what's causing them.
+
+Like a navigational map, the final images in the study were colorful, clear, mesoscale graphic depictions. They were based on the x-ray tomography, but a lot was involved in getting from the x-ray to the image.
+
+First, the thick section of brain rotated in the high-energy x-ray beam, which was transformed into an image analogous to the output of a CT scanner. Then structures and characteristics were identified by humans and algorithms before they were computed into three-dimensional, color-coded vasculature and cell bodies.
+
+The details of individual cells were very basic. In neurons, often the nuclei were visible in the X-ray tomography image, and axons wrapped in myelin (white matter) sometimes appeared as well.
+
+The new mesoscale imaging of brain samples also has pragmatic advantages.
+
+It may be possible to examine minuscule brain regions piece by piece with electron microscopes then compute them together into a complete image of the brain, but it's hardly practical. "Producing a three-dimensional map of just a cubic millimeter of the brain with an electron microscope requires processing petabytes of data," Dyer said.
+
+By contrast, the researchers need 100 gigabytes of data to compute a one-cubic-millimeter image of brain tissue using mesoscale x-ray tomography scans of thicker brain sections. But the researchers' goal is to not have to slice the tissue at all.
+
+"Eventually, we want to be able to image whole brains, as is, with this method to see the entirety of their neural networks and other structures."
+
+See: Eva L. Dyer1*, William Gray Roncal2, Judy A. Prasad3, Hugo L. Fernandes4,5, Doga Gürsoy6, Vincent De Andrade6, Kamel Fezzaa6, Xianghui Xiao6, Joshua T. Vogelstein2, Chris Jacobsen4,6, Konrad P. Körding7, and Narayanan Kasthuri3,6**, “Quantifying Mesoscale Neuroanatomy Using X-Ray Microtomography,” eNeuro 4(5), ENEURO.0195-17.2017 (25 September 2017). DOI: https://doi.org/10.1523/ENEURO.0195-17.2017
+
+Author affiliations: 1Georgia Institute of Technology and Emory University, 2The Johns Hopkins University, 3The University of Chicago, 4Northwestern University, 5Rehabilitation Institute of Chicago, 6Argonne National Laboratory, 7University of Pennsylvania
+
+Correspondence: *evadyer@gatech.edu, **bobbykasthuri@anl.gov
+
+Support was provided by NIH U01MH109100 (E.L.D., H.L.F., D.G., X.X., C.J., N.K., and K.P.K.), the IARPA MICRONS project under IARPA Contract D16PC0002 (N.K.), an educational Fellowship from the Johns Hopkins University Applied Physics Laboratory (W.G.R.), the Defense Advanced Research Projects Agency (DARPA) SIMPLEX program through SPAWAR contract N66001-15-C-4041, and DARPA GRAPHS N66001-14-1-4028. This work was performed, in part, at the Center for Nanoscale Materials, a U.S. Department of Energy (DOE) Office of Science User Facility, and supported by the U.S. DOE Office of Science, under Contract No. DE-AC02-06CH11357. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02- 06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.10.2017

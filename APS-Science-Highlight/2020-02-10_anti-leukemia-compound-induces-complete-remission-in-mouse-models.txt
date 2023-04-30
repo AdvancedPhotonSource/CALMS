@@ -1,0 +1,49 @@
+Anti-Leukemia Compound Induces Complete Remission in Mouse Models
+
+The original University of Michigan Health Lab press release by Ian Demsky can be read here.
+
+An anti-cancer compound developed at the University of Michigan (U-M) has shown “profound” activity in mouse models against two subtypes of leukemia — representing up to 40% of patients — a U-M research team reports in the Journal of Clinical Investigation. Researchers from U-M and colleagues from several institutions used high-brightness x-rays from the U.S. Department of Energy’s Advanced Photon Source (APS) to obtain important data that furthered this research.
+
+The compound, dubbed “MI-3454,” inhibits the protein-protein interaction between menin and Mixed Lineage Leukemia 1 (MLL1) protein. It induced complete remission in mice transplanted with patient-derived cells containing MLL1 genes with translocations. These genetic rearrangements are found in 5% to 10% of adult acute leukemia patients and in 80% of acute lymphoblastic leukemias in infants.
+
+The compound also led to a significant reduction of lymphoblastic cells in models of leukemia with mutations in the NPM1 gene, which is found in about 30% of acute myeloid leukemia cases.
+
+“New treatments are badly needed,” said Jolanta Grembecka, associate professor of pathology at Michigan Medicine and co-director of the developmental therapeutics program at the U-M Rogel Cancer Center, one of the study’s two senior authors. “Only about one third of patients with rearrangements of their MLL1 gene survive five years.” In addition to U-M researchers, co-authors of the study are from Wellspring Biosciences, Inc., Memorial Sloan Kettering Cancer Center, the University of Pennsylvania, Saint Jude Children’s Hospital, Weill Cornell Medicine, and Kura Oncology, Inc.
+
+The structurally related compound KO-539 — discovered by Kura Oncology in collaboration with U-M researchers following a 2014 licensing agreement — is being used in a Phase I, dose-determining clinical trial in acute myeloid leukemia patients. The U-M Rogel Cancer Center is participating in the clinical trial, which began enrolling patients in fall of 2019.
+
+“It’s extremely gratifying to see research we began here a decade ago, when I started at U-M as an assistant professor, taking tangible steps toward addressing this unmet medical need for leukemia patients,” Grembecka said.
+
+Importantly, the compound was well tolerated by the mice and didn’t interfere with their ability to make new blood cells, the researchers reported.
+
+MI-3454 builds on the research team’s previous work. Starting with the crystal structure of an earlier compound, the team was able to optimize its properties.
+
+“This second-generation compound has the qualities that one would ideally be looking for in a drug candidate — subnanomolar potency, very selective, good oral bioavailability, low toxicity,” said co-senior author Tomasz Cierpicki, associate professor of biophysics and pathology at Michigan Medicine, who led the crystallography work that was carried out at the Life Sciences Collaborative Access Team (LS-CAT) 21-ID x-ray beamline at the APS. “Its ability to inhibit the protein-protein interaction between menin and MLL1 fusion proteins is a 60-fold improvement over our earlier compound.” (The APS is an Office of Science user facility at Argonne National Laboratory.)
+
+The compound was able to cure what is otherwise a terminal disease in a mouse model seeded with patient derived tumors featuring MLL1 rearrangements.
+
+“Because they maintain the genetic profiles and features of the original patient tumors, these models give us our best picture of how the compound might perform in patients,” Grembecka said.
+
+In these experiments, control mice lived for a median of 42 days. The mice who received MI-3454 for 20 days showed no signs of leukemia even several months after treatment was halted. They had no detectable leukemic blasts in their blood, bone marrow and spleen, the team reported. (In leukemia, these cells fill up the bone marrow and disrupt normal blood production.) In a mouse model of pediatric leukemia, the compound increased survival from 21 days to 50 days — an increase of nearly 140%. And in a models with NPM1 mutations, mice treated with the compound had greatly reduced leukemic blasts with continued treatment, though they rose again when treatment was halted. After approximately two months, mice treated with MI-3454 saw leukemic blasts comprising less than 3% of the cells in their bone marrow; for control mice it was 70%.
+
+Worth noting, Cierpicki said, is that these studies evaluated the compound on its own. The researchers eventually hope to evaluate it combination with the standard treatments.
+
+In collaboration with other research groups at U-M, the compound is also being evaluated for possible use in treating other types of cancer, including prostate cancer and Ewing sarcoma.
+
+See: Szymon Klossowski1, Hongzhi Miao1, Katarzyna Kempinska1, Tao Wu2, Trupta Purohit1, EunGi Kim1, Brian M. Linhares1, Dong Chen1, Gloria Jih1, Eric Perkey1, Huang Huang1, Miao He1, Bo Wen1, Yi Wang2, Ke Yu2, Stanley Chun-Wei Lee3, Gwenn Danet-Desnoyers4, Winifred Trotman4, Malathi Kandarpa1, Anitria Cotton5, Omar Abdel-Wahab3, Hongwei Lei1, Yali Dou1, Monica Guzman6, Luke Peterson1, Tanja Gruber5, Sarah Choi1, Duxin Sun1, Pingda Ren2,10, Lian-Sheng Li2, Yi Liu2, Francis Burrows7, Ivan Maillard1,4, Tomasz Cierpicki1**, and Jolanta Grembecka1*, “Menin inhibitor MI-3454 induces remission in MLL1-rearranged and NPM1-mutated  models of leukemia,” J. Clin. Invest. 30(2), 981 (February 2020). DOI: 10.1172/JCI129126
+
+Author affiliations: 1University of Michigan, 2Wellspring Biosciences, Inc., 3Memorial Sloan Kettering Cancer Center, 4University of Pennsylvania, 5Saint Jude Children’s Hospital, 6Weill Cornell Medicine, 7Kura Oncology, Inc.
+
+Correspondence: *jolantag@umich.edu, **tomaszc@umich.edu
+
+This work was funded by Kura Oncology, Inc.; National Institutes of Health R01 grants (1R01CA160467 and 1R01CA201204 to J..G and 1R01CA207272 to T.C.), Leukemia & Lymphoma Society (LLS) Scholar award (number 1215-14) to J.G., LLS Scholar to T.C., and an American Cancer Society Mission Boost grant (MBG-19-095-01-COUN) to J.G. G.J. is an LLS Fellow. Use of LS-CAT was supported by the Michigan Economic Development Corporation and the Michigan Technology Tri-Corridor for the support of this research program (grant 085P1000817). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+02.10.2020

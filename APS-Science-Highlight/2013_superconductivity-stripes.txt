@@ -1,0 +1,37 @@
+Superconductivity with Stripes
+
+The physics of low-temperature superconductivity is fairly well understood, but the ultimate goal of achieving the phenomenon at much higher temperatures remains tantalizingly elusive. The most promising high-temperature superconductor candidates are generally considered to be cuprates with perovskite structures, but it is unclear what mechanisms allow these materials to become superconducting — and how the superconducting temperatures (Tc) can be increased. By examining the stripe-ordering in La1.875Ba0.125CuO4 (LBCO) under high pressure at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS), a team of researchers from Argonne, Washington University in St. Louis, and Brookhaven National Laboratory (BNL) probed those questions, specifically the relationship between stripe ordering and superconductivity. Their work reveals the interplay between stripes, lattice structure, and the superconductivity of LBCO in unprecedented detail and is an important step in understanding high-Tc superconductivity and eventually achieving practical room-temperature superconductors.
+
+Understanding the behavior of the high-Tc superconductors is challenging in part due to strong correlations between electronic charges and spins. In addition to superconducting “pairing” correlations, these charges and spins can develop myriad order states and phases, dependent upon chemical doping. For the 0.125 barium concentration (1/8 hole doping) of this particular compound, static “stripe” order is observed where hole charges segregate between spin-order regions in a periodic pattern. The static stripe order is reinforced by the tilt pattern of CuO6 octahedra in this material’s low-temperature tetragonal (LTT) structure. Experimental team leader Daniel Haskel said, “This static stripe ordering at ambient pressure appears to strongly compete with three-dimensional [3-D] superconductivity.”
+
+Haskel and his colleagues investigated what happens when the ground state of LBCO1/8 is manipulated with applied pressure, which is known to enhance 3-D superconductivity. Previous work by the BNL co-authors had shown that charge order was able to survive the disappearance of long-range CuO6 octahedral LTT tilting with the shift to a high-temperature tetragonal (HTT) phase under pressure, and that this charge order coexisted with a marginally enhanced superconducting phase at 2 GPa. Limitations in pressure range prevented suppression of the charge-order phase.
+
+The current experiments extended the pressure range farther into the HTT phase, where diffraction measurements utilizing high-energy x-ray beams at the X-ray Science Division 4-ID-D beamline of the APS revealed that static charge order completely disappears at 3.6 GPa. With the charge ordering no longer pinned to the lattice structure, superconductivity should again be unhindered. But the experiment team found otherwise, with superconductivity remaining suppressed well below optimal values.
+
+To address this conundrum, high-pressure polarized XAFS (x-ray absorption fine structure) measurements were carried out, also at beamline 4-ID-D, in which the electric field of synchrotron x-rays was oriented along selected crystalline axes. The technique, which allows probing atomic correlations at very short time and length scales, revealed that short-range LTT tilting remains present in the high-pressure HTT phase.
+
+“Since LTT tilts pin stripes, and since superconductivity remained suppressed, the natural conclusion is that the local LTT tilts are a manifestation of the presence of dynamic stripe correlations sufficiently strong to limit 3-D superconductivity," said Haskel.
+
+The extreme sensitivity and fine resolution of the polarized XAFS technique made it possible to uncover these persistent short-range LTT tilts, invisible to longer-range diffraction probes. Lead author Gilberto Fabbris, a senior graduate student doing doctoral thesis work at both Argonne and Washington University in St. Louis, said, “The challenges of obtaining high-quality polarized XAFS from a single crystal in the diamond anvil cell are daunting. I am pleased that we were able to demonstrate this capability for the first time.”
+
+The next step involves examining different dopings, pressure ranges, and phases to firmly establish the correlation of stripe order and high-temperature superconductivity. "The interplay between stripe order and superconductivity remains a matter of debate,” Fabbris said. “The present results provide indirect evidence that at high pressure, the two may be present simultaneously in a dynamic phase with intertwined order parameters.”
+
+This work is an important step in the quest to understand the mechanism of high-Tc superconductivity and eventually achieving practical room-temperature superconductors.
+
+— Mark Wolverton
+
+See: G. Fabbris1,2, M. Hücker3, G.D. Gu3, J.M. Tranquada3, and D. Haskel1*, “Local structure, stripe pinning, and superconductivity in La1.875Ba0.125CuO4 at high pressure,” Phys. Rev. B 88, 060507(R) (2013). DOI: 10.1103/PhysRevB.88.060507
+
+Author affiliations: 1Advanced Argonne National Laboratory, 2Washington University in St. Louis, 3Brookhaven National Laboratory
+
+Correspondence: *haskel@aps.anl.gov
+
+Work at Argonne National Laboratory and use of the Advanced Photon Source at Argonne was supported by the U.S. Department of Energy Office of Science under contract DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+10.18.2013

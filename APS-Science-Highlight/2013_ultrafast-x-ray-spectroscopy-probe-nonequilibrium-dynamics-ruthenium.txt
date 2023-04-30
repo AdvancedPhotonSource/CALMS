@@ -1,0 +1,35 @@
+Ultrafast X-Ray Spectroscopy as a Probe of Nonequilibrium Dynamics in Ruthenium Complexes
+
+Exciting the atoms or molecules of a substance via the use of visible light, or photoexcitation, can play a significant role in a range of energy-conversion processes, such as natural photosynthesis (oxygen from water) and manmade solar cells (electricity from sunlight). But a better understanding of the photoexcitation process is necessary in order to fully exploit this potential resource. Researchers from Argonne National Laboratory and Northern Illinois University have shown that the ultrafast x-ray spectroscopy technique employed at a high-brightness x-ray light source such as the Argonne Advanced Photon Source can produce valuable new information about the physics underlying photoexcitation.
+
+The beginning of the 21st century has seen an exciting increase in our ability to control materials at the quantum level, which could have an enormous impact on a wide array of critical technologies. Many phenomena related to quantum control, such as catalysis, photochemistry, photosynthesis, photoinduced effects, and device physics require an understanding of the nonequilibrium dynamics underlying these physical processes. In order to characterize the dynamics in quantum systems, scientists are developing an extensive suite of experimental tools that have a goal of measuring the response of the structural and electronic properties of a material to an external stimulus, often an optical or terahertz pulse.
+
+Typical examples of photoinduced phenomena are insulator-to-metal transitions, magnetization and demagnetization, spin-crossover transitions, and melting of charge and orbital order. The typical timescale of the dynamics is of the order of picoseconds (1/1,000,000,000,000 of a second) down to femtoseconds (1/1,000,000,000,000,000 of a second).
+
+Spin crossover is an intriguing phenomenon that has puzzled many for several decades. Depending on the ligands surrounding the transition metal ion, the spin configuration of the ion can change. For small couplings, the Coulomb interactions on the transition metal will create a local spin moment. For large couplings, the magnetic moment is quenched by the ligand fields.
+
+In a wide variety of transition-metal (such as iron) complexes, laser excitation creates a photoinduced excited state that decays on the order of tens to hundreds of femtoseconds into a state with a different spin and a significant change in transition metal-ligand distance. These metastable states can have lifetimes ranging from nanoseconds to days.
+
+An explanation for the ultrafast photo-excited electron dynamics in low-spin divalent ruthenium organic complexes was recently the cover article in Chemical Physics. The authors, Jun Chang, Arthur Fedro, and Michel van Veenendaal are scientists working in the Theory and Software Group in the Argonne X-ray Science Division at the U.S. Department of Energy Office of Science Advanced Photon Source and the Department of Physics at Northern Illinois University (NIU).
+
+The experimentally-observed singlet-to-triplet decay in the metal-to-ligand charge-transfer (MLCT) states contradicts the expectation that the system should oscillate between the singlet and triplet states in the presence of a large spin-orbit coupling and the absence of a significance change in metal-ligand bond length. This dilemma is solved with a novel quantum decay mechanism that causes a singlet-to-triplet decay in about 300 fs. The decay is mediated by the triplet metal-centered state (MC) state even though there is no direct coupling between the singlet MLCT and triplet MC states. The coupling to the vibronic degrees of freedom causes dephasing effects in the wavefunction, which are crucial to making the decay process irreversible.
+
+These changes also have a large impact on x-ray spectroscopy. Dynamic x-ray absorption spectra were calculated for the first several hundreds of femtoseconds. Dramatic changes in the spectral line shape are observed that can be directly related to nonequililibrium dynamics. The calculations show a transient crystal-field collapse, dynamic broadenings, and changes in the branching ratio. The authors demonstrate that ultrafast x-ray spectroscopy is a suitable probe to deliver detailed new insights or discriminate between competing physical scenarios.
+
+“The calculation clearly show that x-ray spectroscopy can be a valuable tool in unraveling the nonequilibrium decay paths that we want to study with, for example, femtosecond pulses at x-ray free-electron lasers, and picosecond pulses at conventional synchrotrons, such as the Advanced Photon Source,” said the APS Theory and Software Group Leader and NIU Presidential Research Professor Michel van Veenendaal.
+
+See: J. Chang, A. J. Fedro, and M. van Veenendaal*, “Ultrafast X-ray spectroscopy as a probe of nonequilibrium dynamics in ruthenium complexes,” Chem. Phys. 407, 65 (2012).
+
+Author affiliations: Northern Illinois University and Argonne National Laboratory
+
+Correspondence: *michel@aps.anl.gov
+
+This work was supported by the U.S. Department of Energy (DOE) Basic Energy Sciences, Division of Materials Sciences and Engineering, under Award No. DE-FG02-03ER46097, the RIXS collaboration as part of the Computational Materials Science Network under Grant DE-FG02-08ER46540, and NIU’s Institute for Nanoscience, Engineering, and Technology. Work at Argonne National Laboratory was supported by the U.S. DOE Office of Science Basic Energy Sciences Program, under contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+02.08.2013

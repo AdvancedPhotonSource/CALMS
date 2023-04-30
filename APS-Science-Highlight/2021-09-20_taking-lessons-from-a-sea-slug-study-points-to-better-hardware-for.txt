@@ -1,0 +1,51 @@
+Taking Lessons from a Sea Slug, Study Points to Better Hardware for Artificial Intelligence
+
+The original Purdue University press release by Kayla Wiles can be read here (© 2015-20 Purdue University).
+
+For artificial intelligence (AI) to get any smarter, it needs first to be as intelligent as one of the simplest creatures in the animal kingdom: the sea slug. A new study by researchers who carried out experiments at the U.S. Department of Energy’s Advanced Photon Source (APS) has found that a material can mimic the sea slug’s most essential intelligence features. The discovery is a step toward building hardware that could help make AI more efficient and reliable for technology ranging from self-driving cars and surgical robots to social media algorithms.
+
+The study, published in the Proceedings of the National Academy of Sciences of the United States of America, was conducted by a team of researchers from Purdue University, Rutgers University, the University of Georgia, and Argonne National Laboratory.
+
+“Through studying sea slugs, neuroscientists discovered the hallmarks of intelligence that are fundamental to any organism’s survival,” said Shriram Ramanathan, a Purdue professor of materials engineering. “We want to take advantage of that mature intelligence in animals to accelerate the development of AI.”
+
+Two main signs of intelligence that neuroscientists have learned from sea slugs are habituation and sensitization. Habituation is getting used to a stimulus over time, such as tuning out noises when driving the same route to work every day. Sensitization is the opposite – it’s reacting strongly to a new stimulus, like avoiding bad food from a restaurant.
+
+AI has a really hard time learning and storing new information without overwriting information it has already learned and stored, a problem that researchers studying brain-inspired computing call the “stability-plasticity dilemma.” Habituation would allow AI to “forget” unneeded information (achieving more stability) while sensitization could help with retaining new and important information (enabling plasticity).
+
+In this study, the researchers found a way to demonstrate both habituation and sensitization in nickel oxide, a quantum material. The material is called “quantum” because its properties can’t be explained by classical physics.
+
+If a quantum material could reliably mimic these forms of learning, then it may be possible to build AI directly into hardware. And if AI could operate both through hardware and software, it might be able to perform more-complex tasks using less energy.
+
+“We basically emulated experiments done on sea slugs in quantum materials toward understanding how these materials can be of interest for AI,” Ramanathan said.
+
+Neuroscience studies have shown that the sea slug demonstrates habituation when it stops withdrawing its gill as much in response to being tapped on the siphon. But an electric shock to its tail causes its gill to withdraw much more dramatically, showing sensitization.
+
+For nickel oxide, the equivalent of a “gill withdrawal” is an increased change in electrical resistance. The researchers found that repeatedly exposing the material to hydrogen gas causes nickel oxide’s change in electrical resistance to decrease over time but introducing a new stimulus like ozone greatly increases the change in electrical resistance (Fig. 1).
+
+Inspired by these findings, a research group under Kaushik Roy, Purdue’s Edward G. Tiedemann Jr. Distinguished Professor of Electrical and Computer Engineering, modeled nickel oxide’s behavior and built an algorithm that successfully used these habituation and sensitization strategies to categorize data points into clusters.
+
+“The stability-plasticity dilemma is not solved at all. But we’ve shown a way to address it based on behavior we’ve observed in a quantum material,” Roy said. “If we could turn a material that learns like this into hardware in the future, then AI could perform tasks much more efficiently.”
+
+For practical use of quantum materials as AI hardware, researchers will need to figure out how to apply habituation and sensitization in large-scale systems. They also would have to determine how a material could respond to stimuli while integrated into a computer chip.
+
+This study is a starting place for guiding those next steps, the researchers said. In addition to the experiments performed at Purdue, a team at Rutgers University performed detailed theory calculations to understand what was happening within nickel oxide at a microscopic level to mimic the sea slug’s intelligence features. The nickel oxide sample’s properties were characterized using three synchrotron x-ray light source techniques at two APS beamlines. Synchrotron x-ray diffraction and x-ray absorption near-edge structure measurements were carried out at the X-ray Science Division (XSD) Surface Scattering & Microdiffraction x-ray beamline 33-ID. X-ray absorption spectroscopy studies were performed at the XSD Magnetic Materials Group 29-ID x-ray beamline (the APS is an Office of Science user facility at Argonne National Laboratory). The University of Georgia measured conductivity to further analyze the material’s behavior.
+
+See: Zhen Zhang1*, Sandip Mondal1, Subhasish Mandal2, Jason M. Allred1, Neda Alsadat Aghamiri3, Alireza Fali3, Zhan Zhang4, Hua Zhou4, Hui Cao4, Fanny Rodolakis4, Jessica L. McChesney4, Qi Wang1, Yifei Sun1, Yohannes Abate3, Kaushik Roy1, Karin M. Rabe2**, and Shriram Ramanathan1***, “Neuromorphic learning with Mott insulator NiO,” Proc. Natl. Acad. Sci. USA 118(39) e2017239118 (September 28, 2021). DOI: 10.1073/pnas.2017239118.
+
+Author affiliations: 1Purdue University, 2Rutgers University, 3University of Georgia, 4Argonne National Laboratory
+
+Correspondence: * zhennzhang@outlook.com, ** rabe@physics.rutgers.edu, ***shriram@purdue.edu
+
+This work was supported in part by C-BRIC, a JUMP center sponsored by the Semiconductor Research Corporation and DARPA, and by the National Science Foundation (NSF), Intel Corporation, Sandia National Labs, and the Vannevar Bush Fellowship. We acknowledge AFOSR Grant FA9559-16-1-0172, AFOSR Grant FA9550-18-1-0250, ARO Grant W911NF1920237, ONR N00014-17-1-2770 and NSF Grant 1904097 for support. Additional support by NSF under Grant no. DMR-0703406. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Sea slug photo on APS home page: Aplysia californica. (NOAA Monterey Bay National Marine Sanctuary photo/Chad King)
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.20.2021

@@ -1,0 +1,43 @@
+The Crystal Structure of a Meta-stable Intermediate Particle in Virus Assembly
+
+A snapshot of the elegant dance performed by viral proteins as they create the infectious structure that causes all manner of misery and disease has been captured by scientists using brilliant x-ray beams at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory. Their work may help drug developers pinpoint attack sites for pharmaceuticals, and could have an impact on the emerging field of medical nanotechnology.
+
+Using beamlines 23-ID-D of the General Medicine and Cancer Institutes Collaborative Access Team and 14-BM-C of BioCARS, both at the APS, a research team from the Scripps Research Institute has produced the first crystal structure of a virus particle caught in the midst of assembling its impenetrable outer protein coat. While the virus they studied, HK97, only infects bacteria, well-known viruses such as herpes and human immunodeficiency virus are also known to assemble an “intermediary” structure before morphing into a final, assault-proof, infectious form.
+
+“The principles of this multi-stage protein coat assembly will likely be similar across all complex viruses,” said the study's senior author, John E. Johnson of Scripps. “But this process has never been seen before at this resolution, and now we know that what we thought happens, doesn't.”
+
+That's important, Johnson says, because if scientists understand how a virus builds its protective coat, they may be able to medically target vulnerabilities in the first stage of that assembly. “We believe that without its final shell to protect it, an immature virus will be much more defenseless to antiviral agents,” he said.
+
+Knowing how viruses build these vessels to protect the naked viral DNA inside is also useful in the field of medical nanotechnology. “The immature coat has lots of holes in it through which we could load drugs, and then seal it in the mature form to produce a potent delivery system,” Johnson said.
+
+Johnson and his research team have long studied HK97, and had “solved” the structure of the virus's mature outer coat. It is made up of 72 protein rings—12 pentagons and 60 hexagons—locked together like the chain-mail suits worn by knights. This coating forms the head of the virus, which is extremely small—thousands of times narrower than a human hair.
+
+The thin viral armor offers protection and stability as well as freedom of movement, Johnson said. “This is a container that works very well.”
+
+The researchers say they spent five “painful” years trying to produce a crystal structure of the intermediate particle they knew was assembled first. They had produced images using electron microscopy, but they weren't detailed enough to understand the molecular processes involved.
+
+The scientists built the viral shells in a test tube. Genes that encode the 420 proteins that make up the coat were expressed in E. coli bacteria, the normal host of the virus. These proteins spontaneously assemble and form the immature particles. In the presence of viral DNA and the enzymes that pump it into the particles, they instantly form a mature coat that engulfs the genes.
+
+The study's first author, Ilya Gertsman, a researcher in Johnson's lab, kept trying to capture the crystal structure of the intermediate form of the virus, but it always quickly morphed into its final armored form, even without DNA present. Finally, working with collaborators from the University of Pittsburgh, Gertsman used a form of HK97 that was mutated in such a way that made it slow to mature.
+
+What the researchers saw from the crystal structure “was so beautiful,” Gertsman said. The proteins that made up the spherical, soccer ball-like form were flat in shape and pointed outward, like hands placed palm-to-palm in prayer. But the moment the structure “sensed” the presence of DNA, it immediately changed shape. In essence, the fingers on the praying hands folded down together, fingers interspersed and grasping each other.
+
+“That's why the final protein coat is so stable. The proteins are all intertwined around each other,” Johnson said. Previously it was thought that the proteins went through this motion as a nearly rigid unit. This study showed that the proteins significantly changed in structure during the transition. The researchers don't yet know if this structural change happens all at once, or if it moves like a wave around the sphere.
+
+They hypothesize that domains hanging from each of the proteins that eventually form the viral coat drive the process of changing the structure. The tails interact with each other to distort the shape of the proteins, Johnson said. “As long as the tails are there, the process of change is reversible. When the tails are gone (removed by a viral enzyme), the structure becomes stable.”
+
+Researchers had thought these tails, which are scaffolding proteins, guided assembly of the particle, “but we think they actually change the structure,” Johnson said. “that offers us another target by which we may be able to interrupt assembly of the coat.”
+
+Contact: *jackj@scripps.edu).
+
+See: Ilya Gertsman, Lu Gan, Miklos Guttman, Kelly Lee, Jeffrey A. Speir, Robert L. Duda, Roger W. Hendrix, Elizabeth A. Komives, and John E. Johnson*, “An unexpected twist in viral capsid maturation,” Nature, advance online publication 8 February 2009 | DOI:10.1038/nature07686
+
+This work was supported by National Institutes of Health (NIH) grants RO1 AI40101 (to J.E.J), RO1 GM47795 (to R.W.H), and NIH Training Grant GM08326. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The original news release can be found at: http://www.scripps.edu/news/press/2009/020809.html
+
+Published Date
+
+03.03.2009

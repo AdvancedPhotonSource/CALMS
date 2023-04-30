@@ -1,0 +1,29 @@
+Beneath the Surface of High-Speed Industrial Sprays
+
+We use paint sprays to cover all manner of surfaces, but our ability to optimize the sprayers themselves has been quite limited. “Seeing” beneath the surface of the jet from a high-speed industrial paint sprayer can yield important new information. Researchers and engineers from Argonne National Laboratory and from Illinois Tool Works (ITW), Inc., of Glenview, Illinois, using extreme-brilliance x-ray beams from the X-ray Operations and Research 7-ID beamline at the Advanced Photon Source (APS), have captured the first images of the complex and transient multiphase spray flow just millimeters from a high-speed industrial spray nozzle, taking us one step down the road toward improved high-speed industrial sprays.
+
+High-speed sprays have many industrial and consumer applications, such as surface finishing (paint and particle coating) and gas turbine combustion applications. These sprays comprise a jet of liquid surrounded by a high-speed coaxial air jacket that atomizes the liquid jet. For coating (or paint) applications, the liquid transfer efficiency of the spray materials has a direct effect on how economically they can be used, as well as a definite impact on the environment. In order to increase the efficiency of industrial sprays and make them more environmentally friendly, we must improve them at the source: the design of the spray nozzle.
+
+Despite their multitude of uses, until now the fundamental physics that govern the spray flow patterns and the droplet deposition on the spray target have not been fully understood. This is due, in large part, to a lack of information about the composition of spray plumes close to the nozzle, such as liquid breakup mechanism and spray mass distribution. Traditional visualization tools like visible-light-based imaging have not been effective, because light is scattered off the cloud of small liquid droplets the way the beam from car headlights diffuses in fog. Furthermore, most of the liquid materials in industrial applications (such as paint) are, by their nature, optically opaque. And to date, theoretical and computational studies of the sprays have proven to be extremely difficult, if not impossible, to carry out.
+
+So the initial and boundary conditions for the simulation model development of air-assisted sprays cannot be simply obtained from conventional optical measurements that do not normally yield quantitative information about the sprays.  One has to know where the sprays are and how they are atomized before one can do a realistic transfer analysis to determine the effectiveness of spray nozzle designs.
+
+As an essential step towards developing the primary breakup model in air-assisted sprays—and overcoming the difficulties in visible-light-based measurements—the Argonne-ITW research team imaged the complex and transient multiphase spray flow just millimeters from a spray nozzle by using a fast x-ray phase-contrast imaging technique made possible by the intense x-ray beams from the APS. Owing to their weak interaction with matter, x-rays can penetrate and image liquid jets surrounded by a large number of small liquid droplets.  Intense x-ray beams from the APS made it possible to perform the measurement in real time.
+
+An off-the-shelf commercial air-spray gun was used to generate continuous water sprays in air. The injection nozzle of this spray gun consists of a central circular orifice for the liquid and a ring-like air outlet. The high-pressure atomization air was generated through the air opening with a speed and force that can be supersonic. The high relative velocity between the liquid jet and the air stream can generate a highly unsteady turbulent multiphase flow and induce the breakup of the liquid jet. In the x-ray images obtained at the APS the drastic effect of the high-speed, atomizing air and near-nozzle liquid mass density distribution was visualized for the first time.
+
+The x-ray experimentation at Argonne has already produced some intriguing discoveries. The research team found that, unlike the case of a low-speed jet (such as the water from a garden hose) where the breakup is mostly due to the surface tension at the air/liquid interface, the breakup of high-speed-spray jets can occur in the jet core, which causes sudden decreases in liquid volume fraction even within 1 mm from the nozzle exit.
+
+This first-ever visualization of near-nozzle high-speed coaxial flows can be used to develop and validate liquid breakup models and is indispensable for understanding downstream spray formation. The collaborative effort between Argonne and ITW at the APS promises to have a major impact on nozzle design, spray parameters, modeling, and simulation, holding out the promise of improved industrial spray systems.
+
+Contact: Jin Wang (wangj@aps.anl.gov)
+
+See: Y. J. Wang, Kyoung-Su Im, K. Fezzaa, W. K. Lee, Jin Wang, P. Micheli, and C. Laub, “Quantitative x-ray phase-contrast imaging of air-assisted water sprays with high Weber numbers,” Appl. Phys. Lett. 89, 151913 (9 October 2006). DOI: 10.1063/1.2358322
+
+This work and the use of the APS are supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. 
+
+A U.S. Department of Energy laboratory managed by UChicago Argonne, LLC
+
+Published Date
+
+10.13.2006

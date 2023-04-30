@@ -1,0 +1,41 @@
+Viral “Molecular Scissor” is Next COVID-19 Drug Target
+
+The original University of Texas Health Science Center at San Antonio news release by Will Sansom can be read here.
+
+American and Polish scientists, reporting in the journal Science Advances, laid out a novel rationale for COVID-19 drug design – blocking a molecular “scissor” that the virus uses for replication and to disable human proteins crucial to the immune response. The researchers are from The University of Texas Health Science Center at San Antonio (UT Health San Antonio) and the Wroclaw University of Science and Technology. Information gleaned by the American team, obtained from the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory, helped Polish chemists to develop two molecules that inhibit the cutter, an enzyme called SARS-CoV-2-PLpro.
+
+SARS-CoV-2-PLpro promotes infection by sensing and processing both viral and human proteins, said senior author Shaun K. Olsen, associate professor of biochemistry and structural biology in the Joe R. and Teresa Lozano Long School of Medicine at UT Health San Antonio.
+
+“This enzyme executes a double-whammy,” Olsen said. “It stimulates the release of proteins that are essential for the virus to replicate, and it also inhibits molecules called cytokines and chemokines that signal the immune system to attack the infection.”
+
+SARS-CoV-2-PLpro cuts human proteins ubiquitin and ISG15, which help maintain protein integrity. “The enzyme acts like a molecular scissor,” Olsen said. “It cleaves ubiquitin and ISG15 away from other proteins, which reverses their normal effects.”
+
+Olsen’s team, which recently moved to the Long School of Medicine at UT Health San Antonio from the Medical University of South Carolina, solved the three-dimensional structures of SARS-CoV-2-PLpro and the two inhibitor molecules, which are called VIR250 and VIR251. The structures were solved with molecular x-ray crystallography using the 24-ID-C x-ray beamline (and EIGER2 detector) operated by the Northeastern Collaborative Access Team at the APS (the APS is a DOE Office of Science user facility at Argonne).
+
+“Our collaborator, Marcin Drag, and his team developed the inhibitors, which are very efficient at blocking the activity of SARS-CoV-2-PLpro, yet do not recognize other similar enzymes in human cells,” Olsen said. “This is a critical point: The inhibitor is specific for this one viral enzyme and doesn’t cross-react with human enzymes with a similar function.”
+
+Specificity will be a key determinant of therapeutic value down the road, he said.
+
+The American team also compared SARS-CoV-2-PLpro against similar enzymes from coronaviruses of recent decades, SARS-CoV-1 and MERS.  They learned that SARS-CoV-2-PLpro processes ubiquitin and ISG15 much differently than its SARS-1 counterpart.
+
+“One of the key questions is whether that accounts for some of the differences we see in how those viruses affect humans, if at all,” Olsen said.
+
+By understanding similarities and differences of these enzymes in various coronaviruses, it may be possible to develop inhibitors that are effective against multiple viruses, and these inhibitors potentially could be modified when other coronavirus variants emerge in the future, he said.
+
+See: Wioletta Rut1*, Zongyang Lv2,3, Mikolaj Zmudzinski1, Stephanie Patchett4, Digant Nayak2,3, Scott J. Snipas5, Farid El Oualid6, Tony T. Huang3**, Miklos Bekes7‡***, Marcin Drag1,5*****, and Shaun K. Olsen*2,3****, “Activity profiling and crystal structures of inhibitor-bound SARS-CoV-2 papain-like protease: A framework for anti–COVID-19 drug design,” Sci. Advances 6, eabd4596 (16 October 2020). DOI: 10.1126/sciadv.abd4596
+
+Author affiliations: 1Wroclaw University of Science and Technology, 2Medical University of South Carolina, 3University of Texas Health Science Center at San Antonio, 4York University School of Medicine, 5Sanford Burnham Prebys Medical Discovery Institute, 6UbiQ Bio B.V., 7Independent Consultant  ‡Present address: Arvinas Inc.
+
+Correspondence: *wioletta.rut@pwr.edu.pl, **tony.huang@nyulangone.org, ***miklosbekes@icloud.com, ****olsens@uthscsa.edu, *****marcin.drag@pwr.edu.pl
+
+This project was supported by the National Science Center grant 2015/17/N/ST5/03072 (Preludium 9) in Poland (W.R.) and the “TEAM/2017-4/32” project, which is carried out within the TEAM program of the Foundation for Polish Science, co-financed by the European Union under the European Regional Development Fund (M.D.). W.R. is a beneficiary of a START scholarship from the Foundation for Polish Science. Research reported in this publication was supported by CPRIT RR200030 and NIH R01 GM115568 (S.K.O.), ES025166 (T.T.H.), and GM099040 (S.J.S.). Z.L. is a Hollings Cancer Center Postdoctoral Fellow, and S.P. is an American Cancer Society Postdoctoral Fellow (PF-18-235-01-RMC). The Northeastern Collaborative Access Team is funded by the National Institute of General Medical Sciences from the National Institutes of Health (P30 GM124165). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357. Extraordinary facility operations were supported in part by the DOE Office of Science through the National Virtual Biotechnology Laboratory, a consortium of DOE national laboratories focused on response to COVID-19, with funding provided by the Coronavirus CARES Act.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.27.2020

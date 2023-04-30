@@ -1,0 +1,43 @@
+How Tiny Compartments Could Have Preceded Cells
+
+The original University of Chicago Pritzker School of Molecular Engineering news story by Emily Ayshford can be read here.
+
+One of the most important questions in science is how life began on Earth. One theory is that wet-dry cycling on the early Earth - whether through rainy/dry periods, or through phenomena such as geysers - encouraged molecular complexity. The hydration/rehydration cycle is thought to have created conditions that allowed membraneless compartments called complex coacervates to act as homes for chemicals to combine to create life. Using the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory, scientists in the Pritzker School of Molecular Engineering (PME) at the University of Chicago studied these polymer compartments as they undergo phase changes to understand just what happens inside them during wet-dry cycle. The results, published in Nature Communications, could not only shed further light on prebiotic Earth, they could also have implications for the design of electronics and drug delivery systems.
+
+"Seeing these polymer assemblies as they undergo changes in complex environments helps us understand just how these compartments behaved on early Earth, and how we can use them going forward," said Matthew Tirrell, dean of the Pritzker School of Molecular Engineering, the Robert A. Millikan Distinguished Service Professor, and co-author of the paper.
+
+In research led by Pennsylvania State University, scientists examined polyelectrolyte coacervates in water that had the same makeup as pond water. A pond regularly dries up and is then replenished with rain. This cyclic dehydration and rehydration makes it easier for molecular building blocks, like amino acids and nucleotides, to assemble into peptides and proteins, like DNA and RNA, by lowering the thermodynamic barrier that keeps them from combining.
+
+The Tirrell Lab are experts on polymer compartments like polyelectrolyte coacervates, having previously described how these materials act under different phase changes.
+
+The PME researchers used small-angle x-ray scattering at the X-ray Science Division Chemical & Materials Science Group’s 12-ID-B x-ray beamline at the APS, an Office of Science user facility at Argonne, to look at the internal structure of coacervates as the wet-dry conditions changed. They found that as the water sample dried, the concentration of RNA increased, but the RNA concentration inside the polymer compartments remained constant. They also found that the salt concentration of the sample increased as the water dried, weakening polymer interactions, which made the compartments actually more hydrated.
+
+Repetitive cycles of hydration and dehydration "caused a progressive evolution of the compartments," Tirrell said, which permanently changed the composition of the coacervates.
+
+"This changes the physical properties of the coacervate and affects molecule exchange, which could be a clue for how early life began," said Alexander Marras, a postdoctoral researcher in Tirrell's group.
+
+Understanding how dynamic conditions affect coacervates could have implications in electronic devices that use the polymer compartments in visual displays, or in drug delivery. Compartments like this could be used to carry a therapy within the body, and understanding how polymers assemble and react to changing conditions is key to designing new ways to deliver drugs.
+
+Marras, former UChicago postdoc Jeffrey Ting, and researchers with Penn State forged this research collaboration during a Gordon Research Conference in Switzerland. Penn State researchers, who ultimately led this research, were interested in studying how coacervates behaved on the early Earth. During a hike on a glacier, Ting, Marras, and the Penn State researchers discussed how they could collaborate by using the APS to see inside the compartments.
+
+"[The APS at] Argonne is really a world-class facility that allows us to be at the forefront of this kind of work," Marras said.
+
+See: Hadi M. Fares1,2, Alexander E. Marras3,4, Jeffrey M. Ting3,4‡, Matthew V. Tirrell3,4, and Christine D. Keating1*, “Impact of wet-dry cycling on the phase behavior and compartmentalization properties of complex coacervates,” Nat. Commun. 11, 5423 (2020). DOI: 10.1038/s41467-020-19184-z
+
+Author affiliations: 1The Pennsylvania State University, 2Universities Space Research Association, 3The University of Chicago, 4Argonne National Laboratory  ‡Present address: 3M Company,
+
+Correspondence: * keating@chem.psu.edu
+
+Xiaobing Zuo is gratefully acknowledged for his assistance in the scattering experiments. H.M.F.’s research was supported by an appointment to the NASA Postdoctoral Program with the NASA Astrobiology Program, administered by Universities Space Research Association under contract with NASA. J.M.T. acknowledges support from the NIST-CHiMaD Postdoctoral Fellowship, which is supported by assistant award 70NANB19H005 from U.S. Department of Commerce, National Institute of Standards and Technology (NIST) as part of the Center for Hierarchical Materials Design (CHiMaD); CHiMaD supports polyelectrolyte complexation research at the University of Chicago, including ﬁnancial support of A.E.M. This work was supported by a grant from the NASA Exobiology program (80NSSC 17K0034). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+© 2021 The University of Chicago
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+01.25.2021

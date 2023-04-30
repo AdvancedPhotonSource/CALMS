@@ -1,0 +1,27 @@
+New Light on Improving Engine Efficiencies
+
+Power plants based on turbine engines burning natural gas are a key component of future energy grids in the U.S. and other nations. With these engines, power plants will supply clean, increasingly fuel-efficient, and relatively low-cost energy. The efficiency of these engines can be further increased by reducing the turbine weight, increasing operating temperature, or increasing the component lifetime. So there is an ever growing demand for higher temperature, higher performance materials for these turbines. A team of researchers applied the high-brightness x-ray beams from the U.S. Department of Energy’s (DOE’s) Advanced Photon Source (APS) at Argonne National Laboratory to finding ways of incorporating new materials for this promising energy source.
+
+“Silicon-based ceramics, such as silicon carbide and silicon nitride, offer structural materials solutions to increasing the efficiency of these engines due to their high temperature capabilities and low densities,” said Kang N. Lee, Senior Specialist of Materials, Processes and Repair Technology at Rolls-Royce Corporation in Indianapolis, IN, and a co-author on two papers about this research, the first of which appeared in the Journal of the American Ceramic Society, and one that will appear in Advances in X-ray Analysis.
+
+Unfortunately, the use of these materials is limited in the presence of water vapor combined with the high temperature and pressure in engine environments. The native oxide corrosion barrier of these materials reacts with water vapor, exposing the carbide or nitride to further corrosion, and consequently, components suffer considerable recession. To combat this degradation, multilayer environmental barrier coatings (EBCs) were developed to protect the ceramic substrates, allowing turbines to run lighter, longer, and hotter than before.
+
+However, as temperatures are raised and lowered during the combustion cycle, internal mismatch stresses arise as the coatings and substrate expand and shrink at different rates. This is especially problematic in turbine engines, since temperatures can change over 1200º C in a single cycle. Stresses are exacerbated over tens of thousands of hours of operation, so even small mismatches in expansion can cause fractures in coatings and subsequent component failure. Minimization of these stresses is critical to protecting the materials.
+
+The researchers from Northwestern University, the Rolls Royce Corporation, and Argonne National Laboratory partnered to use in situ, high-energy synchrotron radiation methods at X-ray Operations and Research beamline 1-ID at the APS to measure these stresses in hopes of finding combinations of materials to reduce the mismatch between coatings and substrate while protecting the substrate from water vapor ingress.
+
+High-energy synchrotron radiation was used to investigate phase composition and layer-specific stresses in 10-micrometer sections, using the spacing between atomic planes as a built-in strain gauge. Measurements of these systems before and after exposure to simulated engine environments shed light on the evolution of stresses throughout the lifetime of a component.
+
+Results from the studies demonstrated that coating mismatch stresses could be minimized in a three-layer coating system heat-treated to provide a low-expansion equilibrium topcoat. The heat treatment also served to heal many of the cracks formed during coating deposition. It was determined that the low stress levels made the heat-treated coating an ideal system to withstand the harsh environments of gas-turbine engines. Lee continues, “These studies shed light on the development of next generation EBCs, enabling the implementation of silicon-based ceramic components in turbine engines.”
+
+See: B.J. Harder, J.D. Almer, C.M. Weyant, K.N. Lee, and K.T. Faber*, “Residual Stress Analysis of Multilayer Environmental Barrier Coatings,” J. Am. Ceram. Soc. 92(2), 452 (13 February 2009). DOI: 10.1111/j.1551-2916.2008.02888.x
+
+Contact: * k-faber@northwestern.edu
+
+This work and use of the Advanced Photon Source were supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+03.03.2009

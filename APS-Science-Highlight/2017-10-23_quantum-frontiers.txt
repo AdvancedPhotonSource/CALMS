@@ -1,0 +1,37 @@
+Quantum Frontiers
+
+The original University of Tennessee, Knoxville highlight by Jian Liu can be read here.
+
+Layer by layer, University of Tennessee, Knoxville (UT) physicists are exploring the frontiers of tuning material properties down to the atomic level. Experimenting with the stacking pattern of superlattices at the U.S. Department of Energy’s Advanced Photon Source (APS), the UT researchers and their colleagues investigated inter- and intra-layer dynamics to learn more about magnetism on the nanoscale, with potential connections to high-temperature superconductivity and spintronics.
+
+Controlling a material’s properties starts with understanding its structure. The crystal lattice of a material has atoms arranged in an orderly, repetitive pattern. A superlattice comprises two or more of these materials. In work published in Physical Review Letters, the group from UT, Brookhaven National Laboratory, Charles University (Czech Republic), the Academy of Sciences of the Czech Republic, Argonne National Laboratory, and Dublin City University (Ireland) explained their investigations on superlattices composed of strontium, iridium, and oxygen (SrIrO3) and strontium, titanium, and oxygen (SrTiO3). The two constituents belong to the perovskite family, materials of particular interest in physics and materials science because they exhibit properties like magnetoresistance and superconductivity.
+
+In this case, the scientists used a pulsed laser to deposit single layers of SrTiO3 atoms between layers of SrIrO3 atoms (or, in shorthand, STO and SIO), effectively turning the three-dimensional SIO lattice into atomically thin slices sandwiched by STO. They varied the distance between the SIO layers, separating them by one, two, or three STO layers. Utilizing magnetic x-ray scattering measurements performed at the X-ray Science Division x-ray beamlines 4-ID-D and 6-ID-B,C at the APS, which is an Office of Science user facility at Argonne National Laboratory, they found that the further apart the SIO layers were, the more independent they became. The additional STO layers interspacing them prevented the interaction of electrons between the SIO layers, or as Postdoc Lin Hao explained, the “SrTiO3 will block electron hopping between neighboring SrIrO3 layers.”
+
+Assistant Professor Jian Liu put it this way: “If they’re talking to each other, it alters their behavior. If you separate them, they have to behave individually.”
+
+That behavior showed that magnetism in these superlattices could be attributed to exchange coupling within the SIO layers (intra-layer), though with some delicate influence from their declining interaction with each other (inter-layer). Spin, like charge, is an intrinsic property of electrons; orbit is an electron’s path. Exchange coupling is the way two magnetic atoms (or ions) in a material interact with each other.
+
+In this research, the physicists also realized a two-dimensional (2-D) antiferromagnet at finite temperatures with diminishing interlayer exchange coupling. “By accurately controlling the stacking pattern during a superlattice growth, we can tailor macroscopic properties as well as magnetic structure,” Hao said.
+
+As Liu explained, in principle there is no magnetism in a 2-D system. In most magnets, he said, you have a north and a south. But if you have a disc, you have infinite configurations, which means the system isn’t stable. To have an internal structure that designates the north and south gives you that stability.
+
+The results indicate that the blocking layer may play a critical role in the physical properties of the confined 2-D perovskite layers. With the 2004 discovery of graphene, interest in 2-D materials—crystalline materials only one atom thick—has grown. As the Physical Review Letters paper points out, understanding magnetism in 2-D materials is essential for further developments in quantum magnetism, as it’s been proposed that doping 2-D samples could lead to superconductivity.
+
+Further, the research tells scientists more about the square lattice of IrO6 octahedra, which Hao explained “provide a completely new playground for studying most of the frontier questions in condensed matter physics,” owing to similarities with lattice structures giving rise to high-temperature superconductor phases.
+
+See: Lin Hao1*, D. Meyers2, Clayton Frederick1, Gilberto Fabbris2, Junyi Yang1, Nathan Traynor1, Lukas Horak3, Dominik Kriegner3,4, Yongseong Choi5, Jong-Woo Kim5, Daniel Haskel5, Phil J. Ryan5,6, M.P.M. Dean2**, and Jian Liu1***, “Two-Dimensional Jeff =1/2 Antiferromagnetic Insulator Unraveled from Interlayer Exchange Coupling in Artificial Perovskite Iridate Superlattices,” Phys. Rev. Lett. 119, 027204 (2017). DOI: 10.1103/PhysRevLett.119.027204
+
+Author affiliations: 1University of Tennessee, Knoxville, 2Brookhaven National Laboratory, 3Charles University, 4Academy of Sciences of the Czech Republic, 5Argonne National Laboratory, 6Dublin City University
+
+Correspondence: *lhao3@utk.edu, **mdean@bnl.gov, ***jianliu@utk.edu
+
+J.L. acknowledges support from the Science Alliance Joint Directed Research & Development Program and the Transdisciplinary Academy Program at the University of Tennessee. J.L. also acknowledges support by the DOD-DARPA under Grant No. HR0011-16-1-0005. M.P.M.D. is supported by the U.S. Department of Energy (DOE-Basic Energy Sciences, Early Career Award Program under Award No. 1047478. Work at Brookhaven National Laboratory was supported by the U.S. DOE Office of Science, Basic Energy Sciences under Contract No. DESC00112704. D.K. and L.H. acknowledge support from the ERDF (Project No. CZ.02.1.01/0.0/0.0/15_003/ 0000485) and the Grant Agency of the Czech Republic Grant No. (14-37427G). A portion of the fabrication and characterization was conducted at the Center for Nanophase Materials Sciences, which is a DOE Office of Science User Facility. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02- 06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website
+
+Published Date
+
+10.23.2017

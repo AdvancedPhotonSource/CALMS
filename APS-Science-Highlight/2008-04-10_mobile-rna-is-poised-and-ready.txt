@@ -1,0 +1,45 @@
+Mobile RNA is Poised and Ready
+
+A new picture of a genetic parasite isolated from a deep-sea bacterium is helping researchers see how certain specialized segments of RNA escape from their positions in the genome and invade new RNA or DNA. The mobility of these genetic elements, known as group II introns, has had a profound influence on evolution, promoting diversity among the world's most ancient organisms.
+
+A research group solved the structure of a group II self-splicing intron via the Northeastern CAT 24-ID-C,D,E beamline and the Structural Biology Center CAT 19-ID-D beamline at the Advanced Photon Source at the U.S. Department of Energy’s (DOE’s) Argonne National Laboratory, as well as beamlines X25 and X29 at the DOE’s National Synchrotron Light Source (NSLS) at Brookhaven National Laboratory. Their research was published in the April 4, 2008, issue of the journal Science.
+
+Anna Marie Pyle, a Howard Hughes Medical Institute investigator at the Yale University School of Medicine who led the research team, said, “One reason this crystal structure is interesting is because it is completely in agreement with a couple of decades of biochemistry.” Pyle's lab has long been interested in the three-dimensional structures of catalytic RNAs, and has been employing a variety of approaches to investigate group II introns for the past 16 years.
+
+To convert a gene into protein, cells begin by copying DNA into RNA. The RNA molecule serves as the template the cell uses to build a protein. Many genes contain segments known as introns, which interrupt the protein-encoding sequence and must be removed from the RNA template before protein synthesis can begin. In multicellular organisms, the task of snipping out the interrupting sequences falls primarily to a large complex of proteins and RNA known as the spliceosome. Some introns, however, can release themselves from the RNA molecule all by themselves (self-splicing introns).
+
+Once removed, these introns have the potential to reinsert into the genome, sometimes into regions where they can alter gene function. Pyle explained that it's easy to see the impact this can have on evolution. “A free and liberated intron can be highly reactive and can reverse splice into RNA or DNA,” she said. “These probably spread like wildfire through various genomes.” In fact, she noted, more than half of human DNA may have derived from what was once ancestral group II introns.
+
+Self-splicing introns fall into two groups, each with a distinct splicing strategy. Pyle's lab has focused on those known as group II introns, which are present in almost all bacteria and have also been found in plants, fungi, and animals. These introns bear similarities to spliceosomal RNAs and to the type of introns that the spliceosome removes from nuclear DNA. For this reason, researchers have suspected that their splicing mechanisms may be closely related.
+
+RNA is notorious for folding itself into intricate shapes that, although essential for function, are almost impossible to predict from sequence information. To deduce how the RNA within a group II intron arranges itself so it can catalyze splicing at precisely the right spot, Pyle's team conducted many years of detailed biochemical studies. In this way, they amassed an enormous amount of information about how the RNA was likely structured. The model of the introns' functional architecture that Pyle and her colleagues developed, which they published in 2005, helped researchers think about group II introns in a new way. It also revealed significant parallels between group II introns and certain essential RNA components of the spliceosome.
+
+As useful as that model was, Pyle knew a more complete understanding of group II introns would come from a structure obtained through x-ray crystallography. Pyle had never been trained in crystallography. Navtej Toor, a postdoctoral fellow in Pyle's lab whose expertise was in evolutionary informatics, shared Pyle's curiosity, and they embarked on a new type of research.
+
+The difficulties began with the first step: finding a group II intron to crystallize. Despite their propensity to flit about the genomes of bacteria and other organisms, group II introns are typically reluctant to splice when they are outside of cells. Previous researchers had persuaded them to do so by subjecting them to unusually warm temperatures and very high concentrations of salt. These conditions, however, are unsuitable for producing the crystals needed for structural biology studies.
+
+Pyle said she and Toor “looked under every rock,” screening a wide swath of organisms—many from extreme environments—before settling on an intron from Oceanobacillus iheyensis, a deep-sea dwelling bacterium that thrives in unusually alkaline conditions. The intron readily self-spliced in the laboratory and formed a stable structure that the researchers could use for their studies. The intron they chose was also significantly smaller than most group II introns, which facilitated crystallization.
+
+After isolating the spliced intron, the researchers crystallized it in its native state. From there, the x-ray crystallography was straightforward, and the team was able to generate a detailed picture of the intron. The image that emerged largely validated the model she and her colleagues had developed several years earlier. “This structure completely matches the biochemistry,” she said. “We can have a lot of confidence in this structure.”
+
+It shows—with a new level of detail—how four domains of RNA cradle a fifth domain, the intron's catalytic center, positioning it so it is poised to do its work. (A sixth domain of the intron is not visible in the structure and will require additional studies.) Contacts between distant domains on the molecule ensure a carefully molded “tongue and groove” construction. Inside the intron's catalytic center sit two magnesium ions, which Pyle's previous experiments had predicted would help speed the splicing reaction along.
+
+Pyle said she was delighted to see that these ions are spaced at the precise distance thought to be optimal for metal-ion catalysis (frequently seen among enzymes that facilitate similar reactions). Also surprising was that these metal ions were in place even when the intron was isolated, with no nearby genetic material to invade. “This genetic parasite really has fangs,” Pyle said. “It's ready to go out and react with something.”
+
+The new structure revealed a “wealth of RNA interactions that we never even dreamed about,” said Pyle. In addition to exposing these unexpected structural motifs, which Pyle said are likely to help shape other large RNA molecules, the new structure also confirmed many of the suspected similarities between group II introns and the spliceosome. The picture helped explain why certain features of the RNA are conserved between the two structures: they are positioned to participate directly in the splicing reaction. According to the researchers, these observations suggest that the RNA component of the spliceosome functions in a very similar way to a group II intron.
+
+"It would have been impossible to solve this structure without the beamlines at the APS and the NSLS,” Pyle said.  “We are grateful for these facilities and to the wonderful beamline staff."
+
+Contact: A.M. Pyle, anna.pyle@yale.edu
+
+See: Navtej Toor, Kevin S. Keating, Sean D. Taylor, and Anna Marie Pyle, “Crystal Structure of a Self-Spliced Group II Intron,” Science 320, 77 (4 APRIL 2008). DOI: 10.1126/science.1153803
+
+The original news release can be found at: http://www.hhmi.org//news/pyle20080403.html
+
+K.S.K. was supported by NIH training grant T15 LM07056. S.D.T. was supported by the U.S. Department of Defense through the National Defense Science and Engineering Graduate Fellowship Program and by a NSF Graduate Research Fellowship. This work was supported by the Howard Hughes Medical Institute (HHMI) and NIH grant GM50313 to A.M.P., who is an investigator of the HHMI. Use of the Advanced Photon Source was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory brings the world's brightest scientists and engineers together to find exciting and creative new solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+04.10.2008

@@ -1,0 +1,33 @@
+Setting a New Course for Extracting Uranium from Seawater
+
+The original Oak Ridge National Laboratory press release by Ron Walli can be read here.
+
+Work by a team of researchers from Oak Ridge National Laboratory (ORNL) and The University of Chicago shows that the polymeric adsorbent materials that bind uranium behave nothing like scientists had believed. The results, detailed in a paper published in Energy & Environmental Science, highlight data made possible with x-ray absorption fine structure spectroscopy performed at the Materials Research Collaborative Access Team beamline 10-BM-B at the U.S. Department of Energy’s Advanced Photon Source (APS), as well as pair distribution function data collected at the X-ray Science Division beamline 11-ID-B, also at the APS, which is an Office of Science User Facility at Argonne National Laboratory.
+
+“Despite the low concentration of uranium and the presence of many other metals extracted from seawater, we were able to investigate the local atomic environment around uranium and better understand how it is bound by the polymer fibers,” said Carter Abney, a co-author on the paper.
+
+Surprisingly, the spectrum for the seawater-contacted polymer fibers was distinctly different from what was expected based on small molecule and computational investigations. Researchers concluded that for this system, the approach of studying small molecule structures and assuming that they accurately represent what happens in a bulk material simply doesn’t work.
+
+It is necessary to consider large-scale behavior to obtain the complete picture, highlighting the need for developing greater computational capabilities, according to Abney.
+
+“This challenges the long-held assumption regarding the validity of using simple molecular-scale approaches to determine how these complex adsorbents bind metals,” Abney said. “Rather than interacting with just one amidoxime, we determined multiple amidoximes would have to cooperate to bind each uranium molecule and that a second metal that isn’t uranium also participates in forming this binding site.”
+
+An amidoxime is the chemical group attached to the polymer fiber responsible for binding uranium.
+
+Abney and colleagues plan to use this knowledge to design adsorbents that can harness the vast reserves of uranium dissolved in seawater. The payoff promises to be significant.
+
+“Nuclear power production is anticipated to increase with a growing global population, but estimates predict only 100 years of uranium reserves in terrestrial ores,” Abney said. “There is approximately 1,000 times that amount dissolved in the ocean, which would meet global demands for the foreseeable future.”
+
+See: C. W. Abney1,2**, R.T. Mayes2, M. Piechowicz1, Z. Lin1, V.S. Bryantsev2, G.M. Veith2, S. Dai2, and W. Lin1*, “XAFS investigation of polyamidoxime-bound uranyl contests the paradigm from small molecule studies,” Energy Environ. Sci.  2016, Advance Article. DOI: 10.1039/C5EE02913A
+
+Author affiliations: 1The University of Chicago, 2Oak Ridge National Laboratory
+
+Correspondence: *wenbinlin@uchicago.edu, **abneycw@ornl.gov
+
+Work at the University of Chicago was supported by the U.S. Department of Energy (DOE), Office of Nuclear Energy’s Nuclear Energy University Program (Sub-Contract – 20 #120427, Project #3151). Work at ORNL was sponsored by the U.S. DOE, Office of Nuclear Energy. This research used resources of the National Energy Research Scientific Computing Centre, a DOE Office of Science User Facility supported by the Office of Science of the U.S. DOE under Contract No. DE-AC02-05CH11231. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+01.11.2016

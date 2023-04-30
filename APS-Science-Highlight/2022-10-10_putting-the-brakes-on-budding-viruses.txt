@@ -1,0 +1,61 @@
+Putting the Brakes on “Budding” Viruses
+
+The original La Jolla Institute for Immunology press release by Madeline McCurry-Schmidt can be read here.
+
+Paramyxoviruses have the potential to trigger a devastating pandemic. This family of viruses includes measles, Nipah virus, mumps, Newcastle disease, and canine distemper. Now Michael Norris, Ph.D., a former postdoctoral associate at La Jolla Institute for Immunology (LJI) and current assistant professor at the University of Toronto and an international team of collaborators have published the first-ever look at a key stage in the life cycles of measles and Nipah viruses. Their new study, using data obtained at two U.S. Department of Energy (DOE) x-ray light sources including the Advanced Photon Source and published as a cover story in Science Advances, reveals how future therapies might stop these viruses in their tracks.
+
+“The infectiousness of measles is unmatched by any known virus. If one person with measles coughs in a room with 100 unvaccinated people, around 90 would become infected,” said Norris. “Nipah virus is not as contagious, but it is incredibly lethal, with between 40 percent and 90 percent of infections causing death. Just imagine if a paramyxovirus emerged that was as contagious as measles and as deadly as Nipah.” 
+
+It’s not hard to picture that scenario. In fact, the 2011 film Contagion was based on this exact kind of imagined paramyxovirus.
+
+“This work solves a long-standing mystery: how viruses assemble themselves,” said LJI Professor Erica Ollmann Saphire, Ph.D., who served as study co-senior author with Professor Robert Stahelin, Ph.D., of Purdue University. “We know that a virus’s many pieces come together at the cell membrane, but we didn’t know what the trigger was that starts that irreversible assembly process.”
+
+“This study succeeds by identifying how paramyxoviruses are able to utilize a host cell lipid for viral spread,” said Stahelin. “This work will inform future drug discovery endeavors.”
+
+As viral assembly continues, the lattice of matrix proteins begins to push the membrane outward to form a “bud” and recruits other viral proteins to this site. Once the bud has all the needed components in place, it splits away from the parent cell to form a new virus that can then infect a new host cell.
+
+Researchers hope by understanding viral assembly better, they can design therapies that interrupt the process. This approach holds promise; the drug Lenacapavir targets the assembly process of HIV and is in clinical trials right now, and Norris says there’s potential to use the same strategy to stop paramyxoviruses. “This HIV therapy is a proof of principle that targeting viral assembly is a viable strategy for drug development,” said Norris.
+
+Scientists just need a clear view of the paramyxovirus assembly process. The challenge for researchers is trying to see the matrix proteins in action.
+
+Norris and his colleagues examined viral assembly in both measles virus and Nipah virus. Their analysis shows how two matrix proteins come together in a sort of hug to form a two-sided “dimer” structure. The researchers demonstrated that stopping this “hug” by blocking formation of this dimer also stops viral assembly—but that wasn’t surprising.
+
+The researchers really needed to know how these dimers interact with other structures during the budding process. They showed that the dimer hug floats toward the inside of the cell membrane to sort of bump heads with the membrane.
+
+From work spearheaded by the Stahelin Lab at Purdue University, the team found that the matrix proteins specifically bind to a lipid molecule in the host cell membrane called PI(4,5)P2. This interaction anchors matrix proteins to the host cell membrane surface and provides meeting points for virus assembly at specific sites along the membrane. Norris and his colleagues captured this interaction in detail using x-ray crystallography at two U.S. DOE Office of Science user facilities. Data for the MeV-M structure were obtained through use of the Lilly Research Laboratories Collaborative Access Team (LRL-CAT) beamline 31-ID of the Advanced Photon Source at Argonne National Laboratory. Data for the NiV-M + C8-PI(4,5)P2 structure were collected on beamline 23-ID-B of the National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) structural biology facility at the Argonne APS. Data for the NiV-M structure were collected on beamline 12-2 of the Stanford Synchrotron Radiation Lightsource at the SLAC National Accelerator Laboratory.
+
+Then came a big structural surprise. The team found that Nipah virus matrix proteins actually change their structure to open up a lipid-binding pocket for PI(4,5)P2.
+
+This was an extremely exciting aspect of the study,” said Norris. He emphasizes that this pocket doesn’t exist prior to membrane binding—and the pocket would not have been spotted without the structure captured in this study. The discovery of this pocket revealed a brand-new target for developing inhibitors of the assembly process.
+
+PI94,5)P2 also turned out to be the secret ingredient that triggers matrix protein dimers to bind to one another to form a lattice on the inner surface of the host cell membrane. When the matrix proteins change their structure to open the PI(4,5)P2 pocket, they also adopt a shape that drives lattice assembly.
+
+This change in the matrix protein structure also puts a bend in the cell membrane. Before PI(4,5)P2 binding, the space between two matrix proteins in a hug has a concave bowl shape with angled sides. After PI(4,5)P2 binding to the matrix proteins, these angled sides flatten to transform the bowl shape to a plate shape and force the membrane to curve upward. The soft curve of the cell membrane then pops up to start forming a new bud that will eventually make up a new virus.
+
+The scientists learned a lot from these structures. “We didn’t know how much the molecules would change as the process was triggered or what the structure would look like as they zip together,” said Saphire.
+
+Measles is still a major killer around the world. India and Bangladesh deal with yearly Nipah outbreaks. These viruses aren’t going away, and we need effective therapies to stop outbreaks. A broad paramyxovirus therapy could also protect livestock from disease and ensure food security. Newcastle disease in poultry is caused by paramyxovirus infections that can wipe out entire flocks before symptoms are even detected. An outbreak of Newcastle disease in 2018-2020 in California caused the culling of 1.2 million birds.
+
+The new study shows the potential for a pan-paramyxovirus therapy that targets viral assembly in multiple viruses. Norris points out that while the genomes of measles and Nipah viruses are very different, the measles and Nipah matrix proteins look almost identical. “Because these matrix protein structures are highly conserved, we could potentially target one virus and have an inhibitor that could target all the rest of the viruses in this family,” said Norris.
+
+Norris was able to start looking for matrix protein inhibitors thanks to funding from LJI’s Tullie and Rickey Families SPARK Award for Innovation in Immunology. This funding allowed him to rapidly narrow down a list of over 7.4 million drug candidates to identify around 100 that will go into further testing.
+
+The next steps are to better understand the molecular interactions that make up the matrix lattice and to better understand how matrix proteins recruit and interact with the other viral proteins during the assembly process. “We’re looking at leveraging this work to design broad-spectrum inhibitors of viral assembly,” said Norris.
+
+See: Michael J. Norris1, Monica L. Husby2, William B. Kiosses1, Jieyun Yin1, Roopashi Saxena2, Linda J. Rennick3, Anja Heiner4, Stephanie S. Harkins1, Rudramani Pokhrel5, Sharon L. Schendel1, Kathryn M. Hastie1, Sara Landeras-Bueno1, Zhe Li Salie1‡, Benhur Lee6, Prem P. Chapagain5, Andrea Maisner4, W. Paul Duprex3, Robert V. Stahelin2**, Erica Ollmann Saphire1*, “Measles and Nipah virus assembly: Specific lipid binding drives matrix polymerization,” Sci. Adv. 8(29), eabn1440 (20 July 2022). DOI: 10.1126/sciadv.abn1440
+
+Author affiliations: 1La Jolla Institute for Immunology, 2Purdue University, 3University of Pittsburgh School of Medicine, 4Philipps University Marburg, 5Florida International University, 6Icahn School of Medicine at Mount Sinai ‡Present address: Eli Lilly
+
+Correspondence: * erica@lji.org, ** rstaheli@purdue.edu
+
+This work was supported by institutional funds of the La Jolla Institute for Immunology (to E.O.S.); National Institutes of Health/National Institute of Allergy and Infectious Diseases (NIH/NIAID) AI081077 and NIH S10OD027043 (to R.V.S.); the Henry L. Hillman Foundation (to W.P.D.); the Deutsche Forschungsgemeinschaft (German Research Foundation, Projektnummer 197785619 - SFB 1021) (to A.M.); and NIH/NIAID AI125536. Use of the Stanford Synchrotron Radiation Lightsource, SLAC National Accelerator Laboratory, is supported by the U.S. Department of Energy (DOE), Office of Science-Basic Energy Sciences under contract no. DE-AC02-76SF00515. Use of the LRL-CAT beamline was provided by Eli Lilly Company, which operates the facility. GM/CA-XSD has been funded by the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006, P30GM138396). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.10.2022

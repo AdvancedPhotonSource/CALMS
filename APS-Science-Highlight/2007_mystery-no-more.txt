@@ -1,0 +1,25 @@
+A Mystery No More
+
+The iron oxide ferrihydrite, which has potential for cleaning wastewater, is a material that has been both well-known and mysterious. It occurs naturally, but is sometimes the result of a deliberate process, and while it can be found in many places, no one has been quite sure exactly what it is. Ferrihydrite is commonly classified as a mineral, but because it exists only as nanocrystals, it has resisted the usual structure determination methods such as electron microscopy and even traditional crystallographic methods using data from synchrotron x-ray beams. This reticence has made ferrihydrite’s crystalline structure one of nature’s secrets and the subject of much controversy, until now.
+
+Scientists from Stony Brook University, Argonne, and Temple University used the atomic pair distribution function (PDF) method to analyze x-ray scattering data collected at X-ray Operations and Research beamline 11-ID-B at the Argonne Advanced Photon Source and came up with a new model for the atomic structure of ferrihydrite, as spelled out in their article in Science Magazine. In his online Science Express Perspective of May 24, 2007, “ Resolving an Elusive Structure,” chemist R. Lee Penn of the University of Minnesota said, “The work represents a major leap forward in understanding this important mineral and demonstrates the power of their methodology for elucidating the structures of nanocrystalline materials.”
+
+The researchers determined that, in its ideal form, ferrihydrite has the formula Fe10O14OH)2 and consists of 20% FeO4 tetrahedra (shown in red, with oxygen in blue in the figure) and 80% FeO6 octahedra.
+
+Ferrihydrite, an iron oxyhydroxide that occurs in many natural sediments found at and just below the Earth’s surface, is a ubiquitous by-product of iron removal from copper or zinc in mining, and is produced by the weathering of iron-bearing minerals and microbial oxidation of ferrous ions. It has intriguing potential for wastewater treatment. Elucidating the atomic structure of this and other materials is an important step in understanding and, hopefully, predicting material properties and behavior.
+
+Analyzing data provided by the PDF method is a long-standing tool for the study of amorphous materials and liquids, as well as crystalline or partly crystalline materials. Simply put, the PDF method, which can be determined by direct Fourier transformation of x-ray or neutron powder diffraction data, shows the probability of finding any two atoms at a given interatomic distance.
+
+Peter Chupas of the Argonne X-ray Science Division Chemistry, Environmental, and Polymer Science Group and a coauthor on the Science article, was named the 2006 recipient of the Sidhu Award, given each year by the Pittsburgh Diffraction Society “for the best contribution to crystallography or diffraction by an investigator within five years of the Ph.D.” Chupas was recognized for his work on studies leading to the development of a new method for rapid collection of PDF data. This is now the method of choice for PDF measurements and forms the basis of the first and only dedicated pair distribution function beamline in the U.S., XOR 11-ID-B at the APS, for which Peter is the beamline scientist.
+
+Contact: F. Michel fmichel@ic.sunysb.edu
+
+See: F. Marc Michel, Lars Ehm, Sytle M. Antao, Peter L. Lee, Peter J. Chupas, Gang Liu, Daniel R. Strongin, Martin A. A. Schoonen, Brian L. Phillips, and John B. Parise, “The Structure of Ferrihydrite, a Nanocrystalline Material,” Science 316, 1726 (June 22, 2007). DOI: 10.1126/science.1142525
+
+Support provided by the Center for Environmental Molecular Science; NSF Awards CHE0221934, DMR-045244, and EAR-0510501; the U.S. Department of Education through the Graduate Assistance in Areas of National Need Program Sponsor identification P200A060248; and the U.S. Department of Energy, Basic Energy Sciences grant no. DE-FG02-03ER-47085. Use of the Advance Photon Source, Argonne National Laboratory, supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under contract no. DE-AC02-06CH11357.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC
+
+Published Date
+
+08.01.2007

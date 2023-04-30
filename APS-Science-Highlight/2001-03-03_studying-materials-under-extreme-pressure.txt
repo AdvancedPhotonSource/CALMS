@@ -1,0 +1,27 @@
+Studying Materials Under Extreme Pressure
+
+Coupling undulator radiation from Advanced Photon Source (APS) beamlines 3-ID and 13-ID to nuclear resonant inelastic scattering techniques, researchers have determined the phonon density of states for iron under pressures up to 153 gigapascals, equivalent to those found at the Earth's core.
+
+Although indirect measurements and theory have, since the early 1950s, produced an informed picture of the structure and composition of the materials that make up the core of the Earth, direct proof and the answers to some intriguing questions remain unanswered.
+
+Previously, ultrahigh-pressure experiments using nuclear resonant inelastic scattering have been difficult to carry out due the tiny samples required. The extreme brilliance of APS x-ray beams has removed this limitation. The new data and subsequent experiments are of obvious interest to Earth scientists and geophysicists, because iron is prevalent in the cores of several planets, including ours, where the core is a metallic alloy rich in iron and densely packed by extreme pressures. Beyond the geophysical ramifications of this new data, proving long-held theories on thermodynamic, energetic, and elastic parameters for iron at these pressures opens doors to a diverse array of basic and applied investigations, including seismological interpretation, planetary science, and the development of new thin-film materials, such as data-storage media.
+
+H.K. Mao, J. Xu, V.V. Struzhkin, J. Shu, & R.J. Hemley,(1) W. Sturhahn, M.Y. Hu, & E.E. Alp,(2) L. Vocadlo, D. Alfè, G. D. Price, & M.J. Gillan,(3) M. Schwoerer-Böhning & D. Häusermann,(4) P. Eng & G. Shen,(5); H. Giefers, R. Lübbers, & G. Wortmann(6)
+
+(1) Geophysical Laboratory and Center for High Pressure Research, Carnegie Institution of Washington, 5251 Broad Branch Road, NW, Washington, DC 20015;
+
+(2) Experimental Facilities Division, Argonne National Laboratory, Argonne, IL 60439;
+
+(3) University College London, Gower Street, London WC1E 6BT, UK;
+
+(4) High Pressure Collaborative Access Team, Argonne National Laboratory, Argonne, IL 60439;
+
+(5) Consortium for Advanced Radiation Sources, The University of Chicago, Chicago, IL 60637;
+
+(6) Fachbereich Physik, University of Paderborn, D33095 Paderborn, Germany
+
+- From "Phonon Density of States of Iron up to 153 GPa," Science 292, May 2001, 914-916.
+
+Published Date
+
+03.03.2001

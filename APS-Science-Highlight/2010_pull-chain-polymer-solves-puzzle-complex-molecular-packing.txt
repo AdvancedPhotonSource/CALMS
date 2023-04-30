@@ -1,0 +1,37 @@
+Pull-Chain “Polymer” Solves Puzzle of Complex Molecular Packing
+
+Sometimes the simplest things hold the key to understanding complex effects. It turns out that a humble metal pull-chain—just like those used on ceiling fans—can be a pretty good model for complex properties of polymer materials. A group of University of Chicago researchers used x-ray microtomography to study what happens when beaded metal chains are packed more and more tightly into a container. The results look very similar to those obtained when a polymer becomes rigid. With this pull-chain model, the behavior of individual “molecules” can be studied in a way that is impossible with real polymers.
+
+“We were looking for new ways to study how particles pack into stable structures,” said lead author Ling-Nan Zou. “The most dense and stable arrangement is like a pile of oranges at the grocery store, but sometimes less dense arrangements can still be stable, and we don’t really understand why.” These lower-density yet rigid structures are said to be “jammed.”
+
+The researchers chose an elegantly simple physical analog to a polymer: a flexible ball-chain. Each metal sphere is a “monomer”; the linking rods are “bonds.” When twisted into a loop, there’s a point when the chain stops being flexible: The loop won’t get any smaller. That is, the “bonds” have a maximum angle beyond which they can’t flex. It turns out that this property explains a lot.
+
+To do the experiment, the team cut metal chain into segments of a certain length, poured the segments into a tube, and shook the tube in a defined way to compact the chains. They varied the lengths of the segments and the amount of shaking and then measured the height of the packed chain in the tube, from which they derived the density of the packing.
+
+They also imaged the packed container with x-ray microtomography at the U.S. Department of Energy’s Advanced Photon Source at Argonne, utilizing beamline 13-BM-D, which is operated by GeoSoil EnviroCARS (GSECARS), part of the University of Chicago Center for Advanced Radiation sources. “We needed the resolution available at this beamline because regular tomography doesn’t work for objects this small,” explained Zou. The spheres in the chains were only 2.4 millimeters in diameter. While standard tomography can image sub-millimeter features, to accurately trace bonds and bond angles, the team needed micrometer resolution. “With the data from GSECARS, we can accurately locate every monomer and trace every bond,” Zou said.
+
+They found that even though the density decreased for longer chains, the packings were still stable. The tomography images provided the explanation: The long chains form stiff partial loops (see figure) that reduce the density but provide stability.
+
+Although the pull-chain or “granular” polymers are clearly different from real polymers in significant respects, there is at least one remarkable similarity. The relation of chain length to density in the granular polymer is nearly identical to the relation of chain length to the liquid-to-glass transition temperature in real polymers.
+
+A mathematical model is being developed based on the new results for granular polymers. “With this kind of model, we may find new behaviors to study experimentally and new ways to explain why polymers have the properties they do,” says Zou. In particular, polymers can behave in a very complex and hard-to-measure fashion under sideways forces, or shear. For example, a polymer that is supposed to be flexible may become rigid under shear, perhaps causing safety issues. Now, with metal granular polymers, researchers can try to recreate such behavior and then look at the “molecular” level for detailed explanations that could guide the design of new, more stable polymers.
+
+— Jane Andrew
+
+See: Ling-Nan Zou1*, Xiang Cheng1,2, Mark L. Rivers1, Heinrich M. Jaeger1, and Sidney R. Nagel1, “The Packing of Granular Polymer Chains,” Science 326, 408 (2009). DOI: 10.1126/science.1177114
+
+Author Affiliations: 1The James Franck Institute and Department of Physics, University of Chicago; 2Department of Physics, Cornell University, 3Department of Geophysical Sciences and Center for Advanced Radiation Sources, University of Chicago
+
+Correspondence: *zou@uchicago.edu
+
+This work was financially supported by grants from the National Science Foundation (NSF) Materials Research Science and Engineering Center (DMR-0820054) and the U.S. Department of Energy (DOE) (DE-FG02-03ER46088).
+
+GSECARS is supported by the National Science Foundation - Earth Sciences (EAR-0622171) and Department of Energy - Geosciences (DE-FG02-94ER14466).
+
+Use of the Advanced Photon Source was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+03.04.2010

@@ -1,0 +1,19 @@
+The Molecular Structure of a Key Viral Protein
+
+Scientists from Northwestern University and the Howard Hughes Medical Institute, using the sector 32 and sector 5 beamlines at the Advanced Photon Source and beamlines at the Advanced Light Source (Lawrence Berkeley National Laboratory), have determined the molecular structure of a viral protein, the parainfluenza virus 5 fusion (F) protein. The parainfluenza virus 5 is part of a family of viruses (paramyxoviruses) that causes everything from pneumonia, croup and bronchiolitis to cold-like illness and is responsible for many hospitalizations and deaths each year.
+
+Details of the protein’s structure in its metastable state -- the state of the protein on the virus surface responsible for infecting cells -- has significant implications for developing improved protein-based vaccines, designing novel anti-viral agents and understanding the entry mechanisms of other viruses. Knowing the structure of the F protein will aid understanding of all members of the paramyxovirus family, which are among the most significant human and animal pathogens, causing both respiratory and systemic disease.
+
+Read the entire Northwestern University press release here.
+
+Contact: T. Jardetzky, tedj@northwestern.edu
+
+See: Hsien-Sheng Yin, Xiaolin Wen, Reay G. Paterson, Robert A. Lamb and Theodore S. Jardetzky; "Structure of the parainfluenza virus 5 F protein in its metastable, prefusion conformation," Nature 439, 38-44 (5 January 2006). doi:10.1038/nature04322
+
+This research was supported in part by NIH research grants (to T.S.J. and R.A.L.). H.-S.Y. is an Associate and R.A.L. is an investigator of the HHMI, and T.S.J. is a Scholar of the Leukemia and Lymphoma Society of America. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. W-31-109-ENG-38.
+
+The nation's first national laboratory, Argonne National Laboratory conducts basic and applied scientific research across a wide spectrum of disciplines, ranging from high-energy physics to climatology and biotechnology. Since 1990, Argonne has worked with more than 600 companies and numerous federal agencies and other organizations to help advance America's scientific leadership and prepare the nation for the future. Argonne is managed by the University of Chicago for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+01.27.2006

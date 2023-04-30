@@ -1,0 +1,27 @@
+High-Energy X-ray Diffraction Study of Internal Stresses in Metal Matrix Composites
+
+Metal matrix composites (MMCs) comprise an intriguing new class of materials coming to prominence in the aerospace, electronics, and automotive industries. Internal stresses play an important role in the behavior and successful application of MMCs and multi-phase alloys. These stresses form during processing and service due to transformation or thermal expansion mismatch, as well as elastic and plastic mismatch during deformation. In order to develop a deeper understanding of the thermo-mechanical behavior of these materials, it is of key interest to examine the development of mean stresses in the phases of the composite as a function of time upon changes of temperature and/or external load.
+
+The load-bearing capacity of a composite is controlled by the load transfer from the soft matrix to the rigid reinforcements. Experimental measurement of load partitioning between the individual phases of composites can give a wealth of information on the micromechanical scenario going on in composites during loading and deformation. The classical method used to characterize this load transfer in the bulk of crystalline metallic and ceramic materials is to measure the lattice strains via diffraction of thermal neutrons with wavelengths of the order of ~1 Angstrom, which penetrate these materials far better than photons with comparable wavelengths. Neutron diffraction techniques, however, require long data-collection times, making them unsuitable for monitoring stress changes occurring on time scales of minutes or seconds, which are typical for many thermo-mechanical situations of fundamental and practical interest.
+
+The high-energy, high-flux x-ray beams provided by the Advanced Photon Source (APS) offer a unique opportunity to perform internal stress measurements in the bulk of metallic materials at penetration depths similar to those afforded by thermal neutrons, but with much shorter resolution times.
+
+Researchers from the University of Stuttgart and Northwestern University used APS x-ray beams to study the internal load transfer in particle-reinforced copper matrix composites at much increased speed. This work was carried out at APS beamline 5-BM, which is operated by the E.I. Du Pont de Nemours & Co.-Northwestern University-The Dow Chemical Company Collaborative Access Team. The specimens were irradiated with a monochromatic beam of 65-keV photons and loaded mechanically in situ. The ring-like diffraction patterns from matrix and reinforcement were recorded using a high-resolution, two-dimensional detector. Upon mechanical loading, these rings are slightly distorted due to the lattice strains caused by internal and external stresses. As the number of crystallites in the gauge volume is limited, the diffraction rings are quite grainy, giving rise to very poor strain resolution unless sophisticated averaging techniques are applied. By means of newly developed data processing routines, it was possible to quantify as a function of applied mechanical stress not only the shape distortion of grainy rings (from which the elastic strains and the stresses are calculated) but also the graininess itself, from which additional insight into the microstructural evolution of the specimen material could be obtained.
+
+The study emphasizes the fact that high-energy synchrotron x-ray beams are a powerful tool for studying the mechanics of metal matrix composites. This technique is feasible for resolving the time-dependency of the load transfer occurring in composites at elevated temperatures under application-like conditions, which is a major goal of ongoing research in this area.
+
+Alexander Wanner,* David C. Dunand**
+
+* Institut fuer Metallkunde, University of Stuttgart, Stuttgart, Germany
+
+** Dept. of Materials Science and Engineering, Northwestern University, Evanston, IL
+
+Correspondence should be addressed to Alexander Wanner at alexander.wanner@po.uni-stuttgart.de
+
+- From: "Synchrotron X-Ray Study of Bulk Lattice Strains in Externally-Loaded Cu-Mo Composites," A. Wanner and D.C. Dunand, Metallurgical and Materials Transactions 31A, 2949-2962 (2000). Copyright: TMS, Warrendale, PA. and ASM International, Materials Park, OH., 2000.
+
+See also: "Measurement of Internal Stresses in Metal Matrix Composites using Synchrotron Radiation," D. Balch in collaboration with A. Wanner and S. Yilmaz, http://hotmetals.ms.nwu.edu/Dunand/MMC.htm, Northwestern University Department of Materials Science and Engineering, Mechanical Properties of Structural Materials Group Web site.
+
+Published Date
+
+05.03.2002

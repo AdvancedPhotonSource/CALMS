@@ -1,0 +1,63 @@
+New Coronavirus Protein Reveals Drug Target
+
+The original Northwestern University press release can be read here
+
+Drugs previously in development for SARS could be effective for COVID-19
+
+Team maps new protein that helps virus replicate
+
+Protein is nearly identical to one in SARS
+
+‘This structure can help in design of drugs’
+
+A potential drug target has been identified in a newly mapped protein of SARS-CoV-2, the virus that causes coronavirus disease 2019 (COVID-19). The structure was solved by a team including the University of Chicago (U of C), the U.S. Department of Energy’s (DOE) Argonne National Laboratory, Northwestern University Feinberg School of Medicine and the University of California, Riverside School of Medicine (UCR).
+
+The scientists said their findings suggest drugs that had previously been in development to treat the earlier SARS outbreak could now be developed as effective drugs against COVID-19.
+
+The protein Nsp15 from Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) is 89% identical to the protein from the earlier outbreak of SARS-CoV. Studies published in 2010 on SARS-CoV revealed that inhibition of Nsp15 can slow viral replication. This suggests drugs designed to target Nsp15 could be developed as effective drugs against COVID-19.
+
+The structure of Nsp15 will be released to the scientific community on March 4 on the RSCB Protein Data Bank (www.rcsb.org.)
+
+This new structure was solved by the group of Andrzej Joachimiak, Distinguished Fellow of Argonne, the University of Chicago professor and director of the Structural Biology Center at Argonne’s Advanced Photon Source (APS), a DOE Office of Science user facility in conjunction with the Center for Structural Genomics of Infectious Diseases. Dr. Joachimiak is a co-director of the center.
+
+Karla Satchell, principal investigator for the Center for Structural Genomics of Infectious Diseases and professor of microbiology-immunology at Northwestern, leads this international team of scientists investigating the structure of the SARS CoV-2 virus to understand how to stop it from replicating.
+
+The initial genome analysis and design of constructs for protein synthesis were performed by the bioinformatic group of Adam Godzik, a professor of biomedical sciences in the UCR.
+
+“The newly mapped protein, called Nsp15, is conserved among coronaviruses and is essential in their lifecycle and virulence. Initially, Nsp15 was thought to directly participate in viral replication, but more recently, it was proposed to help the virus replicate possibly by interfering with the host’s immune response,” said Joachimiak.
+
+Mapping a 3D protein structure of the virus, also called solving the structure, allows scientists to figure out how to interfere in the pathogen’s replication in human cells.
+
+Satchell said, “The NSP15 protein has been investigated in SARS as a novel target for new drug development, but that never went very far because the SARS epidemic went away, and all new drug development ended. Some inhibitors were identified but never developed into drugs. The inhibitors that were developed for SARS now could be tested against this protein.”
+
+Rapid upsurge and proliferation of SARS-CoV-2 raised questions about how this virus could became so much more transmissible as compared to the SARS and MERS coronaviruses. The scientists are mapping the proteins to address this issue.
+
+“While the SARS-CoV-2 is very similar to the SARS virus that caused epidemics in 2003, new structures shed light on the small, but potentially important differences between the two viruses that contribute to the different patterns in the spread and severity of the diseases they cause,” Godzik said.
+
+Northwestern is the lead site for the international center that comprises eight institutions, including U of C and UCR. The center has committed resources across all eight sites since the news of the new coronavirus was made public in January. The structure of Nsp15 is the first structure solved by the center.
+
+The Center for Structural Genomics of Infectious Diseases is funded as a contract from the National Institute of Allergy and Infectious Diseases, part of the National Institutes of Health (NIH), in part to serve as a response site for structure biology in the event of an unexpected infectious disease outbreak.
+
+SARS-CoV-2 is responsible for the current outbreak of COVID-19. Over the past two months, the pathogen infected more than 80,000 people and caused at least 2,700 deaths. Although currently mainly concentrated in China, the virus is spreading worldwide and has been found in 46 countries (www.trackcorona.live). Millions of people are being quarantined, and the epidemic has impacted the world economy. There is no existing drug for this disease, but various treatment options, for example utilizing medicines effective in other viral ailments, are being attempted.  
+
+Satchell, Joachimiak and Godzik — along with the entire center team — will map the structure of some of the 28 proteins in the virus in order to see where drugs can throw a chemical monkey wrench into its machinery. The proteins are folded globular structures with precisely defined function and their “active sites” can be targeted with chemical compounds.
+
+The first step is to clone and express the genes of the virus proteins and grow them as protein crystals in miniature ice cube-like trays. The consortium includes nine labs across eight institutions that will participate in this effort.
+
+Viewing these proteins down to the arrangement of their atoms requires an intense x-ray beam. Thus, once the crystals are grown, the center scientists image them using the APS’ extremely bright light source in a process called x-ray crystallography. Data for structure determination were collected at Structural Biology Beamlines funded by DOE Office of Biological and Environmental Research.
+
+Satchell and her team are well prepared for the challenges that come with developing drugs to fight the virus. The Center for Structural Genomics of Infectious Diseases, established in 2007, has mapped more than a thousand parts of lethal bacteria and viruses in three dimensions, exposing an intimate chemical portrait of diseases. This view offers scientists a window into the bacteria or virus’ vulnerabilities enables them to create drugs to disable it or vaccines to prevent it.
+
+This study has been funded by contract HHSN272201700060C from the National Institute of Allergy and Infectious Diseases of NIH.
+
+This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+03.02.2020

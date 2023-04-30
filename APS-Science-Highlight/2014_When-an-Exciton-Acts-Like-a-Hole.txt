@@ -1,0 +1,29 @@
+When an Exciton Acts Like a Hole
+
+When is an electron hole like a quasiparticle (QP)? More specifically, what happens when a single electron hole is doped into a two-dimensional quantum antiferromagnet? Quasiparticle phenomena in such a system are predicted by theory, but have eluded observation, complicating the understanding of electron behavior in high-temperature superconducting cuprates. A team of experimenters working at the U.S. Department of Energy's (DOE's) Advanced Photon Source at Argonne National Laboratory have taken a different approach to the problem with their recent observation of an excitonic quasiparticle in strontium iridate (Sr2IrO4), a quasi-two-dimensional, spin-1/2, antiferromagnetic Mott insulator. Their work was published in Nature Communications.
+
+Strontium iridate is a newly-discovered pseudospin-1/2 Heisenberg antiferromagnet in which superconductivity has also been predicted but not yet observed. The experimenters from Argonne National Laboratory and the Institute for Theoretical Solid State Physics and Max Planck Institute for Solid State Research (Germany) used resonant inelastic x-ray scattering (RIXS) at the X-ray Science Division 30-ID-B,C beamline of the Advanced Photon Source, a DOE Office of Science user facility. They carried out their studies utilizing the MERIX spectrometer, a medium-energy-resolution diffractometer for non-resonant and resonant inelastic x-ray scattering
+
+(RIXS) measurements of samples that had been prepared at the Argonne Materials Science Division. Earlier RIXS studies of Sr2IrO4 showed that the dispersions of an electron hole excited across spin-orbit coupling levels could be related to the QP problem. The investigators attempted to reflect the behavior of an electron hole in Sr2IrO4 by using an exciton analog.
+
+Using a theoretical model structured around the observation that the propagation of an orbital excitation through a Mott insulator such as Sr2IrO4 can be mapped on the motion of a single hole, the researchers employed a self-consistent Born approximation (SCBA) for comparison and interpretation of the RIXS data. They found an excellent agreement between the effective t-J model (used to calculate high-Tc states) calculated within the SCBA and the experimental spectra. Energy distribution curves showed a sharp exciton peak, which is both narrower than the sharpest peak measured in Sr2IrO4 by angle-resolved photoemission spectroscopy (ARPES) and smaller than the total bandwidth of about 112 meV, which reveals the exciton to be a QP.
+
+While this demonstrates that a coherent particle can propagate through a quantum antiferromagnet, it does not yet explain the lack of a QP with a single-hole excitation. The researchers attribute this to the charge-neutral nature of an exciton compared to the charged-particle character of a hole. Because a charged hole interacts much more strongly with the lattice structure and the inevitable impurities present in an insulator, it also tends to dampen or completely wash out QP phenomena, particularly in ARPES measurements. On the other hand, a charge-neutral exciton is not subject to these effects and thus can more readily reveal subtle QP dynamics that can elude experimenters.
+
+The work confirms that QPs can definitely be observed in Mott insulators and that these materials can display striking parallels with high-temperature cuprate superconductors. By showing that an exciton in a spin-1/2 antiferromagnet can display fundamentally similar dynamics to a charged hole doped into the same kind of system, the researchers have cast new light on a classic problem in condensed matter physics and opened a new pathway for the study of high-temperature superconductors.
+
+— Mark Wolverton
+
+See: Jungho Kim1, M. Daghofer2, A.H. Said1, T. Gog1, J. van den Brink2, G. Khaliullin3, and B.J. Kim3,1*, "Excitonic quasiparticles in a spin–orbit Mott insulator ," Nat. Commun. 5, article No. 4453 (published on line 17 July 2014). DOI:10.1038/ncomms5453
+
+Author affiliations: 1Argonne National Laboratory, 2Institute for Theoretical Solid State Physics, 3Max Planck Institute for Solid State Research
+
+Correspondence: * bjkim@fkf.mpg.de
+
+Work in the Materials Science Division of Argonne National Laboratory was supported by the DOE Office of Science, Basic Energy Sciences, Materials Science and Engineering Division. This research used resources of the Advanced Photon Source, a DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+08.26.2014

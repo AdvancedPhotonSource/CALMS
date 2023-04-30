@@ -1,0 +1,49 @@
+Making Plastics Production More Energy Efficient
+
+The Northwestern University McCormick School of Engineering news article by Alex Gerage can be read here.
+
+Northwestern engineering researchers have demonstrated a new approach to chemical catalysis that results in high propylene yields using less energy. The findings, published in the journal Science and based in part on research at the U.S. Department of Energy’s Advanced Photon Source (APS) could support more energy-efficient production processes for many plastics.
+
+One of the highest volume chemical products, more than $100 billion worth of propylene is produced each year and used primarily to produce polypropylene for a variety of materials, from injection moldings in car parts to consumer products. Producing propylene is also energy intensive, requiring temperatures around 800 degrees Celsius to convert propane gas to propylene.
+
+One technique, called oxidative dehydrogenation, has long been studied with the goal of finding an alternative way to make propylene from propane without the high temperature restrictions. This approach reacts propane and oxygen over a catalyst to produce propylene and water. Yet, because propylene is more reactive to oxygen than propane, the reaction typically only yields only a small amount of propylene.
+
+“The reaction works, but similar to when you turn on your gas grill to cook at home, you don't produce propylene, you just burn the propane,” said Justin Notestein, professor of chemical and biological engineering at the McCormick School of Engineering and a co-corresponding author on the research. “Instead of searching for the right catalyst, we deconstructed the oxidative dehydrogenation reaction down into two components — dehydrogenation and selective hydrogen combustion — and then designed a tandem material that does both reactions, in a particular order. This produced the highest yields of propylene ever reported.”
+
+In the new approach, the researchers engineered two catalysts with nanoscale proximity: a platinum-based catalyst that selectively removes hydrogen from propane to make propylene, and an indium oxide-based catalyst that selectively burns the hydrogen, but not the propane or propylene.
+
+The researchers characterized the material using a variety of techniques and facilities, including scanning transmission electron microscopy and x-ray photoelectron spectroscopy at the Northwestern University Atomic and Nanoscale Characterization Experimental Center, and x-ray absorption measurements at the Materials Research Collaborative Access Team (MR-CAT) 10-ID x-ray beamline at the APS at Argonne National Laboratory.
+
+“We found that the nanostructure really matters,” Notestein said. “Indium oxide on platinum works great. Platinum on indium oxide doesn't. Platinum physically combined with indium oxide doesn't. This nanostructure is able to separate and sequence the reactions, even though both catalysts can do both reactions. This organization is common in biology but is very rare with human-made materials.”
+
+The team’s tests produced notable improvements in propane yield to produce propylene. At 450 degrees Celsius, tests produced 30 percent yield from a single pass through the reactor, while ensuring that more than 75 percent of the carbon atoms in the propane went on to become propylene. By comparison, it is impossible to produce yields greater than 24 percent when heating propane in the absence of oxygen, and the required catalysts are often unstable.
+
+“No one has ever demonstrated yields exceeding these thermodynamic limitations,” Notestein said. “From a utility point of view, our results are some of the first to really justify trying to do this reaction oxidatively, rather than just doing dehydrogenation.”
+
+The system’s simple design could be further optimized by adjusting the reactor conditions and altering the two catalyst components. Current methods to produce higher yields require more complex and expensive engineering solutions.
+
+“Since we rely on proven design-build-test cycles from engineering, there can be additional improvements,” said Notestein, director of the Center for Catalysis and Surface Science, part of the Institute for Sustainability and Energy at Northwestern. “These findings give us new compositions and rational strategies to try in the search for high-performing catalyst systems. This could especially benefit smaller chemical plants where energy consumption is very important and current engineering strategies may not be feasible.” He added the team’s approach reflects the larger efforts of the National Science Foundation’s Center for Innovative and Strategic Transformation of Alkane Resources (CISTAR), which funded the work.
+
+The findings also could further improve the energy efficiency of manufacturing many plastics used in structural and materials applications. Plastic parts in cars, for example, make vehicles lighter in weight and more energy efficient, while polymer house wrap and siding is durable and helps keep homes warm and dry.
+
+“Plastics, while much maligned, are essential to modern society, including efforts to make society more energy efficient,” Notestein said. “Making propylene, and materials like polypropylene, using this new approach could be much less energy intensive, which would be good news for everyone.”
+
+See: Huan Yan, Kun He, Izabela A. Samek, Dian Jing, Macy G. Nanda, Peter C. Stair*, Justin M. Notestein**, “Tandem In2O3-Pt/Al2O3 catalyst for coupling of propane dehydrogenation to selective H2 combustion,” Science 371, 1257 (19 March 2021). DOI: 10.1126/science.abd4441
+
+Author affiliation: Northwestern University
+
+Correspondence: *pstair@northwestern.edu, **j-notestein@northwestern.edu
+
+This paper is based on work supported primarily by the National Science Foundation under Cooperative Agreement EEC-1647722. I.A.S. acknowledges support by the U.S. Department of Energy (DOE) under award DE-FG02-03-ER154757. This work made use of REACT, EPIC, and Keck- II facilities of Northwestern University. Materials Research Collaborative Access Team operations are supported by the Department of Energy and the MR-CAT member institutions. This research used resources of the APS, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+© 2021  Robert R. McCormick School of Engineering and Applied Science, Northwestern University
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+06.14.2021

@@ -1,0 +1,45 @@
+Sending Electrons on a Rollercoaster Ride
+
+A first-of-its-kind x-ray instrument for frontier research with high-brightness x-rays is now in operation at Argonne National Laboratory. The new device utilizes a unique superconducting technology that speeds electrons on a path much like that of a rollercoaster.
+
+The insertion device (ID), called a Helical Superconducting Undulator (HSCU), was designed at the Advanced Photon Source (APS), a U.S. Department of Energy (DOE) Office of Science User Facility at  DOE’s Argonne National Laboratory. The device has three primary advantages over other types of IDs for producing high-brightness x-rays: (1) it generates a stronger magnetic field than other IDs; (2) it allows researchers to select a single energy from the x-ray beam without using any x-ray optics; and (3) it produces an x-ray beam with circular polarization. Argonne developed the helical undulator with $2 million in funding from the DOE Office of Science.
+
+Taken together, these advantages are exciting to researchers because the device allows them to collect data faster and more cleanly than with other devices, since the HSCU does not require extra optics to perform experiments.
+
+A typical ID is a set of powerful periodic magnetic structures that create high-brightness, forward-directed synchrotron radiation emission by forcing a stored charged particle beam (electrons at the APS) to perform wiggles or undulations as they pass through the device. The HSCU is the latest in a two-decade-long series of innovative IDs designed and delivered by Argonne scientists and engineers for the APS and other DOE synchrotron x-ray facilities.
+
+A helical superconducting undulator is a very challenging device to integrate into an operating electron storage ring, such as the one at the APS, because it introduces strong limitations on the handling of the electron beam in the storage ring. It might cause disruptions in ring operations and, hence, in delivery of x-rays to waiting researchers. The ingenious mechanical and magnetic design of the HSCU coil geometry developed by APS engineers and physicists makes it non-disruptive to the steady operation of the APS storage ring. Researchers only know the HSCU is there because of the x-ray beams it delivers.
+
+Efim Gluskin, an Argonne Distinguished Fellow and former APS Division Director who has led the undulator program at the APS from its inception, likened the motion of the electron bunch in the HSCU to the looping motion of a coiling roller coaster like the X Flight ride at the Six Flags Great America amusement park near Chicago. As electrons corkscrew through the device’s magnetic field, they generate the circularly polarized radiation.
+
+But in order to force the spiral motions of electrons, a special magnet had to be built with a strong spiraling magnetic field. That goal was accomplished by wrapping superconducting wires around a corkscrew-shaped section of iron. The end result is a 1.1-meter-long superconducting electromagnet with many spiral-shape alternating north-south magnetic poles; these magnetic poles, when the HSCU is energized, are what send the electrons on their spiral path.
+
+The HSCU provides researchers with a more intense x-ray beam that allows for faster data acquisition than conventional undulators, at timescales of a billionth of a second. And like conventional undulators, the new type of undulator can enable research on a range of complex phenomena, including the evolving dynamics of complex fluid flow and the magnetism of metals.
+
+When operating conventional undulators, scientists must use an extra device equipped with x-ray optical components called monochromators to select their preferred energy of x-ray beam. But the HSCU immediately delivers monochromatic x-ray beam directly from undulator to sample being studied without the help of a monochromator. This not only provides a more intense beam, but also a more coherent (or perfect) beam since any optic will have small imperfections that can introduce unwanted distortions into the x-ray beam. And on the top of that, the ability to produce circularly polarized radiation is important, since circular light is sensitive to properties of a material such as magnetism and molecular chirality – or handedness – that linear or unpolarized light cannot see. 
+
+The new undulator began operating at the Sector 7-ID x-ray beamline of the APS on January 19, 2018. This beamline, which is managed by the Argonne X-ray Science Division, is dedicated to ultra-fast time-resolved measurements of materials. Scientists are planning to use the new device for study the dynamics of fuel injection; a better understanding of that process could lead to more fuel-efficient motor vehicles.
+
+“They can bring this beam directly from the undulator and do a standard imaging experiment, like you would have an x-ray taken in a doctor’s office or a dental facility. But you can do it very fast here,” at intervals of a billionth of a second, said Jonathan Lang, director of the X-ray Science Division at the APS.
+
+Another technique that will benefit from the new undulator is x-ray photon correlation spectroscopy. This technique is the x-ray equivalent of shining a laser pointer against a wall; the spot it generates appears to shimmer, the result of intensity variations. “That’s caused by the roughness of the wall,” Lang said.
+
+If that roughness were to change millions of times per second, scientists would be able to detect the corresponding change in the wall’s interference pattern using x-ray photon correlation spectroscopy. The single wavelength provided by the new undulator will permit experimenters to look at how materials evolve at even faster timescales than were possible before. “By looking at the x-rays and how they scatter and shimmer, we can tell how molecules are moving around in the material and on what timescales they are moving around,” Lang said.
+
+The new undulator also will perform phase contrast imaging to highlight certain aspects of the phenomena under study, such as diesel fuel that is composed of various light elements called hydrocarbons. Phase contrast imaging can enhance the contrast between the hydrocarbons and the air during experiments, letting researchers see structures that are not possible to observe using conventional x-ray imaging, which only displays variations in density. For example, x-rays taken at a doctor’s office show bone more clearly than the much lighter soft tissue.
+
+Gluskin expects the new superconducting undulators will become a common tool for future light sources and free electron lasers because they outperform existing permanent magnet undulators in delivery of bright x-ray beams for wide energy range. And the HSCU in particular opens the door for the next generation of more compact and cost-saving free electron lasers.
+
+Superconducting undulator technology also is essential for the APS Upgrade. The upgrade will equip researchers with a next-generation facility to more precisely probe atomic and molecular structure and function, extending U.S. global leadership in hard x-ray (short wavelength) science and technological research for decades to come.
+
+“The helical superconducting undulator will allow us to try out some techniques that we want to do in the upgrade,” Lang said.
+
+This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.09.2018

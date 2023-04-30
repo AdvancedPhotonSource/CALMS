@@ -1,0 +1,37 @@
+Making Strong Plastics from Silk
+
+Silk is an attractive material for all sorts of applications, particularly in the biomedical field, because of its mechanical toughness and biocompatibility. Solution-based processing, however, yields a product that is expensive to ship and changes properties over time. Now researchers using the U.S. Department of Energy’s Advanced Photon Source (APS), an Office of Science user facility at Argonne National Laboratory have shown they can create an intermediate form of silk-based polymer that can be stored and shipped easily and processed into other items with tunable mechanical properties. Their results were published in the journal Nature Materials.
+
+Silk is a semi-crystalline, protein-based polymer. As a source material, it is environmentally sustainable. Bioactive materials, such as antibiotics and monoclonal antibodies, can be mixed in with it, and it will protect them during processing and for long-term storage. It can be used for medical implants that eventually degrade within the human body, without causing an immunological response.
+
+Solution-based procedures for processing silk, however, have drawbacks, including steps that involve water and salts that must be removed. Another drawback is that manufacturers wind up shipping products that are a mostly water, which adds weight and costs them money. Yet another is that in an aqueous solution, the proteins tend to slowly self-assemble, rendering the polymer less usable.
+
+To solve those problems, an international team of scientists first produced a solution containing the silk protein, fibroin, then freeze-dried it to remove most of the water. That left them with amorphous silk nanomaterials—pellets of silk measuring between 30 and 1,000 nanometers in diameter. Those pellets can be stored indefinitely without any degradation.
+
+Once heated above 97° C, the pellets begin to melt, and putting them under pressure causes them to fuse into a continuous material. Compressing the material in a mold at high temperatures and pressure leaves behind a hard, solid bar of silk. The researchers put silk bars into a lathe and carved them into bone screws, which can be implanted into a fractured bone to help it heal. They also machined the material into ear tubes, which are used to drain infected ear canals.
+
+To understand changes to the silk’s molecular structure caused by the process, researchers performed wide-angle x-ray scattering measurements at the BioCARS 14-BM-C beamline at APS, as well as spectroscopic studies. They looked at traditional silk fibers, the amorphous silk nanomaterials, and the fully processed material to see how the crystalline structure of the materials had changed. They found that one type of crystalline structure that was prevalent in the silk fibers was significantly reduced in the pellets, but increased again under high-temperature processing.
+
+The researchers also found they could fine-tune the flexibility, tensile strength, and compression strength of the final product by varying the temperature and pressure at which they processed the material, with maximum strength at a processing temperature of 145° C and a decrease at 175° C.
+
+The team added antibiotics to their pellets and found that the silk stabilized those drugs, allowing them to survive processing temperatures that would normally render them inactive. They doped the material they used to make ear tubes with an enzyme that caused the tubes to degrade faster than undoped ones, showing that the time for biodegradation can be tuned as well. They also found that their silk-based bone screws took up some water and swelled slightly to fit the space they’d been inserted into, and softened a bit to match the mechanical properties of the bone.
+
+Future studies will examine how the material works in living tissue and how it can be further fine-tuned.  ― Neil Savage
+
+See: Chengchen Guo1, Chunmei Li1*, Hiep V. Vu1, Philip Hanna3, Aron Lechtig3, Yimin Qiu1, Xuan Mu1, Shengjie Ling1,3, Ara Nazarian3,4, Samuel J. Lin2, and David L. Kaplan1**, “Thermoplastic moulding of regenerated silk,” Nat. Mater. 19, 102 (January 2020). DOI: 10.1038/s41563-019-0560-8
+
+Author affiliations: 1Tufts University, 2Harvard Medical School, 3ShanghaiTech University, 4Yerevan State Medical University
+
+Correspondence: *chunmei.li@tufts.edu, **david.kaplan@tufts.edu
+
+This work was supported by grants from the National Institutes of Health (R01AR068048,  R01DE016525), the Air Force Office of Scientific Research (FA9550-17-1-0333), and the Stepping Strong Foundation, Brigham and Women’s Hospital (A. Nazarian and G. Dyer). Use of BioCARS was supported by the National Institutes of Health, National Institute of General Medical Sciences grant P41 GM118217. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.29.2020

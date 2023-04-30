@@ -1,0 +1,13 @@
+APS user operations have been suspended due to injector magnet failure.
+
+APS user operations have been suspended due to injector magnet failure.
+
+The earliest day for resumption of user operations is currently anticipated to be Tuesday, October 15, 2019.
+
+Check "Machine status" page (https://www.aps.anl.gov/Machine-Status) for further information and updates.
+
+Scheduled users should contact their beamline point of contact.
+
+Published Date
+
+10.08.2019

@@ -1,0 +1,59 @@
+“Colloidal Gels,” Ubiquitous in Everyday Products, Divulge Their Secrets
+
+The original MIT News article by Michaela Jarvis can be read here.
+
+Researchers at MIT have developed a new method for determining the structure and behavior of a class of widely used soft materials known as weak colloidal gels, which are found in everything from cosmetics to building materials. The researchers in this study employed x-rays from two research facilities, including the U.S. Department of Energy’s Advanced Photon Source, to characterize the gels over their entire evolution, as they change from mineral solutions to elastic gels and then glassy solids. This characterization should allow further study, prediction, and perhaps manipulation of the gels’ behavior, opening doors to advances in such areas as drug delivery and food production, in which these gels are common ingredients, as well as in applications ranging from water purification to nuclear waste disposal, which use these colloidal gels in a crystallized, porous form known as zeolites. The work was published in the journal Proceedings of National Academy of Sciences of the United States of America.
+
+The work uncovers the microstructural mechanisms underlying how the gels change naturally over time, and how their elastic properties also change, both over time and depending on the rate at which they are experimentally deformed.
+
+“We believe this new overall picture and understanding of the gelation and subsequent aging process is of great importance for material scientists who work on soft matter,” said Gareth McKinley, the School of Engineering Professor of Teaching Innovation and professor of mechanical engineering at MIT.
+
+“Our results enable researchers to determine why weak colloidal gels show aspects of both glassy and gel-like behavior, and to possibly engineer the gels to have particular desired features in their mechanical response,” said Bavand Keshavarz, a postdoc in MIT’s Department of Mechanical Engineering and first author of the new study.
+
+The research was performed as part of an international collaboration involving MIT, Argonne National Laboratory, the French National Center for Scientific Research, and the French Alternative Energies and Atomic Energy Commission.
+
+Using aluminosilicate gels, widely utilized for making zeolites, the researchers overcame many of the challenges associated with characterizing these very soft materials, which continuously change over time, as well as exhibiting different properties depending on the rate at which that are deformed. Keshavarz likens their behavior to that of Silly Putty®, which stretches and flows if you pull it slowly, but breaks off sharply if you give it a fast tug.
+
+The gels also age quickly, which means that the mechanical behaviors they exhibit, while already varied at differing deformation rates, change quickly over time. Most previous studies focused on studying these materials in their mature state, Keshavarz said.
+
+“They could not get an overall picture of the gel because the experimental window of their observations was rather narrow,” Keshavarz said.
+
+For this study, the researchers realized they could put the gels’ aging process to their advantage through a framework known as “time-connectivity superposition.”
+
+They subjected the alumino-silicates to a repeated series of complex deformation frequencies known as chirps during the gelation and subsequent aging processes. Chirps, modeled after the echolocation signal sequences produced by bats and dolphins, very quickly test the properties of changing soft materials.
+
+By repeatedly applying the chirp signals throughout the evolution of the gels, the researchers developed a sequence of what could be thought of as informational snapshots representing the mechanical properties of the gels as they were subjected to a wide range of deformation frequencies spanning over eight orders of magnitude (for example, from 0.0001 hertz to 10,000 hertz).
+
+“This means we have looked at the material behavior over a very wide range of probing frequencies,” said Keshavarz, “from very slow deformations to very fast ones.”
+
+The resultant snapshots provided a comprehensive profile of the mechanical properties of the gels, allowing the researchers to conclude that weak colloidal gels, also known colloquially as pasty materials, have a dual nature, exhibiting features of both glasses and gels. Prior to this study, researchers’ limited observational perspectives led them to conclude that such materials were either gels or glasses, not having observed both features in a single experiment.
+
+“One scientist says it’s a gel, and the other says it’s a glass. They’re both right,” said McKinley, comparing the gels’ characteristics to that of caramels, which exhibit the same principles of time-connectivity superposition as they are heated and can be either soft and chewy or brittle and glassy.
+
+To observe the evolving structure of aluminosilicate gels, in addition to examining their mechanical properties throughout the gelation and aging process, the researchers applied x-ray scattering. The team first employed time-resolved x-ray scattering at the SOLEIL Synchrotron (France), and then ultra-small-angle x-ray scattering/small-angle x-ray scattering (USAXS/SAXS) at the X-ray Science Division Chemical & Materials Science Group’s dedicated USAXS/SAXS/wide-angle scattering instrument at the 9-ID beamline of the APS, an Office of Science user facility at Argonne. This allowed the team to resolve the structure of the gel starting from when its chemical components were smaller than the wavelength of light and therefore invisible without the penetration of x-rays. The process allowed the researchers to observe the physical structure of the gels at length scales ranging over four orders of magnitude, zooming in from a scale of 1 micron down to that of 0.1 nanometer.
+
+Observing the gels at such wide-ranging spatial scales, the researchers discovered that the fractal-like network of connected particles that develops as the particles cluster into a gel remains fixed beyond the gel point. The network grows and adds clusters, changing in scale, but the main structure or “backbone” and geometry remain the same.
+
+Examining the materials over such widely-ranging spatial scales and combining this information with the concurrent information about the materials’ mechanical behavior, the researchers also concluded that larger clusters within the network relaxed more slowly in a gel-like manner after being deformed while the smaller clusters relaxed more quickly like a rigid glassy material. McKinley makes the analogy to the marked differences we experience between the time it takes for a memory foam mattress to recover from being compressed versus the time a very hard conventional mattress takes. Observing this relationship between the size of clusters within the material and the rate of relaxation sheds further light on the origins of these soft materials’ distinctive properties.
+
+“Our work opens up a novel perspective,” says Keshavarz, “and paves the path for researchers to develop a more comprehensive view about the nature of these pasty materials.”
+
+“Colloidal gels are ubiquitous materials,” said Emanuela Del Gado, associate professor in Georgetown University’s Department of Physics, who was not involved in this research but has collaborated with the MIT team in the past. “Their physics is important in so many industries and technologies (from food to paint, to cement, personal care products and biomedical applications). This paper is the first attempt to identify the microscopic traits that unify the mechanics of a potentially wide class of systems, by connecting [the gels’] microstructure to their rheological behavior.”
+
+See: Bavand Keshavarz1*, Donatien Gomes Rodrigues2, Jean-Baptiste Champenois2, Matthew G. Frith3, Jan Ilavsky3, Michela Geri1, Thibaut Divoux4,5, Gareth H. McKinley1, and Arnaud Poulesquen2, 4, “Time–connectivity superposition and the gel/glass duality of weak colloidal gels,” Proc. Natl. Acad. Sci. U.S.A. 118(15), e2022339118 (2021). DOI: 10.1073/pnas.2022339118
+
+Author affiliations: 1Massachusetts Institute of Technology, 2Universite´ Montpellier, 3Argonne National Laboratory, 4CNRS–Massachusetts Institute of Technology, 5Universite´ de Lyon
+
+Correspondence: * bavand@mit.edu
+
+The authors acknowledge the French National Research Agency (ANR) for financial support of the DYNAMISTE project (ANR-15-CE07-0013). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357. 
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+06.08.2021

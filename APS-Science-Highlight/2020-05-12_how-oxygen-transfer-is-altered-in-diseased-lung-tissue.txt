@@ -1,0 +1,37 @@
+How Oxygen Transfer is Altered in Diseased Lung Tissue
+
+The original University of Illinois at Urbana-Champaign by Lois Yoksoulian can be read here.
+
+A multidisciplinary team of researchers using a variety of research techniques including x-ray studies at the U.S. Department of Energy’s Advanced Photon Source (APS) has developed tiny sensors that measure oxygen transport in bovine lung tissue. The study – which establishes a new framework for observing the elusive connection between lung membranes, oxygen flow, and related disease – was published in the journal Nature Communications.
+
+“The membranes that encase lungs and add the elasticity needed for inhaling and exhaling appear to also play a critical role in supplying oxygen to the bloodstream,” said materials science and engineering professor Cecilia Leal, who led the study with graduate students Mijung Kim and Marilyn Porras-Gomez.
+
+For lung tissue to perform effectively, it must be able to transfer oxygen and other gases through its membranes, the researchers said. One way this happens is through a substance – called a surfactant – that reduces lung liquid surface tension to allow this exchange to occur. However, the surfactant cardiolipin is known to be overly abundant in tissues infected with bacterial pneumonia, the study reports.
+
+The new sensors are thin silicon- and graphene-based films that contain tiny transistors that measure oxygen permeation between biological surfaces. “A thin film of lung membranes is spread out over many tiny sensors at the device surface, giving us a better picture of what is going on over a relatively large area rather than just a spot,” Leal said.
+
+The team used the sensors to compare oxygen transfer between healthy and diseased membranes. The samples consisted of a bovine lipid-protein extract commonly used to treat premature infants suffering respiratory distress, with a portion of the samples combined with cardiolipin.
+
+“We found that more oxygen passes through the tissue diseased by cardiolipin,” Leal said. “Which may help explain previous observations of there being an off-balance of oxygen in the blood of pneumonia patients. Even though an increase in oxygen flow could be perceived as positive, it is important to keep the natural exchange that occurs in the lung – transferring oxygen more rapidly into the bloodstream disrupts this healthy equilibrium.”
+
+The researchers also compared the structure of healthy and diseased tissue using atomic force microscopic in the lab, and grazing incidence small-angle scattering at the X-ray Science Division 12-ID-B beamline at the APS, an Office of Science user facility at Argonne National Laboratory. They found that the tissue combined with cardiolipin showed damaged spots, which they posit may be responsible for increased oxygen transfer and subsequent off-balance oxygen levels in pneumonia patients.  
+
+The next stage of this research will be to study lung membranes extracted from healthy and diseased mammalian lungs, Leal said.  “Our results raise important insights on lung membrane function, indicating that changes in structure and composition directly relate to oxygen permeation. This work can potentially enable clinical research examining the role of unbalanced oxygen diffusion through lung membranes in a pathological context.”
+
+See: Mijung Kim, Marilyn Porras-Gomez, and Cecilia Leal*, “Graphene-based sensing of oxygen transport through pulmonary membranes,” Nat. Commun. 11, 1103 (2020). DOI: 10.1038/s41467-020-14825-9
+
+Author affiliation: University of Illinois at Urbana-Champaign
+
+Correspondence: *cecilial@illinois.edu
+
+This work is funded by the Ofﬁce of Naval Research (ONR) grant numbers N000141612886 and N000141812087 (DURIP-Defense University Research Instrumentation Program) and in part by the National Institutes of Health, grant number: 1DP2EB024377 (non-lamellar lipid structures). This research was carried out in part at the Materials Research Laboratory, University of Illinois. This work used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+The U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+05.12.2020

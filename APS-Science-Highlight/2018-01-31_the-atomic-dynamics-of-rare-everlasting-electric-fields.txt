@@ -1,0 +1,49 @@
+The Atomic Dynamics of Rare Everlasting Electric Fields
+
+The original Duke University Pratt School of Engineering press release by Ken Kingery can be read here.
+
+By scattering neutrons off the atoms of yttrium manganite (YMnO3) heated to 3000 degrees Fahrenheit, scientists using U.S. Department of Energy research facilities including the Spallation Neutron Source (SNS), and the High-Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory, and the Advanced Photon Source (APS) at Argonne National Laboratory have discovered the atomic mechanisms that give the unusual material its rare electromagnetic properties. They combined these results with high-resolution x-ray scattering data collected at the APS. The discovery could help scientists develop new materials with similar properties for novel computing devices and micro-actuators.
+
+The experiment was conducted as a collaboration between Duke University and Oak Ridge National Laboratory and colleagues from the University of Tennessee, Knoxville, and Argonne National Laboratory. The results were published online in Nature Communications.
+
+Ferromagnetism is the scientific term for the phenomenon responsible for permanent magnets like the soft permanent magnet iron. Such materials exist because their molecular structure consists of tiny magnetic patches that all point in the same direction. Each patch, or domain, is said to have a magnetic dipole moment, with a north and a south pole, which, added together, produce the magnetic fields so often seen at work on refrigerator doors.
+
+Ferroelectricity is a similar property, but more rare and difficult to conceptualize. In much the same way as a permanent magnet, a ferroelectric material consists of domains with electric dipole moments aligned with one another. This produces a naturally occurring permanent electric field, like a collection of microscopic balloons with a long-lasting charge of static electricity.
+
+Yttrium manganite is one of the very few materials that combine both the ferroelectric property and also magnetic ordering at extremely cold temperatures. This rare combination presents the interesting possibility of controlling the material's magnetic properties with electricity and vice versa. Harnessing this ability could let scientists create more efficient computers based on four digit-states rather than just today's 1s and 0s by flipping both electrical and magnetic states, as well as new types of sensors and energy converters.
+
+"These so-called multi-ferroic materials are very rare," said Olivier Delaire, associate professor of mechanical engineering and materials science and of physics at Duke. "But if we can understand the mechanisms of what is happening at the atomic level, we have a better chance of designing and discovering more materials enabling new technologies."
+
+Because the ferroelectric behavior of yttrium manganite only turns off above 2000 degrees Fahrenheit, researchers have never been able to probe the atomic vibration waves that yield the desired arrangement of microscopic electric dipoles. While the molecular underpinnings of yttrium manganite's ferroelectric properties have been theorized, there have never been direct measurements to prove them.
+
+To determine how the property arises, researchers must probe the wave-like vibrations of the stacking of atoms in the material, which oscillate at frequencies over a thousand billion times per second. They also must do this both above and below the 2000 degree ferroelectric switching temperature, which is a tall task, to say the least. But that's precisely what the researchers did.
+
+"It was challenging to measure the atomic oscillations at temperatures up to 3000 degrees Fahrenheit," said Dipanshu Bansal, a postdoctoral scholar in the Delaire research group at Duke and the lead author on the study. "It required high-intensity neutron beams, special high-temperature materials and a controlled atmosphere furnace heating the sample in the air to avoid decomposing the sample, which would otherwise happen in a more standard vacuum furnace."
+
+The experiments involved shooting the extremely hot sample of yttrium manganite with neutrons. By detecting where the neutrons ended up after colliding with the sample's atoms, the researchers could determine where the atoms were and how they were collectively oscillating. There are very few places in the world that have such capabilities, and the Oak Ridge National Laboratory, a few hours' drive from Duke, happens to host both the High-Flux Isotope Reactor and the Spallation Neutron Source, the most powerful source of neutron beams in the world.
+
+The researchers probed the material using neutrons at the SNS and HFIR at various energies and wavelengths, giving an overall picture of its atomic behaviors. They found that above the transition temperature, a certain group of atoms were free to move around and vibrated together in a particular way. But as the material cooled and shifted phases, those atoms froze into the permanent crystalline arrangement that is responsible for the ferroelectric properties.
+
+And to confirm the neutron results, the researchers also used the ultra-bright x-ray beams at the APS to carry out single-crystal x-ray diffraction experiments at the X-ray Science Division 11-ID-C x-ray beamline at the APS, and large-scale quantum simulations of atomic behavior with the supercomputers of the National Energy Research Scientific Computing Center at Lawrence Berkeley National Laboratory. The APS, HFIR, SNS, and National Energy Research Scientific Computing Center are Office of Science user facilities.
+
+"This material was never previously understood on such a fine atomistic level," said Bansal and Delaire. "We've had theories about the importance of atomic oscillations, but this is the first time we've directly confirmed them. Our experimental results will allow researchers to refine theories and create better models of these materials so that we can design even better ones in the future."
+
+This research was supported by the U.S. Department of Energy (DE-SC0016166), the National Science Foundation (DMR-1350002), Oak Ridge National Laboratory, Argonne National Laboratory, the National Energy Research Scientific Computing Center and UT-Battelle, LLC.
+
+See: Dipanshu Bansal1,2*, Jennifer L. Niedziela1, Ryan Sinclair3, V. Ovidiu Garlea2, Douglas L. Abernathy2, Songxue Chi2, Yang Ren4, Haidong Zhou3, and  Olivier Delaire1,2**, "Momentum-Resolved Observations of the Phonon Instability Driving Geometric Improper Ferroelectricity in Yttrium Manganite," Nat. Commun. 9, 15 (2018). DOI: 10.1038/s41467-017-02309-2
+
+Author affiliations: 1Duke University, 2Oak Ridge National Laboratory, 3University of Tennessee, Knoxville, 4Argonne National Laboratory  
+
+Delaire research group at Duke: http://delaire.pratt.duke.edu/
+
+Correspondence: *dipanshu.bansal@duke.edu, **olivier.delaire@duke.edu
+
+Neutron and x-ray scattering measurements and analysis were supported by the U.S. Department of Energy (DOE) Office of Science-Basic Energy Sciences, Materials Sciences and Engineering Division, under the Early Career Award No. DE-SC0016166. H.Z. (sample synthesis) thanks the support from NSF-DMR-1350002. The use of Oak Ridge National Laboratory’s Spallation Neutron Source and High Flux Isotope Reactor was sponsored by the Scientific User Facilities Division, Basic Energy Sciences, U.S. DOE. Thermogravimetric analysis was conducted at the Center for Nanophase Materials Sciences, which is a DOE Office of Science User Facility. Theoretical calculations were performed using resources of the National Energy Research Scientific Computing Center, a DOE Office of Science User Facility supported by the Office of Science of the U.S. DOE under contract no. DE-AC02-05CH11231. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+01.31.2018

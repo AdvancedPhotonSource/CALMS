@@ -1,0 +1,63 @@
+First Pictures of an Enzyme that Drives a New Class of Antibiotics
+
+The original Washington University in St. Louis article by Talia Ogliore can be read here.
+
+Understanding how antibiotic scaffolds are constructed in nature can help scientists prospect for new classes of antibiotics through DNA sequencing and genome mining. Researchers have used this knowledge and the x-ray beams from two U.S. Department of Energy synchrotron light source user facilities including the Advanced Photon Source (APS) to help solve the molecular structure of the enzyme that makes obafluorin — a broad spectrum antibiotic agent made by a fluorescent strain of soil bacteria. The new work from Washington University in St. Louis and the University at Buffalo was published in the journal Nature Communications. With the structure and techniques reported in this new paper, it is now possible to quickly and easily create analogs of the natural product in the laboratory — to optimize its molecular properties and bioactivity.
+
+A multi-part enzyme called a “nonribosomal peptide synthetase” produces the highly reactive beta-lactone ring that is responsible for obafluorin’s antimicrobial activity.
+
+“Obafluorin has a novel structure compared to all FDA-approved antibiotics,” said Timothy Wencewicz, assistant professor of chemistry in Arts & Sciences at Washington University. “In the long term, we really need new structural classes of antibiotics that have never been contaminated by clinical resistance from established antibiotic classes.”
+
+These chemicals could be used as next-generation antibiotics for humans, or even to benefit the agriculture sector, Wencewicz noted — as researchers strive to engineer seed treatments and biopesticides to support plant systems capable of making enough food to feed the 9.6 billion people projected to live on this planet by 2050.
+
+The new work provides a useful road map that shows how individual protein domains in the ObiF1 enzyme are stitched together in three-dimensional space. An enzyme’s structure is fundamental to almost every function it performs.
+
+“The solution of this structure expands on previous discoveries to provide views of the molecular interactions between catalytic domains in a brand new way,” said Andrew M. Gulick, associate professor in the department of structural biology in the Jacobs School of Medicine and Biomedical Sciences at the University at Buffalo. “This is a brand new class of compounds, and we’ve never had the molecular structure to see some of the more interesting steps in their biosynthesis.”
+
+Obafluorin is made by a fluorescent strain of soil bacteria that forms biofilms on plant roots. Obafluorin was originally discovered in 1984, but it wasn’t until 2017 that Wencewicz uncovered the genetic blueprint of the enzyme that makes the molecule’s bio-active components. That discovery marked the first time that anyone had been able to pin down a beta-lactone forming enzyme from nature, and recreate it in the laboratory.
+
+Like penicillin, obafluorin has a four-membered ring — sometimes called an enchanted ring. A four-membered ring puts strain on bond angles that carbon prefers to adopt. But because a four-member ring is unstable, these molecules are also short-lived and difficult to make. For example, it took years for chemists to learn how to synthesize penicillin from chemicals and then figure out how fungi make it. This ultimately led to the global production of penicillin by fermentation.
+
+Researchers in the Wencewicz laboratory were able to fast-track the discovery process using genetics to zero in on the biosynthetic machinery that bacteria use to make obafluorin, and then to reconstruct that multi-step, enzyme-catalyzed process in the laboratory.
+
+For their new work, Wencewicz and Gulick, along with postdoctoral researcher Dale F. Kreitler (UB) and graduate students Jason E. Schaffer and Erin M. Gemmell (Washington University), used the National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) structural biology facility at APS beamline 23-ID-B at Argonne National Laboratory, and the 12-2 x-ray beamline at the Stanford Synchrotron Radiation Lightsource (SSRL) at the SLAC National Accelerator Laboratory to map the full-length nonribosomal peptide synthetase (NRPS) that makes the bio-active components of obafluorin. (The APS and SSRL are Office of Science user facilities.)
+
+Gulick has previously solved many of the seminal crystal structures of core domains of these NRPS enzymes, as well as structures for full-length systems such as the one presented in this work.
+
+The result is a comprehensive, detailed molecular structure at 3-angstrom resolution (Fig. 1) that allows one to identify the atoms in the protein chain, see their location and points of contact along the chain, and determine how the pieces are assembled to produce useful molecules from start to finish.
+
+“We were able to catch some of the building blocks of the molecules captured inside some of the enzyme-active sites — in the act of doing the chemistry,” Wencewicz said. “This helped us to connect small molecules to the protein, and fill in some of the mechanistic gaps in how the molecules are created.”
+
+This type of view is particularly important for the future goal of creating a chemical library, populated with related beta-lactone compounds that have been engineered for beneficial uses.
+
+“We also got a very interesting glimpse at how the domains of the protein actually talk to each other,” Wencewicz said. The crystal structures allowed them to see how key components of the enzyme dock to each other, and how molecules are efficiently moved through the entire NRPS assembly line.
+
+One particular component — something called an MbtH-like protein, or MLP, because it was first identified in a related system to produce mycobactin in the bacteria that causes tuberculosis — was shown to play a critical role in facilitating protein-to-protein interactions between catalytic domains.
+
+“Turns out, the (overall) protein suffers largely when you take away this very little protein that provides the critical handshake,” he said. “It showed us once and for all that the coordination of these domains is absolutely critical to the function of making antibiotics with this enzyme.”
+
+Taken as a whole, the new paper is unique in its reach, the researchers said, presenting the X-ray crystal structure of the complete obafluorin-synthesizing enzyme ObiF1, probing the molecular mechanism for various key steps in the catalytic cycle, and establishing the conserved residues that enable formation of the reactive beta-lactone ring.
+
+Finding an antibiotic from a source in nature is only a first step in a long process of drug development. Gulick and Wencewicz plan to continue to apply their knowledge of the obafluorin biosynthetic pathway to discover new beta-lactone natural products using genomic and biochemical approaches.
+
+“Given the structural diversity of known beta-lactone natural products, we believe that novel beta-lactone synthases remain to be discovered,” Wencewicz said.
+
+The video “This is a Nonribosomal Peptide Synthetase” can be viewed here.
+
+A video interview with researcher Timothy Wencewicz explaining this study can be viewed here. https://youtu.be/XuJI62GxgEQ
+
+See: Dale F. Kreitler1, Erin M. Gemmell2, Jason E. Schaffer2, Timothy A. Wencewicz2*, and Andrew M. Gulick1**, “The structural basis of N-acyl-α-amino-β-lactone formation catalyzed by a nonribosomal peptide synthetase,” Nat. Commun. 10, 3432 (31 July 2019). DOI: 10.1038/s41467-019-113
+
+Author affiliations: 1Jacobs School of Medicine & Biomedical Sciences at the University at Buffalo, 2Washington University in St. Louis
+
+Correspondence: *wencewicz@wustl.edu, **amgulick@buffalo.edu
+
+T.A.W. would like to acknowledge support for this research from the Research Corporation for Science Advancement through a Cottrell Scholar award and the Alfred P. Sloan Foundation through a Sloan Fellowship. A.M.G. acknowledges the support of the National Institutes of Health (NIGMS Grant GM116957). GM/CA-XSD is funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). The Eiger 16M detector at GM/CA-XSD was funded by an NIH–Ofﬁce of Research Infrastructure Pr-grams, High-End Instrumentation Grant (1S10OD012289-01A1). Use of the Stanford Synchrotron Radiation Lightsource, SLAC National Accelerator Laboratory, is supported by the U.S. Department of Energy (DOE), Office of Science, Office of Basic Energy Sciences under Contract No. DE-AC02-76SF00515.This research used resources of the Advanced Photon Source, a U.S. DOE Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02–06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+08.22.2019

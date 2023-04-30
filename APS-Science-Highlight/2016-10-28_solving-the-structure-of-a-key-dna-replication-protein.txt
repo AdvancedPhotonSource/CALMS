@@ -1,0 +1,43 @@
+Solving the Structure of a Key DNA Replication Protein
+
+The original Icahn School of Medicine at Mount Sinai Hospital press release can be read here.
+
+A research team led by scientists at the Icahn School of Medicine at Mount Sinai (ISMMS) utilized two macromolecular crystallography x-ray beamlines at the U.S. Department of Energy’s Advanced Photon Source (APS) to determine the three-dimensional structure of a key protein that helps damaged cellular DNA repair itself. Investigators say that knowing the chemical structure of the protein will likely help drug designers build novel anti-cancer agents.
+
+The study, published in the journal Science Advances, involved a team of investigators from multiple institutions, who worked for more than two years to decipher the unusual configuration of the protein PrimPol, whose function was discovered in 2013. PrimPol is used in cells when normal repair proteins encounter damaged sections of DNA, often caused by anticancer chemotherapy drugs. The protein can skip over the damage to rescue DNA replication, said the study's senior investigator, Aneel K. Aggarwal, Professor of Pharmacological and Oncological Sciences at ISMMS.
+
+"PrimPol can counter the anti-cancer action of common chemotherapeutic agents such as cisplatin. By inhibiting PrimPol, we believe that we can increase the efficacy of chemotherapeutic agents in the treatment of many cancers," he said.
+
+DNA damage happens constantly—more than 100,000 events occur in every human cell each day. PrimPol is necessary for the cell to repair DNA damage, but sometimes this may not be to the individual's benefit, as in the case of resistance to chemotherapeutic agents, said the study's co-lead author, Olga Rechkoblit, Assistant Professor of Pharmacological Sciences at ISMMS.
+
+The basic steps involved in DNA replication are known. The first step involves unzipping the intertwined double helix DNA structure, creating a "Y" shape known as a replication fork. These two strands act as templates for making the new DNA strands. A short piece of RNA known as a primer (produced by a primase enzyme) acts as the starting point for the synthesis of new DNA.
+
+"It had been believed that DNA polymerase and primase activities in human cells were the province of separate enzymes. Then PrimPol was discovered, and the understanding of DNA replication changed dramatically. PrimPol was found to be capable of both restarting and performing DNA synthesis after DNA replication stalls," said Rechkoblit.
+
+While scientists were excited by the discovery of the enzyme, they didn't understand how it worked. Aggarwal and Rechkoblit organized a team of investigators from Cornell University, Argonne National Laboratory, and the University of Texas Medical Branch in Galveston to find out. The team collected x-ray measurements of the enzyme (Fig. 1) at the Northeastern Collaborative Access Team 24-ID-C and National Institute of General Medical Sciences and National Cancer Institute 23-ID x-ray beamlines at the Argonne APS (the APS is an Office of Science user facility).
+
+"Because the three-dimensional structure of the enzyme is so different from that of other DNA polymerases, it required a group effort to elucidate its structure," said Aggarwal.
+
+The clinical implications are clear, according to Rechkoblit.
+
+"Many chemotherapy agents kill cancer cells by damaging their DNA and preventing the completion of DNA replication. PrimPol, on the other hand, promotes the replication progression and, thus, cell survival," she says. "Knowing the structure of PrimPol described in the current study is invaluable for designing an inhibitor for this enzyme as a future cancer therapy."
+
+"The idea would be that a patient could be given a PrimPol inhibitor—an agent that shuts down this clever machine—at the same time as chemotherapy, so that cancer cells cannot repair the killing damage chemotherapy offers," she said.
+
+See: Olga Rechkoblit1, Yogesh K. Gupta1, Radhika Malik1, Kanagalaghatta R. Rajashankar2,3, Robert E. Johnson4, Louise Prakash4, Satya Prakash4, Aneel K. Aggarwal1*, “Structure and mechanism of human PrimPol, a DNA polymerase with primase activity,” Sci. Adv. 2, e1601317 (21 October 2016). DOI: 10.1126/sciadv.1601317
+
+Author affiliations: 1Icahn School of Medicine at Mount Sinai, 2Cornell University,
+
+3Northeastern Collaborative Access Team, 4University of Texas Medical Branch
+
+Corresponding author: *aneel.aggarwal@mssm.edu
+
+The Northeastern Collaborative Access Team beamlines are funded by the National Institute of General Medical Sciences (NIGMS) from the NIH (P41 GM103403). The National Institute of General Medical Sciences and National Cancer Institute beamlines have been funded in whole or in part with funds from the National Cancer Institute (ACB-12002) and the NIGMS (AGM-12006). The Pilatus 6M detector on 24-ID-C beamline was funded by an NIH–Office of Research Infrastructure Programs High-End Instrumentation grant (S10 RR029205). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.28.2016

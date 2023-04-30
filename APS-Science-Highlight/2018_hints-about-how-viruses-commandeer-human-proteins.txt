@@ -1,0 +1,37 @@
+Hints about How Viruses Commandeer Human Proteins
+
+The original Science Codex article can be read here.
+
+Researchers at Case Western Reserve University and the University of Michigan have produced the first image of an important human protein as it binds with ribonucleic acid (RNA), a discovery that could offer clues to how some viruses, including HIV, control expression of their genetic material. That information, based in large part on studies carried out at the U.S. Department of Energy’s Advanced Photon Source at Argonne, could lead to new strategies to block viruses from replicating, thereby limiting or halting infection.
+
+RNA is one of three macromolecules -- along with DNA and proteins -- essential to all forms of life. By understanding how hnRNP A1 binds to RNA, the scientists may find ways to jam up components of the replication machinery when the protein is coopted by disease.
+
+The team of scientists reveals the mechanism used by the protein, hnRNP A1 to link to the section of RNA, called the “hairpin loop.” Their research was published in a cover article in the Journal of Molecular Biology. They found that hnRNP A1, a protein essential to cell function and virus replication, has a significantly different structure than its only previously known form: binding to DNA.
+
+“We solved the three-dimensional structure of the protein bound to an RNA hairpin derived from the HIV virus,” said Blanton Tolbert, a chemistry professor at Case Western Reserve. “But because the hairpin loop is found in other viruses and throughout healthy cells, our findings may help explain how the protein connects to the other hairpin targets.”
+
+Tolbert began this research six years ago, frustrated that the only information available was the structure of the protein bound to a synthetic DNA, which isn't its natural target. Proteins that bind hairpins sense both the structure and the sequence information presented in the loop. The structure of the DNA complex did not demonstrate the molecular recognition that must take place to bind RNA hairpins.
+
+To discover the structure bound to RNA, the researchers combined three techniques: x-ray crystallography at the Life Sciences Collaborative Access Team 21-ID-G beamline at the APS, nuclear magnetic resonance spectroscopy, and small angle x-ray scattering at the Biophysics Collaborative Access Team 18-ID-D beamline at the APS. Each technique yielded a piece of the puzzle.
+
+To bind to RNA, hnRNP A1 has two domains, RRM1 and RRM2, which are akin to hands. Scientists already knew both hands are needed to connect to RNA. But the researchers found that, instead of each domain grabbing a section of the loop, only RRM1 makes contact with the RNA. RRM2 acts as support, helping organize RRM1 into the structure needed to conform to a certain section of the loop.
+
+To confirm that the structures are key to binding, the researchers inserted mutations by changing amino acids on the surface of the domains. Surprisingly, mutations on the far side of RRM1 — the surface not in contact with the RNA but with the RRM2 — caused decoupling at that site and substantially weakened the affinity for RNA.
+
+Without the normal connection between the two domains, RRM1 fails to adopt the geometric shape that conforms to the RNA hairpin loop.
+
+The researchers are further investigating how the protein transmits the effects of RRM2 to RRM1 and bind. They are also exploring the development of antagonistic agents that would disrupt the interaction of the protein with viruses.
+
+See: Christopher E. Morgan1, Jennifer L. Meagher2, Jeffrey D. Levengood1, James Delproposto2, Carrie Rollins1, Jeanne A. Stuckey2, and Blanton S. Tolbert1*, “The First Crystal Structure of the UP1 Domain of hnRNP A1 Bound to RNA Reveals a New Look for an Old RNA Binding Protein,” J. Mol. Biol. 427, 3241 (2015). DOI: 10.1016/j.jmb.2015.05.009
+
+Author affiliations: 1Case Western Reserve University, 2University of Michigan
+
+Correspondence: * bst18@case.edu
+
+This work was supported by National Institutes of Health Grants R01GM101979 (B.S.T.) and P50GM103297 (J.A.S.). Use of the Pilatus 3 1M detector was provided by grant 1S10OD018090-01 from National Institute of General Medical Sciences. Use of the Life Sciences Collaborative Access Team was supported by the Michigan Economic Development Corporation and the Michigan Technology Tri-Corridor (Grant 085P1000817). The Biophysics Collaborative Access Team is supported by grant 9 P41 GM103622 from the National Institute of General Medical Sciences of the National Institutes of Health. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+11.16.2015

@@ -1,0 +1,27 @@
+Synthesis and Analysis of TiO2-Oligonucleotide Hybrid Nanoparticles
+
+New developments in nanotechnology offer the creation of chemical-biological hybrid nanocomposites, which can be introduced into cells to initiate intracellular processes or biochemical reactions. Researchers from Northwestern University Medical Center (Chicago, IL) and Argonne National Laboratory synthesized TiO2-oligonucleotide nanocomposites made of DNA oligonucleotides attached to 45-Å TiO2 nanoparticles and tested them by using the 2-ID-E x-ray beamline at the X-ray Operations and Research sector 2 of the APS. A key benefit of nanocomposites is that they could advance medical biotechnology and open new doors in chemistry and materials sciences.
+
+The research goal was to develop the TiO2-oligonucleotide nanocomposites into nanodevices that could be introduced into cells and function in vivo and in situ. To accomplish that goal, researchers first determined that the nanocomposites could successfully hybridize with long DNA molecules. One concern was that the nanocomposites would "clump" and not be able to withstand an incubation temperature of 95°C, the temperature required for annealing and polymerase chain reaction (PCR). Using atomic force spectroscopy, researchers visualized a hybridization mixture that had been annealed. The nanocomposite did not clump and withstood the annealing process, paving the way for further research.
+
+Mammalian cells were "infected" in vitro with TiO2-oligonucleotide nanocomposites by conventional methods. Researchers mapped the location of the titanium in the cells by using titanium-specific Ka x-ray fluorescence induced at the APS. In total, researchers used 514 cultured cells from 24 different samples infected with seven different nanocomposites. Depending on the experiment, 20-50% of the cells were found to have accepted and retained titanium nanoparticles. To confirm that the nanocomposites were, indeed, able to enter the cell nucleus, researchers then isolated nuclei from cells infected with a TiO2nanocomposite and a "free" oligonucleotide.
+
+Scans revealed titanium in 6 out of 13 sampled nuclei, demonstrating that the TiO2-DNA nanocomposites reached the nucleus of the mammalian cells. Figure 1 shows that signals of phosphorus and zinc overlap and that the titanium signal showed the highest density in a circular subregion of the nucleus. Given its size and shape, this nuclear subregion is likely to be the nucleolus -the subregion of the interphase nucleus where rDNA is located- and would therefore be the most likely nuclear location for retention of an oligonucleotide-TiO2 nanocomposite with rDNA sequences attached.
+
+In another experiment, researchers tested the hypothesis that oligonucleotide-TiO2 nanocomposites are capable of photoinduced endonuclease activity. They showed that DNA oligonucleotides covalently attached to TiO2 nanoparticles anneal/hybridize to target DNA with specificity dependent on the sequence of the oligonucleotide and participate in PCR reactions. With subsequent illumination, the completed PCR products containing the TiO2 nanoparticles induced DNA strand breaks in a short distance from the TiO2.
+
+To gather PCR band cleavage data, researchers used standard PCR reactions. After a reaction, PCR products were divided equally; white light was then used to illuminate one-half of each reaction for 2 min. Polymerase chain reaction products from non-illuminated and illuminated portions were separated by agarose gel electrophoresis, blotted to Gene-Screen membranes, and hybridized with a radiolabelled probe. Researchers found that, as in the experiments establishing cleavage of oligonucleotides, DNA linked to a TiO2 nanoparticle did not migrate through the gel. After illumination, however, the same PCR products (primed by the nanocomposite) were cleaved away from the TiO2 nanoparticle at a random short distance (up to 50 base pairs) and entered the gel, forming a short, diffuse band.
+
+Researchers concluded that even the simple TiO2-oligonucleotide hybrid nanoparticles synthesized in this project can perform many chemical and biological tasks, including a light-induced site-specific (within 50 nucleotides) nucleic acid endonuclease activity. The nanocomposites analyzed at the APS can perform a multitude of chemical-biological tasks, indicating that other types of TiO2-biomolecule nanocomposites can be engineered to be nanodevices for medical biotechnology.
+
+References
+
+[1] B. Pichon and D. Christophe, Anal. Biochem. 261, 233 (1998).
+
+See: T. Paunesku,T. Rajh, G. Wiederrecht, J. Maser, S. Vogt, N. Stojic´evic´, M. Protic´, B. Lai, J. Oryhon, M. Thurnauer, and G. Woloschak, Nat. Mat. 2, 343-346 (May 2003).
+
+T.P., N.S., M.P., J.O. and G.W.were supported by National Institute of Health grants CA81375, CA73042, and NS21442; T.P., T.R.,G.W., J.M., S.V., N.S., B.L., M.T., G.W., and use of the APS, were supported by the US Department of Energy, Office of Basic Energy Sciences under contract No.W-31-109-Eng-38.
+
+Published Date
+
+09.26.2003

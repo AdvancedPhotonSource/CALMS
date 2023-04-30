@@ -1,0 +1,39 @@
+A “Paradigm Shift” in Energy Storage
+
+The original Vanderbilt School of Engineering press release by Brenda Ellis can be read here.
+
+The race to produce safe, powerful and affordable solid-state lithium batteries is accelerating and recent announcements about game-changing research using a solid non-flammable ceramic electrolyte known as garnet has some in the race calling it revolutionary. Researchers utilized high-brightness x-rays from the U.S. Department of Energy’s (DOE’s) Advanced Photon Source (APS) to study failure points in a garnet-type material that shows great promise for all-solid-state battery applications due to its high lithium (Li)-ion conductivity and its compatibility with Li metal.
+
+“This is a paradigm shift in energy storage,” said Kelsey Hatzell, assistant professor of mechanical engineering at Vanderbilt School of Engineering and lead author on a paper published in the journal ACS Energy Letters; the paper was among the most-read ACS Letters articles that month.
+
+Lithium-ion batteries typically contain a liquid organic electrolyte that can catch fire. That risk is eliminated by the use of a non-flammable garnet-based electrolyte. Replacing liquid electrolytes with a solid organic like garnet also potentially lowers the cost by increasing battery life. “Solid-state batteries are desirable for all-electric vehicles and other applications where energy storage and safety are paramount,” Hatzell said.
+
+Hatzell’s team tested Li7La3Zr2O12  – lithium lanthanum zirconium oxide or LLZO. “Understanding the failure mechanisms within these electrolyte systems is critical for designing resilient solid electrolyte systems,” said Hatzell. “The primary limitation of LLZO is the propensity for short-circuiting events at low current densities.”
+
+Hatzell’s team of researchers from Vanderbilt tracked structural changes in LLZO after realistic charging and discharging events utilizing synchrotron x-ray tomography at X-ray Science Division x-ray beamline 2-BM-A,B at the APS, an Office of Science user facility at Argonne National Laboratory. This technique allows the researchers to look inside the battery and view three-dimensional structural features with sub-micron resolution.
+
+“Most techniques that image lithium in a solid electrolyte are done destructively or ex situ using scanning electron or optical microscopy techniques. Testing the material under more realistic conditions using synchrotron tools allows us to probe buried interfaces,” said Hatzell, whose co-authors are Fengyu Shen, a postdoctoral scholar, graduate student Marm Dixit, and APS beamline scientist Xianghui Xiao.
+
+Argonne’s APS, and ORNL’s Spallation Neutron Source and High Flux Isotope Reactor allow nanoscale study of advanced materials and interactions. Dixit was able to work and learn synchrotron characterization techniques from leading scientists and experts. Hatzell’s team conducted all of its testing at Argonne.
+
+“These results can potentially inform materials design for the next generation of all solid-state battery systems. The results concluded that the presence of voids or connected pores led to a higher failure rate,” Hatzell said.
+
+“While there is still a lot of research to be done to bring solid state devices to the market, their promise for applications in high-energy density batteries and electric vehicle applications is stirring a lot of interest across the globe.”
+
+See: Fengyu Shen1, Marm B. Dixit1, Xianghui Xiao2, and Kelsey B. Hatzell1*, “Effect of Pore Connectivity on Li Dendrite Propagation within LLZO Electrolytes Observed with Synchrotron X‑ray Tomography,” ACS Energy Lett. 3, 1056 (2018). DOI: 10.1021/acsenergylett.8b00249
+
+Author affiliations: 1Vanderbilt University, 2Argonne National Laboratory
+
+Correspondence: *Kelsey.B.Hatzell@vanderbilt.edu
+
+K.B.H and M.D. were supported by the U.S. National Science Foundation under Grant No. 1727863. F.S. acknowledges support from Vanderbilt School of Engineering Start-Up Grants. 
+
+This research used resources of the Advanced Photon Source, an Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.08.2018

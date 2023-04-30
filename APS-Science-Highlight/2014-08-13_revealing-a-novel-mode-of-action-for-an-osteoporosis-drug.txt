@@ -1,0 +1,37 @@
+Revealing a Novel Mode of Action for an Osteoporosis Drug
+
+Raloxifene is a U.S. Food and Drug Administration (FDA)-approved treatment for decreasing fracture risk in osteoporosis. While raloxifene is as effective at reducing fracture risk as other current treatments, this works only partially by suppressing bone loss. With the use of wide- and small-angle x-ray scattering (WAXS and SAXS, respectively), researchers carried out experiments at the U.S. Department of Energy's (DOE's) Advanced Photon Source (APS) at Argonne National Laboratory that revealed an additional mechanism underlying raloxifene action, providing an explanation for how this drug can achieve equivalent clinical benefit.
+
+These data, together with complementary techniques, help define a novel mechanism by which raloxifene increases inherent bone toughness.
+
+In osteoporosis, decreased bone density increases the risk of fracture. All current drugs for treatment of this disease act upon living cells within the bone matrix to either decrease bone resorption, a process by which the mineral components of bone are broken down and released into the bloodstream, or to increase net bone formation during remodeling, a process by which bone is also broken down but then reforms bone. In either case, treatment results in an overall increase in bone density, and therefore a reduction in fracture risk.
+
+While raloxifene is known to mildly suppress bone loss, "It has always been somewhat paradoxical that raloxifene suppresses bone loss less than other osteoporosis therapies, yet reduces fracture risk to about the same level," said David B. Burr of Indiana University School of Medicine and lead author of the Bone article on this research.
+
+To uncover the density-independent mechanism by which raloxifene (marketed as Evista by Eli Lilly and Company) increases bone toughness, researchers in this study from the Indiana University School of Medicine; Purdue University; Indiana University–Purdue University at Indianapolis; the University of California, San Diego; Northwestern University; and Argonne National Laboratory assessed the effect of the drug on devitalized bone cleared of living cells that normally mediate resorption and remodeling.
+
+In these bone samples, raloxifene prolonged the loading that the bone could bear before fracturing, indicating that the drug was acting upon the physical properties of the bone itself. Using ultra-short-echo-time nuclear magnetic resonance, researchers found that raloxifene-mediated water retention within the bone matrix is associated with the observed increase in toughness.
+
+In order to elucidate the mechanism underlying this association, researchers collected WAXS and SAXS diffraction patterns of carbonated hydroxyapatite crystals (cAp), the mineral component of bone that had been subjected to four-point bending. These data, collected at the X-ray Science Division 1-ID x-ray beamline at the Argonne APS, a Department of Energy user facility, allowed the researchers to measure mechanical strains on cAp crystals at a resolution of 1μm and showed that raloxifene increased the amount of physical deformation, or strain, that occurred at the collagen-mineral interface before fracture.
+
+This increased strain between cAp and collagen reduces stresses and may be caused by water-mediated slipping between these components at their interface, increasing the amount of energy the bone can absorb prior to fracture.
+
+"The x-ray diffraction data," Burr said, "allowed us to explain the mechanism by which increases in bound water would improve the fracture properties of bone."
+
+According to Burr, this work uncovers an entirely novel mechanism of action for raloxifene and "paves the way for a new class of drugs to treat osteoporosis, therapies that do not act by altering cellular activity or bone remodeling, but act by directly changing the physical properties of the bone matrix constituents."
+
+— Emma Nichols
+
+See: Maxime A. Gallant1, Drew M. Brown1, Max Hammond2, Joseph M.Wallace3, Jiang Du4, Alix C. Deymier-Black5, Jonathan D. Almer6, Stuart R. Stock5, Matthew R. Allen1, and David B. Burr1,3, "Bone cell-independent benefits of raloxifene on the skeleton: A novel mechanism for improving bone material properties," Bone 61, 191 (2014). DOI:10.1016/j.bone.2014.01.009
+
+Author affiliations: 1Indiana University School of Medicine; 2Purdue University; 3Indiana University–Purdue University at Indianapolis; 4University of California, San Diego; 5Northwestern University; 6Argonne National Laboratory
+
+Correspondence: * dburr@iupui.edu
+
+This work was supported by National Institutes of Health grants to D.B.B. and M.R.A. Raloxifene was provided by Eli Lilly and Co. under a Material Transfer Agreement. This research used resources of the Advanced Photon Source, a U.S. Department of Energy Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+08.13.2014

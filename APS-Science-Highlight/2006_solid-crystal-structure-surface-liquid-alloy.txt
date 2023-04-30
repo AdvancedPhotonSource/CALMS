@@ -1,0 +1,23 @@
+A Solid-like Crystal Structure on the Surface of a Liquid Alloy
+
+A substance used in nanotechnology contains unusual structures at its surface, according to a team of researchers using the ChemMatCARS 15-ID beamline at the Advanced Photon Source.
+
+The research results, developed at the Center for Nanoscale Materials at Argonne, are published today in the journal Science.
+
+The substance in question is a gold-silicon eutectic alloy, 82 percent gold and 18 percent silicon. The term eutectic means that the combination melts at a temperature lower than that of the melting temperature of either of its components. For most eutectic alloys, the difference between the melting point of the alloy and those of its pure components is about 100 degrees Celsius; the gold-silicon eutectic alloy melts about 1,000 °C lower than either of its components, at 360 °C (680 °F).
+
+But that's not the only unusual thing about the gold-silicon eutectic alloy. In a crystalline solid, atoms are arranged in an orderly, periodic fashion, and in a liquid, arrangements of atoms are disordered. It's been known for about 10 years that many metallic liquids show two or three distinct atomic layers near the surface, and usually there is no crystalline-like order within these layers. However, Shpyrko and his colleagues found that the gold-silicon eutectic alloy has seven or eight layers near its surface. In trying to understand this unexpected development, they found also that the top-most surface layer includes a crystal-like structure, similar to that normally found only in solid substances.
+
+Understanding characteristics of novel surface phases like this surface-frozen monolayer is important for the growing realm of nanotechnology, in which the basic unit of measurement is a billionth of a meter.
+
+Read more
+
+See: Oleg G. Shpyrko, Reinhard Streitel, Venkatachalapathy S. K. Balagurusamy, Alexei Y. Grigoriev, Moshe Deutsch, Benjamin M. Ocko, Mati Meron, Binhua Lin, Peter S. Pershan, “Surface Crystallization in a Liquid AuSi Alloy,” Science 313(5738), 77 (7 July 2006). DOI: 10.1126/science.1128314
+
+This work was supported by the Department of Energy, through the Office of Science Office of Basic Energy Sciences, and by the U.S.-Israel Binational Science Foundation, Jerusalem. Measurements at Brookhaven were also supported by the Office of Basic Energy Sciences.
+
+The nation's first national laboratory, Argonne National Laboratory conducts basic and applied scientific research across a wide spectrum of disciplines, ranging from high-energy physics to climatology and biotechnology. Since 1990, Argonne has worked with more than 600 companies and numerous federal agencies and other organizations to help advance America's scientific leadership and prepare the nation for the future. Argonne is managed by the University of Chicago for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+07.17.2006

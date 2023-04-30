@@ -1,0 +1,45 @@
+Accurate Design of Large Icosahedral Protein Nanocages Pushes Bioengineering Boundaries
+
+The original University of Washington Health Sciences/UW Medicine press release can be read here.
+
+Inspired by the forms and functions of protein molecule machines and materials observed in nature, such as the shells that protect virus genomes, researchers have now engineered ten large, 120-subunit, two-component protein complexes. These structures, determined via x-ray crystallography at two U.S. Department of Energy (DOE) x-ray light sources, including the Advanced Photon Source (APS), not only build themselves with atomic-level accuracy, but also can encapsulate other materials.
+
+The materials were designed to possess icosahedral symmetry, which affords efficient construction by repeating geometric arrangements, while maximizing packing room for carrying a payload. An icosahedron is a 20-sided polygon, and is the basic modeling unit for geodesic domes.
+
+The researchers, from the University of Washington, the Howard Hughes Medical Institute, and the University of California, Los Angeles, reported their successful design and experimental characterization of these new molecular architectures in the cover article of the July 22, 2016, issue of Science.
+
+"We set out to design two-component icosahedral protein structures capable of packaging macromolecular cargo through controlled, in vitro [test-tube] assembly," the researchers wrote about their effort to create new nanomachines for practical applications.
+
+The protein structures were envisioned at the atomic level via molecular modeling software developed at the University of Washington and a growing number of other institutions around the world.
+
+The proteins comprising the nanostructures were encoded in DNA sequences and produced inside of bacterial cells co-opted to serve as small protein manufacturing factories. The proteins were then purified and characterized by a variety of techniques. Ten of the materials were found to match closely with the design models.
+
+The protein nanostructures reported in this study are the largest designed protein complexes to date confirmed by x-ray crystallography, which in this case was carried out at the Northeastern Collaborative Access Team 24-ID-E and 24-ID-C x-ray beamlines at the APS at Argonne National Laboratory, and the Advanced Light Source SIBYLS beamline at the Lawrence Berkeley National Laboratory (both the APS and the Advanced Light Source are Office of Science user facilities). With molecular weights between 1.8 to 2.8 megadaltons and diameters of 24 to 40 nanometers, the designs are comparable in size to the protein shells that contain the genetic material of a small virus.
+
+The inner cavities within these newly designed molecules, along with the various ways to mix the molecule's components, make them well-suited to encapsulate a broad range of materials.
+
+As an initial demonstration of cargo packaging capability, the researchers were able to get their protein nanocages to encapsulate a payload of supercharged green fluorescent protein. This compound fluoresces brightly in certain northern Pacific jellyfish. The fluorescent protein is often employed in labs to study the inner workings of cells and in many other aspects of biology research and bioengineering.
+
+The atomic-level precision and the rapid, controllable assembly of the designed materials, their size and complexity, and their ability to be genetically modified with additional functionalities are "pushing the boundaries of biomolecular engineering into new territory," the researchers said.
+
+The ability to accurately design such large and complex protein structures unlocks the door to creating a new generation of biomolecular machines and materials.
+
+By attaching targeting agents and engineering payload release mechanisms, such designs could serve as the starting points for molecular vehicles that deliver drugs or genetic therapies to cells. Also, stringing virus components on the structures could enable them to serve as safe, new vaccines. And incorporating enzymes into the designed materials could convert them into miniature chemical reactors for bioenergy or other metabolic engineering applications.
+
+The work was supported by the Howard Hughes Medical Institute and its Janelia Research Campus visitor program, by the Bill and Melinda Gates Foundation, Takeda Pharmaceutical Company, the National Science Foundation, the Air Force Office of Scientific Research, and the Defense Advanced Research Projects Agency. Patents for the molecules have been filed.
+
+This study builds on previous work from the authors reported in June of this year in Nature. They successfully designed a single, highly stable, 60-subunit self-assembling icosahedral nanocage. In that study they demonstrated its potential utility for a range of applications, including as a tool for light microscopy when genetically fused to green fluorescent protein.
+
+See: Jacob B. Bale1‡, Shane Gonen1,2, Yuxi Liu3, William Sheffler1, Daniel Ellis1, Chantz Thomas1, Duilio Cascio3, Todd O. Yeates3, Tamir Gonen2, Neil P. King1*, and David Baker1**, “Accurate design of megadalton-scale two-component icosahedral protein complexes,” Science 6297, 389 (22 July 2016). DOI: 10.1126/science.aaf8818
+
+Author affiliations: 1University of Washington, 2Howard Hughes Medical Institute, 3University of California, Los Angeles ‡Present address: Arzeda Corporation
+
+Correspondence: *neilking@uw.edu, **dabaker@uw.edu
+
+This work was supported by the Howard Hughes Medical Institute (S.G., D.C., T.G., and D.B.) and its Janelia Research Campus visitor program (S.G.), the Bill and Melinda Gates Foundation (D.B. and N.P.K.), Takeda Pharmaceutical Company (N.P.K.), National Science Foundation (NSF) grant no. CHE-1332907 to D.B. and T.O.Y., the Air Force Office of Scientific Research (grant no. FA950-12-10112 to D.B., and the Defense Advanced Research Projects Agency grant no. W911NF-14-1-0162 to D.B. and N.P.K.. Y.L. was supported by a Whitcome Fellowship through the UCLA Molecular Biology Institute, and J.B.B. was supported by a NSF graduate research fellowship (grant no. DGE-0718124). Northeastern Collaborative Access Team beamlines 24-ID-E and 24-ID-C are supported by grants from the National Center for Research Resources (5P41RR015301-10) and the National Institute of General Medical Sciences (8 P41 GM103403-10) of the National Institutes of Health. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+07.22.2016

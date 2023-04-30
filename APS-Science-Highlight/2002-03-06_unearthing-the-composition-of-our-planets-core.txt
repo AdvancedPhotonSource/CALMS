@@ -1,0 +1,23 @@
+Unearthing the Composition of Our Planet's Core
+
+The chemical composition of the Earth's core is surprisingly complicated, according to high-temperature, high-pressure experiments conducted by University of Chicago scientists using the William M. Keck High Pressure Laboratory at the GSECARS facility, APS sector 13. This research has produced experimental evidence suggesting that the Earth's inner core largely consists of two exotic forms of iron (rather than one as previously thought) that appear to be alloyed with silicon.
+
+Accepted thinking on the subject of the Earth's core held that it consists mainly of iron. But certain characteristics of the core have been determined by studies of seismic waves sent through the Earth by explosions and earthquakes. Among these characteristics was the presence of an element other than iron. This other, lighter element is believed to constitute approximately 10 percent of the outer core and anywhere from zero to 4 percent of the inner core.
+
+Using high-brilliance APS x-ray beams and a diamond anvil cell that produces pressures of 840,000 atmospheres while being laser-heated to a simulated subsurface temperature of approximately 4,200 degrees, researchers obtained in situ x-ray diffraction patterns from iron-silicon alloys. These data are being used to better understand the possible crystal structures and phase diagram relevant to the Earth's core. Results show that the addition of silicon changes the crystal structure of iron under intense temperatures and pressures. In fact, the iron may take on two different crystal structures in one tiny sample under conditions that would be found at a depth of more than 1,800 miles beneath Earth's surface.
+
+The existence of two exotic forms of iron at the Earth's core could influence the interpretation of seismic data from that location.
+
+J.-F. Lin(1), D.L. Heinz(1,2), A.J. Campbell,(1) J.M. Devine(1), G. Shen(3)
+
+(1) Department of the Geophysical Sciences, (2) James Franck Institute, (3) Consortium for Advanced Radiation Sources, University of Chicago, Chicago, IL 60637, USA.
+
+For more information, e-mail: afu@geosci.uchicago.edu
+
+GSECARS is part of the Consortium for Advanced Radiation Sources (CARS), a multi-institutional, multi-disciplinary consortium managed by The University of Chicago Center for Advanced Radiation Sources. GSECARS is supported by NSF-Earth Sciences (EAR-9906456), DOE-Geosciences (DE-FG02-94ER14466) and the State of Illinois-IBHE This work was supported by NSF grant EAR-9974373 and NASA grant NAG 5-9800. Argonne National Laboratory is operated by The University of Chicago for the U.S. Department of Energy under Contract W-31-109-ENG-38. The Advanced Photon Source is funded by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences.
+
+See: "Iron-Silicon Alloy in Earth's Core?" by J.-F. Lin et al., Science 295, 5553, 313-315 (2002).
+
+Published Date
+
+03.06.2002

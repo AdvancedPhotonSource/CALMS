@@ -1,0 +1,29 @@
+Butterfly Wing Yields Clues to Light-Altering Structures
+
+At the very heart of some of the most brilliant colors on the wings of butterflies lie bizarre and intriguing structures, according to studies carried out by researchers using the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory. These structures could possibly be a design source for biomimetic photonic devices. The crystal nanostructures that ultimately give butterflies their color are called gyroids. These are “mind-bendingly weird” three-dimensional curving structures that selectively scatter light, said Richard Prum, Chair and the William Robertson Coe Professor in the Department of Ornithology, Ecology, and Evolutionary Biology at Yale University and the leader the team of Yale and Argonne researchers that reported its findings online and in print in the Proceedings of the National Academy of Sciences.
+
+Prum over the years became fascinated with the properties of the colors on butterfly wings and enlisted Yale researchers from the Departments of Chemical Engineering, Physics, and Mechanical Engineering, as well as the Yale School of Engineering and Applied Science, to help study them.
+
+Using the pinhole small-angle x-ray scattering technique at the X-ray Science Division 8-ID-I beamline at the APS, Prum and his colleagues determined the three-dimensional internal structure of scales in the wings of five butterfly species.
+
+The gyroid is made of chitin, the tough starchy material that forms the exterior of insects and crustaceans, Chitin is usually deposited on the outer membranes of cells. The Yale team wanted to know how a cell can sculpt itself into this extraordinary form, which resembles a network of three-bladed boomerangs. They found that, essentially, the outer membranes of the butterfly wing scale cells grow and fold into the interior of the cells. The membranes then form a double gyroid—or two, mirror-image networks shaped by the outer and inner cell membranes. Double gyroids are easier to self assemble but they are not as good at scattering light as a single gyroids. Chitin is then deposited in the outer gyroid to create a single solid crystal. The cell then dies, leaving behind the crystal nanostructures on the butterfly wing.
+
+“Like engineers, butterflies grow their optically efficient single gyroids through a series of steps that make this complex shape easier to achieve. Photonic engineers are using gyroid shapes to try to create more efficient solar cells and, by mimicking nature, may be able to produce more efficient optical devices as well,” Prum said.
+
+See: Vinodkumar Saranathan1, Chinedum O. Osuji1, Simon G. J. Mochrie1, Heeso Noh1, Suresh Narayanan2, Alec Sandy2, Eric R. Dufresne1, and Richard O. Prum1, “Structure, function, and self-assembly of single network gyroid (I4132) photonic crystals in butterfly wing scales,” published ahead of print June 14, 2010. DOI:10.1073/pnas.0909616107
+
+Author affiliations: 1Yale University, 2Argonne National Laboratory
+
+Correspondence: *Richard.Prum@yale.edu.
+
+This work was supported with seed funding from the Yale National Science Foundation (NSF) Materials Research Science and Engineering Center [Division of Materials Research (DMR) 0520495] and NSF grants to S.G.J.M. (DMR) and R.O.P. (Division of Biological Infrastructure), and Yale University funds to V.S. and R.O.P.
+
+The original Yale University press release can be found here.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science, Office of Basic Energy Sciences (DOE-BES). The APS is the source of the Western Hemisphere’s brightest high-energy x-ray beams for research in virtually every scientific discipline. More than 3,500 scientists representing universities, industry, and academic institutions from every U.S. state and several foreign nations visit the APS each year to carry out applied and basic research in support of the BES mission to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels in order to provide the foundations for new energy technologies and to support DOE missions in energy, environment, and national security. To learn more about the Office of Basic Energy Sciences and its x-ray user facilities. Use of the APS was supported by the DOE-BES, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+06.30.2010

@@ -1,0 +1,41 @@
+Studying Unique Alloy Allies for Better Device Technology
+
+Better alloys lead to better devices. Additive manufacturing allows engineers to make finely tuned alloys with previously unattainable combinations of properties. Typically, increased strength would decrease ductility and electrical conductivity. But additive manufacturing can create materials that break the old rules. Here, researchers used the U.S. Department of Energy's Advanced Photon Source (APS) to look at an alloy of copper (Cu) and iron (Fe) under extremely high pressures. Normally, copper and iron don’t mix. But the additive manufacturing technique studied by the researchers allowed distinct layers of copper and iron to remain side-by-side, even as they structurally transformed under pressures as high as 20 gigapascals (GPa). Their results, published in the journal nanomaterials, confirmed computational models of iron and copper alloys, and show how to precisely tailor alloys at high pressures.
+
+Copper and iron are well understood, humans have been working with them for at least 8,000 years. But the two are immiscible; they cannot be mixed together to form alloys with conventional techniques. Theory and computational modeling have predicted that Cu-Fe alloys would have intriguing properties, but until recently, these predictions could not be tested. 
+
+A team of researchers from the University of Michigan and Argonne National Laboratory have changed that. The team used direct-metal deposition additive manufacturing to create a Cu50Fe50 alloy tailored for use in high-pressure environments. The high pressure would put the material under a great deal of strain, and potentially reveal unexpected combinations of strength, ductility, or atomic arrangement. The researchers used the direct deposition manufacturing technique to create a layered structure. One layer was iron with precisely placed bits of copper in it; the other layer was copper containing precisely placed bits of iron (Fig. 1.)
+
+In addition to studies using transition electron microscopy The Cu50Fe50 alloy was taken to the HPCAT x-ray beamlines at the APS, an Office of Science user facility at Argonne National Laboratory and cut into samples 50 nanometers x 50 nanometers x 30 nanometers using HPCAT’s laser cutting system. The samples were then placed in a diamond anvil cell (DAC) and the researchers took Laue x-ray diffraction measurements at HPCAT beamline 16-BM-B. The pressure in the anvil was slowly increased from 5.3 GPa to 18.3 GPa, and then decompressed back down again. The Laue x-ray diffraction method uses polychromatic x-rays (x-rays of many different wavelengths). This allowed the researchers to capture changes in the distances between atoms as the alloy compressed.
+
+The researchers also studied the samples at HPCAT beamline 16-ID-B at the highest pressure of 18.3 GPa using monochromatic x-rays, which confirmed the crystalline phases of the sample they had initially detected with the Laue diffraction.
+
+There are very few synchrotron facilities in the world where researchers can squeeze a sample to a high pressure in a DAC, then take an x-ray snapshot without unloading the pressure, then squeeze it a little harder, stop and take another snapshot, and then repeat. This capability allowed the researchers to see the intermediate steps as the metal shifted from a face centered cubic structure to a body centered cubic structure.
+
+The intermediate-step snapshots showed how the alloy transformed under pressure, confirming the computational studies that had proposed potential atomic arrangements for CuFe alloys (Fig.1).
+
+The researchers were also able to identify novel properties in the material. For example, the tiny iron particles within the copper layer developed strength two and a half times higher than that of iron in standard crystal conformations. And the iron particles retained their ductility even at this increased level of strength, which is surprising: normally ductility goes down as strength goes up.
+
+The study also showed that, while many of the material transformations predicted by computational studies really did occur, they only occurred in small, localized regions of the metal, on the scale of nanometers. They did not occur to the metal in bulk, which is quite surprising and new information.
+
+Some members of the team are currently repeating the experiment using different metal pairings: copper and tantalum, for example. By gaining a thorough understanding of these phase transformations in untraditional alloys of immiscible mixtures, they hope to learn how to tailor the alloys and pressure-induced changes to make industrially useful materials with specific properties.   ― Kim Krieger
+
+See: Arya Chatterjee1, Dmitry Popov2, Nenad Velisavljevic2,3, and Amit Misra1**, “Phase Transitions of Cu and Fe at Multiscales in an Additively Manufactured Cu–Fe Alloy under High-Pressure,” Nanomater. 12, 1514. (2022). DOI: 10.3390/nano12091514
+
+Author affiliations: 1University of Michigan, 2Argonne National Laboratory, 3Lawrence Livermore National Laboratory 
+
+Correspondence: * dpopov@anl.gov, ** amitmis@umich.edu
+
+Electron microscopy was performed at the Michigan Center for Materials Characterization. NV work was performed under the auspices of the U.S. Department of Energy (DOE) by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344. HPCAT operations are supported by the DOE-National Nuclear Security Administration Office of Experimental Sciences. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science user facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Home page illustration: Shutterstock
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.19.2022

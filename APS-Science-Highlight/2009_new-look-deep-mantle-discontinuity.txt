@@ -1,0 +1,29 @@
+New Look at Deep Mantle Discontinuity
+
+Experiments at high temperature and pressure on compositions representative of the Earth’s mantle have shed new light on the phase transition thought to be responsible for a seismic discontinuity observed above the Earth’s core–mantle boundary.
+
+The deepest few hundred kilometres of the mantle, the D″ layer, has seismic properties distinct from those of the overlying mantle, from which it is separated by a laterally varying seismic discontinuity. A good candidate for the origin of this discontinuity is the phase transition from the mineral perovskite (Pv) to a denser, layered structure called post-perovskite (pPv, Fig. 1). Investigating this phase transition experimentally has been challenging, owing to the very high pressures and temperatures required to mimic conditions at the bottom of the mantle.
+
+Researchers from the Massachusetts Institute of Technology and The University of Chicago used a laser-heated diamond-anvil cell on the GSECARS 13-ID-D beamline at the U.S. Department of Energy’s Advanced Photon Source at Argonne National Laboratory. The experiment characterized the perovskite/post-perovskite transition in realistic mantle compositions. The researchers in this study were able to precisely measure the thickness and Clapeyron slope of the perovskite/post-perovskite boundary in situ at pressures up to 145 GPa and temperatures to 3000K. They squeezed very tiny (5-10-μm-thick) samples of (Mg0.91Fe0.09)SiO3 and (Mg0.9Fe0.1)(Al0.1Si0.9)SiO3 surrounded by Ar between gem-quality diamond anvils and analyzed them with the high-resolution micro-x-ray diffraction technique combined with the double-sided laser heating system at the GSECARS beamline [1].
+
+Their report in Nature shows that the pressure–temperature slope of the transition — the Clapeyron slope — is consistent with observations of the D″ discontinuity. But the width of the transition — corresponding to the depth range over which the two phases should co-exist in the deep mantle — is much greater than the observed thickness of the D″ discontinuity. The authors conclude that, if the perovskite/post-perovskite boundary is the source of the D″ discontinuity, regions with sharp discontinuities may require distinct compositions, such as a lower aluminium content.
+
+According to their results, the delectability of the pPv boundary can be enhanced in regions with a high Mg/Si ratio and low Al content, requiring compositional changes for the observation of a sharp pPv boundary. The discrepancy in thickness between the pPv boundary in pyrolite-related compositions and the D″ discontinuity raises important questions about the origin of the D″ discontinuity. Yet the effort to reconcile the discrepancy will provide new opportunities for better understanding the nature and dynamic role of the D″ layer.
+
+References
+
+[1] V.B. Prakapenka, A. Kubo, A. Kuznetsov, A. Laskin, O. Shkurikhin, P. Dera, M.L. Rivers and S.R. Sutton. “Advanced flat top laser heating system for high pressure research at GSECARS: application to the melting behavior of germanium,” High Pressure Research: An International Journal 28(3), 225 (2008).
+
+See also the article in Nature News & Views: “The enigma of D,”by Kanani K. M. Lee. “A phase transition of Earth’s most abundant mineral occurs at pressures and temperatures corresponding to those thought to exist just above Earth’s core. New experiments shed light on this enigmatic Dʹʹ region.” Nature 462, 731 (10 December 2009).
+
+See: Krystle Catalli1, Sang-Heon Shim1*, and Vitali Prakapenka2, “Thickness and Clapeyron Slope of the Postperovskite Boundary,” Nature 462, 782 (10 December 2009). DOI:10.1038/nature08598
+
+Author affiliations: 1Massachusetts Institute of Technology, 2The University of Chicago
+
+Correspondence: *sangshim@mit.edu
+
+This work is supported by the National Science Foundation (NSF) to S.H.S. (EAR0738655). K.C. is supported by a U. S. Department of Energy (DOE) National Nuclear Security Administration Stewardship Science Graduate Fellowship. GSECARS is supported by the NSF and DOE. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Published Date
+
+12.14.2009

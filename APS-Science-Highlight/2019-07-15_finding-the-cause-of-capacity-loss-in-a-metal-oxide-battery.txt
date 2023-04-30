@@ -1,0 +1,39 @@
+Finding the Cause of Capacity Loss in a Metal-Oxide Battery Material
+
+The original Brookhaven National Laboratory press release can be read here.
+
+Because of their high energy-storage density, materials such as metal oxides, sulfides, and fluorides are promising electrode materials for lithium-ion batteries in electric vehicles and other technologies. However, their capacity fades very rapidly. Now, scientists employing research techniques including x-ray absorption spectroscopy at the U.S. Department of Energy’s Advanced Photon Source (APS) studied an electrode made of an inexpensive and nontoxic iron-oxide material called magnetite and proposed a scenario—described in the journal Nature Communications—that explains why.
+
+“Magnetite, among other conversion-type electrode materials (i.e., materials that get converted into entirely new products when they react with lithium), can store more energy than today’s electrode materials because they can accommodate more lithium ions,” said study lead Dong Su, leader of the Electron Microscopy Group at the Center for Functional Nanomaterials (CFN) — a U.S. Department of Energy (DOE) Office of Science User Facility at Brookhaven National Laboratory. “However, the capacity of these materials degrades very quickly and is dependent on the current density. For example, our electrochemical testing of magnetite revealed that its capacity drops very quickly within the first 10 high-rate charge and discharge cycles.”
+
+To find out what is behind this poor cycling stability, the research team, including members from Brookhaven National Laboratory, Argonne National Laboratory, the China University of Petroleum, the University of Waterloo (Canada), and theUniversity of Pennsylvania characterized how the crystal structure and chemical nature of magnetite evolved as the battery completed 100 cycles. For these characterization studies, they combined transmission electron microscopy (TEM) at the CFN and synchrotron x-ray absorption spectroscopy at the X-ray Science Division x-ray beamline 20-BM-B of the Advanced Photon Source (APS) — a DOE Office of Science User Facility at Argonne National Laboratory. In TEM, an electron beam is transmitted through a sample to produce an image or a diffraction pattern characteristic of the material’s structure; x-ray absorption spectroscopy uses an x-ray beam instead to probe the chemistry of the material.
+
+Using these techniques, the scientists discovered that magnetite completely decomposes into metallic iron nanoparticles and lithium oxide during the first discharge. In the following charge, this conversion reaction is not completely reversible—residues of metallic iron and lithium oxide remain. Moreover, the original “spinel” structure of magnetite evolves into a “rock-salt” structure (the location of iron atoms is not entirely identical in the two structures) at the charged state. With subsequent charge and discharge cycles, rock-salt iron oxide interacts with lithium to form a composite of lithium oxide and metallic iron nanoparticles. Because the conversion reaction is not fully reversible, these residual products accumulate. The scientists also found that the electrolyte (the chemical medium that enables lithium ions to flow between the two electrodes) decomposes in later cycles.
+
+“Our real-time TEM studies in ultrahigh vacuum enabled us to see how the structure of rock-salt iron oxide changes as lithium is introduced after the initial cycles,” said Su. “This study uniquely represents the in situ lithiation of a precycled sample. Previous in situ studies only looked at the initial charge and discharge cycles. However, we need to know what happens over many cycles to design longer-lasting batteries because the structure at the charged electrode is different from that of the pristine state.”
+
+On the basis of their results, the scientists proposed an explanation for the capacity fade.
+
+“Because lithium oxide has a low electronic conductivity, its accumulation creates a barrier to the electrons that are shuttling back and forth between the battery’s positive and negative electrode,” explained co-leading author Sooyeon Hwang, a staff scientist in the CFN Electron Microscopy Group. “We call this barrier an internal passivation layer. Similarly, electrolytic decomposition hinders ionic conduction by forming a surface passivation layer. This buildup of obstacles blocks electrons and lithium ions from reaching active electrode materials, where the electrochemical reactions occur.”
+
+The scientists noted that operating the battery at a low current can recover some of this capacity by slowing the charge rate to provide enough time for electron transport; however, other solutions are needed to ultimately fix the problem. They believe that adding other elements to the electrode material and changing the electrolyte could improve capacity fading.
+
+“The knowledge we gained can generally be applied to other conversion compounds, which also face the same problem with internal and external passivation layers,” said co-corresponding author Zhongwei Chen, a professor at the University of Waterloo, Canada. “We hope this study can help guide future fundamental research on these promising conversion-type electrode materials.”
+
+The team comprised scientists from the CFN and Sustainable Energy Technologies Department at Brookhaven Lab, APS at Argonne National Lab, the University of Pennsylvania, and the University of Waterloo in Canada. The research was supported by the DOE Office of Science, Natural Sciences and Engineering Research Council of Canada, University of Waterloo, and Waterloo Institute for Nanotechnology.
+
+See: Jing Li1, Sooyeon Hwang1, Fangming Guo2,3, Shuang Li1,4, Zhongwei Chen4*, Ronghui Kou2, Ke Sun5, Cheng-Jun Sun2, Hong Gan1, Aiping Yu4, Eric A. Stach5, Hua Zhou2**, and Dong Su1***, “Phase evolution of conversion-type electrode for lithium ion batteries,” Nat. Commun. 10, 2224 (2019). DOI: 10.1038/s41467-019-09931-2
+
+Author affiliations: 1Brookhaven National Laboratory, 2Argonne National Laboratory, 3China University of Petroleum, 4University of Waterloo, 5University of Pennsylvania
+
+Correspondence: * zhwchen@uwaterloo.ca, ** hzhou@aps.anl.gov, *** dsu@bnl.gov
+
+This work is supported by the Center for Functional Nanomaterials, which is a U.S. Department of Energy (DOE) Ofﬁce of Science Facility at Brookhaven National Laboratory, under Contract No. DE-SC0012704. This research used resources of the Advanced Photon Source, a U.S. DOE Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02–06CH11357, and the Canadian Light Source and its funding partners. We also acknowledge the support provided by the Natural Sciences and Engineering Research Council of Canada (NSERC), University of Waterloo, and Waterloo Institute for Nanotechnology.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+07.15.2019

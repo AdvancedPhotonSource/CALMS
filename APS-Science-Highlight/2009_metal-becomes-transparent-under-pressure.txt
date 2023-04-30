@@ -1,0 +1,23 @@
+A Metal That Becomes Transparent under Pressure
+
+Sodium (Na) might appear to be an unassuming member of the Periodic Table of Elements, but an international team of scientists using high-brightness x-rays from the U.S. Department of Energy’s Advanced Photon Source at Argonne National Laboratory have discovered that Na displays a unique property by turning transparent when pressure is applied. This fundamental result has important implications for understanding highly compressed matter, in particular inside stars and giant planets.
+
+Physicists from China, Germany, the U.S., and Russia discovered an unusual transformation of metal to dielectric under high compression. Their discovery goes against normal physical trends or expectations. The element sodium—an archetype of the simplest metal—has a shiny, silver color at atmospheric pressure. But when the researchers applied 2 million atm of pressure to a sodium sample, it became a yellowish transparent material (see the figure). The results were published in the journal Nature.
+
+This work is the result of the combined efforts of theoreticians and experimentalists. Yanming Ma (Jilin University, China) and his group, together with Artem Oganov (Stony Brook University), performed sophisticated calculations, which clearly indicated that sodium adopts unusual crystal structures and becomes an insulator at the very high pressure of ~2.6 million atm, close to the current technical limit for static pressures (about 3 million atm). Experiments were done at the Max Planck Institute for Chemistry (Germany) by one of a very few groups working at such extreme conditions: Mikhail Eremets and his colleagues, Ivan Trojan and Sergey Medvedev, performed extremely difficult experiments with a tiny micrometer-sized sample of sodium squeezed between two gem-quality diamonds. Their optical absorption and Raman spectra measurements were carried out in situ at high pressures with state-of-the-art equipment in their lab. Together with Vitali Prakapenka (The University of Chicago), they determined the crystal structure of the sample using high-resolution micro x-ray diffraction at the GSECARS beamline 13-ID, located at the Advanced Photon Source. They found a number of structural transformations in sodium corresponding to pressure increases culminating at 200 GPa in the predicted transparent phase.
+
+The theoretical calculations performed by Ma and colleagues elucidated the reason for the dramatic transformation on sodium. At pressures of more than 2 million atm, sodium is strongly (5-fold) compressed so that the atoms overlap and force their outer electrons into the interstitials between the atoms, where electron density strongly localizes. This is responsible for the collapse of the metallic state. Sodium thus transforms to an elemental ionic solid where sodium atoms play the role of cations while the localized electrons behave as anions, just like in electrides—a new class of recently discovered materials.
+
+Contact: Y. Ma, mym@jlu.edu.cn
+
+See: Yanming Ma, Mikhail Eremets, Artem R. Oganov, Yu Xie, Ivan Trojan, Sergey Medvedev, Andriy O. Lyakhov, Mario Valle, and Vitali Prakapenka, “Transparent dense sodium,” Nature 458, 182 (12 March 2009). DOI:10.1038/nature07786
+
+This work was supported by the Swiss National Science Foundation (grants 200021-111847/1 and 200021-116219), and CSCS and ETH Zurich by the use of supercomputers. Parts of the calculations were performed on the Skif supercomputer (Moscow State University, Russia) and at the Joint Supercomputer Centre of the Russian Academy of Sciences (Moscow). Partial support was provided by DFG (grants Er 539/1/2-1) and the China 973 Program (no. 005CB724400). GeoSoilEnviroCARS is supported by the National Science Foundation—Earth Sciences (EAR-0622171)and the U.S. Department of Energy—Geosciences (DE-FG02-94ER14466).
+
+Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+04.20.2009

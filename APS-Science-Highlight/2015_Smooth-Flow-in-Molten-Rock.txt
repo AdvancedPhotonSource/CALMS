@@ -1,0 +1,37 @@
+Smooth Flow in Molten Rock
+
+Most liquids flow with greater resistance when squeezed. But certain molten silicate rocks actually do the opposite: they become less viscous as the pressure rises. A detailed explanation of these silicate melts has been lacking, but now x-ray scattering measurements taken at the U.S. Department of Energy’s Advanced Photon Source (APS) have characterized the role of connected molecular units, or “polymers,” in the fluid properties of the melts. With the help of complementary computer simulations, researchers have constructed an atomistic model in which polymer breakage is responsible for the viscosity drop at high pressure. This model may help explain certain geological phenomena, such as chemical evolution in the Earth's early magma ocean and the low-velocity zone seen in seismic data.
+
+Silicate melts are commonly found underneath the Earth's surface as magma, or erupting as lava through a volcano. As their name suggests, these molten rocks contain “silica,” or silicon dioxide. In most cases, the silicon and oxygen form tetrahedral-shaped clusters with one silicon atom in the center and four oxygen atoms at the corners. These tetrahedra can also link up to form chains, sheets, or three-dimensional networks, but this polymerization depends on the exact chemical make-up of the silicate (see the first figure).
+
+The silicate diopside, for example, contains calcium and magnesium atoms, which crowd around the silicon-oxygen tetrahedra preventing polymerization. By contrast, the green mineral jadeite is a highly polymerized silicate whose make-up includes sodium and aluminum, the latter of which can form tetrahedra with oxygen atoms. Polymerized silicate melts differ from depolymerized melts in that their viscosity decreases with rising pressure – at least up until a threshold pressure, after which point the viscosity begins to increase as in normal fluids.
+
+Viscosity is due to diffusion of groups of atoms trying to move past each other. Clearly, large polymer units are major obstacles in a silicate melt, so the question is why increasing pressure reduces this friction.
+
+In order to find the answer, scientists from The University of Chicago, Stony Brook University, and the Carnegie Institution of Washington performed a detailed x-ray study of three types of silicate melts – a polymerized melt (jadeite), a depolymerized melt (diopside), and a 50-50 mixture of both.
+
+This research counts as one of the first attempts to probe the atomic properties of silicate melts at subterranean pressures. The main hurdle in performing such experiments is that the materials utilized to contain the melt strongly scatter x-rays. Extracting the relatively weak scattering signal from the light atoms in a silicate melt requires a highly collimated x-ray beam.
+
+The researchers chose the High Pressure Collaborative Access Team (HP-CAT) beamline 16-BM-D at the Argonne APS, an Office of Science user facility. The HP-CAT beamline allows the detection of x-rays over a wide range of scattering angles.
+
+During each run, millimeter-sized samples were exposed to temperatures up to 1800° Celsius and pressures ranging from 0.2 to 4.9 gigapascals (1 gigapascal is about 10,000 atmospheres). To maintain stability under such extreme conditions, the experiments at 16-BM-D used a Paris-Edinburgh press that was developed jointly by HP-CAT, the GeoSoilEnviro Consortium for Advanced Radiation Sources at Sector 13 of the APS, and the Consortium for Materials Properties Research in Earth Sciences.
+
+The x-ray scattering data showed several peaks at particular scattering angles, as reported in Nature Communications. From these peaks, the team could estimate the atomic ordering over short and intermediate distances.
+
+In particular, they found the distance between neighboring tetrahedra decreased rapidly with increasing pressure in the case of polymerized melts. A similarly dramatic change was observed in the angle between two tetrahedra, which implied that the tetrahedra folded toward each other as pressure mounted. By contrast, the angle and atomic separations for depolymerized melts only showed a weak pressure-dependence.
+
+To help make sense of this data, the team performed molecular dynamics simulations that tracked what fraction of oxygen atoms are acting as links, or “bridges,” between two tetrahedra. These computations showed that polymerized melts begin with roughly 90% bridging oxygens, forming an interconnected network resembling a sponge (see the second figure). As the pressure increases, the tetrahedral links try to bend but are obstructed by other atoms (in jadeite's case, sodium). So instead, the links break under the pressure, resulting in less bridging oxygens and lower viscosity. At a certain pressure, the polymerized melt becomes largely depolymerized, and the viscosity starts to increase with pressure.— Michael Schirber
+
+See: Yanbin Wang1, Tatsuya Sakamaki1,‡, Lawrie B. Skinner2, Zhicheng Jing1,‡‡, Tony Yu1, Yoshio Kono3, Changyong Park3, Guoyin Shen3, Mark L. Rivers1, and Stephen R. Sutton1, “Atomistic insight into viscosity and density of silicate melts under pressure,” Nat. Comm. 5, 3241. (30 January 2014). DOI: 10.1038/ncomms4241
+
+Author affiliations: 1The University of Chicago, 2Stony Brook University, 3Carnegie Institution of Washington Present addresses: ‡Tohoku University, ‡‡Case Western Reserve University
+
+Correspondence: *wang@cars.uchicago.edu
+
+Funding was provided by the U.S. National Science Foundation (NSF) EAR-0968456 and 1214376. HP-CAT operations are supported by Department of Energy (DOE) - National Nuclear Security Administration under Award No. DE-NA0001974 and DOE - Basic Energy Sciences under Award No. DE-FG02-99ER45775, with partial instrumentation funding by the NSF. GeoSoilEnviroCARS is supported by the NSF - Earth Sciences (EAR-1128799) and DOE - GeoSciences (DE-FG02-94ER14466). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+01.19.2015

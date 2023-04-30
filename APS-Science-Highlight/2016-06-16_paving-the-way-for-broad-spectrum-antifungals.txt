@@ -1,0 +1,49 @@
+Paving the Way for Broad-Spectrum Antifungals
+
+The original Duke University press release by Marla Vacek Broadfoot can be read here.
+
+Fungal infections can be devastating to human health, killing approximately 150 people every hour and resulting in over a million deaths every year, more than malaria and tuberculosis combined. Unfortunately, the antifungal drug arsenal is limited, with many of the best drugs more than 50 years old.
+
+The search for new antifungals has recently alighted on a simple biological pathway, the production of trehalose, a chemical cousin to table sugar that pathogenic fungi need to survive in their human hosts. Using synchrotron x-ray beams from two U.S. Department of Energy light sources, including the Advanced Photon Source (APS) at Argonne National Laboratory, a team of researchers from Duke University and St. Jude Children’s Research Hospital has solved the structure of an enzyme that is required to synthesize this fungal factor.
+
+When the enzyme is blocked, pathogenic fungi are unable to endure the stressful leap from the outside world into the human body.
+
+The research, published in the Proceedings of the National Academy of Sciences, U.S.A., paves the way for designing new antifungal drugs against an enzyme that is essential to the three most-deadly fungi: Cryptococcus, Candida, and Aspergillus.
+
+“We found that the active site of this enzyme is identical in each of these pathogenic fungi, so they all use the same mechanism and have the same residues that are necessary for the production of trehalose,” said senior study author Richard G. Brennan of the Duke University School of Medicine.
+
+“By targeting those active sites, we hope to create a drug with broad-spectrum effects,” Brennan said. “If you could kill one fungus, you're going to kill them all; at least if you can get the drug inside.”
+
+The development of antifungal drugs has lagged far behind that of other antimicrobials. Because fungi are eukaryotic multicellular organisms like humans, they share a lot of the same genes, proteins, and pathways. As a result, drugs that go after a fungal protein can also harm the human, triggering devastating side effects. These drug toxicities are one of the main reasons that antifungal therapies ultimately fail, either in the clinic or earlier in development. Luckily, the enzymes for synthesizing the trehalose sugar aren’t present in people, so scientists can target them with less concern for collateral damage.
+
+Pathogenic fungi use trehalose as a kind of molecular heat shield. Organisms like Cryptococcus, Candida, and Aspergillus spend most of their time either down in the dirt or out on the laboratory bench, where the temperature is a comfortable 30 degrees Celsius. But when they move into an unlucky host, they are suddenly exposed to a steamy 37 degrees. Trehalose protects the fungi’s delicate proteins and membranes from falling apart in all that heat.
+
+Brennan and his colleagues figured that if they could stop trehalose from being made, they could eliminate the pathogen’s protection, such that every time the fungi jump into a host they are sending themselves to a fiery death.
+
+Trehalose is a disaccharide or a double sugar, two sugar molecules that are made and linked together by two enzymes called Tps1 and Tps2, which do their jobs one after the other. Before the scientists could target either of the biosynthetic enzymes, they needed to know its structure.  
+
+Yi Miao, a graduate student in Brennan’s lab, followed the instructions written in the genetic sequence of Cryptococcus, Candida, and Aspergillus to build Tps2 (the latter of the two biosynthetic enzymes) from scratch. Then he used x-ray crystallography at the Southeast Regional Collaborative Access Team 22-ID-D and 22-BM-D x-ray beamlines at the APS, and at the Advanced Light Source beamlines 5.0.1 and 5.0.2 at the Lawrence Berkeley National Laboratory to produce an atomic-level three-dimensional structure of the essential molecule. The APS is an Office of Science user facility at Argonne.
+
+Miao took several pictures of Tps2 to produce a kind of time-lapse video of the molecule in action:  first, as it sat idle; next, as it bound a precursor molecule called trehalose-6-phosphate, popping off its phosphate group to create trehalose; and finally, its job done, as it released trehalose and was alone again. 
+
+Afterwards the researchers generated a series of mutations in Tps2 to see if they could impair its ability to produce trehalose, and as a result render pathogenic fungi susceptible to heat shock. They showed that a wide variety of mutations could inactivate the enzyme and create fungi unable to survive the jump from 30 to 37 degrees.
+
+“It appears that this enzyme has become so specific that it has basically evolved itself into a corner.” Brennan said. “That’s good for us, because if it tries to evolve resistance to an antifungal drug, it will likely lose its activity in the process, so the drug might not be able to destroy it but it will be a lousy enzyme, and the pathogen will die anyway.”
+
+Brennan says he and his colleagues are now using their structures of Tps2 to conduct “rational” drug design to create new antifungals that can kill a broad spectrum of pathogenic fungi. They are also performing high-throughput screening for small molecules or other pharmaceuticals that can generate the same effect.
+
+See: Yi Miao1, Jennifer L. Tenor2, Dena L. Toffaletti2, Erica J. Washington1, Jiuyu Liu3, William R. Shadrick3, Maria A. Schumacher1, Richard E. Lee3, John R. Perfect2, and Richard G. Brennan1*, “Structures of trehalose-6-phosphate phosphatase from pathogenic fungi reveal the mechanisms of substrate recognition and catalysis,” Proc. Nat. Acad. Sci. USA 2016; published ahead of print June 15, 2016. DOI: 10.1073/pnas.1601774113
+
+Author affiliations: 1Duke University School of Medicine, 2Duke University Medical Center, 3St. Jude Children’s Research Hospital
+
+Correspondence: *richard.brennan@duke.edu
+
+This work was funded by National Institutes of Health (NIH) Grants 1P01AI104533 (to R.G.B., R.E.L., and J.R.P.), and R01AI073896, and R01AI093257 (to J.R.P.); and the American Lebanese Syrian Associated Charities, St. Jude Children’s Research Hospital (R.E.L.). E.J.W. was funded by NIH Grant 5T32AI052080-12.
+
+This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+06.16.2016

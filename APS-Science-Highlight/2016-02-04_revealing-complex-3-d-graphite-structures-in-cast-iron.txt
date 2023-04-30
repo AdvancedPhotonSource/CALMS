@@ -1,0 +1,37 @@
+Revealing Complex 3-D Graphite Structures in Cast Iron
+
+Cast iron is an alloy of iron, carbon, silicon, and other elements with numerous industrial and consumer applications. The carbon content of cast iron — generally higher than that of steel — appears mostly in the form of distinct graphite particles. Materials scientists have long known that the sizes and shapes of these graphite particles critically affect cast iron's strength, brittleness, and other key properties. Characterizing the graphite in cast iron has traditionally relied on surface (two-dimensional; 2-D) imaging techniques. In this research, high-resolution three-dimensional (3-D) imaging of cast iron samples was achieved using synchrotron x-ray tomography performed at the U.S. Department of Energy’s (DOE’s) Advanced Photon Source (APS), an Office of Science user facility at Argonne. The tomography revealed striking details of graphite particle distribution, size, and morphology inaccessible to 2-D imaging. Graphite content ranged from nodular, micron-sized particles, to complex coral-like structures spanning more than a millimeter. This research is part of a collaborative effort led by Caterpillar Inc., which supplied the cast iron materials, with funding from the DOE. The goal is to develop higher-strength cast iron for engine blocks and other components used in heavy-duty equipment. By increasing cast iron strength, engine size and weight can be reduced, thereby improving fuel economy while lowering emissions.
+
+Tomography constructs a 3-D image from a series of 2-D slices, each created by passing a beam of radiation through an object in successive steps. Computer processing then combines the multiple slices to form a three-dimensional picture. The familiar computed tomography scans used in medical imaging are a type of x-ray tomography.
+
+Prior to this research, 3-D imaging of cast iron was achieved using particle-beam tomography. Focused ion beam (FIB) and transmission electron microscopy (TEM), utilizing beams of ionized atoms and electrons, respectively, have imaged cast iron microstructure three-dimensionally. However, these particle-beam techniques require laborious and extensive sample preparation, resulting in time-consuming and expensive experimental setups. They also destroy the probed area, which limits follow-up testing. By contrast, the x-ray tomography used in this research is non-destructive and requires little sample preparation, thereby reducing experiment duration and cost.
+
+Cast iron can be classified according to its graphite inclusions. Ductile cast iron possesses more-or-less rounded particles called nodular graphite (NG). Compacted-graphite iron (CGI), the type examined in this research, contains a mixture of nodular graphite and the more irregularly-shaped compact-graphite (CG). Figures 1(b) and 1(c) show the rounded and irregularly-shaped particles typical of compacted-graphite iron.
+
+The x-ray tomography was performed at X-ray Science Division beamline 1-ID-B,C,E at the APS. The CGI sample consisted of a rod approximately 2 millimeters in diameter [Fig. 1(a)]. An x-ray energy of 70 keV maximized contrast between the cast iron and its graphite particles. To limit computer processing requirements, a small (1 mm3) volume was imaged. Specialized software programs combined multiple 2-D x-ray slices to form a single 3-D image. Cross-sectional images of some of the graphite particles were found to be part of the coral-like structure in Fig. 1(d).
+
+Nearly 21,500 graphite particles were identified using the available 2-micron resolution. The vast majority of these were nodular graphite. Geometric parameters such as particle volume, surface area, and sphericity (a measure of particle roundness) were assigned to each particle. To indicate particle sphericity, a value between 0 and 1 was calculated. A value of 0.4 was chosen as the (arbitrary) cutoff between flatter graphite shapes (<0.4) and rounder ones (>0.4). Most particles had sphericities greater than 0.4. Only 29 particles had sphericities less than 0.1 [including the coral-like structure in Fig. 1(d)]. However, these 29 particles contained almost half the volume's graphite.
+
+The results demonstrate that synchrotron x-ray tomography can quickly reveal the intricate and extensive graphite structures present in cast iron using minimal sample preparation. Figure 1(e) highlights the benefits of 3-D imaging. Depending upon the orientation of the 2-D image, the same graphite particles could be interpreted as nodular graphite or compact-graphite. However, in three dimensions, the particle types are unambiguous.
+
+The researchers expect their 3-D imaging techniques will help resolve several outstanding questions. For instance, do complex graphite particles, like the one in Fig. 1(d), originate from a single particle that grows as the sample cools? Or do many smaller particles merge during cooling?
+
+Importantly, the 3-D tomography techniques used in this study are applicable to other alloys, for instance aluminum alloys. Moreover, the availability of greater computational power will allow the imaging of larger sample volumes. 
+
+— Philip Koth
+
+See: Chihpin Chuang1, Dileep Singh1*, Peter Kenesei1, Jonathan Almer1, John Hryn1, and Richard Huff2, “3D quantitative analysis of graphite morphology in high strength cast iron by high-energy X-ray tomography,” Scripta Mater. 106, 5 (2015).  DOI: 10.1016/j.scriptamat.2015.03.017
+
+Author affiliations: 1Argonne National Laboratory, 2Caterpillar Inc.
+
+Correspondence: *dsingh@anl.gov
+
+Part of this research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+02.04.2016

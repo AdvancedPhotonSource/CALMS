@@ -1,0 +1,37 @@
+How Your Body Transports Zinc to Protect Your Health
+
+Zinc is essential for wound healing, for vision, for DNA creation, for our senses of taste and smell, even for sexual health. But despite its importance, scientists have never fully understood the mechanism that moves the mineral through the body – until now. Using information from studies at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory, researchers have, for the first time, created detailed blueprints of the molecular moving vans that ferry this important mineral everywhere it’s needed through the blood. The finding gives scientists new insights into this important process – and a deeper understanding of the critical role it plays in maintaining good health. The findings have been published in the journal Chemical Science.
+
+The work represents an international collaboration among researchers at the University of Virginia (UVA) School of Medicine and colleagues at the universities of South Carolina, Warwick (UK), and St. Andrews (UK), and the New York Structural Genomics Research Consortium.
+
+Zinc is carried through the body by a protein known as serum albumin. Scientists had expected there would be a primary site where serum albumin binds with zinc, and the researchers proved the location of that site. But the team, led by UVA’s Wladek Minor, also found several more secondary binding sites, revealing a more complex interaction than anticipated.
+
+“It’s different than it was predicted before,” UVA researcher and article co-author Katarzyna B. Handing said.
+
+While computer models previously had been used to predict how serum albumin picks up zinc, Minor’s team used macromolecular x-ray crystallography at the Life Sciences Collaborative Access Team (LS-CAT) 21-ID-F and 21-ID-G x-ray beamlines, and the Structural Biology Center (SBC-CAT) 19-BM-D x-ray beamline, all at the Argonne APS, to obtain data-based images of protein crystals showing how zinc actually bound to serum albumin. The technique allows them to pinpoint the location of each particular zinc atom. It was a challenging task, but the resulting schematics allow scientists to see, for the first time, exactly how serum albumin and zinc come together.
+
+With the finding, scientists have a better grasp of how the body maintains the delicate balances necessary for good health, a state known as homeostasis. It’s a complex dance made all the more complicated by the fact that serum albumin also transports many other things, such as hormones and fatty acids.
+
+“Homeostasis is extremely important, and it can be affected by the level of zinc you are taking into your body. But it can also be affected by other elements,” Handing said. “If you have an elevated level of fatty acids, for example, as a result of diabetes or obesity, the zinc homeostasis can be disturbed.”
+
+This is important because the body needs zinc, but too much zinc is toxic. So the body must make it available where it is needed, but, at the same time, it must prevent excessive buildup. If something goes wrong with the zinc regulation process, that can have a ripple effect, throwing the body’s delicate balances out of whack and potentially having serious effects on health.
+
+Ivan G. Shabalin, a research scientist in Minor’s lab and an article co-author, noted that the findings could help shed light on why certain drugs affect some patients differently than others.
+
+“We are going toward an understanding of all these complex relationships,” he said. “You have this one molecule [serum albumin], and you have hundreds – possibly thousands – of different molecules which bind to it. We need to understand all this interplay. By studying zinc binding to albumin, we are understanding this relationship deeper.”
+
+See: Katarzyna B. Handing1,2, Ivan G. Shabalin1,2, Omar Kassaar3, Siavash Khazaipoul3, Claudia A. Blindauer4, Alan J. Stewart3, Maksymilian Chruszcz5, and Wladek Minor1,2*, “Circulatory zinc transport is controlled by distinct interdomain sites on mammalian albumins,” Chem. Sci. 7, 6635 (2016). DOI: 10.1039/c6sc02267g
+
+Author affiliations: 1University of Virginia School of Medicine, 2New York Structural Genomics Research Consortium, 3University of St. Andrews, 4University of Warwick, 5University of South Carolina
+
+Correspondence: *wladek@iwonka.med.virginia.edu
+
+The work described here was supported by National Institutes of Health grants 1R01GM117325-01, 5U54GM094662-05 and R01GM053163, BBSRC grant BB/J006467/1 and British Heart Foundation grant PG/15/9/31270. We thank the beamline scientists, especially Randy Alkire and Norma Duke from SBC-CAT 19-ID and 19-BM, for assistance in data collection. Use of the LS-CAT Sector 21 was supported by the Michigan Economic Development Corporation and the Michigan Technology Tri-Corridor (Grant 085P1000817). The Structural Biology Center at the Advanced Photon Source, Argonne, is operated by UChicago Argonne, LLC, for the U.S. Department of Energy (DOE) Office of Biological and Environmental Research under contract DE-AC02-06CH11357. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+12.20.2016

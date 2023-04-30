@@ -1,0 +1,35 @@
+An Unusual Spin Configuration
+
+The original Max Planck Institute for Chemical Energy Conversion article can be read here.
+
+The recent application of an advanced technique, x-ray magnetic circular dichroism (XMCD) spectroscopy at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory has provided an answer to a hypothesis first proposed in 2014 [1] regarding the biological cofactor that enables the conversion of nitrogen to bioavailable ammonia. The hypothesis suggested an unusual electron spin orientation at the single molybdenum atom of the iron-molybdenum cofactor present in the nitrogenase enzyme, with two out of three electron spins being oriented down and one up [1]. Now, this unusual electronic structure finally has been experimentally confirmed. The results of this study were recently published in Angewandte Chemie International Edition and chosen by the Editor as a “Hot Paper” for its “importance in a rapidly evolving field of high current interest” and were also featured as an inside cover.
+
+The conversion of atmospheric nitrogen to ammonia is a crucial process for life on earth. Ammonia is needed in the production of fertilizers, as well as for the manufacturing of a wide range of products ranging from household cleaning products to explosives. From a more fundamental biological perspective, nitrogen atoms are also constituents of amino acids and nucleic acids, which constitute the building blocks of proteins and nucleic acids in all organisms.
+
+The enigmatic properties of the iron-molybdenum cluster present in the nitrogenase enzyme has motivated considerable efforts in understanding its structure and its relation to nitrogen reduction. Prof. Serena DeBeer, Director of the Department of Inorganic Spectroscopy of the Max Planck Institute (MPI) for Chemical Energy Conversion, has been studying the geometric and electronic structure of this cofactor utilizing a wide range of x-ray-based spectroscopic methods for nearly a decade. "The whole project was from the beginning very challenging,” said Dr. Joanna Kowalska, former postdoctoral fellow in Prof. DeBeer’s department and first author of the study. “We not only needed a bright light source like synchrotron radiation to probe one atom in a large  complex, but we also used its tunable polarization to effectively excite spin-up or spin-down electrons separately.”
+
+“In a simple picture, we could tune the energy of the synchrotron light to probe either iron or molybdenum atoms in the iron/molebdynum (FeMo) cofactor or a molecular model complex and detect electron spins of different orientation. Luckily, such measurements were possible at one of the unique beamlines [the X-ray Science Division 4-ID-C insertion device beamline] at the Advanced Photon Source, an Office of Science user facility at Argonne, equipped with a one-of-a-kind electromagnetic undulator.  (The researchers also measured x-ray absorption spectroscopy data at the 4-ID-C beamline, and XAS and XMCD data at the DEIMOS beamline of the SOLEIL synchrotron facility in France.)
+
+“In our measurements, we focused on the FeMo cubane that is a structural mode complex of the FeMo cofactor, and as a reference, we used a well-characterized molecular compound with three electron spins up at the molybdenum atom. We got very different spectra from these complexes although both possess a molybdenum atom in a +3 oxidation state. On this basis, we could not only provide evidence for different electronic structure of the Mo atom in this compounds, but also for the first time support the proposed non-Hund configuration at the Mo atom in the FeMo cubane complex.”
+
+These findings demonstrate the in-depth information regarding electronic structure that can be achieved only by utilizing XMCD (at two different metal L-edges) and form a foundation for future selective X-ray spectroscopic based studies of different biological systems. This information might help to design future effective catalysts based on lessons learned from nature.
+
+[1] Bjornsson et al., Chem. Sci. 5, 3096 (2014)
+
+See: Joanna K. Kowalska1, Justin T. Henthorn1, Casey Van Stappen1, Christian Trncik2, Oliver Einsle2, David Keavney3, and Serena DeBeer1*, “X‐ray Magnetic Circular Dichroism Spectroscopy Applied to Nitrogenase and Related Models: Experimental Evidence for a Spin‐Coupled Mo(III) Center,” Angew. Chem. Int. Ed. 58(28), 9373 (2019).  DOI: 10.1002/anie.201901899
+
+Author affiliations: 1Max Planck Institute for Chemical Energy Conversion, 2Albert Ludwigs University of Freiburg, 3Argonne National Laboratory
+
+Correspondence: * Serena.DeBeer@cec.mpg.de
+
+The Max Planck Society, the European Research Council under the European Union’s Seventh Framework Programme (FP/2007-2013; ERC Grant Agreement No. 615414 (S.D.) and No. 310656 (O.E.)), the DFG projects DE 1877/1-1 (S.D.) and EI 520/10 (O.E.) within the SPP 1927 “Iron-Sulfur for Life”, as well as DFG RTG 1976 “Functional Diversity of Cofactors” are acknowledged for funding. We acknowledge SOLEIL for provision of synchrotron radiation facilities and thank Dr. Edwige Otero for assistance in using the DEIMOS beamline. J.T.H. acknowledges funding from the Alexander von Humboldt Foundation. C.S. acknowledges the international Max Planck School, Recharge, for a doctoral fellowship. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The Max Planck Institute for Chemical Energy Conversion (MPI CEC) in Mülheim an der Ruhr investigates fundamental chemical processes in energy transformation and thus contributes to the development of new and efficient catalysts. The three departments: Heterogeneous Reactions, Inorganic Spectroscopy and Molecular Catalysis employ around 150 scientists from around 30 countries that conduct interdisciplinary research toward sustainable energy.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+07.22.2019

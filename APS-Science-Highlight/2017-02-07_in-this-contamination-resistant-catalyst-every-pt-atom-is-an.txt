@@ -1,0 +1,27 @@
+In This Contamination Resistant Catalyst, Every Pt Atom is an Active Site
+
+Every material has a weakness, and platinum (Pt) has at least two. It is expensive and it is easily contaminated by carbon monoxide (CO). Carbon monoxide poisoning has dogged the makers of fuel cells and hydrogen conversion devices for electric cars, emergency power generators, portable electronics, and more since the first prototypes. With cost in mind, researchers have recently worked to define catalysts with the least possible concentration of Pt. It turns out that it doesn’t take much Pt to make a Pt catalyst—all you need are a few isolated atoms embedded in a sea of other materials. These catalysts are called single-atom alloys, or SAAs. Researchers used the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory to test SAAs of Pt embedded in copper, and found that the catalyst is not only low in Pt, but also addresses the problem of CO poisoning. Contamination in fuel cells can diminish performance via sluggish electrode kinetics, conductivity, and mass transfer, which results in a dramatic performance drop, particularly at low temperatures. Thanks to this new catalyst configuration, industrial processes that depend critically on Pt can run more efficiently and at lower cost. This work presents a solution to address CO contamination within a solution to address Pt concentration; it is a clever two-for-one.
+
+Prized for its corrosion resistance, density, ductility, high melting point, and chemical stability, Pt is also rare and difficult to mine. It is notorious for losing catalytic performance when exposed to even trace amounts of CO, a common component in hydrocarbon processing. To function well, a catalyst must provide plenty of surface sites for reaction components to interact, but a high surface material also provides plenty of contiguous sites for potential contamination.
+
+The researchers in this study, from Tufts University, Argonne, and the University of South Carolina, determined the binding strength of CO to isolated Pt atoms, and Pt atoms in clumps, surrounded by copper (Cu) metal. They reacted these configurations with small amounts of CO in real time at elevated temperatures and observed how the materials changed and at what temperatures the CO desorbed, using a variety of infrared, electron, and x-ray techniques (Fig. 1), including x-ray absorption spectroscopy (XAS) performed at the X-ray Science Division x-ray beamline 12-BM-B at the APS, an Office of Science user facility. As expected, CO adsorbed more weakly to Pt-Cu SAAs than Pt-Cu alloys that contained Pt clusters.
+
+In traditional Pt catalysts, CO readily attaches to Pt atoms, blocking sites needed for hydrogen activation. But groups of metal atoms function differently from single atom sites. Larger CO molecules trying to squeeze onto a single Pt atom is rather like a large pickup negotiating a parking space meant for compacts—it doesn’t happen easily. And with fewer Pt atoms blocked by CO molecules, more are available to facilitate reactions.
+
+These results suggested that Pt SAAs should work more efficiently in hydrogen activation and oxidation reactions than other Pt catalyst configurations. The researchers then performed tests to determine if what was suggested would actually work, and they were rewarded with a positive result. With the same CO concentration in the gas phase, the Pt-Cu SAA yielded 12 times more hydrogen than Pt nanoparticle catalysts.  — Jenny Morber
+
+See: Jilei Liu1, Felicia R. Lucci1, Ming Yang1, Sungsik Lee2, Matthew D. Marcinkowski1, Andrew J. Therrien1, Christopher T. Williams3, E. Charles H. Sykes1**, and Maria Flytzani-Stephanopoulos1*, “Tackling CO Poisoning with Single-Atom Alloy Catalysts,” J. Am. Chem. Soc. 138, 6396 (2016). DOI: 10.1021/jacs.6b03339
+
+Author affiliations: 1TuftsUniversity, 2Argonne National Laboratory, 3University of South Carolina
+
+Correspondence: *maria.flytzani-stephanopoulos@tufts.edu, **charles.sykes@tufts.edu
+
+This work was supported by the National Science Foundation (CBET-1159882 to J.L.), and the U.S. Department of Energy (DOE, DE-FG02-05ER15730 to A.J.T. and M.F-S., and DE-FG02-10ER16170 to F.R.L. and E.C.H.S). M.D.M. thanks the Tufts University Department of Chemistry for an Illumina Fellowship. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02- 06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+02.07.2017

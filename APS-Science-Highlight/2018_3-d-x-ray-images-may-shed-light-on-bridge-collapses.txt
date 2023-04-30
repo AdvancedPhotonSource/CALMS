@@ -1,0 +1,49 @@
+3-D X-ray Images May Shed Light on Bridge Collapses
+
+The original Texas A&M University press release by Elizabeth Thomson can be read here.
+
+In work that could help prevent the failure of everything from bridges to dental implants, a team of researchers utilized the U.S. Department of Energy’s Advanced Photon Source (APS) to obtain the first three-dimensional (3-D) image of a microscopic crack propagating through a metal damaged by hydrogen.
+
+“For the first time we were able to catch the crack red-handed,” said Michael J. Demkowicz, associate professor in the Department of Materials Science and Engineering at Texas A&M University and corresponding author on the study, which was published in the journal Nature Communications.
+
+Previously, the only way to analyze such a metal failure was to look at the separated pieces of a completely fractured component, which entails a certain amount of guesswork. The new research shows what is happening at the crack tip as a part begins to fracture.
+
+“It’s much better than arriving at the crime scene after the fact,” said Demkowicz.
+
+As a result, the team, which also included researchers from the Massachusetts Institute of Technology, Johns Hopkins University, Carnegie Mellon University, Lawrence Livermore National Laboratory, and Argonne National Laboratory identified 10 microscopic structures that make metals stronger and less susceptible to a key environmental factor—the hydrogen around us—that can damage them.
+
+Their work was conducted utilizing two synchrotron x-ray research techniques: near-ﬁeld high-energy diffraction microscopy (nfHEDM) and x-ray absorption tomography (XRAT) at the X-ray Science Division (XSD) beamline 1-ID at the APS, an Office of Science user facility at Argonne National Laboratory. The nfHEDM technique was employed to image grain shapes and orientations in the metal’s polycrystals non-destructively and in 3D. Concurrent XRAT measurements allowed the team to connect individual grain boundaries to crack morphology unambiguously.
+
+This work also represents a milestone for XRAT as the first experiment performed by researchers outside of the team at Argonne and Carnegie Mellon University that developed the technique, whose combined experimental tool and analysis software are unique in the world.
+
+Metals surround us in any number of structures and devices, but they can be negatively affected by the ubiquitous hydrogen around us, mostly from water. “Hydrogen gets into the metal and causes it to fracture unexpectedly in a process called hydrogen embrittlement,” said John P. Hanson, a reactor engineer at Oklo and first author of the paper. One prominent example involves the Bay Bridge in San Francisco. As the bridge was being constructed in 2013, engineers discovered that 32 of the 96 huge bolts key to the structure had cracked due to hydrogen embrittlement. The problem was caught early so there was no catastrophe, but it delayed the opening of the bridge by a few years.
+
+Scientists have studied hydrogen embrittlement for over 150 years, but it remains difficult to predict. “That’s largely because we don’t have a complete understanding of the mechanisms behind it,” said Hanson, who conducted the work while earning his doctorate from the Massachusetts Institute of Technology (MIT).
+
+“As a result, engineers have to overdesign with additional material to cover any sudden failure and that costs a lot,” said co-author Peter Kenesei of the Materials Physics and Engineering Group in XSD, who operates the instruments used in the work. “So a better understanding of this behavior could have a huge economic impact.”
+
+A metal is composed of microscopic crystals, or grains. In nickel superalloys, the fractures brought on by hydrogen embrittlement travel along the boundaries between those grains. Hanson said the unique tools at the APS beamline 1-ID allow for the first time to not only look at the grain orientations around a crack in progress, but also the grain boundaries. From those observations, the team identified 10 grain boundaries that are more resistant to cracks.
+
+“We were able to show not only which grain boundaries are stronger, but exactly what it is about them that improves their performance,” Hanson said. This could ultimately allow engineers to build stronger metals by designing them with those characteristics.
+
+In the nearer term, the Argonne tools could be used to image the microstructure of existing metal components to better predict their susceptibility to failure. Kenesei notes that the tools are already being used this way to study other engineering materials, such as those related to airplanes, batteries and nuclear reactors.
+
+The study took eight years to complete, primarily because it involved huge amounts of data that were difficult to analyze. The raw data for the work would fill almost 400 DVDs. Further, the data looks nothing like a three-dimensional model of the material. “It’s highly encrypted in the form of streaks and dots, or diffraction patterns, that must be analyzed by a supercomputer,” said Robert M. Suter from Carnegie Mellon University, an expert on the analysis.
+
+To put the challenges in perspective, Demkowicz notes that the crack microstructure is actually much more complicated than the structure of DNA, which Watson and Crick determined through the same general process, but by hand.
+
+See: John P. Hanson1, Akbar Bagri1,2, Jonathan Lind3,4, Peter Kenesei5, Robert M. Suter3, Silvija Gradečak1, and Michael J. Demkowicz6*, “Crystallographic character of grain boundaries resistant to hydrogen-assisted fracture in Ni-base alloy 725,” Nat. Commun 9, 3386 (2018). DOI: 10.1038/s41467-018-05549-y
+
+Author affiliations: 1Massachusetts Institute of Technology, 2Johns Hopkins University, 3Carnegie Mellon University, 4Lawrence Livermore National Laboratory, 5Argonne National Laboratory, 6Texas A&M University
+
+Correspondence: *demkowicz@tamu.edu
+
+This work was supported by the BP-MIT Materials and Corrosion Center. Access to shared experimental facilities at MIT was provided by the MIT Center for Materials Science Engineering, supported in part by the MRSEC Program of the National Science Foundation under Award number DMR-0213282. Work at Carnegie-Mellon University was supported by the U.S. Department of Energy (DOE) Office of Science-Basic Energy Sciences grant DESC0002001. Computational support for this research was provided by grant TG-DMR130061 from the National Science Foundation’s Extreme Science and Engineering Discovery Environment (XSEDE) advanced support program. A.B. acknowledges support from the National Science Foundation, Grant No 1150862, for support in HEDM data analysis. J.P.H. acknowledges the DOE Ofﬁce of Science Graduate Fellowship Program, made possible in part by the American Recovery and Reinvestment Act of 2009, administered by ORISE-ORAU under contract no. DE-AC05-06OR23100. This research used resources of the Advanced Photon Source, a U.S. DOE Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.20.2018

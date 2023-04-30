@@ -1,0 +1,33 @@
+Peering into the Interfaces of Nanoscale Polymeric Materials
+
+The development of polymer nanostructures and nanoscale devices for a wide variety of applications could emerge from new information about the interplay between nanoscale interfaces in polymeric materials, thanks to research carried out at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory.
+
+It is well known that the physical and mechanical properties of polymeric materials confined at the nanoscale differ substantially from the bulk, the so-called “nanoconfinement” effect. Polymeric materials comprise a compound or mixture of compounds formed by polymerization and consisting essentially of repeating structural units, prepared on impenetrable solid substrates. There is now growing evidence that the air/polymer interface and polymer/substrate interface play crucial roles in such nanoconfinement effects: At the air/polymer interface, there exists a surface mobile layer which enhances the chain dynamics, while an immobile adsorbed layer formed onto solid substrates without specific interactions of a polymer (such as - stacking or hydrogen bonds) reduces the dynamics. Although most previous work has revealed the deviations of “average” quantities of entire nanometer films from the bulk, it is expected that the local quantities within the film would be different from the average ones, depending on the interplay between these interfaces. It was this unanswered question – both theoretically and experimentally- that motivated the present study.
+
+In order to understand to what extent these interfacial effects propagate into the film interior and to determine the rheological property of polymeric materials as a function of the distance from the interfaces, researchers from Stony Brook University and Argonne utilized the X-ray Science Division beamline 8-ID at the APS to apply x-ray photon correlation spectroscopy (XPCS) to polystyrene (PS) films with an embedded system of gold nanoparticles that act as markers. With this novel technique, the researchers found that the random drifting (the Brownian motion) of the markers adequately tracked the local viscosity, which controls the flow and the mechanical properties of polymeric materials, governed by chain entanglements. In addition, the use of the two illuminating modes with different incident angles for XPCS enabled them to explore in-situ the marker dynamics at the topmost surface and the near-center region of the film independently.
+
+As a result, they discovered that the viscosity of the topmost surface (~ 10 nm depth) in PS films (~100 nm in thickness) is about 30% lower than that at the center of the film. Moreover, XPCS results conclude the long-standing debate as to whether polymer chains at the topmost surface are entangled or not. The polymer chains at the air/polymer interface are still entangled and the corresponding dynamics are governed by the reptation mechanism, which describes the “snake-like” large-scale motion of entangled polymer chains, as in the bulk.
+
+This work also reports the emergence of the heterogeneous viscosity distributions within single-layer polymer thin films in thermal equilibrium. The researchers found that while the polymer/air interface is more mobile due to its reduced viscosity, the long-range perturbations (~60-nm in thickness in this case), which are associated with the very thin immobile adsorbed layer (~ 7-nm in thickness), result in an exponential-like increase in the local viscosity with decreasing distance from the substrate interface.
+
+Thus, the present findings shed new light on the interplay between these interfaces on the local rheological property, facilitating the development of new polymer nanostructures and nanoscale devices to be used in a wide variety of fields.
+
+Reference
+
+Reduced Viscosity of the Free Surface in Entangled Polymer Melt Films (T. Koga, C. Li, M. K. Endoh, J. Koo, M. Rafailovich, S. Narayanan, D. R. Lee, L. B. Lurio, S. K. Sinha), Phys. Rev. Lett., 104 (2010) 066101.
+
+See: T. Koga*, N. Jiang, P. Gin, M. K. Endoh, S. Narayanan**, L. B. Lurio, and S. K. Sinha, “Impact of an Irreversibly Adsorbed Layer on Local Viscosity of Nanoconfined Polymer Melts,” Phys. Rev. Lett. 107, 225901 (25 November 2011).
+
+DOI:10.1103/PhysRevLett.107.225901
+
+Correspondence: * tkoga@notes.cc.sunysb.edu, ** sureshn@aps.anl.gov
+
+Use of the Advanced Photon Source at Argonne National Laboratory was supported by the DOE’s Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+01.06.2012

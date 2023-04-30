@@ -1,0 +1,39 @@
+Squeezing Out the Hidden Lives of Electrons
+
+In our daily lives we tend to think of electrical conductivity as largely static: Copper is a good choice for conduction; clay is not. But heat up that copper wire, and electron conduction slows. Give a flake of that ceramic a good squeeze, and conduction may perk up. Conductivity is determined by much more than simple chemistry. Metal-to-insulator transitions have excited and perplexed researchers for over a century, and they continue to provide fodder for research today. The key to understanding what causes changes in material conductivity lies in teasing out contributions from structural atomic arrangements and electron interactions. Researchers using high-energy x-rays from the U.S. Department of Energy Office of Science's Advanced Photon Source (APS) have managed to disentangle these components in vanadium sesquioxide (V2O3), an extensively studied model solid. By decoupling the effects of spin, charge, and lattice variables in V2O3, the team is uncovering a mechanism that has eluded researchers for six decades.
+
+With measurements performed at the LERIX instrument at X-ray Science Division (XSD) beamline 20-ID and the High Pressure Collaborative Access Team (HP-CAT) beamline 16-ID, both at the APS, and calculations from the XSD Theory Group, the researchers have identified a structural phase change in V2O3 that occurs under great pressure, but without the usual metal-to-insulator transition. The interplay between crystal structure and electronic properties underlies almost every modern device, from pressure sensors to superconducting high speed trains.
+
+Under normal conditions, V2O3 is a black metallic solid with a corundum crystal structure, like that of rubies and sapphires. With changes in temperature it undergoes spectacular metal-to-insulator transitions, often with changes in magnetic behavior as well. These unusual properties make V2O3 a material of choice in devices that include temperature sensors and current regulators.
+
+Researchers had previously reported interesting behavior in V2O3 as temperature changed and pressure remained constant. Here the team tested the opposite condition, monitoring the material's resistance while increasing the pressure at a constant temperature.
+
+At first everything seemed normal—as the pressure increased the material's resistance also decreased. But around 12.5 GPa the resistance began to rise. This result was unexpected. Even more unusual, at greater pressures near 33 GPa, the material's structure changed from corundum to a more compact monoclinic arrangement of atoms, but this change was not accompanied by a corresponding spike in resistance (see the figure). The material remained metallic. Previously, all corundum to monoclinic changes in structure had been accompanied by a simultaneous transition from metallic to insulating behavior.
+
+To understand what was happening, the researchers performed inelastic x-ray scattering measurements and compared the results with theoretical simulations. Because inelastic x-ray spectroscopy measures the unoccupied vanadium electron valence states, these measurements provide a more detailed picture of electron screening interactions.
+
+While the resistivity measurements clearly showed changes at 12.5 GPa, the inelastic x-ray spectra showed no differences up to the phase change pressure of 33 GPa. This means that the early changes in resistance were due not to changes in electron correlations, but to interactions between electrons and the lattice (or phonons).
+
+At high pressure the electronic structure changed drastically in the inelastic x-ray spectra, suggesting an increase in electron correlations, but not quite enough to tip the material into the category of an insulator. At such high pressure, V2O3 is on the verge of becoming an insulator, but can't quite make the change due to competing effects from the lattice.
+
+This work adds another clue to our understanding of how long-range atomic arrangement and local electron interactions work competitively to manifest metal-to-insulator transitions in solids.
+
+The next step will be to explore electron correlations in V2O3 by using more advanced techniques, such as the resonant x-ray inelastic scattering method with temperature, as another parameter to extend the unique phase diagram of V2O3.
+
+— Jenny Morber
+
+See: Yang Ding1*, Cheng-Chien Chen1, Qiaoshi Zeng2, Heung-Sik Kim3, Myung Joon Han3, Mahalingam Balasubramanian1, Robert Gordon1,4, Fangfei Li5,6, Ligang Bai7, Dimitry Popov5, Steve M. Heald1, Thomas Gog1, Ho-kwang Mao5,8, and Michel van Veenendaal1,9, "Novel high-pressure monoclinic metallic phase of V2O3," Phys. Rev. Lett. 112, 056401 (2014). DOI:10.1103/PhysRevLett.112.056401
+
+Author affiliations: 1Argonne National Laboratory, 2Stanford University, 3Korea Advanced Institute of Science and Technology (Republic of Korea), 4Pacific Northwest Consortium Synchrotron Radiation Facility, 5Carnegie Institution of Washington, 6Jilin University (China) 7University of Nevada Las Vegas, 8Center for High Pressure Science and Technology Advanced Research (China), 9Northern Illinois University
+
+Correspondence: *yangding@aps.anl.gov
+
+This research was supported in part by EFree, an Energy Frontier Research Center funded by the U.S. Department of Energy (DOE) Office of Science, Basic Energy Sciences (BES) under Award No. DESC0001057. C.C.C. was supported by the Aneesur Rahman Postdoctoral Fellowship at ANL. M.v.V was supported by DOE-BES under Award No. DE-FG02-03ER46097 and the NIU Institute for Nanoscience, Engineering and Technology. High Pressure Collaborative Access Team operations were supported by the DOE National Nuclear Security Administration under Award No. DE-NA0001974, and DOE-BES under Award No. DE-FG02-99ER45775, with partial instrumentation funding by the National Science Foundation. APS sector 20, which is managed by XSD in partnership with the Canadian Light Source (CLS), is funded by the U.S. Department of Energy Office of Science, and by the Natural Sciences and Engineering Research Council of Canada and the University of Washington via the CLS. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under Contract no. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+02.26.2014

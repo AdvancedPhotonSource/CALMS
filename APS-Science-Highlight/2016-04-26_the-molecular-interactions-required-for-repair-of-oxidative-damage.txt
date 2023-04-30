@@ -1,0 +1,25 @@
+The Molecular Interactions Required for Repair of Oxidative Damage to DNA
+
+Inflammation, ionizing radiation, and pollutants are among the environmental factors that generate DNA-damaging reactive oxygen species within human cells. The resultant lesions can have catastrophic effects, and cells utilize a range of mechanisms to identify and repair damaged DNA. One type of oxidative lesion, 8-oxo-dG, can form a correct base pair with the nucleotide dCTP, or an incorrect pair with dATP. In either case, human DNA Polymerase β (hPolβ) is the enzyme responsible for catalyzing this translesion synthesis during base-excision repair, a process whereby DNA damaged by reactive oxygen is repaired and replicated either faithfully or containing a damage-induced error. To understand how hPolβ is able to carry out this role, researchers from The Ohio State University crystallized hPolβ in complex with damaged (8-oxo-dG) DNA and nucleotides that would either correctly (dCTP) or incorrectly (dATP) pair with the DNA. X-ray diffraction data of 12 complexes frozen at various points during the course of the elongation reaction were collected at the U.S. Department of Energy's Advanced Photon Source (APS), an Office of Science user facility at Argonne. This allowed the research team to build the first real-time picture of hPolβ correctly or incorrectly bypassing damaged DNA and to identify a third divalent ion required for catalysis. In addition to bolstering basic knowledge of this important cellular process, this work paves the way for understanding human diseases in which DNA damage repair is defective.
+
+In this study, researchers used time-dependent x-ray crystallography at the LRL-CAT beamline at the APS to observe the process of nucleotide incorporation by capturing the structural intermediates formed during correct or incorrect bypass of an 8-oxo-dG DNA lesion. By growing crystals that contained hPolβ bound to 8-oxo-dG DNA with either dCTP or dATP in the presence of Ca2+, a metal that binds but does not support hPolβ chemistry, researchers generated complexes that contained all components required for translesion synthesis, but that were catalytically inert. To observe the transition of the damaged DNA substrate to its elongated product, crystals were incubated in a solution containing either Mg2+ or Mn2+, the divalent metal ions required for hPolβ activity. At 30-second intervals, the divalent metal exchange was stopped by flash freezing the crystals. Comparison of electron densities for each crystal allowed for modeling fractions of substrate and product within the hPolβ active site over time (Fig. 1). The researchers also observed, for the first time, a third divalent metal ion at the hPolβ active site, a finding that contrasts the long-held belief that DNA polymerases require only two divalent metal ions.
+
+This work not only provides a valuable method for gradual introduction of catalytic metal ions or small molecule activators for the study of reaction intermediates, but raises questions surrounding the general necessity of a third divalent metal ion for other polymerases, including those responsible for genome replication and RNA transcription. In addition to lending insight into diseases in which repair of DNA damage is defective, this work may also aid in development of antiviral therapies that target viral polymerases that require a third metal ion for catalysis.  
+
+— Emma Nichols
+
+See: Rajan Vyas, Andrew J. Reed, E. John Tokarsky, and Zucai Suo*,  “Viewing Human DNA Polymerase β Faithfully and Unfaithfully Bypass an Oxidative Lesion by Time-Dependent Crystallography,” J. Am. Chem. Soc. 137(15), 5225 (2015). DOI: 10.1021/jacs.5b02109
+
+Author affiliation: The Ohio State University
+
+Correspondence: *suo.3@osu.edu
+
+This work was supported by National Institutes of Health grants (ES009127, ES024585) and National Science Foundation grant (MCB-0960961) to Z.S. This research used resources of the Advanced Photon Source, a U.S. Department of Energy Office of Science User Facility operated for the U.S. Department of Energy Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.26.2016

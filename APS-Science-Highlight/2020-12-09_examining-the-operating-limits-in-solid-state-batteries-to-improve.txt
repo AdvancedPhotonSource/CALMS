@@ -1,0 +1,33 @@
+Examining the Operating Limits in Solid-State Batteries to Improve the Driving Range of Electric Vehicles
+
+The original Vanderbilt University School of Engineering article by Brenda Ellis can be read here.
+
+There is huge momentum toward adoption of battery-based electric vehicles primarily because their performances are meeting or exceeding the properties of traditional automobiles. Consumers want electric vehicles that have similar driving range (energy density) and charging styles and times (power density) to gasoline powered vehicles. Recently, a university/industry/national laboratory collaboration among researchers at Vanderbilt University, the University of Pennsylvania, Argonne National Laboratory, and  Toyota Research Institute of North America (TRINA), a division of Toyota Motor North America R&D based in Ann Arbor, Michigan, worked to examine operating limits and failure mechanisms in a family of solid-state batteries based on thiophosphate materials. Their paper, featuring new information based upon research carried out at the U.S. Department of Energy’s Advanced Photon Source at Argonne was published in the journal Matter.
+
+“One pathway to improving the energy density of the battery, or the driving range, is to move toward solid-state batteries. Solid state batteries eliminate all liquids and thus have smaller form factors and can potentially integrate energy dense alkali metals,” said Kelsey Hatzell, assistant professor of mechanical engineering and a Flowers Family Faculty Fellow in Engineering at Vanderbilt.
+
+The team used advanced in situ synchrotron x-ray tomography at the 2-BM x-ray beamline operated by the Argonne X-ray Science Division Imaging Group at the APS, an Office of Science user facility at Argonne. 1500 projections were taken evenly during a 180° sample rotation with 100-ms exposure time for each projection. Together with in situ transmission electron microscopy, the team’s investigations afforded them a look into solid state batteries while cycling lithium ions through the solid electrolyte. The work identified preferential ion movement, known as current focusing, as the predominant pathways for fracture in these solid-state systems.
+
+This work provides a basis for understanding materials design and system engineering approaches that can facilitate high rate, or high-power density, operating regimes. For batteries to fully displace the current state of the art, using materials that can achieve long distances, fast charging, and safety are key.
+
+The work was co-led by Marm Dixit, a Ph.D. candidate in mechanical engineering at Vanderbilt; and Nik Singh, a Senior Scientist in the Materials Research Department at TRINA. This collaboration is a result of Hatzell’s ECS/Toyota Fellowship and a collaboration with Tim Arthur, Principal Scientist in the Materials Research Department at TRINA.
+
+“To realize batteries that can drive longer on a single charge, we have to design them over cascading length scales–from nanometer levels to the mesoscale. This work was very exciting as we investigate the battery over these vast length scales with advanced characterization methods and help identify pathways to better batteries,” Dixit said.
+
+See: Marm Dixit1, Nikhilendra Singh2, James Horwath3, Pavel Shevchenko4, Eric A. Stach3, Timothy S. Arthur2**, and Kelsey Hatzell1,*, “Interphase and microstructure effects on the chemo-mechanics of thiophosphate solid electrolytes,” Matter, published on line October 12, 2020. DOI: 10.1016/j.matt.2020.09.018
+
+Author affiliations: 1Vanderbilt University, 2Toyota Research Institute of North America, 3University of Pennsylvania, 4Argonne National Laboratory
+
+Correspondence: * kelsey.b.hatzell@vanderbilt.edu, ** tim.arthur@toyota.com
+
+This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+12.09.2020

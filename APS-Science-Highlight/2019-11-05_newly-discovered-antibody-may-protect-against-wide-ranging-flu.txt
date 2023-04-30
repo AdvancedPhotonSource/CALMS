@@ -1,0 +1,57 @@
+Newly Discovered Antibody May Protect against Wide-Ranging Flu Strains
+
+The original Scripps Research press release can be read here.
+
+A nationwide team of researchers has found an antibody that protects mice against a wide range of potentially lethal influenza viruses, advancing efforts to design a universal vaccine that could either treat or protect people against all strains of the virus. Their results point to a new approach to tackle severe cases of the flu, including pandemics. The study, which used data from research at two U.S. Department of Energy research facilities including the Advanced Photon Source (APS), was carried out by Scripps Research scientists working with colleagues from the Washington University School of Medicine in St. Louis, the Icahn School of Medicine at Mount Sinai, and the Columbia University Irving Medical Center. The research is published in the journal Science.
+
+Scripps Research’s Ian Wilson, one of three senior co-authors of the study, says the antibody at the center of the research binds to a protein called neuraminidase, which is essential for the flu virus to replicate in the body.
+
+The protein, located on the surface of the virus, enables infected host cells to release the virus so it can spread to other cells. Tamiflu, the most widely used drug for severe flu infection, works by inactivating neuraminidase. However, many forms of neuraminidase exist, depending on the flu strain, and such drugs aren’t always effective—particularly as resistance to the drugs is developing.
+
+“There are many strains of influenza virus that circulate so every year we have to design and produce a new vaccine to match the most common strains of that year,” says co-senior author Ali Ellebedy, an assistant professor of pathology and immunology at Washington University. “Now imagine if we could have one vaccine that protected against all influenza strains, including human, swine and other highly lethal avian influenza viruses. This antibody could be the key to the design of a truly universal vaccine.”
+
+Ellebedy discovered the antibody—an immune molecule that recognizes and attaches to a foreign molecule—in blood taken from a patient hospitalized with flu at Barnes-Jewish Hospital in St. Louis in the winter of 2017.
+
+Ellebedy was working on a study analyzing the immune response to flu infection in humans in collaboration with the Washington University Emergency Care and Research Core, which was sending him blood samples from consenting flu patients. He quickly noticed that a particular blood sample was unusual: In addition to containing antibodies against hemagglutinin, the major protein on the surface of the virus, it contained other antibodies that were clearly targeting something else.
+
+“At the time we were just starting, and I was setting up my lab so we didn’t have the tools to look at what else the antibodies could be targeting,” says Ellebedy, an assistant professor of medicine and of molecular microbiology.
+
+He sent three of the antibodies to co-senior author Florian Krammer, a microbiology professor at the Icahn School of Medicine at Mount Sinai. An expert on neuraminidase, Krammer tested the antibodies against his extensive library of neuraminidase proteins. At least one of the three antibodies blocked neuraminidase activity in all known types of neuraminidase in flu viruses, representing a variety of human and nonhuman strains.
+
+“The breadth of the antibodies really came as a surprise to us,” says Krammer. “Typically, anti-neuraminidase antibodies can be broad within a subtype, like H1N1, but an antibody with potent activity across subtypes was unheard of. At first, we did not believe our results. Especially the ability of the antibodies to cross between influenza A and influenza B viruses is just mind-boggling. It is amazing what the human immune system is capable of if presented with the right antigens.”
+
+To find out whether the antibodies could be used to treat severe cases of flu, Krammer and colleagues tested them in mice that were given a lethal dose of influenza virus. All three antibodies were effective against many strains, and one antibody, called “1G01,” protected against all 12 strains tested, which included all three groups of human flu virus as well as avian and other nonhuman strains.
+
+“All the mice survived, even if they were given the antibody 72 hours after infection,” Ellebedy says. “They definitely got sick and lost weight, but still survived the challenge. It was remarkable. It made us think that this antibody could be used as a therapeutic when it’s too late to use Tamiflu.”
+
+Tamiflu must be administered within 48 hours of symptoms. A drug that could be used later would help many people diagnosed after the Tamiflu window has closed. But before the researchers could even think of designing such a drug based on the antibody, they needed to understand how it was interfering with neuraminidase.
+
+They turned to Scripps Research’s Wilson, known globally for his work as a structural biologist. Wilson is Chair of the Institute’s Department of Integrative Structural and Computational Biology, and has made numerous seminal findings that have shaped efforts to develop universal vaccines for flu and other complex viruses such as HIV.
+
+Using synchrotron x-ray beams from the National Institute of General Medical Sciences and National Cancer Institute 23-ID-B x-ray beamline at the Argonne National Laboratory APS, and beamline 12-2 of the Stanford Synchrotron Radiation Lightsource (both of which are Office of Science user facilities), Wilson and Xueyong Zhu, a staff scientist in Wilson’s lab, mapped the structures of the antibodies while they were bound to neuraminidase. They found that the antibodies each had a loop that slid inside the active site of neuraminidase like a stick between gears. The loops prevented neuraminidase from releasing new virus particles from the surface of cells, thereby breaking the cycle of viral production in host cells.
+
+“We were surprised at how these antibodies managed to insert a single loop into the conserved active site without contacting the surrounding hypervariable regions, thereby achieving much greater breadth against the neuraminidase of different influenza viruses than we have seen before,” Wilson says.
+
+The structures showed that the antibodies provide such broad protection because they target the conserved residues in the active site of the neuraminidase protein. That site stays much the same across distantly related flu strains because even minor changes could abolish the protein’s ability to do its job, thereby preventing the virus from replicating.
+
+The researchers are working on developing new and improved treatments and vaccines for influenza based on antibody 1G01.
+
+“Neuraminidase has been ignored as a vaccine target for a long time,” Ellebedy says. “These antibodies tell us that it should not have been overlooked. Now that we know what a broadly protective antibody to the neuraminidase looks like, we have an alternative approach to start designing novel vaccines that induce antibodies like this. And that could be really important if we are going to figure out how to design a truly universal vaccine.”
+
+See: Daniel Stadlbauer1,2, Xueyong Zhu3, Meagan McMahon1, Jackson S. Turner4, Teddy J. Wohlbold1,5,6, Aaron J. Schmitz4, Shirin Strohmeier1, Wenli Yu3, Raffael Nachbagauer1, Philip A. Mudd4, Ian A. Wilson3*, Ali H. Ellebedy4**, and Florian Krammer1***, “Broadly protective human antibodies that target the active site of influenza virus neuraminidase,” Science 366, 499 (25 October 2019). DOI: 10.1126/science.aay0678
+
+Author affiliations: 1Icahn School of Medicine at Mount Sinai, 2University of Natural Resources and Life Sciences, 3The Scripps Research Institute, 4Washington University School of Medicine, 5Columbia University Irving Medical Center, 6NewYork-Presbyterian Morgan Stanley Children’s Hospital
+
+Correspondence: *wilson@scripps.edu, **ellebedy@wustl.edu, ***florian.krammer@mssm.edu
+
+The Krammer laboratory was supported by NIAID CEIRS contract HHSN272201400008C and NIAID grant R01 AI117287; the Ellebedy laboratory was supported by NIAID R21 AI139813, U01 AI141990, and NIAID CEIRS contract HHSN272201400006C; and the Wilson laboratory was supported in part by NIH R56 AI117675 (to I.A.W.). Human sample collection was supported by a grant from the Washington University Institute of Clinical and Translational Sciences to P.A.M., which is, in part, supported by the NIH/National Center for Advancing Translational Sciences (NCATS), CTSA grant UL1TR002345. GM/CA CAT is funded in whole or in part with federal funds from the National Cancer Institute (Y1-CO-1020) and the NIGMS (Y1- GM-1104). The Eiger 16M detector was funded by an NIH–Office of Research Infrastructure Programs, High-End Instrumentation Grant (S10 OD012289). Use of the Stanford Synchrotron Radiation Lightsource, SLAC National Accelerator Laboratory, is supported by the U.S. DOE, Office of Science, Office of Basic Energy Sciences under contract DE-AC02-76SF00515. The SSRL Structural Molecular Biology Program is supported by the DOE Office of Biological and Environmental Research and by the National Institute of General Medical Sciences (including P41 GM103393). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract DE-AC02-06CH11357.
+
+Home page photo:  U.S. Air Force photo by Senior Airman Areca T. Wilson/Released https://www.919sow.afrc.af.mil/News/Photos/igphoto/2002184152/
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.05.2019

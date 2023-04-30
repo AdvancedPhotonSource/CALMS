@@ -1,0 +1,85 @@
+Plants’ Rapid Response System Revealed
+
+Science has known about plant hormones since Charles Darwin experimented with plant shoots and showed that the shoots bend toward the light as long as their tips, which are secreting a growth hormone, aren’t cut off.
+
+But it is only recently that scientists have begun to put a molecular face on the biochemical systems that modulate the levels of plant hormones to defend the plant from herbivore or pathogen attack or to allow it to adjust to changes in temperature, precipitation, or soil nutrients.
+
+Now, a cross-Atlantic collaboration among scientists at Washington University (WUSTL) in St. Louis, the European Synchrotron Radiation Facility (ESRF), and the European Molecular Biology Laboratory working at the Structural Biology Center Collaborative Access Team 19-ID x-ray beamline at the U.S. Department of Energy Office of Science’s Advanced Photon Source at Argonne National Laboratory and at the ESRF has revealed the workings of a switch that activates plant hormones, tags them for storage, or marks them for destruction.
+
+The research was published in the journal Science.
+
+“The enzymes are cellular stop/go switches that turn hormone responses on and off,” said Joseph Jez, associate professor of biology in Arts & Sciences at WUSTL and senior author on the paper.
+
+The research is relevant not just to the design of herbicides — some of which are synthetic plant hormones — but also to the genetic modification of plants to suit more extreme growing conditions due to unchecked climate change.
+
+Many of the effects of plant hormones are familiar to gardeners. One is the sudden growth of a floral stalk that signals the end of the production of tasty leaves by spinach or lettuce plants. This growth spurt, called bolting, is caused by a gibberellin plant hormone.
+
+Plants can seem pretty defenseless. After all, they can’t run from the weed whacker or move to the shade when they’re wilting, and they don’t have teeth, claws, nervous systems, immune systems, or most of the other protective equipment that comes standard with an animal chassis.
+
+But they do make hormones. Or to be precise — because hormones are often defined as chemicals secreted by glands and plants don’t have glands — they make chemicals that in very low concentrations dramatically alter their development, growth, or metabolism. In the original sense of the word “hormone,” which is Greek for impetus, they stir up the plant.
+
+In plants, hormone signaling substitutes for an immune system. Above, the plant is exhibiting a “hypersensitive response” characterized by deliberate cell death to deny a pathogen food and water. The hypersensitive response is triggered by the plant hormone salicylic acid.
+
+In plants as in animals, hormones control growth and development. For example, the auxins, one group of plant hormones, trigger cell division, stem elongation and differentiation into roots, shoots and leaves. The herbicide 2,4-D is a synthetic auxin that kills broadleaf plants, such as dandelions or pigweed, by forcing them to grow to the point of exhaustion.
+
+Asked for his favorite example of a plant hormone Corey S. Westfall, a graduate student in the Jez laboratory, brings up its chemical defense systems. Walking through a public park in St. Louis near WUSTL, Westfall often sees oak leaves with brown spots on them. The spots are cells that have deliberately committed cell suicide to deny water and nutrients to a pathogen that landed in the center of the spot. This form of self-sterilization is triggered by the plant hormone salicylic acid.
+
+Westfall also mentions the jasmonates, which cause plants to secrete compounds such as tannins that discourage herbivores. Tannins are toxic to insects because they bind to salivary proteins and inactivate them. So insects that ingest lots of tannins fail to gain weight and may eventually die.
+
+Hormones, in other words, allow plants to respond quickly and sometimes dramatically to developmental cues and environmental stresses. But in order to respond appropriately, plants have to be able to sensitively control the level and activity of the hormone molecules.
+
+The Science paper reveals a key control mechanism: a family of enzymes that attach amino acids to hormone molecules to turn the hormones on or off. Depending on the hormone and the amino acid, the reaction can activate the hormone, put it in storage or mark it for destruction.
+
+For example, in the model plant, thale cress, fewer than 5% of the auxins are found in the active free-form. Most are conjugated (attached) to amino acids and inactive, constituting a pool of molecules that can be quickly converted to the active free form.
+
+The attachment of amino acids is catalyzed by a large family of enzymes (proteins) called the GH3s, which probably originated 400 million years ago, before the evolution of land plants. The genes diversified over time: there are only a few in mosses, but 19 in thale cress and more than 100 in total.
+
+“Nature finds things that works and sticks with them,” Jez said. The GH3s are a remarkable example of gene family expansion to suit multiple purposes.
+
+The first GH3 gene — from soybean — was sequenced in 1984. But gene (or protein) sequences reveal little about what proteins do and how they do it. To understand function, the scientists had to figure out how these enzymes, which start out as long necklaces of amino acids, fold into knobby globules with protective indentations for chemical reactions.
+
+Unfortunately, protein folding is a notoriously hard problem, one as yet beyond the reach of computer calculations at least as a matter of routine. So, most protein structures are still solved by the time-intensive process of crystallizing the protein and bombarding the crystal with x-rays to locate the atoms within it. Both the Jez lab and the Structural Biology Group at the European Synchrotron Radiation Facility specialize in protein crystallization.
+
+By good fortune, the scientists were able to freeze the enzymes in two different conformations. This information and that gleaned by mutating the amino acids lining the enzyme’s active site let them piece together what the enzymes were doing.
+
+It turned out that the GH3 enzymes, which fold into a shape called a hammer and anvil, catalyze a two-step chemical reaction. In the first step, the enzyme’s active site is open allowing ATP (adenosine triphosphate, the cell’s energy storage molecule) and the free acid form of the plant hormone to enter.
+
+Once the molecules are bound, the enzyme strips phosphate groups off the ATP molecule to form AMP and sticks the AMP onto an “activated” form of the hormone, a reaction called adenylation.
+
+Adenylation triggers part of the enzyme to rotate over the active site, preparing it to catalyze the second reaction, in which an amino acid is snapped onto the hormone molecule. This is called a transferase reaction.
+
+“After you pop off the two phosphates,” Jez said, “the top of the molecule ratchets in and sets up a completely different active site. We were lucky enough to capture that crystallographically because we caught the enzyme in both positions.”
+
+The same basic two-step reaction can either activate or inactivate a hormone molecule. Addition of the amino acid isoleucine to a jasmonate, for example, makes the jasmonate hormone bioactive. On the other hand addition of the amino acid aspartate to the auxin known as IAA marks it for destruction.
+
+This is the first time any GH3 structure has been solved.
+
+Plant hormones can dramatically alter the plant’s growth and pathogen resistance. The corn plant shown here has a genetic modification that blocks the flow of auxin, a growth hormone. The stalk of the plant is compressed but the ears and tassels are of normal size. Dwarf plants such as this one might increase crop yields because they put their energy into seeds rather than vegetative growth.
+
+Understanding the powerful plant hormone systems will give scientists a much faster and more targeted way to breed and domesticate plant species, speed that will be needed to keep up with the rapid shift of plant growing zones.
+
+Plant hormones, like animal hormones, typically affect the transcription of many genes and so have multiple effects, some desirable and others undesirable. But GH3 mutants provide a tantalizing glimpse of what might be possible: some are resistant to bacterial pathogens, others to fungal pathogens and some are exceptionally drought tolerant.
+
+Westfall mentions that in 2003, a scientist at Purdue University figured out that a corn strain that had a short stalk but normal ears and tassels had a mutation that interferes with the flow of the hormone auxin in the plant.
+
+Because the plants are so much smaller, they are relatively drought resistant and might be able to grow in India, where North American corn varieties cannot survive. Similar high-yield dwarf varieties might prevent famine in areas of the world where many people are at risk of starvation. — Diana Lutz (WUSTL)
+
+See: Corey S. Westfall1, Chloe Zubieta2, Jonathan Herrmann1, Ulrike Kapp2, Max H. Nanao3,4, and Joseph M. Jez1, “Structural Basis for Prereceptor Modulation of Plant Hormones by GH3 Proteins,” Science 336, 1708 (29 June 2012). DOI: 10.1126/science.1221863
+
+Author affiliations: 1Washington University, 2European Synchrotron Radiation Facility, 3European Molecular Biology Laboratory, 4UJF-EMBL-CNRS
+
+Correspondence: *jjez@biology2.wustl.edu
+
+This work was supported by National Science Foundation grant MCB-1157771 to J.M.J. C.S.W. was supported by a U.S. Department of Agriculture National Institute of Food and Agriculture pre-doctoral fellowship (MOW-2010-05240) and J.H. was supported by an American Society of Plant Biologists Summer Undergraduate Research Fellowships award and the Howard Hughes Medical Institute-Washington University Summer Scholars Program in Biology and Biomedical Research. The Structural Biology Center Collaborative Access Team facility is a national user facility operated by The University of Chicago for the U.S. Department of Energy (DOE) Office of Biological and Environmental Research (DE-AC02-06CH11357).
+
+The original WUSTL story by Diana Lutz can be found here.
+
+Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. DOE Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+07.06.2012

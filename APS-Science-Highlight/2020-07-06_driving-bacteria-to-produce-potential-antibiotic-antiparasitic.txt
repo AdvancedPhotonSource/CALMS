@@ -1,0 +1,43 @@
+Driving Bacteria to Produce Potential Antibiotic, Antiparasitic Compounds
+
+The original University of Illinois at Urbana-Champaign press release by Diana Yates can be read here.
+
+Researchers have developed a method to spur the production of new antibiotic or antiparasitic compounds hiding in the genomes of actinobacteria, which are the source of drugs such as actinomycin and streptomycin and are known to harbor other untapped chemical riches. The scientists report their findings, based upon research carried out at the U.S. Department of Energy’s Advanced Photon Source (APS), in the journal eLife.
+
+The researchers wanted to overcome a decades-old problem that confronts those hoping to study and make use of the countless antibiotic, antifungal, and antiparasitic compounds that bacteria can produce, said Satish Nair, a University of Illinois at Urbana-Champaign professor of biochemistry who led the research.
+
+“In laboratory conditions, bacteria don’t make the number of molecules they have the capability of making,” he said. “And that’s because many are regulated by small-molecule hormones that aren’t produced unless the bacteria are under threat.”
+
+Nair and his colleagues wanted to determine how such hormones influence the production of antibiotics in actinobacteria. By exposing their bacteria to the right hormone or combination of hormones, the researchers hope to spur the microbes to produce new compounds that are medically useful.
+
+The team focused on avenolide, a hormone that is more chemically stable than one used in earlier studies of bacterial hormones. Avenolide regulates the production of an antiparasitic compound known as avermectin in a soil microbe. A chemically modified version of this compound, ivermectin, is used as a treatment for river blindness, a disease transmitted by flies that blinded millions of people, mostly in sub-Saharan Africa, before the drug was developed.
+
+For the new study, chemistry graduate student Iti Kapoor developed a more streamlined process for synthesizing avenolide in the lab than was previously available. This allowed the team to study the hormone’s interactions with its receptor both inside and outside bacterial cells.
+
+“Using a method called X-ray crystallography, Iti and biochemistry graduate student Philip Olivares were able to determine how the hormone binds to its receptor and how the receptor binds to the DNA in the absence of hormones,” Nair said. “Typically, these receptors sit on the genome and they basically act as brakes.” These crystallographic studies were carried out the Life Sciences Collaborative Access Team Sector 21 x-ray facility at the APS (the APS is an Office of Science user facility at Argonne National Laboratory).
+
+The researchers discovered that when the hormone binds to it, the receptor loses its ability to cling to DNA. This turns off the brakes, allowing the organism to churn out defensive compounds like antibiotics.
+
+Knowing which regions of the receptor are involved in binding to the hormone and to the DNA enabled the team to scan the genomes of dozens of actinobacteria to find sequences that had the right traits to bind to their receptor or to similar receptors. This process, called genome mining, allowed the team to identify 90 actinobacteria that appear to be regulated by avenolide or other hormones in the same class.
+
+“Our long-term project is to take those 90 bacteria, grow them up in the laboratory, add chemically synthesized hormones to them and see what new molecules are being produced,” Nair said. “The beauty of our approach is that we can now get the bacteria to produce large quantities of molecules that normally we would not be able to make in the lab.”
+
+Some of these new compounds are likely to have medical relevance, he said.
+
+See: Iti Kapoor, Philip Olivares, and Satish K. Nair, “Biochemical Basis or the Regulation of Biosynthesis of Antiparasitics by Bacterial Hormones,” eLife 9, e57824 (2020). DOI: 10.7554/eLife.57824
+
+Author affiliation: University of Illinois at Urbana-Champaign
+
+Correspondence: * nair@illinois.edu
+
+We thank Keith Brister and colleagues at the Life Sciences Collaborative Access Team for facilitating x-ray data collection. This work is supported in part by National Institutes of Health grant GM131347 to S.K.N. Use of the Life Sciences Collaborative Access Team at Sector 21 was supported by the Michigan Economic Development Corporation and the Michigan Technology Tri-Corridor (Grant 085P1000817). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+07.06.2020

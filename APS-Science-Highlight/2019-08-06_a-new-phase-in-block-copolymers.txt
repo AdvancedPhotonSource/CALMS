@@ -1,0 +1,57 @@
+A New Phase in Block Copolymers
+
+The original University of California, Santa Barbara, press release by James Badham can be read here. 
+
+All matter consists of one or more phases — regions of space with uniform structure and physical properties. The common phases of H2O (solid, liquid, and gas, also known as ice, water and steam) are well known. Similarly, though less familiar, polymeric materials also can form different solid or liquid phases that determine their properties and ultimate utility. This is especially true of block copolymers, the self-assembling macromolecules created when a polymer chain of one type ("Block A") is chemically connected with that of a different type ("Block B"). Only about five phases have been discovered in the simplest block copolymers. Finding a new phase is rare, but a team of researchers from the University of California, Santa Barbara (UCSB), and the University of Minnesota have done just that with an assist from studies carried out at the U.S. Department of Energy’s (DOE’s) Advanced Photon Source (APS). Their findings are published in the Proceedings of the National Academy of Sciences of the United States of America.
+
+"If you want a block copolymer that has a certain property, you pick the right phase for a given application of interest," explained Chris Bates, an assistant professor of materials in the UC Santa Barbara College of Engineering. "For the rubber in shoes, you want one phase; to make a membrane, you want a different one."
+
+About 12 months ago, Morgan Bates, staff scientist and assistant director for technology at the Dow Materials Institute at UCSB and a co-author of the study, was doing some experimental work on polymers she had synthesized in the lab, in an effort, she said, "to understand the fundamental parameters that govern self-assembly of block copolymers by examining what happens when you tweak block chemistry."
+
+There are endless possibilities for the chemistry of "A" and "B" blocks, according to Chris Bates. "Modern synthetic chemistry allows us to pick basically any type of A polymer and connect it with a different B block," he said. "Given this vast design space, the real challenge is figuring out the most crucial knobs to turn that control self-assembly."
+
+Morgan Bates was trying to understand that relationship between chemistry and structure.
+
+"I had chemically tweaked a parameter related to what is called 'conformational asymmetry,' which describes how the two blocks fill space," she recalled of the process that led to the discovery. "We weren't necessarily trying to find a new phase but thought that maybe we'd uncover some new behavior. In this case, the A and B blocks that are covalently tied together fill space very differently, and that seems to be the underlying parameter that gives rise to some unique self-assembly."
+
+After creating the block copolymers, Bates took them to the DuPont-Northwestern-Dow Collaborative Access Team (DND-CAT) 5-ID-D x-ray beamline at the APS at Argonne National Laboratory, where the synchrotron x-ray technique small-angle x-ray scattering (SAXS) was used to characterize them. The process yielded a two-dimensional signature of scattered x-rays arranged in concentric rings. The relative placement and intensity of the rings indicates a particular phase. Morgan needed to travel to a DOE national lab, because the process requires x-rays more powerful than what can be produced on campus. (The APS is an Office of Science user facility.)
+
+After that work, said Chris Bates, "Using knowledge of crystallography, you can interpret the scattering data and produce an image as if you were looking at the structure with your eye. And in this case, the data was of such high quality that we were able to do that unambiguously."
+
+Morgan Bates recalled that when she examined the x-ray pattern, one thing was unmistakably clear: "It looked different. I thought, 'What is that?'"
+
+It was, of course, their newly discovered phase, known as A15 (Fig. 1). "With these types of AB block copolymers, there are only a handful of phases that people have observed previously, and we've found another one, which adds to the palette of possible options from a design standpoint," Chris said.
+
+"Among the ways of categorizing structures, this phase belongs to a class known as 'tetrahedrally close-packed’", said UCSB postdoctoral researcher Joshua Lequieu and a co-author, an expert in computer simulations who modeled the phase behavior of polymers. "The phase we've found in block copolymers was actually first observed in 1931 with an allotrope [or form] of tungsten. But in that case, A15 forms from metal atoms, which create a very small structure at the atomic length scale. Our block copolymers adopt the same structure but at a length scale two orders of magnitude larger, and, of course, no metal atoms are involved.
+
+"If you were to look at both with a microscope," he said, "their structures would look the same, but just at different sizes. It's fascinating that nature chooses to use the same structural motifs for completely different materials having entirely unrelated chemistry and physics."
+
+The project began with new chemistry developed by UCSB professor and co-author Craig Hawker and Bates to tune the properties of materials, which was followed by Morgan Bates's unexpected characterization results. "From there, we went to Josh and told him there's something strange in the experiments that we didn't expect and asked him why," Chris Bates said. Lequieu then worked with UCSB professor and co-author Glenn Fredrickson to develop the computer simulations.
+
+"There was a really nice back and forth on this project," Lequieu said. "An experiment was done that was challenging to understand, so we performed simulations to explain it. Morgan then did more experiments, informed by the results of the initial simulations, and observed that the computations were actually predictive. The phases observed experimentally showed up right where the simulations said they would. In some places, however the experiments and simulations disagreed, so we iterated multiple times to improve the models and really understand the subtleties involved."
+
+"Moving forward," added Chris Bates, "our team continues to integrate materials synthesis and theory in a search of more unique phase behavior."
+
+Lequieu described the feedback loop from experiment to simulation to theory and back around as "sort of the dream of modern materials science. It takes a lot of work for Morgan to make these samples. It's much easier if someone predicts outcomes on a computer and can say, 'Here's a subset of polymers to synthesize that should form the desired structure.' This so-called 'inverse design' approach saves her a lot of time and effort."
+
+In terms of nature falling back on preferred designs for otherwise unrelated materials, a bit of history is worth noting. In 1887, Lord Kelvin—he of the eponymous units of absolute temperature—was working on what later came to be known as the "Kelvin problem." It was an effort to determine how space could be partitioned into cells of equal volume with the least surface area between them. His proposed solution, which indicated the most efficient bubble foam, became known as the "Kelvin structure."
+
+It held for about 100 years, but in 1994 was shown to be incorrect. Kelvin had chosen what could be called "Structure A," but a team of British scientists showed that "Structure B" was even better. Since then, Structure B has gained fame in scientific circles and even well beyond, appearing, for instance, in the form of giant bubbles that serve as both functional architectural elements and design elements on the roof of the Beijing National Aquatics Center built for the 2008 Olympics.
+
+It turns out that the new phase discovered by the researchers in this project, A15, is Structure B, confirming once again that nature likes a previously successful design.
+
+See: Morgan W. Bates1, Joshua Lequieu1, Stephanie M. Barbon1, Ronald M. Lewis III2, Kris T. Delaney1, Athina Anastasaki1, Craig J. Hawker1, Glenn H. Fredrickson1, and Christopher M. Bates1, “Stability of the A15 phase in diblock copolymer melts,” Proc. Natl. Acad. Sci. U.S.A. 116(27), 13194 (July 2, 2019). DOI: 10.1073/pnas.1900121116
+
+Author affiliations: 1University of California, Santa Barbara, 2University of Minnesota
+
+Correspondence: *cbates@ucsb.edu
+
+This material is based upon work supported by the U.S. Department of Energy (DOE) Office of Science- Basic Energy Sciences, under Award DE-SC0019001 (nanostructure characterization, scattering experiments, theory, simulations) and as part of the Center for Materials for Water and Energy Systems, an Energy Frontier Research Center funded by the U.S. DOE Office of Science-Basic Energy Sciences under Award DE-SC0019272 (synthesis and synthetic characterization). DND-CAT is supported by Northwestern University, E.I. DuPont de Nemours & Co., and The Dow Chemical Company. Data were collected using an instrument funded by the National Science Foundation under Award 0960140. S.M.B. and A.A. acknowledge Elings Fellowships through the California NanoSystems Institute (CNSI). The research reported here made use of shared facilities of the UCSB Materials Research Science and Engineering Center (NSF DMR 1720256), a member of the Materials Research Facilities Network (https://www.mrfn.org/), and the Center for Scientific Computing from the CNSI (NSF CNS-1725797). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+08.06.2019

@@ -1,0 +1,33 @@
+X-ray movies reveal insect flight, muscle motion
+
+Watching flies fly may not seem like high-tech science, but for researchers using the Western Hemisphere's most brilliant X-rays, from the Advanced Photon Source located at the U.S. Department of Energy's Argonne National Laboratory, it not only helps explain how insects fly but also may someday aid in understanding human heart function.
+
+The researchers, from the Illinois Institute of Technology (IIT), Caltech and the University of Vermont, merged two distinct technologies, intense X-ray beams and electronic flight simulators, to study how insect muscles can generate such extraordinary levels of power. The results are published in the the January 20,. 2005, issue of the journal Nature.
+
+Lead researcher Tom Irving of IIT said that the research has widespread implications. “Flying insects are among the most successful species in the animal kingdom. The ways in which the wing muscles in these insects generate enough power for flight is not completely understood. Insect muscles differ from animal muscles in that they do not need a nerve impulse for every contraction but instead are activated by stretch. The means by which these ‘stretch-activated muscles' are turned on and off at high speed — one wing beat takes 5/1,000th of a second — has been a mystery.”
+
+The team used extremely bright beams of X-rays at the BioCAT facility (a NIH- supported research center developed by IIT) at the APS and a “virtual-reality flight simulator” for flies — designed by collaborator Michael Dickinson of Caltech — to probe to the muscles in a flying fruit fly.
+
+The intense X-rays are necessary to resolve the changes in the crystal-like configuration of molecules responsible for generating the rapid contractions of the muscle with a resolution of 6/100,000th of a second.
+
+The flight simulator, which fools a tethered fly into “thinking” it is flying freely through the air, is necessary to produce a stable pattern of wing motion and enabled the researchers to capture X-ray images at different stages of muscle contraction.
+
+By combining the technologies, the researchers could reconstruct a “movie” of the molecular changes in the powerful muscles as they lengthen and shorten to drive the wings back and forth 200 times each second.
+
+These experiments uncovered previously unsuspected interactions of various proteins as the muscles stretch and contract that suggest a model for how these powerful biological motors turn “on” and “off” during the wingbeat.
+
+“We are now in a position to relate muscle power output to changes in molecular structure," Irving said, "which helps us understand how insects generate enough power to support flight.”
+
+Dickinson and collaborator David Maughan of the University of Vermont note the fact that these experiments are performed on tiny, genetically malleable fruit flies raises the possibility of addressing much more specific questions concerning the roles of various protein components in muscle function using mutant or genetically engineered flies.
+
+The authors note that the many similarities between insect muscle and other oscillatory muscles, including human cardiac muscle, mean that the research may be adaptable for other uses.
+
+“The data collected in these experiments," Irving said, "suggest new ways to study cardiac muscle that may allow us to explain how changes in its molecular machinery determine heart muscle performance. The fact that flight muscles are genetically mutable by the investigators raise the possibility they could serve as useful models of inherited human heart disease.”
+
+Other collaborators on the research were Gerrie Farman, Tanya Bekyarova and David Gore of IIT, and Mark Frye of Caltech.
+
+The nation's first national laboratory, Argonne National Laboratory conducts basic and applied scientific research across a wide spectrum of disciplines, ranging from high-energy physics to climatology and biotechnology. Since 1990, Argonne has worked with more than 600 companies and numerous federal agencies and other organizations to help advance America's scientific leadership and prepare the nation for the future. Argonne is operated by the University of Chicago for the U.S. Department of Energy's Office of Science. The Advanced Photon Source is funded by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences.
+
+Published Date
+
+02.05.2005

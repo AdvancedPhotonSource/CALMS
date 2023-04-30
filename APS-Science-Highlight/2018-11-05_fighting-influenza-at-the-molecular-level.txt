@@ -1,0 +1,39 @@
+Fighting Influenza at the Molecular Level
+
+The original University of Alabama at Birmingham press release by Jess Hansen can be read here.
+
+Molecular virologist Chad Petit uses basic science to fight influenza — through experiments at the atomic level. This includes a deadly poultry influenza virus in China called the H7N9 avian flu virus. Since 2013, H7N9 has infected 1,625 people, killing 623. While not highly contagious for humans, just three mutations could change that, turning H7N9 into the feared Disease X, the term health experts use for the next unknown cause of a worldwide epidemic. In research to improve influenza therapies against H7N9 and other influenza strains, Petit and his University of Alabama at Birmingham (UAB) colleagues utilized extreme-brightness x-rays from the U.S. Department of Energy’s Advanced Photon Source (APS), and nuclear magnetic resonance spectroscopy to detail the binding site and mechanism of inhibition for two small-molecule experimental inhibitors of influenza viruses. Their report was published in the Journal of Biochemistry.
+
+The two experimental inhibitors studied by Petit, a UAB assistant professor of biochemistry and molecular genetics, are small molecules whose precise mechanism of action was unknown. The inhibitors target the function of a key influenza protein called NS1, which has multiple roles to block the body’s immune response during influenza infection. Thus, NS1 is essential to the survival and adaptability of the influenza virus.
+
+Petit and colleagues used nuclear magnetic resonance spectroscopy to probe interactions of the inhibitors with NS1. They first showed that the inhibitors — called A9 and A22 — interacted with just one of the two independently folded domains of NS1, the NS1 effector domain.
+
+The researchers noted that the structures of both small-molecule inhibitors were very similar to a fragment of a host protein called CPSF30 that the NS1 effector domain binds in order to short-circuit the body’s immune response. Therefore, the researchers hypothesized that A9 and A22 block influenza viral replication and block NS1 function by interfering with the interaction between the NS1 effector domain and CPSF30.
+
+NMR data revealed the particular amino acids of the NS1 effector domain that are involved in inhibitor binding. The researchers — using two significantly different NS1 proteins from distinct influenza strains, including the H7N9 strain — showed that similar sequences of amino acids in the two NS1 proteins were involved in inhibitor binding.
+
+Besides the Chinese H7N9 NS1, the other NS1 protein tested was the NS1 effector domain from the 1918 “Spanish” flu, which infected one-third of the world’s population a century ago and killed 50 million to 100 million people.
+
+The UAB researchers then used x-ray crystallography, led by UAB Microbiology assistant professor Todd Green, Ph.D., at the Southeast Regional Collaborative Access Team (SER-CAT) x-ray beamline 22-ID-D at the APS to determine the three-dimensional structure of the NS1 effector domain from the 1918 “Spanish” flu. (The APS is an Office of Science user facility at Argonne National Laboratory.)  This allowed them to map the A9/A22-binding site onto that structure, which confirmed their hypothesis — A9 and A22 interact with the NS1 effector domain hydrophobic pocket that is known to bind the host protein CPSF30.
+
+The crystallography data also showed that the NS1 effector domain is able to dimerize, using an interface different from two other known dimers of the NS1 effector domain. Biological significance of this new dimer form is unknown.
+
+“Altogether, our findings provide strong evidence for the mechanism of action of two anti-influenza compounds that target NS1, and the findings contribute significant structural insights into NS1 that we hope will promote and inform the development and optimization of influenza therapies based on A9 and A22,” Petit said.
+
+The need for novel antiviral compounds is great. Each year, influenza strains kill 250,000 to 500,000 people worldwide, and the virus is noted for quick changes to produce pandemic strains that few people have immunity against. Viral resistance has limited the effectiveness of several earlier antiviral compounds that were developed to treat influenza.
+
+See: Alex B. Kleinpeter, Alexander S. Jureka, Sally M. Falahat, Todd J. Green, and Chad M. Petit*, “Structural analyses reveal the mechanism of inhibition of influenza virus NS1 by two antiviral compounds,” J. Biol. Chem. 293(38), 14659 (2018). DOI: 10.1074/jbc.RA118.004012
+
+Author affiliation: University of Alabama at Birmingham
+
+Correspondence: *cpetit@uab.edu
+
+This work was supported by National Institutes of Health Grants R01 AI1346931 (to C. M. P.) and R01 AI116738 (to T. J. G). This work was supported in part by NCI, National Institutes of Health Grants 1P30 CA-13148 and 1P30 CA-13148, National Center for Research Resources Grant 1S10 RR022994-01A1. SER-CAT is supported by its member institutions (see www.ser-cat.org/members.html), and equipment grants (S10_RR25528 and S10_RR028976) from the National Institutes of Health. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.05.2018

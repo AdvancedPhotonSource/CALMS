@@ -1,0 +1,33 @@
+Significant Findings Related to Traumatic Brain Injury
+
+​
+
+Fig. 1. X-ray diffraction patterns (a) and integrated data (intensity versus d-spacings) (b) of control and impact-loaded rat optic nerve samples. From J. Orgel et al., J. Synchrotron Rad. 26 (2019). © International Union of Crystallography.This highlight is based upon the original Illinois Institute of Technology/U.S. Army Research Laboratory press releases (www.eurekalert.org/pub_releases/2018-12/uarl-sms121718.php). For more information, contact Jess Goode, Illinois Institute of Technology Vice President for External Affairs, jgoode1@iit.edu.
+
+Traumatic brain injury, or TBI, is often referred to as the “invisible injury” — while on the surface everything seems normal with brain structure, symptoms may present themselves in the behavior of the injured and cannot be explained. A team of researchers from the Illinois Institute of Technology, the RDECOM Research Laboratory (or ARL, the Army's corporate research laboratory), and Argonne National Laboratory released a study based upon research at the U.S. Department of Energy’s Advanced Photon Source (APS) that takes a first step in identifying the changes that occur in otherwise normal looking brain neurons due to the specific impact forces experienced during head trauma.
+
+According to the Centers for Disease Control and Prevention, about 2.8 million TBI-related emergency department (ED) visits, hospitalizations and deaths occurred in the United States in 2013 alone. Every day, 153 people in the United States die from injuries that include TBI.
+
+This first-of-its-kind study used x-ray diffraction data obtained at the Biophysics Collaborative Access Team (Bio-CAT) 18-ID-D beamline at the APS (the APS is an Office of Science user facility at Argonne National Laboratory) to examine the changes to myelin, the fatty material that wraps around nerve cell projections in the brain and other parts of the body (Fig. 1). The study looked at the optic nerves of rats that experienced a range of forces. Starting with no force and working upwards, researchers detected the exact force at which a change in the myelin structure occurred. The changes were tiny, less than a nanometer (a billionth of a meter) but they consistently occur at the same small load of force. What is more, the researchers were able to measure just how much the myelin sheath changed - reflecting the kind of change that occurs in head trauma. 
+
+As a result of this work, researchers have a better understanding of what kind of experience, or injury, leads to what kind of damage in the myelin - helping to visualize injuries based on the smallest force necessary to cause it. This information may be critical to knowing when someone has an injury after an accident but before symptoms emerge, and helps supports the decision of when and how to treat them. 
+
+"Through this research, we've been able to detect specific changes that have never been measured before," said Joseph Orgel, professor of biology and biomedical engineering, Illinois Institute of Technology. "While more research is needed to develop ways to treat these injuries, identifying the crux of the problem - the impacts that specific forces have on the brain - is an important first step in TBI detection, treatment and prevention."
+
+"Our study examines the initial stage of neural damage with a greater sensitivity than previously possible, allowing for the determination of a robust relationship between force and damage," said Ashley Eidsmore, ARL electrical engineer and TBI researcher. "These findings and developed methods will aid in the future development of prophylactic methods, including improved soldier protection, targeted surgery and medication. ARL's partnership with the Illinois Institute of Technology and Argonne National Laboratory was critical to achieve this advancement in brain injury science." 
+
+See: Joseph Orgel1,*, Rama S. Madhurapantula1**, Ashley Eidsmore2, Meng Wang1, Pavel Dutov1, Charles D. Modrich1, Olga Antipova3, Jason McDonald2, and Sikhanda Satapathy2, “X-ray diffraction reveals blunt-force loading threshold for nanoscopic structural change in ex vivo neuronal tissues,” J. Synchrotron Rad. 26 (2019). DOI: 10.1107/S1600577518015035
+
+Author affiliations: 1Illinois Institute of Technology, 2Army Research Laboratory, 3Argonne National Laboratory 
+
+Correspondence: *orgel@iit.edu, **rmadhura@iit.edu
+
+This project was supported by grant 9 P41 GM103622 from the National Institute of General Medical Sciences of the National Institutes of Health. This material is based upon work supported by, or in part by, the U.S. Army Research Laboratory and the U.S. Army Research Office under contract/grant numberW911NF-11-2-0018-P00002 to JO). Research at Bio-CAT was was supported by grant 9 P41 GM103622 from the National Institute of General Medical Sciences of the National Institutes of Health. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+01.02.2019

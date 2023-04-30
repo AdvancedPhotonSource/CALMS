@@ -1,0 +1,31 @@
+Atomic Vibrations Stabilize Metallic Vanadium Dioxide
+
+Materials that undergo metal-to-insulator transitions are of wide practical importance in semiconductor and optoelectronic devices, but their behavior still presents some fundamental challenges for condensed matter theory. Vanadium dioxide, an archetype of such materials, changes from insulator to conductor when heated through 3540 K, and the transition is accompanied by a change in lattice structure. Using both x-ray scattering and spectroscopy measurements at the APS and at the Oak Ridge National Laboratory’s Spallation Neutron Source (SNS), respectively, researchers have shown that the phase transition is driven by a large change in the entropy associated with lattice vibrations. This new evidence, backed up by detailed calculations of the bonding in the metallic phase, brings theoretical insight that will be valuable for predictive design of novel materials.
+
+In its metallic phase, vanadium dioxide has a tetragonal lattice in which the vanadium atoms form a regularly spaced rectilinear network. On cooling through the transition temperature, the vanadium atoms pair up, so that the spacing between them becomes unequal, and they lie on zigzag lines. The lattice is now monoclinic. At the same time, the conduction electrons that were free to move throughout the lattice become localized to the paired vanadiums. In this material, as in others of this sort, the fact that both the lattice and electronic configurations change has made it difficult to know whether this is primarily a Peierls transition (driven by electron-lattice interactions) or a Mott transition (driven by electron-electron interactions).
+
+An additional difficulty is that vanadium scatters neutrons incoherently, so that identifying lattice vibration modes through traditional inelastic neutron scattering studies is impossible. So a team of researchers from Oak Ridge National Laboratory and Argonne turned to newly-developed x-ray and neutron scattering techniques to shed light on the phonon physics involved in the vanadium dioxide metal-insulator transition.
+
+Using neutron spectroscopy measurements at the SNS, the researchers found that a high density of soft phonons, with energies around 12 meV, appears in the vanadium dioxide lattice as it goes from insulator to metal. Ab initio calculations of lattice vibrations provided good agreement with the measured phonon density of states, provided that a significant degree of anharmonicity was included in the interatomic potential. Through these calculations the researchers were able to conclude that the appearance of low-energy phonons accounts for about two-thirds of the entropy change of the transition.
+
+X-ray thermal diffuse scattering measurements at XSD beamline 33-BM-C at the APS identified these phonons as coherent vibrations of the vanadium atoms associated with particular lattice periodicities (wave vectors). Still, the researchers had only an incomplete picture of the phonons: the neutron studies revealed their energy, and the x-ray scattering their wavevectors, but more work was needed to put those two things together.
+
+The team therefore conducted inelastic x-ray scattering measurement with the HERIX spectrometer at XSD beamline 30-ID-C, where the instrumentation can detect energy changes in kiloelectronvolt x-rays with millielectronvolt resolution while also recording the direction of scattered photons. The energy measurements found that the low-energy photons, associated with motions of the vanadium atoms, had unusually broad and asymmetric peaks, indicating very short phonon lifetimes and strong damping. The phonon dispersion spectrum in metallic vanadium dioxide is similar to that in titanium dioxide (rutile), which has the same tetragonal structure, but is shifted to lower energies. The amplitude of the vanadium atomic vibrations is correspondingly remarkably large, about 0.02 nm, and not much less than the shift in vanadium positions that occurs in the transition from the monoclinic to the tetragonal lattice.
+
+Combining the new experimental data with calculations of lattice motion, the team concludes that large amplitude vibrations of the vanadium atoms stabilize the tetragonal structure above 340 K. Below that transition temperature, by contrast, the lattice is distorted by a Peierls instability that causes conduction electrons to localize to paired vanadium atoms. The researchers say that this detailed understanding of the relationship between changes in electronic and lattice structure will be helpful in efforts to refine the performance of metal oxides in practical applications. 
+
+— David Lindley
+
+See: John D. Budai1*, Jiawang Hong1, Michael E. Manley1, Eliot D. Specht1, Chen W. Li1, Jonathan Z. Tischler2, Douglas L. Abernathy1, Ayman H. Said2, Bogdan M. Leu2, Lynn A. Boatner1, Robert J. McQueeney1 and Olivier Delaire1, "Metallization of vanadium dioxide driven by large phonon entropy," Nature 515, 535 (27 November 2014). DOI: 10.1038/nature13865
+
+Author affiliations: 1Oak Ridge National Laboratory, 2Argonne National Laboratory
+
+Correspondence: * budaijd@ornl.gov
+
+Research by J.D.B., O.D., M.E.M., E.D.S., L.A.B. and R.J.M. was supported by the U.S. Department of Energy (DOE) office of Science-Basic Energy Sciences (BES), Materials Sciences and Engineering Division (MSED). Research by J.H. was supported by the Center for Accelerating Materials Modeling, funded by the U.S. DOE-BES, MSED. Experimental work by C.W.L. was sponsored by the Laboratory Directed Research and Development Program of ORNL (Principal Investigator, O.D.). Research by D.L.A. at the SNS and J.Z.T., A.H.S. and B.M.L. at the APS was supported by the U.S. DOE-BES, Scientific User Facilities Division. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+02.18.2015

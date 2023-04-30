@@ -1,0 +1,55 @@
+Under Pressure, “Squishy” Compound Reacts in Remarkable Ways
+
+The original University of Rochester press release by Bob Marcotte can be read here.
+
+From insulator to metal and back again—a new transition phenomenon reported by Rochester and Las Vegas researchers “will find a place in physics textbooks.” Remarkable things happen when a “squishy” compound of manganese and sulfide (MnS2) s compressed in a diamond anvil cell pressure generating device, say researchers from the University of Rochester and the University of Nevada, Las Vegas (UNLV). The experiments underpinning this addition to our reservoir of basic-research-related knowledge included synchrotron x-ray diffraction measurements conducted at the X-ray Science Division HPCAT-XSD 16-ID-B x-ray beamline at the U.S. Department of Energy’s Advanced Photon Source, an Office of Science user facility at Argonne National Laboratory.
+
+“This is a new type of charge transfer mechanism, and so from a science community point of view this is very, very exciting. We are showing remarkable physical transformations over a very, very short range of parameters, in this case pressure,” said Ashkan Salamat, associate professor of physics at UNLV and co-author of the paper flagged as an editor’s choice in Physical Review Letters.
+
+For example, as the pressure increases, MnS2, a soft insulator, transitions into a metallic state and then into an insulator again.
+
+“Metals usually remain metals; it is highly unlikely that they can then be changed back to an insulator,” said article co-author Ranga Dias, assistant professor of mechanical engineering and of physics and astronomy at Rochester. “The fact that this material goes from an insulator to a metal and back to an insulator is very rare.”
+
+Moreover, the transitions are accompanied by unprecedented decreases in resistance and volume across an extremely narrow range of pressure change—all occurring at about 80 degrees Fahrenheit. The relatively low temperature enhances the chances that the metal transition process might eventually be harnessed for technology, Salamat said.
+
+In previous papers in Nature and Physical Review Letters, the Dias and Salamat collaboration set new benchmarks toward achieving superconductivity at room temperatures. A common denominator of their work is exploring the “remarkably bizarre” ways transition metals and other materials behave when they are paired with sulfides, and then compressed in a diamond cell anvil.
+
+“The new phenomena we are reporting is a fundamental example of responses under high pressure—and will find a place in physics textbooks,” Salamat said. “There’s something very intriguing about how sulfur behaves when it is attached to other elements. This has led to some remarkable breakthroughs.”
+
+The breakthroughs achieved by the Dias and Salamat labs have involved compressing mere picoliters of material—about the size of a single inkjet particle – in a diamond anvil cell (DAC) pressure device.  A DAC is a robust and versatile platform for studying materials under extreme pressure conditions and can be used to generate millions of atmospheres (for comparison, pressure at center of the earth is ~3.6 million-atmosphere).  “To be able to generate these extreme pressures, the size of the sample in a DAC is limited to picoliters and micrograms, which then requires very sensitive experimental probes, basically synchrotron x-rays are ideal in that regard”, says HPCAT-XSD Director Nenad Velisavljevic.  HPCAT-XSD works with a broad scientific community in coupling synchrotron x-ray diagnostics for studies on materials under a range of pressure and temperature conditions.  “The recent work done by Dias, Salamat, and collaborators continues to show that there are many surprises yet to be discovered when materials are compressed to extreme densities, and the result is another great example where the bright synchrotron x-ray beam at APS is critical in shedding light on new phenomena.”, added Velisavljevic.
+
+Underlying the transitions described in this paper are the way the spin states (angular momentum) of individual electrons interact as pressure is applied, Dias and Salamat explain.
+
+When MnS2 is in its normal insulator state, electrons are primarily in unpaired, “high spin” orbitals, causing atoms to actively bounce back and forth. This results in the material having higher resistance to an electrical charge because there is less free space for individual electrons trying to pass through the material.
+
+But as pressure is applied—and the material is compressed toward a metallic state—the electron orbitals “start to see each other, immediately come toward each other, and pairs of electrons start linking up as one,” Salamat says.
+
+This opens more space for individual electrons to move through the material—so much so that resistance drops dramatically by 8 orders of magnitude, as pressure is increased from 3 gigapascals (435,000 psi) to 10 gigapascals. This is a relative “nudge” compared to the 182 to 268 gigapascals required for superconducting materials.
+
+“Given the small range of pressure involved, a drop in resistance of this magnitude is really enormous,” Dias said.
+
+Low resistance is maintained even in the final phase—when the MnS2 reverts to an insulator—because the electrons remain in a “low spin” state.
+
+As often occurs with new discoveries in basic science, the possible applications have yet to be explored. However, Salamat said, a transition metal which, with a relatively small amount of strain, can jump from one state to another—at room temperature, no less—is likely to be useful.
+
+“You could imagine having a logic switch or writing hard disk, where a very, very small permutation in strain or voltage could make something jump from one electronic state to another. New versions of flash memory, or solid-state memory, could permutate and take on a new approach using these types of materials,” Salamat said. “You can do quite aggressive maneuvers to drive these materials at 300 kelvin, making them potentially useful for technology.”
+
+See: Dylan Durkee1‡, Nathan Dasenbrock-Gammon2, G. Alexander Smith1, Elliot Snider2, Dean Smith1, 3, Christian Childs1, Simon A. J. Kimber4, Keith V. Lawler1*, Ranga P. Dias2**, and Ashkan Salamat1***, “Colossal Density-Driven Resistance Response in the Negative Charge Transfer Insulator MnS2,” Phys. Rev. Lett. 127, 016401 (2021). DOI: 10.1103/PhysRevLett.127.016401
+
+Author affiliations: 1University of Nevada Las Vegas, 2University of Rochester, 3Argonne National Laboratory, 4ICB-Laboratoire Interdisciplinaire Carnot de Bourgogne ‡Present address: University of Rochester
+
+Correspondence: * keith.lawler@unlv.edu, ** rdias@rochester.edu, *** salamat@physics.unlv.edu
+
+This material is based upon work supported by the National Science Foundation (NSF) Division of Materials Research under Grant No. 1904694. N. D.-G., E. S., and R. P. D. were supported by NSF Grant No. DMR-1809649; U.S. Department of Energy (DOE) Stockpile Stewardship Academic Alliance Program Grant No. DE-NA0003898; and U.S. DOE Office of Science, Fusion Energy Sciences under Award No. DE-SC0020340. S. A. J. K. was supported by Contract No. ANR-15-IDEX-0003. HPCAT-XSD operations are supported by the DOE-National Nuclear Security Administration’s Office of Experimental Sciences. The Advanced Photon Source is a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DEAC02- 06CH11357.
+
+© University of Rochester 1996-2021
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+08.03.2021

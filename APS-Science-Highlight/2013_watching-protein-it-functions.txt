@@ -1,0 +1,35 @@
+Watching a Protein as it Functions
+
+When it comes to understanding how proteins perform their amazing cellular feats, it is often the case that the more one knows the less one realizes they know. For decades, biochemists and biophysicists have worked to reveal the relationship between protein structural complexity and function, only to discover more complexity. One challenging aspect of protein behavior has been the speed with which they change shape and interact with their neighboring biomolecules. Until recently, researchers have relied on a somewhat static approach, using freeze-trapping to capture protein intermediates at various steps along a biochemical pathway. But exciting breakthroughs now allow us to watch proteins changing in real time.
+
+A research group has developed the necessary infrastructure at the BioCARS 14-ID-B beamline at the U.S. Department of Energy Office of Science’s Advanced Photon Source to watch proteins function in real time on the picosecond time scale. Their work brings us many steps closer to knowing how proteins function, or malfunction when leading to disease.
+
+A signaling protein usually responds to a messenger or trigger, such as heat or light, by changing its shape, which initiates a regulatory response in the cell. Signaling proteins are all-important to the proper functioning of biological systems, yet the rapid sequence of events, occurring in picoseconds, had, until now, meant that only an approximate idea of what was actually occurring could be obtained.
+
+The researchers from the National Institutes of Health, the Nara Institute of Science and Technology (Japan), The University of Chicago, and the European Synchrotron Radiation Facility (France) worked to remedy that situation by developing a time-resolved, 150-ps Laue crystallography technique that can be utilized to watch structural changes in the photocycle of a protein first discovered in the photosynthetic bacterium Halorhodospira halophila. The protein, called photoactive yellow protein (PYP), is implicated in causing the bacterium to swim away from blue light, which could be genetically harmful, and toward green light, which it needs for photosynthesis.
+
+The team tracked the reversible photocycle of PYP over ten decades of time, from 100 ps to 1 sec. The signaling reaction is triggered by absorption of a photon of light by p-coumaric acid (pCA) chromophore, the non-protein entity that actually absorbs the photon, and which undergoes trans-to-cis isomerization. The bacterium responds to this light signaling within about half a second, indicating how rapidly the biochemical changes that facilitate the response must occur in the cell.
+
+The team identified four major intermediates in the photoisomerization cycle. The first cis intermediate, lasting for only 600 ps, is in an unusual, highly contorted form not previously observed in crystallography experiments and is the precursor to intermediates that had been observed on the time scale of nanoseconds. Additional intermediate steps in the process of structural transition include breaking and making of hydrogen bonds, formation and relaxation of strain, and gated water penetration into the protein’s interior. The researchers cross-validated their structural data, utilizing density functional theory calculations to confirm the chemical plausibility of the intermediates.
+
+By tracking structurally the PYP photocycle with near-atomic resolution, the team provided a foundation for understanding the general process of signal transduction in proteins at nearly the lightning speed in which they are actually happening. By extending these techniques to enzymes, it would be possible to perform real-time observations of enzymatic action. Thanks to the team’s groundbreaking work, the mechanistic and kinetic complexities with which proteins carry out their sophisticated functions are now much more clearly on view to those who have been eagerly waiting to see.
+
+— Mona Mort
+
+See: Friedrich Schotte1, Hyun Sun Cho1, Ville R.I. Kaila1, Hironari Kamikubo2, Naranbaatar Dashdorj1‡, Eric R. Henry1, Timothy J. Graber3, Robert Henning3, Michael Wulff4, Gerhard Hummer1, Mikio Kataoka2, and Philip A. Anfinrud1*, “Watching a signaling protein function in real time via 100-ps time-resolved Laue crystallography,” Proc. Natl. Acad. Sci. USA 109(47), 19256 (November 20, 2012). DOI:10.1073/pnas1210938109
+
+Author affiliations: 1National Institutes of Health, 2Nara Institute of Science and Technology, 3The University of Chicago, 4European Synchrotron Radiation Facility. ‡Present address: Argonne National Laboratory
+
+Correspondence: *anfinrud@nih.gov
+
+Use of the BioCARS Sector 14 beamline was supported by National Center for Research Resources Grant 5P41RR007707 and National Institute of General Medical Sciences Grant 8P41GM103543 from the National Institutes of Health (NIH). The time-resolved setup at Sector 14 was funded in part through collaboration with P.A.A. This research was supported by the Intramural Research Program of the National Institute of Diabetes and Digestive and Kidney Diseases, NIH. V.R.I.K. is the recipient of a European Molecular Biology Organization Long-Term Fellowship. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. DOE Office of Science under Contract No. DE-AC02-06CH11357.
+
+See also: Y.O. Jung et al., Nat. Chem. 5, 212 (March 2013).
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+03.14.2013

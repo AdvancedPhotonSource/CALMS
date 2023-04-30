@@ -1,0 +1,29 @@
+The Structure of a Protein Important for Tumor Growth
+
+The original Sanford-Burnham Prebys Medical Discovery Institute press release can be read here.
+
+In a collaborative study between Sanford Burnham Prebys Medical Discovery Institute (SBP) and Argonne, scientists have used a highly specialized x-ray crystallography technique at the Structural Biology Center 19-ID x-ray beamline at the U.S. Department of Energy’s Advanced Photon Source to solve the protein structures of hypoxia-inducible factors (HIFs), important regulators of a tumor's response to low oxygen (hyopoxia). The findings, published in the journal Nature, open the door to a search for new drugs to treat tumors by cutting off their supply of oxygen and nutrients.
+
+This marks the first time the structures of both HIF1-alpha and HIF2-alpha complexed with the ARNT subunit have been solved, a configuration required for HIF functionality. Visualizing these multi-domain structures helps scientists understand their drug binding capabilities and takes us further toward the goal of developing drugs that inhibit the tumor promoting effects of HIFs.
+
+HIF proteins regulate genes that play a role in the progression of a broad range of tumors, and modulating their activity is recognized as a promising approach in cancer therapeutics. There have been intense efforts in the pharmaceutical sector to find drugs that inhibit HIF pathways, but these have only led to drug candidates that bind to another class of HIF modifying enzymes called PHDs. PHD enzymes regulate HIF activities, and there are a number of PHD inhibitors currently in clinical trials for anemia, chronic kidney disease, and stroke, as well as cancer.
+
+This study advances efforts to find new drugs that bind to HIF directly, rather than PHDs. The research team identified five different pockets in the architecture of the HIF complexes, all of which may be used for targeting small-molecule inhibitors. These drugs could conceivably inhibit HIF functions by reducing their stability, their ability to interact with other protein partners, and by altering mechanisms critical for their function.
+
+Drugs that inhibit HIFs may be very useful for treating solid tumors because these cancers outgrow their blood supply and become starved for oxygen, stimulating HIFs to turn on genes that regulate many cancer cell survival pathways, including angiogenesis, erythropoiesis, increased expression of genes associated with anaerobic metabolism, and metastasis. The coordination of all these programs helps to promote tumor growth and drug resistance, ultimately leading to decreased patient survival.
+
+The next step is to analyze a large number of patient samples with mutations in HIF proteins. The researchers would like to see where on the protein architectures these mutations occur, and how they manifest into HIF functional aberrations. Such mutations will offer a powerful glimpse into the structure-function activities of HIFs, and help us figure out how they turn genes on and off. Insights into the structure, function, and regulation of HIFs may also progress the development of treatments for a range of disease states beyond cancer, including heart disease, fatty liver, diabetes, and inflammatory diseases.
+
+See: Dalei Wu1, Nalini Potluri1, Jingping Lu1, Youngchang Kim2, and Fraydoon Rastinejad1, “Structural integration in hypoxia-inducible factors,” Nature, published online 05 August 2015. DOI: 10.1038/nature14883
+
+Author affiliations: 1Sanford Burnham Prebys Medical Discovery Institute, 2Argonne National Laboratory
+
+Correspondence: *frastinejad@sbpdiscovery.org
+
+SBC-CAT is operated by UChicago Argonne, LLC, for the U.S. Department of Energy (DOE) Office of Biological and Environmental Research under contract DE-AC02-06CH11357. This research used resources of the Advanced Photon Source, a U.S. Department of Energy Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+08.06.2015
