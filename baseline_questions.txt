@@ -3,3 +3,5 @@ Who is Jonathan Lang?
 What is the APS Upgrade project?
 What is CDI?
 How can I use coherent imaging at the APS?
+Which beamline does coherent imaging?
+Can I do high energy diffraction at the APS?
