@@ -18,6 +18,7 @@ print("Device:", device)
 print("Using %d GPUs" %torch.cuda.device_count())
 
 import gradio as gr
+gr.close_all() #Close any existing open ports
 import time, shutil
 import params as p
 
@@ -41,16 +42,10 @@ pipe = pipeline(
     repetition_penalty=1.2
 )
 
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-
 
 #Load embedding model and use that to embed text from source
 embeddings = HuggingFaceEmbeddings(model_name=p.embedding_model_name)
-
-
-
 embed_path = 'embeds/%s' %(p.embedding_model_name)
-
 
 if p.init_docs:
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
@@ -78,13 +73,13 @@ if p.init_docs:
 else:
     docsearch = Chroma(persist_directory=embed_path)
 
-#Find text with highest likely context
+#Method to find text with highest likely context
 def get_context(query):
-    N_hits = 3 #How many hits of context to provide?
-    docs = docsearch.similarity_search_with_score(query, k=N_hits)
+    
+    docs = docsearch.similarity_search_with_score(query, k=p.N_hits)
     #Get context strings
     context=""
-    for i in range(N_hits):
+    for i in range(p.N_hits):
         context += docs[i][0].page_content +"\n"
     print (context)
     return context
@@ -93,7 +88,6 @@ def get_context(query):
 
 #Setup LLM chain with memory and context
 local_llm = HuggingFacePipeline(pipeline=pipe)
-
 
 template = """The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
 
@@ -109,11 +103,9 @@ PROMPT = PromptTemplate(
     input_variables=["history", "input", "context"], template=template
 )
 
-
 memory = ConversationBufferWindowMemory(memory_key="history", 
                                         input_key = "input", 
                                         k=6)
-
 
 conversation = LLMChain(
         prompt=PROMPT,
@@ -121,6 +113,7 @@ conversation = LLMChain(
         verbose=True, 
         memory=memory
 )
+
 
 #Setup Gradio app
 with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
@@ -152,6 +145,13 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         bot, chatbot, chatbot
     )
     clear.click(lambda: memory.clear(), None, chatbot, queue=False)
+    gr.Markdown("""
+    Made with ❤️ for 🧑‍🔬 by:
+    Mathew J. Cherukara, Michael Prince @ APS
+    Henry Chan, Aikaterini Vriza @ CNM
+    Varuni K. Sastry @ DSL/ALCF
+    """
+    )
 
 
 demo.queue()
