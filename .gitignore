@@ -1,7 +1,12 @@
 #Run logs
-log.txt
+logs/
+
 #Embeds folder
 embeds/
+
+#Misc
+.nfs*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

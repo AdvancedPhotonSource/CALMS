@@ -1,5 +1,5 @@
 import os
-#os.environ["CUDA_VISIBLE_DEVICES"]='0,1'
+os.environ["CUDA_VISIBLE_DEVICES"]='1,2,3'
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -119,7 +119,7 @@ conversation = LLMChain(
 #Setup Gradio app
 with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
     gr.Markdown("""
-    # Welcome to the APS AI Assistant!
+    # Hi! I am the APS AI Assistant
     I was trained at Meta, taught to follow instructions at Stanford and am now learning about the APS. AMA!
     """
     )
