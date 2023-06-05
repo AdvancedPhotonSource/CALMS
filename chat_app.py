@@ -51,8 +51,9 @@ if p.init_docs:
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
 
     if os.path.exists(embed_path):
-        response = input("WARNING: DELETING EXISTING EMBEDDINGS. Type \"y\" to continue.")
-        if response.strip() == "y":
+        #response = input("WARNING: DELETING EXISTING EMBEDDINGS. Type \"y\" to continue.")
+#        if response.strip() == "y":
+        if p.overwrite_embeddings:
             shutil.rmtree(embed_path)
         else:
             raise ValueError("Existing Chroma Collection")
@@ -81,7 +82,7 @@ def get_context(query):
     context=""
     for i in range(p.N_hits):
         context += docs[i][0].page_content +"\n"
-    print (context)
+        print (i+1, docs[i][0].page_content)
     return context
 
 
@@ -119,6 +120,7 @@ conversation = LLMChain(
 with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
     gr.Markdown("""
     # Welcome to the APS AI Assistant!
+    I was trained at Meta, taught to follow instructions at Stanford and am now learning about the APS. AMA!
     """
     )
     chatbot = gr.Chatbot(show_label=False).style(height="500")
