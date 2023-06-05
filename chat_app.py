@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]='1,2,3'
+os.environ["CUDA_VISIBLE_DEVICES"]='0,2,3'
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -74,6 +74,7 @@ if p.init_docs:
 else:
     docsearch = Chroma(persist_directory=embed_path)
 
+print ("Finished embedding documents")
 #Method to find text with highest likely context
 def get_context(query):
     
