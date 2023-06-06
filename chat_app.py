@@ -124,25 +124,30 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
     I was trained at Meta, taught to follow instructions at Stanford and am now learning about the APS. AMA!
     """
     )
-    chatbot = gr.Chatbot(show_label=False).style(height="500")
-    msg = gr.Textbox(label="Send a message with Enter")
-    clear = gr.Button("Clear")
+    with gr.Tab("General conversation"):
+        chatbot = gr.Chatbot(show_label=False).style(height="500")
+        msg = gr.Textbox(label="Send a message with Enter")
+        clear = gr.Button("Clear")
 
-    def user(user_message, history):
-        return "", history + [[user_message, None]]
+        def user(user_message, history):
+            return "", history + [[user_message, None]]
 
-    def bot(history):
+        def bot(history):
 
-        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-        bot_message = conversation.predict(input=user_message, context=get_context(user_message))
-        #Pass user message and get context and pass to model
-        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+            user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+            bot_message = conversation.predict(input=user_message, context=get_context(user_message))
+            #Pass user message and get context and pass to model
+            history[-1][1] = "" #Replaces None with empty string -- Gradio code
 
-        for character in bot_message:
-            history[-1][1] += character
-            time.sleep(0.02)
-            yield history
-    
+            for character in bot_message:
+                history[-1][1] += character
+                time.sleep(0.02)
+                yield history
+    with gr.Tab("Tips & Tricks"):
+        gr.Markdown("""
+        1. I am not as powerful as GPT-4 or ChatGPT and I am running on cheap GPUs, if I get stuck, you can type "please continue" or similar and I will attempt to complete my thought.
+        """
+        )
 
     msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
         bot, chatbot, chatbot
