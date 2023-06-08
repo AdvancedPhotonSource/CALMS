@@ -196,12 +196,41 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
     
         clear.click(lambda: memory2.clear(), None, chatbot, queue=False)
 
+    
     #Document Q&A tab
     with gr.Tab("Document Q&A"):
         gr.Markdown("""
         Q&A over uploaded document
         """
         )
+        memory3, conversation3 = init_chain() #Init chain
+        chatbot, msg, clear = init_chat_layout() 
+
+        from langchain.document_loaders import PyPDFDirectoryLoader, PyPDFLoader
+        def process_files(files):
+                loader = PyPDFLoader(files)
+                docs = loader.load()
+                return docs
+        
+        user_txt_file = gr.inputs.File(label="upload file") # button for user to upload pdf
+
+        def bot(history):  
+            user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+            bot_message = conversation3.predict(input=user_message, context=user_txt_file)
+            #Pass user message and get context and pass to model
+            history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+            for character in bot_message:
+                history[-1][1] += character
+                time.sleep(0.02)
+                yield history
+
+        msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+            bot, chatbot, chatbot #Use bot with context
+        )
+    
+        clear.click(lambda: memory3.clear(), None, chatbot, queue=False)
+
  
     with gr.Tab("Tips & Tricks"):
         gr.Markdown("""
