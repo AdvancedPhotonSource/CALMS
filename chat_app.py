@@ -75,6 +75,8 @@ else:
     docsearch = Chroma(persist_directory=embed_path)
 
 print ("Finished embedding documents")
+
+
 #Method to find text with highest likely context
 def get_context(query):
     
@@ -105,37 +107,58 @@ PROMPT = PromptTemplate(
     input_variables=["history", "input", "context"], template=template
 )
 
-memory = ConversationBufferWindowMemory(memory_key="history", 
-                                        input_key = "input", 
-                                        k=6)
+def init_chain():
+    memory = ConversationBufferWindowMemory(memory_key="history", 
+                                            input_key = "input", 
+                                            k=6)
 
-conversation = LLMChain(
-        prompt=PROMPT,
-        llm=local_llm, 
-        verbose=True, 
-        memory=memory
-)
+    conversation = LLMChain(
+            prompt=PROMPT,
+            llm=local_llm, 
+            verbose=True, 
+            memory=memory
+    )
+
+    return memory, conversation
 
 
 #Setup Gradio app
+
+#Common Methods 
+def user(user_message, history):
+    return "", history + [[user_message, None]]
+
+def init_chat_layout():
+    chatbot = gr.Chatbot(show_label=False).style(height="500")
+    msg = gr.Textbox(label="Send a message with Enter")
+    clear = gr.Button("Clear")
+
+    return chatbot, msg, clear
+
+#Page layout
 with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
+
+    #Header
     gr.Markdown("""
     # Hi! I am the APS AI Assistant
-    I was trained at Meta, taught to follow instructions at Stanford and am now learning about the APS. AMA!
+    ### I was trained at Meta, taught to follow instructions at Stanford and am now learning about the APS. AMA!
     """
     )
-    with gr.Tab("General conversation"):
-        chatbot = gr.Chatbot(show_label=False).style(height="500")
-        msg = gr.Textbox(label="Send a message with Enter")
-        clear = gr.Button("Clear")
+    gr.Markdown("""
+    * Use the General Chat to AMA. E.g. write some code for you, create a recipe from ingredients etc. 
+    * Use the APS Q&A to ask me questions specific to the APS, I will look up answers using the documentation my trainers have provided me. 
+    * Use the Document Q&A to ask me questions about a document you provide.
+    """)
 
-        def user(user_message, history):
-            return "", history + [[user_message, None]]
+    #General chat tab
+    with gr.Tab("General Chat"):
 
-        def bot(history):
+        memory1, conversation1 = init_chain() #Init chain
+        chatbot, msg, clear = init_chat_layout() #Init layout
 
+        def bot_no_context(history):
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-            bot_message = conversation.predict(input=user_message, context=get_context(user_message))
+            bot_message = conversation1.predict(input=user_message, context="")
             #Pass user message and get context and pass to model
             history[-1][1] = "" #Replaces None with empty string -- Gradio code
 
@@ -143,18 +166,55 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
                 history[-1][1] += character
                 time.sleep(0.02)
                 yield history
+
+        msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+            bot_no_context, chatbot, chatbot #Use bot without context
+        )
+        clear.click(lambda: memory1.clear(), None, chatbot, queue=False)
+
+    #APS Q&A tab
+    with gr.Tab("APS Q&A"):
+
+        memory2, conversation2 = init_chain() #Init chain
+        chatbot, msg, clear = init_chat_layout() #Init layout
+
+        #Pass an empty string to context when don't want domain specific context
+        def bot(history):  
+            user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+            bot_message = conversation2.predict(input=user_message, context=get_context(user_message))
+            #Pass user message and get context and pass to model
+            history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+            for character in bot_message:
+                history[-1][1] += character
+                time.sleep(0.02)
+                yield history
+
+        msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+            bot, chatbot, chatbot #Use bot with context
+        )
+    
+        clear.click(lambda: memory2.clear(), None, chatbot, queue=False)
+
+    #Document Q&A tab
+    with gr.Tab("Document Q&A"):
+        gr.Markdown("""
+        Q&A over uploaded document
+        """
+        )
+ 
     with gr.Tab("Tips & Tricks"):
         gr.Markdown("""
         1. I am not as powerful as GPT-4 or ChatGPT and I am running on cheap GPUs, if I get stuck, you can type "please continue" or similar and I will attempt to complete my thought.
+        2. If I don't give a satisfactory answer, try rephrasing your question. For e.g. 'Can I do high energy diffraction at the APS?' instead of 'Where can I do high energy diffraction at the APS?
         """
         )
 
-    msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-        bot, chatbot, chatbot
-    )
-    clear.click(lambda: memory.clear(), None, chatbot, queue=False)
+
+
+    #Footer
     gr.Markdown("""
-    Made with ❤️ for 🧑‍🔬 by:
+    ##### Made with ❤️ for 🧑‍🔬 by:
     Mathew J. Cherukara, Michael Prince @ APS
     Henry Chan, Aikaterini Vriza @ CNM
     Varuni K. Sastry @ DSL/ALCF
