@@ -160,13 +160,16 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
 
         def bot_no_context(history, debug_output):
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+
+            if debug_output:
+                inputs = conversation1.prep_inputs({'input': user_message, 'context':""})
+                prompt = conversation1.prep_prompts([inputs])[0][0].text
+
             bot_message = conversation1.predict(input=user_message, context="")
             #Pass user message and get context and pass to model
             history[-1][1] = "" #Replaces None with empty string -- Gradio code
 
             if debug_output:
-                inputs = conversation1.prep_inputs({'input': user_message, 'context':""})
-                prompt = conversation1.prep_prompts([inputs])[0][0].text
                 bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
 
             for character in bot_message:
@@ -189,13 +192,16 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         def bot(history, debug_output):  
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
             context = get_context(user_message)
+
+            if debug_output:
+                inputs = conversation1.prep_inputs({'input': user_message, 'context':context})
+                prompt = conversation1.prep_prompts([inputs])[0][0].text
+
             bot_message = conversation2.predict(input=user_message, context=context)
             #Pass user message and get context and pass to model
             history[-1][1] = "" #Replaces None with empty string -- Gradio code
 
             if debug_output:
-                inputs = conversation1.prep_inputs({'input': user_message, 'context':context})
-                prompt = conversation1.prep_prompts([inputs])[0][0].text
                 bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
 
             for character in bot_message:
