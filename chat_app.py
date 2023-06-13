@@ -1,5 +1,7 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]='0,2,3'
+import params as p
+if p.set_visible_devices:
+    os.environ["CUDA_VISIBLE_DEVICES"] = p.visible_deices
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -20,7 +22,6 @@ print("Using %d GPUs" %torch.cuda.device_count())
 import gradio as gr
 gr.close_all() #Close any existing open ports
 import time, shutil
-import params as p
 
 #Create a local tokenizer copy the first time
 if os.path.isdir(p.tokenizer_path):
@@ -72,7 +73,7 @@ if p.init_docs:
     )
     docsearch.persist()
 else:
-    docsearch = Chroma(persist_directory=embed_path)
+    docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
 
 print ("Finished embedding documents")
 
@@ -132,8 +133,9 @@ def init_chat_layout():
     chatbot = gr.Chatbot(show_label=False).style(height="500")
     msg = gr.Textbox(label="Send a message with Enter")
     clear = gr.Button("Clear")
+    disp_prompt = gr.Checkbox(label='Debug: Display Prompt')
 
-    return chatbot, msg, clear
+    return chatbot, msg, clear, disp_prompt
 
 #Page layout
 with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
@@ -154,13 +156,18 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
     with gr.Tab("General Chat"):
 
         memory1, conversation1 = init_chain() #Init chain
-        chatbot, msg, clear = init_chat_layout() #Init layout
+        chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
-        def bot_no_context(history):
+        def bot_no_context(history, debug_output):
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
             bot_message = conversation1.predict(input=user_message, context="")
             #Pass user message and get context and pass to model
             history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+            if debug_output:
+                inputs = conversation1.prep_inputs({'input': user_message, 'context':""})
+                prompt = conversation1.prep_prompts([inputs])[0][0].text
+                bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
 
             for character in bot_message:
                 history[-1][1] += character
@@ -168,7 +175,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
                 yield history
 
         msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-            bot_no_context, chatbot, chatbot #Use bot without context
+            bot_no_context, [chatbot, disp_prompt], chatbot #Use bot without context
         )
         clear.click(lambda: memory1.clear(), None, chatbot, queue=False)
 
@@ -176,14 +183,20 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
     with gr.Tab("APS Q&A"):
 
         memory2, conversation2 = init_chain() #Init chain
-        chatbot, msg, clear = init_chat_layout() #Init layout
+        chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
         #Pass an empty string to context when don't want domain specific context
-        def bot(history):  
+        def bot(history, debug_output):  
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-            bot_message = conversation2.predict(input=user_message, context=get_context(user_message))
+            context = get_context(user_message)
+            bot_message = conversation2.predict(input=user_message, context=context)
             #Pass user message and get context and pass to model
             history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+            if debug_output:
+                inputs = conversation1.prep_inputs({'input': user_message, 'context':context})
+                prompt = conversation1.prep_prompts([inputs])[0][0].text
+                bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
 
             for character in bot_message:
                 history[-1][1] += character
@@ -191,7 +204,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
                 yield history
 
         msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-            bot, chatbot, chatbot #Use bot with context
+            bot, [chatbot, disp_prompt], chatbot #Use bot with context
         )
     
         clear.click(lambda: memory2.clear(), None, chatbot, queue=False)
