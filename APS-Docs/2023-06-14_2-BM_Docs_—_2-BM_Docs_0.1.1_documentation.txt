@@ -1,6 +1,6 @@
 url: https://docs2bm.readthedocs.io/en/latest/index.html
 title: 2-BM Docs — 2-BM Docs 0.1.1 documentation
-accessed: 2023-06-13
+accessed: 2023-06-14
 
 
 # 2-BM Docs
@@ -9,7 +9,7 @@ accessed: 2023-06-13
 
 Manual and troubleshoting information to operate the APS beamline 2-BM
 
-# Content
+## Content
 
 1. About
 2. Overview
@@ -19,31 +19,34 @@ Manual and troubleshoting information to operate the APS beamline 2-BM
 6. Ask for support
 7. Publications
 
-## About
+
+|- # About
 
 The sector 2 bending magnet beamline is fully dedicated to microtomography with capability to perform large field of view (20 x 2 mm 2) fast 2D phase contrast imaging for slow dynamic phenomena studies (0.1m/s). The applications of this beamline range from life science, geoscience, physics, material science and engineering and paleontology. The flexibility of switching setups and capabilities of developing on-demand accessory experimental techniques make this beamline versatile in tomography applications.
 
   <image project-logo.png: project>
 
-## Overview
+
+|- # Overview
 
 The 2-BM tomography instrument of the APS for in situ micro-tomography
 
 • Sample preparation
 
-### Sample preparation
+
+|-- # Sample preparation
 
 to be completed
 
 • IMPORTANT:
-
 In computed tomography, in order to obtain 3D reconstructions with the highest quality possible, the sample must remain in the field of view at every angles!
 
 • Samples are loaded on kinematic mounts.
 
 CXRO website (http://henke.lbl.gov/optical_constants/).
 
-## User Manual
+
+|- # User Manual
 
 1. Beamline Control
  1.1. beamline
@@ -83,12 +86,14 @@ CXRO website (http://henke.lbl.gov/optical_constants/).
 14. Visible Lens
  14.1. Triple Objective
 
-### Beamline Control
+
+|-- # Beamline Control
 
 All beamline components and detectors are controlled using EPICS (https://epics-controls.org/) and areaDetector (https://areadetector.github.io/master/index.html).
 Each device can be configure and controlled through a graphic user interface (GUI) or through a python script using PyEpics (https://cars9.uchicago.edu/software/python/pyepics3/).
 
-### beamline
+
+|-- ## beamline
 
 To start the main 2-BM beamline control user interface:
 
@@ -98,7 +103,8 @@ To start the main 2-BM beamline control user interface:
 
   <image 2bmb_beamline.png: 2bmb_beamline>
 
-### tomography
+
+|-- ## tomography
 
 To start the main tomography control screens for 2-BM-A or 2-BM-B for scanning or streaming data collection select in the main beamline control screens the corresponding screen for user, admin, tomoscan, tomoscan 2-BM:
 
@@ -132,7 +138,8 @@ If some of the above screen contains whirte fields, it means that the correspond
 
   <image tomo_07.png: tomo_02>
 
-### Data Analisys
+
+|-- # Data Analisys
 
 The micro tomography computing infrastructure for the Imaging group is located at 2-BM:
 
@@ -143,11 +150,13 @@ Station Name       Product     Part list  Model                       Quote
 2-BM    tomo 4-5   MNJ16235754 cluster_02 Supermicro 220GQ-TNAR+ node cluster_quote_02
 2-BM    disk array MNJ15508749 disk_array SYS-220U-TNR Storage        disk_array_quote
 
-### At the APS
+
+|-- ## At the APS
 
 Your raw data are automatically copied from the detector to the analysis computer (handyn in this example) under the folder /local/data/YYYY-MM/PI_lastName.
 
-### Manual
+
+|-- ### Manual
 
 To manually reconstruct a data set, use the tomopy cli tool (https://github.com/tomography/tomopy-cli).
 
@@ -162,7 +171,8 @@ To do a test reconstruction type:
 
   [tomo@tomo1,~]$ tomopy recon --file-name /local/data/YYYY-MM/PI_lastName/file.h5
 
-### Automatic
+
+|-- ### Automatic
 
 To setup a reconstruction to start and publish automatically the results on a google slide with tomolog (https://tomologcli.readthedocs.io/en/latest/index.html),
 edit tomorec_log
@@ -185,17 +195,29 @@ any new raw dataset uploade in /local/data/YYYY-MM/PI_lastName/ will be automati
 
   <image tomolog_01.png: tomo_01>
 
-### At your home institution
+
+|-- ## At your home institution
 
 Install the following:
 
+1. Download and install anaconda python for your operative system. (https://www.anaconda.com/download/)
+2. Create a conda environment:
+
   $ conda create -n tomopy python=3.9
+
+1. Activate the newly created conda environment:
 
   $ conda activate tomopy
 
+1. Install tomopy: (https://tomopy.readthedocs.io/en/latest/)
+
   $ conda install --channel conda-forge tomopy
 
+1. Install dxchange: (https://dxchange.readthedocs.io/en/latest/)
+
   $ conda install -c conda-forge dxchange
+
+1. Install tomopy cli: (https://tomopycli.readthedocs.io/en/latest/)
 
   $ git clone https://github.com/tomography/tomopy-cli.git
   $ cd tomopy-cli
@@ -203,20 +225,25 @@ Install the following:
 
 For Windows installation of tomopy-cli watch this video (https://anl.box.com/s/182dsmpnxx25o2xsy6n1ozgj8rx5omjg).
 
+1. Install tomopy cli dependecy: (https://github.com/tomography/tomopy-cli/blob/master/requirements.txt)
+
   pip install opencv-python
 
 To run a reconstuction you can now run:
 
   $ tomopy recon --file-name /data/file.h5
 
-### Mosaic
+
+|-- ## Mosaic
 
 For samples larger than the field of view we collect multiple data sets consisiting of overlapping tiles to form a mosaic.
 To reconstruct these type of data please use tile (https://tile.readthedocs.io/en/latest/)  command-line-interface for mosaic tomography data processing.
 
-### Data Collection
 
-### TomoScan
+|-- # Data Collection
+
+
+|-- ## TomoScan
 
 The tomography scans are managed by tomoScan (https://tomoscan.readthedocs.io/en/latest/index.html). Please refer to the tomoScan (https://tomoscan.readthedocs.io/en/latest/index.html) documentation for details.
 
@@ -264,7 +291,8 @@ this will run:
 
 please check the command line manual (https://tomoscan.readthedocs.io/en/latest/demo.html#using-the-tomoscan-cli) for more details.
 
-### Streaming data collection
+
+|-- ## Streaming data collection
 
 tomoScan (https://tomoscan.readthedocs.io/en/latest/index.html) provides also support for streaming data collection (see tomoScanStream (https://tomoscan.readthedocs.io/en/latest/api/tomoscan_stream_2bm.html) documentation for details). When collecting data in streaming mode, projections,
 dark and flat images are broadcasted using PVaccess (https://epics-controls.org/resources-and-support/documents/pvaccess/) and can be retrieved as EPICS PVs.
@@ -273,14 +301,15 @@ Streaming data collection features are:
 
 • Projection, dark and flat image broadcast as PV access variables
 • On-demand retake of dark-flat field images
-• On-demand data capturing with saving in a standard Data Exchange hdf5file
+• On-demand data capturing with saving in a standard Data Exchange hdf5file (https://dxfile.readthedocs.io/en/latest/source/xraytomo.html)
 • Set a number of projectons (“Pre count”) collected before a triggered data capturing event to be also saved in the same hdf5 file
 
 All TomoScanStream functionalies can be controlled from the Streaming Control section of:
 
   <image tomoScanStream.png: ../../_images/tomoScanStream.png>
 
-### Streaming data reconstruction
+
+|-- ## Streaming data reconstruction
 
 The projection, dark and flat image broadcast provided by tomoScanStream (https://tomoscan.readthedocs.io/en/latest/api/tomoscan_stream_2bm.html) can be used to reconstruct in real-time 3 orthogonal slices. This task is accomplished by tomoStream (https://tomostream.readthedocs.io/en/latest/about.html).
 
@@ -306,7 +335,8 @@ The output of tomostream is a live reconstruction diplaying in ImageJ using the 
 
 While the sample is rotating is possible to optimize instrument (alignment, focus, sample to detector distance etc.) and  beamline (energy etc.) conditions and monitor the effect live on the 3 orthogonal slices. It is also possible to automatically trigger data capturing based on events occurring in the sample and its environment as a result of segmentation or machine learning.
 
-### Bluesky
+
+|-- ## Bluesky
 
 To operate 2-BM using bluesky (currently in beta test in 2-BM-B) type:
 
@@ -321,20 +351,31 @@ or:
   RE(user_tomo_scan(acquire_time=0.1), comment="my tomo fly scan", sample="wood stick")
   RE(user_tomo_scan(acquire_time=0.1, iteration=10), comment="my tomo fly scan", sample="wood stick")
 
-### Data Download
+
+|-- # Data Download
 
 At the beginning of the beamtime all users listed in the proposal receive an email with a direct link and instructions on how to download data from the APS.
 
 Data sets are distributed using a Globus (https://www.globus.org), to use it you need to create a Globus Account (https://docs.globus.org/how-to/get-started/)  and set up your computer as
 a Globus EndPoint (https://www.globus.org/globus-connect-personal).
 
-### Step-by-step instructions
+
+|-- ## Step-by-step instructions
 
 Note This only applies if your data were stored on the APS data magement system.
 
 Please follow these steps:
 
-### Data Tagging
+1. login into Globus (with your personal globus credential)
+2. go to “Collection/Search” and search for the aps data select aps#data
+3. login in the the APS data management system using the same badge number/password combination that use to access the APS poroposal system but put a “d” in front of the badge number
+4. if you forgot your password you can reset it here (https://beam.aps.anl.gov/pls/apsweb/forgot_password.start_process)
+5. go to /gdata/dm/2BM/ then seach for your data by PI_last_name-year-month/
+6. set an end point on your computer (see Globus EndPoint) (https://www.globus.org/globus-connect-personal)
+7. download the data!
+
+
+|-- # Data Tagging
 
 To tag the datasets collected during the experiment with user information we use DMagic (https://dmagic.readthedocs.io/en/latest/).
 
@@ -383,15 +424,11 @@ To automatically fill the tomoScan current user info:
 
   [user2bmb@arcturus]$ dmagic tag
 
-### Data Visualization
 
-### Raw Data
+|-- # Data Visualization
 
-To view the tomographic raw data we suggest to install Fiji (https://imagej.net/Fiji) and add
-the HDF plugin (https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5)
 
-Other options are hdfview (https://support.hdfgroup.org/products/java/hdfview/) or
-argos (https://github.com/titusjan/argos)
+|-- ## Raw Data
 
 To view the tomographic raw data we suggest to install Fiji (https://imagej.net/Fiji) and add
 the HDF plugin (https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5)
@@ -399,9 +436,17 @@ the HDF plugin (https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5)
 Other options are hdfview (https://support.hdfgroup.org/products/java/hdfview/) or
 argos (https://github.com/titusjan/argos)
 
-### Reconstructed Data
+To view the tomographic raw data we suggest to install Fiji (https://imagej.net/Fiji) and add
+the HDF plugin (https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5)
 
-### Dragonfly
+Other options are hdfview (https://support.hdfgroup.org/products/java/hdfview/) or
+argos (https://github.com/titusjan/argos)
+
+
+|-- ## Reconstructed Data
+
+
+|-- ### Dragonfly
 
 After your data are reconstructed you can visualize using Dragonfly (https://www.theobjects.com/dragonfly/index.html).
 
@@ -410,7 +455,8 @@ Login at the beamline Linux machine and then type:
   [tomo@handyn]$ cd /local/tomo/software/dragonfly
   [tomo@handyn]$ ./Dragonfly
 
-### Avizo
+
+|-- ### Avizo
 
 After your data are reconstructed you can visualize using Avizo.
 
@@ -419,7 +465,8 @@ Login at the beamline Linux machine and then type:
   [tomo@handyn]$ cd /local/AmiraAvizo3D/2021.1/bin/
   [tomo@handyn]$ ./Avizo3D
 
-### Detection
+
+|-- # Detection
 
 The detection system consists of camera, lens and scintillator screens. Below we list of all the camera, lens and scintillator screens options available at 2-BM.
 
@@ -434,18 +481,19 @@ For each machine part list at purchase time and for the list of supported hardwa
 
 These are the model/part number of the cameras in use at 2-BM:
 
-### Cameras
 
-Camera                                                     pixels (HxV) pixels size (μm) bit  fps        Manual       Part number                             Images Purchase orider
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Grasshopper3 9.1 MP Mono USB3 Vision (Sony ICX814)         3376 x 2704  3.69             14   9          camera_00001 GS3-U3-91S6M-C                                 camera_order_00001
-Grasshopper3 2.3 MP Mono USB3 Vision (Sony Pregius IMX174) 1920 x 1200  5.86             10   163        camera_00002 GS3-U3-23S6M-C                                 camera_order_00001
-Grasshopper3 5.0 MP Mono USB3 Vision (Sony Pregius IMX250) 2448 x 2048  3.45             10   75         camera_00003 GS3-U3-51S5M-C                                 camera_order_00001
-PCO DIMAX HS4                                              2000 x 2000  11               12   100 (2277) camera_00004 camera link
+|-- ## Cameras
+
+Camera                                                     pixels (HxV) pixels size (μm) bit  fps        Manual       Part number                             Images                                 Purchase orider
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Grasshopper3 9.1 MP Mono USB3 Vision (Sony ICX814)         3376 x 2704  3.69             14   9          camera_00001 GS3-U3-91S6M-C                                                                 camera_order_00001
+Grasshopper3 2.3 MP Mono USB3 Vision (Sony Pregius IMX174) 1920 x 1200  5.86             10   163        camera_00002 GS3-U3-23S6M-C                                                                 camera_order_00001
+Grasshopper3 5.0 MP Mono USB3 Vision (Sony Pregius IMX250) 2448 x 2048  3.45             10   75         camera_00003 GS3-U3-51S5M-C                                                                 camera_order_00001
+PCO DIMAX HS4                                              2000 x 2000  11               12   100 (2277) camera_00004 camera link                             dimax_01.png,dimax_02.png,dimax_03.png
 PCO EDGE 4.2                                               2048 x 2048  6.5              16   100        camera_00005 camera link
-Adimec 12 MP (*)                                           4000 x 3000  5.5              8    187        camera_00006 Quartz quad CoaXPress Q-12A180 CMV12000        camera_order_00003
-Oryx 5.0 MP Mono 10GigE                                    2448 x 2048  3.45             8-12 162        camera_00007 ORX-10G-51S5M-C                                camera_order_00002
-Oryx 31.0 MP Mono 10GigE (**)                              6464 x 4852  3.45             8-12 26         camera_00008 ORX-10G-310S9M                                 camera_order_00004
+Adimec 12 MP (*)                                           4000 x 3000  5.5              8    187        camera_00006 Quartz quad CoaXPress Q-12A180 CMV12000                                        camera_order_00003
+Oryx 5.0 MP Mono 10GigE                                    2448 x 2048  3.45             8-12 162        camera_00007 ORX-10G-51S5M-C                         flir_0.png,flir_1.png                  camera_order_00002
+Oryx 31.0 MP Mono 10GigE (**)                              6464 x 4852  3.45             8-12 26         camera_00008 ORX-10G-310S9M                                                                 camera_order_00004
 
   <image dimax_01.png: dimax_01>
 
@@ -479,7 +527,8 @@ Pixels (H) Pixels (V) Detector pixel size  (μm) Lens Mag Sample pixel size (μm
 2448       2048       6.5                       10       0.65                   1.59                 1.33
 2448       2048       6.5                       20       0.33                   0.80                 0.67
 
-### FLIR
+
+|-- ### FLIR
 
 To use the Flir Oryx camera ORX-10G-51S5M installed at 2-BM-B and connected to pg10ge:
 
@@ -497,19 +546,22 @@ to obtain the FLIR Oryx areadetector main control in the mct_main screen select:
 
 To collect an image press Acquire Start.
 
-### Startup
+
+|-- #### Startup
 
 To start/stop the area detector IOC for the FLIR Oryx (model 10GS 51S5) camera login into user2bmb@pg10ge then type:
 
   [user2bmb@pg10ge]$ 2bmbOryx -h
   Usage: 2bmbSpinnaker.sh {start|stop|restart|status|console|run|medm|caqtdm}
 
-### Manuals
 
-• FLIR Installation Guide
-• FLIR Technical Reference
+|-- #### Manuals
 
-### Point Grey
+• FLIR Installation Guide (https://anl.box.com/s/7pe793z5x9cspayqimscavzqhdcc9og7)
+• FLIR Technical Reference (https://anl.box.com/s/iyysb20lkr9uwbbefy3s0n2pkq3lyktq)
+
+
+|-- ### Point Grey
 
 To use the Point Grey GS3-U3-23S6M-C installed at 2-BM-B and connected to lyra:
 
@@ -521,7 +573,8 @@ then select MONA/User/detectors/Point Grey camera (PG3) to obtain the Point Grey
 
 To collect an image press Acquire Start.
 
-### Startup
+
+|-- #### Startup
 
 To start/stop the areadetector IOC for the Point Grey (model GS3-U3-23S6M-C) camera login into user2bmb@lyra then type:
 
@@ -530,12 +583,14 @@ To start/stop the areadetector IOC for the Point Grey (model GS3-U3-23S6M-C) cam
   [user2bmb@lyra]$ 2bmbPG3 status
   [user2bmb@lyra]$ 2bmbPG3 start
 
-### Manuals
 
-• PG Installation Guide
-• PG Technical Reference
+|-- #### Manuals
 
-### Adimec
+• PG Installation Guide (https://anl.box.com/s/ds559pqv1rsq8fmxdavyjycio4n3a7e0)
+• PG Technical Reference (https://anl.box.com/s/52w064y82yura524d9fkz27yst39597v)
+
+
+|-- ### Adimec
 
 To use the Quartz quad CoaXPress Q-12A180 CMV12000 installed at 2-BM-A and connected to chiwawa-113,
 start the Adimec areadetector main control screen
@@ -558,7 +613,8 @@ New version:
 
   <image adimec_new.png: tomo_user>
 
-### Startup
+
+|-- #### Startup
 
 To start/stop the areadetector IOC for the  Quartz quad CoaXPress Q-12A180 CMV12000  camera login into user2bmb@chiwawa-113 then type:
 
@@ -575,12 +631,14 @@ Old version:
 
 To collect an image press Acquire Start.
 
-### Manuals
 
-• Adimec Installation Guide
-• Adimec Technical Reference
+|-- #### Manuals
 
-### VieWorks 604MP
+• Adimec Installation Guide (https://anl.box.com/s/zyyt72lhttnhksgnwi2f02p8wbsoz9r7)
+• Adimec Technical Reference (https://anl.box.com/s/zyyt72lhttnhksgnwi2f02p8wbsoz9r7)
+
+
+|-- ### VieWorks 604MP
 
 Test at txmthree:
 
@@ -596,7 +654,8 @@ Camera browser:
 
   <image vieworks.png: tomo_user>
 
-### Lenses
+
+|-- ## Lenses
 
 These are the model/part number of the microscope objective available at  at 2-BM:
 
@@ -610,7 +669,8 @@ Mitutoyo 2x   NT46-145    20x           20      0.42
 
 The purchase record can be found at lens_order_00001 (https://apps.inside.anl.gov/paris/req.jsp?reqNbr=F0-144093), lens_order_00002 (https://apps.inside.anl.gov/paris/req.jsp?reqNbr=F1-153142), lens_order_00003 (https://apps.inside.anl.gov/paris/req.jsp?reqNbr=F1-165089).
 
-### Scintillators
+
+|-- ## Scintillators
 
 Source    Type    Thickness (μm) Size (mm) Specification           Order Ref.
 ----------------------------------------------------------------------------------
@@ -629,19 +689,14 @@ Crytur    LuAG:Ce 10             10        glued on 1 mm quartz.   crytur_order_
 Crytur    LuAG:Ce 10             10        glued on 0.17 mm quartz crytur_order_01
 Crytur    LuAG:Ce 50             25.5                              crytur_order_02
 
-•
 
-•
+|-- ### Crytur cleaning crystal surfaces
 
-•
+1. use a mixture of HCl:HNO3 =3:2, (to remove Al coatings use NaOH)
+2. rins in DI water
 
-•
 
-•
-
-### Crytur cleaning crystal surfaces
-
-### Scintillator emissions
+|-- ### Scintillator emissions
 
 Below are the emission spectrum plots of common scintillator screens:
 
@@ -657,13 +712,15 @@ Below are the emission spectrum plots of common scintillator screens:
 
   <image scintillator_qe_06.png: tomo_user>
 
-### CCD Lens calculator
+
+|-- ## CCD Lens calculator
 
 To calculate the pixel size / resolution for an arbitrary lens/scintillator/detector combination you can use the CCD Lens calculator (https://anl.box.com/s/800n760yv7dx1332yt2rk1znstpa7wtq) to obtain the following:
 
   <image CCD_Lenses_calculator.png: tomo_user>
 
-### Visualization
+
+|-- ## Visualization
 
 To view the images collected by the detector press ImageJ on the main beamline control screen:
 
@@ -679,7 +736,13 @@ and press start at:
 
 To open the hdf files saved by the detector use:
 
-### Energy change
+1. fiji: https://imagej.net/Fiji (https://imagej.net/Fiji)
+2. hdf: plugin from https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5 (https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5)
+3. hdfview https://support.hdfgroup.org/products/java/hdfview/ (https://support.hdfgroup.org/products/java/hdfview/)
+4. argos https://github.com/titusjan/argos (https://github.com/titusjan/argos)
+
+
+|-- # Energy change
 
 The beamline x-ray energy change is managed by the energy cli (https://github.com/xray-imaging/energy) python library.
 
@@ -722,13 +785,15 @@ copied in the “File” entry of the user interface. To move the DMM to this en
 
 More information on how to operate the mctOptics user inteface is here (https://mctoptics.readthedocs.io/en/latest/usage.html).
 
-### Guide to Home-Built Electronics
+
+|-- # Guide to Home-Built Electronics
 
 Custom-built electronics are a part of many experiments at APS.  Argonne takes electrical safety seriously, and all electronics that will handle > 50 V require an inspection to show that they can safely be operated.  Many custom-built electronic units are built by researchers themselves who often lack training in electrical work.  Based on past experience, poor construction of electronics can lead to significant delays in experiments for users, limitations on experiments, and extra work for beamline staff and electrical inspectors.
 
 This document is meant to serve as a guide to users on what to do to make sure there are no undue delays in their experiments due to electrical inspection issues.
 
-### Requirements
+
+|-- ## Requirements
 
 1. Make sure that all components in the box are fixed in place, including connectors protruding from the box.  Loose components mean an almost automatic rejection.
 2. Don’t put unnecessary materials in the box.  Padding with flammable materials (paper towels or foam) will lead to an almost automatic rejection.
@@ -744,7 +809,8 @@ This document is meant to serve as a guide to users on what to do to make sure t
 
   <image bad_wiring_shrink_wrap.png: Example of poor wiring practice>
 
-### Design Suggestions
+
+|-- ## Design Suggestions
 
 • Avoid making custom-built electrical enclosures using voltages > 50 V.  For example, use an external NRTL-listed power supply to feed a box with low-voltage DC rather than making an enclosure with an AC input and a DC converter inside.  While a box with only < 50 V still needs to be well-built, it does not require an electrical inspection.
 • In the same vein, don’t unnecessarily mix low and high voltage equipment.
@@ -764,7 +830,8 @@ This document is meant to serve as a guide to users on what to do to make sure t
 
   <image wire_ferrule.png: Example of poor wiring practice>
 
-### Proximity sensors
+
+|-- # Proximity sensors
 
 While performing experiment at the APS you are required to use a Wearable Proximity Device.
 
@@ -778,10 +845,11 @@ Kiosk locations (https://anl.box.com/s/977bgwx4bd9f9ea6kz5qg466f4k4j8xk)
 
 Training slide deck (https://anl.box.com/s/rq9xs5lb5g7gjcgborx37yzx4ak2g3ta)
 
-### Remote access
+
+|-- # Remote access
 
 Remote access to beamline control computers is granted to users having a valid badge number and an active/scheduled proposal.
-To connect to 2-BM main control system please go to https://delos.aps.anl.gov (https://delos.aps.anl.gov) and login using as user name d+badge number
+To connect to 2-BM main control system please go to https://delos.aps.anl.gov and login using as user name d+badge number
 and the password you use to submit your APS prosal, then select “ARCTURUS, WS, Red Hat Enterprise Linux Workstation”.
 
   <image delos_001.png: tomo_user>
@@ -800,17 +868,21 @@ For enable users for remote access see
 • https://forge.xray.aps.anl.gov
 • https://delos.aps.anl.gov
 
-### Sample
 
-### Environment
+|-- # Sample
+
+
+|-- ## Environment
 
 The 2-BM microCT instrument has been designed to accomodate different kind of in situ cells.
 
-### Battery cell
+
+|-- ### Battery cell
 
 to be completed
 
-### Furnace
+
+|-- ### Furnace
 
 Type      Temp. Range   Atmosphere Image Contact          Loan Info            More info
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -839,12 +911,13 @@ Eurotherm 2 (right controller):
 
   <image eurotherm_03.png: ../../_images/eurotherm_03.png>
 
-### Load
 
-Type       Model     Load Range Image Commercial Contact          Info
---------------------------------------------------------------------------------
-Load cell  Custom    600 N            No         Pavel Shevchenko
-Controller Int. 9820                  Yes        Pavel Shevchenko box link l0001
+|-- ### Load
+
+Type       Model     Load Range Image                         Commercial Contact          Info
+--------------------------------------------------------------------------------------------------------
+Load cell  Custom    600 N                                    No         Pavel Shevchenko
+Controller Int. 9820            load_00003.png,load_00003.png Yes        Pavel Shevchenko box link l0001
 
   <image load_00001.png: l00001>
 
@@ -854,7 +927,8 @@ Controller Int. 9820                  Yes        Pavel Shevchenko box link l0001
 
   <image load_00003.png: l00004>
 
-### Cryo
+
+|-- ### Cryo
 
 Type     Model      Image Commercial Contact          Info
 --------------------------------------------------------------------
@@ -862,7 +936,8 @@ Cryo Jet OXFORD 800       Yes        Pavel Shevchenko box link c0001
 
   <image cryo_00001.jpg: c00001>
 
-### Pressure
+
+|-- ### Pressure
 
 Type                           Temp. Range Pressure         Image Commercial Contact          Info
 --------------------------------------------------------------------------------------------------------------
@@ -870,15 +945,13 @@ Teledyne ISCO 65D Syringe Pump             up to 20,000 psi       Yes        Mar
 Teledyne 1000D Syringe Pump    120 °C      up to 12,000 psi       Yes        Pavel Shevchenko box link p0002 1
 Vindum VP-12K dual-piston Pump 120 °C      up to 12,000 psi       Yes        Mark Rivers      web link p0003 1
 
-•
-
   <image press_00001.png: p00001>
 
   <image press_00002.png: p00002>
 
   <image press_00003.png: p00003>
 
-Epics support for the pumps: https://github.com/epics-modules/SyringePump (https://github.com/epics-modules/SyringePump). Note: modbus version should be R3-2 (or higher). To run the Teledyne 1000D Syringe Pump at 2-BM:
+Epics support for the pumps: https://github.com/epics-modules/SyringePump. Note: modbus version should be R3-2 (or higher). To run the Teledyne 1000D Syringe Pump at 2-BM:
 
   [user2bmb@arcturus,478,~]$ cd ~/epics/synApps/support/syringepump/iocBoot/iocISCO
 
@@ -890,7 +963,8 @@ opens the pump control screen:
 
   <image pump_00001.png: tomo_user>
 
-### Mounting
+
+|-- ## Mounting
 
 Samples are mounted on a custom tip (https://anl.app.box.com/folder/123584924093) as shown below:
 
@@ -898,18 +972,15 @@ Samples are mounted on a custom tip (https://anl.app.box.com/folder/123584924093
 
 this is mounted on the rotary stage using a KBT25 (http://www.thorlabs.com/thorProduct.cfm?partNumber=KBT25/M)/KBB25 (http://www.thorlabs.com/thorProduct.cfm?partNumber=KBB25/M) pair. New KBT25T kinematic (http://www.thorlabs.com/thorProduct.cfm?partNumber=KBT25T/M) could also be used.
 
-### Alignment
+
+|-- ## Alignment
 
 In order to align the sample on the center of rotation of the rotary stage 4 motorized axis are needed:
 
 • Sample Y (vertical motion)
-
 • Sample X (horizontal motion perpendicular to the beam)
-
 • Sample top X (horizontal motion above the rotary stage)
-
 • Sample top Z (horizontal motion normal to “sample top X” above the rotary stage)
-
   <image tomo_refs.png: tomo_user>
 
 Load the sample on the kinematic mount (if using the automatic alignemt cli Adjust (https://github.com/xray-imaging/adjust) use the tungsten sphere (https://www.vxb.com/0-5mm-Tungsten-Carbide-One-0-0197-inch-Dia-p/0-5mmtungstenballs.htm) as sample) then using:
@@ -918,7 +989,8 @@ Load the sample on the kinematic mount (if using the automatic alignemt cli Adju
 
 move the sample up/down by adjusting Tomo_Sam_Y in the positive/negative direction until the sample is in the field of view of detector.
 
-### Automatic
+
+|-- ### Automatic
 
 Adjust (https://github.com/xray-imaging/adjust) is a python script that automates all tomography instrument alignemt taks.
 
@@ -943,7 +1015,8 @@ then:
   user2bmb@pg10ge $ adjust roll
   user2bmb@pg10ge $ adjust pitch
 
-### Manual
+
+|-- ### Manual
 
 To center the sample on the rotation axis move the rotary stage Tomo_Rot at 0o then by adjusting the motor called “Tomo@0deg” (which is the sample stage on top of the rotary stage moving in the X director when the rotary stage at 0o) move the sample towards the center of the field of view. Finally move the Tomo_Rot at 180o then by adjusting the motor called “Tomo@1800deg” (which is the sample stage on top of the rotary stage moving in the X director when the rotary stage at 180o) move again the sample towards the center. The same process is described in the 4 steps below:
 
@@ -951,22 +1024,28 @@ To center the sample on the rotation axis move the rotary stage Tomo_Rot at 0o t
 
 Note: “Tomo_Sam_X” is used to align the center of rotation in respect to the beam, not to align samples on the rotation axis. While moving the sample vertically with Tomo_Sam_Y, some parasitic motions might detune “Tomo_Sam_X” by few μm. Therefore, it is expected to realign Tomo_Sam_X from one sample to another but only within few μm range.
 
-### Video Demo
+|-- # Video Demo
 
 Video 1 (https://anl.box.com/s/qc6ab5ozbc8ehjoc96xdgpa2k2u5hesu): How to use tomostream with zooming, changing rotation speed, and data capturing
 
-### Visible Lens
+
+|-- # Visible Lens
 
 We installed an Optique Peter (http://www.optiquepeter.com/) system for visible light detection (https://anl.box.com/s/mib4c51emgr6dj8hs2e2qu3g1ozearsg)
 at synchrotron facility (https://anl.box.com/s/y7dvpe53laghdmjwnmm63ztfks6l4ltd).
 
-### Triple Objective
+
+|-- ## Triple Objective
 
   <image optique_peter_triple.png: tomo_user>
 
+1. Manuals (https://anl.app.box.com/folder/138012188876)
+2. Specs (https://anl.box.com/s/8j9pkf96bkrijataekvnpjfmw89wzfdk)
+
 Reference documentation (https://anl.box.com/s/ppb53bvkusbzvnx3j5ezgjsic4yetz81)
 
-## Operation
+
+|- # Operation
 
 This section contains beamline operation instructions.
 
@@ -997,11 +1076,14 @@ This section contains beamline operation instructions.
 25. Web Cam
 26. Windows
 
-### AreaDetector
 
-### Install directions
+|-- # AreaDetector
 
-### Build EPICS base
+
+|-- ## Install directions
+
+
+|-- ### Build EPICS base
 
 Warning
 
@@ -1015,13 +1097,17 @@ $ git clone https://github.com/epics-base/epics-base.git
 $ cd epics-base
 $ make -sj
 
+
+ (https://github.com/epics-base/epics-base)
+
   $ git clone https://github.com/epics-base/epics-base.git
   $ cd epics-base
   $ make -sj
 
-### Build ADSimDetector
 
-Copy in ~/epics assemble_synApps.sh making sure
+|-- ### Build ADSimDetector
+
+Copy in ~/epics assemble_synApps.sh (https://docs2bm.readthedocs.io/en/latest/_downloads/1d614a4d479109280142250a420432b2/assemble_synApps.sh) making sure
 
   EPICS_BASE=/home/beams/USER2BMB/epics/epics-base
 
@@ -1104,7 +1190,8 @@ Build with:
 
   $ make -sj
 
-### Testing ADSimDetector
+
+|-- ### Testing ADSimDetector
 
   cd ~/epics/synApps/support/areaDetector-master/ADSimDetector/iocs/simDetectorIOC/iocBoot/iocSimDetector
 
@@ -1139,7 +1226,8 @@ to:
   medm -x -macro "P=13SIM1:, R=cam1:" ../../../../simDetectorApp/op/adl/simDetector.adl &
   ../../bin/linux-x86_64/simDetectorApp st.cmd.linux
 
-### Start ADSimDetector
+
+|-- #### Start ADSimDetector
 
   ./start_epics
 
@@ -1147,11 +1235,12 @@ to:
 
   <image ADSim_01.png: ADSim_01>
 
-### Install ADAravis
+
+|-- ## Install ADAravis
 
 Detailed instructions are here (https://areadetector.github.io/master/ADAravis/ADAravis.html).
 
-Make sure the assemble_synApps.sh script includes:
+Make sure the assemble_synApps.sh (https://docs2bm.readthedocs.io/en/latest/_downloads/1d614a4d479109280142250a420432b2/assemble_synApps.sh) script includes:
 
   git submodule update ADAravis
   git submodule update ADGenICam
@@ -1161,7 +1250,7 @@ in the
   if [[ $AREA_DETECTOR ]]
       then
 
-section, the run assemble_synApps.sh again and build ADGenICam
+section, the run assemble_synApps.sh (https://docs2bm.readthedocs.io/en/latest/_downloads/1d614a4d479109280142250a420432b2/assemble_synApps.sh) again and build ADGenICam
 
   $ cd ~/epics/synApps/support/areaDetector-R3-11/ADGenICam
   $ make -sj
@@ -1183,7 +1272,8 @@ then build ADAravis:
   cd /epics/synApps/support/areaDetector-R3-11/ADAravis/
   make -sj
 
-### Testing ADAravis
+
+|-- ### Testing ADAravis
 
   cd areaDetector-R3-11/ADAravis/iocs/aravisIOC/iocBoot/iocAravis
 
@@ -1217,17 +1307,19 @@ edit the start_epics file as follows:
 
   ../../bin/linux-x86_64/ADAravisApp st.cmd.Oryx_51S5
 
-### Start ADAravis
+
+|-- #### Start ADAravis
 
   ./start_epics
 
   <image ADAravis_00.png: ADSim_00>
 
-### Install ADSpinnaker
+
+|-- ## Install ADSpinnaker
 
 Detailed instructions are at the areadetector doc page (https://areadetector.github.io/master/ADSpinnaker/ADSpinnaker.html).
 
-Make sure the assemble_synApps.sh script includes:
+Make sure the assemble_synApps.sh (https://docs2bm.readthedocs.io/en/latest/_downloads/1d614a4d479109280142250a420432b2/assemble_synApps.sh) script includes:
 
   git submodule update ADSpinnaker
   git submodule update ADGenICam
@@ -1237,7 +1329,7 @@ in the
   if [[ $AREA_DETECTOR ]]
       then
 
-section, the run assemble_synApps.sh again and build ADGenICam
+section, the run assemble_synApps.sh (https://docs2bm.readthedocs.io/en/latest/_downloads/1d614a4d479109280142250a420432b2/assemble_synApps.sh) again and build ADGenICam
 
   $ cd ~/epics/synApps/support/areaDetector-R3-11/ADGenICam
   $ make -sj
@@ -1261,7 +1353,8 @@ then build ADSpinnaker:
   cd /epics/synApps/support/areaDetector-R3-11/ADSpinnaker/
   make -sj
 
-### Testing ADSpinnaker
+
+|-- ### Testing ADSpinnaker
 
   cd areaDetector-R3-11/ADSpinnaker/iocs/spinnakerIOC/iocBoot/iocSpinnaker
 
@@ -1294,23 +1387,57 @@ edit the start_epics file as follows:
 
   ../../bin/linux-x86_64/spinnakerApp st.cmd.oryx_51S5
 
-### Start ADSpinnaker
+
+|-- #### Start ADSpinnaker
 
   ./start_epics
 
   <image ADSpinnaker_00.png: ADSim_00>
 
-### Configure NIC on 10gbit FLIR cameras
+
+|-- ## Configure NIC on 10gbit FLIR cameras
+
+1. Prerequisites:
+
+64GB memory
+Cat 6A cable
+Intel X550T2 ETHERNET CONVERGED Network Adapter X550-T2
+2. Enable jumbo packet
+3. Disable DHCP and set a fixed IP address on the Ethernet port connecting to the FLIR
+4. Increase the receive buffer size (MTU ~ 9000)
+5. Increase the Network parameters in the kernel
+6. Set the NIC tx queue length
 
 64GB memory
 Cat 6A cable
 Intel X550T2 ETHERNET CONVERGED Network Adapter X550-T2
 
-FLIR doc: https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/ (https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/)
+1. is available from Sorcium as Part#: 3E9073
+2. FLIR doc: https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/
 
-FLIR doc: https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/ (https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/)
+ (https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/)
+ 2.1. and 4. are documented at:
 
-areadetector doc: https://areadetector.github.io/master/ADGenICam/ADGenICam.html#linux-usb-and-gige-system-settings (https://areadetector.github.io/master/ADGenICam/ADGenICam.html#linux-usb-and-gige-system-settings)
+FLIR doc: https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/
+
+1. is documented both at flir doc and in the areadetector doc:
+
+FLIR doc: https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/
+areadetector doc: https://areadetector.github.io/master/ADGenICam/ADGenICam.html#linux-usb-and-gige-system-settings
+
+ (https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/)
+2. edit /etc/sysctl.conf and add:
+
+net.core.rmem_default=26214400
+net.core.rmem_max=268435456
+3. edit /etc/rc.local and add:
+
+#NIC camera settings and  10GB nic settings  In this example the camera is attached to  ens1f1
+/usr/sbin/ifconfig ens1f1 txqueuelen 3000 (this is hardware specific . i.e. this card  supports up to 4096, some max out at about 512 etc.)
+
+FLIR doc: https://www.flir.com/support-center/iis/machine-vision/knowledge-base/lost-ethernet-data-packets-on-linux-systems/
+
+areadetector doc: https://areadetector.github.io/master/ADGenICam/ADGenICam.html#linux-usb-and-gige-system-settings
 
 net.core.rmem_default=26214400
 net.core.rmem_max=268435456
@@ -1318,9 +1445,11 @@ net.core.rmem_max=268435456
 #NIC camera settings and  10GB nic settings  In this example the camera is attached to  ens1f1
 /usr/sbin/ifconfig ens1f1 txqueuelen 3000 (this is hardware specific . i.e. this card  supports up to 4096, some max out at about 512 etc.)
 
-### Alignment
 
-### Single
+|-- # Alignment
+
+
+|-- ## Single
 
 For a single tomography data collection, the python script Adjust (https://github.com/xray-imaging/adjust) fully automates all tomography instrument alignemt taks.
 
@@ -1329,6 +1458,12 @@ For a single tomography data collection, the python script Adjust (https://githu
 Adjust (https://github.com/xray-imaging/adjust)  works in combination with a 0.5 mm tungsten sphere (https://www.vxb.com/0-5mm-Tungsten-Carbide-One-0-0197-inch-Dia-p/0-5mmtungstenballs.htm) that needs to be installed as a sample on top of the rotary stage making sure is in the field of view at least when the rotation axis is at 0 and 10 degrees.
 
 Adjust (https://github.com/xray-imaging/adjust)’s funtions include automatic finding of:
+
+1. detector pixel size
+2. scintillator focus location
+3. rotation axis location
+4. centering of the sample on the rotation axis
+5. rotation axis pitch and roll
 
 First step is to mesaure the image pixel size by running:
 
@@ -1341,7 +1476,8 @@ then:
   user2bmb@pg10ge $ adjust roll
   user2bmb@pg10ge $ adjust pitch
 
-### Mosaic
+
+|-- ## Mosaic
 
 For mosaic tomography data collection, the horizonal translation stage (X) needs to precisely align so that during the X translation the sample does not move up or down. This can be accomplished by the following steps (https://anl.box.com/s/7ltz0oyxbxmo5ufy5s0tnlhwx0qh75wu) :
 
@@ -1353,11 +1489,20 @@ For mosaic tomography data collection, the horizonal translation stage (X) needs
 
   <image mosaic_align_04.png: tomo_user>
 
-### Sample motor stack
+
+|-- ## Sample motor stack
 
 The sample motor stack consists of:
 
-### Swivel Stages
+1. Sample top X (horizontal motion above the rotary stage)
+2. Sample top Z (horizontal motion normal to “sample top X” above the rotary stage)
+3. Sample Y (vertical motion)
+4. Sample Swivel Stage (2 axes roll and pitch motion)
+5. Sample Y (vertical motion)
+6. Sample X (horizontal motion perpendicular to the beam)
+
+
+|-- ### Swivel Stages
 
 we have different sets of swivel stages:
 
@@ -1370,7 +1515,8 @@ Station Descriptiom Model           Image Radius (mm) Base size (mm) Angular ran
 
   <image kohzu_00002.png: 00002>
 
-### Rotary Stages
+
+|-- ### Rotary Stages
 
 we have different sets of rotary stages:
 
@@ -1388,7 +1534,8 @@ Station Descriptiom Model             Image Controller                 Speed (rp
 
 (*) replaced with ENSEMBLEML10-40-IO-MXH
 
-### Ensemble
+
+|-- ### Ensemble
 
 The Ensemble Parameter Setup currently in use at 2-BM-A and 2-BM-B stations can found at Ensemble Settings (https://anl.app.box.com/s/serp2nlyzk0ljvpqczc3btm7ikn9pvlj)
 
@@ -1399,11 +1546,13 @@ Encoder scale factor           148               45
 Encoder pulses per revolution  532800            532800            pulses/rev
 Encoder resolution             0.000675675675676 0.000675675675676 deg/pulse
 
-### PSO
+
+|-- ### PSO
 
 Details on the Position Synchronized Output (PSO) are in the Aerotech Manual (https://anl.box.com/s/l43qkqlhy21f4a8wetmrqbeqz9c7am72)
 
-### Check list
+
+|-- # Check list
 
 At the beginning of a new user beamtime login into user2bmb@arcturus then:
 
@@ -1438,11 +1587,13 @@ At the end of the user beamtime make a Globus copy between
 
 and the same YYYY-MM/PI_lastName/ on  petrel (https://app.globus.org/file-manager?origin_id=e133a81a-6d04-11e5-ba46-22000b92c6ec&origin_path=%2F2-BM%2F).
 
-### Computing
+
+|-- # Computing
 
 The following computers are in use in the Imaging Group:
 
-### Data Analysis and Storage
+
+|-- ## Data Analysis and Storage
 
 Station Name       Product     Part list  Model                       Quote
 --------------------------------------------------------------------------------------
@@ -1451,7 +1602,8 @@ Station Name       Product     Part list  Model                       Quote
 2-BM    tomo 4-5   MNJ16235754 cluster_02 Supermicro 220GQ-TNAR+ node cluster_quote_02
 2-BM    disk array MNJ15508749 disk_array SYS-220U-TNR Storage        disk_array_quote
 
-### Data Collection
+
+|-- ## Data Collection
 
 Station Name   Model            Product No. Serial No.   Manual
 ------------------------------------------------------------------
@@ -1460,11 +1612,13 @@ Station Name   Model            Product No. Serial No.   Manual
 
 For each machine part list at purchase time and for the list of supported hardware enter the serial numeber in the HP support (https://partsurfer.hp.com/Search.aspx) web page.
 
-### Data Visualization
+
+|-- ## Data Visualization
 
 The default computer is handyn where the following software is installed:
 
-### Raw Data
+
+|-- ### Raw Data
 
 To view the tomographic raw data we suggest to install Fiji (https://imagej.net/Fiji) and add
 the HDF plugin (https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5)
@@ -1478,7 +1632,8 @@ the HDF plugin (https://github.com/paulscherrerinstitute/ch.psi.imagej.hdf5)
 Other options are hdfview (https://support.hdfgroup.org/products/java/hdfview/) or
 argos (https://github.com/titusjan/argos)
 
-### Dragonfly
+
+|-- ### Dragonfly
 
 After your data are reconstructed you can visualize using Dragonfly (https://www.theobjects.com/dragonfly/index.html).
 
@@ -1487,7 +1642,8 @@ Login at the beamline Linux machine and then type:
   [tomo@handyn]$ cd /local/tomo/software/dragonfly
   [tomo@handyn]$ ./Dragonfly
 
-### Continuous rotation
+
+|-- # Continuous rotation
 
 You can set multiple rotation tomographic data sets to be collected continuously by simply setting a larger number of angles
 in the  tomoScan control screen (https://tomoscan.readthedocs.io/en/latest/tomoScanApp.html#medm-files). For example to collect 100 (0-180) data sets
@@ -1497,13 +1653,15 @@ Warning
 
 because of variable type and memory allocation in the hardware controlling the fly scan there is a limitation on the maximum number of angular positions at which you can trigger the collection of an image (this is set at 2-BM-A at 400,000). Also, the angle step must be selected so that the resulting stop angle is less than 65,283 degree (181 full rotations). This is because the controller can only count +/- 2^31 encoder counts from the zero point and with the ABR250 a range of +/- 2^31-1 encoder pulses at 0.0000304 deg/pulse corresponds to +/- 65,283 deg.
 
-### Cross crosshair
+
+|-- # Cross crosshair
 
 While running TomoScan you can enable the crosshair on the detector image by setting up the plug-in as shown in the image below:
 
   <image crosshair.png: tomo_user>
 
-### Data Management
+
+|-- # Data Management
 
 Data ownership and local storage location is managed by Dmagic (https://dmagic.readthedocs.io/en/latest/index.html) by automatically retrieving user information from the APS scheduling system and updating the user info PVs at:
 
@@ -1552,7 +1710,8 @@ For more details see the DM instruction (https://confluence.aps.anl.gov/display/
 
 Petrel#tomography status is avaialble here (https://virtualhelpdesk.cels.anl.gov/blog/).
 
-### Example
+
+|-- ## Example
 
 Upload data from tomo1:/data to voyager:
 
@@ -1580,7 +1739,8 @@ Once the experiment is created you can enter in the Data Directory or single fil
 
   <image dm_05.png: dm>
 
-### Delete
+
+|-- ## Delete
 
 To delete files already uploaded to voyager use:
 
@@ -1593,7 +1753,8 @@ To delete files already uploaded to voyager use:
 
   Proceed (yes|no)? [no]: yes
 
-### Energy change
+
+|-- # Energy change
 
 The beamline x-ray energy change is managed by the energy cli (https://github.com/xray-imaging/energy) python library.
 
@@ -1609,19 +1770,25 @@ for help:
 
 More detailed istructions are here the energy cli (https://github.com/xray-imaging/energy)
 
-### FDT data transfer
+
+|-- # FDT data transfer
 
 Fast Data Transfer (https://fast-data-transfer.github.io) is an open source application for efficient data transfers capable of
 reading and writing at disk speed over wide area networks (with standard TCP)
 
-### Linux to Linux
+
+|-- ## Linux to Linux
 
 At the APS FDT in available at /APSshare/bin/fdt.jar, in the example below replace /APSshare/bin/ with the folder
 where you installed fdt.jar.
 
 To copy data from the data collection machine (pg10ge) to the data analysis machine (tomo1):
 
+1. start the fdt server on tomo1:
+
   [tomo@tomo1]$ java -jar /APSshare/bin/fdt.jar -S
+
+1. start the data transfer from pg10ge to tomo1 using the following syntax:
 
   [user2bmb@pg10ge]$ java -jar /APSshare/bin/fdt.jar -c {remote_server} -d {remote_dir} {local_fname}
 
@@ -1629,7 +1796,8 @@ For example:
 
   [user2bmb@pg10ge]$ java -jar /APSshare/bin/fdt.jar -c tomo1 -d /data/2022-11/Kemner/ /local/data/2022-11/Kemner/*.h5
 
-### Windows to Linux
+
+|-- ## Windows to Linux
 
 To copy data from windows from:
 
@@ -1650,7 +1818,8 @@ then go to the windows machine from a dos prompt start the copy (client):
   $ cd C:\Users\se2admin\Desktop\FDT\
   $ java -jar fdt.jar -c handyn -d /local/data/Dunand/ S:\data\2019-02\Dunand\test.h5
 
-### GIT
+
+|-- # GIT
 
 The git commands to update, commit and push your local repository are:
 
@@ -1662,7 +1831,8 @@ The git commands to update, commit and push your local repository are:
 
 then go to the github repository your fork originated from and create a pull request, then merge it.
 
-### Globus
+
+|-- # Globus
 
 globus (https://github.com/decarlof/globus) is a python script that automatically creates a directory on a globus server as “year-month/pi_last_name” (or any other preset path) and sends a customizable notification email to “pi_email” that includes the URL to the shared folder.
 
@@ -1712,7 +1882,8 @@ Full help:
       email        Create folder on endpoint and send email with link to user
       dirs         Create folders on data collection and data analysis computers
 
-### Linear Stages
+
+|-- # Linear Stages
 
 Camera to detector distance can be adjusted by moving the camera on a linear stage along Z.
 
@@ -1731,13 +1902,16 @@ Start IOC for PRO 225SL-1200-ES19357 (moving the Optique Peter system in Z):
 
   [user2bmb@arcturus,~]$ 2bmbAERO start
 
-### Logs
 
-### EPICS PV logging
+|-- # Logs
+
+
+|-- ## EPICS PV logging
 
 To log and beamline PV variable use one of the tools available a 2bm tools (https://github.com/xray-imaging/2bm-tools).
 
-### Experiment logging
+
+|-- ## Experiment logging
 
 To generate user logs to be published on google slides we developed tomolog (https://tomologcli.readthedocs.io/en/latest/). tomolog creates a google slide by extracting information from the raw hdf tomography data, projection and reconstruction image data.
 
@@ -1776,11 +1950,18 @@ Commands:
   show         Show meta data extracted from -fname-name
   docs         Create in --doc-dir an rst file compatible with sphinx/readthedocs containing the DataExchange hdf file meta data
 
-### Optique Peter
 
-### Triple Objective
+|-- # Optique Peter
+
+
+|-- ## Triple Objective
 
   <image optique_peter_triple.png: tomo_user>
+
+1. Test Report (https://anl.box.com/s/y14sqiekd4tofg4617b3vgf4ll2og41p)
+2. User manual (https://anl.box.com/s/fnfh2okx1wx9n3a1h2k02r9odlqpxf5z)
+3. Manuals (https://anl.app.box.com/folder/138012188876)
+4. Specs (https://anl.box.com/s/8j9pkf96bkrijataekvnpjfmw89wzfdk)
 
 Lens Lens Mag motor position (specs) ref on lens 1 (specs) ref on lens 1 (aligned)
 ----------------------------------------------------------------------------------
@@ -1808,13 +1989,15 @@ Lens Lens Mag Scintillator material Scintillator thickness   (μm)
 
 Reference documentation (https://anl.box.com/s/ppb53bvkusbzvnx3j5ezgjsic4yetz81)
 
-### EPICS suppoort
+
+|-- ## EPICS suppoort
 
 EPICS support for the Optique Peter system is provvided by mctOpticsApp (https://mctoptics.readthedocs.io/en/latest/mctOpticsApp.html#medm-files).
 
   <image mctOptics.png: ../../_images/mctOptics.png>
 
-### Oscilloscope setup
+
+|-- # Oscilloscope setup
 
 To operate 2-BM Digita Oscilloscope under epics/medm you neet to start a soft epics IOC with:
 
@@ -1863,9 +2046,11 @@ To convert MDA files to ASCII:
 
   [user2bmb@arcturus]$ /APSshare/bin/mda2ascii
 
-### Reconstruction
 
-### tomopy-ij
+|-- # Reconstruction
+
+
+|-- ## tomopy-ij
 
 To reconstruct using the tomopy ij (https://github.com/xray-imaging/tomopy-ij):
 
@@ -1890,7 +2075,8 @@ to obtain the main tomopy-ij screen:
 
 for more details check tomopy ij (https://github.com/xray-imaging/tomopy-ij).
 
-### tomopy-cli
+
+|-- ## tomopy-cli
 
 To manually reconstruct a data set, use the tomopy cli (https://github.com/tomography/tomopy-cli):
 
@@ -1910,7 +2096,8 @@ After inspecting the reconstructed slices, you can adjust the center by editing 
 
   [tomo@handyn]$ tomopy recon  --gridrec-padding True --remove-stripe-method fw --fw-pad True --nsino-per-chunk 128 --reconstruction-type full --file-name  /local/data/2021-02/Stock/180/ --parameter-file /local/data/2021-02/Stock/180/extra_params.yaml
 
-### 360 deg data sets
+
+|-- ### 360 deg data sets
 
 To do a try reconstrution on a 0-360 deg data set run:
 
@@ -1920,11 +2107,13 @@ once the center is selected run the full reconstruction with:
 
   [tomo@handyn]$ tomopy recon --reconstruction-type full --rotation-axis-auto manual --gridrec-padding True --remove-stripe-method fw --fw-pad True  --nsino-per-chunk 128 --file-type double_fov   --file-name /local/data/2021-02/Stock/360/01_010.h5 --rotation-axis 30.0
 
-### Reference
+
+|-- # Reference
 
 Here you can find links to  2-BM technical reference material like drawings, hardware manuals etc.
 
-### Source
+
+|-- ## Source
 
 Parameters                           Value      Units
 -------------------------------------------------------------------
@@ -1938,7 +2127,8 @@ Vertical Source Size                 78         μm FWHM
 Vertical Source Divergence at 11 keV 157        μ rad FWHM
 Flux at 19.5 keV                     1.12x10^13 /sec/0.1%BW/mrad(H)
 
-### Steering correction
+
+|-- ### Steering correction
 
 To adjust the beam position Vertical Angle or Vertical Position reported in the BMP control screen:
 
@@ -1952,18 +2142,21 @@ Warning
 
 The APS steering request web page shows the green request a steering button only on the beamline authorized computer.
 
-### Filters
+
+|-- ## Filters
 
   <image filters.png: filters>
 
-### Mirror
+
+|-- ## Mirror
 
 Coating Nominal angle (mrad)
 ----------------------------
 Cr      2.657
 Pt      2.657
 
-### DMM Multi-layer
+
+|-- ## DMM Multi-layer
 
 2-BM has a double crystal multi-layer monochromator (DMM) to change energy.
 The beamline x-ray energy change is managed by the energy cli (https://github.com/xray-imaging/energy) python library.
@@ -1981,23 +2174,26 @@ More detailed instructions are here the energy cli (https://github.com/xray-imag
 
 Technical infomation about the DMM are available at the links below:
 
-Station Descriptiom Images Info
--------------------------------------------------------------------------------------
-2-BM-A  DMM         ,      drawings1, drawings2, crystals specs, documentation folder
+Station Descriptiom Images                Info
+----------------------------------------------------------------------------------------------------
+2-BM-A  DMM         dmm_01.png,dmm_02.png drawings1, drawings2, crystals specs, documentation folder
 
   <image dmm_01.png: 00001>
 
   <image dmm_02.png: 00002>
 
-### Beam-Sample Distance
+
+|-- ## Beam-Sample Distance
 
 The distance between the table and the scintillator center (current setup) at 2-BM-B is 415 mm
 
-### Slits Drawings
+
+|-- ## Slits Drawings
 
 The slits at 2-BM are standard APS L3-20. Technical as-built drawings are available here (https://anl.box.com/s/sgmoux6db8tsx71pvifzkf2ajopfidqx).
 
-### Rotary Stages
+
+|-- # Rotary Stages
 
 we have different sets of rotary stages:
 
@@ -2007,8 +2203,6 @@ Station Descriptiom Ensemble Settings Model             Image Controller        
 2-BM-A  fast tomo   Ensemble Settings ABS250MP-M-AS           ENSEMBLEHLE10-40-A-MXH (*) 500         66              box link 0004, box link 0003, order 0005
 2-BM-B  mona tomo   Ensemble Settings ABRS-150MP-M-AS         ENSEMBLEHLE10-40-A-MXH (*) 500         8               box link 0004, order 0006
 
-•
-
   <image aerotech_00001.png: 00003>
 
   <image aerotech_00002.png: 00004>
@@ -2017,7 +2211,8 @@ Station Descriptiom Ensemble Settings Model             Image Controller        
 
 (*) replaced with ENSEMBLEML10-40-IO-MXH
 
-### Ensemble
+
+|-- ## Ensemble
 
 The Ensemble Parameter Setup currently in use at 2-BM-A and 2-BM-B stations can found at Ensemble Settings (https://anl.app.box.com/s/serp2nlyzk0ljvpqczc3btm7ikn9pvlj)
 
@@ -2028,11 +2223,13 @@ Encoder scale factor           148               45
 Encoder pulses per revolution  532800            532800            pulses/rev
 Encoder resolution             0.000675675675676 0.000675675675676 deg/pulse
 
-### PSO
+
+|-- ## PSO
 
 Details on the Position Synchronized Output (PSO) are in the Aerotech Manual (https://anl.box.com/s/l43qkqlhy21f4a8wetmrqbeqz9c7am72)
 
-### Scanning
+
+|-- # Scanning
 
 A regular tomographic scan at 2-BM consists of a series of projections collected in fly scan mode and a set of dark/flat images collected before/after/both the projections. These tasks are accomplished by tomoScan (https://tomoscan.readthedocs.io/en/latest/index.html). 2-BM can also collect tomographic data in streaming mode. In this case projections and dark/flat images are broadcasted as EPICS PVs and the actual data saving only occurs on-demand. The data collected in streaming mode is accomplished by tomoScanStream (https://tomoscan.readthedocs.io/en/latest/api/tomoscan_stream_2bm.html). During the streaming data collection, a real-time 3-orthogonal slice reconstruction is also generated using tomoStream (https://tomostream.readthedocs.io/en/latest/about.html)
 
@@ -2052,14 +2249,16 @@ To start the main tomography control screens for 2-BM-A or 2-BM-B for scanning o
 
   <image tomo_03.png: tomo_03>
 
-### TomoScan
+
+|-- ## TomoScan
 
 • Startup
 • Data collection
 
 There are 2 installation of tomoScan at 2-BM to support tomography in the A and B stations.
 
-### Startup
+
+|-- ### Startup
 
 For experiments in 2-BM-A:
 
@@ -2071,9 +2270,80 @@ for experiments in 2-BM-B:
 
 a_tomoscan_start.sh and b_tomoscan_start.sh for scripts content.
 
+
+|--- # a_tomoscan_start.sh
+
+  gnome-terminal --tab --title "ADetector IOC" -- bash -c "ssh -t user2bmb@pg10ge \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh stop; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh start; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh console; \
+  bash'" 
+
+  gnome-terminal --tab --title "ADetector UI" -- bash -c "ssh -t user2bmb@pg10ge \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh medm; csh'" 
+
+  sleep 10
+
+  gnome-terminal --tab --title "tomoScan IOC" -- bash -c "ssh -t user2bmb@pg10ge \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  pkill -9 tomoScanApp; \
+  ./start_IOC;\
+  bash'" 
+
+  sleep 5
+
+  gnome-terminal --tab --title "tomoScan py server" -- bash -c "ssh -t user2bmb@pg10ge \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  bash -c \"source ~/.bashrc; python -i start_tomoscan.py\";\
+  bash'" 
+
+  gnome-terminal --tab --title "tomoScan UI" -- bash -c "ssh -t user2bmb@pg10ge \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  ./start_medm; \
+  csh'"
+
+
+|--- # b_tomoscan_start.sh
+
+  gnome-terminal --tab --title "ADetector IOC" -- bash -c "ssh -t user2bmb@lyra \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh stop; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh start; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh console;\
+  sleep 12;\
+  caput 2bmbPG1:cam1:Acquire 1\
+  csh'" 
+
+  sleep 10
+
+  gnome-terminal --tab --title "ADetector UI" -- bash -c "ssh -t user2bmb@lyra \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh medm; csh'" 
+
+  gnome-terminal --tab --title "tomoScan IOC" -- bash -c "ssh -t user2bmb@lyra \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  pkill -9 tomoScanApp; \
+  ./start_IOC;\
+  bash'" 
+
+  sleep 4
+
+  gnome-terminal --tab --title "tomoScan py server" -- bash -c "ssh -t user2bmb@lyra \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  bash -c \"source ~/.bashrc; python -i start_tomoscan.py\";\
+  bash'" 
+
+  gnome-terminal --tab --title "tomoScan UI" -- bash -c "ssh -t user2bmb@lyra \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  ./start_medm; \
+  csh'"
+
 The tomoscan startup steps executed by a_tomoscan_start.sh for experiments in 2-BM-A are described in detail below.
 
-### Data collection
+
+|-- ### Data collection
 
 Support for tomography data collection is provided by tomoScan_2bm (https://tomoscan.readthedocs.io/en/latest/api/tomoscan_2bm.html) a tomoScan (https://tomoscan.readthedocs.io/en/latest/index.html) derived classes to implement the data collection at 2-BM. To run tomoScan (https://tomoscan.readthedocs.io/en/latest/index.html) in 2-BM-A:
 
@@ -2230,14 +2500,16 @@ To reset the tomoscan-cli status:
 
 after deleting the tomoscan.conf file if already exists.
 
-### TomoStream
+
+|-- ## TomoStream
 
 There are 2 major components supporting streaming at 2-BM:
 
 • Streaming data collection
 • Streaming data reconstruction
 
-### Startup
+
+|-- ### Startup
 
 To start streaming data collection and streaming data reconstruction run tomostream_start.sh,
 
@@ -2251,9 +2523,123 @@ for experiments in 2-BM-B:
 
 a_tomostream_start.sh and b_tomostream_start.sh for scripts content.
 
+
+|--- # a_tomostream_start.sh
+
+  gnome-terminal --tab --title "ADetector IOC" -- bash -c "ssh -t user2bmb@pg10ge \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh stop; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh start; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh console; \
+  bash'" 
+
+  gnome-terminal --tab --title "ADetector UI" -- bash -c "ssh -t user2bmb@pg10ge \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/iocSpinnaker/softioc/2bmbSpinnaker.sh medm; csh'" 
+
+  sleep 10
+
+  gnome-terminal --tab --title "tomoScan IOC" -- bash -c "ssh -t user2bmb@pg10ge \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  pkill -9 tomoScanApp; \
+  ./start_IOC;\
+  bash'"
+
+  sleep 5
+
+  gnome-terminal --tab --title "tomoScan py server" -- bash -c "ssh -t user2bmb@pg10ge \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  bash -c \"source ~/.bashrc; python -i start_tomoscan_stream.py\";\
+  bash'" 
+
+  gnome-terminal --tab --title "tomoScan UI" -- bash -c "ssh -t user2bmb@pg10ge \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  ./start_medm; \
+  csh'" 
+
+  gnome-terminal --tab --title "tomoStream IOC" -- bash -c "ssh -t tomo@handyn \
+  'cd /local/tomo/epics/synApps/support/tomostream/iocBoot/iocTomoStream/; \
+  pkill -9 tomoStreamApp; \
+  ./start_IOC;\
+  bash'" 
+
+  sleep 5
+
+  gnome-terminal --tab --title "tomoStream py server" -- bash -c "ssh -t tomo@handyn \
+  'cd /local/tomo/epics/synApps/support/tomostream/iocBoot/iocTomoStream/; \
+  bash -c \"source ~/.bashrc; conda activate streaming; python -i start_tomostream.py\";\
+  bash'" 
+
+  sleep 5
+
+  gnome-terminal --tab --title "tomoStream UI" -- bash -c "ssh -t tomo@handyn \
+  'cd /local/tomo/epics/synApps/support/tomostream/iocBoot/iocTomoStream/; \
+  ./start_medm; \
+  csh'" 
+
+  # gnome-terminal --tab --title "tomo UI" -- bash -c "ssh -t user2bmb@arcturus \
+  # './start_tomo_adm; \
+  # csh'"
+
+
+|--- # b_tomostream_start.sh
+
+  gnome-terminal --tab --title "ADetector IOC" -- bash -c "ssh -t user2bmb@lyra \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh stop; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh start; \
+  sleep 1; \
+  /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh console;\
+  sleep 12;\
+  caput 2bmbPG1:cam1:Acquire 1\
+  csh'" 
+
+  sleep 10
+
+  gnome-terminal --tab --title "ADetector UI" -- bash -c "ssh -t user2bmb@lyra \
+  '/net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-1/iocs/spinnakerIOC/iocBoot/ioc2bmbSP1/softioc/2bmbPG1.sh medm; csh'" 
+
+  gnome-terminal --tab --title "tomoScan IOC" -- bash -c "ssh -t user2bmb@lyra \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  pkill -9 tomoScanApp; \
+  ./start_IOC;\
+  bash'" 
+
+  sleep 4
+
+  gnome-terminal --tab --title "tomoScan py server" -- bash -c "ssh -t user2bmb@lyra \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  bash -c \"source ~/.bashrc; python -i start_tomoscan_stream.py\";\
+  bash'" 
+
+  gnome-terminal --tab --title "tomoScan UI" -- bash -c "ssh -t user2bmb@lyra \
+  'cd /local/user2bmb/epics/synApps/support/tomoscan/iocBoot/iocTomoScan_2BM/; \
+  ./start_medm; \
+  csh'" 
+
+  gnome-terminal --tab --title "tomoStream IOC" -- bash -c "cd /local/tomo/epics/synApps/support/tomostream/iocBoot/iocTomoStream/; \
+  ./start_IOC; \
+  bash" 
+
+  sleep 3
+
+  gnome-terminal --tab --title "tomoStream py server" -- bash -c "cd /local/tomo/epics/synApps/support/tomostream/iocBoot/iocTomoStream/; \
+  bash -c \"source ~/.bashrc; source activate streaming; python -i start_tomostream.py;\" \
+  bash" 
+
+
+  gnome-terminal --tab --title "tomoStream UI" -- bash -c "cd /local/tomo/epics/synApps/support/tomostream/iocBoot/iocTomoStream/; \
+  ./start_medm; \
+  bash" 
+
+  # gnome-terminal --tab --title "tomo UI" -- bash -c "ssh -t user2bmb@arcturus \
+  # './start_tomo_adm; \
+  # csh'"
+
 The streaming data collection and streaming data reconstruction startup steps executed by b_tomostream_start.sh for experiments in 2-BM-B are described in detail below.
 
-### Streaming data collection
+
+|-- ### Streaming data collection
 
 Support for streaming data collection is provided by tomoScanStream (https://tomoscan.readthedocs.io/en/latest/api/tomoscan_stream_2bm.html) a tomoScan (https://tomoscan.readthedocs.io/en/latest/index.html) derived classes to implement the streaming data collection. To run tomoScanStream (https://tomoscan.readthedocs.io/en/latest/api/tomoscan_stream_2bm.html) in 2-BM-B:
 
@@ -2292,7 +2678,7 @@ Start tomoScanStream
 
 Streaming data collection features can be controlled from the Streaming Control section and includes:
 
-• On-demand data capturing with saving in a standard Data Exchange hdf5file
+• On-demand data capturing with saving in a standard Data Exchange hdf5file (https://dxfile.readthedocs.io/en/latest/source/xraytomo.html)
 • Set a number of projectons (“Pre count”) collected before a triggered data capturing event to be also saved in the same hdf5 file
 • binning data streaming
 
@@ -2365,11 +2751,13 @@ The PVA name broadcasting the recontruction can be set in the tomoStream/Epics P
 
 While the sample is rotating is possible to optimize instrument (alignment, focus, sample to detector distance etc.) and  beamline (energy etc.) conditions and monitor the effect live on the 3 orthogonal slices. It is also possible to automatically trigger data capturing based on events occurring in the sample and its environment as a result of segmentation or machine learning.
 
-### Slack
+
+|-- # Slack
 
 There are several tools support Slack integration with the beamline opereration, these include:
 
-### slack gup
+
+|-- ## slack gup
 
 Slack GUP (https://github.com/xray-imaging/slack-gup) Creates a slack channel using General User Proposal (GUP) number (GUP-#) and invites in the channel all users listed in the proposal. To use slack gup
 
@@ -2428,7 +2816,8 @@ For help:
     --config FILE         File name of configuration (default: /home/beams/USERTXM/slack.conf)
     --verbose             Verbose output (default: True)
 
-### slack bot
+
+|-- ## slack bot
 
 Slack bot (https://github.com/xray-imaging/slack-bot) automatical responds to predefined keywords, i.e. ring, energ, users etc., returning a list of PV name/value associated with that keywords.
 
@@ -2443,7 +2832,8 @@ usage:
 
   <image slack_bot_ring.png: ../../_images/slack_bot_ring.png>
 
-### pv logger
+
+|-- ## pv logger
 
 pv logger (https://github.com/xray-imaging/pv) provides an EPICS PV logger with slack support
 
@@ -2457,13 +2847,15 @@ usage:
 
   <image pv_slack.png: ../../_images/pv_slack.png>
 
-### User mail list
+
+|-- # User mail list
 
 Actvive 2-BM user contact information is available below:
 
-• 2020 03
+• 2020 03 (https://anl.box.com/s/4vzs8tzxrq4ikrhhuqvkpowqikxg83mz)
 
-### Vibration Monitors
+
+|-- # Vibration Monitors
 
 The APS provides a list of EPICS PVs monitoring the vibration (https://ops.aps.anl.gov/logging/VMS.html) of the APS floor.
 To access the PVs:
@@ -2475,13 +2867,15 @@ live plots (https://ops.aps.anl.gov/VMS/VMS.html) like the one below are also av
 
   <image vibration.png: fastTomo>
 
-### SSH key update
+
+|-- # SSH key update
 
 To update the ssh key between beamline control and detector control machines:
 
   [user2bmb@arcturus] $ ssh-copy-id remote_username@server_ip_address
 
-### Video recording
+
+|-- # Video recording
 
 To obtain comoputer screen video recording use:
 
@@ -2494,7 +2888,8 @@ You can video record an experiment with:
 
   <image recorder.png: recorder>
 
-### Web Cam
+
+|-- # Web Cam
 
 • Multi screen
 • Time Zone
@@ -2512,13 +2907,15 @@ New webcams are accessible from:
   32-ID-C: xxx.xx.102.90
   32-ID-C: xxx.xx.102.88
 
-### Multi screen
+
+|-- ## Multi screen
 
 You can dispay multiple cameras on the same web page by configurting:
 
   <image webCamMultiple.png: webCamMultiple>
 
-### Time Zone
+
+|-- ## Time Zone
 
 Warning
 
@@ -2532,7 +2929,8 @@ Also you can configure webcam preset position with:
 
   <image webCamPresetPos.png: webCamPresetPos>
 
-### Windows
+
+|-- # Windows
 
 There are few windows machines at the beamline running specific software. These are reachable via remote access with:
 
@@ -2544,7 +2942,8 @@ or directly with:
 
   xfreerdp -u username -d domain -g 1900x1000 computername
 
-## TroubleShoot
+
+|- # TroubleShoot
 
 1. Bluesky time out error
 2. Detectors
@@ -2565,7 +2964,8 @@ or directly with:
 17. User info not updating
 18. Windows remote reboot
 
-### Bluesky time out error
+
+|-- # Bluesky time out error
 
 If you get this time out error:
 
@@ -2593,17 +2993,26 @@ and you will get:
   [user2bmb@lyra,46,startup]$ caget mona:StopAcquisition
   mona:StopAcquisition           Ok
 
-### Detectors
+
+|-- # Detectors
 
 Here we list detector specific information userful for troubleshooting and configure areadetector.
 
-### HDF Plugin error
+
+|-- ## HDF Plugin error
 
 In same situation the HDF plugin for areadetector will fail to save with error=3. If this happens these steps will clear the error:
 
   <image HDF_error3.png: tomo_user>
 
-### Flir
+1. make sure TomoScan is runnung. This is because the source of the attribute “HDF5FrameLocation” is “$(TS)HDF5Location” which is used by the hdf layout file as <global name=”detector_data_destination” ndattribute=”HDF5FrameLocation” />
+2. go to the hdf plugin screen and delete the XML File name “TomoScanLayout.xml”
+3. select save and set the camera in continous data collection mode, taking images now should not show any error is gone
+4. keep the camera running, go to the hdf plugin screen and an incorrect XML File name name e.g. “TomoScanLayout.xm”
+5. enter the correct file name TomoScanLayout.xml
+
+
+|-- ## Flir
 
 The area detector IOC controlling the FLIR camera run on the linux machine named pg10ge. To check the area detector status:
 
@@ -2646,7 +3055,8 @@ If the camera is not performing at the max speed (when set at 8-bit should run a
 
 These are located in the Camera-specific features/Features #2 screen of the ADSpinnaker.adl screen. Check also the github issue (https://github.com/areaDetector/ADSpinnaker/issues/4) for more details.
 
-### Circular Buffer
+
+|-- ### Circular Buffer
 
 The circular buffer plug-in is used in streaming mode to store ‘past’ images (taken before the capture starts) so that the recording includes data ahead of the event that triggered the data saving. The maximum number of frames buffered in the NDPluginCircularBuff plugin can be increased (within the available computer memory) by editing:
 
@@ -2658,7 +3068,8 @@ in the st.cmd.base file located in /net/s2dserv/xorApps/PreBuilts/areaDetector-R
   user2bmb@pg10ge$ cd /net/s2dserv/xorApps/PreBuilts/areaDetector-R3-10/ADSpinnaker-R3-0/iocs/spinnakerIOC/iocBoot/iocSpinnaker
   user2bmb@pg10ge$ sublime st.cmd.base
 
-### Point Grey
+
+|-- ## Point Grey
 
 The area detector IOC controlling the Point Grey camera run on the linux machine named lyra. To check the area detector status:
 
@@ -2669,7 +3080,8 @@ To stop/stop area detector use
   user2bmb@pg10ge$ 2bmbPG3 start
   user2bmb@pg10ge$ 2bmbPG3 stop
 
-### EPICS ioc reboot
+
+|-- # EPICS ioc reboot
 
 To reboot the 2bma or 2bmb ioc:
 
@@ -2686,7 +3098,8 @@ Before rebooting an IOC you can verify that the autosave files are up to date wi
   [user2bmb@arcturus]$ /APSshare/epics/synApps_5_8/support/autosave-5-7-1/bin/linux-x86_64/asVerify auto_positions.sav
   [user2bmb@arcturus]$ /APSshare/epics/synApps_5_8/support/autosave-5-7-1/bin/linux-x86_64/asVerify auto_settings.sav
 
-### EPICS ioc reboot
+
+|-- # EPICS ioc reboot
 
 To reboot the 2bma or 2bmb ioc:
 
@@ -2703,26 +3116,30 @@ Before rebooting an IOC you can verify that the autosave files are up to date wi
   [user2bmb@arcturus]$ /APSshare/epics/synApps_5_8/support/autosave-5-7-1/bin/linux-x86_64/asVerify auto_positions.sav
   [user2bmb@arcturus]$ /APSshare/epics/synApps_5_8/support/autosave-5-7-1/bin/linux-x86_64/asVerify auto_settings.sav
 
-### Globus is down
+
+|-- # Globus is down
 
 All internal data transfer is handled by Globus (https://www.globus.org), if down make sure to
 start the local Globus EndPoint (https://www.globus.org/globus-connect-personal) with:
 
-### hadyn
+
+|-- ## hadyn
 
 Log in as tomo@handyn:
 
   [tomo@handyn,~]$ cd ~/Software/globusconnectpersonal-3.1.5/
   [tomo@handyn,~]$ nohup ./globusconnectpersonal -restrict-paths /local/data/ -dir $HOME/.globusonline_handyn/ -start &
 
-### mona3
+
+|-- ## mona3
 
 Log in as tomo@mona3:
 
   [tomo@mona3,~]$ cd ~/Software/globusconnectpersonal-3.1.5/
   [tomo@mona3,~]$ ./globusconnectpersonal -start -dir ~/.globusonline_mona3 -restrict-paths /local/data
 
-### pg10ge
+
+|-- ## pg10ge
 
 Log in as user2bmb@pg10ge:
 
@@ -2732,7 +3149,8 @@ Log in as user2bmb@pg10ge:
   [user2bmb@pg10ge]$ ./globusconnectpersonal -stop
   [user2bmb@pg10ge]$ ./globusconnect -start  -restrict-paths r/local/data/ &
 
-### tomo1
+
+|-- ## tomo1
 
 Log in as tomo@tomo1:
 
@@ -2741,7 +3159,8 @@ Log in as tomo@tomo1:
 
 terminal can be closed
 
-### GUI play/stop are disabled
+
+|-- # GUI play/stop are disabled
 
 If after loading a scan script in Tomo GUI (started with ~/MCT/tomography.sh) the play and stop buttons are disabled press the camera acquire/stop. If it stays disabled is because the camera that was run last time is off and the GUI thinks the camera to be still collecting images.
 To solve the situation, go to:
@@ -2752,19 +3171,22 @@ To solve the situation, go to:
 
 and edit the TXM.ini to change the camera IOC prefix. Another option is to copy over one of the good ini present in that folder.
 
-### Linux Workstation
+
+|-- # Linux Workstation
 
 • Mouse
 • Workspace
 • Reboot
 
-### Mouse
+
+|-- ## Mouse
 
 If you need to make the mouse larger on a RedHat linux machine:
 
   $ gsettings set org.gnome.desktop.interface cursor-size 48
 
-### Workspace
+
+|-- ## Workspace
 
 To change to 5 worskpaces:
 
@@ -2774,29 +3196,34 @@ To change their names:
 
   $ /usr/bin/gsettings set org.gnome.desktop.wm.preferences workspace-names "['Com', 'Vienna', 'Test1', 'Test2','Test3']"
 
-### Reboot
+
+|-- ## Reboot
 
 Currently these machine/username have permission to reboot from the terminal:
 
   user2bmb@lyra $ sudo /usr/sbin/reboot
   user2bmb@pg10ge $ sudo /usr/sbin/reboot
 
-### Iperf
+
+|-- # Iperf
 
 To test speed between tomo1 and pg10ge:
 
   (base) user2bmb@pg10ge ~ $iperf3 -s -B 164.54.113.119
   (base) user2bmb@tomo1 ~ $iperf3 -c 164.54.113.119 -B 164.54.113.128
 
-### Make the mouse larger
+
+|-- # Make the mouse larger
 
 If you need to make the mouse larger on a RedHat linux machine:
 
   $ gsettings set org.gnome.desktop.interface cursor-size 48
 
-### Network
 
-### InfiniBand connection
+|-- # Network
+
+
+|-- ## InfiniBand connection
 
 Machines tomodata1, tomo1, and tomo2 are conencted via Mellanox Technologies MT28908 Family [ConnectX-6] rate: 100 Gb/s (4X EDR). For testing data transfer speed:
 
@@ -2808,7 +3235,8 @@ on tomo@tomo2 run a client as:
 
   sudo /bin/iperf3 -c 117.17.1.51 -B 117.17.1.52
 
-### No Machine reboot
+
+|-- # No Machine reboot
 
 If you need to reboot the NX server on handyn:
 
@@ -2822,11 +3250,13 @@ The same has been also enabled for:
   usr32idc@txmtwo$ sudo /usr/NX/bin/nxserver --restart
   fast@merlot$ sudo /usr/NX/bin/nxserver --restart
 
-### Reset user pwd
+
+|-- # Reset user pwd
 
 If you need to reset the GUP user password, please follow this instructions (https://beam.aps.anl.gov/pls/apsweb/CHANGE_MY_APS_WEB_PASSWORD_PKG.START_PAGE).
 
-### Rotary stage
+
+|-- # Rotary stage
 
 we have different sets of rotary stages:
 
@@ -2836,8 +3266,6 @@ Station Descriptiom Ensemble Settings Model             Image Controller        
 2-BM-A  fast tomo   Ensemble Settings ABS250MP-M-AS           ENSEMBLEHLE10-40-A-MXH (*) 500         66              box link 0004, box link 0003, order 0005
 2-BM-B  mona tomo   Ensemble Settings ABRS-150MP-M-AS         ENSEMBLEHLE10-40-A-MXH (*) 500         8               box link 0004, order 0006
 
-•
-
   <image aerotech_00001.png: 00003>
 
   <image aerotech_00002.png: 00004>
@@ -2846,7 +3274,8 @@ Station Descriptiom Ensemble Settings Model             Image Controller        
 
 (*) replaced with ENSEMBLEML10-40-IO-MXH
 
-### Ensemble
+
+|-- ## Ensemble
 
 The Ensemble Parameter Setup currently in use at 2-BM-A and 2-BM-B stations can found at Ensemble Settings (https://anl.app.box.com/s/serp2nlyzk0ljvpqczc3btm7ikn9pvlj)
 
@@ -2857,11 +3286,13 @@ Encoder scale factor           148               45
 Encoder pulses per revolution  532800            532800            pulses/rev
 Encoder resolution             0.000675675675676 0.000675675675676 deg/pulse
 
-### PSO
+
+|-- ## PSO
 
 Details on the Position Synchronized Output (PSO) are in the Aerotech Manual (https://anl.box.com/s/l43qkqlhy21f4a8wetmrqbeqz9c7am72)
 
-### Aerotech in 2-BM-A
+
+|-- ## Aerotech in 2-BM-A
 
 There is a 47.09 degree offset between the rotary stage home and the pthysical dial
 so when asking the motor to home (by pressing HomR or HomF buttons) the home position
@@ -2870,7 +3301,8 @@ degree when the motor physical dial is at zero set the offset as shown in the im
 
   <image rotary_a.png: tomo_user>
 
-### Aerotech in 2-BM-B
+
+|-- ## Aerotech in 2-BM-B
 
 There is a 163.3 degree offset between the rotary stage home and the pthysical dial
 so when asking the motor to home (by pressing HomR or HomF buttons) the home position
@@ -2883,7 +3315,8 @@ Warning
 
 If the rotary stage stops responding to a move command check that the torque is enabled and that there is sufficient airflow to the stage. If the stage is still not responding issue a Home command by pressing HomR or HomF button in the motor debug medm screen.
 
-### Shutters
+
+|-- # Shutters
 
 2-BM has two x-ray shutters:
 
@@ -2902,7 +3335,8 @@ If you still cannot open the shutters check that the Equipment Protection System
 • Vacuum bump casued by filter A moving with A shutter open
 • Mirror high temperature caused by A slits too wide vertically or mirror to high in the beam
 
-### Sublime editor
+
+|-- # Sublime editor
 
 if the sublime editor fails to start with:
 
@@ -2923,11 +3357,8 @@ to find the sublime’s process id # (ex. 12345), then:
   user2bmb@pg10ge$ kill -9 12345
   user2bmb@pg10ge$ sublime
 
-### None
 
-<mailto:Tomo%400deg>
-
-<mailto:Tomo%4090deg>
+|-- # None
 
 The Tomo@0deg and Tomo@90deg motors are not responding (control screes is white)
 
@@ -2951,7 +3382,8 @@ To start the 2bmS1 console:
   [user2bmb@arcturus]$ cd /net/s2dserv/xorApps/epics/synApps_5_8/ioc/2bmS1/iocBoot/ioc2bmS1Linux
   [user2bmb@arcturus]$ ../../bin/linux-x86_64/2bmS1 st.cmd
 
-### User info not updating
+
+|-- # User info not updating
 
 Log in into arcturus:
 
@@ -2959,66 +3391,57 @@ Log in into arcturus:
 
 open the admin screen then click on “Update@arcturus”
 
-### Windows remote reboot
+
+|-- # Windows remote reboot
 
 If you need to reboot a windows machine from a remote session use:
 
   Alt + F4
 
-## Ask for support
+
+|- # Ask for support
 
 Please open a ticket using the github Issue Tracker (https://github.com/decarlof/2bm-docs/issues).
 
 Contact
-
 Pavel Shevchenko
-
 email: pshevchenko@anl.gov
-
-<mailto:pshevchenko%40anl.gov>
-
 Beamline: (630) 252-1702
 
 Viktor Nikitin
-
 email: vnikitin@anl.gov
-
-<mailto:vnikitin%40anl.gov>
-
 Office: (630) 252-0148
 
 Francesco De Carlo
-
 email: decarlo@anl.gov
-
-<mailto:decarlo%40anl.gov>
-
 Office: (630) 252-0148
 
-## Publications
+|- # Publications
 
-## Credits
+
+|- ## Credits
 
 If you use beamline 2-BM for your experiment please cite [A1]
 
-Viktor Nikitin, Aniket Tekawade, Anton Duchkov, Pavel Shevchenko, and Francesco De Carlo. Real-time streaming tomographic reconstruction with on-demand data capturing and 3D zooming to regions of interest. Journal of Synchrotron Radiation, 29(3):, May 2022. URL: https://doi.org/10.1107/S1600577522003095 (https://doi.org/10.1107/S1600577522003095), doi:10.1107/S1600577522003095 (https://doi.org/10.1107/S1600577522003095).
+[A1] Viktor Nikitin, Aniket Tekawade, Anton Duchkov, Pavel Shevchenko, and Francesco De Carlo. Real-time streaming tomographic reconstruction with on-demand data capturing and 3D zooming to regions of interest. Journal of Synchrotron Radiation, 29(3):, May 2022. URL: https://doi.org/10.1107/S1600577522003095, doi:10.1107/S1600577522003095 (https://doi.org/10.1107/S1600577522003095).
 
 If you have been using tomoPy (https://tomopy.readthedocs.io/en/latest/) for the 3D reconstructions, please cite [B2]
 
 If using data from tomobank (https://tomobank.readthedocs.io) or data exchange (https://dxchange.readthedocs.io/) tools please cite [B3] and [B1]
 
-Francesco De Carlo, Doga Gursoy, Daniel Jackson Ching, Kees Joost Batenburg, Wolfgang Ludwig, Lucia Mancini, Federica Marone, Rajmund Mokso, Daniel M. Pelt, Jan Sijbers, and Mark Rivers. Tomobank: a tomographic data repository for computational x-ray science. Measurement Science and Technology, 2017. URL: https://doi.org/10.1088/1361-6501/aa9c19 (https://doi.org/10.1088/1361-6501/aa9c19).
+[B3] Francesco De Carlo, Doga Gursoy, Daniel Jackson Ching, Kees Joost Batenburg, Wolfgang Ludwig, Lucia Mancini, Federica Marone, Rajmund Mokso, Daniel M. Pelt, Jan Sijbers, and Mark Rivers. Tomobank: a tomographic data repository for computational x-ray science. Measurement Science and Technology, 2017. URL: https://doi.org/10.1088/1361-6501/aa9c19.
 
-Gürsoy D, De Carlo F, Xiao X, and Jacobsen C. Tomopy: a framework for the analysis of synchrotron tomographic data. Journal of Synchrotron Radiation, 21(5):1188–1193, 2014.
+[B2] Gürsoy D, De Carlo F, Xiao X, and Jacobsen C. Tomopy: a framework for the analysis of synchrotron tomographic data. Journal of Synchrotron Radiation, 21(5):1188–1193, 2014.
 
-De Carlo F, Gursoy D, Marone F, Rivers M, Parkinson YD, Khan F, Schwarz N, Vine DJ, Vogt S, Gleber SC, Narayanan S, Newville M, Lanzirotti T, Sun Y, Hong YP, and Jacobsen C. Scientific data exchange: a schema for hdf5-based storage of raw and analyzed data. Journal of Synchrotron Radiation, 21(6):1224–1230, 2014.
+[B1] De Carlo F, Gursoy D, Marone F, Rivers M, Parkinson YD, Khan F, Schwarz N, Vine DJ, Vogt S, Gleber SC, Narayanan S, Newville M, Lanzirotti T, Sun Y, Hong YP, and Jacobsen C. Scientific data exchange: a schema for hdf5-based storage of raw and analyzed data. Journal of Synchrotron Radiation, 21(6):1224–1230, 2014.
 
-## List
+
+|- ## List
 
 This is the up-to-date publication list (https://beam.aps.anl.gov/pls/apsweb/pub_V2_0006.query_results?i_beamline=105&I_DISCIPLINE_M=9999&i_order_by_radio=YEAR) from the 2-BM user community.
 
-# Contribute
+## Contribute
 
-• Documentation
-• Issue Tracker
+• Documentation (https://github.com/xray-imaging/2bm-docs/tree/master/docs)
+• Issue Tracker (https://github.com/xray-imaging/2bm-docs/issues)
 
