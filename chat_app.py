@@ -26,12 +26,12 @@ import params as p
 if os.path.isdir(p.tokenizer_path):
     tokenizer = AutoTokenizer.from_pretrained(p.tokenizer_path)
 else:
-    tokenizer = AutoTokenizer.from_pretrained("model_name")
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased") #AutoTokenizer.from_pretrained("model_name")
     os.mkdir(p.tokenizer_path)
     tokenizer.save_pretrained(p.tokenizer_path)
 
 #Setup pipeline
-model = AutoModelForCausalLM.from_pretrained(p.model_name, device_map="auto")#, load_in_8bit=True)
+model = AutoModelForCausalLM.from_pretrained("bert-base-uncased")#p.model_name)#, device_map="auto")#, load_in_8bit=True)
 pipe = pipeline(
     "text-generation",
     model=model, 
@@ -61,7 +61,7 @@ if p.init_docs:
     all_texts = []
     doc_path = 'APS-Science-Highlight'
     for text_fp in os.listdir(doc_path):
-        with open(os.path.join(doc_path, text_fp), 'r') as text_f:
+        with open(os.path.join(doc_path, text_fp), 'r', encoding="utf-8") as text_f:
             book = text_f.read()
         texts = text_splitter.split_text(book)
         all_texts += texts
@@ -173,65 +173,77 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         clear.click(lambda: memory1.clear(), None, chatbot, queue=False)
 
     #APS Q&A tab
-    with gr.Tab("APS Q&A"):
-
-        memory2, conversation2 = init_chain() #Init chain
-        chatbot, msg, clear = init_chat_layout() #Init layout
-
-        #Pass an empty string to context when don't want domain specific context
-        def bot(history):  
-            user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-            bot_message = conversation2.predict(input=user_message, context=get_context(user_message))
-            #Pass user message and get context and pass to model
-            history[-1][1] = "" #Replaces None with empty string -- Gradio code
-
-            for character in bot_message:
-                history[-1][1] += character
-                time.sleep(0.02)
-                yield history
-
-        msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-            bot, chatbot, chatbot #Use bot with context
-        )
-    
-        clear.click(lambda: memory2.clear(), None, chatbot, queue=False)
-
-    
-    #Document Q&A tab
     with gr.Tab("Document Q&A"):
         gr.Markdown("""
         Q&A over uploaded document
         """
         )
-        memory3, conversation3 = init_chain() #Init chain
-        chatbot, msg, clear = init_chat_layout() 
+        def loading_pdf():
+            return "Loading..."
 
-        from langchain.document_loaders import PyPDFDirectoryLoader, PyPDFLoader
-        def process_files(files):
-                loader = PyPDFLoader(files)
-                docs = loader.load()
-                return docs
+        def pdf_changes(pdf_docs, repo_id):
+    
+            for pdf_doc in pdf_docs:
+                loader = OnlinePDFLoader(pdf_doc.name)
+                documents = loader.load()
+                text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=0)
+                texts = text_splitter.split_documents(documents)
+                db = Chroma.from_documents(texts, embeddings)
+                retriever = db.as_retriever()
+                llm = HuggingFaceHub(repo_id=repo_id, model_kwargs={"temperature":0.1, "max_new_tokens":350},
+                                    huggingfacehub_api_token='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')
+                global qa 
+                qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
+
+            return "Ready"
+
+        def add_text(history, text):
+            history = history + [(text, None)]
+            return history, ""
+
+        def bot(history):
+            response = infer(history[-1][0])
+            history[-1][1] = response['result']
+            return history
+
+        def infer(question):            
+            query = question
+            result = qa({"query": query})
+            return result
+
+
+        title = """
+        <div style="text-align: center;max-width: 700px;">
+            <h1>Chat with PDF</h1>
+            <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs to LangChain" button, <br />
+            when everything is ready, you can start asking questions about the pdf ;)</p>
+            <a style="display:inline-block; margin-left: 1em"></a>
+        </div>
+        """
+
+        with gr.Column(elem_id="col-container"):
+          gr.HTML(title)
         
-        user_txt_file = gr.inputs.File(label="upload file") # button for user to upload pdf
+          with gr.Column():
+              pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
+              repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
+              with gr.Row():
+                  langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
+                  load_pdf = gr.Button("Load pdf to langchain")
+          
+          question = gr.Textbox(label="Question", placeholder="Type your question and hit Enter ")
+          submit_btn = gr.Button("Send message")
 
-        def bot(history):  
-            user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-            bot_message = conversation3.predict(input=user_message, context=user_txt_file)
-            #Pass user message and get context and pass to model
-            history[-1][1] = "" #Replaces None with empty string -- Gradio code
-
-            for character in bot_message:
-                history[-1][1] += character
-                time.sleep(0.02)
-                yield history
-
-        msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-            bot, chatbot, chatbot #Use bot with context
+        repo_id.change(pdf_changes, inputs=[pdf_doc, repo_id], outputs=[langchain_status], queue=False)
+        load_pdf.click(pdf_changes, inputs=[pdf_doc, repo_id], outputs=[langchain_status], queue=False)
+        question.submit(add_text, [chatbot, question], [chatbot, question]).then(
+            bot, chatbot, chatbot
+        )
+        submit_btn.click(add_text, [chatbot, question], [chatbot, question]).then(
+            bot, chatbot, chatbot
         )
     
-        clear.click(lambda: memory3.clear(), None, chatbot, queue=False)
-
- 
+         
     with gr.Tab("Tips & Tricks"):
         gr.Markdown("""
         1. I am not as powerful as GPT-4 or ChatGPT and I am running on cheap GPUs, if I get stuck, you can type "please continue" or similar and I will attempt to complete my thought.
