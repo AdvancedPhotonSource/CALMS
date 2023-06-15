@@ -10,6 +10,10 @@ from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.embeddings import HuggingFaceEmbeddings 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
+from langchain.document_loaders import OnlinePDFLoader
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.llms import HuggingFaceHub
+from langchain.chains import RetrievalQA
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 #Need only 1 GPU if loading 8-bit model
