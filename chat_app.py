@@ -1,3 +1,4 @@
+#pip install unstructured
 import os
 os.environ["CUDA_VISIBLE_DEVICES"]='0,2,3'
 
@@ -185,19 +186,17 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         def loading_pdf():
             return "Loading..."
 
-        def pdf_changes(pdf_docs, repo_id):
+        def pdf_changes(pdf_docs):
     
             for pdf_doc in pdf_docs:
                 loader = OnlinePDFLoader(pdf_doc.name)
                 documents = loader.load()
-                text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=0)
+                text_splitter = CharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
                 texts = text_splitter.split_documents(documents)
                 db = Chroma.from_documents(texts, embeddings)
                 retriever = db.as_retriever()
-                llm = HuggingFaceHub(repo_id=repo_id, model_kwargs={"temperature":0.1, "max_new_tokens":350},
-                                    huggingfacehub_api_token='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')
                 global qa 
-                qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
+                qa = RetrievalQA.from_chain_type(llm=local_llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
 
             return "Ready"
 
