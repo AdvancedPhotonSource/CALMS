@@ -229,7 +229,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         
           with gr.Column():
               pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
-              repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
+              #repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
               with gr.Row():
                   langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
                   load_pdf = gr.Button("Load pdf to langchain")
@@ -237,8 +237,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
           question = gr.Textbox(label="Question", placeholder="Type your question and hit Enter ")
           submit_btn = gr.Button("Send message")
 
-        repo_id.change(pdf_changes, inputs=[pdf_doc, repo_id], outputs=[langchain_status], queue=False)
-        load_pdf.click(pdf_changes, inputs=[pdf_doc, repo_id], outputs=[langchain_status], queue=False)
+        load_pdf.click(pdf_changes, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
         question.submit(add_text, [chatbot, question], [chatbot, question]).then(
             bot, chatbot, chatbot
         )
