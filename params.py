@@ -1,6 +1,6 @@
 # Env settings
 set_visible_devices = True
-visible_deices = '0,2,3'
+visible_deices = '2,3'
 
 #Load model and tokenizer
 model_name = "eachadea/vicuna-13b-1.1"

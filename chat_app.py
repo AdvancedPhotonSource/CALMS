@@ -32,7 +32,7 @@ else:
     tokenizer.save_pretrained(p.tokenizer_path)
 
 #Setup pipeline
-model = AutoModelForCausalLM.from_pretrained(p.model_name, device_map="auto")#, load_in_8bit=True)
+model = AutoModelForCausalLM.from_pretrained(p.model_name, device_map="auto", torch_dtype=torch.bfloat16)#, load_in_8bit=True)
 pipe = pipeline(
     "text-generation",
     model=model, 
