@@ -13,7 +13,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.document_loaders import OnlinePDFLoader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.llms import HuggingFaceHub
+from langchain.chains import RetrievalQA
+from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -187,18 +188,18 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
             return "Loading..."
 
         def pdf_changes(pdf_docs):
-    
             for pdf_doc in pdf_docs:
                 loader = OnlinePDFLoader(pdf_doc.name)
                 documents = loader.load()
-                text_splitter = CharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
+                text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
                 texts = text_splitter.split_documents(documents)
                 db = Chroma.from_documents(texts, embeddings)
                 retriever = db.as_retriever()
-                global qa 
-                qa = RetrievalQA.from_chain_type(llm=local_llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
-
-            return "Ready"
+                llm = local_llm 
+                global qa
+                qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
+                #result = qa({"query": 'what is the strategy of APS Scientific Computing?'})
+                return "Ready"
 
         def add_text(history, text):
             history = history + [(text, None)]
@@ -209,7 +210,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
             history[-1][1] = response['result']
             return history
 
-        def infer(question):            
+        def infer(question):
             query = question
             result = qa({"query": query})
             return result
@@ -234,6 +235,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
                   langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
                   load_pdf = gr.Button("Load pdf to langchain")
           
+          chatbot = gr.Chatbot([], elem_id="chatbot").style(height=350)
           question = gr.Textbox(label="Question", placeholder="Type your question and hit Enter ")
           submit_btn = gr.Button("Send message")
 
