@@ -1,5 +1,5 @@
 #Load model and tokenizer
-model_name = "bert-base-uncased" #"eachadea/vicuna-13b-1.1"
+model_name = "eachadea/vicuna-13b-1.1"
 tokenizer_path = "./tokenizer/"
 
 chunk_size = 384 #Size of chunks to break the text store into
