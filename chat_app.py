@@ -4,7 +4,6 @@ os.environ["CUDA_VISIBLE_DEVICES"]='0,2,3'
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
-
 from langchain.llms import HuggingFacePipeline
 from langchain import PromptTemplate, LLMChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
@@ -12,8 +11,6 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.document_loaders import OnlinePDFLoader
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.chains import RetrievalQA
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
 
@@ -32,12 +29,12 @@ import params as p
 if os.path.isdir(p.tokenizer_path):
     tokenizer = AutoTokenizer.from_pretrained(p.tokenizer_path)
 else:
-    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased") #AutoTokenizer.from_pretrained("model_name")
+    tokenizer = AutoTokenizer.from_pretrained("model_name")
     os.mkdir(p.tokenizer_path)
     tokenizer.save_pretrained(p.tokenizer_path)
 
 #Setup pipeline
-model = AutoModelForCausalLM.from_pretrained("bert-base-uncased")#p.model_name)#, device_map="auto")#, load_in_8bit=True)
+model = AutoModelForCausalLM.from_pretrained(p.model_name, device_map="auto")#, load_in_8bit=True)
 pipe = pipeline(
     "text-generation",
     model=model, 
@@ -198,7 +195,6 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
                 llm = local_llm 
                 global qa
                 qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
-                #result = qa({"query": 'what is the strategy of APS Scientific Computing?'})
                 return "Ready"
 
         def add_text(history, text):
