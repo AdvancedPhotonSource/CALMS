@@ -1,7 +1,7 @@
 import os
 import params as p
 if p.set_visible_devices:
-    os.environ["CUDA_VISIBLE_DEVICES"] = p.visible_deices
+    os.environ["CUDA_VISIBLE_DEVICES"] = p.visible_devices
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -51,40 +51,38 @@ pipe = pipeline(
 embeddings = HuggingFaceEmbeddings(model_name=p.embedding_model_name)
 embed_path = 'embeds/%s' %(p.embedding_model_name)
 
-def get_aps_literature():
-  if p.init_docs:
-      text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
-  
-      if os.path.exists(embed_path):
-          #response = input("WARNING: DELETING EXISTING EMBEDDINGS. Type \"y\" to continue.")
-  #        if response.strip() == "y":
-          if p.overwrite_embeddings:
-              shutil.rmtree(embed_path)
-          else:
-              raise ValueError("Existing Chroma Collection")
-  
-      all_texts = []
-      doc_path = 'APS-Science-Highlight'
-      for text_fp in os.listdir(doc_path):
-          with open(os.path.join(doc_path, text_fp), 'r') as text_f:
-              book = text_f.read()
-          texts = text_splitter.split_text(book)
-          all_texts += texts
-  
-      docsearch = Chroma.from_texts(
-          all_texts, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_texts))],
-          persist_directory=embed_path
-      )
-      docsearch.persist()
-  else:
-      docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
-  
-  print ("Finished embedding documents")
-  return docsearch
+if p.init_docs:
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
+
+    if os.path.exists(embed_path):
+        #response = input("WARNING: DELETING EXISTING EMBEDDINGS. Type \"y\" to continue.")
+#        if response.strip() == "y":
+        if p.overwrite_embeddings:
+            shutil.rmtree(embed_path)
+        else:
+            raise ValueError("Existing Chroma Collection")
+
+    all_texts = []
+    doc_path = 'APS-Science-Highlight'
+    for text_fp in os.listdir(doc_path):
+        with open(os.path.join(doc_path, text_fp), 'r') as text_f:
+            book = text_f.read()
+        texts = text_splitter.split_text(book)
+        all_texts += texts
+
+    docsearch = Chroma.from_texts(
+        all_texts, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_texts))],
+        persist_directory=embed_path
+    )
+    docsearch.persist()
+else:
+    docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
+
+print ("Finished embedding documents")
 
 
 #Method to find text with highest likely context
-def get_context(query, docsearch):
+def get_context(query):
     
     docs = docsearch.similarity_search_with_score(query, k=p.N_hits)
     #Get context strings
@@ -189,14 +187,13 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
 
     #APS Q&A tab
     with gr.Tab("APS Q&A"):
-        docsearch =  get_aps_literature()
         memory2, conversation2 = init_chain() #Init chain
         chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
         #Pass an empty string to context when don't want domain specific context
         def bot(history, debug_output):  
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-            context = get_context(user_message, docsearch)
+            context = get_context(user_message)
 
             if debug_output:
                 inputs = conversation1.prep_inputs({'input': user_message, 'context':context})
@@ -237,7 +234,11 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
               text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
               texts = text_splitter.split_documents(documents)
               all_pdfs += texts
+<<<<<<< HEAD
             embed_path = 'embeds/pdf'
+=======
+            embed_path = 'embeds/tmp'
+>>>>>>> 16390b74eaa304ff253e5071db6b9629a716e87b
             db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
                 persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
             db.persist()
