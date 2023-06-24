@@ -234,16 +234,17 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
             for pdf_doc in pdf_docs:
               loader = OnlinePDFLoader(pdf_doc.name)
               documents = loader.load()
-              text_splitter = CharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
+              text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
               texts = text_splitter.split_documents(documents)
               all_pdfs += texts
+            embed_path = 'embeds/pdf'
             db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
-                persist_directory=embed_path)
+                persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
             db.persist()
-            retriever = db.as_retriever()
-            llm = local_llm 
+            retriever = db.as_retriever() #retriever uses embedding model (usually sentence transformer)
             global qa
-            qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
+            qa = RetrievalQA.from_chain_type(llm=local_llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
+                #we think the retriever uses sentence transformer to do the lookup 
             return "Ready"
 
         def add_text(history, text):
