@@ -234,11 +234,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
               text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
               texts = text_splitter.split_documents(documents)
               all_pdfs += texts
-<<<<<<< HEAD
             embed_path = 'embeds/pdf'
-=======
-            embed_path = 'embeds/tmp'
->>>>>>> 16390b74eaa304ff253e5071db6b9629a716e87b
             db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
                 persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
             db.persist()
