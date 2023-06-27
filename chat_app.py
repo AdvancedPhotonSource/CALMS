@@ -1,7 +1,7 @@
 import os
 import params as p
 if p.set_visible_devices:
-    os.environ["CUDA_VISIBLE_DEVICES"] = p.visible_deices
+    os.environ["CUDA_VISIBLE_DEVICES"] = p.visible_devices
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -12,6 +12,9 @@ from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.embeddings import HuggingFaceEmbeddings 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
+from langchain.document_loaders import OnlinePDFLoader
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.chains import RetrievalQA
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 #Need only 1 GPU if loading 8-bit model
@@ -154,7 +157,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
 
     #General chat tab
     with gr.Tab("General Chat"):
-
+        
         memory1, conversation1 = init_chain() #Init chain
         chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
@@ -184,7 +187,6 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
 
     #APS Q&A tab
     with gr.Tab("APS Q&A"):
-
         memory2, conversation2 = init_chain() #Init chain
         chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
@@ -221,6 +223,76 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         Q&A over uploaded document
         """
         )
+        def loading_pdf():
+            return "Loading..."
+
+        def pdf_changes(pdf_docs):
+            all_pdfs = []
+            for pdf_doc in pdf_docs:
+              loader = OnlinePDFLoader(pdf_doc.name)
+              documents = loader.load()
+              text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
+              texts = text_splitter.split_documents(documents)
+              all_pdfs += texts
+<<<<<<< HEAD
+            embed_path = 'embeds/pdf'
+=======
+            embed_path = 'embeds/tmp'
+>>>>>>> 16390b74eaa304ff253e5071db6b9629a716e87b
+            db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
+                persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
+            db.persist()
+            retriever = db.as_retriever() #retriever uses embedding model (usually sentence transformer)
+            global qa
+            qa = RetrievalQA.from_chain_type(llm=local_llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
+                #we think the retriever uses sentence transformer to do the lookup 
+            return "Ready"
+
+        def add_text(history, text):
+            history = history + [(text, None)]
+            return history, ""
+
+        def bot(history):
+            response = infer(history[-1][0])
+            history[-1][1] = response['result']
+            return history
+
+        def infer(question):
+            query = question
+            result = qa({"query": query})
+            return result
+
+
+        title = """
+        <div style="text-align: center;max-width: 700px;">
+            <h1>Chat with PDF</h1>
+            <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs to LangChain" button, <br />
+            when everything is ready, you can start asking questions about the pdf ;)</p>
+            <a style="display:inline-block; margin-left: 1em"></a>
+        </div>
+        """
+
+        with gr.Column(elem_id="col-container"):
+          gr.HTML(title)
+        
+          with gr.Column():
+              pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
+              #repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
+              with gr.Row():
+                  langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
+                  load_pdf = gr.Button("Load pdf to langchain")
+          
+          chatbot = gr.Chatbot([], elem_id="chatbot").style(height=350)
+          question = gr.Textbox(label="Question", placeholder="Type your question and hit Enter ")
+          submit_btn = gr.Button("Send message")
+
+        load_pdf.click(pdf_changes, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
+        question.submit(add_text, [chatbot, question], [chatbot, question]).then(
+            bot, chatbot, chatbot
+        )
+        submit_btn.click(add_text, [chatbot, question], [chatbot, question]).then(
+            bot, chatbot, chatbot
+        )
  
     with gr.Tab("Tips & Tricks"):
         gr.Markdown("""
@@ -228,7 +300,6 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         2. If I don't give a satisfactory answer, try rephrasing your question. For e.g. 'Can I do high energy diffraction at the APS?' instead of 'Where can I do high energy diffraction at the APS?
         """
         )
-
 
 
     #Footer
@@ -243,3 +314,4 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
 
 demo.queue()
 demo.launch(server_name="0.0.0.0", server_port=2023)
+
