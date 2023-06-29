@@ -70,24 +70,25 @@ if p.init_docs:
         texts = text_splitter.split_text(book)
         all_texts += texts
 
-    docsearch = Chroma.from_texts(
+    docstore = Chroma.from_texts(
         all_texts, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_texts))],
         persist_directory=embed_path
     )
-    docsearch.persist()
+    docstore.persist()
 else:
-    docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
+    docstore = Chroma(embedding_function=embeddings, persist_directory=embed_path)
 
 print ("Finished embedding documents")
 
 
 #Method to find text with highest likely context
-def get_context(query):
+def get_context(query, docstore):
     
-    docs = docsearch.similarity_search_with_score(query, k=p.N_hits)
+    docs = docstore.similarity_search_with_score(query, k=p.N_hits)
     #Get context strings
     context=""
-    for i in range(p.N_hits):
+    print ("Found %d hits" %len(docs))
+    for i in range(min(p.N_hits, len(docs))):
         context += docs[i][0].page_content +"\n"
         print (i+1, docs[i][0].page_content)
     return context
@@ -134,11 +135,16 @@ def user(user_message, history):
 
 def init_chat_layout():
     chatbot = gr.Chatbot(show_label=False).style(height="500")
-    msg = gr.Textbox(label="Send a message with Enter")
+    with gr.Row():
+        with gr.Column(scale=0.85):
+            msg = gr.Textbox(show_label = False,
+                placeholder="Send a message with Enter")
+        with gr.Column(scale=0.15, min_width=0):
+            submit_btn = gr.Button("Send")
     clear = gr.Button("Clear")
     disp_prompt = gr.Checkbox(label='Debug: Display Prompt')
-
-    return chatbot, msg, clear, disp_prompt
+    
+    return chatbot, msg, clear, disp_prompt, submit_btn
 
 #Page layout
 with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
@@ -159,7 +165,7 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
     with gr.Tab("General Chat"):
         
         memory1, conversation1 = init_chain() #Init chain
-        chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
+        chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
         def bot_no_context(history, debug_output):
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
@@ -183,21 +189,23 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
             bot_no_context, [chatbot, disp_prompt], chatbot #Use bot without context
         )
+        submit_btn.click(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+            bot_no_context, [chatbot, disp_prompt], chatbot 
+        )
         clear.click(lambda: memory1.clear(), None, chatbot, queue=False)
 
     #APS Q&A tab
     with gr.Tab("APS Q&A"):
         memory2, conversation2 = init_chain() #Init chain
-        chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
+        chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
-        #Pass an empty string to context when don't want domain specific context
         def bot(history, debug_output):  
             user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-            context = get_context(user_message)
+            context = get_context(user_message, docstore)
 
             if debug_output:
-                inputs = conversation1.prep_inputs({'input': user_message, 'context':context})
-                prompt = conversation1.prep_prompts([inputs])[0][0].text
+                inputs = conversation2.prep_inputs({'input': user_message, 'context':context})
+                prompt = conversation2.prep_prompts([inputs])[0][0].text
 
             bot_message = conversation2.predict(input=user_message, context=context)
             #Pass user message and get context and pass to model
@@ -214,7 +222,9 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
         msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
             bot, [chatbot, disp_prompt], chatbot #Use bot with context
         )
-    
+        submit_btn.click(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+            bot, [chatbot, disp_prompt], chatbot 
+        )
         clear.click(lambda: memory2.clear(), None, chatbot, queue=False)
 
     #Document Q&A tab
@@ -235,60 +245,64 @@ with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
               texts = text_splitter.split_documents(documents)
               all_pdfs += texts
             embed_path = 'embeds/pdf'
-            db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
+            global pdfstore
+            pdfstore = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
                 persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
-            db.persist()
-            retriever = db.as_retriever() #retriever uses embedding model (usually sentence transformer)
-            global qa
-            qa = RetrievalQA.from_chain_type(llm=local_llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
-                #we think the retriever uses sentence transformer to do the lookup 
             return "Ready"
-
-        def add_text(history, text):
-            history = history + [(text, None)]
-            return history, ""
-
-        def bot(history):
-            response = infer(history[-1][0])
-            history[-1][1] = response['result']
-            return history
-
-        def infer(question):
-            query = question
-            result = qa({"query": query})
-            return result
+    
 
 
         title = """
         <div style="text-align: center;max-width: 700px;">
-            <h1>Chat with PDF</h1>
-            <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs to LangChain" button, <br />
+            <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs" button, <br />
             when everything is ready, you can start asking questions about the pdf ;)</p>
             <a style="display:inline-block; margin-left: 1em"></a>
         </div>
         """
 
         with gr.Column(elem_id="col-container"):
-          gr.HTML(title)
+            gr.HTML(title)
         
-          with gr.Column():
-              pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
-              #repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
-              with gr.Row():
-                  langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
-                  load_pdf = gr.Button("Load pdf to langchain")
-          
-          chatbot = gr.Chatbot([], elem_id="chatbot").style(height=350)
-          question = gr.Textbox(label="Question", placeholder="Type your question and hit Enter ")
-          submit_btn = gr.Button("Send message")
+        with gr.Column():
+            pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
+            #repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
+            with gr.Row():
+                langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
+                load_pdf = gr.Button("Load PDFs")
 
         load_pdf.click(pdf_changes, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
-        question.submit(add_text, [chatbot, question], [chatbot, question]).then(
-            bot, chatbot, chatbot
+
+        memory3, conversation3 = init_chain() #Init chain  
+        chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
+        #NEED TO ADD LOCAL MEMORY, CLEAR AND DEBUG
+    
+        def bot(history, debug_output):  
+            user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+            context = get_context(user_message, pdfstore)
+
+            if debug_output:
+                inputs = conversation3.prep_inputs({'input': user_message, 'context':context})
+                prompt = conversation3.prep_prompts([inputs])[0][0].text
+
+            bot_message = conversation3.predict(input=user_message, context=context)
+            #Pass user message and get context and pass to model
+            history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+            if debug_output:
+                bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
+
+            for character in bot_message:
+                history[-1][1] += character
+                time.sleep(0.02)
+                yield history
+                
+        msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+            bot, [chatbot, disp_prompt], chatbot #Use bot with context
         )
-        submit_btn.click(add_text, [chatbot, question], [chatbot, question]).then(
-            bot, chatbot, chatbot
+        submit_btn.click(user, [msg, chatbot], [msg, chatbot], queue=False).then(
+            bot, [chatbot, disp_prompt], chatbot 
         )
+        clear.click(lambda: memory3.clear(), None, chatbot, queue=False)
  
     with gr.Tab("Tips & Tricks"):
         gr.Markdown("""
