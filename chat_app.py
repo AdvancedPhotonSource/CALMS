@@ -198,11 +198,18 @@ UI/Frontend
 """
 def init_chat_layout():
     chatbot = gr.Chatbot(show_label=False).style(height="500")
-    msg = gr.Textbox(label="Send a message with Enter")
+    with gr.Row():
+        with gr.Column(scale=0.85):
+            msg = gr.Textbox(show_label = False,
+                placeholder="Send a message with Enter")
+        with gr.Column(scale=0.15, min_width=0):
+            submit_btn = gr.Button("Send")
     clear = gr.Button("Clear")
     disp_prompt = gr.Checkbox(label='Debug: Display Prompt')
+    
+    return chatbot, msg, clear, disp_prompt, submit_btn
 
-    return chatbot, msg, clear, disp_prompt
+    return chatbot, msg, clear, disp_prompt, submit_btn
 
 
 def main_interface(params, llm, embeddings):
@@ -223,24 +230,30 @@ def main_interface(params, llm, embeddings):
 
         #General chat tab
         with gr.Tab("General Chat"):
-            chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
+            chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
             chat_general = Chat(llm, embeddings, doc_store=None)
 
             msg.submit(chat_general.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
                 chat_general.generate_response, [chatbot, disp_prompt], chatbot #Use bot without context
             )
+            submit_btn.click(chat_general.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                chat_general.generate_response, [chatbot, disp_prompt], chatbot #Use bot without context
+            )
             clear.click(lambda: chat_general.memory.clear(), None, chatbot, queue=False)
 
         #APS Q&A tab
         with gr.Tab("APS Q&A"):
-            chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
+            chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
             aps_qa_docstore = init_aps_qa(embeddings, params)
             chat_qa = Chat(llm, embeddings, doc_store=aps_qa_docstore)
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+            )
+            submit_btn.click(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
                 chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
             )
         
@@ -272,12 +285,15 @@ def main_interface(params, llm, embeddings):
                     langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
                     load_pdf = gr.Button("Load pdf to langchain")
             
-            chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
+            chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
             chat_pdf = PDFChat(llm, embeddings, doc_store=None)
 
             load_pdf.click(chat_pdf.update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
             msg.submit(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+            )
+            submit_btn.click(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
                 chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
             )
             clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
