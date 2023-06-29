@@ -18,17 +18,18 @@ from langchain.chains import RetrievalQA
 import gradio as gr
 import time, shutil
 
-"""
-===========================
-Initialization
-===========================
-"""
 #Load embedding model and use that to embed text from source
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device:", device)
 print("Using %d GPUs" %torch.cuda.device_count())
 gr.close_all() #Close any existing open ports
 
+
+"""
+===========================
+Initialization
+===========================
+"""
 
 def init_llm(params):
     #Create a local tokenizer copy the first time
@@ -58,8 +59,8 @@ def init_llm(params):
     return HuggingFacePipeline(pipeline=pipe), embeddings
 
 
-def init_embeddings(params):
-    embed_path = 'embeds/%s' %(p.embedding_model_name)
+def init_aps_qa(embeddings, params):
+    embed_path = 'embeds/%s' %(params.embedding_model_name)
 
     if p.init_docs:
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, chunk_overlap=params.chunk_overlap)
@@ -86,109 +87,108 @@ def init_embeddings(params):
     else:
         docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
     print ("Finished embedding documents")
+
     return docsearch
 
-
-def init_chain():
-    template = """The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
-
-    Context:
-    {context}
-
-    Current conversation:
-    {history}
-    Human: {input}
-    AI:"""
-
-    PROMPT = PromptTemplate(
-        input_variables=["history", "input", "context"], template=template
-    )
-    memory = ConversationBufferWindowMemory(memory_key="history", 
-                                            input_key = "input", 
-                                            k=6)
-
-    conversation = LLMChain(
-            prompt=PROMPT,
-            llm=local_llm, 
-            verbose=True, 
-            memory=memory
-    )
-
-    return memory, conversation
 
 """
 ===========================
 Chat Functionality
 ===========================
 """
-def generate_response(history, conversation, debug_output, doc_store):
-    user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
 
-    if debug_output:
-        inputs = conversation.prep_inputs({'input': user_message, 'context':""})
-        prompt = conversation.prep_prompts([inputs])[0][0].text
-
-    if doc_store is None:
-        context = ""
-    else:
-        context = get_context(user_message, doc_store)
-
-    bot_message = conversation.predict(input=user_message, context="")
-    #Pass user message and get context and pass to model
-    history[-1][1] = "" #Replaces None with empty string -- Gradio code
-
-    if debug_output:
-        bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
-
-    for character in bot_message:
-        history[-1][1] += character
-        time.sleep(0.02)
-        yield history
+class Chat():
+    def __init__(self, llm, embedding, doc_store):
+        self.llm = llm 
+        self.embedding = embedding
+        self.memory, self.conversation = self._init_chain()
+        self.doc_store = doc_store
 
 
-#Method to find text with highest likely context
-def get_context(query, doc_store):
-    docs = doc_store.similarity_search_with_score(query, k=p.N_hits)
-    #Get context strings
-    context=""
-    for i in range(p.N_hits):
-        context += docs[i][0].page_content +"\n"
-        print (i+1, docs[i][0].page_content)
-    return context
+    def _init_chain(self):
+        template = """The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
+
+Context:
+{context}
+
+Current conversation:
+{history}
+Human: {input}
+AI:"""
+
+        PROMPT = PromptTemplate(
+            input_variables=["history", "input", "context"], template=template
+        )
+        memory = ConversationBufferWindowMemory(memory_key="history", 
+                                                input_key = "input", 
+                                                k=6)
+
+        conversation = LLMChain(
+                prompt=PROMPT,
+                llm=self.llm, 
+                verbose=True, 
+                memory=memory
+        )
+
+        return memory, conversation
 
 
-def update_pdf_docstore(pdf_docs, embeddings):
-    all_pdfs = []
-    for pdf_doc in pdf_docs:
-        loader = OnlinePDFLoader(pdf_doc.name)
-        documents = loader.load()
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
-        texts = text_splitter.split_documents(documents)
-        all_pdfs += texts
-    embed_path = 'embeds/pdf'
-    db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
-        persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
-    db.persist()
+    #Method to find text with highest likely context
+    def _get_context(self, query, doc_store):
+        docs = doc_store.similarity_search_with_score(query, k=p.N_hits)
+        #Get context strings
+        context=""
+        for i in range(p.N_hits):
+            context += docs[i][0].page_content +"\n"
+            print (i+1, docs[i][0].page_content)
+        return context
+    
+    
+    def generate_response(self, history, debug_output):
+        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
 
-    return db
+        if self.doc_store is None:
+            context = ""
+        else:
+            context = self._get_context(user_message, self.doc_store)
+
+        if debug_output:
+            inputs = self.conversation.prep_inputs({'input': user_message, 'context':context})
+            prompt = self.conversation.prep_prompts([inputs])[0][0].text
+
+        bot_message = self.conversation.predict(input=user_message, context=context)
+        #Pass user message and get context and pass to model
+        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+        if debug_output:
+            bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
+
+        for character in bot_message:
+            history[-1][1] += character
+            time.sleep(0.02)
+            yield history
+
+    def add_message(self, user_message, history):
+        return "", history + [[user_message, None]]
 
 
-def add_message(user_message, history):
-    return "", history + [[user_message, None]]
+class PDFChat(Chat):
+    def update_pdf_docstore(self, pdf_docs):
+        all_pdfs = []
+        for pdf_doc in pdf_docs:
+            loader = OnlinePDFLoader(pdf_doc.name)
+            documents = loader.load()
+            text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
+            texts = text_splitter.split_documents(documents)
+            all_pdfs += texts
+        embed_path = 'embeds/pdf'
+        db = Chroma.from_documents(all_pdfs, self.embedding, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
+            persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
+        db.persist()
 
-def add_text(history, text):
-    history = history + [(text, None)]
-    return history, ""
+        self.doc_store = db
 
-def bot(history):
-    response = infer(history[-1][0])
-    history[-1][1] = response['result']
-    return history
-
-def infer(question):
-    query = question
-    result = qa({"query": query})
-    return result
+        return "PDF Ready"
 
 
 """
@@ -205,7 +205,7 @@ def init_chat_layout():
     return chatbot, msg, clear, disp_prompt
 
 
-def main_interface(llm, embeddings):
+def main_interface(params, llm, embeddings):
     #Page layout
     with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
 
@@ -223,28 +223,28 @@ def main_interface(llm, embeddings):
 
         #General chat tab
         with gr.Tab("General Chat"):
-            
-            memory_general, conversation_general = init_chain() #Init chain
             chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
+            chat_general = Chat(llm, embeddings, doc_store=None)
 
-            msg.submit(add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                generate_response, [chatbot, conversation_general, disp_prompt, None], chatbot #Use bot without context
+            msg.submit(chat_general.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                chat_general.generate_response, [chatbot, disp_prompt], chatbot #Use bot without context
             )
-            clear.click(lambda: memory_general.clear(), None, chatbot, queue=False)
+            clear.click(lambda: chat_general.memory.clear(), None, chatbot, queue=False)
 
         #APS Q&A tab
         with gr.Tab("APS Q&A"):
-            memory_qa, conversation_qa = init_chain() #Init chain
             chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
-            #Pass an empty string to context when don't want domain specific context
+            aps_qa_docstore = init_aps_qa(embeddings, params)
+            chat_qa = Chat(llm, embeddings, doc_store=aps_qa_docstore)
 
-            msg.submit(add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                generate_response, [chatbot, conversation_qa, disp_prompt, ], chatbot #Use bot with context
+            #Pass an empty string to context when don't want domain specific context
+            msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
             )
         
-            clear.click(lambda: memory_qa.clear(), None, chatbot, queue=False)
+            clear.click(lambda: chat_qa.memory.clear(), None, chatbot, queue=False)
 
         #Document Q&A tab
         with gr.Tab("Document Q&A"):
@@ -272,17 +272,15 @@ def main_interface(llm, embeddings):
                     langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
                     load_pdf = gr.Button("Load pdf to langchain")
             
-            chatbot = gr.Chatbot([], elem_id="chatbot").style(height=350)
-            question = gr.Textbox(label="Question", placeholder="Type your question and hit Enter ")
-            submit_btn = gr.Button("Send message")
+            chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
-            load_pdf.click(update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
-            question.submit(add_text, [chatbot, question], [chatbot, question]).then(
-                bot, chatbot, chatbot
+            chat_pdf = PDFChat(llm, embeddings, doc_store=None)
+
+            load_pdf.click(chat_pdf.update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
+            msg.submit(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
             )
-            submit_btn.click(add_text, [chatbot, question], [chatbot, question]).then(
-                bot, chatbot, chatbot
-            )
+            clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
     
         with gr.Tab("Tips & Tricks"):
             gr.Markdown("""
@@ -304,6 +302,7 @@ def main_interface(llm, embeddings):
 
 
 if __name__ == '__main__':
-    pass
+    llm, embeddings = init_llm(p)
+    main_interface(p, llm, embeddings)
 
 
