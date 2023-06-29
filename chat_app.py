@@ -29,6 +29,7 @@ print("Device:", device)
 print("Using %d GPUs" %torch.cuda.device_count())
 gr.close_all() #Close any existing open ports
 
+
 def init_llm(params):
     #Create a local tokenizer copy the first time
     if os.path.isdir(params.tokenizer_path):
@@ -50,11 +51,14 @@ def init_llm(params):
         repetition_penalty=1.2
     )
 
+    #Embeddings
+    embeddings = HuggingFaceEmbeddings(model_name=params.embedding_model_name)
+
     #Setup LLM chain with memory and context
-    return HuggingFacePipeline(pipeline=pipe)
+    return HuggingFacePipeline(pipeline=pipe), embeddings
+
 
 def init_embeddings(params):
-    embeddings = HuggingFaceEmbeddings(model_name=params.embedding_model_name)
     embed_path = 'embeds/%s' %(p.embedding_model_name)
 
     if p.init_docs:
@@ -84,47 +88,6 @@ def init_embeddings(params):
     print ("Finished embedding documents")
     return docsearch
 
-"""
-===========================
-Chat Functionality
-===========================
-"""
-def generate_response(history, debug_output, use_context):
-    user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-
-    if debug_output:
-        inputs = conversation1.prep_inputs({'input': user_message, 'context':""})
-        prompt = conversation1.prep_prompts([inputs])[0][0].text
-
-    if use_context:
-        context = get_context(user_message)
-    else:
-        context = ""
-
-    bot_message = conversation1.predict(input=user_message, context="")
-    #Pass user message and get context and pass to model
-    history[-1][1] = "" #Replaces None with empty string -- Gradio code
-
-    if debug_output:
-        bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
-
-    for character in bot_message:
-        history[-1][1] += character
-        time.sleep(0.02)
-        yield history
-
-
-#Method to find text with highest likely context
-def get_context(query, doc_store):
-    docs = doc_store.similarity_search_with_score(query, k=p.N_hits)
-    #Get context strings
-    context=""
-    for i in range(p.N_hits):
-        context += docs[i][0].page_content +"\n"
-        print (i+1, docs[i][0].page_content)
-    return context
-
-
 
 def init_chain():
     template = """The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
@@ -153,17 +116,86 @@ def init_chain():
 
     return memory, conversation
 
-
-def user(user_message, history):
-    return "", history + [[user_message, None]]
-
-
 """
 ===========================
 Chat Functionality
 ===========================
 """
+def generate_response(history, conversation, debug_output, doc_store):
+    user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
 
+    if debug_output:
+        inputs = conversation.prep_inputs({'input': user_message, 'context':""})
+        prompt = conversation.prep_prompts([inputs])[0][0].text
+
+    if doc_store is None:
+        context = ""
+    else:
+        context = get_context(user_message, doc_store)
+
+    bot_message = conversation.predict(input=user_message, context="")
+    #Pass user message and get context and pass to model
+    history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+    if debug_output:
+        bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
+
+    for character in bot_message:
+        history[-1][1] += character
+        time.sleep(0.02)
+        yield history
+
+
+#Method to find text with highest likely context
+def get_context(query, doc_store):
+    docs = doc_store.similarity_search_with_score(query, k=p.N_hits)
+    #Get context strings
+    context=""
+    for i in range(p.N_hits):
+        context += docs[i][0].page_content +"\n"
+        print (i+1, docs[i][0].page_content)
+    return context
+
+
+def update_pdf_docstore(pdf_docs, embeddings):
+    all_pdfs = []
+    for pdf_doc in pdf_docs:
+        loader = OnlinePDFLoader(pdf_doc.name)
+        documents = loader.load()
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
+        texts = text_splitter.split_documents(documents)
+        all_pdfs += texts
+    embed_path = 'embeds/pdf'
+    db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
+        persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
+    db.persist()
+
+    return db
+
+
+def add_message(user_message, history):
+    return "", history + [[user_message, None]]
+
+def add_text(history, text):
+    history = history + [(text, None)]
+    return history, ""
+
+def bot(history):
+    response = infer(history[-1][0])
+    history[-1][1] = response['result']
+    return history
+
+def infer(question):
+    query = question
+    result = qa({"query": query})
+    return result
+
+
+"""
+===========================
+UI/Frontend
+===========================
+"""
 def init_chat_layout():
     chatbot = gr.Chatbot(show_label=False).style(height="500")
     msg = gr.Textbox(label="Send a message with Enter")
@@ -172,7 +204,8 @@ def init_chat_layout():
 
     return chatbot, msg, clear, disp_prompt
 
-def main_interface():
+
+def main_interface(llm, embeddings):
     #Page layout
     with gr.Blocks(css="footer {visibility: hidden}", title="APS ChatBot") as demo:
 
@@ -191,27 +224,27 @@ def main_interface():
         #General chat tab
         with gr.Tab("General Chat"):
             
-            memory1, conversation1 = init_chain() #Init chain
+            memory_general, conversation_general = init_chain() #Init chain
             chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
 
-            msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-                generate_response, [chatbot, disp_prompt], chatbot #Use bot without context
+            msg.submit(add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                generate_response, [chatbot, conversation_general, disp_prompt, None], chatbot #Use bot without context
             )
-            clear.click(lambda: memory1.clear(), None, chatbot, queue=False)
+            clear.click(lambda: memory_general.clear(), None, chatbot, queue=False)
 
         #APS Q&A tab
         with gr.Tab("APS Q&A"):
-            memory2, conversation2 = init_chain() #Init chain
+            memory_qa, conversation_qa = init_chain() #Init chain
             chatbot, msg, clear, disp_prompt = init_chat_layout() #Init layout
 
             #Pass an empty string to context when don't want domain specific context
 
-            msg.submit(user, [msg, chatbot], [msg, chatbot], queue=False).then(
-                generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+            msg.submit(add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                generate_response, [chatbot, conversation_qa, disp_prompt, ], chatbot #Use bot with context
             )
         
-            clear.click(lambda: memory2.clear(), None, chatbot, queue=False)
+            clear.click(lambda: memory_qa.clear(), None, chatbot, queue=False)
 
         #Document Q&A tab
         with gr.Tab("Document Q&A"):
@@ -219,41 +252,6 @@ def main_interface():
             Q&A over uploaded document
             """
             )
-            def loading_pdf():
-                return "Loading..."
-
-            def pdf_changes(pdf_docs):
-                all_pdfs = []
-                for pdf_doc in pdf_docs:
-                loader = OnlinePDFLoader(pdf_doc.name)
-                documents = loader.load()
-                text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
-                texts = text_splitter.split_documents(documents)
-                all_pdfs += texts
-                embed_path = 'embeds/pdf'
-                db = Chroma.from_documents(all_pdfs, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
-                    persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
-                db.persist()
-                retriever = db.as_retriever() #retriever uses embedding model (usually sentence transformer)
-                global qa
-                qa = RetrievalQA.from_chain_type(llm=local_llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
-                    #we think the retriever uses sentence transformer to do the lookup 
-                return "Ready"
-
-            def add_text(history, text):
-                history = history + [(text, None)]
-                return history, ""
-
-            def bot(history):
-                response = infer(history[-1][0])
-                history[-1][1] = response['result']
-                return history
-
-            def infer(question):
-                query = question
-                result = qa({"query": query})
-                return result
-
 
             title = """
             <div style="text-align: center;max-width: 700px;">
@@ -265,7 +263,7 @@ def main_interface():
             """
 
             with gr.Column(elem_id="col-container"):
-            gr.HTML(title)
+                gr.HTML(title)
             
             with gr.Column():
                 pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
@@ -278,7 +276,7 @@ def main_interface():
             question = gr.Textbox(label="Question", placeholder="Type your question and hit Enter ")
             submit_btn = gr.Button("Send message")
 
-            load_pdf.click(pdf_changes, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
+            load_pdf.click(update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
             question.submit(add_text, [chatbot, question], [chatbot, question]).then(
                 bot, chatbot, chatbot
             )
@@ -292,7 +290,6 @@ def main_interface():
             2. If I don't give a satisfactory answer, try rephrasing your question. For e.g. 'Can I do high energy diffraction at the APS?' instead of 'Where can I do high energy diffraction at the APS?
             """
             )
-
 
         #Footer
         gr.Markdown("""
