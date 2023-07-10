@@ -3,7 +3,9 @@ set_visible_devices = True
 visible_devices = '2,3'
 
 #Load model and tokenizer
-model_name = "eachadea/vicuna-13b-1.1"
+#model_name = "eachadea/vicuna-13b-1.1"
+model_name = "lmsys/vicuna-13b-v1.3"
+#model_name = "lmsys/vicuna-33b-v1.3"
 tokenizer_path = "./tokenizer/"
 
 chunk_size = 384 #Size of chunks to break the text store into

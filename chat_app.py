@@ -262,15 +262,14 @@ def main_interface(params, llm, embeddings):
         #Document Q&A tab
         with gr.Tab("Document Q&A"):
             gr.Markdown("""
-            Q&A over uploaded document
             """
             )
 
             title = """
             <div style="text-align: center;max-width: 700px;">
                 <h1>Chat with PDF</h1>
-                <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs to LangChain" button, <br />
-                when everything is ready, you can start asking questions about the pdf ;)</p>
+                <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs" button, <br />
+                when everything is ready, you can start asking questions about the pdf</p>
                 <a style="display:inline-block; margin-left: 1em"></a>
             </div>
             """
@@ -283,7 +282,7 @@ def main_interface(params, llm, embeddings):
                 #repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
                 with gr.Row():
                     langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
-                    load_pdf = gr.Button("Load pdf to langchain")
+                    load_pdf = gr.Button("Load PDF")
             
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
@@ -302,6 +301,7 @@ def main_interface(params, llm, embeddings):
             gr.Markdown("""
             1. I am not as powerful as GPT-4 or ChatGPT and I am running on cheap GPUs, if I get stuck, you can type "please continue" or similar and I will attempt to complete my thought.
             2. If I don't give a satisfactory answer, try rephrasing your question. For e.g. 'Can I do high energy diffraction at the APS?' instead of 'Where can I do high energy diffraction at the APS?
+            3. Avoid using acronyms, e.g. say coherent diffraction imaging instead of CDI
             """
             )
 
