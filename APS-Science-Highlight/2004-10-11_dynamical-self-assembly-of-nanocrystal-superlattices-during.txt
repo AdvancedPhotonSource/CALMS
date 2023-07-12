@@ -1,9 +1,0 @@
-Dynamical Self-Assembly of Nanocrystal Superlattices during Colloidal Droplet Evaporation by in situ Small Angle X-Ray Scattering
-
-S. Narayanan, J. Wang, X.-M. Lin (Argonne National Laboratory) Phys. Rev. Lett. 93, 135503 (2004)
-
-The nucleation and growth kinetics of highly ordered gold nanocrystal superlattices during the evaporation of nanocrystal colloidal droplets was elucidated by in situ time-resolved small-angle x-ray scattering experiments carried out at sector 1 of the APS. The researchers demonstrated unambiguously for the first time that the evaporation rate can affect the dimensionality of the superlattices revealing the fundamental growth mechanism of the superlattices. The formation of two-dimensional nanocrystal superlattices at the liquid-air interface of the droplet has exponential growth kinetics that originates from a novel kinetics model involving interface “crushing”.
-
-Published Date
-
-10.11.2004
