@@ -74,12 +74,13 @@ def init_aps_qa(embeddings, params):
                 raise ValueError("Existing Chroma Collection")
 
         all_texts = []
-        doc_path = 'APS-Science-Highlight'
-        for text_fp in os.listdir(doc_path):
-            with open(os.path.join(doc_path, text_fp), 'r') as text_f:
-                book = text_f.read()
-            texts = text_splitter.split_text(book)
-            all_texts += texts
+        for doc_path in params.doc_paths: #Iterate over text files in each path
+            print ("Reading docs from", doc_path)
+            for text_fp in os.listdir(doc_path):
+                with open(os.path.join(doc_path, text_fp), 'r') as text_f:
+                    book = text_f.read()
+                texts = text_splitter.split_text(book)
+                all_texts += texts
 
         docsearch = Chroma.from_texts(
             all_texts, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_texts))],

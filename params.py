@@ -19,3 +19,6 @@ embedding_model_name =   "all-mpnet-base-v2" #Highest scoring all-round, does 28
 init_docs = False #Recompute embeddings?
 overwrite_embeddings = True #Overwrite embeddings if already exist? -- will raise val error of init_docs is True and this is not
 N_hits = 3 #How many hits of context to provide?
+
+#List of folders to add to doc store
+doc_paths = ["DOC_STORE/APS-Science-Highlight", "DOC_STORE/APS-Docs"] 
