@@ -1,7 +1,7 @@
 import os
-import params as p
-if p.set_visible_devices:
-    os.environ["CUDA_VISIBLE_DEVICES"] = p.visible_devices
+import params
+if params.set_visible_devices:
+    os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -37,16 +37,18 @@ def init_llm(params):
         tokenizer = AutoTokenizer.from_pretrained(params.tokenizer_path)
     else:
         tokenizer = AutoTokenizer.from_pretrained("model_name")
-        os.mkdir(p.tokenizer_path)
-        tokenizer.save_pretrained(p.tokenizer_path)
+        os.mkdir(params.tokenizer_path)
+        tokenizer.save_pretrained(params.tokenizer_path)
 
     #Setup pipeline
-    model = AutoModelForCausalLM.from_pretrained(p.model_name, device_map="auto", torch_dtype=torch.bfloat16)#, load_in_8bit=True)
+    model = AutoModelForCausalLM.from_pretrained(params.model_name, 
+                                                 device_map="auto", 
+                                                 torch_dtype=torch.bfloat16)#, load_in_8bit=True)
     pipe = pipeline(
         "text-generation",
         model=model, 
         tokenizer=tokenizer, 
-        max_length=p.seq_length,
+        max_length=params.seq_length,
         temperature=0.6,
         top_p=0.95,
         repetition_penalty=1.2
@@ -62,11 +64,11 @@ def init_llm(params):
 def init_aps_qa(embeddings, params):
     embed_path = 'embeds/%s' %(params.embedding_model_name)
 
-    if p.init_docs:
+    if params.init_docs:
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, chunk_overlap=params.chunk_overlap)
 
         if os.path.exists(embed_path):
-            if p.overwrite_embeddings:
+            if params.overwrite_embeddings:
                 shutil.rmtree(embed_path)
             else:
                 raise ValueError("Existing Chroma Collection")
@@ -135,10 +137,10 @@ AI:"""
 
     #Method to find text with highest likely context
     def _get_context(self, query, doc_store):
-        docs = doc_store.similarity_search_with_score(query, k=p.N_hits)
+        docs = doc_store.similarity_search_with_score(query, k=params.N_hits)
         #Get context strings
         context=""
-        for i in range(p.N_hits):
+        for i in range(params.N_hits):
             context += docs[i][0].page_content +"\n"
             print (i+1, docs[i][0].page_content)
         return context
@@ -178,7 +180,8 @@ class PDFChat(Chat):
         for pdf_doc in pdf_docs:
             loader = OnlinePDFLoader(pdf_doc.name)
             documents = loader.load()
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=p.chunk_size, chunk_overlap=p.chunk_overlap)
+            text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, 
+                                                           chunk_overlap=params.chunk_overlap)
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
         embed_path = 'embeds/pdf'
@@ -318,7 +321,7 @@ def main_interface(params, llm, embeddings):
 
 
 if __name__ == '__main__':
-    llm, embeddings = init_llm(p)
-    main_interface(p, llm, embeddings)
+    llm, embeddings = init_llm(params)
+    main_interface(params, llm, embeddings)
 
 
