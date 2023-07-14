@@ -201,7 +201,7 @@ UI/Frontend
 ===========================
 """
 def init_chat_layout():
-    chatbot = gr.Chatbot(show_label=False).style(height="500")
+    chatbot = gr.Chatbot(show_label=False, elem_id="chatbot")#.style(height="500")
     with gr.Row():
         with gr.Column(scale=0.85):
             msg = gr.Textbox(show_label = False,
@@ -211,8 +211,6 @@ def init_chat_layout():
     clear = gr.Button("Clear")
     disp_prompt = gr.Checkbox(label='Debug: Display Prompt')
     
-    return chatbot, msg, clear, disp_prompt, submit_btn
-
     return chatbot, msg, clear, disp_prompt, submit_btn
 
 
@@ -312,8 +310,8 @@ def main_interface(params, llm, embeddings):
         #Footer
         gr.Markdown("""
         ##### Made with ❤️ for 🧑‍🔬 by:
-        Mathew J. Cherukara, Michael Prince @ APS
-        Henry Chan, Aikaterini Vriza @ CNM
+        Mathew J. Cherukara, Michael Prince @ APS<br>
+        Henry Chan, Aikaterini Vriza, Tao Zhou @ CNM<br>
         Varuni K. Sastry @ DSL/ALCF
         """
         )
