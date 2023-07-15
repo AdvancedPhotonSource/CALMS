@@ -1,0 +1,53 @@
+Rare Antibodies Show How to Neutralize the Many Types of Ebola
+
+The original Scripps Research Institute press release by Madeline McCurry-Schmidt can be read here.
+
+Two new studies by scientists carrying out research at the U.S. Department of Energy’s Advanced Photon Source are bringing Ebola virus's weaknesses into the spotlight, showing for the first time exactly how human and mouse antibodies can bind to the virus and stop infection — not only for Ebola virus, but for other closely related pathogens as well. The research suggests antibodies like these could be key ingredients in versatile lifesaving therapeutics capable of neutralizing all members of the Ebola virus genus.
+
+“This is like understanding how to kill five or six birds with one stone,” said Erica Ollmann Saphire, professor at Scripps Research and senior author of the new papers, published in mBio and the Journal of Infectious Diseases. "The different viruses in the Ebola virus genus vary in their structure, but all these different viruses have the same outbreak potential. We need a therapeutic approach that can target them all."
+
+A major challenge in treating what we call Ebola virus is that it isn't just one pathogen but five. Members of the genus ebolavirus include Ebola virus, Sudan virus, Bundibugyo virus, Taï Forest virus and Reston virus. Each of these viruses is up to 50% different in amino acid sequence, making it tough to develop broad treatment strategies. For example, the Sudan and Bundibugyo viruses were responsible for 40% of Ebola cases before 2013, yet current experimental Ebola therapies can't neutralize them.
+
+Adding to the threat, all members of the Ebola virus genus could mutate to escape immune system defenses and fight off drug therapies.
+
+The new research by a team from Scripps Research and Hokkaido University (Japan) shows that antibodies that bind to a site on the viral “fusion loop” can neutralize all known ebolaviruses. The fusion loop is part of the machinery that the virus uses to fuse with human cells and initiate infection. Targeting this peptide could present an opportunity to develop a universal therapy for infections caused by all five members of the Ebola virus genus.
+
+For the mBio study, the researchers focused on a human antibody called ADI-15878. This antibody was found in the blood of an Ebola virus survivor and is the only human antibody ever found to neutralize all five members of the Ebola virus genus.
+
+Employing high-resolution x-ray crystallography at the National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) structural biology facility 23-ID-B and 23-ID-D x-ray beamlines at the APS, the scientists modeled the interaction between the antibody and the viral glycoprotein (the protein that enables the virus to infect a cell). Ebola's glycoprotein is covered with sugars that help to mask the virus from detection by the body's immune system. (The APS is an Office of Science user facility at Argonne National Laboratory.) The team observed that ADI-15878 binds directly to one of these sugars alongside a paddle-like structure on the fusion loop. Part of the antibody then dips down and binds into a pocket that is normally hidden by another part of the viral glycoprotein.
+
+“It's really cool to see that this antibody has found a way to bind into a cryptic, conserved pocket despite the proximity of sugars and other pieces of the virus that effectively hide this region from the immune system” said mBio study first author Brandyn West, a research associate at Scripps Research.
+
+The researchers hypothesize that this action locks two important parts of Ebola's fusion machinery together, making it impossible for the virus to get into human cells. The fusion loop is a key piece of the Ebola virus entry machinery, so its structure is what scientists refer to as highly conserved--meaning the virus can't easily mutate the fusion loop to escape immune detection without compromising the ability of the virus to infect cells. If antibodies targeting this structure were included in therapies or elicited through vaccines, these antibodies should provide broad protection.
+
+But was ADI-15878 just a one in a million antibody from a lucky human survivor?
+
+The second paper the lab published in the Journal of Infectious Diseases shows that such antibodies are not out of reach. In this work, the scientists showed that a mouse sequentially immunized with Ebola virus and then Sudan virus also had a broadly protective antibody response. The researchers demonstrated that an antibody, termed 6D6, from this mouse binds to the same region as ADI-15878. The immunization study provides more evidence that this part of the fusion loop is a promising target for vaccine design and therapies.
+
+“Both the human and mouse antibodies were able to neutralize all known types of Ebola,” said Jacob Milligan, research associate at Scripps Research and first author of the Journal of Infectious Diseases study.
+
+It could be possible, the researchers say, for therapeutics to include antibodies that work like ADI-15878. Researchers working on Ebola vaccines could also design molecules that look like this region of the fusion loop. These molecules, called immunogens, teach the human immune system which piece of the virus to target.
+
+“We're hot on the trail of immunogen design strategies to produce more of these neutralizing antibodies,” Ollmann Saphire said.
+
+See: Jacob C. Milligan1, Diptiben V. Parekh1, Katherine M. Fuller1, Manabu Igarashi2, Ayato Takada2, and Erica Ollmann Saphire1*, “Structural Characterization of Pan-ebolavirus Antibody 6D6 Targeting the Fusion Peptide of the Surface Glycoprotein,” J. Infect. Dis., accepted manuscript published September 10, 2018. DOI: 10.1093/infdis/jiy532
+
+Author affiliations: 1Scripps Research, 2Hokkaido University
+
+Correspondence: *erica@scripps.edu
+
+The authors would like to acknowledge the support staff of Beamline 23-ID-D at APS for their assistance with diffraction data collection. GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under contract DE-AC02-06CH11357.
+
+And
+
+See: Brandyn R. West, Crystal L. Moyer‡, Liam B. King, Marnie L. Fusco, Jacob C. Milligan, Sean Hui, and Erica Ollmann Saphire*, “Structural Basis of Pan-Ebolavirus Neutralization by a Human Antibody against a Conserved, yet Cryptic Epitope,” mBio 9(5),  e01674-18 (September/October 2018). DOI: 10.1128/mBio.01674-18
+
+Author affiliation: Scripps Research ‡Present address: Mapp Biopharmaceutical,
+
+Correspondence: *erica@scripps.edu
+
+The authors acknowledge a National Institute of Health (NIH) National Institute of Allergy and Infectious Diseases Centers of Excellence in Translational Research award for the Viral Hemorrhagic Fever Immunotherapeutic Consortium (U19 AI109762) and NIH R01 AI132204 for support. GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under contract DE-AC02-06CH11357.
+
+Published Date
+
+09.20.2018

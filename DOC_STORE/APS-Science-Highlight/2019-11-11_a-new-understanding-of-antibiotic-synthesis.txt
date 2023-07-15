@@ -1,0 +1,33 @@
+A New Understanding of Antibiotic Synthesis
+
+The original McGill University press release can be read here.
+
+Researchers at McGill University’s Faculty of Medicine have made important strides in understanding the functioning of enzymes that play an integral role in the production of antibiotics and other therapeutics. Their findings, based in part on research carried out at the U.S. Department of Energy’s (DOE’S) Advanced Photon Source (APS) are published in the journal Science.
+
+“Many of the medicines that we rely on today are natural products, made by the Earth’s flora,” explains Dr. Martin Schmeing, Associate Professor in the Department of Biochemistry at McGill and the study’s senior author. “This includes compounds made in microbes by massive enzymes called nonribosomal peptide synthetases, or NRPSs. NRPSs synthesize all sorts of antibiotics, which can kill dangerous fungi and bacteria, as well as compounds to help us fight off viral infections and cancers. For example, these compounds include viomycin, an antibiotic used for the treatment of multidrug-resistant tuberculosis; cyclosporin, which has been widely used as an immunosuppressant in organ transplants; and the familiar antibiotic penicillin.”
+
+In order to synthesize these drugs, NRPSs operate similar to a factory assembly line, consisting of a series of workstations. Each station, called a “module”, has multi-step workflows and moving parts that allow it to add one building block component to the growing drug.
+
+Previous work by Dr. Schmeing and others has led to a solid understanding of how one module works. Now, using x-ray crystallography at the Canadian Light Source x-ray beamline 08ID-1 in Saskatchewan, and the Northeastern Collaborative Access Team 24-ID-C beamline at the Advanced Photon Source at Argonne National Laboratory, the team was able to take ultra-high resolution three-dimensional pictures of the NRPSs.
+
+For the first time, they were able to make high-quality observations about how an individual module relates to the bigger assembly line, by visualizing a two-module portion of the NRPSs that makes the antibiotic linear gramicidin (found in Polysporin treatments). The study found a surprising lack of synchronisation between modules at all points other than when they must coordinate to pass the intermediate from one workstation to the next. Additionally, they found that the modules don’t line up in a straight line or other organized fashion, but instead can line up in many different relative positions. “This level of massive flexibility was not expected,” notes Dr. Schmeing, who is also Director of McGill’s Centre for Structural Biology. “The enzymes are performing gymnastics.” 
+
+Because the proteins are trapped in a crystal, care was taken to confirm that the results were representative of what happens in real life. Dr. Schmeing worked with his colleague, Dr. Alba Guarné, Professor in the Department of Biochemistry at McGill, to use complementary solution data, collected at the SIBYLS beamline at the DOE’s Advanced Light Source in Berkeley to validate the observations. “The structural biology community is very strong at McGill. We work together to help each other in collaborations, to obtain the biophysical equipment required for cutting-edge experiments, and to train our students” says Dr. Schmeing, noting that the experimentalists on the paper, Janice Reimer, Max Eivaskhani and Ingrid Harb, are all talented McGill graduate students. “The environment and colleagues at the McGill Centre for Structural Biology are important for the continued success of our labs.”
+
+The results could have implications for the production of new antibiotics and therapeutics in the long term. Since they were first discovered, scientists have been excited about the possibility of bioengineering NRPSs by mixing and matching workstations to produce designer compounds. “Our study shows that it should be possible to mix and match these modules, but that the bioengineered NRPSs must be modified at the points involved in passing the compound from one module to the next to get them to work well,” explains Dr. Schmeing. “This is something we teamed up with Martin Weigt from the Sorbonne to do as a proof of principle in the paper, but which will need to be optimized for production of designer therapeutics.”
+
+See: Janice M. Reimer1, Maximilian Eivaskhani1, Ingrid Harb1, Alba Guarné1, Martin Weigt2, T. Martin Schmeing1, “Structures of a dimodular nonribosomal peptide synthetase reveal conformational flexibility,” Science 366, 706 (8 November 2019). DOI: 10.1126/science.aaw4388
+
+Author affiliations: 1McGill University, 2Sorbonne Université
+
+Correspondence: *martin.schmeing@mcgill.ca
+
+This work was funded by CIHR (FDN-148472) and a Canada Research Chair to T.M.S., a European Union H2020 research and innovation program MSCA-RISE-2016 (#734439 INFERNET) grant to M.W., and studentships from NSERC (J.M.R.), Boehringer Ingelheim Fonds (M.E.), and CIHR (I.H.). The Northeastern Collaborative Access Team beamlines are funded by the National Institute of General Medical Sciences from the National Institutes of Health (P30 GM124165). The Pilatus 6M detector on 24-ID-C beamline is funded by a NIH-ORIP HEI grant (S10 RR029205). The APS and ALS are U.S. Department of Energy user facilities. This research used resources of the Advanced Light Source, a DOE Office of Science User Facility under contract no. DE-AC02-05CH11231, and the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.11.2019

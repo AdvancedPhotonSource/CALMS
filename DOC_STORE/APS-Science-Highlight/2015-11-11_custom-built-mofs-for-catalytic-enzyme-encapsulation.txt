@@ -1,0 +1,31 @@
+Custom-Built MOFs for Catalytic Enzyme Encapsulation
+
+Metal-organic frameworks (MOFs) are handy crystalline constructs that combine metallic ions with organic molecules to form a structure featuring molecular “cages” or channels that can trap other atoms or molecules to filter, store, or otherwise separate them from the surrounding environment. One common potential use for MOFs is in catalysis, but the immobilization of enzymes is challenging because of leaching and aggregation that can decrease catalytic efficiency. With the help of structural studies performed at the U.S. Department of Energy’s Advanced Photon Source (APS), a group of experimenters has devised several new MOFs designed to encapsulate enzymes with high catalytic efficiency and recyclability. Their work was published in Nature Communications.
+
+These researchers, from Texas A&M University, Stockholm University, and the Chinese Academy of Sciences, note that while porous materials with one-dimensional, channel-like structures have been proposed as enzyme supports, they can still allow leaching and aggregation. They sought to avoid that problem by taking a cue from other MOFs containing single-molecule traps (SMTs) designed to capture single carbon-dioxide molecules.
+
+The team synthesized a series of enzyme-encapsulating MOFs based on the MIL-100 structure model, a highly stable and mesoporous MOF amenable to the construction of large cages well-suited for single-enzyme encapsulation (SEE).
+
+The structure of the resulting MOFs, designated PCN-332 and PCN-333, was confirmed using high-resolution synchrotron powder x-ray diffraction (PXRD) at the X-ray Science Division 17-BM beamline of the APS (an Office of Science user facility) as well as high-resolution transmission electron microscopy (HRTEM), and showed similar structures for both PCN-332 and PCN-333. Under testing, PCN-333 displayed the same great stability as PCN-332 but with larger cages, and was therefore used for further experimentation.
+
+The experimenters tested the PCN-333(Al) MOF for its enzyme encapsulation capabilities using three differently-sized enzymes: horseradish peroxidase (HRP), cytochrome c (Cyt c), and microperoxidase-11 (MP-11, see the figure). They expected that the latter enzyme might undergo multiple rather than single encapsulation due to its much smaller size compared to the others. To achieve SEE, the enzyme needs to be smaller than the cage, while the cage must be large enough for one but not more molecules. All three enzymes showed rapid loading of about 40 minutes with HRP, 30 minutes with Cyt c, and 10 minutes with MP-11. The crystallinity and porosity of the PCN-333 samples were evaluated after loading and showed excellent stability.
+
+The research team next evaluated catalytic activity in the oxidation of o-Phenylenediamine (OPD) by HRP and of 2-2'azino-bis-(3-ethylbenzthiazoline-6-sulfonic acid) (ABTS) with MP-11 and Cyt c, using different media. The Cyt c immobilized in PCN-333 shows far greater activity than the free enzyme in water, and the encapsulated HRP also shows higher activity, which indicates single-enzyme encapsulation in both cases. Conversely, the MP-11 activity is decreased after its multiple enzyme encapsulation in PCN-333. Under these harsh practical conditions, however, the enzyme in SEE is seen to perform far better than free enzyme, without aggregation or denaturation.
+
+The enzymes in PCN-333 were recycled multiple times after the catalytic reactions, showing almost no leaching in comparison with enzymes immobilized in mesoporous-silica SBA-15. Unlike the large cages in PCN-333, SBA-15 incorporates 1-D channels, highlighting the greater effectiveness and efficiency of the single-enzyme encapsulation approach.
+
+Aside from MOFs, many previous strategies for the immobilization and support of catalysts, such as sol gels and hydrogels, nanoparticles, organic microparticles, and porous or nonporous inorganic materials have been proposed and experimentally explored, yet none have quite lived up to their full potential. The single-enzyme encapsulation approach demonstrated in the current work utilizing the PCN-333 MOF, with its virtual elimination of leaching, aggregation, and denaturation, promises the best realization yet of the many possibilities of MOFs for a wide range of applications, including not simply catalysis but filtering, gas storage, nitrogen fixation, and other processes requiring entrapment of very large biological moieties.  — Mark Wolverton
+
+See: Dawei Feng1, Tian-Fu Liu1, Jie Su2, Mathieu Bosch1, Zhangwen Wei1, Wei Wan2, Daqiang Yuan3, Ying-Pin Chen1, Xuan Wang1, Kecheng Wang1, Xizhen Lian1, Zhi-Yuan Gu1, Jihye Park1, Xiaodong Zou2, and Hong-Cai Zhou1, “Stable metal-organic frameworks containing single-molecule traps for enzyme encapsulation,” Nat. Commun. 6, 5979 (19 January 2015). DOI: 10.1038/ncomms6979
+
+Author affiliations: 1Texas A&M University, 2Stockholm University, 3Chinese Academy of Sciences
+
+Correspondence: *zhou@chem.tamu.edu
+
+This work was supported as a part of the Methane Opportunities for Vehicular Energy (MOVE) Program under the Award Number DE-AR0000249, as part of the Center for Clean-Energy-Related Gas Separation, an Energy Frontier Research Center (EFRC) funded by the U.S. Department of Energy (DOE), Office of Science, Office of Basic Energy Sciences under award no. DE-SC0001015, and as part of N000141310753 supported by the Office of Naval Research. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+11.11.2015

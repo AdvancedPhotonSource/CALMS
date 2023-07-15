@@ -1,0 +1,29 @@
+Riding the Spin-State Concentration Wave in a SCO Complex
+
+Spin-crossover (SCO) FeII metal compounds, which are coordination complexes that change their overall electron spin state in response to external stimuli such as temperature, light, magnetic fields, or pressure have some interesting potential for switching applications in microelectronics and data storage, among other possibilities. Spin-crossover can affect a material's electrical and magnetic properties and even its color. The key to realizing the potential of SCO compounds lies in a thorough understanding of the phenomenon, including ways to influence or control it. A group of researchers studied the behavior of a SCO complex under femtosecond laser excitation with x-ray diffraction techniques at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne, probing what happens as photoinduced spin-state conversion occurs. The work, combining time-resolved optical and x-ray diffraction studies in real-time measurements, provides a new and versatile tool for probing the out-of-equilibrium thermodynamic behavior and symmetry-breaking phenomena of SCO materials under photoinduced phase transitions. With the more precise and detailed insights afforded by such techniques in the laboratory, the eventual practical application and control of the workings of SCO materials as an ultrafast photoswitch is brought closer to ultimate realization.
+
+The quantum phenomenon in electrons and other elementary particles known as “spin” manifests in one of two ways: either "up" or "down." Like electrical charge, which is either positive or negative, that bipolar characteristic makes spin a potentially useful parameter to use as a switch that needs to be on or off. But the spin state of a particle — or that of its companions in an atom, molecule, or compound, and changes in that state — can alter various characteristics. 
+
+The electronic state of the sample is defined by XHS, which is the fraction of high-spin- (HS) state molecules out of all the molecules in the compound. While most SCO complexes undergo a simple one-step transition from low spin (LS) to HS or vice versa, some can also exhibit an intermediate phase (INT), in which symmetry breaking results in a long-range ordering of molecules in both HS and LS states and creates a spin-state concentration wave (SSCW). The researchers in this study, from Université Rennes (France), CEA-CNRS (France), The University of Chicago, and Argonne chose such a two-step SCO crystal, [FeIIH2L2-Me][PF6]2, for examining how SSCW responds to a femtosecond laser excitation by using time-resolved optical spectroscopy at Rennes and x-ray diffraction at the BioCARS beamline 14-ID-B of the APS (the APS is an Office of Science user facility).
+
+Because the HS state is less bonding, the average distance between the central Fe atom and its ligands increases as molecules switch from LS to HS. In the INT phase, a symmetry breaking occurs — as evidenced by additional Bragg reflections on x-ray diffraction measurements — resulting from a doubling of the unit cell along the crystalline c axis along which HS and LS molecules alternate.
+
+Also in this phase, the ratio of LS to HS molecules is roughly 50/50, which leads to the formation of the SSCW. As the temperature rises, this relative balance shifts in favor of the HS state. At 142 K, the SSCW disappears and symmetry is fully restored. When the temperature reaches 250 K and above, all molecules are in the HS state.
+
+In these photoactive materials, light can switch molecules from LS to HS states. The experimenters took advantage of complementary time-resolved x-ray diffraction and optical probes, which are sensitive to HS-LS order and electronic state respectively. They found a complex out-of-equilibrium process induced by local femtosecond molecular switching, inducing lattice expansion (ns) and crystal heating (µs). The time required for completely erasing the SSCW was about 100 µs to 1 ms, whereas it recombined within 25 ms.
+
+— Mark Wolverton
+
+See: A. Marino1, M. Buron-Le Cointe1*, M. Lorenc1, L. Toupet1, R. Henning2, A.D. DiChiara3, K. Moffat2, N. Bréfuel4, and E. Collet1*, “Out-of-equilibrium dynamics of photoexcited spin-state concentration waves,” Faraday Discuss. 177, 363 (2015). DOI: 10.1039/c4fd00164h
+
+Author affiliations: 1Université Rennes, 2The University of Chicago, 3Argonne National Laboratory, 4CEA-CNRS
+
+Correspondence: *marylise.buron@univ-rennes1.fr, **eric.collet@univ-rennes1.fr
+
+This work was supported by the CNRS and Région Bretagne (Ph.D. support of A.M.), the Institut Universitaire de France, Rennes Métropole, the ANR (ANR-13-BS04-0002), and the European Regional Development Fund (FEDER). BioCARS is funded by National Institutes of Health grant R24 GM111072 to K.M. K.M. and E.C. thank The University of Chicago for funding through the “France and Chicago Collaborating in the Sciences” (FACCTS) program. Use of BioCARS was supported by the National Institute of General Medical Sciences of the National Institutes of Health under grant number R24GM111072. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+12.11.2015

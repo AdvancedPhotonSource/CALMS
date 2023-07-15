@@ -1,0 +1,53 @@
+A Novel Nanobio Catalyst for Biofuels
+
+Nanoparticles synthesized from noble metals such as ruthenium, rhodium, palladium, silver (Ag), osmium, iridium, platinum, and gold (Au) are attracting increased attention by researchers around the world looking for advances in such fields as biomedicine and catalysts.
+
+Researchers from Argonne National Laboratory, the Illinois Institute of Technology, and the University of South Carolina working at U.S. Department of Energy (DOE) facilities at Argonne including the Advanced Photon Source (APS), have been successful in synthesizing and characterizing monodisperse gold-core silver-shell nanoparticles utilizing a bio-template that has potential as a water soluble catalyst for converting biomass such as dead trees, branches and tree stumps, yard clippings, wood chips, and even municipal solid waste into fuels.
+
+Noble metals are attractive avenues for this research because, for one thing, unlike base metals, they are corrosion-resistant when exposed to damp air.
+
+Bimetallic core-shell catalysts, where one metal is at the center, i.e., the core, and the second is at the surface, or the shell, provide distinctive properties, often a better reactivity, because the core metal particle could modify the lattice strain of the shell metal, which results in a shift of the electronic band structure of the shell metal.
+
+Such core-shell, nanometer-sized particles are being studied in most national labs and universities.
+
+In the field of bioinorganic chemistry, the use of protein cage templates has been recently developed as a promising method for the synthesis of uniform-size metal nanoparticle catalysts.
+
+In this research, the protein cage template is apoferritin (Apo), which is the ferritin protein devoid of an iron core. This protein complex consists of 24 identical subunits and has a spherical shape with an outer diameter of 12 nm and an inner cavity of 8 nm, as shown in the accompanying figure.
+
+The 8-nm cavity can be used as the location for a “nanoreactor” in which to synthesize the metal nanoparticles. The junction between the subunits consists of 14 empty channels, each 3-4 Å in diameter. These serve as a pathway between the exterior and interior of the protein core.
+
+The metal ions, which function as the nanoreactor, diffuse into the hollow core of the Apo through these channels and subsequent reduction of metal ions in the cavity leads to one metal particle per Apo ferritin.
+
+While the synthesis of core-shell nanoparticles has been proposed, to date there has been no report of a successful synthesis of core-shell nanoparticles inside Apo.
+
+In a recent publication in the Journal of Materials Chemistry, the researchers in this study report for the first time synthesis of water-soluble, Apo-encapsulated, Au-core Ag-shell nanoparticles smaller than 5 nm in size and with a narrow size distribution, utilizing an unmodified Apo.
+
+The particles were characterized utilizing several research techniques: small-angle x-ray scattering carried out at the X-ray Science Division beamline 12-ID of the APS; extended x-ray absorption fine structure measurements at the Materials Research Collaborative Access Team 10-ID x-ray beamline, also at the APS; scanning transmission electron microscopy done at the Argonne Electron Microscopy Center; scanning electron microscopy at the Argonne Center for Nanoscale Materials; and fast protein liquid chromatography performed at the University of South Carolina.
+
+By carefully monitoring the amount of silver precursor, the researchers were successful in controlling the Ag shell thickness from one layer to several layers.
+
+This method should lead the way for preparation of other core-shell nanoparticles that might function as new, potentially high-performance nanocatalysts for catalytic biofuel reactions in the future.
+
+Such core-shell nanoparticles grown on a protein template can also be explored for future drug delivery systems.
+
+See: Tao Li1, Soma Chattopadhyay2, Tomohiro Shibata2, Russell E. Cook1, Jeffrey T. Miller1,
+
+Nisaraporn Suthiwangcharoen3, Sungsik Lee1, Randall E. Winans1, and Byeongdu Lee1*, “Synthesis and characterization of Au-core Ag-shell nanoparticles from unmodified apoferritin,” J. Mat. Chem. 22(29), 14458 (2012). DOI:10.1039/c2jm30633f
+
+Author affiliations: 1Argonne National Laboratory, 2Illinois Institute of Technology, 3University of South Carolina
+
+Correspondence: *blee@aps.anl.gov
+
+This material is based on work supported as part of the Institute for Atom-efficient Chemical Transformations, an Energy Frontier Research Center funded by the DOE Office of Science. Use of the Argonne Advanced Photon Source, Electron Microscopy Center, and Center for Nanoscale Materials, all Office of Science User Facilities operated by Argonne National Laboratory, was supported by the DOE under contract No. DE-AC02-06CH11357. Materials Research Collaborative Access Team (MR-CAT) operations are supported by the DOE and the MR-CAT member institutions.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+The Center for Nanoscale Materials at Argonne National Laboratory at is one of the five DOE Nanoscale Science Research Centers (NSRCs), premier national user facilities for interdisciplinary research at the nanoscale, supported by the DOE Office of Science.  Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative.  The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge and Sandia and Los Alamos National Laboratories.  
+
+The Argonne Electron Microscopy Center (EMC) is one of three DOE National User Facilities supported by the U.S. DOE Office of Science. The EMC at Argonne National Laboratory develops and maintains unique capabilities for electron beam characterization and applies those capabilities to solve materials problems. To achieve this end, the EMC supports a broad range of capabilities for imaging, diffraction, and spectroscopy that are essential for world-class characterization and in situ studies of materials from the macroscopic to sub-nanometer scales. Visit http://science.energy.gov/~/media/bes/suf/pdf/BES_Facilities.pdf for additional details on the DOE EM Facilities.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+08.27.2012

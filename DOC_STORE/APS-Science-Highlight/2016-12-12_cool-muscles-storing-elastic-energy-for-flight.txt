@@ -1,0 +1,47 @@
+Cool Muscles: Storing Elastic Energy for Flight
+
+Flying has always fascinated humans, probably because we are so relentlessly Earthbound. One of the things that interests researchers who study flight is the question of how animals that do it can generate the energy required. Flying is an intensely power-hungry activity that is less than 10% efficient. Some studies have suggested that physical properties of the molecules involved in insect flight might contribute small amounts of energy to the flight “power grid” through potential energy savings in the form of elastic strain energy.
+
+Insight into this question has been provided by research completed at the Biophysics Collaborative Access Team (Bio-CAT) beamline 18-ID at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory.
+
+The study, by researchers from the University of Washington, the Illinois Institute of Technology, and Harvard University combines time-resolved small-angle x-ray diffraction with measurements of mechanical energy-exchange in the wing muscle of the moth Manduca sexta to create high-speed video of muscle motion at the molecular level. Their results, published in Science magazine, show that temperature differences between the dorsal (top) and ventral (bottom) sides of the wing create an opportunity for elastic strain energy to be stored in the cooler regions of the muscle and then released during the transitions between contraction and relaxation to assist with the inertial power costs associated with accelerating and decelerating the wings.
+
+The breakthrough in this work was the development of an apparatus that allowed the team to make high-speed x-ray diffraction measurements at the same time as they measured wing-muscle motion mechanics.
+
+To do this, the researchers first fixed the body and flight muscle of the moth onto a “work-loop” apparatus that allowed them to stimulate muscle contractions in a controlled manner that simulated flight while measuring the forces of those contractions.
+
+Next, the work-loop apparatus was aligned into the x-ray beam and a custom shutter was installed to allow for high-speed measurements. The team recorded 5 diffraction images per wing-beat cycle, 1 every 8 milliseconds, for 100 cycles at 25° C and at 35° C.
+
+The force generated during muscle contraction is known to result from the ratcheting of cross-bridge proteins along other muscle filament proteins. As the cross-bridge proteins bind, move, and release the filament, they generate force. As with all molecular interactions, the cross-bridges move faster at higher temperatures. These researchers had already shown that the temperature of the muscle on the dorsal and ventral sides of the moth wing can differ by as much as 6.9° C during flight.
+
+By taking their x-ray diffraction images at 25° C and 35° C — temperatures that cover the range observed for M. sexta wing muscle — they were able to see what was going on at each temperature at the molecular level.
+
+The x-ray diffraction data showed differences in the spacing of the molecules involved in muscle contraction depending on the temperature. This indicated that the cross-bridges cycled faster at the warmer temperature and slower at the cooler temperature.
+
+These results support a model in which the cross-bridges that drive the muscles on the warmer, underside of the wing cycle quickly during flight, while cross-bridges on the cool, top side of the wing remain bound to filaments longer, building up strain until it is released as elastic energy as the muscle advances into its next phase of shortening or lengthening.
+
+According to Professor Tom Daniel, lead author of the study, “The combination of advanced technologies at the APS and the x-ray expertise of Tom Irving, Director of Bio-CAT and our collaborator on this project, made possible a new view of how temperature, strain, and molecular motors conspire to produce a range of functions in a single muscle: from an actuator to a spring.”
+
+This work provides important information about how flying species meet the energy needs of their powerful adaptation and may have implications for locomotion in general.
+
+— Sandy Field
+
+See: N.T. George1, T.C. Irving2, C.D. Williams1,3, and T.L. Daniel1*, “The Cross-Bridge Spring: Can Cool Muscles Store Elastic Energy?,” Science 340(6137), 1217 (7 June 2013). DOI:10.1126/science.1229573
+
+Author affiliations: 1University of Washington, 2Illinois Institute of Technology, 3Harvard University
+
+Correspondence: *danielt@uw.edu
+
+Movie S1
+
+An animation consisting of 5-frame x-ray diffraction movies (on the right) paired with their respective mechanical measures of force and length (creating a work-loop, on the left), one from the 25°C condition and one from the 35°C condition. X-ray diffraction images from concurrent points in the contraction cycle highlight the temperature dependent variation in muscle lattice structure. The effect of temperature on cross-bridge mass shift is observed as a difference in the relative intensities of the 1,0, 1,1, and 2,0 equatorial reflections and the change in lattice spacing is indicated by the difference in distance between opposing 1,0 equatorial reflections
+
+This research was supported by the National Science Foundation (NSF) Graduate Research Fellowship under Grant No. DGE-0718124 to N.T.G., an NSF Grant (IOS-1022471) to T.L.D and T.C.I., NSF Grant (EEC 1028725) to T.L.D., and the University of Washington Komen Endowed Chair to T.L.D. Use of Bio-CAT was supported by grants from the National Institutes of Health (2P41RR008630-17 and 9 P41 GM103622-17). Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science X-ray user facilities, visit the user facilities directory.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+12.12.2016

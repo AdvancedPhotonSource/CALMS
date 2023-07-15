@@ -1,0 +1,45 @@
+Concerns About Long-Term Use of Chromium Diet Pills
+
+The original Australian Synchrotron press release can be read here.
+
+Concerns have been raised over the long-term use of nutritional supplements containing chromium, after an Australian research team working at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne found the supplement is partially converted into a carcinogenic form when it enters human cells.
+
+Chromium is a trace mineral found primarily in two forms: a range of chromium(III) forms are sold as nutritional supplements, while hexavalent chromium(VI) is its “carcinogenic cousin,” gaining notoriety from the book and 2000 movie, Erin Brockovich, which linked a cluster of illnesses to its presence in drinking water. Controversy remains over whether the dietary form of chromium is essential, with an increasing body of evidence indicating it is not safe.
+
+In the study published in Angewandte Chemie, researchers from The University of Sydney treated cells with chromium(III) before creating a map of every chemical element contained inside the cell using an intense synchrotron x-ray beam at the X-ray Science Division 2-ID-D x-ray beamline at the APS, an Office of Science user facility to obtain x-ray fluorescence microscopy elemental distribution maps and micro–x-ray absorption near-edge structure spectra.
+
+Research was conducted by an Honors student, Lindsay Wu, now at the UNSW’s School of Medical Sciences. He said the high-energy synchrotron beam allowed the team to identify and classify chromium spots throughout the cell.
+
+“The powerful x-ray enabled us to determine whether the spots were chromium(III) or a combination of chromium(III), chromium(V) and chromium(VI).
+
+“The health hazards associated with exposure to chromium are dependent on its oxidation state – we were able to show oxidation of chromium inside the cell does occur, meaning it loses electrons and transforms into a carcinogenic forms, which no-one had been able to do in a biological sample before.”
+
+Supplements containing chromium are consumed for the purported treatment of metabolic disorders, such as insulin resistance and type 2 diabetes, but chromium’s mechanism of action in the body is not well understood.
+
+These supplements are also commonly used for weight loss and body building with some containing up to 500 micrograms per tablet, above the 200 micrograms estimated as a safe and adequate daily dietary intake for adults by the U.S. National Academy of Sciences. Australia’s current National Health and Medical Research Council Nutrient Reference Values, which are currently under review, recommend 25-35 micrograms of chromium daily as an adequate intake for adults.
+
+Peter Lay from the University of Sydney’s School of Chemistry, who led the project, said with the latency period for chromium(VI)-related cancers often greater than 20 years, the finding raises concerns over the possible cancer-causing qualities of chromium compounds and the risks of taking chromium nutritional supplements long term or in high doses.
+
+“With questionable evidence over the effectiveness of chromium as a dietary supplement, these findings should make people think twice about taking supplements containing large doses of chromium.
+
+“However, additional epidemiological research is needed to ascertain whether chromium supplements significantly alter cancer risk, since long-term laboratory experiments have not been conducted under the conditions of high oxidative stress (which promotes chromium(III) oxidation) associated with diabetes.”
+
+The researchers said the findings are very unlikely to apply to trace amounts of chromium(III) found in food.
+
+Experiments were also conducted at the former Australian National Beamline Facility at the Photon Factory in Japan, operated by the Australian Synchrotron, which helped clarify the nature of the chromium(V) and chromium(VI) species formed in the cells, both of which can cause cancer.
+
+See: Lindsay E. Wu1,2‡, Aviva Levina1, Hugh H. Harris1,4, Zhonghou Cai3, Barry Lai3, Stefan Vogt3, David E. James2‡‡, Peter A. Lay1*, “Carcinogenic Chromium(VI) Compounds Formed by Intracellular Oxidation of Chromium(III) Dietary Supplements by Adipocytes,” Angew. Chem. Int. Ed. 55 (5), 1742 (2016). DOI: 10.1002/anie.201509065
+
+Author affiliations: 1The University of Sydney, 2Garvan Institute of Medical Research, 3Argonne National Laboratory Present address: ‡UNSW Australia, ‡‡The University of Sydney, ‡‡‡The University of Adelaide
+
+Correspondence: *peter.lay@sydney.edu.au
+
+Financial support for this work was provided by the Australian Research Council (to P.A.L.) and the Australian Synchrotron Research Program (ASRP). We thank the ASRP for an ASRP Research Fellowship (H.H.H.) and for access to APS and ANBF facilities (Photon Factory, Tsukuba, Japan). The ASRP is funded by the Commonwealth of Australia under the Major National Research Facilities Program. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory (DE-AC02-06CH11357). L.E.W. is a Cancer Institute NSW Early Career Fellow.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+02.24.2016

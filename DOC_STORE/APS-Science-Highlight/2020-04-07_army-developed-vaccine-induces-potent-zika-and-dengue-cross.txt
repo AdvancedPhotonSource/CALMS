@@ -1,0 +1,47 @@
+Army-developed Vaccine Induces Potent Zika and Dengue Cross-neutralizing Antibodies
+
+​
+
+The original Walter Reed Army Research Institute press release can be read here.
+
+A new study led by scientists at the Walter Reed Army Institute of Research has shown for the first time that a single dose of an experimental Zika vaccine in a dengue-experienced individual can boost pre-existing flavivirus immunity and elicit protective cross-neutralizing antibody responses against both Zika and dengue viruses. Their findings, based in part on research carried out at two U.S. Department of Energy (DOE) x-ray light sources including the Advanced Photon Source (APS), were published in the journal Nature Medicine.
+
+Researchers analyzed the antibody responses of a dengue-experienced volunteer who participated in a Phase 1 clinical trial of the WRAIR-developed Zika purified inactivated virus vaccine. They identified a potent cross-reactive antibody called MZ4 that demonstrated a potent ability to neutralize the Zika virus as well as the dengue virus serotype-2 strain. In addition, MZ4 protected against Zika and dengue in a mouse model of infection.
+
+“Rapid-onset countermeasures are needed to protect military personnel, travelers and residents in areas where emerging infections such as Zika and dengue viruses are already widespread and expanding,” said Dr. Kayvon Modjarrad, who leads the U.S. Army Zika vaccine program, directs the Emerging Infectious Diseases Branch at WRAIR and is one of the lead authors on the paper. “These results demonstrate the potential for MZ4 to be part of the prevention toolbox for these diseases.”
+
+The individual’s immune profile was compared to trial volunteers who had no previous exposure to dengue virus. While the volunteer with prior dengue exposure experienced a sharp increase in antibodies that neutralize Zika and dengue viruses, following just one dose of the ZPIV vaccine, the dengue-naïve trial participants required two vaccinations to reach a similar magnitude of Zika antibody responses. Additionally, no cross-reactive antibody response to dengue virus.
+
+“These new findings indicate that an effective Zika vaccine could both boost dengue virus immune responses and generate potent Zika neutralizing antibodies that might have unique potential as a prevention tool in regions where both dengue and Zika are prevalent,” said Dr. Shelly Krebs, a B cell researcher at WRAIR and senior author of the paper.
+
+Building on these findings, researchers used samples from another Phase 1 study of the ZPIV vaccine currently being conducted in Puerto Rico, where there is a higher risk of exposure to flaviviruses, a family of viruses that includes Zika, dengue, Japanese encephalitis, yellow fever and West Nile viruses. WRAIR researchers found that vaccination with ZPIV in Puerto Rican individuals with prior flavivirus-experience yielded similar cross-neutralizing potency after a single vaccination, highlighting the potential benefit of ZIKV vaccination in flavivirus-endemic areas. 
+
+Asymptomatic Zika infections can lead to severe birth defects and neurologic complications. The ZPIV vaccine candidate was developed by WRAIR based on the same inactivated flavivirus vaccine technology the Institute used to create its Japanese encephalitis vaccine, which was licensed in the U.S. in 2009. Three Phase 1 human clinical trials have shown ZPIV to be safe and well-tolerated in healthy adults and that it induced a robust immune response (Modjarrad et al., 2018). WRAIR’s Zika efforts are ongoing, overseen by the Institute’s Emerging Infectious Diseases Branch.  
+
+For the synchrotron x-ray portion of these studies, diffraction data (Fig. 1) were collected as follows:
+
+Data for MZ1 Fab and MZ4 Fab were collected at the Structural Biology Center (SBC-XSD) 19-ID x-ray beamline at the Argonne National Laboratory APS to a final resolution of 2.05 Å and 2.95 Å, respectively; and data for MZ4-ZIKV E complex were collected at the SBC-XSD 19-BM beamline to a final resolution of 4.3 Å.
+
+Data for MZ1-ZIKV E crystals were collected at the Northeastern Collaborative Access Team (NE-CAT) 24-ID-E x-ray beamline at the APS to a final resolution of 4.2 Å.
+
+MZ24 Fab diffraction data were collected at the National Synchrotron Light Source II (NSLS-II) AMX 17-ID-1 at Brookhaven National Laboratory and measured to a final resolution of 2.11 Å. Both the APS and NSLS II are Office of Science user facilities.
+
+See: V. Dussupt et al., "Potent Zika and dengue cross-neutralizing antibodies induced by Zika vaccination in a dengue-experienced donor," Nat. Med. 26, 228 (2020). DOI: 10.1038/s41591-019-0746-2.
+
+Author institutions: Walter Reed Army Institute of Research, Henry M. Jackson Foundation for the Advancement of Military Medicine, Harvard Medical School, Ragon Institute of MGH, Integral Molecular, Saint Louis University School of Medicine and St Louis VA Medical Center, U.S. Army Medical Research Institute of Infectious Diseases, Vanderbilt University Medical Center, Ponce Health Sciences University
+
+Correspondence: gjoyce@eidresearch.org, skrebs@hivresearch.org
+
+This work was primarily funded by the U.S. Department of the Army and the Defense Health Agency (0130602D16) to K.M. Work at BIDMC under D.B. was performed with support from the U.S. Department of Defense (DoD), Defense Health Agency (0130602D16), the Henry M. Jackson Foundation and the Harvard Catalyst, Harvard Clinical and Translational Science Center (National Center for Research Resources and the National Center for Advancing Translational Sciences, National Institutes of Health Award UL1 TR001102), and with financial contributions from Harvard University and its affiliated academic healthcare centers. The ZPIV vaccine trial in Puerto Rico was funded by the Vaccine Treatment Evaluation Unit (VTEU) at Saint Louis University (contract no. HHSN2722013000021I) under S.L.G. The network of VTEUs is supported by the National Institute of Allergy and Infectious Diseases, part of the National Institutes of Health (NIH). The funders of the clinical trials were involved in the clinical study design, clinical study operations and approval of the clinical protocols. This work was supported by a cooperative agreement (W81XWH-07-2-0067) between the Henry M. Jackson Foundation for the Advancement of Military Medicine and the U.S. DoD under the leadership of N.L.M. and M.R. In addition, this work was supported by NIH contract no. HHSN272201400058C to B.J.D. SBC-XSD is operated by UChicago Argonne, LLC, for the U.S. Department of Energy (DOE) Office of Biological and Environmental Research under contract DE-AC02-06CH11357.  NE-CAT is funded by the National Institute of General Medical Sciences from the National Institutes of Health (P30 GM124165). The Eiger 16M detector on the NE-CAT 24-ID-E beamline is funded by a NIH-ORIP HEI grant (S10OD021527). The NSLS II is a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Brookhaven National Laboratory under contract no. DE-SC0012704. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Mosquito photograph courtesy of the U.S.Southern Command, https://media.defense.gov/2016/Mar/22/2001486295/-1/-1/0/160322-O-ZZ999-9257.JPG
+
+The U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.07.2020

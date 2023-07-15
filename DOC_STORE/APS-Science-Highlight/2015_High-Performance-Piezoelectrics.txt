@@ -1,0 +1,33 @@
+High-Performance Piezoelectrics Coming Soon in Unleaded
+
+Piezoelectricity can seem a little like magic. Give the piezoelectric material a squeeze and it produces an electric charge. Zap it with a little electricity and it will stretch and move. Amazing! The “trick” is a disturbance in the material’s structural symmetry, so that positive charges get squeezed a bit one way, and negative charges the other. Only certain structures will react to pressure in this way, so only certain materials and phases are piezoelectric. Researchers from labs and universities in the U.S., China, and the Ukraine used cutting edge optical microscopy, and x-ray diffraction microscopy at the U.S. Department of Energy’s Advanced Photon Source (APS), to peek inside classical ferroelectric (and piezoelectric) materials barium titanate (BaTiO3) and potassium niobate (KNbO3). The researchers sought to identify why certain areas within these materials exhibit much stronger piezoelectricity (and different optical properties, too) than their surroundings. The work ends a longstanding debate about the source of strong piezoelectric domains in lead-free ferroelectrics, and indicates that these materials can be engineered to demonstrate high-performance piezoelectric properties – a boon for “green” technologies.
+
+The term piezoelectric is derived from the Greek “piezo,” meaning press or squeeze. The material’s ability to transfer mechanical deformation into electric energy and vice-versa make piezoelectric materials valuable in numerous applications, from transducers to sensors to tiny generators. Microphones, clocks, stove lighters, and scanning probe microscopes all include piezoelectric materials as crucial components.
+
+Many materials exhibit a piezoelectric effect, including silk, collagen, viral proteins, quartz, and others, but some of the best-performing piezoelectric materials, and therefore some of the most widely used, are lead-based ferroelectrics. The problem with lead-based ferroelectrics is lead. The combination of lead’s biological and environmental toxicity and its low melting point have pushed researchers to seek robust piezoelectric performance in other, more benign materials.
+
+Scientists have known that certain areas in BaTiO3 and KNbO3 demonstrated strong piezoelectric behavior in response to stress from external electric fields, but they disagreed on its origin. Were these areas the result of an intrinsic intermediate phase within the material that could be reproduced and exploited, or the summation of a bunch of tiny bits of the original phase?
+
+Previous reports had relied on conventional x-ray techniques, in which the large spread of the beam probed many ferroelectric domains at once. There was no way to resolve individual structural contributions. To solve the debate, the researchers in this study, from Pennsylvania State University, the University of Science and Technology Beijing (China), Oak Ridge National Laboratory, Argonne National Laboratory, and the National Academy of Sciences of Ukraine needed a smaller pixel.
+
+They turned to the Hard X-ray Nanoprobe at the Center for Nanoscale Materials/X-ray Science Division 26-ID-C beamline of the Argonne APS, an Office of Science user facility, to perform a state-of-the-art focused beam diffraction technique. Coupled with detailed optical microscopy and other experiments, including band-excitation piezoresponse force microscopy at Oak Ridge National Laboratory, the results showed that as the materials were heated through a phase boundary, intermediate piezoelectric phase domains appeared and remained (see the figure). These areas were not just piezoelectric, but strongly so, exceeding values in both the parent phases by up to 440%.
+
+The results are the first direct experimental evidence of such thermal ferroelectric phase transitions in these materials, which have been studied for over 60 years. The authors note similarities to compositional phase boundaries in lead-based ferroelectrics and the temperature-dependent order of liquid crystals.
+
+And there is no reason why this behavior should be unique to BaTiO3 and KNbO3 – any non-triclinic ferroelectric crystal system should demonstrate similar intermediate phases with potentially enhanced properties. It doesn’t even take much energy: small strains can produce relatively large property enhancements. The trick is to manipulate the symmetry of the material to create new phases.
+
+These are fundamental insights, but they point to exciting new avenues for property enhancement, tuning, and optimization in the future. There is potential, the authors say, for creating high-performance materials through “domain-engineering-by-design.” Lead-based piezoelectric materials may have some tough new competition. — Jenny Morber
+
+See: Tom T.A. Lummen1, Yijia Gu1, Jianjun Wang1,2, Shiming Lei1, Fei Xue1, Amit Kumar1,3, Andrew T. Barnes1, Eftihia Barnes1, Sava Denev1, Alex Belianinov3, Martin Holt4, Anna N. Morozovska5, Sergei V. Kalinin3, Long-Qing Chen1, and Venkatraman Gopalan1*, “Thermotropic phase boundaries in classic ferroelectrics,” Nat. Commun. 5, 3172 (20 January 2014). DOI: 10.1038/ncomms4172
+
+Author affiliations: 1Pennsylvania State University, 2 University of Science and Technology Beijing, 3 Oak Ridge National Laboratory, 4 Argonne National Laboratory, 5 National Academy of Sciences of Ukraine
+
+Correspondence: * vxg8@psu.edu
+
+This research was supported by the U.S. National Science Foundation (NSF) through Penn State MRSEC grant DMR-0820404 (for T.T.A.L., Y.G., J.W., F.X., A.K., A.T.B., E.B., S.D., L.-Q.C. and V.G.), and grants DMR-1210588 (for A.N.M., L.-Q.C. and V.G.), DMR-0908718 (for A.N.M., L.-Q.C. and V.G.) and DMR-1006541 (for L.-Q.C.). A.N.M. acknowledges the State Fund of Fundamental Research of Ukraine, SFFR-NSF project UU48/002. The Center for Nanoscale Materials was supported by the U. S. Department of Energy (DOE) Office of Science-Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+02.05.2015

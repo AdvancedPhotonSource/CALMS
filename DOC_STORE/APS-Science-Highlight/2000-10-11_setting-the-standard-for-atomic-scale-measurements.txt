@@ -1,0 +1,25 @@
+Setting the Standard for Atomic-Scale Measurements
+
+When you want to measure the width of a window frame or the height of your growing child, it helps to have a good meter stick. But on the atomic scale, accurate measurements are harder to come by. In the 17 July PRL, a team reports a potential new standard of length for short distances based on radiation from the excited nuclei of iron atoms. Further improvements may make this standard an important tool for probing the structure of matter, where physicists must gauge the separations between nuclei with an accuracy of millionths of an angstrom.
+
+The meter, once defined as the gap between two etchings on a metal bar in Paris, is now set as the distance that light from a helium-neon laser travels in 1/299,792,458 second. However, the wavelength of that laser light--about 6330 Å--is too large to use as a reference for measurements of atomic dimensions. Instead, researchers use the regular spacing between atoms in a silicon crystal, known as the lattice constant. This measurement is the most accurate length standard at x-ray wavelengths now in use: 5.43102088 Å, known to within 0.029 parts per million. But the silicon lattice constant requires ultrapure crystals and keen controls on temperature and pressure, making it difficult for most labs to reproduce.
+
+Fortunately, Nature provides a simpler solution: the Mössbauer effect. Atomic nuclei in a crystal or foil can absorb and emit photons (Mössbauer radiation) with extremely well-defined energies. Bright pulses of x rays from a synchrotron beam can stimulate the effect when the x-ray wavelength matches the Mössbauer wavelength.
+
+In the new work, Yuri Shvyd'ko of the University of Hamburg and his colleagues used iron-57, whose nuclei emit Mössbauer radiation with a wavelength of 0.86 angstroms. "That wavelength is so easy to reproduce with uniquely high accuracy," says Shvyd'ko, since it requires no special lab conditions. However, measuring the wavelength accurately calls for intense x-rays. Shvyd'ko and his team used x-ray beams at the German Electron Synchrotron (DESY) in Hamburg and the Advanced Photon Source at the Argonne National Laboratory in Illinois.
+
+To gauge the Mössbauer wavelength accurately, the team first calibrated their "wavelength selector"--an arrangement of crystals that picks out a specific wavelength from the x-ray beam by rotating on a finely controlled pivot. They aimed the output of the selector at a silicon crystal and used the relationship between the silicon lattice constant and the (Bragg) scattering angles to determine three reference wavelengths with high precision. With the selector calibrated, they simply found the wavelength that excited Mössbauer radiation in a foil of iron-57. The result was 0.86025474 Å, accurate to within 0.19 parts per million. "This is elegant and incredibly skilled work," says Eric Isaacs of Lucent Technologies in Murray Hill, New Jersey. "It's metrology at its best." A team in Japan led by Zhang Xiaowei of the High-Energy Accelerator Research Corporation in Tsukuba recently published a slightly different value for the iron-57 Mössbauer wavelength using another technique.
+
+Coauthor Wolfgang Sturhahn of Argonne hopes the team can improve the data by at least a factor of 10 with an even tighter beam of x rays. If that occurs, the Mössbauer iron-57 line may surpass the silicon lattice constant as the flagship standard at x-ray and gamma-ray wavelengths. It might then be used as a reference in measurements of fundamental physical constants. Sturhahn also foresees higher-resolution maps of crystal structures. In the case of biological proteins, such maps could illuminate their functions by showing in greater detail how proteins interact with other molecules on the subatomic level.
+
+Robert Irion is a freelance science writer.
+
+"Gamma-Ray Wavelength Standard for Atomic Scales," Yu. V. Shvyd'ko, M. Lerche, J. Jäschke, M. Lucht, E. Gerdau, M. Gerken, H. D. Rüter, H.-C. Wille, P. Becker, E. E. Alp, W. Sturhahn, J. Sutter, and T. S. Toellner, Phys. Rev. Lett. 85, 495 (17 July 2000)
+
+- from Physical Review Focus, Monday, July 17, 2000
+
+© 2000, The American Physical Society. All rights reserved.
+
+Published Date
+
+10.11.2000

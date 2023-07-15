@@ -1,0 +1,39 @@
+A Close-Up View of Materials as They Stretch or Compress
+
+The original American Institute of Physics press release can be read here.
+
+A team of researchers has created a new tool to nondestructively characterize structural materials in unprecedented detail as they deform, which, in turn, could lead to aerospace components that are lighter and more tolerant to damage.
+
+Materials scientists are busy developing advanced materials, while also working to squeeze every bit of performance out of existing materials. This is particularly true in the aerospace industry, where small advantages in weight or extreme temperature tolerance quickly translate into tremendous performance benefits.
+
+The potential pay-offs motivated a team of researchers from the Air Force Research Laboratory, the U.S. Department of Energy’s Argonne National Laboratory and Lawrence Livermore National Laboratory, Carnegie Mellon University, and PulseRay to work together to pursue their shared goal of characterizing structural materials in unprecedented detail.
+
+In a paper in Review of Scientific Instruments, the group described how they created a system to squeeze and stretch a material while at the same time rotating and bombarding it with high-energy synchrotron x-rays. The x-rays capture information about how the material responds to the mechanical stress.
+
+This required developing a loading system to enable the precise rotation of a sample while simultaneously and independently applying tensile or compressive axial loading.
+
+Their approach included developing and validating micromechanical models to help them understand the sources of failure in materials so that we can produce aerospace components that are lighter and more damage tolerant, while also gaining a more complete understanding of their service lifetime capability.
+
+The main significance of the team's new tool is that the RAMS load frame, which is installed at the X-ray Science Division high-energy beamline 1-ID-E at the Argonne Advanced Photon Source, an Office of Science user facility, enables applying axial loads while the specimen is continuously rotated, which means integrating near-field and far-field high-energy diffraction microscopy methods and microtomography with in situ mechanical testing. This permits nondestructive characterization of the microstructure and micromechanical state of a deforming material, providing critical validation data for microstructure-sensitive performance-prediction models.
+
+The materials community is interested in using the team's tool as part of an integrated computational materials engineering approach to design structural components, which could help optimize materials properties and reduce uncertainty for given applications. The measurements that this tool enables can be used to develop new materials for turbine engines, car parts and industrial machinery, to name just a few applications.
+
+The next step for the team will be partnering with researchers at the Cornell High Energy Synchronous Source (CHESS), Cornell University, and the Advanced Photon Source (APS) at Argonne to develop standalone RAMS load frames. These instruments will be made available to the high-energy synchrotron x-ray community and, in fact, have already been used by many researchers and institutions.
+
+The team is currently working with CHESS and the APS to develop elevated temperature and multi-axial loading capabilities. The RAMS load frame insert has also inspired the development of a tension in-vacuum furnace design for studying irradiated materials at the APS that was developed in concert with the Nuclear Engineering Division at Argonne.
+
+The team plans to host the datasets collected from these experiments for others in the community to use; especially to test new materials models. In this manner, they will help propel the community to develop microstructure-sensitive materials models and provide the validation needed to push materials to the next level of performance.
+
+See: Paul A. Shade1*, Basil Blank2, Jay C. Schuren1, Todd J. Turner1, Peter Kenesei3, Kurt Goetze3, Robert M. Suter4, Joel V. Bernier5, Shiu Fai Li5, Jonathan Lind4,5, Ulrich Lienert3, and Jonathan Almer3, “A rotational and axial motion system load frame insert for in situ high energy x-ray studies,” Rev. Sci. Instrum. 86, 093902 (2015). DOI: 10.1063/1.4927855
+
+Author affiliations: 1Air Force Research Laboratory, 2PulseRay, 3Argonne National Laboratory, 4Carnegie Mellon University, 5Lawrence Livermore National Laboratory
+
+Correspondence: * paul.shade.1@us.af.mil
+
+The authors acknowledge support from the Materials & Manufacturing Directorate of the U.S. Air Force Research Laboratory. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science user facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+09.10.2015

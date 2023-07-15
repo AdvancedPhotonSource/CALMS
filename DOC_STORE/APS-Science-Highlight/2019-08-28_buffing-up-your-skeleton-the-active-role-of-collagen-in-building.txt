@@ -1,0 +1,33 @@
+Buffing Up Your Skeleton: The Active Role of Collagen in Building Bones
+
+We use our skeleton every day, but our mental model of our bones may look more like a glow-in-the-dark Halloween costume, or a teaching skeleton hanging on a sitcom set, than true anatomy. While these common representations of skeletons focus on the sturdy aspects of bones, the structural frames of actual bones are built by a soft organic portion. To create bones, the human body precipitates calcium phosphate minerals using collagen, a long protein, as scaffolding. Our bodies mineralize calcium phosphate both inside and outside collagen-confined spaces, and scientists are still working to understand how the two types of mineralization occur. Recent research at the U.S. Department of Energy’s Advanced Photon Source (APS) has investigated mineralization rates and shown that collagen structures reduce the energy barriers to mineralization by providing a substrate on which the calcium phosphate can precipitate. Since common bone diseases, such as osteoporosis, hinge on an abnormal calcium phosphate precipitation process, this improved understanding of the role of collagen in precipitation could lead to insight into the treatment of these diseases.
+
+The mineralization of calcium phosphate into bioapatite crystals happens in two environments within the human body. Calcium phosphate precipitates in unconfined spaces (extrafibrillar mineralization) and confined spaces (intrafibrillar mineralization) within the collagen scaffolding, or matrix. These confined, nanosized spaces for mineralization are created within bones as collagen molecules naturally assemble into fibrils. Both types of mineralization begin with nucleation, a process of changing phase from soluble ions to a solid, followed by growth and crystallization. Figure 1 shows scanning electron microscopy images of nucleation in both environments; nucleation in unconfined spaces occurs in the top half and nucleation in confined spaces in the bottom half. Although both mineralization types produce bioapatite crystals, each uses a different series of reaction kinetics and thermodynamics.
+
+Studies in the existing chemical literature suggest that forming clusters during a pre-nucleation step (which then act as seeds during nucleation itself) is an effective way to reduce the nucleation energy barrier in unconfined environments. However, this mechanism cannot explain how nucleation occurs in confined environments where the presence of nucleation inhibitors and confined space size keep pre-nucleation clusters from forming. A team comprising members from Washington University in St. Louis, Argonne, and Columbia University used a combination of scanning electron microscopy, x-ray techniques (which can investigate the reactions in real time and without destroying samples), and modified classical nucleation theory to investigate the discrepancy between these ideas.
+
+First, the team created samples representative of both environments using simulated body fluids; a matrix of collagen fibrils was used to evaluate the effects of nanoscale confined spaces on calcium phosphate nucleation. Additionally, the team tested the effect of the presence of polyaspartic acid, which is commonly used to simulate nucleation inhibitors within the body known as non-collagenous proteins. The team used in situ small-angle x-ray scattering analysis at the XSD 12-ID-B beamline at the APS to probe the nucleation processes in both confined and unconfined spaces within collagen matrices, with and without polyaspartic acid (Fig. 2). They took wide-angle x-ray diffraction data of their samples during nucleation using the XSD 11-ID-B beamline to identify the crystal phases.
+
+The team found that in the absence of polyaspartic acid, nucleation occurred mainly in unconfined spaces. They concluded that the presence of the polyaspartic acid, a nucleation inhibitor, shunted the majority of nucleation to the nanoscale collagen-confined spaces. In these confined, two-dimensional spaces within collagen matrices, the effective surface area for nucleation is limited, which decreases the surface energy penalty for nucleation.
+
+Although our bones may benefit us by being strong and static, collage fibrils are not simply a passive substrate in the process by which our body builds bones. Instead, the generation of bone depends on the active control of collagen fibrils. 
+
+— Mary Alexandra Agner
+
+See: Doyoon Kim1, Byeongdu Lee2, Stavros Thomopoulos3, and Young-Shin Jun1, “The role of conﬁned collagen geometry in decreasing nucleation energy barriers to intraﬁbrillar mineralization,” Nat. Commun. 9, 962 (2018).
+
+DOI: 10.1038/s41467-018-03041-1
+
+Author affiliations: 1Washington University in St. Louis, 2Argonne National Laboratory, 3Columbia University
+
+Correspondence: * ysjun@seas.wustl.edu
+
+The project was supported by the National Science Foundation (DMR-1608545 and DMR-1608554). The Nano Research Facility and the Institute of Materials Science & Engineering at Washington University in St. Louis provided their facilities for the experiments. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.d modified classical nucleation theory to investigate the discrepancy between these ideas.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+08.28.2019

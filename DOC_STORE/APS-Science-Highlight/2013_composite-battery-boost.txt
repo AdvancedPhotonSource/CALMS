@@ -1,0 +1,39 @@
+Composite Battery Boost
+
+New composite materials based on selenium (Se) sulfides that act as the positive electrode in a rechargeable lithium-ion (Li-ion) battery could boost the range of electric vehicles by up to five times, according to groundbreaking research carried out at the U.S. Department of Energy’s Advanced Photon Source at Argonne National Laboratory. The studies of the materials demonstrated that they have the potential to pack five times the energy density of conventional batteries.
+
+Lithium-ion batteries are ubiquitous in rechargeable gadgets such as cell phones, tablet PCs, and GPS devices, as well as early electric vehicles. As any user of these technologies will testify, the amount of energy that Li-ion batteries can hold between recharges can stand improving, and all-electric vehicles in particular will benefit from a longer lasting battery. The problem is that existing electrode materials, while relatively effective, cannot pack much electrical energy into a small volume and so range is limited.
+
+Now, researchers from Argonne and King Abdulaziz University (Saudi Arabia) hope to remedy that problem. They have focused on carbon-selenium sulfide composites as an alternative material to the conventional lithium transition metal oxide positive electrode material in standard batteries. These composites are anticipated to have an energy density five times higher than conventional batteries. This could mean up to five times greater range between charging stations.
+
+The researchers point out that in a typical lithium battery, electrical capacity is between 120- and 160-milliamp-hours (mAh) per gram of material. The use of the novel composite materials can boost that capacity to around 678-mAh per gram. While such a boost is theoretically very attractive, understanding the nature of the electrochemical changes taking place when these materials are used (instead of conventional lithium-metal oxide electrodes) is vital to ensure they will be viable in future batteries.
+
+Using the X-ray Science Division (XSD) beamline 11-ID-C at the Advanced Photon Source, the team carried out in situ synchrotron high-energy x-ray diffraction (HEXRD) studies and complementary, selenium K-edge x-ray absorption near-edge structure (XANES) analysis to observe the chemical changes that take place in these novel electrode materials as they charge and discharge a battery (see the figure).
+
+These measurements, which were undertaken at more than 12-keV energy, were also done in transmission mode on the XSD bending-magnet beamlines 9-BM-C and 20-BM-B. This technique allowed the team to hone in on the changing chemistry of the selenium atoms in the electrode and how they shift between crystalline and non-crystalline phases as current and lithium ions flow through the experimental battery's ether-based electrolyte. Raman microscopy at Argonne's Center for Nanoscale Materials provided additional information about the Li2Se that was observed on the Li anode of the charged cells.
+
+The power of HEXRD and XANES available on these x-ray beamlines allowed instantaneous monitoring of the phase changes in the electrode materials under charge and discharge states. The team could observe exactly what intermediate stages the materials went through as well as detect their chemical oxidation states. Such details are critical to the development of a new stable electrode material that might be charged and discharged many hundreds, if not thousands, of repetitions in its lifetime.
+
+The team discovered that it is the chemical composition of the electrolyte — the fluid that bathes the electrodes and through which the charge-carrying positive lithium ions flow — that seems to have the most impact on the changes that take place. The researchers suggest it might be possible to tune the efficiency of a battery based on these new composites by optimizing the electrolyte and so improve battery performance still further.
+
+The x-ray studies and analysis of the electrochemistry of the electrode as it operates have also allowed the team to discover a plausible chemical mechanism for the processes involved in discharging the battery. They explain that the composite electrode is reduced to form lithium polyselenide with more than four selenium atoms per lithium atom; additional discharging to lower voltage leads to chemical species containing two lithium ions per selenium atom. Charging involves the reverse process. This mechanism is first proposed and experimentally proven by the team, and it is similar to that seen in experimental lithium-sulfur electrodes.
+
+— David Bradley
+
+See: Yanjie Cui1, Ali Abouimrane1, Jun Lu1, Trudy Bolin1, Yang Ren1, Wei Weng1, Chengjun Sun1, Victor A. Maroni1, Steve M. Heald1, and Khalil Amine1,2, “(De)Lithiation Mechanism of Li/SeSx (x = 0−7) Batteries Determined by in situ Synchrotron X‑ray Diffraction and X‑ray Absorption Spectroscopy,” J. Am. Chem. Soc. 135, 8047 (2013). DOI:10.1021/ja402597g
+
+Author affiliations: 1Argonne National Laboratory, 2King Abdulaziz University
+
+Correspondence: *abouimrane@anl.gov
+
+Work done at Argonne and use of the Advanced Photon Source and the Center for Nanoscale Materials at Argonne National Laboratory were supported by the U.S. Department of Energy Office of Science under Contract No. DE-AC02-06CH11357. J. Lu was supported by the Department of Energy Office of Energy Efficiency and Renewable Energy (EERE) Postdoctoral Research Award under the EERE Vehicles Technology Program administered by the Oak Ridge Institute for Science and Education for the Department of Energy.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE's Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit http://science.energy.gov/bes/suf/user-facilities/nanoscale-science-research-centers/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+12.02.2013

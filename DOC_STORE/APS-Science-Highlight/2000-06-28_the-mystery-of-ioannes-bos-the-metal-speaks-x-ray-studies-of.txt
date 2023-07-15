@@ -1,0 +1,21 @@
+The Mystery of Ioannes Bos: The Metal Speaks X-ray Studies of Astrolabes
+
+Using a focused, monochromatic beam of high-photon-energy x-rays from the Synchrotron Radiation Instrumentation Collaborative Access Team beamline 1-BM at the Advanced Photon Source, researchers performed metallurgical analyses on two astrolabes: M-33a (Adler Planetarium, from the Mensing Collection), and DW0595 (Harvard University, from the David P. Wheatland Collection).
+
+The astrolabe (ASS-troh-layb) is perhaps the most beautiful and prized of the scientific instruments used in pre-telescopic astronomy. An astrolabe combined a simple instrument for measuring angles with an analog computer based on the stereographic projection. The key to its success was the compact design: an observing instrument and a calculating device combined in a disk-shaped package that the astronomer/astrologer could carry with him and use to solve most of the problems he needed to solve. Because of their beauty and intricacy, astrolabes are valued today as historic artifacts. A particularly beautiful one sold recently at Christie's in South Kensington (London) for over half a million dollars, and even very ordinary examples sell for $10,000. Modern reproductions are frequently encountered, and outright forgeries&emdash;reproductions made with intent to deceive&emdash;are by no means hard to find.
+
+Data from this experiment indicate that the composition and microstructure of M-33a (apart from a metal spacer found inside) are consistent with its 1597 date, while those of DW0595 reveal a much more recent origin. The Adler instrument M-33a was made primarily from hammered sheets of brass having relatively low zinc content, a technology available 400 years ago. The Harvard instrument, however, was made primarily from rolled sheets of copper having very uniform thickness, a more modern technology. Its elaborately-shaped rete exhibits crystallography indicating that it was cast, as if it were one of a group of reproductions made at the same time, perhaps as attractive (and extravagant) souvenirs.
+
+C.B. Stephenson,(1) G.B. Stephenson,(2) & D. Haeffner(3)
+
+(1) Adler Planetarium and Astronomy Museum, Chicago, IL 60605
+
+(2) Materials Science Division, Argonne National Laboratory, Argonne, IL 60439
+
+(3) Experimental Facilities Division, Argonne National Laboratory, Argonne, IL 60439
+
+- From "The Mystery of Ioannes Bos: The Metal Speaks; X-ray Studies of Astrolabes," Advanced Photon Source Research, 3, ANL/APS/TB-37, 35-40 (Argonne National Laboratory, 2000).
+
+Published Date
+
+06.28.2000

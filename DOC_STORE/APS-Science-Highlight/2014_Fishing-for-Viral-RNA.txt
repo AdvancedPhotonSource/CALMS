@@ -1,0 +1,43 @@
+Fishing for Viral RNA
+
+Retroviruses go to a lot of trouble to replicate themselves in our cells and further their infectious cycle. The human immunodeficiency virus-1 (HIV-1), the virus that causes acquired immunodeficiency syndrome (AIDS), is a good example. HIV-1 is an RNA virus that must synthesize DNA from its RNA genome, transport its DNA into the nucleus, transcribe it back to RNA, transport the new RNA out of the nucleus again, and then make proteins from the RNA that will be assembled with new viral RNA genomes and released from the cell as new infectious particles. While the molecular details of many of these steps are known, one mystery that remains is how HIV-1 recognizes and fishes out its own RNA from among all the other RNAs in the nucleus, an essential step in viral replication.
+
+Now, the structural basis for this recognition has been defined in a small-angle x-ray scattering (SAXS) study by researchers from the National Cancer Institute, National Institutes of Health; and Argonne National Laboratory conducted at the X-ray Science Division 12-ID-B and -C beamlines at the U.S. Department of Energy Office of Science's Advanced Photon Source. Their work may also provide information that will help in the design of a completely new class of drugs that target HIV-1 genomic RNA for treatment of patients with AIDS.
+
+In normal cells, uninfected with retroviruses, messenger RNAs are transcribed from DNA and then processed before being transported out of the nucleus to be translated into protein. The problem for HIV-1 is that it must get some of its RNA genomes out of the nucleus without being processed so they can be packaged into new viral particles and it must recognize its own RNA genome from among the more abundant host RNAs in the nucleus.
+
+It does this using a protein called Rev that recognizes a Rev response element (RRE) in the viral RNA.
+
+Rev works in pairs, as a dimer, to bind the RRE and then recruits more Rev molecules and host proteins that are responsible for getting RNA out of the nucleus. The binding sites for Rev on the RRE have been identified but are curiously vague. The site on the RNA is not sequence-specific and is just defined by purine-rich grooves that could easily be found in many other RNA molecules.
+
+Attempts to understand this in more depth through solution of the three-dimensional structure of the RRE using nuclear magnetic resonance imaging or x-ray crystallography have been unsuccessful for the past two decades. Therefore, in order to learn more about these interactions, the research team turned to SAXS analysis to get structural information and then confirmed their findings with biochemical and functional analyses to figure out how this very specific RNA fishing trick is done.
+
+The three-dimensional structure of the RRE determined from the SAXS data obtained at the Argonne Advanced Photon Source showed that the RNA forms an extended "A" with one leg shorter than the other (see the figure). The legs are about 50 to 60 Â apart and position the known binding sites for Rev on either arm of the A. The higher affinity binding site is on the lower part of the short arm and the lower affinity site is on the lower part of the longer arm, placing them about 55 Â from each other. This finding is consistent with previous studies that have shown that when two Rev molecules form a dimer, their interaction domains are oriented 55 Â apart.
+
+Next, the team studied different mutants of the RRE to identify important structural elements for Rev binding and nuclear transport function. They made two truncated mutants that contained either one arm or the other of the A. These mutants had either the high- or low-affinity binding site for Rev, but not both.
+
+The team also made three insertion mutants that increased the distance between the arms of the A by adding to the crossbar. Biochemical assays of Rev binding showed that neither the insertion nor the truncation mutants could form the higher order complexes with multiple Rev proteins required for proper functioning. Nuclear transport assays confirmed these results. The truncation mutants were completely incapable of performing nuclear transport and the insertion mutants had greatly reduced activity.
+
+Taken together, these results provide an explanation for how HIV-1 specifically identifies the HIV-1 RNA genome using RRE as a molecular beacon. As nuclear transport is essential for HIV-1 replication, this makes it a potential target for antiviral therapy.
+
+"These new results open the door for design of antiviral strategies blocking this step in the viral life cycle by targeting the viral RNA," said Yun-Xing Wang of the National Cancer Institute, National Institutes of Health, co-corresponding author, with Alan Rein (National Cancer Institute, National Institutes of Health), on the Cell journal article describing this result. "Targeting the viral RNA has not been possible because the viral RNA structure was unknown until now."
+
+The Wang and Rein laboratories at National Cancer Institute, National Institutes of Health, are now beginning to test some of these strategies. "One of the possible outcomes of targeting the viral RNA is the development of a new class of agents that destroy the viral RNA genome. Another is development of ultra-sensitive probes for viral detection and diagnosis," Wang said.
+
+— Sandy Field
+
+See: Xianyang Fang1, Jinbu Wang1, Ina P. O'Carroll1, Michelle Mitchell1, Xiaobing Zuo1 ‡, Yi Wang1, Ping Yu1,2, Yu Liu1, Jason W. Rausch1, Marzena A. Dyba2, Jørgen Kjems3, Charles D. Schwieters1, Soenke Seifert4, Randall E. Winans4, Norman R. Watts1, Stephen J. Stahl1, Paul T. Wingfield1, R. Andrew Byrd1, Stuart F.J. Le Grice1, Alan Rein1*, and Yun-Xing Wang1**, "An Unusual Topological Structure of the HIV-1 Rev Response Element," Cell 155, 594 (October 24, 2013). DOI:10.1016/j.cell.2013.10.008
+
+Author affiliations: 1National Cancer Institute, National Institutes of Health, 2SAIC-Frederick, 3University of Aarhus, 4Argonne National Laboratory. ‡Present address: Argonne National Laboratory
+
+Correspondence: *reina@mail.nih.gov, **wangyunx@mail.nih.gov
+
+This work was supported in part by the Intramural Research Program of the National Institutes of Health, National Cancer Institute Center for Cancer Research; National Institute of Arthritis, Musculoskeletal and Skin Diseases; Center for Information Technology; and SAIC-Frederick under contract HHSN26120080001E. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under Contract no. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+03.07.2014

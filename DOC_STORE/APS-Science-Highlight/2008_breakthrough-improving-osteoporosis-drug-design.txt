@@ -1,0 +1,25 @@
+A Breakthrough in Improving Osteoporosis Drug Design
+
+Drug therapies for osteoporosis—a disease in which bones become fragile and more likely to break—bring with them a variety of undesirable side effects such as nausea, constipation, muscle weakness, dizziness, leg cramps, and joint pain. But relief may be getting closer now that researchers from the Laboratory of Structural Sciences at Van Andel Institute (VAI) in Michigan, using an x-ray beamline at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory, have determined how the parathyroid hormone (PTH), which is currently used to treat osteoporosis, precisely binds to its receptor. Drug developers can use this information to aid in the design of more potent therapies that lack side effects.
+
+“There has been intense interest in designing analogs, or variations, of PTH that lack these side effects,” said Augie Pioszak, a postdoctoral fellow at VAI and lead author of the article that presented the findings in the journal Proceedings of the National Academy of Sciences of the United States of America. “Essential to that goal is a thorough understanding of how the hormone interacts with its receptor, the molecule that translates the signal from the hormone into the biological outcome, in this case bone growth.”
+
+The therapeutic use of PTH was approved by the U.S. Food and Drug Administration in 2002. A synthetic version of the hormone, marketed in the United States as the drug ForteoTM, is currently used to treat advanced osteoporosis by stimulating new bone formation. The hormone binds to, or fits, its receptor in cells in a very distinct way, much like a key fits a lock.
+
+Using x-ray crystallography at the Life Sciences Collaborative Access Team beamline 21-ID-D at the APS, the VAI researchers determined the structure of PTH when bound to its extracellular domain (ECD) receptor at a resolution where individual atoms were observable. This level of detail can help drug developers engineer a drug that more perfectly fits to the receptor, making the drug more potent. The structural information could also help determine if separate elements of the interaction between PTH and its receptor lead to the undesired side effects. If so, then developers could manipulate these elements in the drug design to eliminate the side effects.
+
+The x-ray crystallography required that the hormone with its receptor be crystallized, something that researchers have not been able to accomplish until now. “It is sort of like letting salty water evaporate to form salt crystals,” said Eric Xu, who heads the VAI lab and is the paper’s co-author. “But the process is much more difficult with hormones and receptors, and researchers have spent years trying to find the ‘magic’ conditions to grow high-quality crystals of PTH with its receptor. We’ve finally found a method that works.”
+
+The method developed by the VAI researchers is applicable to other receptor-hormone pairs similar to PTH and its receptor, such as those that have therapeutic value for the treatment of Type II diabetes. “This could help optimize drug design for several diseases,” said Xu.
+
+Contact: eric.xu@vai.org
+
+See: Augen A. Pioszak and H. Eric Xu; "Molecular recognition of parathyroid hormone by its G protein-coupled receptor," Proc. Nat. Acad. Sci. USA 105(13), 5034 (2008). DOI: 10.1073/pnas.0801027105
+
+The original news release can be found at: https://www.vai.org/
+
+This work was supported in part by the Jay and Betty Van Andel Foundation, Department of Defense Grant W81XWH0510043, Michigan Economic Development Corporation Grant 085P1000817, and National Institutes of Health Grants DK071662, DK066202, and HL089301. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Published Date
+
+08.08.2008

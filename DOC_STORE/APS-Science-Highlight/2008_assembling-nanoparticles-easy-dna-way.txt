@@ -1,0 +1,29 @@
+Assembling Nanoparticles the Easy DNA-Way
+
+Making it smaller—for instance, shrinking a computer from room-size to palm-size—requires that the tools shrink along with the item being downsized. So it is in nanotechnology, which is the future of biomedical applications, electronics, and nearly every other imaginable science and engineering frontier. Chad A. Mirkin, Director of the International Institute for Nanotechnology at Northwestern University, and his colleagues at Northwestern and the U.S. Department of Energy’s Argonne National Laboratory, have produced a system that can be used to guide the assembly of colloidal crystals—a material widely used in photonics and electronics among other areas. Their results appeared as the cover article in Nature magazine.
+
+Mirkin recalled, “When attending conferences as far back as 1995, I saw many talks making the analogy between nanoparticles and atoms. I thought, if this was a reasonable analogy we should be able to build the equivalent of molecules by zipping these structures together in some rational manner. The most synthetically programmable material I could think of was DNA.”
+
+Taking his quest into the laboratory, Mirkin and his colleagues, with the help of the DuPont-Northwestern-Dow Synchrotron Research Center beamline 05-ID-B, C, D, and X-ray Operations and Research beamline 12-ID-B, C, D, both at the Advanced Photon Source at Argonne, have shown how DNA can be used to guide the assembly of three-dimensional nanoparticles.
+
+The basic idea behind using DNA as the assembler of nanoparticles is as simple and elegant as the structure of DNA first reported by Watson and Crick in 1953, and takes advantage of the same base-pairing rules. In the case of the work done by Mirkin’s team, single strands of DNA were attached to gold spheres and when the complementary DNA sequences found each other and paired according to Watson and Crick base-pairing rules, the DNA became double-stranded and brought along the gold. By changing the length and sequence of the DNA strands, attaching a non-bonding single base that serves as a flexor, and adjusting the reaction temperature, the research team was able to control the identity of the final three-dimensional product, thus turning DNA into a programmer of colloidal crystallization.
+
+As Mirkin said, “We are trying to demonstrate a very fundamental capability: the ability to guide the organization of nanoscale building blocks into preconceived architectures. The hope is that we can elucidate the rules for making any structure. If this is the case, then we can design materials from the bottom up to have any sort of physical and chemical property we desire for a given application.”
+
+One set of reaction conditions produced a crystal lattice of gold spheres and DNA linkers that is called a body-centered-crystal, which is the same crystal structure as cesium chloride and is the arrangement that gives the maximum interaction between molecules. In another set of experiments, using a different linker type and length, a face-centered-crystal resulted.
+
+Demonstrating ways of achieving two different products, and pointing to the day when DNA can be used to assemble just about any desired nanoparticle configuration, is part of the beauty of the present work. And, proving that this is a good idea whose time has come, a research group working at the National Synchrotron Light Source at Brookhaven Laboratory published, in the same issue of Nature, details on the thermodynamics of the process by which DNA directs assembly of the colloidal nanoparticles. Combining this work with the research reported by Mirkin’s group, there is now ample evidence and knowledge to proceed in the use of DNA for directed assembly of crystalline nanoparticles, instead of the amorphous complexes that have been reported until now.
+
+Mirkin points out that, “these particles have spectacular optical and catalytic properties. We have used DNA-modified gold nanoparticles in the development of many high-sensitivity biodetection assays.” Though such gold nanoparticles have already entered commercial application, he admits that the structures produced in the present study “only exist in solution. If they are dried, the DNA collapses.  It's too early to talk about applications, but there are likely many in the optics area, medical diagnostics, catalysis, and separations.” Mirkin calls the structures “highly porous and tailorable networks,” so his idea of using DNA to direct assembly of nanoparticles has come to fruition. Mona Mort
+
+Contact: C. Mirkin, chadnano@northwestern.edu
+
+See: Sung Yong Park, Abigail K.R. Lytton-Jean, Byeongdu Lee, Steven Weigand, George C. Schatz, and Chad A. Mirkin, "DNA-programmable nanoparticle crystallization," Nature 451, 553 (2008). DOI: 10.1038/nature06508
+
+C.A.M. acknowledges the AFOSR and NSF for support of this work. C.A.M is also grateful for a NIH Director’s Pioneer Award. S.Y.P. and G.C.S. were supported by the NSF. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory brings the world's brightest scientists and engineers together to find exciting and creative new solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+02.26.2008

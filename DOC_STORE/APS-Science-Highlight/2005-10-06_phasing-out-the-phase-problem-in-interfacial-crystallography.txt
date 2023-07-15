@@ -1,0 +1,19 @@
+Phasing Out the Phase Problem in Interfacial Crystallography
+
+Since the advent of dedicated synchrotron radiation facilities, the applications of x-ray diffraction and scattering for structure determination have expanded to include a broad range of materials, from proteins and interfaces to nanoparticles. However, the well-known “phase problem” of crystallography limits these applications. The phase problem arises because the complete description of a structure requires a complex structure factor having both a magnitude and a phase. The measured x-ray intensities, however, are proportional to the structure factor magnitude, and phase information is lost in the measurement. If the phase information were retained, the data could be inverted directly to “image” the structure. Over the years, a range of methods have been developed that effectively by-pass the phase problem in traditional crystallography (e.g., multiwavelength anomalous diffraction phasing, direct methods) and in the area of coherent diffraction. Various approaches have been developed for inverting interfacial scattering data, including coherent Bragg rod analysis (COBRA) and holographic inversion techniques, but so far these have been demonstrated for only a relatively narrow range of systems (e.g., thin film structures, or inversion of data in the Fresnel regime). Consequently, the “brute-force” least-squares fitting approach is still the most widely used approach of data analysis for interfacial systems, but it may require up to several months of effort for a successful analysis.
+
+Researchers from Argonne's Chemistry Division have recently demonstrated the applicability of error correction (i.e., Fienup) algorithms as an effective approach for one-dimensional imaging of buried interfacial structures. They applied it to determine the hydration structures of oxide-water interfaces at high resolution. This is particularly challenging as no approach had yet been demonstrated to invert one-dimensional data with < Å resolution. Their approach derives from a similar approach that had previously been applied to the inversion of coherent diffraction data of larger meso- and nanoscale structures. Here, the computer in effect acts as a lens, converting the reciprocal space image of the crystal truncation rod into a one-dimensional direct-space image of the interface (Fig. 1). Application to high-resolution specular reflectivity data measured at the BESSRC/XOR 12-BM-B, 11-ID-D, 12-ID-D, and XOR 1-BM beamlines at the APS demonstrates the efficacy of this approach, in which individual layers of water molecules at the oxide-water interface are directly imaged. Comparisons of interfacial structures derived with model-dependent and model-independent approaches show that this approach provides a reliable first-order indication of the interfacial structure, with atomic locations within ~0.2 Å of those derived using model-dependent approaches. The success of this approach, coupled with previous developments in this area, suggests that the inversion of diffraction data need not be the rate-limiting step, and that real-time analysis of x-ray scattering data for complex interfaces may be possible.
+
+— Paul Fenter and Zhan Zhang
+
+Contact: fenter@anl.gov
+
+See: P. Fenter and Z. Zhang, “Model-Independent One-Dimensional Imaging of Interfacial Structures at < 1 Å resolution,” Phys. Rev. B, Rapid Communications, 72 081401R (2005).
+
+Author Affiliations: Argonne National Laboratory
+
+Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. W-31-109-ENG-38.
+
+Published Date
+
+10.06.2005

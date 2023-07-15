@@ -1,0 +1,43 @@
+Deep Learning Dreams Up New Protein Structures
+
+The original University of Washington Medicine news release by Leila Gray can be read here.
+
+Just as convincing images of cats can be created using artificial intelligence, new proteins can now be made using similar tools. In a report in Nature, using data obtained at the U.S. Department of Energy’s Advanced Photon Source (APS), researchers describe the development of a neural network that “hallucinates” proteins with new, stable structures.
+
+Proteins, which are string-like molecules found in every cell, spontaneously fold into intricate three-dimensional shapes. These folded shapes are key to nearly every biological process, including cellular development, DNA repair, and metabolism. But the complexity of protein shapes makes them difficult to study. Biochemists often use computers to predict how protein strings, or sequences, might fold. In recent years, deep learning has revolutionized the accuracy of this work.
+
+“For this project, we made up completely random protein sequences and introduced mutations into them until our neural network predicted that they would fold into stable structures,” said co-lead author Ivan Anishchenko.  He is an acting instructor of biochemisty at the University of Washington (UW) School of Medicine and a researcher in David Baker’s laboratory at the UW Medicine Institute for Protein Design.
+
+“At no point did we guide the software toward a particular outcome,” Anishchenko said, “ These new proteins are just what a computer dreams up.”
+
+In the future, the team believes it should be possible to steer the artificial intelligence so that it generates new proteins with useful features.
+
+“We’d like to use deep learning to design proteins with function, including protein-based drugs, enzymes, you name it,” said co-lead author Sam Pellock, a postdoctoral scholar in the Baker lab.
+
+The research team, which included scientists from UW Medicine, Harvard University, and Rensselaer Polytechnic Institute (RPI), generated 2,000 new protein sequences that were predicted to fold. Over 100 of these were produced in the laboratory and studied. Detailed analysis on three such proteins confirmed that the shapes predicted by the computer were indeed realized in the lab.
+
+“Our NMR [nuclear magnetic resonance] studies, along with x-ray crystal structures determined by the University of Washington team, demonstrate the remarkable accuracy of protein designs created by the hallucination approach,” said co-author Theresa Ramelot, a senior research scientist at RPI in Troy, New York. Th x-ray data were collected via macromolecular x-ray crystallography at the Northeastern Collaborative Access Team 24-ID-C beamline at the APS (the APS is an Office of Science user facility at Argonne National Laboratory.)
+
+Gaetano Montelione, a co-author and professor of chemistry and chemical biology at RPI, noted. “The hallucination approach builds on observations we made together with the Baker lab revealing that protein structure prediction with deep learning can be quite accurate even for a single protein sequence with no natural relatives. The potential to hallucinate brand new proteins that bind particular biomolecules or form desired enzymatic active sites is very exciting”.
+
+“This approach greatly simplifies protein design,” said senior author David Baker, a professor of biochemistry at the UW School of Medicine who received a 2021 Breakthrough Prize in Life Sciences. “Before, to create a new protein with a particular shape, people first carefully studied related structures in nature to come up with a set of rules that were then applied in the design process. New sets of rules were needed for each new type of fold. Here, by using a deep-learning network that already captures general principles of protein structure, we eliminate the need for fold-specific rules and open up the possibility of focusing on just the functional parts of a protein directly.”
+
+“Exploring how to best use this strategy for specific applications is now an active area of research, and this is where I expect the next breakthroughs,” said Baker.
+
+See: Ivan Anishchenko1, Samuel J. Pellock1, Tamuka M. Chidyausiku1, Theresa A. Ramelot2, Sergey Ovchinnikov3, Jingzhou Hao2, Khushboo Bafna2, Christoffer Norn1, Alex Kang1, Asim K. Bera1, Frank DiMaio1, Lauren Carter1, Cameron M. Chow1, Gaetano T. Montelione2, and David Baker1*, “De novo protein design by deep network hallucination,”  Nature, published on line 01 December 2021. DOI: 10.1038/s41586-021-04184-w
+
+Author affiliations: 1University of Washington, 2Rensselaer Polytechnic Institute, 3Harvard University
+
+Correspondence: * dabaker@uw.edu
+
+This work was funded by grants from the National Science Foundation (DBI 1937533 to D.B. and I.A., and MCB 2032259 to S.O.), the National Institutes of Health (NIH) (DP5OD026389 to S.O.), Open Philanthropy (C.C. and A.B.), Eric and Wendy Schmidt by recommendation of the Schmidt Futures program (F.D. and L.C.), and the Audacious project (A.K.), the Washington Research Foundation (S.J.P.), Novo Nordisk Foundation Grant NNF17OC0030446 (C.N.). This work was also supported in part by NIH grants R01 GM120574 (G.T.M.) and R35GM141818 (G.T.M.), and the Howard Hughes Medical Institute (D.B. and T.M.C.). The authors thank the staff at the Northeastern Collaborative Access Team, which is funded by the National Institute of General Medical Sciences from the National Institutes of Health (P30 GM124165). This research used resources of the Advanced Photon Source, a US Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+01.24.2022

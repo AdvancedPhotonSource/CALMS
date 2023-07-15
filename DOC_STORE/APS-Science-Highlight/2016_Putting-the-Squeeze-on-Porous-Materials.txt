@@ -1,0 +1,31 @@
+Putting the Squeeze on Porous Materials
+
+Porous materials known as metal-organic frameworks, or MOFs for short, may prove useful to safely store vast quantities of gases, including hydrogen for fuel. They can also be used to separate one gas from a mixture of different gases, and they can be used as catalysts to speed up otherwise sluggish chemical reactions for making agrochemicals, additives, pharmaceuticals, plastics, and other substances. They might even be used in novel drug formulations as highly efficient delivery agents that carry an injected or swallowed medication direct to diseased tissues in the body and release it at a suitable rate. Compression of crystals of synthetic, porous materials by researchers using the U.S. Department of Energy’s Advanced Photon Source (APS), an Office of Science user facility, has revealed new insights into how these materials with a range of applications behave under pressure, which could allow scientists to fine tune their properties for industrial, medical and fuel-storage use.
+
+The properties of MOFs are controlled by the different metals and the organic molecules that are used to build their porous, three-dimensional structure. Some MOFs have an internal surface area that can be as high as 7000 square meters per gram of material. However, these materials can be fragile and their mechanical properties are susceptible to failure when they are repeatedly used to store and then release gas, or in reactions where their vast internal surface area allows them to be used as catalysts. Understanding exactly how the stresses and strains in the structure arise when a MOF is put under pressure and then the pressure released is critical to designing new MOFs and to tweaking the structure of known MOFs so that they are stronger.
+
+In a collaboration between the University of Illinois at Urbana-Champaign and Argonne, the effects of pressure applied to single crystals of MOFS were explored. Transmission electron microscopy (TEM) can be used to directly observe the changes that take place when microscopic and submicroscopic crystals of MOFs, such as those with the zeolitic-imidazolate framework (ZIF-8), are squeezed (Fig. 1); TEM images recorded frame-by-frame during compression allowed the researchers to build up a "movie" of the changes. They could thus see a dramatic shrinking of a MOF squeezed by a pressure of up to 4 gigapascals (GPa, almost 40,000 times the pressure of the atmosphere at sea level). They could also see changes in the structure—amorphization—and compaction of the pores within, which means the internal surface area plummets from around 1340 to just 253 square meters per gram at 1.9 GPa.
+
+Utilizing the Materials Research Collaborative Access Team (MR-CAT) x-ray beamline 10-ID-B at the Argonne APS, powder x-ray diffraction studies were carried out on samples pressurized to 0.8 GPa, which showed that long-range order within the sample was not lost. Above this pressure, most of the peaks in the diffraction pattern were lost, implying that the crystal structure had been lost irreversibly and the material was now amorphous. Nevertheless, x-ray absorption spectroscopy on the zinc centers in the MOF structure revealed little change to the local geometry around these metal ions and only minor deviations when the pressure was increased. Of course, because ZIF-8 does not look the same in all directions (it is anisotropic), the way it responds to pressure depends on the direction of the force applied, which is taken into account in these studies.
+
+When the pressure was released, the MOFs almost reverted to their original size and structure. But if the MOF was loaded with small molecules (“solvates”), such as methanol, applying even low pressure caused the microcrystals to shatter, even though pure ZIF-8 itself is well studied and known to be stable to such solvates.
+
+This research thus reveals important clues as to how this type of MOF behaves under pressure with and without an organic payload of the kind that might be present when it is being used in gas storage, separation, or catalysis. 
+
+— David Bradley
+
+See: Zhi Su1, Yu-Run Miao1, Shi-Min Mao1, Guang-Hui Zhang2, Shen Dillon1, Jeffrey T. Miller2, and Kenneth S. Suslick1*, “Compression-Induced Deformation of Individual Metal−Organic Framework Microcrystals,” J. Am. Chem. Soc. 137, 1750 (2015). DOI: 10.1021/ja5113436
+
+Author affiliations: 1University of Illinois at Urbana-Champaign, 2Argonne National Laboratory
+
+Correspondence: *ksuslick@illinois.edu
+
+This research was supported by grants from the U.S. Navy (MURI N000141210828, K.S.S.), the National Science Foundation (DMR 1206355, K.S.S.), the U.S. Department of Energy (DOE) Office of Science-Basic Energy Sciences (DEFG02-05ER46217, S.D.), and the University of Illinois at Urbana-Champaign Frederick Seitz Materials Research Laboratory Central Facilities. MR-CAT operations are supported by the Department of Energy and the MR-CAT member institutions. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+02.17.2016

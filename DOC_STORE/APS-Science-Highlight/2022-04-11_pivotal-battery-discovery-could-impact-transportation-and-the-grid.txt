@@ -1,0 +1,45 @@
+Pivotal Battery Discovery Could Impact Transportation and the Grid
+
+The original Argonne National Laboratory press release by Joseph E. Harmon can be read here.
+
+Battery-powered vehicles have made a significant dent in the transportation market. But that market still needs lower cost batteries that can power vehicles for greater ranges. Also desirable are low-cost batteries able to store on the grid the intermittent clean energy from solar and wind technologies and power hundreds of thousands of homes.
+
+To meet those needs, researchers around the world are racing to develop batteries beyond the current standard of lithium-ion materials. One of the more promising candidates is the sodium-ion battery. It is particularly attractive because of the greater abundance and lower cost of sodium compared with lithium. What’s more, when cycled at high voltage (4.5 volts), a sodium-ion battery can greatly increase the amount of energy that can be stored in a given weight or volume. However, its fairly rapid performance decline with charge-discharge cycling has stymied commercialization.
+
+Researchers at the U.S. Department of Energy’s (DOE) Argonne National Laboratory have discovered a key reason for the performance degradation: the occurrence of defects in the atomic structure that form during the steps involved in preparing the cathode material. These defects eventually lead to a structural earthquake in the cathode, resulting in catastrophic performance decline during battery cycling. Armed with this knowledge, battery developers will now be able to adjust synthesis conditions to fabricate far superior sodium-ion cathodes.
+
+Key to making this discovery was the team’s reliance on the world-class scientific capabilities available at the Center for Nanoscale Materials (CNM) and Advanced Photon Source (APS), both of which are DOE Office of Science user facilities at Argonne.
+
+“These capabilities allowed us to track changes in the atomic structure of the cathode material in real time while it is being synthesized,” said Guiliang Xu, assistant chemist in Argonne’s Chemical Sciences and Engineering division.
+
+During cathode synthesis, material fabricators slowly heat the cathode mixture to a very high temperature in air, hold it there for a set amount of time, then rapidly drop the temperature to room temperature.
+
+“Seeing is believing,” said Yuzi Liu, a CNM nanoscientist. ​“With Argonne’s world-class scientific facilities, we do not have to guess what is happening during the synthesis.” To that end, the team used the transmission electron microscope at the CNM, and in situ synchrotron x-ray diffraction (SXRD) experiments at the X-ray Science Division (XSD) Structural Science Group’s beamline 11-ID-C (Fig. 1) and an in situ nickel K-edge x-ray absorption near-edge structure experiment conducted in transmission mode at the XSD Spectroscopy Group (beamline 20-BM), both at the APS.
+
+Their data revealed that, upon rapidly dropping the temperature during material synthesis, the cathode particle surface had become less smooth and exhibited large areas indicating strain. The data also showed that a push-pull effect in these areas happens during cathode cycling, causing cracking of the cathode particles and performance decline.
+
+Upon further study, the team found that this degradation intensified when cycling cathodes at high temperature (130 degrees Fahrenheit) or with fast charging (one hour instead of 10 hours).
+
+“Our insights are extremely important for the large-scale manufacturing of improved sodium-ion cathodes,” noted Khalil Amine, an Argonne Distinguished Fellow. ​“Because of the large amount of material involved, say, 1000 kilograms, there will be a large temperature variation, which will lead to many defects forming unless appropriate steps are taken.”
+
+Earlier research by team members had resulted in a greatly improved anode. ​“Now, we should be able to match our improved cathode with the anode to attain a 20% - 40% increase in performance,” said Xu. ​“Also important, such batteries will maintain that performance with long-term cycling at high voltage.”
+
+The impact could result in a longer driving range in more affordable electric vehicles and lower cost for energy storage on the electric grid.
+
+See: Gui-Liang Xu1*, Xiang Liu1, Xinwei Zhou1, Chen Zhao1, Inhui Hwang1, Amine Daali1,2***, Zhenzhen Yang1, Yang Ren1‡, Cheng-Jun Sun1, Zonghai Chen1 , Yuzi Liu1**, and Khalil Amine1,3, "Native lattice strain induced structural earthquake in sodium layered oxide cathodes," Nat. Commun. 13, 436 (2022). DOI: 10.1038/s41467-022-28052-x
+
+Author affiliations: 1Argonne National Laboratory, 2University of Wisconsin-Milwaukee, 3Stanford University ‡Present address: University of Hong Kong 
+
+Correspondence: * xug@anl.gov, ** yuziliu@anl.gov, *** amine@anl.gov
+
+Research at Argonne National Laboratory was funded by the U.S. Department of Energy (DOE) Vehicle Technologies Office. Support from Tien Duong of DOE’s Vehicle Technologies Office is gratefully acknowledged. Use of the Advanced Photon Source and Centre for Nanoscale Materials was supported by the U.S. Department of Energy Office of Science-Basic Energy Sciences, under Contract No. DEAC02-06CH11357.
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.11.2022

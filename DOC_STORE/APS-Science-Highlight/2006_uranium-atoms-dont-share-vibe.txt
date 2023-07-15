@@ -1,0 +1,15 @@
+Uranium Atoms Don't Share the Vibe
+
+Suppose you throw a rock into a pond, but instead of circular waves spreading across the surface, only a single bit of the surface at the rock's entry point oscillates up and down continuously. In the 31 March Physical Review Letters, researchers using the XOR 3-ID-C beamline at the APS report a surprising effect in a crystalline solid: a few-atom-wide vibration that refuses to spread through the material. The team probed heated uranium with x rays and neutrons to study the crystal's vibrations. Although predicted twenty years ago, the effect has never been conclusively seen in a three-dimensional crystal. The result seems to demonstrate the surprising ability of a uniform material to concentrate energy spontaneously. – JR Minkel
+
+Read the entire Physical Review Focus article at: Physical Review Focus, 31 March 2006
+
+See: M.E. Manley et al., “Formation of a New Dynamical Mode in Uranium Observed by Inelastic X-Ray and Neutron Scattering,” Phys. Rev. Lett. 96 , 125501 (31 March 2006).
+
+Argonne National Laboratory is a U.S. Department of Energy laboratory managed by The University of Chicago
+
+Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. W-31-109-Eng-38
+
+Published Date
+
+04.18.2006

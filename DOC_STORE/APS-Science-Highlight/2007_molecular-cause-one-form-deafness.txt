@@ -1,0 +1,39 @@
+A Molecular Cause for One Form of Deafness
+
+Scientists exploring the physics of hearing have found an underlying molecular cause for one form of deafness, and a conceptual connection between deafness and the organization of liquid crystals, which are used in flat-panel displays.
+
+Within the cochlea of the inner ear, sound waves cause the basilar membrane to vibrate. These vibrations stimulate hair cells, which then trigger nerve impulses that are transmitted to the brain.
+
+Researchers have now learned that mutations in a protein called espin can cause floppiness in tiny bundles of protein filaments within the hair cells, impairing the passage of vibrations and resulting in deafness.
+
+Filamentous actin (F-actin) is a rod-like protein that provides structural framework in living cells. F-actin is organized into bundles by espin, a linker protein found in sensory cells, including cochlear hair cells. Genetic mutations in espin’s F-actin binding sites are linked to deafness in mice and humans.
+
+“We found the structure of the bundles changes dramatically when normal espin is replaced with espin mutants that cause deafness,” said Gerard Wong, a professor of materials science and engineering, of physics, and of bioengineering at the University of Illinois at Urbana-Champaign.
+
+“The interior structure of the bundles changes from a rigid, hexagonal array of uniformly twisted filaments, to a liquid crystalline arrangement of filaments,” Wong said. “Because the new organization causes the bundles to be more than a thousand times floppier, they cannot respond to sound in the same way. The rigidity of these bundles is essential for hearing.”
+
+Wong and his co-authors – Illinois postdoctoral research associate Kirstin Purdy and Northwestern University professor of cell and molecular biology James R. Bartles – report their findings in a paper accepted for publication in the journal Physical Review Letters.
+
+High-resolution x-ray diffraction experiments, performed by Purdy at the XOR/BESSRC beamline 12-ID at the Advanced Photon Source and also at the Stanford Synchrotron Radiation Laboratory, allowed the researchers to solve the structure of various espin-actin bundles.
+
+“As the ability of espin to cross-link F-actin is decreased by using genetically modified ‘deafness’ mutants with progressively more damaged actin binding sites, the structure changes from a well-ordered crystalline array of filaments to a nematic, liquid crystal-like state,” said Wong, who also is a researcher at the Frederick Seitz Materials Research Laboratory on campus and at the university’s Beckman Institute for Advanced Science and Technology.
+
+In the liquid crystalline state, the bundles maintain their orientation order – that is, they point roughly along the same direction – but lose their positional order. These nematic liquid crystals are commonly used in watch displays and laptop displays.
+
+Wong and his colleagues also found that a mixture of mutant espin and normal espin would prevent the structural transition from occurring. If gene expression could turn on the production of just a fraction of normal espin linkers, a kind of rescue attempt at restoring hearing could, in principle, be made.
+
+“We have identified the underlying molecular cause for one form of deafness, and we have identified a mechanism to potentially ‘rescue’ this particular kind of pathology,” Wong said. “Even so, this is really the first step. This work has relevance to not just human hearing, but also to artificial sensors.”
+
+Contact: Gerard Wong, call 217-265-5254; e-mail: gclwong@uiuc.edu.
+
+The original version of this UIUC press release can be found at: http://news.illinois.edu/
+
+See: Kirstin R. Purdy, James R. Bartles, and Gerard C. L. Wong ; "Structural Polymorphism of the Actin-Espin System: A Prototypical System of Filaments and Linkers in Stereocilia," Phys. Rev. Lett. 98, 058105 (2007); doi:10.1103/PhysRevLett.98.058105;
+
+This work was supported in part by the DOE DEFG02-91ER45439 through the Frederick Seitz Materials Research Laboratory, the NSF RPI-UIUC NSEC, and the NIH (No. DC004314 to J. R. B.). J. R. B. received support from the Hugh Knowles Center. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC
+
+Published Date
+
+02.12.2007

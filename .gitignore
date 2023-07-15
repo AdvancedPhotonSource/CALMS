@@ -3,7 +3,7 @@ logs/
 log.txt
 
 #Doc stores
-DOC_STORE/
+#DOC_STORE/
 
 #Embeds folder
 embeds/

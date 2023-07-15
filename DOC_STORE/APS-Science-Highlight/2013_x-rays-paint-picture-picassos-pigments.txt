@@ -1,0 +1,55 @@
+X-rays Paint a Picture of Picasso's Pigments
+
+Pablo Picasso is widely regarded as one of the most influential artists of the twentieth century, having pioneered a variety of new styles in painting, sculpture, and other artistic forms. Besides introducing avant-garde art styles, he also innovated in the use of non-traditional materials. For example, a widely-held view has been that Picasso employed the ordinary house paint Ripolin in place of conventional artists' paints in some of his artwork. Over the years art historians have used different approaches in an attempt to determine which of Picasso's paintings incorporate Ripolin. This task is not as straightforward as one might suppose, because many of the ingredients in Ripolin were also present in the artists' paints used by Picasso. A recent collaborative effort between Art Institute of Chicago A.W. Mellon Conservation Scientist Francesca Casadio, and Advanced Photon Source (APS) and Argonne National Laboratory physicist Volker Rose has demonstrated conclusively that pigment from one of Picasso's paintings is, indeed, derived from the Ripolin-brand house paint of that era.
+
+Paints normally contain a binder, made of synthetic or natural polymers, that imparts a characteristic liquid or pasty consistency so they can easily cover and adhere to a surface. Other paint ingredients include pigments (for color), and additives and fillers that may impart specific characteristics like abrasion resistance or reduced drying time. The binder, pigments, and additives are dispersed throughout a solvent, such as water or mineral spirits, which evaporates as the paint dries.
+
+A specific type and brand of paint can be determined by the proportion and distribution of elements within its ingredients. Many techniques are available for identifying the composition of paintings: multi-spectral imaging (utilizing multiple frequencies of light); portable x-ray fluorescence imaging; x-ray diffraction performed at synchrotron facilities; and several others. None of these techniques, however, has proven capable of discerning the composition and distribution of elements within the pigment particles found in many paints. Zinc oxide pigments, for instance, range in size from 200 to 1,000 nm (0.2 to 1 µm). Conventional imaging techniques are often incapable of determining whether a particular element resides in the fillers, additives, or pigments of a particular paint.
+
+The Hard X-ray Nanoprobe, situated on the 26-ID beamline of the U.S. Department of Energy Office of Science’s APS at Argonne and operated jointly by the APS and the Argonne Center for Nanoscale Materials, is capable of determining element distribution with exquisite precision. Combining the trace element sensitivity of x-ray fluorescence and a highly-precise positioning system, the nanoprobe can map the distribution of elements at spatial resolutions down to 30 nm. With such high resolving power and chemical sensitivity, the distribution of elements within individual pigment particles can be precisely determined.
+
+X-ray fluorescence generally relies on exciting the electrons close to an atom's nucleus. For this research a monochromator was used to select x-ray photons possessing an energy of 10 keV, which is slightly over the K-shell binding energy of zinc (K-shell electrons are closest to the nucleus). Any K-shell electrons absorbing photons of this energy were ejected from their zinc atoms; subsequently, an electron from a more distant orbital shell “jumped down” to fill the K-shell, releasing a photon with energy equaling the difference in the two shells' binding energies. An x-ray detector registered these fluorescent photons. This same technique was also used to measure the quantity and distribution of other elements present in the paint samples.
+
+An extremely small sample of paint (less than 0.5 mm) extracted with a sharp razor from the front of a Picasso painting thought to contain Ripolin, titled Still Life with Three Fish, Moray Eel and Lime on White Ground, was examined using the nanoprobe. Also examined were artists' paints of French origin, along with samples of Ripolin house paints from France and the United States, all dating from roughly the same era.
+
+Results showed that zinc oxide particles of French origin contained small amounts of iron (Fig. 1), with no measurable cadmium or lead. This high purity level is indicative of chemically-derived pigments, which were present in the French-manufactured zinc oxide particles in both artists' and Ripolin house paints. The artists' paints, however, possessed additional pigments and fillers — for instance, significant amounts of calcium particles — that were absent from the Ripolin. This evidence shows that paint from Picasso's Still Life… most closely matches the composition of Ripolin sold in France at that time.
+
+Interestingly, U.S.-manufactured Ripolin house paint featured zinc oxide particles with a significant lead component, indicating a less-refined mineral source for its zinc oxide pigment.
+
+The researchers involved in this project see the Hard X-ray Nanoprobe as an important new tool that complements the results of more conventional methods in the nanoscale analysis of historical artwork. At the same time, the scientists also learned about the role of impurities in zinc oxide, offering important clues to how zinc oxide could be modified to improve performance in a variety of products, including sensors, light-emitting diodes, and energy-saving windows, as well as liquid-crystal displays for computers, TVs, and instrument panels. — Philip Koth
+
+See: Francesca Casadio1* and Volker Rose2**, “High-resolution fluorescence mapping of impurities in historical zinc oxide pigments: hard X-ray nanoprobe applications to the paints of Pablo Picasso,” Appl. Phys. A 111, 1 (2013). DOI:10.1007/s00339-012-7534-x
+
+Author affiliations: 1The Art Institute of Chicago, 2Argonne National Laboratory
+
+Correspondence: *fcasadio@artic.edu, **vrose@anl.gov
+
+Scientific research at the Art Institute of Chicago is generously supported by the A.W. Mellon Foundation, the Grainger Foundation, the Barker Welfare Foundation, and the Stockman Family Foundation. Use of the Advanced Photon Source and the Center for Nanoscale Materials, Office of Science User Facilities operated for the U.S. Department of Energy (DOE) Office of Science by Argonne National Laboratory, was supported by the U.S. DOE under Contract No. DE-AC02-06CH11357.
+
+Also:
+
+Read the Argonne story on this research.
+
+Selected media coverage:
+
+New York Times
+
+Huffington Post
+
+Consumer Reports
+
+CNBC
+
+New Scientist
+
+Slate.fr
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the U.S. Department of Energy, Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE's Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please click here.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+04.30.2013

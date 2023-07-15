@@ -1,0 +1,19 @@
+At the Boundary between Superconducting and Magnetic Oxides
+
+The transistor, which shaped so much of our modern technology and economics, grew out of scientists’ desire to gain a greater understanding of the interfaces between different materials. In the same way, today’s materials scientists seek to expand our understanding of complex oxides by creating new states at the interface of two materials.
+
+Novel growth of complex oxides provides the ability to combine different materials with different and often antagonistic order parameters to create novel, strongly correlated states at the interface. As shown in the article, “ Magnetism at the interface between ferromagnetic and superconducting oxides ” in the April 2006 issue of Nature Physics, element-resolved x-ray probes and neutrons can be used to construct the first microscopic picture of interactions in a La[subscript 0.7]Ca[subscript 0.3]MnO[subscript 3]/YBa[subscript 2]Cu[subscript 3]O[subscript 7-x] superlattice.
+
+Due to the mismatch in symmetry and energy scales of the superconducting and magnetic orders, it is unclear how to mix the two. However, with the advent of growth techniques such as oxide pulsed laser deposition (PLD), it is now possible to create oxide interfaces with atomic-level control. One can then create an interface between two materials with competing order (i.e., a ferromagnet and a superconductor) and then observe how they merge.
+
+Through the use of x-ray magnetic circular dichroism (at beamline 4-ID-C at the Advanced Photon Source, and ID08 of the European Synchrotron Radiation Facility) at the Mn and Cu L absorption edge, one can visualize the magnetic state at the interface between a Cu-based high-temperature superconductor and an Mn-based ferromagnet. These results obtained an anti-parallel alignment of the magnetic spins as can be seen directly by the opposite signs of the magnetic signal for Cu and Mn. Casting this within the understood theoretical framework for magnetic interactions, we conclude that this can only occur if there is a modification of the electronic structure at the interface of the two materials. Information concerning the interaction of superconductivity and magnetism was seen using off-specular neutron reflectivity to study the large-scale magnetic domain structure, which is dramatically modified below transition to the superconducting state. This illustrates the strong competition between the superconducting and ferromagnetic states. The overall result may have a large impact on the physics of complex oxides and in particular on the field of oxide-based devices. Where this might lead is yet to be determined, but we must always keep in mind the transistor.
+
+See: J. Chakhalian, J.W. Freeland, G. Srajer, J. Strempfer, G. Khaliullin, J.C. Cezar, T. Charlton, R. Dalgliesh, C. Bernhard, G. Cristiani, H-U. Habermeier and B. Keimer, Nature Physics 2(4), 244-248.(2006).
+
+See also: News and Views: “Complex oxides: Interfaces on stage,” Jacobo Santamaría, Nature Physics 2, 229-230 (2006).
+
+Work at Argonne National Laboratory and use of the Advanced Photon Source is supported by the U.S. Department of Energy, Office of Science, Office of Basi Energy Sciences, under contract No. W-31-109-ENG-38.
+
+Published Date
+
+04.12.2006

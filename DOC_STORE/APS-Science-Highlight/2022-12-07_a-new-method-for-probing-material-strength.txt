@@ -1,0 +1,45 @@
+A New Method for Probing Material Strength
+
+The original Lawrence Livermore National Laboratory article by Michael Padilla can be read here.
+
+In an effort to better understand how materials deform under extreme conditions, researchers from the U.S. Department of Energy’s (DOE’s) Lawrence Livermore National Laboratory (LLNL) using the U.S. DOE’s Advanced Photon Source have developed a new experimental method for probing large-strain and high strain-rate material strength. In a paper published in Acta Materialia, Jonathan Lind, LLNL physicist and lead author, said results of the work aid in providing updated strength information that can be used in simulation codes.
+
+“This study demonstrated that the method can observe differences in mechanical behavior due to the way a material was manufactured and processed prior to the experiment,” Lind said. “The work provides updated strength model parameters that more reliably capture the high strain-rate, large plastic strain behavior of copper.”
+
+The researchers also observed that a material’s prior processing history influences its high strain-rate behavior. With a demonstration of the efficacy of the approach, Lind and his colleagues are now planning and conducting experiments on five other materials. 
+
+Lind said the National Nuclear Security Administration (NNSA) mission needs require LLNL to understand materials under extreme conditions, including under combined large-strain and high strain-rate conditions that are challenging to access in well-controlled and diagnosed experiments. This mission is carried out through NNSA’s Stockpile Stewardship Program, which utilizes materials research and physics modeling and simulation codes to accurately model nuclear weapons performance.
+
+“Novel experiments that provide information on the behavior of materials under these extreme environments allow for comparisons with existing models, comparisons across manufacturing processes, and direct observation of phenomenology not currently captured in models,” he said.
+
+Many models of large-strain mechanical response (strength) of materials have phenomenological aspects that are calibrated to the observed behavior of materials. These models are constrained in regimes where experimental data exists. Certainty/reliability/confidence in these models diminishes where models are unchecked, such as at high strain-rates and large plastic strains where data are currently lacking.
+
+Lind and his team conducted the work by drilling a small hole into a chunk of material. Plate-impact was performed on the sample to subject it to a controlled mechanical impulse—the passage of a shock that produces stresses in the material—while the hole is imaged over longer time scales than those in traditional one-dimensional plate impact experiments.
+
+In the experiment setup (Fig. 1) at the Dynamic Compression Sector located at Sector 35 at the Advanced Photon Source at Argonne National Laboratory, high-speed, parallel-beam x-ray Phase Contrast Imaging was used to image the hole and to monitor its shape change.
+
+“The experimental imaging data is directly compared with hydrocode simulations, and we can examine the predictions associated with various strength models,” Lind said, adding that the discrepancy between experiment and calculations can be ascribed to inadequacies in the strength models and provide a path toward model modification to bring the models into better agreement.
+
+Lind said this is a topic of ongoing investigation. “While one-dimensional experiments probing high-rate material behavior provide valuable data about material response, they are limited in the conditions that they can access,” he said.
+
+The research complements other work, such as the Rayleigh-Taylor instability strength platform that is now used at the National Ignition Facility and other facilities, to probe two-dimensional deformation conditions that can produce large strains.
+
+“While this capability was demonstrated at the Dynamic Compression Sector, now that the concept has been demonstrated, it will be possible to field similar experiments at other facilities,” Lind said. “This opens up the possibility to explore and test the behavior of other materials under these extreme conditions, enabling opportunities to collaborate with colleagues at the Department of Defense and academic institutions.”
+
+See: Jonathan Lind*, Matthew D. Nelms, Andrew K. Robinson, Mukul Kumar, and Nathan R. Barton, “Examining material constitutive response under dynamic compression and large plastic strains using in situ imaging of hole closure,” Acta Mater. 206, 116584 (2021). DOI: 10.1016/j.actamat.2020.116584
+
+Author affiliation: Lawrence Livermore National Laboratory
+
+Correspondence: * lind9@llnl.gov
+
+The authors thank the experimental support of the Dynamic Compression Sector staff including Paulo Rigg, Adam Schuman, Nicholas Sinclair, Yuelin Li, Pinaki Das, Drew Rickerson, and Robert Zill for their assistance in experimental operations of the imaging system and powder gun. This work is performed under the auspices of the U.S. DOE by Lawrence Livermore National Laboratory under Contract DEAC52-07NA27344, and supported in part by the Joint Department of Defense/DOE Munitions Technology Development Program (LLNL-JRNL-814062). The Dynamic Compression Sector at the Advanced Photon Source supported by the U.S. DOE National Nuclear Security Administration, under Award No. DE-NA0 0 02442 and operated by Washington State University. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website
+
+Published Date
+
+12.07.2022

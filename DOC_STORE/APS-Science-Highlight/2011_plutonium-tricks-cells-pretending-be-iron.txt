@@ -1,0 +1,35 @@
+Plutonium Tricks Cells by "Pretending" to be Iron
+
+A new biological pathway by which plutonium finds its way into mammalian cells has been revealed by researchers utilizing the U.S. Department of Energy Office of Science’s Advanced Photon Source at Argonne National Laboratory.
+
+According to the researchers, from Argonne and Northwestern University, the plutonium acts like a "Trojan horse," duping a special membrane protein that is typically responsible for taking up iron.
+
+This discovery may help enhance the safety of workers who deal with plutonium, as well as show the way to new "bio-inspired" approaches for separating radioactive elements from other metals in used nuclear fuel.
+
+Because the bodies of mammals have evolved no natural ability to recognize plutonium—the element was first produced in 1941—scientists were curious to know the cellular mechanisms responsible for its retention in the body.
+
+The researchers in this study exposed adrenal cells from rats to minute quantities of plutonium to see how the cells accumulated the radioactive material.
+
+Using the Advanced Photon Source to carry out small-angle x-ray studies and x-ray fluorescence microscopy at X-ray Science Division beamlines 12-ID-C and 2-ID-D, the researchers were able to characterize the behavior of a particular protein known as "transferrin," which is responsible for bringing iron into cells. Each transferrin is made up of two subunits, known as N and C, which normally bind iron. When another protein—the transferrin receptor—recognizes both the N and C subunits, it admits the molecule to the cell. However, when both the N and C subunits contain plutonium, the transferrin receptor doesn't recognize the protein and keeps it out.
+
+Contrary to their expectations, the researchers discovered that in one of the mixed states—when an iron-containing N-subunit is combined with a plutonium-containing C-subunit—the resulting hybrid so closely resembles the normal iron protein that the uptake pathway is "tricked" into allowing plutonium to enter the cell.
+
+"Although the interaction between plutonium and bodily tissues has been studied for a long time, this is the first conclusive identification of a specific pathway that allows for the introduction of plutonium into cells," said Mark Jensen, an Argonne chemist who led the research.
+
+“Just as fascinating,” Jensen continued, “is how these proteins function together to keep some of the plutonium out of the cells. The way they recognize and distinguish between iron and plutonium is fundamentally different than the way chemists go about separating metal ions. Uncovering this metal uptake pathway opens up new ways to think about separating radioactive elements.”
+
+See: Mark P.Jensen1*, Drew Gorman-Lewis1 ‡, Baikuntha Aryal1,2, Tatjana Paunesku3, Stefan Vogt1, Paul G. Rickert1, Soenke Seifert1, Barry Lai1, Gayle E. Woloschak3 , and L. Soderholm1, “An iron-dependent and transferrin-mediated cellular uptake pathway for plutonium,” Nat. Chem Biol., advance online publication, 26 June, 2011. DOI: 10.1038/nchembio.594
+
+Author affiliations: 1Argonne National Laboratory, 2The University of Chicago, 3Northwestern University. ‡Current address: University of Washington
+
+Correspondence: *mjensen@anl.gov
+
+The work at Argonne National Laboratory, including the use of the Advanced Photon Source, was supported by the U.S. Department of Energy Office of Science, under contract no. DE-AC02-06CH11357, whereas work at Northwestern University was supported by U.S. National Institutes of Health grants EB002100 and U54CA119341.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+07.14.2011

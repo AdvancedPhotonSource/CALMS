@@ -1,0 +1,39 @@
+A Boring Material “Stretched” Could Lead to an Electronics Revolution
+
+The oxide compound europium titanate is pretty boring on its own. But sliced nanometers thin and chemically stretched on a specially designed template, it takes on properties that could revolutionize the electronics industry, according to research carried out at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory.
+
+A research team from Cornell University, publishing in the journal Nature, reported that thin films of europium titanate (EuTiO3) become both ferroelectric (electrically polarized) and ferromagnetic (exhibiting a permanent magnetic field) when stretched across a substrate of dysprosium scandate, another type of oxide. The best simultaneously ferroelectric and ferromagnetic material now known pales in comparison by a factor of 1,000.
+
+“Materials by design” is an exciting new area at the confluence of advanced theory of materials and novel synthesis approaches. In the area of new magnetic materials, one of the exciting topics is materials that simultaneously show spontaneous electric and magnetic order, known as multiferroics. However, in most cases a material has either strong electric or magnetic order while the other order is quite weak. Simultaneous ferroelectricity and ferromagnetism is rare in nature and coveted by electronics visionaries. A material with this magical combination could form the basis for low-power, highly sensitive magnetic memory, magnetic sensors or highly tunable microwave devices.
+
+The search for ferromagnetic ferroelectrics dates back to 1966, when the first such compound— a nickel boracite—was discovered. Since then, scientists have found a few additional ferromagnetic ferroelectrics, but none stronger than the nickel compound, until now.
+
+“Previous researchers were searching directly for a ferromagnetic ferroelectric – an extremely rare form of matter,” said co-author Darrell Schlom, professor of materials science and engineering at Cornell.
+
+“Our strategy is to use first-principles theory to look among materials that are neither ferromagnetic nor ferroelectric, of which there are many, and to identify candidates that, when squeezed or stretched, will take on these properties,” added co-author Craig Fennie, Cornell assistant professor of applied and engineering physics.
+
+This fresh strategy, demonstrated using the europium titanate, opens the door to other ferromagnetic ferroelectrics that may work at even higher temperatures using this same materials-by-design strategy, the researchers said.
+
+In order to understand the details of the structural and magnetic properties, the team, including scientists Phil J. Ryan, Jong-Woo Kim, and John W. Freeland of the Magnetic Materials Group of the Argonne X-ray Science Division (XSD) in the APS used polarized x-ray spectroscopy at XSD beamline 4-ID-C, and high-resolution diffraction at XSD beamline 6-ID-B,C to explore the details of the structural and magnetic ground-state of the europium titanate. The researchers took an ultra-thin layer of the oxide and “stretched” it by placing it on top of the dysprosium compound. The crystal structure of the europium titanate became strained because of its tendency to align itself with the underlying arrangement of atoms in the substrate.
+
+Fennie’s previous theoretical work had indicated that a different kind of material strain—more akin to “squishing” by compression—would also produce ferromagnetism and ferroelectricity. But the team discovered that the stretched europium compound displayed electrical properties 1,000 times better than the best-known ferroelectric/ferromagnetic material thus far, translating to thicker, higher-quality films.
+
+This new approach to ferromagnetic ferroelectrics could prove a key step toward the development of next-generation memory storage, superb magnetic field sensors, and many other applications long dreamed about. But commercial devices are a long way off; no devices have yet been made using this material. The Cornell experiment was conducted at an extremely cold temperature – about 4° Kelvin (-452 ° Fahrenheit). The team is already working on materials that are predicted to show such properties at much higher temperatures.
+
+See: June Hyuk Lee1,2, Lei Fang3, Eftihia Vlahos2, Xianglin Ke4, Young Woo Jung3, Lena Fitting Kourkoutis1, Jong-Woo Kim4, Philip J. Ryan4, Tassilo Heeg1, Martin Roeckerath5, Veronica Goian6, Margitta Bernhagen7, Reinhard Uecker7, P. Chris Hammel3, Karin M. Rabe8, Stanislav Kamba6, Jürgen Schubert5, John W. Freeland4**, David A. Muller1,9, Craig J. Fennie1, Peter Schiffer2, Venkatraman Gopalan2, Ezekiel Johnston-Halperin3, and Darrell G. Schlom1*, “A strong ferroelectric ferromagnet created by means of spin–lattice coupling,” Nature 466, 954 (19 August 2010). DOI:10.1038/nature09331
+
+Author affiliations: 1Cornell University, 2Pennsylvania State University, 3Ohio State University, 4Argonne National Laboratory, 5Research Centre Ju¨lich, 6Institute of Physics ASCR, 7Leibniz Institute for Crystal Growth, 8Rutgers University, 9Kavli Institute at Cornell for Nanoscale Science
+
+Correspondence; *schlom@cornell.edu, **freeland@anl.gov
+
+This work was supported by the National Science Foundation through grant DMR-0507146 and the MRSEC program (DMR-0520404, DMR-0820404 and DMR-0820414), and of the Czech Science Foundation (project no. 202/09/0682), is gratefully acknowledged. Use of the Advanced Photon Source was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under contract no. DE-AC02-06CH11357.
+
+Original text courtesy of Cornell University
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science, Office of Basic Energy Sciences (DOE-BES). The APS is the source of the Western Hemisphere’s brightest high-energy x-ray beams for research in virtually every scientific discipline. More than 3,500 scientists representing universities, industry, and academic institutions from every U.S. state and several foreign nations visit the APS each year to carry out applied and basic research in support of the BES mission to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels in order to provide the foundations for new energy technologies and to support DOE missions in energy, environment, and national security. To learn more about the Office of Basic Energy Sciences and its x-ray user facilities, visit .
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+09.30.2010

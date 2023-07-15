@@ -1,0 +1,37 @@
+A Step Toward Better “Beyond Lithium” Batteries
+
+The original Bath University article by Chris Melvin can be read here.
+
+A step toward new, "beyond lithium" rechargeable batteries with superior performance has been made by a multi-institution, international collaboration of scientists who used a variety of research techniques and facilities including the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory. The research was published in the journal Nature Materials.
+
+We increasingly rely on rechargeable batteries for a host of essential uses; from mobile phones and electric cars to electrical grid storage. At present this demand is taken up by lithium-ion batteries. As we continue to transition from fossil fuels to low emission energy sources, new battery technologies will be needed for new applications and more efficient energy storage.
+
+One approach to develop batteries that store more energy is to use “multivalent” metals instead of lithium. In lithium-ion batteries, charging and discharging transfers lithium ions inside the battery. For every lithium ion transferred one electron is also transferred, producing electric current. In multivalent batteries, lithium would be replaced by a different metal that transfers more than one electron per ion. For batteries of equal size, this would give multivalent batteries better energy storage capacity and performance.
+
+The team showed that titanium dioxide can be modified to allow it to be used as an electrode in multivalent batteries, providing a valuable proof of concept in their development.The scientists, from  Bath University (UK); Sorbonne Université, Réseau sur le Stockage Electrochimique de l’Energie, Institut des Molécules et des Matériaux du Mans, Université de Picardie Jules Verne, and ALISTORE-European Research Institute (France); Technical University Berlin (Germany); Thermo Fisher Scientific (Holland); and  Argonne National Laboratory deliberately introduced defects in titanium dioxide to form high concentrations of microscopic holes, and showed these can be reversibly occupied by magnesium and aluminum, which carry more than one electron per ion.
+
+Exhaustive studies of the material included: magnesium battery electrochemical characterization, aluminum battery electrochemical characterization, high-resolution transmission electron microscopy, solid-state magic angle spinning spectroscopy, density functional theory calculations, and ex situ synchrotron x-ray scattering characterization and pair distribution function analysis utilizing high-energy x-rays at X-ray Science Division x-ray beamline 11-ID-B at the APS, which is an Office of Science user facility.
+
+The team also describes a new chemical strategy for designing materials that can be used in future multivalent batteries. Dr. Jiwei Ma, from the Laboratoire PHENIX at Sorbonne Université and a co-corresponding author of the study, claimed: “This new class of cation-deficient TiO2 shows a reversible and fast Mg and Al storage compared to the stoichiometric TiO2, demonstrating that the use of the defect chemistry can drastically tune the material properties for multivalent-ion batteries.“
+
+Dr. Benjamin Morgan, from the Department of Chemistry at the University of Bath and a co-author of the study, said: “Multivalent batteries are a really exciting direction for battery technology, potentially offering higher charge densities and better performance. New battery technologies are going to be more and more important as we wean ourselves off fossil fuels and adopt greener energy sources.
+
+“There are quite a few technical hurdles to overcome, including finding materials that are good electrodes for multivalent ions. We've shown a way to modify titanium dioxide to turn it into a multivalent electrode.
+
+“In the long term, this proof of concept is a possible step towards ‘beyond lithium’ batteries with superior performance.”
+
+See: Toshinari Koketsu1, Jiwei Ma2,3*, Benjamin J. Morgan4, Monique Body5, Christophe Legein5, Walid Dachraoui3,6, Mattia Giannini6,7,8, Arnaud Demortière3,6,7, Mathieu Salanne2,3, François Dardoize2, Henri Groult2, Olaf J. Borkiewicz9, Karena W. Chapman9, Peter Strasser1**, and Damien Dambournet2,3***, “Reversible magnesium and aluminium ions insertion in cation-deficient anatase TiO2,” Nat. Mater., published online 18 September 2017. DOI: 10.1038/nmat4976
+
+Author affiliations: 1Technical University Berlin, 2Sorbonne Université, 3Réseau sur le Stockage Electrochimique de l’Energie, 4University of Bath, 5Institut des Molécules et des Matériaux du Mans, 6Université de Picardie Jules Verne, 7ALISTORE-European Research Institute, 8Thermo Fisher Scientific, 9Argonne National Laboratory
+
+Correspondence: *jiwei.ma@upmc.fr, **pstrasser@tu-berlin.de, ***damien.dambournet@upmc.fr
+
+The research leading to these results has received funding from the French National Research Agency under Idex@Sorbonne University for the Future Investments programme (No. ANR-11-IDEX-0004-02) and from the German Federal Ministry of Education and Research through funding by the “Sino German TU9 network for electromobility” under the grant reference number 16N11929. B.J.M. acknowledges support from the Royal Society (UF130329). This work made use of the ARCHER UK National Supercomputing Service (http://www.archer.ac.uk), via the membership of the UK's HPC Materials Chemistry Consortium, which is funded by EPSRC (EP/L000202). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02- 06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.26.2017

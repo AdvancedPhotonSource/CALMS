@@ -1,0 +1,29 @@
+APS-based Technologies Garner Three R&D-100 Awards
+
+Three technologies developed for use at the U.S. Department of Energy's Advanced Photon Source (APS) at Argonne National Laboratory have won R&D 100 awards. The awards are given annually by R&D Magazine to the 100 most significant technical products of the year.
+
+X-RAY SCANNING MICROPROBE
+
+The hard x-ray scanning microprobe is a noninvasive tool that provides spatial resolution previously unavailable with x-rays, thereby expanding the potential of traditional x-ray techniques. It was developed by Barry Lai, Zhonghou Cai, Jörg Maser, Dan Legnini and Peter Ilinski of the APS Synchrotron Radiation Instrumentation Collaborative Access Team. Wenbing Yun of Lawrence Berkeley National Laboratory contributed to the technology.
+
+The heart of the microprobe is the phase zone plate, an optical device that focuses the x-rays to less than a micron, a scale 1,000 times smaller than traditional x-rays. This increased spatial resolution, together with the penetration of the hard x-ray, allows scientists to study samples without having to specially prepare them. For example, biological cells and bacteria can be examined in their natural hydrated state, thus avoiding artifacts associated with staining, drying and chemically preparing the sample.
+
+The hard x-ray scanning microprobe's higher resolution, increased sensitivity for mapping trace elements in cells and ability to measure structural phases and strains in materials and microelectronic devices make the microprobe unique for studying infectious diseases, drug effectiveness, contaminated environments, and developing smaller, more reliable integrated circuits and safer, stronger materials.
+
+LARGE-AREA CCD DETECTOR
+
+The second Argonne innovation, the large-area charge-coupled device (CCD) x-ray detector, developed for theStructural Biology Center Collaborative Access Team (sector 19) at the APS, improves the way that scientists study and determine protein structures. It was developed by Istvan Naday, Edwin M. Westbrook, and Mike Strauss. By knowing the 3-D structure of a protein, scientists can understand the protein's function in the body and how to repair it when something goes wrong.
+
+In protein crystallography, an x-ray beam irradiates a protein crystal. The resulting scattered x-ray pattern is recorded, and researchers use this "diffraction pattern" to determine the 3-D structure of proteins. x-ray detection areas act as cameras, capturing these diffraction patterns.
+
+Older x-ray detection areas were too small, the speeds too slow and the resolutions not clear enough to process all the data that was generated. Argonne's large-area CCD x-ray detector allows researchers to study proteins and DNA molecules 100 times faster, in a larger detection area and at higher resolutions, and captures data on toxins, receptors, enzymes, viruses, metabolic and genetic regulators and other molecular components. This information will help scientists develop new drugs and understand biological processes.
+
+MICROFOCUS X-RAY MIRRORS
+
+X-ray microbeams have long been recognized as having the capacity to provide unparalleled nondestructive measurements of chemical and compositional crystallography. Tapping into this capability are the Differentially Deposited X-Ray Microfocus Mirrors, which efficiently focus monochromatic and broad-bandpass x-rays to a submicron spot. These mirrors do not require bending mechanisms, making them more compact and simpler to use. To increase focus performance and simplify alignment, the mirrors use a monolithic approach with only four degrees of freedom-two for each mirror.
+
+An advanced differential coating technology is used to modify the surface profile of ultra-smooth x-ray optics and provide high-performance mirrors an order of magnitude better than mirrors currently available. For more consistent performance the mirror figure cannot change with time or use. A group of researchers led by Gene Ice of Oak Ridge National Laboratory and Andrew Lunt at Beamline Technology Corp., Tucson, Ariz., developed the mirrors which minimizes the costs of providing a vacuum or helium enclosure for protection. These mirrors are in use at the APS beamline operated by the Center for Real-time X-ray Studies Collaborative Access Team (sector 7).
+
+Published Date
+
+09.29.2000

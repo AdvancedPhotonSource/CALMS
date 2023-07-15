@@ -1,0 +1,43 @@
+Prof. Tai-Chang Chiang of UIUC to Receive the 2019 APSUO Compton Award
+
+Professor Tai-Chang Chiang, Emeritus and Research Professor of Physics at the University of Illinois at Urbana-Champaign (UIUC), has been chosen to receive the 2019 Arthur H. Compton Award, presented by the Advanced Photon Source Users Organization (APSUO), “for his ingenuity and insight in developing x-ray thermal diffuse scattering into an efficient quantitative method for phonon band structure studies.”
+
+Beginning in the 1980s, Prof. Chiang was a pioneer in the use of synchrotron radiation in establishing the angle-resolved photoemission technique for electron band structure determination of solids, surfaces, and films.
+
+His more recent scientific accomplishment is in developing the thermal diffuse scattering (TDS) technique into an efficient, quantitative method by which materials scientists at synchrotron x-ray facilities such as the Advanced Photon Source (APS) can determine phonon band structure. The impact of this methodology on materials research, especially in cases involving small samples, microstructures, and phase transitions is likely to be far reaching. 
+
+The TDS scattering patterns, recorded with a two-dimensional detector, show intricate details involving phonons from a wide range in k space over many zones. For instance, a least-squares analysis of the data acquired in just 20 seconds at APS Sector 33 yielded phonon dispersion curves of silicon over the entire Brillouin zone, which are in excellent agreement with neutron scattering results. This work was cited by Prof. Millie Dresselhaus in a plenary talk at the 2000 Fall MRS Meeting as one of three major achievements from all U.S. Department of Energy (DOE) facilities. The results were adopted by Jens Als-Nielsen and Des McMorrow in their textbook, Elements of Modern X-Ray Physics (Wiley, 2001), pg. 141. 
+
+Chiang’s group has since extended the work to a variety of systems and phenomena. Particularly notable research includes phonon softening in the charge-density-wave compound TiSe2; phonon anomalies in niobium and plutonium; renormalization and fluctuation effects associated with the antiferrodistortive transition in SrTiO3; and a new method of direct data inversion based on momentum-resolved x-ray calorimetry.
+
+Ian K. Robinson
+
+Professor of Physics, University College London
+
+Over the course of his career, Prof. Chiang has made lasting contributions to condensed matter physics, surface science, and synchrotron radiation research, including several truly groundbreaking findings. He has authored some 300 journal articles, and his work has been cited more than 8500 times.
+
+Chiang’s work on precision electron spectroscopy and structural determination has led to important advances in the physics of electrons, lattice structures, and phonons and their mutual interactions in solids, at surfaces, in films, and at the nanoscale.
+
+In 2016, he was elected by the Academia Sinica to its 2016 class of Academicians. He was among 22 scholars across all academic disciplines to receive that high honor that year. Academia Sinica is the national academy of Taiwan.
+
+Chiang is the recipient of numerous other recognitions, including the 2015 Davisson-Germer Prize in Atomic or Surface Physics, sponsored by the American Physical Society. He received the Xerox Award for Faculty Research (1985), the National Science Foundation Presidential Young Investigator Award (1984-89), and the IBM Faculty Development Award (1984-5). He is a Fellow of the American Physical Society.
+
+He served as head of the UIUC Solid State Sciences and Materials Chemistry Program from 1991 to 2006. He was associate director of the Frederick Seitz Materials Research Laboratory at UIUC from 1999 to 2006. From 2003 to 2008, he chaired the Board of Governors for the University-National Laboratory-Industry Collaborative Access Team at the Advanced Photon Source. From 2010 to 2014, he served as the scientific director of the University of Wisconsin-Madison Synchrotron Radiation Center. He was appointed Chair Professor at the National Chiao-Tung University at Taiwan (2013-16); Honorary Chair at National Tsing Hua University at Taiwan (2008-11); and Distinguished Chair at National Taiwan University (2007-10 and 2015-present). He is currently a visiting professor at Tokyo University.
+
+Prof. Chiang received a bachelor’s degree in physics from the National Taiwan University in 1971 and a doctoral degree in physics from the University of California, Berkeley, in 1978. He held a postdoctoral appointment at the IBM T.J. Watson Research Center in Yorktown Heights from 1978 to 1980, before he joined the faculty in the Department of Physics at the University of Illinois Urbana-Champaign in 1980.
+
+The Arthur H. Compton award was established in 1995 by the APS Users Organization to recognize an important scientific or technical accomplishment at the Advanced Photon Source. The award consists of a plaque and $2500.
+
+The bi-annual awards are presented at the APS/CNM User Meetings, which are held every spring. A call for nominations is sent out before the meeting, and the winner(s) is invited to give an award lecture at the meeting. Awards are not necessarily made each year.
+
+Compton was an American physicist who won the Nobel Prize for Physics in 1927 for discovering and explaining changes in x-ray wavelengths resulting from x-ray collisions with electrons, the so-called Compton effect. This important discovery in 1922 confirmed the dual nature (wave and particle) of electromagnetic radiation. A Ph.D. from Princeton University, Compton held many prominent positions, including professor of physics at The University of Chicago and chairman of the committee of the National Academy of Sciences that studied the military potential of atomic energy. His position on that committee made Compton instrumental in initiating the Manhattan Project, which created the first atomic bomb.
+
+The Advanced Photon Source is a U.S. DOE Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.11.2019

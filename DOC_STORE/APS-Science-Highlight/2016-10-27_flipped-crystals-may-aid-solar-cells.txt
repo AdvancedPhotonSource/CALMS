@@ -1,0 +1,43 @@
+Flipped Crystals May Aid Solar Cells
+
+The original Rice University press release by Mike Williams can be read here.
+
+The original Los Alamos National Laboratory press release by Nancy Ambrosiano can be read here.
+
+In a step that could bring perovskite crystals closer to use in the burgeoning solar power industry, researchers from Los Alamos National Laboratory, Northwestern University, Rice University, Purdue University, and Fonctions Optiques pour les Technologies de l’Information (FOTON, France) with help from high-brightness x-rays from the U.S. Department of Energy’s Advanced Photon Source (APS), have tweaked their crystal production method and developed a new type of two-dimensional layered perovskite with outstanding stability and more than triple the material’s previous power conversion efficiency.
+
+The discovery could bring abundant perovskite crystals closer to use in the solar power industry, according to the researchers.
+
+“Crystal orientation has been a puzzle for more than two decades, and this is the first time we’ve been able to flip the crystal in the actual casting process,” said Rice University student Hsinhan (Dave) Tsai and Wanyi Nie from Light-to-Energy group in Los Alamos National who are the lead authors on the Nature journal article detailing the results. “This is our breakthrough, using our spin-casting technique to create layered crystals whose electrons flow vertically down the material without being blocked mid-layer by organic cations.”
+
+Rice University professor and paper co-author Jun Lou said the conductive, two-dimensional (2-D) inorganic layers derived from three-dimensional (3-D) perovskite were isolated by nonconductive organic spacer cations, positively charged ions. Tsai and his colleagues aligned the inorganic layers such that charges could flow freely through the material.
+
+Perovskite crystals are cube-like compounds of calcium titanium oxide (in their natural form) or other materials with similar structures. The three-dimensional crystals are efficient light harvesters. Their power-conversion efficiencies are better than 20% and compare favorably with commercial solar panels that achieve the low 20s. But 3-D perovskites perform poorly when stressed by light, humidity and heat.
+
+Perovskites that are formed into 2-D layers and look like rows of pyramids when viewed from above were created at Northwestern University by chemists Mercouri Kanatzidis and postdoctoral researcher Costas Stoumpos and their colleagues. They noted in a 2015 paper that such an arrangement greatly increases the exposed surface area of the mineral.
+
+But the crystals lost power when organic cations hit the sandwiched gap between the layers, knocking the cells down to a 4.73% conversion efficiency, due to the out-of-plane alignment of the crystals. Applying the hot casting technique to create a more streamlined, vertically aligned 2-D material seems to have eliminated that gap. The robust material has achieved 12% efficiency, the researchers reported.
+
+The crystallinity of the perovskite films was explored using the grazing incidence x-ray diffraction (GIXRD) technique and a lab-based x-ray instrument at the Argonne-Northwestern Solar Energy Research (ANSER) Center, a DOE Basic Energy Sciences Energy Frontier Research Center facility. The narrower reflections observed for the hot-cast films suggested that the crystallinity of the hot-cast films is superior to that of the room-temperature-cast films and becomes optimal at 110 °C. This stark difference in the observed GIXRD patterns motivated in-depth crystallography measurements at the X-ray Science Division 8-ID-E beamline at the Argonne APS, an Office of Science user facility that is optimized for grazing incidence wide-angle x-ray scattering (GIWAXS) , a surface-sensitive technique capable of determining the orientation and distribution of crystallites within thin film materials.  The GIWAXS pattern for the material spincast at room temperature exhibits rings arising from a polycrystalline material with a very wide distribution of orientations while the distinct diffraction peaks in the GIWAXS data from the hot-cast thin film reveal textured, nearly single-crystalline ordering.   Further analysis of the GIWAXS data allows indexing of the crystal peaks, demonstrating unambiguously that the crystal plane is parallel to the substrate surface. 
+
+“The new 2-D perovskite is both more efficient and more stable, both under constant lighting and in exposure to the air, than the existing 3-D organic-inorganic crystals,” said Los Alamos co-author Wanyi Nie.
+
+Previous work by the Los Alamos team had provided insights into 3-D perovskite’s ability to recover efficiency, given a little time out in a dark space; but by shifting to the more resilient 2-D approach, the team has had better results.
+
+“We seek to produce single-crystalline thin-films that will not only be relevant for photovoltaics but also for high-efficiency, light-emitting applications, allowing us to compete with current technologies,” said senior researcher Aditya Mohite, principal investigator on the study.
+
+See: Hsinhan Tsai1, Wanyi Nie1, Jean-Christophe Blancon1, Constantinos C. Stoumpos3, Reza Asadpour4, Boris Harutyunyan3, Amanda J. Neukirch1, Rafael Verduzco2, Jared J. Crochet1, Sergei Tretiak1, Laurent Pedesseau5, Jacky Even5, Muhammad A. Alam4, Gautam Gupta1, Jun Lou2, Pulickel M. Ajayan2, Michael J. Bedzyk3, Mercouri G. Kanatzidis3, and Aditya D. Mohite1, “High-efficiency two-dimensional Ruddlesden–Popper perovskite solar cells,” Nature 536, 312 (2016). DOI: 10.1038/nature18306
+
+Author affiliations: 1Los Alamos National Laboratory, 2Rice University, 3Northwestern University, 4Purdue University, 5Fonctions Optiques pour les Technologies de l’Information
+
+Correspondence: *amohite@lanl.gov
+
+The work at LANL was LANL LDRD programme (A.D.M., G.G., J.-C.B. and S.T.). Work at Northwestern University was supported as part of the ANSER Center, an Energy Frontier Research Center funded by the US Department of Energy (DOE) Office of Science-Basic Energy Sciences, under Award No. DE-SC0001059. Work at INSA de Rennes was performed using high-performance computational resources from the French national centres (GENCI/CINES/IDRIS grant 2015-c2012096724), Cellule Energie du CNRS (SOLHYBTRANS Project) and the University of Rennes 1 (Action Incitative,Défis Scientifique Emergents 2015). J.E.’s work is also supported by the Fondation d’entreprises banque Populaire de l’Ouest (Grant PEROPHOT 2015). The work at Purdue University was supported by the Bay Area PV Consortium (a Department of Energy project with Prime Award number DE-EE0004946). The work at LANL was done in part at the Center for Nonlinear Studies (CNLS) and the Center for Integrated Nanotechnologies (CINT). R.V. acknowledges the support of the NSF DMR-1352099. The use of the Advanced Photon Source and the Center for Nanoscale Materials at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science User Facilities under contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.27.2016

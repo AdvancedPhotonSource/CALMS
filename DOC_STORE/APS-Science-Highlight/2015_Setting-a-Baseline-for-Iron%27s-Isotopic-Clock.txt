@@ -1,0 +1,31 @@
+Setting a Baseline for Iron's Isotopic Clock
+
+Isotopic clocks are a familiar tool in science. The ratio of carbon isotopes found in plants is used to determine the climate in which the plant grew. The ratio of oxygen isotopes in marine foraminifera tells of the temperatures in ancient seas. Similarly, the ratio of iron isotopes has the potential to tell us about processes such as those that increased the oxygen in the atmosphere more than two billion years ago. But in each of these cases, it is necessary to have reference points for the isotopes in order to determine how they’ve changed. Scientists are exploring this reference point in goethite, an iron-bearing mineral commonly found in soils. Recent research results from an international team of scientists, using a relatively new technique, are refining the isotopic equilibrium constant for iron in an effort to illuminate these biogeochemical processes. This work, performed at the U.S. Department of Energy’s Advanced Photon Source (APS), uses the nuclear resonant inelastic x-ray scattering (NRIXS) technique to measure the vibrational properties of goethite. (Isotopic equilibrium constants can be calculated from vibrational properties using an intermediate concept called a force constant.) In addition to new measurements, the team re-examined older NRIXS measurements to confirm previously published values. They also used density functional theory to calculate the theoretical vibrational and isotopic properties for comparison with their experimental data. Figure summarizes the measured and calculated vibrational properties.
+
+In the process of re-evaluating the previously determined force constants, the team of researchers from the Sorbonne Universités, The University of Chicago, Argonne, the Université Lille, Hamilton Sundstrand, the NASA Johnson Space Center, and King’s College London found that the constants are heavily influenced by a non-constant baseline. This non-constant baseline comes from modeling the high and low-energy ends of the NRIXS spectra obtained at X-ray Science Division beamline 3-ID-B at the Argonne APS, an Office of Science user facility. The force constant values that take into account the non-constant baseline yield more reproducible values (data was gathered over a three-year period), supporting the incorporation of this step when processing NRIXS data.
+
+The team took two new NRIXS measurements of synthetic goethite and accounted for the non-constant baseline in their calculations of the force constant. Additionally, they re-calculated a force constant value from an older NRIXS measurement of the same goethite sample using the non-constant baseline. This re-assessed value agreed better with those values calculated from the new measurements and all NRIXS values are close to, though higher than, the values calculated from functional density theory.
+
+Interested in comparing their theoretical and NRIXS data to other iron isotopic equilibrium constant values, the team also looked at previously published Mössbauer spectroscopy results. All methods yielded values that agree well for hematite and pyrite, other iron-bearing minerals, but not goethite.
+
+The team investigated the aspects of goethite that could be producing the x-ray scattering (from which the force constant is determined) and are also different from the hematite and pyrite. One explanation could be that hydrogen bonding, present in goethite but not hematite, is not well modeled in density functional theory. Another explanation could be that the goethite samples used may differ from each other, both in defects arising from their origins as well as molecular relaxation near surface sites in the mineral lattice.
+
+By combining experimental and theoretical techniques, this research provides reliable isotope fractionation factors. Additionally, it shows an improved NRIXS method for determining isotopic equilibrium constants for iron and allows for refinement in NRIXS processing by accounting for the non-constant baseline.
+
+Lastly, these research results demonstrate the worth of NRIXS and density functional theory in exploring the geochemistry of non-traditional isotopes, important steps toward a useful iron isotopic clock. 
+
+— Mary Alexandra Agner
+
+See: M. Blanchard1*, N. Dauphas2, M.Y. Hu3, M. Roskosz4, E.E. Alp3, D.C. Golden5, C.K. Sio2, F.L.H. Tissot2, J. Zhao3, L. Gao3, R.V. Morris6, M. Fornace2, A. Floris7, M. Lazzeri1, and E. Balan1, “Reduced partition function ratios of iron and oxygen in goethite,” Geochim. Cosmochim. Acta 151, 19 (2015). DOI: 10.1016/j.gca.2014.12.006
+
+Author affiliations: 1Sorbonne Universités, 2The University of Chicago, 3Argonne National Laboratory, 4Université Lille 1, 5Hamilton Sundstrand, 6NASA Johnson Space Center, 7King’s College London
+
+Correspondence: *marc.blanchard@impmc.upmc.fr
+
+This work was performed using HPC resources from GENCI-IDRIS (Grant 2014-i2014041519). This work has been supported by the French National Research Agency (ANR, projects 11-JS56-001 “CrIMin” and 2011JS56 004 01 “FrIHIDDA”), grants from NSF (EAR 1144429) and NASA (NNX12AH60G). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+11.24.2015

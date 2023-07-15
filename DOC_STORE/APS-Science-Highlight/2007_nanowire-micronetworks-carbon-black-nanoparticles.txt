@@ -1,0 +1,17 @@
+Nanowire Micronetworks from Carbon-Black Nanoparticles
+
+Self-assembly is likely to play a decisive role in producing nanoscale elements for three dimensional (3D) electronic and nanoscale electro-mechanical systems. Until now, however, the difficult problem of fabricating a complex, interconnected 3D system of conductive nanoscale wires remained unsolved. In Levine et. al., published in Applied Physics Letters 90 (2007), the authors have successfully demonstrated a simple approach for fabricating such wiring networks through self assembly of interconnected linear arrangements of nanoscale carbon black (CB) particles that decorate triple junctions within press sintered amorphous poly(methyl methacrylate) (PMMA). The self-assembly process was studied as a function of the CB mass fraction.
+
+Figure 1 shows CB particles (in red) being rejected to the PMMA triple junctions during deformation. The electrical percolation threshold for the system is extremely low at approximately 0.26% CB mass fraction, demonstrating that the CB rejection process is very efficient. Ultra-small-angle x-ray scattering (USAXS) and full-field transmission USAXS imaging at the XOR/UNI beamline 33-ID has enabled the detailed, in situ characterization of the 3D connected networks of self-assembled carbon black nanowires embedded within approximately millimeter-thick substrates of PMMA. In situ USAXS and USAXS imaging revealed that the conducting wires have lengths ranging from 10 µm to 100 µm, and have sample-averaged diameters down to 24 nm. The Fig. 1 inset shows a USAXS image acquired from a press-sintered sample with 1% mass fraction CB. The bright linear features are the self-assembled CB nanowires.
+
+Contact: L.E. Levine ( lyle.levine@nist.gov )
+
+See: L. E. Levine, G. G. Long, J. Ilavsky, R. A. Gerhardt, R. Ou, and C. A. Parker, “ Self-assembly of carbon black into nanowires that form a conductive three dimensional micronetwork,” Appl. Phys. Lett. 90, 014101 (2007). DOI: 10.1063/1.2425011
+
+Work at Georgia Tech was supported by the National Science Foundation (DMR-0076153 and DMR-0604211). Research at the APS was supported by the U.S. Department of Energy, Office of Science, Basic Energy Sciences under Contract No. W-31-109-ENG-38.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC
+
+Published Date
+
+01.11.2007

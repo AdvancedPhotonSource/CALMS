@@ -1,0 +1,45 @@
+Diamond Anvils Yield New Insight into the Deep Earth
+
+The original Caltech press release by Robert Perkins can be read here.
+
+Nearly 1800 miles below the Earth's surface, there are large, odd structures lurking at the base of the mantle, sitting just above the core. The mantle is a thick layer of hot, mostly plastic rock that surrounds the core; atop the mantle is the thin shell of the Earth's crust. On geologic time scales, the mantle behaves like a viscous liquid, with solid elements sinking and rising through its depths. These odd structures, known as ultra-low velocity zones (ULVZs), can be studied by measuring how they alter seismic waves that pass through them. But observing is not necessarily understanding. Indeed, no one is really sure what these structures are. Now, Earth scientists utilizing ultra-bright x-rays from the U.S. Department of Energy’s Advanced Photon Source, as well as other experimental techniques, say they know not just what ULVZs are made of, but where they come from.
+
+The ULVZs were first discovered in 1995 by Caltech's Don Helmberger. ULVZs are so-named because they significantly slow down the speeds of seismic waves; for example, they slow down shear waves (oscillating seismic waves capable of moving through solid bodies) by as much as 30 percent. ULVZs are several miles thick and can be hundreds of miles across. Several are scattered near the Earth's core roughly beneath the Pacific Rim. Others are clustered underneath North America, Europe, and Africa. 
+
+"ULVZs exist so deep in the inner Earth that they are impossible to study directly, which poses a significant challenge when trying to determine what exactly they are," says Helmberger, Caltech Smits Family Professor of Geophysics, Emeritus.
+
+Earth scientists at Caltech now say they know not just what ULVZs are made of, but where they come from. Using experimental methods at high pressures, the researchers, led by Caltech Professor of Mineral Physics Jennifer Jackson, have found that ULVZs consist of chunks of a magnesium/iron oxide mineral called magnesiowüstite that could have precipitated out of a magma ocean that is thought to have existed at the base of the mantle millions of years ago. 
+
+The other leading theory for ULVZs formation had suggested that they consist of melted material, some of it possibly leaking up from the core.
+
+Jackson and her colleagues, who reported on their work in the Journal of Geophysical Research: Solid Earth, found evidence supporting the magnesiowüstite theory by studying the mineral's elastic (or seismic) anisotropy; elastic anisotropy is a variation in the speed at which seismic waves pass through a mineral depending on their direction of travel. 
+
+One particularly unusual characteristic of the region where ULVZs exist—the core-mantle boundary (CMB)—is that it is highly heterogenous (non-uniform in character) as well as anisotropic. As a result, the speed at which seismic waves travel through the CMB varies based not only on the region that the waves are passing through but on the direction in which those waves are moving. The propagation direction, in fact, can alter the speed of the waves by a factor of three. 
+
+"Previously, scientists explained the anisotropy as the result of seismic waves passing through a dense silicate material. What we're suggesting is that in some regions, it is largely due to the alignment of magnesiowüstite within ULVZs," said Jackson.
+
+At the pressures and temperatures experienced at the Earth's surface, magnesiowüstite exhibits little anisotropy. However, Jackson and her team found that the mineral becomes strongly anisotropic when subjected to pressures comparable to those found in the lower mantle.
+
+Jackson and her colleagues discovered this by placing a single crystal of magnesiowüstite in a diamond anvil cell, which is essentially a tiny chamber located between two diamonds, and used high-energy resolution momentum-resolved inelastic x-ray scattering and x-ray diffraction at X-ray Science Division (XSD) x-ray beamline 30-ID-C at the APS, an Office of Science user facility at Argonne National Laboratory. When the rigid diamonds are compressed against one another, the pressure inside the chamber rises. Jackson and her colleagues then bombarded the sample with x-rays. The interaction of the x-rays with the sample acts as a proxy for how seismic waves will travel through the material. At a pressure of 40 gigapascals—equivalent to the pressure at the lower mantle—magnesiowüstite was significantly more anisotropic than seismic observations of ULVZs. Additional synchrotron Mössbauer spectroscopy measurements were conducted at XSD beamline 3-ID-B at the APS. Ruby fluorescence experiments were done at the GSECARS facility also at the APS.
+
+In order to create objects as large and strongly anisotropic as ULVZs, only a small amount of magnesiowüstite crystals need to be aligned in one specific direction, probably due to the application of pressure from a strong outside force. This could be explained by a subducting slab of the Earth's crust pushing its way to the CMB, Jackson said. (Subduction occurs at certain boundaries between Earth's tectonic plates, where one plate dives below another, triggering volcanism and earthquakes.)
+
+"Scientists are still in the process of discovering what happens to the crust when it's subducted into the mantle," Jackson said. "One possibility, which our research now seems to support, is that these slabs push all the way down to the core-mantle boundary and help to shape ULVZs."
+
+Next, Jackson plans to explore the interaction of subducting slabs, ULVZs, and their seismic signatures. Interpreting these features will help place constraints on processes that happened early in Earth's history, she said.
+
+See: Gregory J. Finkelstein1‡*, Jennifer M. Jackson1**, Ayman Said2, Ahmet Alatas2, Bogdan M. Leu2‡‡, Wolfgang Sturhahn1, and Thomas S. Toellner2, “Strongly Anisotropic Magnesiowüstite in Earth’s Lower Mantle,” J. Geophys.Res.-Sol. Ea. 123(6) 4740 (June 2018). DOI: 10.1029/2017JB015349
+
+Author affiliations: 1Caltech, 2Argonne National Laboratory Present address: ‡University of Hawaíi at Manoa, ‡‡Miami University
+
+Correspondence: * jackson@gps.caltech.edu , * gjﬁnkel@hawaii.edu
+
+The authors thank NSF-CSEDI-EAR-1161046 and 1600956, and the W. M. Keck Institute for Space Studies for ﬁnancial support. G. J. Finkelstein is also partially supported by the Caltech Seismological Laboratory Director’s Postdoctoral Fellowship. They acknowledge COMPRES for partial support of Sector 3 and Sector 30 at the Advanced Photon Source. GSECARS is supported by NSF-EAR-1128799 and U.S. Department of Energy (DOE), Geosciences (DE-FG02-94ER14466. This research used resources of the Advanced Photon Source, a U.S. DOE Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.25.2018

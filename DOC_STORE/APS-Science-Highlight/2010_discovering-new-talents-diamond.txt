@@ -1,0 +1,37 @@
+Discovering New Talents for Diamond
+
+Diamond exhibits a unique combination of superlative physical qualities such as high mechanical hardness, high thermal conductivity, high radiation hardness, and low thermal expansion, etc. Accordingly, diamond is in great demand for an ever-increasing number of technological applications.
+
+Recently, diamond crystals were identified as being indispensable for the realization of next-generation, fully coherent hard x-ray sources such as x-ray free-electron laser oscillators (XFELO), that have the potential for unprecedented average brightness along with record narrow spectral bandwidths [1-2]. Diamonds are considered a most promising material for high-reflectance Bragg crystal mirrors of the XFELO optical cavities. There are two major reasons for this. First, the theory predicts that even at normal incidence the reflectivity of x-rays from diamond should approach 100%, under the Bragg diffraction condition. However, a priori it was not clear whether the remarkably high reflectivity of diamond crystals predicted in theory could be achieved in practice. And if the theory predictions are correct, is the quality of the presently available diamond crystals sufficiently high for practical use, e.g., for the XFELO mirrors?
+
+Second, the outstanding thermo-mechanical properties of diamonds, such as record high thermal conductivity and low thermal expansion, are crucial to ensure stability of the x-ray cavity under the thermal load of the intense XFELO radiation. Thermal expansion of diamond at room temperature, though much smaller compared to other crystals, is not sufficiently small to guarantee the required stability. Does it become small enough at low temperatures? Surprisingly, the answer was not known. Thermal expansion of diamond at low temperatures has been an unresolved problem in solid state physics, due primarily to deficient measurement accuracy. In particular, it has been unclear how small the thermal expansion was below 100K. It was also not clear if diamond exhibits negative thermal expansion like Si, Ge, and other semiconductors with a diamond structure.
+
+Researchers using the XSD/IXS 30-ID x-ray beamline at the U.S. Department of Energy's Advanced Photon Source at Argonne have discovered that synthetic diamond crystals exhibit a very high degree of perfection [3]. Almost-theoretical values were measured for the reflectivity and spectral width in Bragg diffraction at normal incidence to the reflecting atomic planes for hard x-rays with a photon energy of E = 24 keV. The reflectivity is significantly higher than that of Si crystals under similar conditions. (Synchrotron white-beam topography was applied at beamline X19C of the National Synchrotron Light Source [NSLS] to preselect the diamond crystal with the lowest density of defects.)
+
+In another experiment [4] performed at the same APS beamline, a two-order-of-magnitude improvement in the measurement accuracy of thermal expansion of diamonds has been achieved, as compared to previous studies. The authors measured an extremely small value of thermal expansion of diamond: ~2 x 10-9K-1 at temperatures around 40K (Fig. 2). The ability to measure such a small variation of the crystal lattice is equivalent to measuring a variation of the Earth’s radius with an accuracy of a few millimeters. Only positive values of the thermal expansion coefficient were observed in diamond. Therefore, unlike Si or Ge, diamond has no negative thermal expansion.
+
+The results of the studies published in [3,4] go beyond solving critical outstanding problems related to the basic physical properties of diamonds. The demonstrated high reflectivity and the extremely small thermal expansion at low temperatures of diamond crystals open up vistas for entirely new, highly advanced technology applications of diamonds and new opportunities in x-ray optics, in particular. These results could greatly assist the realization of fully coherent x-ray sources, such as x-ray free electron laser oscillators.
+
+Correspondence: shvydko@aps.anl.gov, sstoupin@aps.anl.gov
+
+References
+
+[1] K.-J. Kim, Yu. Shvyd'ko, S. Reiche "A Proposal for an X-Ray Free-Electron Laser Oscillator with an Energy-Recovery Linac," Phys. Rev. Lett. 100, 244802 (2008).
+
+[2] K.-J. Kim, Yu. Shvyd'ko, "Tunable optical cavity for an x-ray free-electron-laser oscillator,"
+
+Phys. Rev. ST Accel. Beams 12, 030703(2009).
+
+[3] Yu. Shvyd'ko, S. Stoupin, A. Cunsolo, A. Said, S. Huang, "High-Reflectivity High-Resolution X-Ray Crystal Optics with Diamonds," Nat. Phys. 6,(3) 196 (2010). Advance online publication, January 17, 2010.
+
+[4] S. Stoupin, Yu. Shvyd'ko "Thermal Expansion of Diamond at Low Temperatures," Phys. Rev. Lett. 104, 085901 (2010).
+
+See also: Nature Physics “News and Views,” “X-ray optics: Diamond brilliance,” by Stephen M. Durbin & Roberto Colella, Nat. Phys. 6, 163 (2010). DOI:10.1038/nphys1610
+
+This work and use of the APS was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. The NSLS is supported under Contract No. DE-AC-02-98CH10886.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+02.25.2010

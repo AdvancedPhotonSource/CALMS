@@ -1,0 +1,21 @@
+Fast-forward to Better DVDs?
+
+Digital video disc (DVD) technology is by no means new, but that doesn’t mean we know everything about the way that these devices store our movies and data. New insights into the way this mature technology works has come from North Carolina State University researchers using the MR-CAT beamline 10-ID at the U.S. Department of Energy’s Advanced Photon Source. Their findings may lead to advances in data storage as well as within the computer industry as a whole.
+
+DVD-RAMs—or readable/writable DVDs—are composed of an alloy that contains three elements: germanium, antimony and tellurium. This alloy is commonly used in data storage technologies due to its ability to change phases from a crystalline to a non-crystalline state. The phase changes are what allow the DVD-RAM to take and hold data. While scientists were familiar with the basic properties of the alloy, they didn’t know how it worked on a microscopic level: why one particular ratio of elements worked better than others.
+
+The North Carolina State University researchers used the extended x-ray absorption fine structure (EXAFS) technique to examine the alloy at the microscopic level. EXAFS is a type of x-ray spectroscopy that allows scientists to determine specifically which atoms are present in a particular material and where they are located in relation to each other. By then applying bond constraint theory to the data, the researchers were able to calculate the optimum ratio of elements within the material.
+
+The practical result of the information is the ability to “fine tune” the alloy, which could lead to the development of not only more efficient data storage devices, but also remotely reconfigurable electronics; for example, computers that could be sent into orbit and then reprogrammed as needed without the cost of sending up another spacecraft or satellite.
+
+Contact: Dave Baker (North Carolina State University), dabaker@unity.ncsu.edu
+
+See: D. A. Baker, M. A. Paesler, G. Lucovsky, S. C. Agarwal, and P. C. Taylor, "Application of Bond Constraint Theory to the Switchable Optical Memory Material Ge 2Sb 2Te 5,” Phys. Rev. Lett. 96, 255501 (2006). doi:10.1103/PhysRevLett.96.255501
+
+Work supported by the Air Force Research laboratory under Grant No. F29601-03-01-0229, and by the National Science Foundation under Grant No. DMR 0307594. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. W-31-109-ENG-38. MR-CAT operations are supported by the Department of Energy and the MR-CAT member institutions.
+
+Argonne National Laboratory is a U.S. Department of Energy laboratory managed by The University of Chicago.
+
+Published Date
+
+07.31.2006

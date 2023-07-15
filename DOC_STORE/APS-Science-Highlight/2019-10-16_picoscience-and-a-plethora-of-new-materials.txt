@@ -1,0 +1,45 @@
+Picoscience and a Plethora of New Materials
+
+The original Yale University news story by Jim Shelton can be read here.
+
+The revolutionary tech discoveries of the next few decades, the ones that will change daily life, may come from new materials so small they make nanomaterials look like lumpy behemoths.
+
+These new materials will be designed and refined at the picometer scale, which is a thousand times smaller than a nanometer and a million times smaller than a micrometer (which itself is smaller than the width of a human hair). In order to do this work, scientists will need training in an array of new equipment that can measure and guide such exquisitely controlled materials. The work involves designing the materials theoretically, fabricating them, and characterizing their properties.
+
+At Yale University, they have a name for it; they call it "picoscience."
+
+"Researchers at Yale are inventing new materials that are small, fast, and can perform in a multitude of ways, such as mimicking neurons in the brain, computing with magnets, and calculating with quantum mechanics," said Frederick Walker, a senior research scientist in the lab of Charles Ahn, the John C. Malone Professor of Applied Physics, Mechanical Engineering and Materials Science, and Physics, and chair of the Department of Applied Physics.
+
+Ahn is senior author of a new study that moves picoscience in yet another direction: taking elements from the periodic table and tinkering with them at the subatomic level to tease out new materials. The new study appears in the journal Physical Review Letters.
+
+Sangjae Lee, a graduate student in Ahn's lab and first author of the study, designed and grew the new material, which is an artificial, layered crystal composed of the elements lanthanum, titanium, cobalt, and oxygen.
+
+The researchers layered the elements one atomic plane at a time, so that one-atom-thick sheets of titanium oxide transfer an electron to one-atom-thick-sheets of cobalt oxide. This changed the electronic configuration and magnetic properties of the cobalt oxide sheet.
+
+"We were able to manipulate the constituent atoms with a precision much smaller than the atom itself," Lee said. "These types of new crystals may form the basis for developing new magnetic materials, where a delicate balance between magnetism and electronic conduction at such small length scales can be manipulated in novel, transistor-like devices that have performance advantages over today's transistors."
+
+X-ray absorption and x-ray linear dichroism measurements of the layers were carried out at the X-ray Science Division (XSD) 4-ID-C x-ray beamline at the U.S. Department of Energy’s Advanced Photon Source (APS), an Office of Science user facility at Argonne National Laboratory. Additionally, an atomic-scale structure determination was performed by measuring crystal truncation rods using high-resolution synchrotron x-ray diffraction at the XSD 33-ID-D beamline at the APS. Lee trained on a number of instruments that are being developed at the National Synchrotron Light Source II at Brookhaven National Laboratory in New York.
+
+In addition to designing and growing the new materials, Sangjae Lee characterized them and analyzed the results. From the theoretical side, Yale colleagues Alex Taekyung Lee and Alexandru Georgescu, who is now at the Center for Computational Quantum Physics at the Flatiron Institute, used quantum mechanical computations to compute the structure of the materials and its effect on their electronic configuration. This work enabled the team to describe the magnetic state of the materials.
+
+Yale has identified the development of quantum materials as a priority research area, foreseeing their use in new computational systems that will far outstrip today's computers. The university also has noted the significance of collaborations with Brookhaven, which has some of the most advanced materials characterization facilities in the United States, including the nation's newest synchrotron.
+
+"The invention of new materials has been at the heart of technological advances that have transformed our lives," said co-author Ismail-Beigi, a professor of applied physics at Yale. "New electronic materials have driven the ever-increasing capabilities of cell phones, computers, tablets, smart watches, and medical devices."
+
+Co-author Walker stressed the importance of communication between experimentalists and theorists in conducting picoscience research: "A synergistic feedback loop between theoretical design and experimental fabrication is crucial to successfully discovering new materials properties," he said. "This feedback loop has become a signature of the National Science Foundation's materials discovery program and was originally developed at Yale."
+
+See: Sangjae Lee1*, Alex Taekyung Lee1, Alexandru B. Georgescu1,2, Gilberto Fabbris3,4, Myung-Geun Han3, Yimei Zhu3, John W. Freeland4, Ankit S. Disa1, Yichen Jia1, Mark P.M. Dean2, Frederick J. Walker1, Sohrab Ismail-Beigi1, and Charles H. Ahn1, “Strong Orbital Polarization in a Cobaltate-Titanate Oxide Heterostructure,” Phys. Rev. Lett. 123, 117201 (2019). DOI: 10.1103/PhysRevLett.123.117201
+
+Author affiliations: 1Yale University, 2Flatiron Institute, 3Brookhaven National Laboratory, 4Argonne National Laboratory
+
+Correspondence: *sangjae.lee@yale.edu
+
+This work was supported by the Air Force Office of Scientific Research (AFOSR) under Grant No. FA9550-15- 0472. Support for A.B.G. and S.I.-B. was provided by the National Science Foundation (NSF) under Grant No. MRSEC DMR-1119826 (CRISP), and the authors acknowledge the computational support from NSF XSEDE resources through Grant No. TG-MCA08X007, the facilities and staff of the Yale Center for Research Computing, and the Scientific Computing Core division of the Flatiron Institute. The Flatiron Institute is a division of the Simons Foundation. X-ray spectroscopy measurements by G.F. and M.P.M. D. are supported by the U.S. Department of Energy, Office of Science-Basic Energy Sciences, Early Career Award Program under Award No. 1047478. Work at Brookhaven National Laboratory was supported by the U.S. Department of Energy, Office of Science-Basic Energy Sciences, under Contract No. DE-SC0012704. FIB sample preparation was performed at the Center for Functional Nanomaterials, Brookhaven National Laboratory. This research used resources of the Advanced Photon Source, a U.S. DOE Ofﬁce of Science User Facility operated for the DOE Ofﬁce of Science by Argonne National Laboratory under Contract No. DE-AC02–06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.16.2019

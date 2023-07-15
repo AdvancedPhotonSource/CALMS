@@ -1,0 +1,43 @@
+Tiny Circuits, Long Distances: Toward Smaller Light-Processing Devices for Fiber-optic Communication
+
+The original Michigan Tech News release can be read here.
+
+Researchers at Michigan Technical University using high-brightness x-rays from the U.S. Department of Energy’s Advanced Photon Source (APS) have mapped a noise-reducing magneto-optical response that occurs in fiber-optic communications, opening the door for new materials technologies.
+
+Optical signals produced by laser sources are extensively used in fiber-optic communications, which work by pulsing information packaged as light through cables, even at great distances, from a transmitter to a receiver. Through this technology it is possible to transmit telephone conversations, internet messages, and cable television images. The great advantage of this technology over electrical signal transmission is its bandwidth—namely, the amount of information that can be broadcast. New research from a collaboration between researchers from Michigan Technological University and Argonne National Laboratory, using high-brightness x-rays from the U.S. Department of Energy’s Advanced Photon Source (APS) further improves optical signal processing, which could lead to the fabrication of even smaller fiber-optic devices. The study unveiling an unexpected mechanism in optical non-reciprocity—developed by the research group of Miguel Levy, professor of physics at Michigan Tech—was published in the journal Optica and explains the quantum and crystallographic origins of a novel surface effect in nonreciprocal optics that improves the processing of optical signals.
+
+An optical component called the magneto-optic isolator appears ubiquitously in these optical circuits. Its function is to protect the laser source—the place where light is generated before transmission—from unwanted light that might be reflected back from downstream. Any such light entering the laser cavity endangers the transmitted signal because it creates the optical equivalent of noise.
+
+“Optical isolators work on a very simple principle: light going in the forward direction is allowed through; light going in the backwards direction is stopped,” Levy said. “This appears to violate a physical principle called time reversal symmetry. The laws of physics say that if you reverse the direction of time—if you travel backwards in time—you end up exactly where you started. Therefore, the light going back should end up inside the laser. But it doesn’t.
+
+“Isolators achieve this feat by being magnetized. North and south magnetic poles in the device do not switch places for light coming back. So forward and backward directions actually look different to the traveling light. This phenomenon is called optical non-reciprocity,” he said.
+
+For Michigan Tech’s FEI 200kV Titan Themis Scanning Transmission Electron Microscope (STEM) (one of only two Titans in the state of Michigan), all the world’s a stage.​
+
+Optical isolators need to be miniaturized for on-chip integration into optical circuits, a process similar to the integration of transistors into computer chips. But that integration requires the development of materials technologies that can produce more efficient optical isolators than presently available.
+
+Recent work by Levy’s research group has demonstrated an order-of-magnitude improvement in the physical effect responsible for isolator operation. This finding, observable in nanoscale iron garnet films (Fig. 1), opens up the possibility of much tinier devices. New materials technology development of this effect hinges on understanding its quantum basis.
+
+The research group’s findings provide precisely this type of understanding. This work was done in collaboration with Michigan Tech physics graduate student Sushree Dash, Michigan Tech Applied Chemical and Morphological Analysis Laboratory staff engineer Pinaki Mukherjee, and Argonne National Laboratory X-ray Science Division (XSD) staff scientists Daniel Haskel and Richard Rosenberg.
+
+The Optica article explains the role of the surface in the electronic transitions responsible for the observed enhanced magneto-optic response. These were observed with the help of the XSD 4-ID-C x-ray beamline, which is operated by the XSD Magnetic Materials Group at the APS, an Office of Science user facility at Argonne.
+
+Mapping the surface reconstruction underlying these effects was made possible through the state-of-the-art scanning transmission electron microscope acquired by Michigan Tech two years ago. The new understanding of magneto-optic response provides a powerful tool for the further development of improved materials technologies to advance the integration of nonreciprocal devices in optical circuits.
+
+See: Sushree S. Dash1, Pinaki Mukherjee1, Daniel Haskel2, Richard A. Rosenberg2, and Miguel Levy1*, “Boosting optical nonreciprocity: surface reconstruction in iron garnets,” Optica 7(9), 1038 (September 2020). DOI: 10.1364/OPTICA.398732
+
+Author affiliations: 1Michigan Technological University, 2Argonne National Laboratory
+
+Correspondence: *mlevy@mtu.edu
+
+The electron microscopy research was performed at the Applied Chemical and Morphological Analysis Laboratory at Michigan Technological University. The electron microscopy facility is supported by National Science Foundation MRI 1429232. M.L. and S.S.D. acknowledge support from SRICO, Inc., and the Henes Center for Quantum Phenomena. This material is based in part on research sponsored by the Air Force Research Laboratory under contract number FA8650-17-C-5072. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.12.2020

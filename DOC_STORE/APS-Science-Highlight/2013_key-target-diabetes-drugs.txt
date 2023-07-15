@@ -1,0 +1,53 @@
+A Key Target for Diabetes Drugs
+
+The three-dimensional (3-D) atomic structure of the human glucagon receptor has been identified by an international team of researchers carrying out experiments at the U.S. Department of Energy Office of Science’s Advanced Photon Source. The receptor, found mainly on liver and kidney cells, helps regulate glucose levels in the bloodstream and is the target of potential therapeutic agents for type 2 diabetes.
+
+“Our data should change the current view of how drugs are designed with this and related receptors,” said The Scripps Research Institute Research Associate Fai Yiu Siu, who was first author of the study reported on July 17, 2013, in an advance online edition of the journal Nature, alongside a British laboratory’s structural study of another member of the same class of receptors—known as “class B” G protein-coupled receptors (GPCRs).
+
+"Understanding how the glucagon receptor interacts with and binds to its partners will provide new information on how cells maintain sugar levels, possibly aiding the development of treatments for glucose-related disorders like type 2 diabetes," said Jean Chin of the National Institutes of Health's National Institute of General Medical Sciences, which partially funded the research. "Because the receptor is the first in its class of membrane proteins to be structurally determined, the work may advance studies of similarly shaped, medically important, but often difficult to characterize molecules."
+
+Scripps Professor Raymond C. Stevens, a senior author of the study, said, “This work involved a very fruitful international collaboration in which researchers in the United States, China, and Europe worked closely together for more than two years to uncover the key differences in this subfamily of GPCRs.”
+
+GPCRs are the largest family of cellular receptors in humans and other animals. More than a third of all modern pharmaceuticals target these receptors, either to boost or block their activities. Determining the structural details of individual GPCRs and how they interact with binding partners has been a major goal of much biological research.
+
+Over the past decade, the Stevens and Cherezov laboratories at Scripps have pioneered techniques to express, stabilize, and induce these inherently flexible receptor proteins to form regular crystalline solids from which their structures can be derived via x-ray crystallography.
+
+Other than a class F smoothened receptor, all the GPCRs whose structures have been solved to date are known as “class A” GPCRs for their common structural and protein-sequence features. More challenging for structural biologists has been the class B GPCRs, which include the glucagon receptor as well as several closely related protein molecules.
+
+“These receptors are very different from the class A receptors since they have key functional domains both embedded in and outside of the cellular membrane, so the lessons we’ve learned from the class A have not been entirely applicable,” said Vsevolod Katritch, an assistant professor of molecular biology at Scripps and a co-author on the study.
+
+The glucagon receptor and related GLP1 and GIP receptors were high on the list of desired class B GPCR structures due to their potential as a drug target for diabetes, and their similarity to other receptors involved in endocrine and metabolic disorders. When activated by the hormone glucagon during fasting, the glucagon receptor triggers the release into the bloodstream of stored glucose from the liver and other sites. Modulating the glucagon receptor’s activity thus offers a way to control blood sugar.
+
+Other laboratories have reported finding the crystal structure of the small soluble part of the glucagon receptor, known as the extracellular domain. But the structure of the receptor’s midsection, normally anchored in the host cell’s membrane where the signal is transmitted, has been elusive. Although it is also involved in binding to glucagon, this “transmembrane domain” of the receptor—which resembles a jumble of seven loose springs—tends to resist the crystallization that is needed for structure determination.
+
+After many attempts, Siu was finally able to obtain crystallography-worthy crystals of the receptor’s transmembrane domain. Borrowing one key innovation from class A GPCR studies, he used a special fusion protein to hold the molecule together. The resulting structure, determined to a resolution of 3.4 angstroms utilizing the highly focused minibeam at the National Institute of General Medical Sciences and National Cancer Institute 23-ID-D beamline at the Advanced Photon Source at Argonne National Laboratory, turned out to have two key features that differ from those seen in class A GPCRs. One is an unusually elongated, stalk-like segment that connects the transmembrane region to the outermost, knob-like domain of the receptor. The other is an unusually large pocket within the transmembrane region where the N-terminal part of the glucagon peptide is expected to dock.
+
+“If you’re trying to get a drug molecule to fit snugly into that pocket, you might need a larger one than those that are normally used to target class A GPCRs,” Siu said. He added that several pharmaceutical companies have been trying to develop drugs that specifically target this and related receptors. “Other than peptides, maybe the drugs they’re designing need to be bigger and not conform to the usual characteristics of other drugs.”
+
+One of the other tour de forces of the study included extensive analyses of how the receptor’s glucagon-binding properties change when its individual amino acids are mutated. This work, involving the study of more than 100 separate mutations to the receptor, was performed by co-senior author Ming-Wei Wang’s laboratory at the Shanghai Institute of Materia Medica, Chinese Academy of Sciences; Chris de Graaf’s laboratory at the Amsterdam Institute for Molecules, Medicines and Systems (AIMMS) of VU University Amsterdam; and Jesper Lau at Novo Nordisk (Denmark).
+
+Combining the new data with previous work, computational biochemists De Graaf and Katritch were able to develop a detailed model for how the full-length glucagon receptor operates: its outermost domain grabs one end of the glucagon peptide, then inserts the other end of the peptide into the large binding pocket in the transmembrane domain, locking the receptor structure in place and triggering receptor activation. “We managed to put together the pieces of this puzzle, and the mutational analysis was a key part of our model,” said Stevens.
+
+Siu, Katritch, Stevens, and their colleagues now are trying to determine the glucagon receptor structure while the receptor is bound to glucagon, and at a sharper resolution.
+
+The other contributors to the study, “Structure of the human glucagon class B G-protein-coupled receptor,” were Min He, Dehua Yang, Zhiyun Zhang and Caihong Zhou of Chinese Academy of Sciences; Gye Won Han, Daniel Wacker, Jeremiah S. Joseph, Wei Liu and Vadim Cherezov of TSRI; and Qingping Xu of the SLAC National Accelerator Laboratory.
+
+“This glucagon receptor structure has opened the door to understanding how hormone peptides bind to this class of receptors, and it will help us solve related receptor structures,” Stevens said. “Our knowledge of GPCRs is still in its infancy, and we are learning a great deal with each new structure, with different techniques, and in the different functional states.”
+
+See: Fai Yiu Siu1, Min He2, Chris de Graaf3, GyeWon Han1, DehuaYang2, Zhiyun Zhang2, Caihong Zhou2, Qingping Xu4, DanielWacker1, Jeremiah S. Joseph1, Wei Liu1, Jesper Lau5, Vadim Cherezov1, Vsevolod Katritch1, Ming-Wei Wang2**, and Raymond C. Stevens1*, “Structure of the human glucagon class B G-protein-coupled receptor,” Nature, published online 17 July 2013. DOI:10.1038/nature12393
+
+Author affiliations: 1The Scripps Research Institute, 2The National Center for Drug Screening/Shanghai Institute of Materia Medica, 3VU University of Amsterdam, 4SLAC National Accelerator Laboratory, 5Novo Nordisk
+
+Correspondence: *stevens@scripps.edu, **wangmw@mail.shcnc.ac.cn
+
+This work was supported by National Institutes of Health (NIH) Roadmap grant P50GM073197 for technology development (V.C. and R.C.S.), and PSI:Biology grant U54 GM094618 for biological studies and structure production (target GPCR-49) (V.K., V.C. and R.C.S.); PSI:Biology grant U54 GM094586 for structure QC; The Ministry of Health grants 2012ZX09304-011 and 2013ZX09507002 (M.-W.W.), Shanghai Science and Technology Development Fund 11DZ2292200 (M.-W.W.); Novo Nordisk-Chinese Academy of Sciences Research Fund NNCAS-2011-7 (M.-W.W.); Thousand Talents Program in China (R.C.S. and M.-W.W.); NIH Postdoctoral Training Grant (NRSA) F32 DK088392 (F.Y.S.); The Netherlands Organization for Scientific Research (NWO) through a VENI grant (Grant 700.59.408 to C.d.G.); and COST Action CM1207, GLISTEN (C.d.G). GM/CA@APS has been funded in whole or in part with Federal funds from the National Cancer Institute (Y1-CO-1020) and the National Institute of General Medical Sciences (Y1-GM-1104). Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under Contract No. DE-AC02-06CH11357.
+
+The original press release from The Scripps Research Institute can be found here.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science X-ray user facilities, visit the user facilities directory.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+07.26.2013

@@ -1,0 +1,37 @@
+First Detailed Look at a Crucial Enzyme Advances Cancer Research
+
+The Arizona State University press release by Richard Harth can be read here.
+
+In order to develop more effective drugs against a range of cancers, researchers have been investigating the molecular structure of many disease-linked enzymes in the body. An intriguing case in point is Taspase1, a type of enzyme known as a protease. The primary duty of proteases is to break down proteins into smaller peptide snippets or single amino acids. In a new study appearing in the Cell Press journal Structure, a collaborative team of researchers from Arizona State University, Beryllium Discovery Corp., Washington University in St. Louis, the National Institutes of Health, SRI International, and the Spanish National Research Council, describe their investigations at the U.S. Department of Energy’s Advanced Photon Source (APS), which reveal the structure of Taspase1 as never before.
+
+Taspase1 appears to play a vital role in a range of physiological processes, including cell metabolism, proliferation, migration and termination. The normal functioning of Taspase1 can go awry however, leading to a range of diseases, including leukemia, colon and breast cancers, as well as glioblastoma, a particularly lethal and incurable malignancy in the brain. 
+
+Because Taspase1 dysregulation is increasingly implicated in the genesis and metastasis of various cancers, it has become an attractive candidate for drug development. But before this can happen, researchers need a highly detailed blueprint of the structure of this protease. 
+
+The study unveils, for the first time, the catalytically active 3D structure of the catalytically active Taspase1 protein, revealing a previously unexplored region that is essential for the functioning of the molecule. We developed a novel cloning strategy to generate the fully active form of Taspase1 as circularly permuted variant (cpTaspase1α41-233/β) to allow us to obtain 3D crystals, which were measured by X-ray diffraction at the National Institute of General Medical Sciences and National Cancer Institute X-ray beamline 23-ID-D at the APS. (The APS is an Office of Science user facility at Argonne National Laboratory.). The structure of cpTaspase1α41-233/β protein was solved to 3-Å resolution (Fig. 1) in the labs of Petra Fromme at Arizona State University.
+
+Petra Fromme, director of the Biodesign Center for Applied Structural Discovery, highlights the great importance of the work: "I am so excited that we were able to solve the first structure of the functional active enzyme, as it will have huge implications for the structure-based development on novel anti-cancer drugs.”
+
+The results of this study show that reducing the size of a critical helical region of Taspase1, limits protease activity, while eliminating the helical region deactivates Taspase1 functioning altogether. Earlier research suggested that disabling Taspase1 activity to block the progression of cancer could be achieved without harmful side effects.
+
+“We have reported the importance of a previously unobserved long fragment of the protein in the catalytic activity of Taspase1, which can be used as an attractive target to inhibit Taspase1," said Jose Martin-Garcia, lead scientist on the project and co-corresponding author with Fromme. “The crystal structure of the active Taspase1 reported in our article will be greatly beneficial to advance the design of Taspase1 inhibitors for anti-cancer therapy.”
+
+See: Nirupa Nagaratnam1, Silvia L. Delker2‡, Rebecca Jernigan1, Thomas E. Edwards2‡, Janey Snider3, Darren Thifault1, Dewight Williams1, Brent L. Nannenga1, Mary Stofega3, Lidia Sambucetti3, James J. Hsieh4, Andrew J. Flint5, Petra Fromme1*, and Jose M. Martin-Garcia1, 6**, “Structural insights into the function of the catalytically active human Taspase1,” Available online 29 March 2021. Structure 29, (March 2021). DOI: 10.1016/j.str.2021.03.008
+
+Author affiliations: 1Arizona State University, 2Beryllium Discovery Corp., 3SRI International Menlo Park, 4Washington University in St. Louis, 5National Institutes of Health, 6Spanish National Research Council ‡Present address: UCB Biosciences
+
+Correspondence: * petra.fromme@asu.edu, ** jmmartin@iqfr.csic.es
+
+This project has been funded in whole with Federal funds from the National Cancer Institute (NCI), National Institutes of Health (NIH), under Chemical Biology Consortium contract no. HHSN261200800001E. Use of the Life Sciences Collaborative Access Team at APS Sector 21 was supported by the Michigan Economic Development Corporation and the Michigan Technology Tri-Corridor (Grant 085P1000817). The National Institute of General Medical Sciences and National Cancer Institute structural biology facility at the APS has been funded by the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006, P30GM138396). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+Copyright © 2021 Arizona Board of Regents
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.13.2021

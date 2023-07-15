@@ -1,0 +1,41 @@
+How Do Ice Giants Maintain Their Magnetic Fields?
+
+The original Carnegie Science news story can be read here (Copyright © 2020 Carnegie Institution for Science).
+
+A layer of “hot,” electrically conductive ice could be responsible for generating the magnetic fields of ice giant planets like Uranus and Neptune. New work from Carnegie and the University of Chicago’s Center for Advanced Radiation Sources, carried out at the U.S. Department of Energy’s Advanced Photon Source (APS), reveals the conditions under which two such superionic ices form. Their findings were published in Nature Physics. 
+
+As all school children learn, water molecules are made up of two hydrogen atoms and one oxygen atom—H20. As the conditions in which water exists change, the organization and properties of these molecules are affected. We can see this in our everyday lives when liquid water is boiled into steam or frozen into ice.
+
+The molecules that comprise ordinary ice that you might find in your drinking glass or on your driveway in winter arranged in a crystalline lattice held together by hydrogen bonds between the hydrogen and oxygen atoms. Hydrogen bonds are highly versatile. This means that ice can exist in a striking diversity of different structures—at least 18 known forms—which emerge under increasingly environmental conditions.
+
+Of particular interest is so-called superionic ice, formed at very high pressures and temperatures, in which the traditional water molecule bonds are shifted, allowing the hydrogen molecules to float freely in an oxygen lattice. This mobility makes the ice capable of conducting electricity almost as well as a metallic material.
+
+Observations of hot, superionic ice created in the lab have led to contradictory results and there has been a great deal of disagreement about the exact conditions under which the new properties emerge.
+
+“So, our research team, led by the University of Chicago’s Vitali Prakapenka, set out to use multiple spectroscopic tools to map changes in ice’s structure and properties under conditions ranging up to 1.5 million times normal atmospheric pressure and about 11,200 degrees Fahrenheit,” explained Carnegie’s Alexander Goncharov.
+
+By doing this, the scientists—including Nicholas Holtgrewe formerly of Carnegie, now at the Food and Drug Administration in St Louis, and Sergey Lobanov, formerly of Carnegie, now at the GFZ German Research Center for Geosciences—were able to pinpoint the emergence of two forms of superionic ice, one of which they suggest could be found in the interiors of ice giant planets Uranus and Neptune.
+
+“In order to probe the structure of this unique state of matter under very extreme conditions—heated by a laser and compressed between two diamonds—we used the Advanced Photon Source’s brilliant high-energy synchrotron x-ray beam, which was focused down to about 3 microns, 30 times smaller than a single human hair,” said Prakapenka, explaining the work done using the the GeoSoilEnviroCARS 13-ID x-ray beamline at the Argonne National Laboratory APS. There, the team employed pressure from a diamond anvil cell combined with laser heating to generate ultra-high-pressure-temperature conditions and collect in-situ x-ray diffraction data from the H2O ice. “These experiments are so challenging that we had to run a few thousand of them over a decade to get enough high-quality data to solve the long-standing mystery of high-pressure, high-temperature behavior of ice under conditions relevant to giant planet interiors.”  (The APS is an Office of Science user facility.)
+
+“Simulations have indicated that the magnetic fields of these two planets are generated in thin, fluid layers found at relatively shallow depths,” Goncharov added. “The conductivity of superionic ice would be able to accomplish this type of field generation and one of the two structures we revealed could exist under the conditions found in these magnetic field-generating zones.”
+
+Further study is needed to understand the conductive properties and viscosity of these ice phases under ice giant-interior conditions.
+
+See: Vitali B. Prakapenka1*, Nicholas Holtgrewe1,2, Sergey S. Lobanov2, 3, and Alexander F. Goncharov2**, “Structure and properties of two superionic ice phases,” Nat. Phys., published on line 14 October 2021. DOI: 10.1038/s41567-021-01351-8
+
+Author affiliations: 1TheUniversity of Chicago, 2Carnegie Institution of Washington, 3GFZ German Research Center for Geosciences
+
+Correspondence: * prakapenka@cars.uchicago.edu, ** agoncharov@carnegiescience.edu
+
+GeoSoilEnviroCARS is supported by the National Science Foundation (NSF)-Earth Sciences (EAR-1634415) and the U.S. Department of Energy (DOE)-GeoSciences (DE-FG02-94ER14466). The work at Carnegie was supported by the NSF (Grant Nos. DMR-1039807, EAR/IF-1128867 and EAR-1763287), the Army Research Office (Grant Nos. 56122-CH-H and W911NF1920172), the Deep Carbon Observatory, and the Carnegie Institution of Washington. S.S.L. acknowledges the support of the Helmholtz Young Investigators Group CLEAR (VH-NG-1325). This research used resources from the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.19.2021

@@ -1,0 +1,35 @@
+Revealing Porous Materials’ Behavior under Pressure
+
+Chemists rely on metal organic frameworks (MOFs) for a number of applications including catalyzing reactions, separating molecules, and trapping gases. Yet when exposed to pressure, for example, in manufacturing processes, these porous materials are prone to unpredictable structural changes. Scientists have struggled to understand these shifts, which can impact a material’s mechanical stability. Now, using x-ray experiments carried out at the U.S. Department of Energy’s Advanced Photon Source (APS), researchers investigated the compressibility of a select group of MOFs. The team discovered that the materials’ ability to resist compression depends on particular structural properties such as linker length and the amount of internal empty space it contains. These insights could help researchers design valuable porous materials for high-pressure applications.
+
+In recent years, MOF development has proliferated as researchers find more uses for these open structures. The enormous diversity of their architecture, however, has made it hard to systematically study the relationship between compression and structure, which includes numerous related and complicating aspects.
+
+The present study offers the most extensive experimental investigation of compression in MOFs to date, according to the authors. The research team from Northwestern University, Stony Brook University, and Argonne National Laboratory evaluated seven zirconium (Zr)-based MOFs from two MOF families with distinct topologies: UiO MOFs that assemble into tetrahedral and octahedral cages, and NU-900 MOFs that form diamond-shaped channels interspersed with miniature windows.
+
+First, the researchers synthesized the MOFs, taking extra precautions to minimize material defects, which can influence the measurement of a material’s properties. MOFs were placed in a diamond anvil cell, a device in which samples are squeezed at intense pressure between two diamond tips. Inside the cell, the materials were subjected to pressures up to 0.5 GPa which are typically used in manufacturing processes such as pelletization or extrusion. The team probed the sample’s properties through x-ray diffraction experiments using synchrotron radiation at the X-ray Science Division 17-BM beamline of the APS, an Office of Science user facility at Argonne.
+
+While known for their chemical and thermal stability, the Zr MOFs readily buckled under pressure. The team measured each material’s resistance to compression, known as its bulk modulus, and observed that the bulk moduli of the structurally similar MOFs spanned almost an order of magnitude — a range comparable to that of the malleable metal sodium and the stone quartz.
+
+The researchers also investigated the MOFs key structural features to examine how each property impacts the materials’ compressibility. These features include linker length, nearest node distance, ambient pressure node-node contraction, and void fraction, a measure of the empty space within the material.
+
+Their analysis revealed several correlations between bulk modulus and structure. The team found that the void fraction and bulk modulus is inversely related for both MOF classes, meaning that as a material contains less empty space, it becomes more resistant to compression. Nearest node distance and linker length are also inversely related to bulk modulus, but to different degrees depending on the class of MOF.  
+
+Based on these observations, the authors propose that compression in all seven cases happens mostly through the distortion of the linker — essentially bending at an angle — and thus depends on the linker’s flexibility. The team found that MOFs with pre-distorted structures had larger compression than those with undistorted structures. Notably, two MOFs, DUT-52 and PCN-57, which possess distorted linkers at ambient pressure, demonstrated much lower bulk moduli than other materials with very similar structures (Fig. 1). This compression mechanism requires empty space for the linker to bend, which supports the team’s observation that as void fraction increases, bulk modulus decreases.
+
+The authors propose that these relationships can be extended to other types of MOFs and porous materials as well. While further studies are needed, the researchers' findings provide the foundation for a predictive model of the compressibility of MOFs under pressure.  — Tien Nguyen
+
+See: Louis R. Redfern1,2, Lee Robison1, Megan C. Wasson1, Subhadip Goswami1, Jiafei Lyu1, Timur Islamoglu1, Karena W. Chapman2,3*, and Omar K. Farha1**, “Porosity Dependence of Compression and Lattice Rigidity in Metal-Organic Framework Series,” J. Am. Chem. Soc. 141,  4365 (2019). DOI: 10.1021/jacs.8b13009
+
+Author affiliations: 1Northwestern University, 2Argonne National Laboratory, 3Stony Brook University
+
+Correspondence: *karena.chapman@stonybrook.edu, **o-farha@northwestern.edu
+
+O.K.F. gratefully acknowledges support from the Defense Threat Reduction Agency (HDTRA1-18-1-0003). This material is based on work supported in part by the U.S. Department of Energy (DOE) Oﬃce of Science, Oﬃce of Workforce Development for Teachers and Scientists, Oﬃce of Science Graduate Student Research (SCGSR) program. The SCGSR program is administered by the Oak Ridge Institute for Science and Education (ORISE) for the DOE. ORISE is managed by ORAU under contract DE-SC0014664. Use was made of the IMSERC x-ray facility at Northwestern University, which has received support from the Soft and Hybrid Nanotechnology Experimental (SHyNE) Resource (NSF ECCS-1542205), the State of Illinois, and the International Institute for Nanotechnology (IIN). This research used resources of the Advanced Photon Source, a U.S. DOE Oﬃce of Science User Facility operated for the DOE Oﬃce of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website. 
+
+Published Date
+
+08.14.2019

@@ -1,0 +1,35 @@
+Using High Pressure to Reveal Quantum Criticality in an Elemental Antiferromagnet
+
+High pressure has long been used as an experimental tool for investigating the origins of magnetism in solid-state materials. Recently, these pressure studies have also become central to the study of quantum phase transitions (transitions that are driven by quantum, rather than thermal, fluctuations).
+
+The clear identification of pressure-driven quantum critical behavior in a “clean” (stoichiometric) magnet, however, has remained elusive. In work appearing in the journal Nature, researchers describe using the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne to achieve a direct measurement of a so-called “naked” quantum singularity using a cryogenic diamond anvil cell and single-crystal synchrotron x-ray diffraction.
+
+This demonstration of a continuous quantum phase transition in a clean system, which was carried out at the X-ray Operations and Research 4-ID beamline at the APS, is a milestone in the study of emergent magnetism and quantum criticality. It advances techniques for high-precision measurements of condensed matter systems at high pressure to a level comparable with more standard techniques, and opens new possibilities for high-pressure studies of magnetism and correlated electron phenomena in technologically important materials such as nearly-antiferromagnetic high-temperature superconductors
+
+“The research describes the pressure-driven quantum critical regime in chromium [Cr], the elemental antiferromagnet, and establishes this system as the first realization of a continuous magnetic quantum phase transition in a clean material,” said Rafael Jaramillo of Thomas F. Rosenbaum’s group at The University of Chicago, who led the team that included researchers from The University of Chicago, Argonne, the University of Cambridge, and the Massachusetts Institute of Technology.
+
+Chromium is a simple metallic crystal that exhibits a sophisticated form of antiferromagnetism known as an itinerant spin density wave. This magnetic ground state, which is theoretically analogous to Bardeen-Cooper-Schrieffer (BCS) superconductivity, varies exponentially with pressure and in the canonical theory is expected to be stable under extremely large pressures. This exponential behavior with pressure was demonstrated in a pair of recent papers (Y. Feng et al., Phys. Rev. Lett. 99, 137201 [2007]; R. Jaramillo et al., Phys. Rev. B 77, 184418 [2008]) for pressures up to 7 GPa.
+
+The present work describes results at pressures above 7 GPa, where the BCS-like mean-field ground state is destabilized and suppressed toward a continuous quantum phase transition. The saturated magnetic moment at the highest measured pressure is an incredibly weak 0.05 μB (Bohr magnetons per atom), which is an order of magnitude weaker than the value at ambient pressure and is 60% weaker than the value at the weakly first-order Néel transition at ambient pressure (TN,P=0 = 311 K). The Néel transition therefore passes over from first-order in the thermal regime to second-order in the quantum regime. The discovery of a low-temperature magnetic instability in pure Cr at high pressure and low temperature raises the question of how a system can escape quantum mechanically from a ground state that classically allows no phase transition. This question is addressed in the work at the APS by high-resolution measurements of the diffraction lineshapes and spin density wavevector, which point to the role of transverse quantum fluctuations of the order parameter in the critical regime.
+
+The sophisticated spin and charge order in Cr are often used as stand-ins for similar phenomena observed in more complex materials such as the iron pnictides, which exhibit spin density wave magnetism before the onset of superconductivity, or doped manganites, in which the charge order displays many characteristics of itinerant charge density waves. Now these analogies can be extended to the continuous quantum critical regime, wherein lays some of the most interesting physics, and where a clean model system such as Cr is most valuable.
+
+Interest in this phenomenon dates back to the late 1960s when Denis McWhan—who was then at Bell Laboratories and is now a co-author of the present work—first attempted to map the high-pressure magnetic phase diagram of Cr. The measurements reported in the Nature paper have been made possible by a half-decade of technical developments at The University of Chicago and the APS. The data are technically impossible to collect without a mature third-generation synchrotron radiation source.
+
+“The highly focused and collimated x-ray beam on APS beamline 4-ID-D enables high-resolution measurements of single-crystal samples in a diamond anvil cell at cryogenic temperatures, with sensitivity to satellite diffraction peaks better than 109 with respect to nearby lattice reflections,” said co-author Yejun Feng of Argonne.
+
+Altogether, this work advances techniques for high-precision measurements of condensed matter systems at high pressure to a level comparable with more standard techniques such as magnetic varying field and temperature, and heralds a new generation of high-pressure studies of magnetism and correlated electron phenomena at the Advanced Photon Source and other third-generation light sources.
+
+Contact: Thomas F. Rosenbaum tfr@uchicago.edu
+
+See: R. Jaramillo, Yejun Feng, J.C. Lang, Z. Islam, G. Srajer, P.B. Littlewood, D.B. McWhan, and T.F. Rosenbaum, “Breakdown of the Bardeen-Cooper-Schrieffer Ground State at a Quantum Phase Transition,” Nature 459, 405 (21 May 2009). DOI:10.1038/nature08008
+
+The work at the University of Chicago was supported by the U.S. National Science Foundation (NSF) Division of Materials Research. GeoSoilEnviroCARS is supported by the US NSF Earth Sciences and Department of Energy (DOE) Geosciences.
+
+Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+05.21.2009

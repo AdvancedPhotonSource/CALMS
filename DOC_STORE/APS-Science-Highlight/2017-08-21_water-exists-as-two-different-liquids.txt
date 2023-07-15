@@ -1,0 +1,39 @@
+Water Exists as Two Different Liquids
+
+The original Stockholm University press release can be read here.
+
+We normally consider liquid water as disordered with the molecules rearranging on a short time scale around some average structure. Now, however, scientists at Stockholm University have discovered two phases of the liquid with large differences in structure and density. The results are based on experimental studies using x-rays from the U.S. Department of Energy’s Advanced Photon Source (APS), and from PETRA III at DESY (Germany). Their new results create an overall understanding of water at different temperatures and pressures, and reveal how water is affected by salts and biomolecules that are important for life. Moreover, the increased understanding of water can lead to new insights on how to purify and desalinate water in the future.
+
+Most of us know that water is essential for our existence on planet Earth. It is less well-known that water has many strange or anomalous properties and behaves very differently from all other liquids. Some examples are water’s melting point, density, and heat capacity; all-in-all, there are more than 70 properties of water that differ from most liquids. These anomalous properties of water are a prerequisite for life as we know it.
+
+The “new remarkable property is that we find that water can exist as two different liquids at low temperatures where ice crystallization is slow,” said Anders Nilsson, professor in Chemical Physics at Stockholm University and a co-author of the study, which was published in the Proceedings of the National Academy of Sciences of the united States of America.  This breakthrough in the understanding of water is the result of a combination of studies using x-rays at the X-ray Science Division 6-ID-D beamline at the Argonne National Laboratory APS, where the two different structures were determined via wide-angle x-ray scattering, and at the P10 beamline of the large x-ray laboratory DESY in Hamburg, where the dynamics could be investigated and x-ray photon correlation spectroscopy was utilized to demonstrate that the two phases indeed both were liquid phases.  Water can thus exist as two different liquids. (The APS is an Office of Science user facility.)
+
+“It is very exciting to be able to use x-rays to determine the relative positions between the molecules at different times,” said Fivos Perakis, postdoc at Stockholm University and another co-author. “We have in particular been able to follow the transformation of the sample at low temperatures between the two phases and demonstrated that there is diffusion as is typical for liquids.”
+
+When we think of ice it is most often as an ordered, crystalline phase that you get out of the ice box, but the most common form of ice in our planetary system is amorphous — that is, disordered — and there are two forms of amorphous ice, one with low density and one with high density. The two forms can interconvert and there has been speculation that they can be related to low- and high-density forms of liquid water. To experimentally investigate this hypothesis has been a great challenge that the Stockholm group has now overcome.
+
+“I have studied amorphous ices for a long time with the goal to determine whether they can be considered a glassy state representing a frozen liquid,” said co-author Katrin Amann-Winkel, researcher in chemical physics at Stockholm University. “It is a dream come true to follow in such detail how a glassy state of water transforms into a viscous liquid which almost immediately transforms to a different, even more viscous, liquid of much lower density.”
+
+“The possibility to make new discoveries in water is totally fascinating and a great inspiration for my further studies,” said co-author Daniel Mariedahl, Ph.D. student in chemical physics at Stockholm University. “It is particularly exciting that the new information has been provided by x-rays since the pioneer of x-ray radiation, W. Röntgen, himself speculated that water can exist in two different forms and that the interplay between them could give rise to its strange properties.”
+
+“The new results give very strong support to a picture where water at room temperature can’t decide in which of the two forms it should be, high or low density, which results in local fluctuations between the two,” said co-author Lars G.M. Pettersson, professor in theoretical chemical physics at Stockholm University. “In a nutshell: Water is not a complicated liquid, but two simple liquids with a complicated relationship.”
+
+These new results not only create an overall understanding of water at different temperatures and pressures, but also reveal how water is affected by salts and biomolecules important for life. In addition, the increased understanding of water can lead to new insights on how to purify and desalinate water in the future. This will be one of the main challenges to humanity in view of the global climate change.
+
+These studies were led by Stockholm University and involve a collaboration including the KTH Royal Institute of Technology in Stockholm, DESY in Hamburg, the University of Innsbruck (Austria), Argonne, and the SLAC National Accelerator Laboratory.
+
+See: Fivos Perakis1,2, Katrin Amann-Winkel1, Felix Lehmkühler3,4, Michael Sprung3, Daniel Mariedahl1, Jonas A. Sellberg5, Harshad Pathak1, Alexander Späh1, Filippo Cavalca1,2, Daniel Schlesinger1‡, Alessandro Ricci3, Avni Jain3, Bernhard Massani6, Flora Aubree6, Chris J. Benmore7, Thomas Loerting6, Gerhard Grübel3,4, Lars G.M. Pettersson1, and Anders Nilsson1*, “Diffusive dynamics during the high-to-low density transition in amorphous ice,” Proc. Natl. Acad. Sci. USA, 114(31), 8193. (August 1, 2017). DOI: 10.1073/pnas.1705303114
+
+Author affiliations: 1Stockholm University, 2SLAC National Accelerator Laboratory, 3Deutsches Elektronen-Synchrotron DESY, 4Hamburg Centre for Ultrafast Imaging, 5KTH Royal Institute of Technology, 6University of Innsbruck, 7Argonne National Laboratory ‡Present address: Stockholm University
+
+Correspondence: *andersn@fysik.su.se
+
+Financial support came from the European Research Council Advanced Grant WATER under Project 667205) and the Swedish Research Council. F.P. was additionally supported by the Swiss National Science Foundation (Fellowship P2ZHP2 148666). F.L. and G.G. were supported by the Deutsche Forschungsgemeinschaft Grant EXC1074). T.L. is grateful to the Austrian Science Fund, Project I1392, for financial support. This research used resources of the Advanced Photon Source, a US Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+08.21.2017

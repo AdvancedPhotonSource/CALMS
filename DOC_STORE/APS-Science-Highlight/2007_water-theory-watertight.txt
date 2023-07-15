@@ -1,0 +1,35 @@
+Water Theory is Watertight
+
+There may be tiny bubbles in the wine, but not at the interface between water and a waxy coating on glass, according to a new study carried out at the Advanced Photon Source (APS).
+
+The behavior of water when placed in contact with hydrophobic (water-repellent) surfaces, such as raincoats and freshly waxed cars, has puzzled scientists for a long time. According to a controversial theoretical prediction, water near a hydrophobic surface will pull away and leave a thin layer of depleted water at the surface – that is, water molecules at the interface will pack less tightly than usual.
+
+Now, a team of researchers from the University of Illinois at Urbana-Champaign (UIUC) and Argonne has resolved the controversy. Using near-perfect hydrophobic surfaces and synchrotron x-ray measurement techniques at the XOR/BESSRC beamline 12-BM at the APS, the researchers found the theoretical prediction to be correct.
+
+"Previous experiments have been interpreted sometimes in favor of a depletion layer, sometimes against, and sometimes as indicating intimate solid-water contact in places and 'nanobubbles' in others," said Steve Granick, a professor of materials science and engineering, chemistry and physics at Illinois.
+
+"Part of our study was to help understand why there was so much disagreement in the scientific literature," said Granick, who also is a researcher at the Frederick Seitz Materials Research Laboratory on the UIUC campus and at the university’s Beckman Institute for Advanced Science and Technology.
+
+To study the nature of hydrophobicity, the researchers first prepared a nearly ideal hydrophobic surface – a self-assembled methyl-terminated octadecylsilane monolayer. Then they made synchrotron x-ray measurements of the interface between water and monolayer.
+
+The measurements revealed a depletion layer, about one water molecule in thickness. The depletion layer was present with and without air dissolved in the water. Because no nanobubbles were seen, bubbles must not play a significant role in hydrophobicity, the researchers conclude.
+
+The synchrotron x-ray data "unambiguously confirm the theoretical expectation that water, when it meets a planar hydrophobic surface, forms a depletion layer," the researchers write.
+
+"We found that in a real system – more complicated that the theory assumes – the theory does capture the essence," Granick said. "The next time I see water beading on a raincoat, my vision of how the water molecules experience that raincoat is going to be different."
+
+The research team included University of Illinois graduate student and lead author Adelé Poynor, graduate student Liang Hong, physicist Ian Robinson (now at University College London); and synchrotron x-ray expert Paul A. Fenter and postdoctoral researcher Zhan Zhang, both at Argonne. — James E. Kloeppel, Physical Sciences Editor, University of Illinois
+
+Contact: Steve Granick, call 217-333-5720; e-mail: sgranick@uiuc.edu.
+
+See: Adelé Poynor, Liang Hong, Ian K. Robinson, Steve Granick, Zhan Zhang, and Paul A. Fenter; "How Water Meets a Hydrophobic Surface," Phys. Rev. Lett. 97, 266101 (2006); doi:10.1103/PhysRevLett.97.266101
+
+The original version of this press release can be found here.
+
+This work was supported by the U.S. Department of Energy through the Geosciences Research Program under Contract No. W-31-109-ENG-38 to Argonne National Laboratory, and by No. DEFG02-02ER46019 to the University of Illinois at Urbana-Champaign. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC
+
+Published Date
+
+01.22.2007

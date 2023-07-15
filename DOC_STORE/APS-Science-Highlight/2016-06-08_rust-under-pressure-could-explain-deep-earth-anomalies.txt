@@ -1,0 +1,39 @@
+Rust Under Pressure Could Explain Deep-Earth Anomalies
+
+The original Carnegie Institution for Science press release can be read here.
+
+Using synchrotron x-ray techniques at the U.S. Department of Energy’s Advanced Photon Source (APS) to mimic the conditions found deep inside the Earth, a team of Carnegie Institution for Science scientists has identified a form of iron oxide that they believe could explain seismic and geothermal signatures in the deep mantle. Their work is published in Nature.
+
+Iron and oxygen are two of the most geochemically important elements on Earth. The core is rich in iron and the atmosphere is rich in oxygen, and between them is the entire range of pressures and temperatures on the planet.
+
+“Interactions between oxygen and iron dictate Earth’s formation, differentiation—or the separation of the core and mantle—and the evolution of our atmosphere, so naturally we were curious to probe how such reactions would change under the high-pressure conditions of the deep Earth,” said Ho-Kwang (David) Mao, lead author of the study.
+
+The research team put ordinary rust, or FeOOH, under about 900,000 times normal atmospheric pressure and at about 3200° F and were able to synthesize a form of iron oxide, FeO2, that structurally resembles pyrite, also known as fool’s gold. The reaction gave off hydrogen in the form of H2. They then studied the synthesized iron oxide using angular dispersive x-ray diffraction (XRD) experiments at the 16-BM-D and 16-ID-B x-ray beamlines of the High-Pressure Collaborative Access Team (HP-CAT), and the 13-BM-C x-ray beamline operated by GeoSoilEnviroCARS (GSECARS), all at the APS (the APS is an Office of Science user facility at Argonne). In addition, the team carried out multigrain single-crystal XRD experiments at the BL15U1 beamline of the Shanghai Synchrotron Radiation Facility and also 13-BM-C of GSECARS.
+
+FeOOH is found in iron ore deposits that exist in bogs, so it could easily move into the deep Earth at plate tectonic boundaries, as could samples of ferric oxide, Fe2O3, which along with water will also form the pyrite-like iron oxide under deep lower mantle conditions.
+
+Why does this interest the researchers? For one thing, this type of reaction could have started in Earth’s infancy, and understanding it could inform theories of our own planet’s evolution, as well as its current geochemistry. 
+
+Furthermore, the H2 released in this reaction would work its way upward, possibly reacting with other materials on its way. Meanwhile, the iron oxide would settle planet’s depths and form reservoirs of oxygen there, particularly if one of these patches of iron oxide moved upward along the pressure gradient to the middle part of the mantle and separated into iron and O2.
+
+“Pools of free oxygen under these conditions could create many reactions and chemical phases, which might be responsible for seismic and geochemical signatures of the deep Earth,” Mao explained.
+
+“Our experiments mimicking mantle conditions demonstrate that more research is needed on this pyrite-like phase of iron oxide,” co-author and team member Qingyang Hu added.
+
+The research team believes their findings could even offer an alternate explanation for the Great Oxygenation Event that changed Earth’s atmosphere between 2 and 2.5 billion years ago. The rise of bacteria performing photosynthesis, which releases oxygen as a byproduct, is often considered the source of the rapid increase in atmospheric oxygen, which had previously been scarce. But releases of oxygen from upwelling of deep mantle FeO2 patches could provide an abiotic explanation for the phenomenon, they say. 
+
+See: Qingyang Hu1,2, Duck Young Kim1,2, Wenge Yang1,2, Liuxiang Yang1,2, Yue Meng2, Li Zhang1,2, and Ho-Kwang Mao1,2*, “FeO2 and FeOOH under deep lower-mantle conditions and Earth’s oxygen–hydrogen cycles,” Nature 534, 241 (09 June 2016). DOI:10.1038/nature18018
+
+Author affiliations: 1Center for High Pressure Science and Technology Advanced Research (HPSTAR), 2Carnegie Institution
+
+Correspondence: *hmao@gl.ciw.edu
+
+HP-CAT operations are supported by the U.S. Department of Energy (DOE)-Nationsl Nuclear Security Administration under award number DE-NA0001974 and by the DOE-Basic Energy Sciences under award number DE-FG02-99ER45775, with partial instrumentation funding by the National Science Foundation (NSF). GSECARS 13-BM-C operation is supported by COMPRES through the Partnership for Extreme Crystallography (PX2) project, under NSF Cooperative Agreement EAR 11-57758. Q.H. and H.-K.M. were supported by NSF grants EAR-1345112 and EAR-1447438. L.Z. was supported by the Foundation of President of China Academy of Engineering Physics (grant no. 201402032) and the National Natural Science Foundation of China (grant no. 41574080). This work was also supported in part by the National Natural Science Foundation of China (grant number U1530402).
+
+This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+06.08.2016

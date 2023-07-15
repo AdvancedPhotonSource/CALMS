@@ -1,0 +1,21 @@
+Surface Orbital 'Roughness' in Colossal Magnetoresistive Oxide
+
+An issue destined to be of increasing importance in the science of correlated-electron systems is the question of whether the electronic behavior, such as charge, orbital, or spin order, is different at the surface or at an interface compared to the bulk of the material. This question is of central importance from an applied perspective: any device one fabricates from these materials will require electron transport across an interface. From a fundamental viewpoint, how reduced dimensionality influences the electronic behavior of such systems is a key component in understanding the general problem of strongly correlated electron systems.
+
+Transition metal oxide compounds containing a mixed-valence of Mn3+ and Mn4+, known as manganites, represent an ideal system to address the role of the surface, because all the relevant degrees of freedom - charge, spin and orbital - play an active role in determining the ground state. In particular, the orbital structure is very important for determining both the magnetic and electronic properties of the manganites. As a result, manganites are exquisitely sensitive to perturbations, and hence can be expected to exhibit relatively large surface effects.
+
+In the November 18, 2007 issue of Nature Materials, researchers from the Institute of Materials Structure Science, KEK (Japan), the Institut Neel/Université Joseph Fourier (France), Brookhaven National Laboratory, Ames Laboratory, and Argonne describe how the orbital structure at the surface is considerably rougher than that found in the bulk. Using an atomically smooth manganite single crystal grown by Argonne's Materials Science Division, the researchers employed grazing incidence surface x-ray scattering at beamline X22C at the National Synchrotron Light Source, and μ-CAT/X-ray Operations and Research beamline 6-ID-B at the APS to observe the first signal of the surface x-ray scattering from the ordering (or lack thereof) of the Mn3+ 3d electron orbitals. Quantitative modeling of the newly discovered “orbital truncation rods,” which result from the arrangement of orbitals at the surface, shows that the Mn d orbitals order parallel to the surface over a length scale only one-fourth of that found previously found in the bulk. Perpendicular to the surface, this orbital layer is quite rough, with “orbital steps” deviating from the average surface height by one-half the length of the chemical unit cell.
+
+These findings show that the chemical and orbital structures need not be coupled in lock-step at the surface. They also add quantitative information about the critical role played by the surface on the electronic states that will control charge transport across oxide electronic device structures.
+
+Contact: Y. Wakabayashi, e-mail: yusuke.wakabayashi@kek.jp
+
+See: Y. Wakabayashi, M.H. Upton, S. Grenier, J.P. Hill, C.S. Nelson, J.-W. Kim, P.J. Ryan, A.I. Goldman, H. Zheng, and J.F. Mitchell, "Surface effects on the orbital order in the single layered manganite La0.5Sr1.5MnO4" Nature Materials advance online publication. Published online November 18, 2007. (doi:10.1038/nmat2061)
+
+This work supported by the Yamada Science Foundation (support for long-term visit), the U.S. DOE, Basic Energy Sciences (for work at Brookhaven under contract No. DE-AC02-98CH10886), and at Argonne under contract No. DE-AC02-06CH11357 and at the MUCAT Sector at the Advanced Photon Source and Ames Laboratory under contract No. DE-AC02-07CH11358.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC.
+
+Published Date
+
+11.21.2007

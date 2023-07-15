@@ -1,0 +1,25 @@
+Layer-By-Layer Crystals: Creating Memories as They Grow
+
+Modern microelectronics, such as high-efficiency lighting or solid-state lasers, rely on crystals with precisely controlled structure and composition for their useful properties. Thus, it is important to understand and control crystal growth processes at the atomic scale. In one proposed process, called layer-by-layer growth, atoms skate on a surface to find each other, nucleating into flat, island-like clusters that steadily expand until they merge and eventually coalesce into a complete layer. This cycle repeats itself as new layers subsequently form and stack upon the first one. Although the basic ideas of layer-by-layer growth have been verified in many systems, it is not clear whether they accurately describe growth of modern materials such as gallium nitride (GaN) by synthesis methods used in industry such as metalorganic vapor-phase epitaxy (MOVPE). Previous synchrotron studies of GaN MOVPE used incoherent x-rays to follow the surface structure during growth—a technique that provides information only on average island size and orientation. To provide a more detailed view, researchers used the U.S. Department of Energy’s Advanced Photon Source (APS) to characterize the exact arrangement of the islands nucleating in each layer of crystal. Their research, published in Nature Physics, demonstrates a powerful new technique for characterizing atomic-scale surface processes and could eventually help scientists optimize crystal growth or develop new types of crystals for electronics and other applications.
+
+The team of researchers from Argonne National Laboratory, Northern Illinois University, and Sogang University (Korea) employed a coherent x-ray beam at X-ray Science Division beamline 12-ID-D at the APS, which is an Office of Science user facility at Argonne. Unlike the incoherent beams used in previous experiments, the coherent beam allowed the researchers to characterize the exact arrangement of the islands nucleating in each layer of crystal. Their findings showed that, rather than displaying a different random pattern in each layer, the islands forming in a new layer nearly mirror the placement of those in previous layers (Fig. 1).
+
+The researchers used a relatively high-energy (26-keV) coherent x-ray beam to penetrate the growth environment and minimize disturbance by the beam, monitoring the MOVPE process as it occurred. Passing through the chamber walls, the x-rays deflected off the growing islands, producing a coherent "speckle" pattern picked up by an imaging detector.
+
+After statistically analyzing these patterns, the researchers made a surprising finding: The islands forming on each layer after the first layer "remembered" the original island placement. Although it is unknown exactly why the island arrangement persists between layers, computer simulations suggest that island nucleation on top of an almost complete layer is most likely to occur at locations far away from the remaining holes in the layer. Because the holes themselves tend to be at locations far away from the original nucleation sites of that layer, the new island arrangement can mimic the previous one.
+
+This represents a type of chemical communication between layers, the authors say. Importantly, the persistent arrangement is not due to defects in the crystal structure (such as dislocations) producing static preferred sites for island nucleation.
+
+The authors add that such a discovery was only possible with a coherent x-ray source. This shows the new type of analysis that will be widely available in the future with the APS Upgrade, when high-intensity coherent x-ray beams will be available at many beamlines.   ― Christen Brownlee
+
+See: Guangxu Ju 1‡*, Dongwei Xu 1‡‡, Matthew J. Highland1, Carol Thompson 2, Hua Zhou1, Jeffrey A. Eastman1, Paul H. Fuoss 1‡‡‡, Peter Zapol  1, Hyunjung Kim 3, and G. Brian Stephenson1**, “Coherent X-ray spectroscopy reveals the persistence of island arrangements during layer-by-layer growth,” Nat. Phys., published March 4, 2019. DOI: 10.1038/s41567-019-0448-1
+
+Author affiliations: 1Argonne National Laboratory, 2Northern Illinois University, 3Sogang University ‡Present address: Arizona State University, ‡‡Present address: Huazhong University of Science and Technology, ‡‡‡Present address: SLAC National Accelerator Laboratory
+
+Correspondence: * gju@anl.gov, ** stephenson@anl.gov
+
+Support was provided by the U.S. Department of Energy (DOE) Office of Science-Basic Energy Sciences, Materials Sciences and Engineering (XPCS measurements and analysis) and Scientific User Facilities (KMC model development). Computing resources were provided on Blues and Fusion, high-performance computing clusters operated by the Laboratory Computing Resource Center at Argonne National Laboratory. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Published Date
+
+03.14.2019

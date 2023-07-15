@@ -1,0 +1,31 @@
+A Narrower Spectrum for a Wider View of Matter
+
+Condensed matter physicists, who study the physics of solids and liquids, often use a technique called "inelastic scattering," in which they bounce photons or neutrons of selected energy off a material and measure the energy loss to examine the collective vibrations of atoms in that material. The technique helps researchers understand the dynamics of energy transfers that occur in trillionths of a second (picoseconds) over distances of billionths of a meter (nanometers).
+
+There are, however, gaps in the resolutions of these techniques — distances of one nanometer to a few hundredths of a nanometer and time scales from a few picoseconds to approximately 100 picoseconds. Unfortunately, a key physical phenomenon takes place within that gap: the liquid-glass transition. The details of how a material transforms from liquid to glass is one of the great mysteries of condensed matter physics, and understanding it could not only provide new theoretical insights, but also help pharmaceutical researchers make drugs that are more easily absorbed in the body.
+
+Now scientists from Argonne National Laboratory, Diamond Light Source (UK), and the Deutsches Elektronen-Synchrotron (Germany) have developed a new version of inelastic x-ray scattering that bridges these gaps. Using the X-ray Science Division x-ray beamline 30-ID-B,C at the U.S. Department of Energy's (DOE's) Advanced Photon Source (APS), they were able to enter previously inaccessible time and length scales, and then use that access to study the dynamics of liquid glycerol.
+
+The researchers created an ultra-high-resolution inelastic x-ray scattering spectrometer containing crystals with asymmetric, atomic-scale gratings that diffract x-rays. In one end of the set-up, the x-ray beam first strikes a collimator crystal, which ensures that the photons bouncing off it are close to parallel. The beam then hits a dispersion element, which spreads the photons into a "rainbow" depending on their wavelength, the same way a prism creates a rainbow from visible light. The rainbow strikes another crystal, a wavelength selector, which only passes that portion of the rainbow that lies within a very narrow angular window and is spectrally pure.
+
+Using this basic setup, the researchers built a monochromator that consisted of a collimator, two dispersion elements, and a wavelength selector; taken together, they deliver x-rays with a very narrow band of wavelengths to a sample of the material being studied. The x-rays from the beamline pass through the monochromator and other focusing optics to the sample, and then to an analyzer element. The analyzer is a variant of the monochromator, with an additional collimator of large acceptance angle to gather the scattered photons for the crystal optics. The analyzer can measure the wavelength shift, or energy loss, induced in the x-rays by scattering from the sample. That tells scientists how the sample atoms' collective vibrations, called phonons, transfer energy and momentum through the material.
+
+Beamline 30-ID-B,C at the Argonne APS, a DOE Office of Science user facility, is dedicated to inelastic x-ray scattering studies. It is ideal for this work, because high-brightness x-rays can be generated in a well-directed beam to a small area in the 9-keV energy range required by the new spectrometer. The traditional version of inelastic scattering uses photons in the 20- to 25-keV range, but the lower energies used in the new setup provide better momentum resolution.
+
+The technique also has spectral resolution and contrast that are superior to traditional techniques. The researchers measured a spectral bandwidth of 620 μeV, a three-fold improvement over what was previously available. Additionally, spectral contrast improved by an order of magnitude.
+
+The technique was applied to a sample of liquid glycerol. The researchers were, indeed, able to make more precise measurements than had ever been made on such a sample before.
+
+The researchers call their concept a new paradigm, which could be developed into an even better spectrometer, for instance by adding more focusing optics and a position-sensitive detector, thus opening it to a wide range of measurement applications. Because this spectrometer uses a working energy of 9 keV, it is practical for most x-ray synchrotron and free-electron laser facilities. — Neil Savage
+
+See: Yuri Shvyd'ko1*, Stanislav Stoupin1, Deming Shu1, Stephen P. Collins2, Kiran Mundboth2, John Sutter2, and Martin Tolkiehn3, "High-contrast sub-millivolt inelastic X-ray scattering for nano- and mesoscale science," (published online June 23, 2014). DOI:10.1038/ncomms5219
+
+Author affiliations: 1Argonne National Laboratory, 2Diamond Light Source Ltd., 3DESY
+
+Correspondence: * shvydko@aps.anl.gov
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+07.09.2014

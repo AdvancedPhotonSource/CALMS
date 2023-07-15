@@ -1,0 +1,51 @@
+Engineering Thin-Film Oxide Interfaces
+
+Research at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) provides new insights about a material that might form the basis for an alternative to conventional silicon-based semiconductor technology. The study, published in the journal Advanced Materials, utilized high-energy x-rays from the APS to observe intriguing electrical conductivity at the interface between two oxide insulators and helped resolve the heretofore mysterious origin of conductivity in epitaxially-grown lanthanum aluminate (LaAlO3) and strontium titanate (SrTiO3) thin films.
+
+The unexpected presence of a two-dimensional (2-D) electron gas (2DEG) at the interface between two insulators for epitaxial thin films of LaAlO3 (LAO) grown on SrTiO3 (STO) substrates was first reported some eight years ago. Both LAO and STO belong to the perovskite class of minerals, which exhibit a multitude of dielectric and physical properties of interest to materials science, including superconductivity, magnetoresistance, ionic conductivity, and applications in microelectronics and telecommunications.
+
+The discovery of electrical conductivity at the LAO/STO interface stimulated intense research that revealed other fascinating properties, including magnetism and superconductivity. In a broader context, the discovery has created great excitement and opened up the possibility of oxide electronics becoming an alternative to conventional semiconductor technology based on silicon.
+
+The unusual behavior of the LAO/STO interface was first reported for thin films grown by pulsed laser deposition (PLD), which utilizes intense laser pulses to create a plume of plasma by ablating a solid LAO target. The species in the PLD plume (such as atomic and molecular ions) travel from the target to the STO substrate where they arrange into an epitaxial LAO layer. Epitaxial growth compels the crystalline structure of the deposited film to match the crystalline structure of the substrate. In addition to the structure imposed by the STO lattice, the ordering perfection of the deposited LAO film depends upon the interaction between the growing film and the plasma plume; in turn, plume dynamics are affected by the oxygen pressure in the vacuum chamber.
+
+In the research discussed here, investigators from the Oak Ridge and Argonne national laboratories systematically explored the effects of high and low oxygen pressures on the physical properties of thin-film LAO/STO systems produced using PLD.
+
+Both real-time and post-experimental methods were used to construct a profile of thin-film properties resulting from different oxygen pressure conditions. The highly sensitive diffraction techniques enabled by the extreme brightness of the APS synchrotron x-rays allowed the study of the structure and composition of the LAO/STO near-interface region with unprecedented detail.
+
+Two different APS beamlines were involved in these measurements. The formation and evolution of the LAO epitaxial layers were visualized in real time at X-ray Science Division (XSD) beamline 33-ID using time resolved surface x-ray diffraction. After the growth, the chemical composition of the interface region was examined using coherent Bragg rod analysis (COBRA) from one-dimensional electron density profile measurements performed at XSD beamline 12-ID-D.
+
+These two x-ray diffraction techniques combined with other data reveal the surprising result that even a single unit-cell-thick layer of LAO (about 0.4 nm) grown at high oxygen background pressure effectively promotes the formation of atomically sharp interfaces.
+
+In a series of experiments, LAO films deposited on STO substrates were produced under oxygen pressures of 10-6 Torr or 10-2 Torr. The experimental measurements demonstrated that LAO/STO thin films grown at the lower pressure of 10-6 Torr exhibit substantial mixing of elements across the LAO/STO interface. The top left panel of the accompanying figure illustrates the intermixing of elements and the appearance of a chemically broad interface.
+
+In contrast, thin films grown at the considerably higher oxygen pressure of 10-2 Torr were largely free of intermixing between LAO and STO. However, epitaxial growth at high oxygen pressure builds up strain in the film causing it to crack and delaminate (i.e., layer separation) from the STO substrate. The researchers demonstrated that forming a “shielding layer” of LAO grown at high oxygen pressure (10-2 Torr), followed by continued growth at the lower pressure of 10-6 Torr, results in a highly ordered interface while avoiding delamination, as indicated in the figure's top right panel. Even a single unit-cell-thick layer of LAO (about 0.4 nm) grown at high oxygen pressure effectively promotes the formation of atomically sharp interfaces.
+
+The ability to suppress interface broadening is an extremely noteworthy achievement because it is known that interface broadening adversely affects the manifestation of intrinsic interface behavior, including electrical conductivity. The fact that the oxygen background pressure alters the properties of epitaxial oxide films grown by PLD is not surprising since collisions of oxygen molecules with the plume species are known to be the main mechanism that mediates the incident kinetic energy (speed) of the growth species. In turn, the average kinetic energy of the growth species directly affects the rate and quality of epitaxial growth of the deposited LAO layer.
+
+According to Ho Nyung Lee of Oak Ridge National Laboratory (ORNL), who led the study: “It was surprising to learn that even a one-atomic-layer-thick buffer could drastically improve the quality of the interface. This unexpected observation opens a door to new strategies for custom tailoring oxide heterostructures needed for discovering novel functionalities originating from the atomically well-defined oxide interface.”
+
+Co-author Gyula Eres (also ORNL), said “Identifying and separating the growth related phenomena to enable the study of the intrinsic interface properties in their pure form represents the main challenge of film growth kinetics studies. The sophisticated surface x-ray diffraction methods available at the APS were instrumental for determining the origin of the LAO/STO interface behavior.”
+
+“Oxide interfaces can exhibit amazing physics,” said co-author Dillon Fong of Argonne, “but a serious problem in this field has been the lack of consistent behavior: one research group’s interfaces may not behave the same as another’s. This work addresses these issues head-on and identifies some of the key synthesis issues relevant to interface behavior.”
+
+This research unequivocally demonstrates that even a single unit-cell-thick shielding layer effectively prevents both elemental intermixing and strain relaxation at the interface. The oxygen pressure used in fabricating the thin films is a controlling factor that determines the blocking ability of such single unit-cell-thick LAO layers. In particular, the pressure of oxygen at the beginning of epitaxial growth is critical: while low initial oxygen pressure leads to intermixing of LAO and STO materials and subsequent strain relaxation, employing higher oxygen pressure at the beginning of LAO growth results in a highly ordered shielding layer.
+
+By precisely controlling conditions at the LAO/STO boundary, the system's physical properties can be fine-tuned. Most importantly, the researchers note that these findings are not limited to fine-tuning only LAO/STO thin-films, but are applicable generally to a host of other epitaxially-grown oxide heterostructures. — Philip Koth
+
+See: Woo Seok Choi1, Christopher M. Rouleau1, Sung Seok A. Seo1,2, Zhenlin Luo3,4, Hua Zhou3, Tim T. Fister3, Jeffrey A. Eastman3, Paul H. Fuoss3, Dillon D. Fong3, Jonathan Z. Tischler3, Gyula Eres1, Matthew F. Chisholm1, and Ho Nyung Lee1*, “Atomic Layer Engineering of Perovskite Oxides for Chemically Sharper Heterointerfaces,” Adv. Mater., published online 4 October, 2012.
+
+DOI:10.1002/adma.201202691.
+
+Author affiliations: 1Oak Ridge National Laboratory, 2University of Kentucky, 3Argonne National Laboratory, 4University of Science and Technology of China
+
+Correspondence: *hnlee@ornl.gov
+
+This work was supported by the U.S. Department of Energy, Basic Energy Sciences, Materials Sciences and Engineering Division. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy’s Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+11.12.2012

@@ -1,0 +1,51 @@
+Discovered: An Easier Way to Create “Flexible Diamonds”
+
+The original Carnegie Institution for Science press release can be read here.
+
+As hard as diamond and as flexible as plastic, highly sought-after diamond nanothreads would be poised to revolutionize our world—if they weren’t so difficult to make. A team of scientists led by Samuel Dunning and Timothy Strobel of the Carnegie Institution for Science using high-brightness x-rays from the U.S. Department of Energy’s (DOE’s) Advanced Photon Source developed an original technique that predicts and guides the ordered creation of strong, yet flexible, diamond nanothreads, surmounting several existing challenges.  The innovation will make it easier for scientists to synthesize the nanothreads—an important step toward applying the material to practical problems in the future. The work was published in the Journal of the American Chemical Society.
+
+Diamond nanothreads are ultra-thin, one-dimensional carbon chains, tens of thousands of times thinner than a human hair. They are often created by compressing smaller carbon-based rings together to form the same type of bond that makes diamonds the hardest mineral on our planet. However, instead of the three-dimensional carbon lattice found in a normal diamond, the edges of these threads are “capped” with carbon-hydrogen bonds, which make the whole structure flexible.
+
+Dunning explains: “Because the nanothreads only have these bonds in one direction, they can bend and flex in ways that normal diamonds can’t.”
+
+Scientists predict that the unique properties of carbon nanothreads will have a range of useful applications from providing sci-fi-like scaffolding on space elevators to creating ultra-strong fabrics. However, scientists have had a hard time creating enough nanothread material to actually test their proposed superpowers.
+
+“If we want to design materials for specific applications,” says Dunning, “it's essential for us to precisely understand the structure and bonding of the nanothreads we're making. This thread directing method really allows us to do that!”
+
+One of the biggest challenges is getting the carbon atoms to react in a predictable way. In nanothreads made from benzene and other six-atom rings, each carbon atom can undergo chemical reactions with different neighbors. This leads to many possible reactions competing with one another and many different nanothread configurations. This uncertainty is one of the biggest hurdles scientists face to synthesize nanothreads where the precise chemical structure can be determined.
+
+Dunning’s team determined that adding nitrogen to the ring in place of carbon might help guide the reaction down a predictable pathway. They chose to start their work with pyridazine—a 6-atom ring made up of 4 carbons and 2 nitrogens—and began working on a computer model. Dunning worked with Bo Chen of the Donostia International Physics Center, and Li Zhu, Assistant Professor at Rutgers University and a Carnegie Alum, to simulate how pyridazine molecules behave at high pressure.
+
+“In our system, we use two nitrogen atoms to remove two possible reaction sites from the ring system. This dramatically reduces the number of possible reactions,” says Dunning.
+
+After running several computer simulations showing successful nanothread formation at high pressure, they were ready to take the experiment to the lab.
+
+The team took a drop of pyridazine and loaded it into a diamond anvil cell—a device that allows scientists to produce extreme pressures by compressing samples between the tiny tips of more traditional diamonds. Using in situ synchrotron x-ray diffraction at the HPCAT-XSD 16-ID-B beamline and the GeoSoilEnviroCARS 13-ID-D beamline, both at the DOE Office of Science’s Advanced Photon Source at Argonne National Laboratory, as well as infrared spectroscopy, they monitored changes in the pyridazine’s chemical structure up to about 300,000 times normal atmospheric pressure looking for the creation of new bonds.
+
+When they saw the bonds forming, they realized they had successfully predicted and created the first pyridazine diamond nanothread in the lab.
+
+“Our reaction pathway produces an incredibly orderly nanothread,” said Dunning. “The ability to incorporate other atoms into the nanothread backbone, guide the reaction, and understand the nanothread’s chemical environment will save researchers invaluable time in developing nanothread technology.”
+
+This process of using these non-carbon atoms to guide the formation of nanothreads, which Dunning calls “thread directing,” is a significant step towards a future where scientists can predictably create these materials and use them for advanced applications. Now that this synthetic strategy has been discovered, Dunning plans to identify and test the many possible nanothread precursors.
+
+He also can’t wait to start putting the pyridazine nanothreads through their paces.
+
+Dunning concluded, “Now that we know we can make this material, we need to start making enough to learn enough to determine mechanical, optical, and electronic properties!”
+
+See: Samuel G. Dunning1*, Li Zhu1, Bo Chen2, Stella Chariton3, Vitali B. Prakapenka3, Maddury Somayazulu4, and Timothy A. Strobel1**, “Solid-State Pathway Control via Reaction-Directing Heteroatoms: Ordered Pyridazine Nanothreads through Selective Cycloaddition,” J. Am. Chem. Soc. 144, 2073 (2022). DOI: 10.1021/jacs.1c12143
+
+Author affiliations: 1Carnegie Institution for Science, 2IKERBASQUE – Basque Foundation for Science, 3The University of Chicago, 4Argonne National Laboratory
+
+Correspondence: * sdunning@carnegiescience.edu, ** tstrobel@carnegiescience.edu
+
+The authors acknowledge support from the U.S. Army Research Office under Grant W911NF-17-1-0604.GeoSoilEnviroCARS is supported by the National Science Foundation, Earth Sciences, and Department of Energy, GeoSciences. HPCAT-XSD operations were supported by DOE-NNSA’s Office of Experimental Sciences. This research used resources of the Advanced Photon Source, a U.S. Department of Energy Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory.
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+03.28.2022

@@ -1,0 +1,43 @@
+Quantum Physics Makes Water Different
+
+By Davide Castelvecchi
+
+Reprinted with permission from ScienceNews, copyright 2008 https://www.sciencenews.org/
+
+Heavy water, which contains higher-than-normal quantities of the hydrogen isotope deuterium (D), is not just heavier than “ordinary” water. Swapping each H in H2O with a D changes many of water’s properties. For instance, biological molecules behave differently in light and heavy water, and the freezing point for heavy water is 4° C, instead of H20’s 0° C. Those differences reveal that quantum effects rule in ordinary water, according to research carried out at X-ray Operations and Research beamline 11-ID-C at the Argonne Advanced Photon Source, combined with neutron data from Rutherford Appleton Laboratory in Didcot, England, and a computer simulation. The study, which is the subject of an article published in Physical Review Letters, sheds light on quantum theory’s relevance for ordinary water, which is the medium for most of the action inside living cells.
+
+Quantum objects, such as atomic nuclei, have properties of both waves and particles. Quantum effects aren’t usually manifest to the naked eye, but in this case they may be responsible for some of water’s unusual features. “The quantum effect in water is abundantly obvious,” says Alan Soper of Rutherford Appleton Laboratory.
+
+Working with Chris Benmore of the X-ray Science Division at Argonne National Laboratory, Soper has found that, in the liquid state, the distance between oxygen and deuterium in a D2O molecule is 3% shorter than the distance between oxygen and hydrogen in an H2O molecule. Conversely, hydrogen bonds—relatively weak bonds connecting the oxygen in one molecule with the hydrogen or the deuterium in another—are 4% longer in heavy water than in light. These differences are less than 1% in water vapor, where the molecules are isolated.
+
+“A four percent change in bond length is quite a bit,” comments Michael Rübhausen of the University of Hamburg in Germany.
+
+The researchers probed the distances via beams of x-rays and beams of neutrons, and ran computer simulations to help interpret the data.
+
+The deuterium nucleus, which contains a neutron in addition to the usual single proton, is heavier than the hydrogen nucleus. That makes deuterium nuclei behave more like classical, as opposed to quantum, objects, so that their positions in space suffer less from the quantum uncertainty that “smears out” a proton’s location. “The heavier the particle, the more classical it behaves,” Soper says.
+
+Deuterium nuclei’s more classical nature makes them stick closer to the oxygen nuclei they’re bound to within a heavy-water molecule, Soper says. On the other hand, an oxygen atom from a nearby heavy-water molecule exerts a weaker pull on the deuterium. As a result, the oxygen-deuterium bond between the molecules is longer than the oxygen-hydrogen bonds joining molecules in light water.
+
+Water is a remarkable liquid—for example it has unusually high surface tension and it becomes less dense when it freezes. Quantum physics, through its effects on the hydrogen bonds, could be playing a significant role in water’s weirdness, Soper says. “Probably all the properties of water are affected by the hydrogen-bond length.”
+
+Rübhausen says the difference in bond lengths could help explain some surprising results he and his collaborators reported last year. His team was comparing RNA made with ordinary organic molecules to RNA made of those molecules’ mirror images. Their goal was to shed light on why life always uses one type of molecule rather than the other.
+
+Chemically, the molecules and their mirror images should be identical. But the researchers found small differences in the energy it takes to excite electrons in the two types of RNA—but only when the RNA molecules were suspended in ordinary water. When the researchers repeated the experiment in heavy water, the differences disappeared.
+
+Bond lengths affect the electrostatic forces around water molecules, Rübhausen says, which in turn change the energy of electrons in a nearby RNA molecule. So the different bond lengths in heavy or ordinary water could somehow end up masking or enhancing the energy differences in the two types of RNA, Rübhausen speculates.
+
+Contact: Chris Benmore (benmore@aps.anl.gov)
+
+See: A. K. Soper and C. J. Benmore, “Quantum Differences between Heavy and Light Water”, Phys. Rev. Lett. 101, 065502 (8 AUGUST 2008). DOI: 10.1103/PhysRevLett.101.065502
+
+Note: This article was a Physical Review Letters Editors’ Suggestion for 8.11.08.
+
+Crane photo: https://www.freefoto.com/index.jsp
+
+Use of the Advanced Photon Source at Argonne National Laboratory and this work were supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory brings the world's brightest scientists and engineers together to find exciting and creative new solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+08.11.2008

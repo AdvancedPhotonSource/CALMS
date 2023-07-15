@@ -1,0 +1,35 @@
+A Lensless X-ray Camera for Nanoscale Materials and Biological Specimens
+
+X-rays have been used for decades to take pictures of broken bones, but scientists at the U.S. Department of Energy's (DOE) Argonne National Laboratory and their collaborators have developed a lensless x-ray technique that can take images of ultra-small structures buried in nanoparticles and nanomaterials, and features within whole biological cells such as cellular nuclei.
+
+Argonne scientists along with scientists from the University of California at Los Angeles, the University of Melbourne, La Trobe University and the Australian Synchrotron developed a way to examine internal and buried structures in micrometer-sized samples on the scale of nanometers. This is important to the understanding of how materials behave electrically, magnetically, and under thermal and mechanical stress. Application of this capability to biology and biomedicine could contribute to our understanding of disease and its eradication, healing after injury, cancer, and cell death.
+
+X-rays are ideally suited for nanoscale imaging because of their ability to penetrate the interior of the object, but their resolution has traditionally been limited by lens technology. The new lensless technique being developed at the X-ray Operations and Research beamline 2-ID-B at the Argonne Advanced Photon Source avoids this limitation.
+
+“There is no lens involved at all,” said Ian McNulty, the lead Argonne author on a new publication on this work appearing in the journal Physical Review Letters. “Instead, a computer uses sophisticated algorithms to reconstruct the image. We expect this technique will enhance our understanding of many problems in materials and biological research.” The technique can be extended beyond the current resolution of about 20 nanometers to image the internal structure of micrometer-sized samples at finer resolution, reaching deep into the nanometer scale.
+
+Other types of microscopes, such as electron microscopes, can image structural details on the nanometer scale, but once the sample reaches sizes of a few micrometers and larger, the usefulness of these instruments to probe its internal structure is limited. In many cases, only the surface of the sample can be studied, or the sample must be sliced to view its interior, which can be destructive.
+
+A collaborative team comprising members of the X-ray Microscopy and Imaging Group in the X-ray Science Division at the APS and a team led by Professor John Miao at the University of California at Los Angeles developed a powerful extension of the new lensless imaging technique that enables high-resolution imaging of a specific element buried inside a sample.
+
+The key is the high-intensity x-ray beams created at the APS. An intense, coherent x-ray beam collides with the sample, creating a diffraction pattern that is recorded by a charge coupled device (CCD) camera. The x-ray energy is tuned to an atomic resonance of a target element in the sample. Using sophisticated phase-recovery algorithms, a computer reconstructs an image of the specimen that highlights the presence of the element. The result is an image of the internal architecture of the sample at nanometer resolution and without destructive slicing. By using x-ray energies that coincide with an atomic absorption edge, the imaging process can distinguish between different elements in the sample.
+
+If the nucleus or other parts of a cell are labeled with protein specific tags, it can be imaged within whole cells at a resolution far greater than that of ordinary microscopes.
+
+Another application of this new method of imaging includes the burgeoning field of nanoengineering, which endeavors to develop more-efficient catalysts for the petrochemical and energy industries and materials with electrically programmable mechanical, thermal, and other properties.
+
+“There are only a handful of places in the world this can be done, and APS is the only place in the United States where researchers can find these x-ray energies,” X-ray Microscopy and Imaging Group Leader Qun Shen said. “We would eventually like to create a dedicated, permanent laboratory facility at the APS for this imaging technique that can be used by scientists on a routine basis.” A dedicated facility would require building an additional beamline at the APS.
+
+Contact: miao@physics.ucla.edu
+
+See: Changyong Song, Raymond Bergstrom, Damien Ramunno-Johnson, Huaidong Jiang, David Paterson, Martin D. de Jonge, Ian McNulty, Jooyoung Lee, Kang L. Wang, and Jianwei Miao*, "Nanoscale Imaging of Buried Structures with Elemental Specificity Using Resonant X-Ray Diffraction Microscopy," Phys. Rev. Lett. 100, 025504 (2008). DOI:10.1103/PhysRevLett.100.025504
+
+This research was funded by the Department of Energy's Office of Basic Energy Sciences as part of its mission to foster and support fundamental research to expand the scientific foundations for new and improved energy technologies, and by the National Science Foundation. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory brings the world's brightest scientists and engineers together to find exciting and creative new solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The original press release can be found at; http://www.anl.gov/Media_Center/News/2008/news080219a.html.
+
+Published Date
+
+02.26.2008

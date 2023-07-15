@@ -1,0 +1,49 @@
+Research Pushes the Auto Industry Closer to Clean Cars Powered by Direct Ethanol Fuel Cells
+
+The original Oregon State University news story by Steve Lundberg can be read here.
+
+Alternative-energy research from collaborative teams including University of Central Florida (UCF), Oregon State University (OSU), University of Pittsburg (PITT), and the U.S. Department of Energy’s (DOE’s) Advanced Photon Source (APS) is charting a path toward the mass adoption of clean cars powered by direct-ethanol fuel cells (DEFCs). Yang Yang of the UCF College of Engineering helped lead the development of a catalyst that solves three key problems long associated with DEFC, as the cells are known: low efficiency, the cost of catalytic materials, and the toxicity of chemical reactions inside the cells. The research results were published in the journal Nature Energy.
+
+Yang and collaborators at OSU and the University of Pittsburgh found that putting fluorine atoms into palladium-nitrogen-carbon catalysts had a number of positive effects―including keeping the power-dense cells stable for nearly 6,000 hours. A catalyst is a substance that increases the rate of a reaction without itself undergoing any permanent chemical change.
+
+Cars and trucks powered by gasoline or diesel engines rely on the combustion of fossil fuels, which results in emissions of the greenhouse gas carbon dioxide. Motor vehicles are one of the main sources of atmospheric CO2, a primary factor in climate change.
+
+“Combustion engines produce enormous amounts of carbon dioxide,” said Yang, associate professor of materials science and engineering. “To achieve carbon-neutral and zero-carbon-emissions goals, alternative energy conversion devices using the fuel from renewable and sustainable sources are urgently needed. Direct-ethanol fuel cells can potentially replace gasoline- and diesel-based energy conversion systems as power sources.”
+
+Yang and collaborators are in the process of soliciting funding to develop prototypes of DEFC units for portable devices and vehicles.
+
+Ethanol, also known as ethyl alcohol, consists of carbon, hydrogen, and oxygen―its chemical formula is C2H6O―and is the active ingredient in alcoholic drinks. It occurs naturally through the fermentation of sugars by yeasts and can be derived from many sources including corn, wheat, grain sorghum, barley, sugar cane, and sweet sorghum.
+
+Most of the ethanol produced in the United States is made in the Midwest, most typically from corn.
+
+Compared to hydrogen (H2)-fed polymer electrolyte membrane fuel cells (H2-PEMFCs), the proposed DEFC will operate at ambient pressure, Yang explains, Hence, DEFC is a much safer and more convenient technology than H2-PEMFCs operated under high pressure. 
+
+“Ethanol from biological sources can further reduce the overall amount of carbon dioxide released by a fuel.” Guofeng Wang, Professor of Mechanical and Materials Science at PITT said, “Moreover, compared to big challenges regarding the mass production and storage of H2, the infrastructure for both EtOH production and distribution has already been in place and mature, which offers a great promise for the commercialization of DEFC at a much lower price than H2-PEMFC”
+
+A liquid and thus easily stored and transported, ethanol can deliver more energy per kilogram than other fuels like methanol or pure hydrogen. Plus, Feng points out, infrastructure is already in place for both producing and distributing ethanol, making DEFC an attractive option for replacing internal combustion engines.
+
+“The first vehicle powered by an ethanol-based fuel cell was developed in 2007,” Zhenxing Feng, Associate Professor of Chemical Engineering at OSU said. “However, the further development of DEFC vehicles has significantly lagged due to the low efficiency of DEFC, the costs related to catalysts and the risk of catalyst poisoning from carbon monoxide produced in reactions inside the fuel cell.”
+
+To tackle those problems the research team developed high-performance palladium alloy catalysts that use less of the precious metal than current palladium-based catalysts.
+
+Palladium, platinum, and ruthenium are elements valued for their catalytic properties but expensive and difficult to obtain.
+
+“The collaborative team showed that introducing fluorine atoms into palladium-nitrogen-carbon catalysts modifies the environment around the palladium, and that improves both activity and durability for two important reactions in the cell: the ethanol oxidation reaction and the oxygen reduction reaction,” Feng from OSU said. “Advanced synchrotron x-ray spectroscopy characterizations made at Argonne suggest that fluorine atom introduction creates a more nitrogen-rich palladium surface, which is favorable for catalysis. Durability is enhanced by inhibiting palladium migration and decreasing carbon corrosion.” The critical x-ray spectroscopy studies were carried out at the DuPont-Northwestern-Dow Collaborative Access Team’s 5-BM-D x-ray beamline and the Argonne X-ray Science Division Chemical & Materials Science Group’s 12-BM-B beamline, both at the DOE Office of Science’s APS at Argonne.
+
+See: Jinfa Chang1, Guanzhi Wang1, Maoyu Wang2, Qi Wang4, Boyang Li4, Hua Zhou5, Yuanmin Zhu3, Wei Zhang1, Mahmoud Omer1, Nina Orlovskaya1, Qing Ma6, Meng Gu3*, Zhenxing Feng2**, Guofeng Wang4***, and Yang Yang1****, “Improving Pd–N–C fuel cell electrocatalysts through fluorination-driven rearrangements of local coordination environment,” Nat. Energy, published on line 29 November 2021. DOI: 10.1038/s41560-021-00940-4
+
+Author affiliations: 1University of Central Florida, 2Oregon State University, 3Southern University of Science and Technology, 4University of Pittsburgh, 5Argonne National Laboratory, 6 DuPont-Northwestern-Dow Collaborative Access Team 
+
+Correspondence: * gum@sustech.edu.cn, ** zhenxing.feng@oregonstate.edu, *** guw8@pitt.edu, **** Yang.Yang@ucf.edu
+
+This work was supported by a start-up grant from the University of Central Florida. J.C. acknowledges financial support from the Preeminent Postdoctoral Program (P3) at the University of Central Florida. The XPS test was supported by the U.S. National Science Foundation (NSF, Division of Electrical, Communications and Cyber Systems, no. 1726636), hosted in the Materials Characterization Facility and Advanced Materials Processing and Analysis Center, Department of Materials Science and Engineering, College of Engineering and Computer Science, University of Central Florida. Z.F. acknowledges support from the U.S. NSF (National Nanotechnology Coordinated Infrastructure, no. 2025489). Guofeng Wang and B.L. acknowledge support from the U.S. NSF (Division of Chemical, Bioengineering, Environmental and Transport Systems, no. 1804534). Computational resources were provided by the University of Pittsburgh Center for Research Computing as well as the Extreme Science and Engineering Discovery Environment, which is supported by NSF grant no. ACI-1053575. The DuPont-Northwestern-Dow Collaborative Access Team is supported through E. I. DuPont de Nemours and Company, Northwestern University, and the Dow Chemical Company. M.G. acknowledges support from the Guangdong Innovative and Entrepreneurial Research Team Program (grant no. 2019ZT08C044) and the Peacock Team Program supported by the Science, Technology and Innovation Commission of Shenzhen Municipality (KQTD20190929173815000). Use of the Advanced Photon Source, an Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory, was supported by the U.S. DOE under Contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+01.24.2022

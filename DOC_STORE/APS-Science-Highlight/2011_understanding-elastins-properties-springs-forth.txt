@@ -1,0 +1,43 @@
+An Understanding of Elastin’s Properties Springs Forth
+
+It’s not stretching the truth to say that flexibility is an important and desirable human physiological trait. We owe our flexibility to a protein called elastin, and elastin derives its properties from a building-block molecule called tropoelastin. Tropoelastin behaves as an ideal elastomer because it loses no energy between stretch and relaxation. Understanding the structure and function of tropoelastin is already helping to pave the way for the development of synthetical materials that can reproduce nature’s elastic properties. Researchers using high-brightness x-rays at the U.S. Department of Energy Office of Science’s Advanced Photon Source at Argonne National Laboratory have identified how tropoelastin molecules form a “head-to-tail” assembly, which helps explain how these molecules work together to confer elastic properties in tissues throughout the body.
+
+The research was conducted by a team comprising investigators from the Wellcome Trust Centre for Cell-Matrix Research, the University of Texas Medical Branch, Cardiff University, the University of Sydney, Diamond Light Source Ltd., ISIS Science and Technology Facilities Council, and the Illinois Institute of Technology.
+
+“Elastin,” said team leader Tony Weiss of the University of Sydney, “is the natural elastic material in our bodies that allows us to stretch and flex skin, expand and contract our lungs, and respond to surges of blood pressure. Elastin is made by connecting lots of tropoelastin molecules, so if we study tropoelastin, we learn about the assembly of the body’s elastic tissue.”
+
+Over the course of a lifetime, the human heart beats about 2 billion times, and the lungs expand and contract with every breath. Elastin makes this possible and as the name suggests, allows tissues to expand and contract throughout the body.
+
+The tropoelastin building blocks that form elastin are laid down mainly in utero and during early childhood. While elastin is a highly ordered molecule, the actual tropoelastin subunits are somewhat disordered, a characteristic that helps allow elasticity within the elastin molecule. Still, the structure of tropoelastin must be ordered enough to be able to provide a functional and usable building block which displays a defined three-dimensional solution shape.
+
+To identify the structure of tropoelastin, the researchers utilized small-angle x-ray scattering, along with neutron scattering, to visualize the shape of tropoelastin in solution. They used several facilities in addition to the APS, including the European Synchrotron Radiation Facility in Grenoble, France; and the ISIS Neutron Source and Diamond Light Source at the Harwell Oxford campus, United Kingdom.
+
+The researchers constructed regions of tropoelastin that were of different lengths and were able to identify distinct regions of the tropoelastin molecule. Synchrotron measurements of tropoelastin encoded by exons 2–18 were conducted at BioCAT beamline 18-ID at the APS. In this way, the researchers determined the structure of tropoelastin, and identified a curved, spring-like molecule with a “foot” region that helps attach the molecule to cells.
+
+To investigate the spring-like properties of tropoelastin, they also used atomic force microscopy to perform stretching experiments on the individual tropoelastin molecule. These experiments showed that the molecule could extend to eight-times its length and then return to its original form without losing its properties, indicating that this molecule is a near perfect spring.
+
+“We are now making sophisticated elastic and biologically interactive constructs, and these are incredibly useful for tissue repair,” Weiss said. “Elastin is lost as we get older, and also through damage and disease. Replacing the body’s elastic components is now becoming possible. We are realizing this exciting tissue engineering opportunity with these sophisticated elastic constructs.”
+
+Weiss points out that “the beauty of this tiny, elastic assembly unit is amazing. It is a coiled spring, connected to a specialized interactive appendage. Nature solved the problem of elasticity by making a little protein spring.” — Emma Hitt
+
+See: Clair Baldock1, Andres F. Oberhauser2, Liang Ma2, Donna Lammie3, Veronique Siegler3, Suzanne M. Mithieux4, Yidong Tu4, John Yuen Ho Chow4, Farhana Suleman1, Marc Malfois5, Sarah Rogers6, Liang Guo7, Thomas C. Irving8, Tim J. Wess,3 and Anthony S. Weiss1*, “Shape of tropoelastin, the highly extensible protein that controls human tissue elasticity,” Proc. Nat. Acad. Sci. USA 108(11), 4322 (March 15, 2011). DOI: 10.1073/pnas.1014280108
+
+Author affiliations: 1Wellcome Trust Centre for Cell-Matrix Research, 2University of Texas Medical Branch, 3Cardiff University, 4University of Sydney, 5Diamond Light Source Ltd., 6ISIS Science and Technology Facilities Council, 7Illinois Institute of Technology
+
+Correspondence: *anthony.weiss@sydney.edu.au
+
+A.S.W. acknowledges funding support from the Australian Research Council, National Health and Medical Research Council, National Heart Research Fund, University of Sydney, and the Australian Institute of Nuclear Science and Engineering. The AFM study was funded by the John Sealy Memorial Endowment Fund for Biomedical Research and in part by National Institutes of Health (NIH) Grant R01DK073394.
+
+Use of the Advanced Photon Source at Argonne National Laboratory was supported by the DOE’s Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security.
+
+To learn more about the Office of Science x-ray user facilities, visit
+
+http://science.energy.gov/user-facilities/basic-energy-sciences/
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+07.29.2011

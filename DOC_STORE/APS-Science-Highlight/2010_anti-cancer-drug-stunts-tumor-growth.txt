@@ -1,0 +1,17 @@
+An Anti-Cancer Drug that Stunts Tumor Growth
+
+An anti-cancer drug, pazopanib, which is marketed as Votrient™ in the U.S. and Europe by its developer, GlaxoSmithKline, was developed in part by research at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory. Pazopanib—a GlaxoSmithKline multikinase inhibitor that targets vascular endothelial growth factor receptors—was approved by the U.S. Food and Drug Administration (FDA) for the treatment of advanced renal cell carcinoma.
+
+Proprietary research at the Industrial Macromolecular Crystallography Association (IMCA) Collaborative Access Team facility at the APS dating back to 2008 was a significant contributor in the evolution of the drug, as spelled out in an article in the Journal of Medicinal Chemistry (Vol. 51, issue 15, p. 4632, 2008).
+
+Votrient™, a once-daily oral medication, is an angiogenesis inhibitor that may help prevent the growth of new blood vessels, thereby blocking the growth of kidney cancer tumors that need blood vessels to survive. All solid tumors need blood vessels to thrive, and by stopping or slowing this process, medicines in this category may halt the progression of tumor growth. Pazopanib is the sixth drug to be approved for the treatment of kidney cancer since 2005. In 2009, about 49,000 people were diagnosed with the disease, and 11,000 have died, according to the FDA.
+
+A Phase III study of pazopanib showed that it significantly improved progression-free survival for patients regardless of whether or not they had prior therapy. Additionally, patients did not experience a significant decline in health-related quality of life, with no significant differences between pazopanib and a placebo. The results were based on a global, double-blind, Phase III trial of 435 patients with advanced kidney cancer (renal cell carcinoma) who had either received no prior drug treatment or had received prior cytokine-based treatment.
+
+IMCA-CAT is operated through a contract with the Hauptman-Woodward Medical Research Institute. Use of the Advanced Photon Source is supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+03.31.2010

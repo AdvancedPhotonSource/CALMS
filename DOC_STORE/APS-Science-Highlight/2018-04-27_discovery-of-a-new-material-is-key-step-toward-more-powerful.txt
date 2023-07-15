@@ -1,0 +1,37 @@
+Discovery of a New Material Is Key Step toward More Powerful Computing
+
+The original Oregon State University press release by Steve Lundeberg can be read here.
+
+A new material created by Oregon State University (OSU) researchers and characterized with help from the U.S. Department of Energy’s Advanced Photon Source and Spallation Neutron Source is a key step toward the next generation of supercomputers. Those “quantum computers” will be able to solve problems well beyond the reach of existing computers while working much faster and consuming vastly less energy.
+
+Researchers in OSU’s College of Science have developed an inorganic compound that adopts a crystal structure capable of sustaining a new state of matter known as quantum spin liquid, an important advance toward quantum computing. In the new compound, lithium osmium oxide, osmium atoms form a honeycomb-like lattice, enforcing a phenomenon called “magnetic frustration” that could lead to quantum spin liquid as predicted by condensed matter physics theorists. Their results were published in the journal Scientific Reports.
+
+Journal article corresponding author Mas Subramanian, Milton Harris Professor of Materials Science at OSU, explains that in a permanent magnet like a compass needle, the electrons spin in an aligned manner – that is, they all rotate in the same direction.
+
+“But in a frustrated magnet, the atomic arrangement is such that the electron spins cannot achieve an ordered alignment and instead are in a constantly fluctuating state, analogous to how ions would appear in a liquid,” Subramanian said.
+
+X-ray absorption spectroscopy measurements carried out at the X-ray Science Division beamline 4-ID-D of the Advanced Photon Source at Argonne National Laboratory, and time-of-flight neutron diffraction measurements collected at the Oak Ridge NOMAD BL-1B Spallation Neutron Source beamline showed that the lithium osmium oxide discovered at OSU showed no evidence for magnetic order even when frozen to nearly absolute zero, which suggests an underlying quantum spin liquid state is possible for the compound, he said.
+
+“We are excited about this new development as it widens the search area for new quantum spin liquid materials that could revolutionize the way we process and store data,” Subramanian said. “The quantum spin liquid phenomenon has so far been detected in very few inorganic materials, some containing iridium. Osmium is right next to iridium in the periodic table and has all the right characteristics to form compounds that can sustain the quantum spin liquid state.”
+
+Arthur Ramirez, condensed matter physicist at the University of California, Santa Cruz, one of the co-authors in the paper, noted that this compound is the first honeycomb-structured material to contain osmium and expects more to follow.  
+
+Ramirez also noted that this study demonstrates the importance of multidisciplinary collaboration involving materials chemists and condensed matter physicists engaged in synthesis, theory and measurements to tackle emerging science like quantum spin liquids.  
+
+The next step for Subramanian’s team is exploring the chemistry needed to create various perfectly ordered crystal structures with osmium.
+
+See: M.K. Wallace1, P.G. LaBarre2, Jun Li1, S.-T. Pi3, W.E. Pickett3, D.S. Dessau4, D. Haskel5, A.P. Ramirez2, and M.A. Subramanian1, “Local Moment Instability of Os in Honeycomb Li2.15Os0.85O3,” Sci. Rep. 8, 6605 (2018). DOI: 10.1038/s41598-018-25028-0
+
+Author affiliations: 1Oregon State University, 2University of California, Santa Cruz, 3University of California, Davis, 4University of Colorado, 5Argonne National Laboratory
+
+Correspondence: *mas.subramanian@oregonstate.edu
+
+This work is supported by NSF DMREF Grant Nos DMR-1534711 (M.A.S), DMR-1534741 (A.P.R), DMR-1534719 (W.E.P.) and DMR-1534734(D.S.D). The authors would like to acknowledge ORNL for providing access to their neutron research facilities. For computation, the National Energy Research Scientific Computing Center, a U.S. Department of Energy (DOE) Office of Science User Facility supported by DOE under Contract No. DE-AC02-05CH11231, as well as an in-house cluster at UC Davis, are gratefully acknowledged. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+04.27.2018

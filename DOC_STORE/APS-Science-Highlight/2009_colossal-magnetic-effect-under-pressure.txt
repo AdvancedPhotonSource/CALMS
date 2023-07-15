@@ -1,0 +1,41 @@
+A “Colossal” Magnetic Effect under Pressure
+
+“Giant” and “colossal” aren’t the first words that come to mind when thinking about MP3 players or laptops. But we owe our ability to store and access ever-increasing amounts of data on ever-smaller devices to the discovery of giant magnetoresistance (GMR), which garnered a 2007 Nobel Prize in Physics for its discoverers, Albert Fert and Peter Grünberg. Now, just 12 years after the first computer read-out based on GMR appeared and became the industry standard, researchers using the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory are delving into the forces behind the next step: colossal magnetoresistance (CMR), which is up to a thousand times more powerful than GMR and could trigger another revolution in computing technology. Understanding, and ultimately controlling, this effect and the intricate coupling between electrical conductivity and magnetism in these materials remains a challenge because of competing interactions in manganites, the materials in which CMR was discovered. In the June 12, 2009, issue of the journal Physical Review Letters, a team of researchers reported new progress in using high-pressure techniques at the APS to unravel the subtleties of this coupling.
+
+To study the magnetic properties of manganites, a form of manganese oxide, the research team, led by Yang Ding of the Carnegie Institution for Science’s High Pressure Synergetic Center (HPSync), applied the x-ray magnetic circular dichroism (XMCD) technique at the X-ray Operations and Research x-ray beamline 4-ID at the APS, and the angular-dispersive diffraction technique at the High Pressure Collaborative Access Team (HP-CAT) beamline 16-ID, also at the APS. XMCD uses high-brilliance, circularly polarized x-rays to probe the magnetic state of a material under pressures of many hundreds of thousands of atmospheres inside a diamond anvil cell.
+
+The discovery of CMR in manganite compounds has already made them invaluable components in technological applications. An example is magnetic tunneling junctions in soon-to-be marketed magnetic random access memory (MRAM), where the tunneling of electrical current between two thin layers of manganite material separated by an electrical insulator depends on the relative orientation of magnetization in the manganite layers. Unlike conventional RAM, MRAM could yield instant-on computers. However, no current theories can fully explain the rich physics, including CMR effects, seen in manganites.
+
+“The challenge is that there are competing interactions in manganites among the electrons that determine magnetic properties,” said Ding. “And the properties are also affected by external stimuli, such as temperature, pressure, magnetic field, and chemical doping.” 
+
+“Pressure has a unique ability to tune the electron interactions in a clean and theoretically transparent manner,” he added. “It is a direct and effective means for manipulating the behavior of electrons and could provide valuable information on the magnetic and electronic properties of manganite systems. But of all the effects, pressure effects have been the least explored.”
+
+The researchers found that when a manganite was subjected to conditions above 230,000 times atmospheric pressure it underwent a transition in which its magnetic ordering changed from a ferromagnetic type (electron spins aligned) to an antiferromagnetic type (electron spins opposed). This transition was accompanied by a non-uniform structural distortion called the Jahn-Teller effect.
+
+“It is quite interesting to observe that uniform compression leads to a non-uniform structural change in a manganite, which was not predicted by theory,” said Ding, “Working with Michel van Veenendaal’s theoretical group at the APS, we found that the predominant effect of pressure on this material is to increase the strength of an interaction known as superexchange relative to another known as the double exchange interaction. A consequence of this is that the overall ferromagnetic interactions in the system occur in a plane (two dimensions) rather than in three dimensions, which produces a non-uniform redistribution of electrons. This leads to the structural distortion.”
+
+Another intriguing response of manganite to high pressure revealed by the experiments is that the magnetic transition did not occur throughout the sample at the same time. Instead, it spread incrementally.
+
+“The results imply that even at ambient conditions, the manganite might already have two separate magnetic phases at the nanometer scale, with pressure favoring the growth of the antiferromagnetic phase at the expense of the ferromagnetic phase,” said coauthor Daniel Haskel, a physicist at Argonne’s APS. “Manipulating phase separation at the nanoscale level is at the very core of nanotechnology and manganites provide an excellent playground to pursue this objective.”
+
+“This work not only displays another interesting emergent phenomenon arising from the interplay between charge, spin, and orbital momenta and the lattice in a strongly correlated electron system,” commented coauthor Ho-kwang Mao of Carnegie’s Geophysical Laboratory, Director of HPSync, “but it also manifests the role of pressure in magnetism studies of dense matter.”
+
+Contact: Yang Ding yangding@aps.anl.gov,
+
+Daniel Haskel haskel@aps.anl.gov
+
+Ho-kwang Mao h.mao@gl.ciw.edu
+
+See: Yang Ding, Daniel Haskel, Yuan-Chieh Tseng, Eiji Kaneshita, Michel van Veenendaal, John Mitchell, Stanislav V. Sinogeikin, Vitali Prakapenka, and Ho-kwang Mao, “Pressure-induced magnetic transition in manganite (La0.75Ca0.25MnO3), Phys. Rev. Lett. 102, 237201 (12 June 2009). DOI: 10.1103/PhysRevLett.102.237201
+
+The original Carnegie Institution of Washington press release can be found at: https://carnegiescience.edu/news/colossal_magnetic_effect_under_pressure
+
+To see an IBM-produced animation that explains GMR, go to: http://www.research.ibm.com/research/demos/gmr/index.html
+
+Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences (DOE-BES), under Contract No. DE-AC02-06CH11357. HP-CAT is supported by DOE-BES, the DOE National Nuclear Security Administration, the National Science Foundation, and the W.M. Keck Foundation. M.v.V was supported by U.S. DOE DE-FG02-03ER46097.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+06.12.2009

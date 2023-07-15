@@ -1,0 +1,29 @@
+Watching a Glycine Riboswitch "Switch"
+
+The APS has helped researchers get the first look at the "on" and "off" states of the molecules that regulate genetic expression, the process by which information in a gene is used to create protein structures.
+
+The first low-resolution structures of both the "on" and "off" states of a riboswitch have been obtained by researchers using a high-brilliance x-ray beamline at the Argonne Advanced Photon Source funded by the U.S. Department of Energy. The results provide a first glimpse into how this fascinating molecule achieves its function and provide a solid basis for further investigations of the structure-function relationship that is central to molecular biology.
+
+Riboswitches are RNA molecules that regulate gene expression through conformational changes induced by small-molecule ligand binding. Using small-angle x-ray scattering (SAXS), these researchers have obtained low-resolution structures for the "on" and "off" configurations of a glycine-binding riboswitch and studied how ligand-binding and Mg2+-dependent folding are coupled.
+
+The discovery, in the early 1980s by Cech, Altman, and coworkers that RNA molecules, like proteins, can fold into distinct three-dimensional (3-D) structures and carry out catalytic functions has spurred steadily growing interest in the field of RNA science. In the last decade, it has become increasingly evident that RNA molecules are involved in a large variety of regulatory events in the cell. While only 2% of the human genome codes for proteins, an estimated 50% of the DNA sequence is transcribed to RNA, a sizable fraction of which is presumably involved in gene regulation. Riboswitches are one particular mechanism by which RNA molecules regulate genes. They are RNA sequences located in the 5' untranslated region of messenger-RNAs that undergo a conformational change upon small-molecule ligand binding. This change triggers further events that regulate either transcription or translation of the gene(s) downstream from the riboswitch.
+
+Using the small-angle x-ray scattering (SAXS) set-up at XOR/BESSRC beamline 12-ID at the APS, the researchers studied the ligand binding domain of a particularly intriguing riboswitch from Vibrio cholerae called VCI-II [1]. VCI-II was discovered by Breaker and coworkers and was shown to have two domains that bind two glycine molecules cooperatively (akin to the textbook case of hemoglobin whose four subunits bind oxygen cooperatively).
+
+Small-angle x-ray scattering and hydroxyl radical footprinting allowed the group to trace the conformation of VCI-II as a function of glycine and Mg2+ concentration and obtain a simple thermodynamic model that accounts for the way VCI-II populates this thermodynamic "landscape." These results indicate that VCI-II undergoes partial folding in the presence of mM concentrations of Mg2+ in the absence of glycine. Glycine-binding leads to a further compaction and folding of the molecule and the transition to the glycine-bound conformation requires further uptake of divalent metal ions.
+
+Using the reconstruction algorithm DAMMIN (whose applicability to RNA molecules was recently shown in the researchers' lab), the group obtained low-resolution 3-D structures from the one-dimensional SAXS profiles for the unfolded, partially folded, and glycine-bound conformations.
+
+Contact: Sebastian Doniach, doniach@drizzle.stanford.edu
+
+See: Jan Lipfert, Rhiju Das, Vincent B. Chu, Madhuri Kudaravalli, Nathan Boyd, Daniel Herschlag, and Sebastian Doniach, "Structural Transitions and Thermodynamics of a Glycine-Dependent Riboswitch from Vibrio cholerae," J. Mol. Biol. 365,1393 (2007). DOI: 10.1016/j.jmb.2006.10.022
+
+See also: Jan Lipfert, Vincent B. Chu, Yu Bai, Daniel Herschlag, and Sebastian Doniach, "Low Resolution Models for Nucleic Acids from Small-Angle X-ray Scattering with Applications to Electrostatic Modeling," J. Appl. Cryst. (2007). 40.  DOI: 10.1107/S0021889807001707
+
+This research was supported by the National Institutes of Health grant PO1 GM0066275 and by the U.S. Department of Energy, Office of Science, under Contract No. DE-AC02-06CH11357. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC.
+
+Published Date
+
+03.28.2007

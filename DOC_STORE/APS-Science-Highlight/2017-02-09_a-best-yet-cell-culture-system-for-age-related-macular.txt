@@ -1,0 +1,31 @@
+A Best-Yet Cell Culture System for Age-Related Macular Degeneration
+
+The original University of Alabama at Birmingham press release by Adam Pope can be read here.
+
+An international team from the University of Alabama at Birmingham, University College London (UK), The University of Chicago, Imperial College London (UK), and Queens University Belfast (UK) has developed a cell culture model that could help to develop earlier treatment strategies for age-related macular degeneration (AMD), the third most prevalent cause of vision loss worldwide. The elderly are the fastest-growing segment of the population, and new drug targets to help older persons maintain the good vision required for independent living are eagerly sought. Microfocused x-ray diffraction and x-ray fluorescence studies carried out at the GSECARS 13-ID-E x-ray beamline of the U.S. Department of Energy’s Advanced Photon Source were used to characterize the elemental composition and mineral content of the deposits formed by the cultured cells in situ.
+
+In AMD, which is twice as prevalent in older persons as Alzheimer’s disease, the part of the retina used for detailed vision degenerates. Extracellular deposits rich in fats and proteins, called drusen, accumulate under support cells (retinal pigment epithelium, or RPE), thus blocking transport between the photoreceptors and their blood supply.
+
+Drusen are major early risk factors for both neovascularization and geographic atrophy. Drusen develop in late forms of AMD usually accompanied with irreversible vision loss, although neovascularization can be managed with monthly injections in the eye. It is thought that understanding how drusen are formed is key to stopping these late complications.
+
+Drusen do not occur naturally in laboratory animals, except in primates after several decades of life. Therefore a suitable cell culture model should accelerate the development of early treatment strategies. Previous cell culture models recapitulated several aspects of drusen formation except the formation of hydroxyapatite, a recently discovered key component of drusen growth.
+
+The research team reported that retinal pigment epithelium cells removed directly from a pig eye can lay down all the major constituents of drusen: lipids, proteins, and other trace elements, as well as hydroxyapatite, when the cells are grown on specific surfaces. The synchrotron data collected at the APS provided direct evidence that primary RPE cells are capable of developing hydroxyapatite -containing sub-RPE deposits. This model confirms the hypothesis that RPE cells in early AMD are functional, and that the conditions of the so-called Bruch’s membrane, on which retinal pigment epithelium cells grow in the eye, is likely to be essential for drusen formation.
+
+The team expects that a readily reproducible and valid model system will be an important step in determining what molecules in drusen, and what changes in retinal pigment epithelium cells living over drusen, promote advancement to late stages of AMD.
+
+See: Matthew G. Pilgrim1, Imre Lengyel1,2, Antonio Lanzirotti3, Matt Newville3, Sarah Fearn4, Eszter Emri12, Jonathan C. Knowles1, Jeffrey D. Messinger5, Russell W. Read5, Clyde Guidry5, and Christine A. Curcio5*, “Subretinal Pigment Epithelial Deposition of Drusen Components Including Hydroxyapatite in a Primary Cell Culture Model,” Invest. Ophth. Vis. Sci. 58, 708 (February 2017). DOI: 10.1167/iovs.16-21060
+
+Author affiliations: 1University College London, 2Queen’s University Belfast, 3The University of Chicago, 4Imperial College London, 5University of Alabama School of Medicine
+
+Correspondence: *curcio@uab.edu
+
+Collaboration on this project was facilitated by the Arnold and Mabel Beckman Initiative for Macular Research. Supported by National Institutes of Health Grants EY06109, unrestricted funds to the Department of Ophthalmology from Research to Prevent Blindness, Inc., and EyeSight Foundation of Alabama (CAC), and International Retinal Research Foundation (RWR). This project has also received funding from the ‘‘Eye-Risk’’ a European Union’s Horizon 2020 research and innovation program under Grant 634479 and from the Bill Brown Charitable Trust Senior Research Fellowship, Moorfields Eye Hospital Special Trustees, Mercer Fund from Fight for Sight and Bright Focus Foundation (IL). GeoSoilEnviroCARS is supported by the National Science Foundation, Earth Sciences (EAR-1128799) and Department of Energy, GeoSciences (DE-FG02- 94ER14466). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02- 06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+02.09.2017

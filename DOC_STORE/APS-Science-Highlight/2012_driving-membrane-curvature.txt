@@ -1,0 +1,43 @@
+Driving Membrane Curvature
+
+In biological systems, membranes are as important as water. They form the barrier between the inner world, within our cells, where we perform the chemical reactions of life, and the outside environment.
+
+But a biological membrane isn’t just a big container that keeps the world at bay, it is a vital, interactive gateway that sends and receives goods and messages in a highly regulated and specific way.
+
+Membranes are known to perform their amazing functions through the interactions of proteins and lipids within the lipid bilayer.
+
+Researchers who study membrane-driven processes such as synaptic communication, sperm-egg fusion, and viral infection have focused on the ways that proteins can regulate lipids to control membrane curvature to form the vesicles, pores, and tubules required for these processes.
+
+Now, through advances in liquid surface x-ray scattering techniques at the X-ray Science Division 9-ID beamline at the U.S. Department of Energy Office of Science’s Advanced Photon Source at Argonne National Laboratory, Prof. David Gidalevitz and Dr. Andrey Ivankin from the Illinois Institute of Technology, and Dr. Ivan Kuzmenko from Argonne have discovered that lipids are also influencing the shapes of the proteins in the membrane and contributing to membrane curvature.
+
+Their work, which promises to change the way researchers think about lipid-protein interactions and to open new avenues for the study of important membrane-driven processes, involved investigation of the interaction between a known membrane fusion protein, the HIV fusion protein, gp41, and artificially prepared lipid monolayers with various lipid compositions.
+
+Gp41 is responsible for binding to host membranes and creating a pore through which viral RNA is inserted into the cell to propagate the virus. At the molecular level, this means that the viral protein must insert into the membrane and induce curvature in the membrane to make the pore. Careful measurement of the way the protein inserts into the lipid monolayer allowed the team to study how lipids and proteins affect each other during the insertion process.
+
+Surprisingly, although the researchers expected gp41 to induce curvature in the lipid monolayer to form the pore, they found that experiments in which the monolayer contained more cholesterol showed that the lipids were actually affecting the structure of the protein. That is, as cholesterol concentrations increased, the area the protein occupied diminished and the ratio of lipids to proteins increased, suggesting that the protein was compacting itself differently as it inserted into the monolayer depending on its lipid composition.
+
+The gp41 fragment that the team used has been shown to be capable of adopting one of two different structures known as α-helix or β-sheet. Their measurements are consistent with a change from the α-helical to the β-sheet structure as the cholesterol concentration increases, as shown in the figure.
+
+The composition of the lipid monolayer also determined how deeply the protein penetrated its surface. In monolayers that completely lacked cholesterol, the protein penetrated very shallowly, however, as cholesterol increased, the depth that the protein inserted into the monolayer increased as well.
+
+Remarkably, the free energy required for shallow insertion into the cholesterol-free membrane was the same as that for deep insertion into the cholesterol-rich membrane suggesting the structural change in the protein helped it to overcome the greater rigidity of the cholesterol-rich membrane.
+
+“These data suggest that the cholesterol is inducing a conformational change in the protein and we think that when cholesterol is present, the fusion protein changes to form a sort of anchor in the membrane to hold the virus in place for fusion,” said Gidalevitz, lead author of the paper published in Physical Review Letters.
+
+Next, the group hopes to extend these findings in experiments that will adapt their technique to more complex lipid bilayers with different lipid compositions and to different proteins including the islet amyloid-forming polypeptide amylin linked to Type 2 diabetes. “These membrane processes are critical to many basic biological functions,” said Gidalevitz. “Understanding them will help us to understand the biology underlying many important diseases.” — Sandy Field (sfield@fieldscientific.com)
+
+See: Andrey Ivankin1, Ivan Kuzmenko2, and David Gidalevitz1*, “Cholesterol Mediates Membrane Curvature during Fusion Events,” Phys. Rev. Lett. 108, 238103 (2012). DOI:10.1103/PhysRevLett.108.238103
+
+Author affiliations: 1Illinois Institute of Technology, 2Argonne National Laboratory
+
+Correspondence: *gidalevitz@iit.edu
+
+This research was supported by the NIH (R01AI073892) and DARPA (W911NF-09-1-378). Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+06.14.2012

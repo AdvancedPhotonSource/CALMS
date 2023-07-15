@@ -1,0 +1,31 @@
+A New Close-Up View of a Key Part of the Ebola Virus Life Cycle
+
+The original news release from The Scripps Research Institute  can be read here.
+
+A key part of the Ebola virus life cycle has been determined at a higher resolution than ever before, thanks to studies carried out at the U.S. Department of Energy’s Advanced Photon Source (APS), an Office of Science user facility at Argonne National Laboratory. The research sheds light on how Ebola virus assembles — and how researchers might stop the often-fatal infection.
+
+“This higher resolution is critical for design of much-needed antiviral therapeutics,” said Erica Ollmann Saphire of The Scripps Research Institute (TSRI) and director of the Viral Hemorrhagic Fever Immunotherapeutic Consortium, senior author of the new study. “These structures provide the blueprints that we need to see key vulnerabilities to attack.”
+
+The new study by TSRI researchers, to be published the journal Cell Reports, builds on previous work in Saphire's lab showing that a viral protein called VP35 has a role in protecting both Ebola virus and its “cousin,” the deadly Marburg virus, from the immune system. VP35 helps (“chaperones”) a viral protein, so that it coils and forms a protein shell (nucleocapsid) around the virus's genetic material. The coiled nucleocapsid is both the scaffold about which the rest of the virus is assembled, and also the replication machinery of the virus itself.
+
+Until now, scientists had not been able to see the nucleocapsid protein in sufficient detail. But using x-ray crystallography at the X-ray Science Division's National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) 23-ID-B and 23-ID-D x-ray beamlines at the Argonne APS, Saphire and her colleagues were able to show exactly how VP35 chaperones the nucleoprotein and the processes that control nucleoprotein assembly.
+
+The researchers believe these findings could be significant for more than just the Ebola virus.
+
+“The structure is likely conserved across all the filoviruses: Marburg, Sudan, Bundibugyo, Reston, and Ebola,” said Saphire.
+
+TSRI Research Associate Robert Kirchdoerfer, first author of the new study, added that the new understanding of viral assembly could also be applied to other pathogens in Mononegavirales, an order of viruses that includes measles and rabies.
+
+See: Robert N. Kirchdoerfer, Dafna M. Abelson, Sheng Li, Malcolm R. Wood, and Erica Ollmann Saphire*, “Assembly of the Ebola Virus Nucleoprotein from a Chaperoned VP35 Complex,” Cell Reports 12, published online ahead of print (July 7, 2015). DOI: /10.1016/j.celrep.2015.06.003
+
+Author affiliation: The Scripps Research Institute
+
+Correspondence: *erica@scripps.edu
+
+This study was supported by the Skaggs Institute of Chemical Biology, the Burroughs Wellcome Fund, the National Institutes of Health (NIH) (1R56 AI118016-01 and 5T32 AI007354-25), the NIH National Cancer Institute (ACB-12002) and NIH National Institute of General Medical Sciences (AGM-12006). GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+06.25.2015

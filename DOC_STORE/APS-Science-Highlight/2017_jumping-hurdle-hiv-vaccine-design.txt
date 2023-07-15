@@ -1,0 +1,57 @@
+Jumping a Hurdle in HIV Vaccine Design
+
+The original press release from The Scripps Research Institute can be read here.
+
+Scientists at The Scripps Research Institute (TSRI) have made another important advance in HIV vaccine design. The development was possible thanks to previous studies by TSRI researchers showing the structures of a protein on HIV's surface, called the envelope glycoprotein. The scientists used these structures, with x-ray data obtained at the U.S. Department of Energy’s Advanced Photon Source (APS), to design a mimic of the viral protein from a different HIV subtype, subtype C, which is responsible for the majority of infections worldwide.
+
+The new immunogen is now part of a growing library of TSRI-designed immunogens that could one day be combined in a vaccine to combat many strains of HIV.
+
+"All of this research is going toward finding combinations of immunogens to aid in protecting people against HIV infection," said TSRI Professor Ian Wilson.
+
+The research, published in the journal Immunity, was led by Wilson and TSRI Professor of Immunology Richard Wyatt.
+
+The new study was published alongside a second study in Immunity, led by scientists at the Karolinska Institute in Stockholm, which showed that the vaccine candidate developed in the TSRI-led study can elicit neutralizing antibodies in non-human primates.
+
+"Together, the two studies reiterate how structure-based immunogen design can advance vaccine development," said Wyatt.
+
+HIV mutates rapidly, so there are countless strains of HIV circulating around the world. Of these strains, scientists tend to focus on the most common threats, called clades A, B and C.
+
+Like a flu vaccine, an effective HIV vaccine needs to protect against multiple strains, so researchers are designing a set of immunogens that can be given sequentially or as a cocktail to people so their immune systems can prepare for whatever strain they come up against.
+
+In 2013, TSRI scientists, led by Wilson and TSRI Associate Professor Andrew Ward, using data collected at the National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) 23-ID-D x-ray beamline at the APS, determined the crystal  and cryo-EM structures of a clade A envelope glycoprotein, which recognizes host cells and contains the machinery that HIV uses to fuse with cells. Because this is the only target for antibodies on the surface of HIV, an effective HIV vaccine will have to trigger the body to produce antibodies to neutralize the virus by blocking these activities.
+
+Building on the previous original research, the scientists in the new study set out to solve the structure of the clade C glycoprotein and enable the immune system to fight clade C viruses.
+
+"Clade C is the most common subtype of HIV in sub-Saharan Africa and India," explained study co-first author Javier Guenaga, an IAVI collaborator working at TSRI. "Clade C HIV strains are responsible for the majority of infections worldwide."
+
+The scientists faced a big challenge: the clade C envelope glycoprotein is notoriously unstable, and the molecules are prone to falling apart.
+
+Guenaga needed the molecules to stay together as a trimer so his co-author Fernando Garces could get a clear image of the clade C glycoprotein's trimeric structure. To solve this problem, Guenaga re-engineered the glycoprotein and strengthened the interactions between the molecules. "We reinforced the structure to get the soluble molecule to assemble as it is on the viral surface," Guenaga said.
+
+The project took patience, but it paid off. "Despite all the engineering employed to produce a stable clade C protein, these crystals (of clade C protein) were grown in very challenging conditions at 4 degrees Celsius and it took the diffraction of multiple crystals to generate a complete dataset, as they showed high sensitivity to radiation damage," said Garces. "Altogether, this highlights the tremendous effort made by the team in order to make available the molecular architecture of this very important immunogen."
+
+With these efforts, the glycoprotein could then stay together in solution the same way it remains together on the virus itself. The researchers then captured high-resolution diffraction data from the glycoprotein also at the GM/CA-XSD 23-ID-D x-ray beamline at the APS. (The APS is an Office of Science user facility at Argonne National Laboratory.)
+
+The researchers finally had a map of the clade C glycoprotein.
+
+In a companion study, the scientists worked with a team at the Karolinska Institute to test an immunogen based on Guenaga's findings. The immunogen was engineered to appear on the surface of a large molecule called a liposome--creating a sort of viral mimic, like a mugshot of the virus.
+
+This vaccine candidate indeed prompted the immune system to produce antibodies that neutralized the corresponding clade C HIV strain when tested in non-human primates.
+
+"That was great to see," said Guenaga. "This study showed that the immunogens we made are not artificial molecules--these are actually relevant for protecting against HIV in the real world."
+
+See: Javier Guenaga, Fernando Garces, Natalia de Val, Robyn L. Stanfield, Viktoriya Dubrovskaya, Brett Higgins, Barbara Carrette, Andrew B. Ward, Ian A. Wilson,* and Richard T. Wyatt**, “Glycine Substitution at Helix-to-Coil Transitions Facilitates the Structural Determination of a Stabilized Subtype C HIV Envelope Glycoprotein,” Immunity 46, 792 (May 16, 2017). DOI: 10.1016/j.immuni.2017.04.014
+
+Author affiliation: The Scripps Research Institute
+
+Correspondence: * wilson@scripps.edu, ** wyatt@scripps.edu
+
+This work was supported by the International AIDS Vaccine Initiative Neutralizing Antibody Center and Collaboration for AIDS Vaccine Discovery (CAVD OPP1084519) (J.G., I.A.W., A.B.W., and R.T.W.). IAVI’s work is made possible by generous support from many donors, including the following: the Bill & Melinda Gates Foundation; the Ministry of Foreign Affairs of Denmark; Irish Aid; the Ministry of Finance of Japan; the Ministry of Foreign Affairs of the Netherlands; the Norwegian Agency for Development Cooperation (NORAD); the United Kingdom Department for International Development (DFID), and the United States Agency for International Development (USAID). The full list of IAVI donors is available at www.iavi.org. This work was supported by the Scripps Center for HIV/AIDS Vaccine Immunology and Immunogen Discovery (CHAVI-ID) UM1 AI00663 (A.B.W., I.A.W., and R.T.W.), by NIH P01 HIVRAD AI104722 (R.T.W.), by NIH R56 AI084817 (I.A.W.) and by the Joint Center of Structural Genomics (JCSG) funded by the NIH NIGMS Protein Structure Initiative U54 GM094586 (I.A.W.). GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). This research used resources of the Advanced Photon Source (APS), a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+06.01.2017

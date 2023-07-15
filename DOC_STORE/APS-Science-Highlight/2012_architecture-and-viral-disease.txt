@@ -1,0 +1,41 @@
+Architecture and Viral Disease
+
+Viruses are just bits of DNA or RNA and proteins, but they have proved to be capable of immense destruction to human health. How have they achieved the ability to create such devastating diseases in organisms as complex as humans?
+
+One key to understanding how viruses do so much damage appears to lie in their often complicated, and often breathtakingly beautiful, architecture. Even though the virus itself is created from an amazingly small number of biochemical components and molecules, there seems to be a nearly infinite number of ways in which these building blocks are used.
+
+Over decades of studying how viruses create disease, biologists have discovered that viral structure is a key factor. Thus, obtaining the structure of a disease-causing virus is usually the first step in finding ways to combat the disease.
+
+To that end, research at two APS x-ray beamlines determined the crystal structure of human enterovirus 71 (or EV71). This virus can, in infants and young children, cause polio-like paralysis and fatal encephalitis.
+
+Because large outbreaks of EV71 have occurred in the Pacific areas of Asia, the virus is now considered an emerging threat to public health. By unveiling the crystal structure of EV71, the research team has taken the essential first step in finding ways to prevent the virus from creating fatal disease, providing strong impetus for therapeutics and drug design to prevent and cure EV71 infection.
+
+The EV71 virus, which in a mild infection causes hand, foot, and mouth disease, belongs to a group called picornaviruses. Like other picornaviruses, EV71 has 60 copies of each of three viral proteins (VP1, VP2, VP3) that have a “jelly-roll” fold as well as 60 copies of a small protein (VP4) attached to the inner surface of the viral capsid. EV71 also has a feature, in common with other enteroviruses, called “canyons,” which are depressions around each fivefold axis (see the figure). This canyon is important because it is a place for immunoglobulin-like receptors to bind and will be key in anti-viral drug design.
+
+Because genome release, and hence creation of viral progeny, seems to depend upon a destabilization process in the canyon, finding an anitviral compound that could bind there with high affinity would be an excellent way to inhibit viral infection. By carefully analyzing the EV71 crystal structure obtained at BioCARS beamline 14-ID and GM/CA-XSD beamline 23-ID-D, the researchers from Purdue University and Sentinext Therapeutics were able to obtain important details about the size and shape of a pocket that may serve as a potential site for inhibitor binding.
+
+For picornaviruses such as EV71, the most variable regions are the loops on the viral surface. In the case of EV71, the surface loops of VP1 create a northern “rim” of the canyon. In EV71 these loops are smaller and therefore the canyon is shallower than in other picornaviruses. Such a detail points to the importance of having a structure for every virus within a group, because such apparently small differences between viruses may thwart a general therapeutic treatment.
+
+When it comes to viral structure, seemingly minute differences may determine the success, or failure, of a viral treatment.
+
+The research group also determined that the VP2 loop is responsible for the “puff” forming the southern rim of the canyon, and that the VP3 loop creates a large surface structure known as the “knob.” In light of what has been found in other picornaviruses, these structures will be important in determining the site where neutralizing antibodies might bind.
+
+Additional details of EV71 suggested that certain types of anti-EV71compounds should bind into a hydrophobic pocket in VP1 and that these may require a hydrophilic head group that anchors these compounds onto the floor of the canyon. This is in contrast to rhinoviruses, another group of picornaviruses, in which similar compounds have been shown to be highly effective anti-viral agents (albeit with undesirable side effects) but do not interact with residues on the canyon floor. Such details are veritable gold mines for drug designers.
+
+By determining a crystal structure for EV71 in such detail, these researchers have contributed a large amount of critical information in the race to combat the poliolike diseases caused by this enterovirus. Their work opens the road for rapid progress in drug design and therapeutics for diseases caused by EV71. — Mona Mort
+
+See: Pavel Plevka1, Rushika Perera1, Jane Cardosa2, Richard J. Kuhn1, Michael G. Rossmann1*, “Crystal Structure of Human Enterovirus 71,” Science 336, 1274 (8 June 2012). DOI: 10.1126/science.1218713
+
+Author affiliations: 1Purdue University, 2Sentinext Therapeutics
+
+Correspondence: *mr@purdue.edu
+
+This work was supported by National Institutes of Health grant AI11219 to M.G.R. Use of the BioCARS Sector 14 was supported by grants from the National Center for Research Resources (5P41RR007707) and the National Institute of General Medical Sciences (8P41GM103543) from the National Institutes of Health. GM/CA-XSD has been funded in whole or in part with federal funds from the National Cancer Institute (Y1-CO-1020) and the National Institute of General Medical Sciences (Y1-GM-1104). Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy’s Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+11.20.2012

@@ -1,0 +1,39 @@
+The Most Detailed Model of the Brain Receptor Behind Marijuana’s High
+
+The original UT Southwestern Medical Center press release by Deborah Wormser can be read here.
+
+Researchers at UT Southwestern Medical Center report the most detailed 3-D structure to date of the brain receptor that binds and responds to the chemical at the root of marijuana’s high. Their high-resolution structure of the human cannabinoid receptor 1 (CB1) and its binding site for the chemical tetrahydrocannabinol (THC), obtained at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory, should lead to a better understanding of how marijuana affects the brain. The research also could aid discovery of new treatments for conditions that target the receptor, said Daniel Rosenbaum, Assistant Professor of Biophysics and Biochemistry at UT Southwestern.
+
+“What is most exciting from a therapeutic standpoint is that the same receptor pocket that binds THC also binds cannabinoid inhibitors that have been studied as possible treatments for conditions such as obesity,” said Rosenbaum, senior author of the study published in Nature.
+
+“The structure is an important step toward explaining how cannabinoids initiate signals in the brain that affect the release of neurotransmitters that relay messages between the brain’s neurons,” Rosenbaum said. “This 3-D structure provides high-resolution details of the binding pocket in the CB1 receptor, where plant cannabinoids like THC, cannabinoids made in the body, and synthetic cannabinoid inhibitors all work to modulate receptor function and physiology.”
+
+He said the CB1 receptor is the target for cannabinoid inhibitor drugs now under study as possible treatments for epilepsy, pain control, obesity, and other conditions.
+
+In a related study published last month by the journal Cell, a U.S.-Chinese team of researchers working at the SPring-8 light source (Japan) reported a 3-D structure of the CB1 receptor at a resolution of 2.8 angstroms (Cell 167, 750 (October 20, 2016). The UT Southwestern study reports a higher resolution of 2.6 angstroms. (One angstrom is equivalent to one hundred-millionth of a centimeter.) The higher the resolution, the finer the details of the relationship between atoms of the protein.
+
+“The resolution is very important. Our structure shows a different and better resolved structure [than other studies] at the important binding pocket that is of interest to scientists involved in drug development,” Rosenbaum said. “Overall, these two structures are complementary, but we believe our structure may provide a better framework for understanding how cannabinoids and inhibitors bind to the receptor.”
+
+The Cell study examined the CB1 receptor bound to a synthetic chemical created to stabilize the receptor. In contrast, the UT Southwestern research team using high-brightness x-rays from the Argonne National Laboratory APS and the National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) facility 23-ID-B x-ray beamline at the APS, successfully imaged the receptor bound to the drug taranabant, which was tested as a possible anti-obesity treatment in clinical trials. Those trials ended due to side effects such as anxiety and depression, Rosenbaum said.
+
+CB1 and the related CB2, which still lacks a high-resolution structural solution, are both members of the human G protein-coupled receptor family. Members of that receptor family control signaling pathways involving hormones, neurotransmitters, and sensory stimuli such as light and odors.
+
+The team’s success depended on overcoming the receptor protein’s resistance to crystallization, which is required for the diffraction measurements used in x-ray crystallography. The researchers also conducted computer simulations of how THC might bind to the CB1 receptor, he said.
+
+The next step is to obtain structures of CB1 actually bound to THC.
+
+See: Zhenhua Shao, Jie Yin, Karen Chapman, Magdalena Grzemska, Lindsay Clark, Junmei Wang, and Daniel M. Rosenbaum*, “High-resolution crystal structure of the human CB1 cannabinoid receptor,” Nature, Accelerated Article Preview, published online 16 November 2016. DOI: 10.1038/nature20613
+
+Correspondence: *dan.rosenbaum@utsouthwestern.edu
+
+Author affiliation: The University of Texas Southwestern Medical Center
+
+This project was supported by Welch Foundation grant (I-1770 to D.M.R) and a Packard Foundation Fellowship (D.M.R.). GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.17.2016

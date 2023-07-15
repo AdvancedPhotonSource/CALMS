@@ -1,0 +1,47 @@
+Solving the Structure of BRCA2 Protein Complex Important in DNA Repair
+
+The original University of Michigan press release by Suzanne Tainter can be read here.
+
+The initials BRCA2 may be best known for a gene associated with many cases of breast cancer, and the protein encoded by the BRCA2 gene is critical to repairing breaks in DNA. The breakdown of this interaction is a hallmark of many cancers. University of Michigan (U-M) scientists and colleagues from the University of Gothenburg used the U.S. Department of Energy’s Advanced Photon Source (APS) to determine the structure of a complex of two proteins—BRCA2 together with MEILB2—that allows repairs to happen efficiently in cells undergoing cell-splitting, called meiosis. Their results, reported in Nature Structural and Molecular Biology, have major implications for cancer and infertility.
+
+“We know how the literature is rich with examples of BRCA2 mutations in cancer, but our findings now suggest that the MEILB2-binding region of BRCA2 might be a hotspot for discovering mutations related to infertility,” said study author and U-M structural biologist Jayakrishnan Nandakumar, associate professor of molecular, cellular, and developmental biology.
+
+In germ cells—the cells that give rise to sperm or eggs—DNA breaks occur in every chromosome before the cells undergo meiosis. The breaks ensure mixing of genes to create genetic diversity rather than exact copies of the parents. In meiosis, each germ cell splits twice so that each egg or sperm ends up with only one copy of each chromosome. Then when egg meets sperm, the embryo has the right number of chromosome pairs.
+
+Before the first split occurs, the chromosomes in the germ cell pair up tightly and then each chromosome within a pair breaks and rejoins with pieces from its partner to exchange genes in a process called crossover. Then all these DNA breaks need to be rejoined quickly.
+
+Think of a sandwich, Nandakumar explains. The “bun” is composed of four identical copies of a protein called MEILB2 on the top and bottom, with the two BRCA2 proteins between. The MEILB2 protein sandwich carries the BRCA2 protein precisely to the DNA break points.
+
+To determine the structure of this BRCA2 complex, the researchers used x-ray crystallography at the Life Sciences Collaborative Access Team (LS-CAT) 21-ID-D x-ray beamline at the DOE Office of Science’s APS at Argonne National Laboratory. This helped them figure out how the BRCA2 protein is connected to the MEILB2 protein.
+
+The first step was to grow crystals of the BRCA2 complex. After much trial and error, Devon Pendlebury, a chemical biology graduate student in the Nandakumar lab, successfully crystallized the human form of the BRCA2 complex. In a bit of good fortune, the U-M researchers were able to collect data at the Argonne National Laboratory days before all research was shut down in March 2020.
+
+From the x-ray crystallography data and additional experiments by MCDB graduate student Ritvija Agrawal, the team determined the structure of the protein complex and how the two proteins worked together. It was a somewhat unusual protein-interaction, they report.
+
+To validate their findings, they created mutant versions of BRCA2 and MEILB2 based on their structure and showed how these mutants failed to form this complex with each other.
+
+In further validation of the MEILB2-BRCA2 complex structure, Hiroki Shibuya’s research group at the University of Gothenburg in Sweden introduced equivalent mutant versions in mouse cells undergoing meiosis. Mutant BRCA2 or MEILB2 failed to get to the DNA breaks that needed to be rejoined.
+
+“While we have known BRCA2 was necessary for DNA recombination in meiosis, we didn’t know how it was able to do this critical job efficiently,” Nandakumar said. “The MEILB2 that is part of this repair complex is only supposed to be present in cells that undergo meiosis but MEILB2 has also been found in several cancers. It may be that MEILB2 is very efficiently ‘hijacking’ the BRCA2 in cancer cells, preventing proper repair of the DNA.”
+
+Without other factors usually found in meiotic cells, the BRCA2 in these MEILB2-positive cancers might not get to the DNA breakpoints. Having a structure of this complex in hand, researchers may now find new approaches to regain BRCA2 function in MEILB2-positive cancers, Nandakumar suggests.
+
+See: Devon F. Pendlebury1‡, Jingjing Zhang2, Ritvija Agrawal1, Hiroki Shibuya2*, and Jayakrishnan Nandakumar**1, “Structure of a meiosis-specific complex central to BRCA2 localization at recombination sites,” Nat. Struct. Mol. Biol. 28, 671 (August 2021). DOI: /10.1038/s41594-021-00635-01038/s41594-021-00635-0
+
+Author affiliations: 1University of Michigan, 2University of Gothenburg Present address: ‡University of California Irvine
+
+Correspondence: * hiroki.shibuya@gu.se, ** jknanda@umich.edu
+
+We thank J. S. Brunzelle at LS-CAT for help with X-ray diffraction data collection and initial processing. This work was supported by National Institutes of Health grants R01-AG050509 (J.N.) and R01-GM120094 (J.N.), American Cancer Society Research Scholar grant RSG-17-037-01-DMC (J.N.), an American Heart Association predoctoral fellowship award ID 830111 (R.A.), Assar Gabrielssons Foundation grant FB-20-57 (J.Z.), European Research Council grant StG-801659 (H.S.), Swedish Research Council grant 2018-03426 (H.S.), Cancerfonden grant 2018/326 (H.S.) and the Knut och Alice Wallensbergs Stiftelse KAW2019.0180 (H.S.).  Use of LS-CAT was supported by the Michigan Economic Development Corporation and the Michigan Technology Tri-Corridor (Grant 085P1000817). This research used resources of the Advanced Photon Source and Center for Nanoscale Materials, both U.S. DOE Office of Science User Facilities operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE- AC0206CH11357.
+
+© 2021 The Regents of the University of Michigan
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+08.17.2021

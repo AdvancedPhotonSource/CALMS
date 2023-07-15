@@ -1,0 +1,31 @@
+Anomalously Large Charge Transfer in an Atomic Layer Cake of Transition Metal Oxides
+
+Along with the critically important goal of making the next generations of electronics devices ever smaller, designers and developers also strive for multi-functionality.  Traditional semiconductor-based microelectronic devices exploit interfacial charge transfer between different materials to create and manipulate electronic and magnetic states.  The spintronic approach to electronics, based not just on electric charge but on spin as well, requires further rethinking materials and structures.  Designing technologically relevant materials and understanding how charge transfer occurs at their interfaces is a continuing challenge for heterojunctions based on strongly correlated electronic materials. A team of researchers from the University of Arkansas, along with collaborators from the Indian Institute of Technology and Argonne National Laboratory, carried out studies at the U.S. Department of Energy’s Advanced Photon Source (APS) that demonstrate how massive charge transfer occurs in a synthesized heterostructure of transition metal oxides to create an unusual Mott insulating ground state at the atomic scale.  The work shows a path toward the development of electronics devices that are substantially more versatile and multifunctional than traditional semiconductors using various materials that could easily transition between a variety of electronic, magnetic, and spin states to achieve a wide range of functionalities in a single device.  Their study was published in Nature Communications. 
+
+Complex oxide interfaces have been found to offer tremendous possibilities for electronic and magnetic states that are unattainable with conventional semiconductors.  Recent work has pointed toward a prominent role of partially filled d-shell transition metal ions in the phenomena connected to strongly correlated insulator behavior.  The current work builds upon those ideas to examine an interface between a charge-transfer metal, LaNiO3 (LNO) and a doped Mott-Hubbard insulator, LaTiO3+ δ (LTO).  The team synthesized atomically thin Mott–Hubbard insulator/charge-transfer metal heterostructures and investigated them with resonant soft x-ray spectroscopy at X-ray Science Division (XSD) beamline 4-ID-C and diffraction at XSD beamline 6-ID-B, both of the APS, an Office of Science user facility at Argonne.
+
+The structure referred to as an LTO/LNO superlattice, was studied by x-ray absorption spectroscopy (XAS) and in situ x-ray photoemission spectroscopy (XPS) to determine how charge transfer operated in the novel interface.  The experiment revealed an unexpected massive charge flow across the interface from titanium (Ti) to nickel (Ni) ions.  Thus, the final state of Ni in the superlattice shows a state very close to Ni2+ within the chemical matrix originally supporting Ni3+.
+
+The team next investigated how this modified interfacial band structure alters the physical properties.  X-ray absorption spectroscopy revealed an unusual electronic configuration of Ni 3d8, d7, and d8L states at the interfacial NiO2 layer.  A reconstruction of the band structure near the interface was also confirmed, with the splitting of the Ni eg band gap of about 0.20 eV.  Another bandgap of about 1.3 eV is seen between the Ti 3d and Ni eg bands.  Such a gap splitting has not been observed in other LNO-based heterojunctions. 
+
+The unusual insulating Mott ground state of the LTO/LNO heterostructure is an example of how the manipulation of charge transfer can create exotic states not only in the electronic domain but also with orbital and spin degrees of freedom.
+
+The researchers expect that further research involving other types of charge-transfer interfaces will open up even more intriguing possibilities for the eventual realization of electronics components with capabilities far beyond those in current semiconductors. 
+
+— Mark Wolverton
+
+See: Yanwei Cao1*, Xiaoran Liu1, M. Kareev1, D. Choudhury1,2, S. Middey1, D. Meyers1, J.-W. Kim3, P.J. Ryan3, J.W. Freeland3, and J. Chakhalian1*, “Engineered Mott ground state in a LaTiO3+δ/LaNiO3 heterostructure,” Nat. Commun. 7, 10418 (21 January 2016). DOI: 10.1038/ncomms10418
+
+Author affiliations: 1University of Arkansas, 2Indian Institute of Technology Kharagpur, 3Argonne National Laboratory
+
+Correspondence: * yc003@uark.edu or jak.chakhalian@rutgers.edu(Jak Chakhalian)
+
+J.C. and X.L. were supported by the Department of Energy grant DE-SC0012375 for synchrotron work at the Advanced Photon Source and material synthesis. D.M. was primarily supported by the Gordon and Betty Moore Foundation EPiQS Initiative through grant number GBMF4534. Y.C. and S.M. were supported by the DOD-ARO under grant number 0402-17291. This research used resources of the Advanced Photon Source, a US Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract number DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+12.05.2016

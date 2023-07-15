@@ -1,0 +1,45 @@
+Piecing Together the Early Solar System Using Returned Samples from Asteroid Ryugu
+
+Picture a jigsaw puzzle just dumped from the box whose pieces are jumbled and clumped, half wrong side up. To solve the puzzle, you'll need to sort the pieces and set them in the general right area. The asteroids in our Solar System, small rocky bodies mostly located between the orbits of Mars and Jupiter, experienced a lot of upheaval during the evolution of the Solar System, so that their remains today are not unlike the just-dumped jigsaw pieces. To understand what the asteroids can tell us about the early Solar System, its composition, and evolution, astronomers need to sort them and determine the locations in which they originally formed. With the exception of some fragments of asteroids which have fallen to Earth as meteorites, astronomers have relied mostly on information they could gather remotely to characterize asteroids. However, the Hayabusa2 spacecraft extracted and returned physical samples of asteroid 162173 Ryugu to Earth. On Earth, a truly globe-spanning team of scientists using several synchrotron x-ray research facilities, was able to employ dozens of types of analyses to characterize Ryugu, including studies at the U.S. Department of Energy’s (DOE’s) Advanced Photon Source (APS), allowing them to conclude that its parent body was formed beyond the orbit of Jupiter in the early Solar System and to describe the alteration by water and heat that transformed the parent body into the asteroid as it is today. Their results were published in the journal Science.
+
+Ryugu is hypothesized to be a carbonaceous asteroid, meaning it consists of hydrated silicate rocks and organic material. Asteroids of this type contain some of the oldest unmodified materials in our Solar System. Remote sensing observations from the Hayabusa2 spacecraft show that Ryugu formed by rocks regrouping after a collision broke apart and potentially chemically altered its parent body. Ryugu is a near-Earth asteroid; its average distance as it orbits the Sun is similar to that of Earth. Both these characteristics―its composition and its orbit―make it an intriguing target for detailed investigation.
+
+Scientists used analytical facilities in Japan, France, and the United States, among others, to characterize the asteroid samples returned by the spacecraft in December 2020. The team measured tactile characteristics, such as the bending strength and hardness of the samples, as well as observing how the samples respond to heat and electricity. The team took measurements to determine the presence and abundance of elements and compounds within the samples.
+
+The measurements related to the presence and abundance of elements included both synchrotron Mössbauer spectroscopy and polarized synchrotron Mössbauer spectroscopy using the APS X-ray Science Division Inlastic X-ray & Nuclear Resonant Scattering Group’s 3-ID-B x-ray beamline at the APS, a DOE Office of Science user facility at Argonne National Laboratory. Synchrotron x-ray measurements were also carried out at SOLEIL (France), the Photon Factory (Japan), and SPring-8 (Japan).
+
+Figure 1 shows three views of one of the samples analyzed with synchrotron Mössbauer spectroscopy at the APS. These data were used to identify minerals within the sample as well as the amount and types of iron ions. The synchrotron Mössbauer spectroscopy beam used to probe the sample at the APS is 100 times smaller than a conventional Mössbauer spectroscopy beam, which aids scientists in identifying minerals in a heterogeneous sample. Polarized synchrotron Mössbauer spectroscopy uses an external magnetic field to create special optical conditions that minimize errors in identifying minerals from the resulting absorption lines. This was the first time polarized synchrotron Mössbauer spectroscopy was used to study non-terrestrial rocks.
+
+The varied data taken by the team allowed them to draw conclusions about the physical characteristics of Ryugu and its formation. 
+
+From the measured elemental abundances, as well as the presence of magnetite and the value of the magnetic hysteresis parameter measured by the Mössbauer spectroscopy, the team confirmed Ryugu as a carbonaceous chondrite. 
+
+The team concluded that Ryugu's parent body was altered by water because the majority of the samples are composed of phyllosilicates, a class of minerals which are hydrated crystal sheets of silicates. 
+
+They used the synchrotron Mössbauer data to determine the ratio of different iron ions in the minerals which, in conjunction with other measurements, allowed them to conclude under what chemical conditions the water-related reactions occurred. 
+
+Lastly, the team used a number of measurements to show that Ryugu's parent body formed in the outer Solar System. Molecules with low freezing points, such as those incorporating nitrogen, would only have formed further away from the Sun, because the early Solar System was hotter closer in than today. So, the measured ratio of carbon to nitrogen implies formation at a certain distance from the Sun. Conversely, because compounds that form under high temperatures, such as chondrules and calcium-aluminum inclusions, are rare within the Ryugu samples, it is more likely that the asteroid's parent body formed in a cooler part of the early Solar System.
+
+Using the returned sample data from Hayabusa2, scientists have been able to characterize asteroid Ryugu and its parent body, beginning to sort and correctly put in place the puzzle pieces left from the early Solar System.  – Mary Alexandra Agner
+
+See: T. Nakamura* et al., “Formation and Evolution of Carbonaceous Asteroid Ryugu: Direct Evidence from Returned Samples,” Science, published on line 22 September 2022. DOI: 10.1126/science.abn8671
+
+Complete list of author affiliations: See online
+
+Argonne National Laboratory co-authors:  E. E. Alp, M. Y. Hu, J. Zhao
+
+Correspondence: * tomoki.nakamura.a8@tohoku.ac.jp
+
+This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Hero image: NASA
+
+The U.S. Department of Energy's APS at Argonne National Laboratory is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.31.2022

@@ -1,0 +1,31 @@
+New Insights into the Mechanisms Underlying Lysosomal Disease and Ebola Infection
+
+Two-pore channels (TPCs) are voltage-gated ion channel proteins that detect, generate, and propagate electrical signals by opening and closing ion pathways across a cell membrane. These electrical pulses drive a fascinating range of physiological activities ranging from the coordinated beating of the heart to processing of sensations and emotions. Building on a longstanding interest in studying how these channels detect membrane potential and control the state of the ion pathway, researchers from the University of Texas Southwestern Medical Center and the University of Pennsylvania used x-ray diffraction experiments at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory and at the Advanced Light Source (ALS) at the Lawrence Berkeley National Laboratory to build the first three-dimensional structure of the two-pore channel TCP1 in a closed conformation at a resolution of ~3.3 Å. This work expands a fundamental understanding of TPCs and provides an avenue for treatments that target TCP1 in lysosomal diseases and Ebola.
+
+Electrical impulses are an important mode of communication between cells in the human body. Initiation and propagation of these messages by a specialized group of proteins, voltage-gated ion channels, occurs through changes in membrane potential via the flow of Na+ or K+ ions across cell membranes. Voltage-gated ion channels sense membrane potential and act to control voltage changes by rapidly switching the ion pathway on and off. The resultant pulse-like electrical signals generate impulses that drive a plethora of functions in different body organs, including neurological function and the maintenance of blood pressure.
+
+Though much of the research in this field has focused upon channels localized to the cell plasma membrane, more recent work has shown that TPCs reside within the membranes of organelles in plant and animal cells. In humans, TPCs regulate the ionic homeostasis and pH within lysosomes, organelles with low internal pH involved in cellular metabolism and catabolite export and trafficking. TPCs also determine lysosomal membrane potential and excitability and may regulate lysosomal Ca2+ release. These functions tie TPCs to both lysosomal storage diseases (~50 rare inherited diseases for which treatment is limited) as well as to the release of Ebola virus from lysosomes into the host cell. These roles make TPCs potential targets for the treatment of both rare diseases as well as Ebola infection.
+
+In this study, the researchers utilized the Structural Biology Center 19-ID-D and X-ray Science Division GM/CA-XSD 23-ID-B and 23-ID-D x-ray beamlines at the APS, as well as the BL8.2.1 and BL8.2.2 beamlines at the ALS to obtain a high-resolution x-ray structure of a plant TPC channel from Arabidopsis thaliana (AtTPC1) with a comprehensive characterization of channel activity (Fig. 1).
+
+The AtTPC1 structure provides an excellent model system to further investigate the TPC channel family. The structure also provides a long-awaited view of a channel voltage sensor in the closed resting state, a significant finding given that all other known voltage-gated channel structures are in the open activated state.
+
+These findings initiate a paradigm shift in our understanding of how voltage-gated channels switch on and off in response to membrane potential changes. This knowledge can be used to address lysosomal diseases and viral infections in which Ca2+ release in lysosomes is a central part of the infectious process. 
+
+— Emma Nichols
+
+See: Jiangtao Guo1, Weizhong Zeng1, Qingfeng Chen1, Changkeun Lee1, Liping Chen1, Yi Yang1, Chunlei Cang2, Dejian Ren2, and Youxing Jiang1*, "Structure of the voltage-gated two-pore channel TPC1 from Arabidopsis thaliana,” Nature 531, 196 (10 March 2016). DOI: 10.1038/nature16446
+
+Author affiliations: 1University of Texas Southwestern Medical Center, 2University of Pennsylvania
+
+Correspondence: *youxing.jiang@utsouthwestern.edu
+
+This work was supported in part by the Howard Hughes Medical Institute and by grants from the National Institutes of Health (GM079179 to Y.J.; NS055293 and NS074257 to D.R.) and the Welch Foundation (Grant I-1578 to Y.J.). The Berkeley Center for Structural Biology is supported in part by the National Institutes of Health, National Institute of General Medical Sciences, and the Howard Hughes Medical Institute. The Advanced Light Source is supported by the Director, Office of Science-Basic Energy Sciences, of the U.S. Department of Energy (DOE) under contract no. DE-AC02-05CH11231.  The Structural Biology Center is operated by UChicago Argonne, LLC, for the U.S. DOE Office of Biological and Environmental Research under Contract No. DE-AC02-06CH11357. GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+01.05.2017

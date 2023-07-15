@@ -1,0 +1,31 @@
+Acid Ions are More Than Spectators
+
+X-ray absorption fine structure (EXAFS) measurements carried out at the U.S. Department of Energy's (DOE's) Advanced Photon Source, coupled with state-of-the-art density functional theory (DFT) simulations reveal that strong acids, such as hydrochloric acid, form counter-ion pairs in solution across all concentration, a result that had not been seen in gas-phase studies. The discovery suggests that it is not simply the release of protons — hydrogen ions — that is important for the properties of acids.
+
+When a strong acid, such as hydrochloric acid, forms a solution in water, the hydrogen ions break away from the compound and give rise to the acidity of the solution. These hydrogen ions can diffuse quickly in the solution and attack other chemicals present, neutralizing basic, or alkaline, substances, or corroding metals and reacting with organic substances. Meanwhile, the counter ion (the chloride in the example of hydrochloric acid) was assumed to form independent, negatively charged solvated fragments, but little was known about the properties of the counter ions or precisely what ion fragments they generated.
+
+Chemists had computer models at their disposal, often based on gas-phase studies of the particles involved. However, acids are present in the condensed phase and, thus, the role of the condensed phase environment, as opposed to an isolated molecule in the vapor, should be considered. Moreover, as the researchers in this study report in a cover article for the Journal of Physical Chemistry B, the gas-phase studies are not representative of the more common acidic solution.
+
+Countless chemical reactions hinge on the presence of an excess of protons in the reaction solution, formed by the dissociation of a strong acid into dissolved hydrogen ions and the counter ion. Indeed, these so-called "Br∅nsted acids" are used in many industrially important chemical reactions, are involved in numerous biological reactions, and play a role in atmospheric chemistry.
+
+Chemists have assumed that the dissociation of a strong acid has two steps. First, the hydrogen-bearing, or protic, acid bonds loosely to a water molecule and the electrical charge is redistributed so that the counter ion becomes more negative while the water molecule gains a positive charge. In the second step, the counter ion is released as a free-floating chloride ion, for instance, and the positively charged water molecule grabs the proton from the acid to form H3O+, the hydronium ion. The extra proton on this chemical species is free to diffuse through the solution, endowing the solution with its acidic character. These researchers, from Pacific Northwest National Laboratory and Argonne National Laboratory, have provided a molecular picture of deviations from ideal acid dissociation.
+
+The team carried out extended x-ray absorption fine structure studies at the X-ray Science Division (XSD) 20-BM beamline at the Argonne Advanced Photon Source, a DOE Office of Science User Facility. They combined these data with molecular dynamics and corroborated earlier neutron and x-ray diffraction data. Specifically, the bond distance between chloride ion and the oxygen in the hydronium ion comprising the contact ion pair significantly shorter than the interaction between chloride and the oxygen of water in the ideal dissociation picture. This difference in distance and geometry can be measured. Furthermore, the newly discovered molecular moieties can be used to re-interpret in a new light long-standing neutron and x-ray diffraction data.
+
+Thus, the contact ion pair between the H3O+ and chloride suggests that the long-misunderstood counter ion of a protic acid is not a mere spectator but is integral to defining the properties of acids across a broad concentration range. Indeed, across the concentration range, the team demonstrates that the contact ion pair is ubiquitous with very few free protons in solution at the highest concentrations. The study provides a template to investigate and understand the details of other acids and their chemistries under a variety of different environments including interfaces.
+
+— David Bradley
+
+See: Marcel D. Baer1, John L. Fulton1, Mahalingam Balasubramanian2, Gregory K. Schenter1, and Christopher J. Mundy1*, "Persistent Ion Pairing in Aqueous Hydrochloric Acid," J. Phys. Chem. B 118, 7211 (2014). DOI:10.1021/jp501091h
+
+Author affiliations: 1Pacific Northwest National Laboratory, 2Argonne National Laboratory
+
+Correspondence: * chris.mundy@pnnl.gov
+
+This work was supported the U.S. Department of Energy's (DOE) Office of Science, Office of Basic Energy Sciences, Division of Chemical Sciences, Geosciences, and Biosciences. M.D.B. is grateful for the support of the Linus Pauling Distinguished Postdoctoral Fellowship Program at Pacific Northwest National Laboratory. APS Sector 20, which is managed by XSD in partnership with the Canadian Light Source (CLS), is funded by the U.S. Department of Energy Office of Science, and by the Natural Sciences and Engineering Research Council of Canada and the University of Washington via the CLS. This research used resources of the National Energy Research Scientific Computing Center, which is supported by the Office of Science of the U.S. Department of Energy under Contract DE-AC02-05CH11231, and of the Advanced Photon Source, a U.S. Department of Energy Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+08.05.2014

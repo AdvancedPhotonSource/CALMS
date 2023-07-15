@@ -1,0 +1,43 @@
+Mix and Match MOF
+
+Inexpensive materials called MOFs, for metal-organic frameworks, pull gases out of air or other mixed gas streams, but fail to do so with oxygen. Now, a team that includes researchers from two U.S. Department of Energy (DOE) national laboratories has overcome this limitation by creating a composite of a MOF and a helper molecule in which the two work in concert to separate oxygen from other gases simply and cheaply. The results, achieved with an assist from the DOE’s Advanced Photon Source (APS) at Argonne, might help with a wide variety of applications, including making pure oxygen for fuel cells, using that oxygen in a fuel cell, removing oxygen in food packaging, making oxygen sensors, or for other industrial processes. The technique might also be used with gases other than oxygen as well by switching out the helper molecule.
+
+Currently, industry uses a common process called cryogenic distillation to separate oxygen from other gases. It is costly and uses a lot of energy to chill gases. Also, it can't be used for specialty applications like sensors or getting the last bit of oxygen out of food packaging.
+
+A great oxygen separator would be easy to prepare and use, be inexpensive and be reusable. MOFs, or metal-organic frameworks, are materials containing lots of pores that can suck up gases like sponges suck up water. They have potential in nuclear fuel separation and in lightweight dehumidifiers.
+
+But of the thousands of MOFs out there, less than a handful absorb molecular oxygen. And those MOFs chemically react with oxygen, forming oxides (think rust) that render the material unusable.
+
+"When we first worked with MOFs for oxygen separation, we could only use the MOFs a few times. We thought maybe there's a better way to do it," said materials scientist Praveen Thallapally of the DOE’s Pacific Northwest National Laboratory (PNNL).
+
+The new tack for Thallapally and colleagues at PNNL involved using a second molecule to mediate the oxygen separation, a helper molecule would be attracted to but chemically uninterested in the MOF. Instead, the helper would react with oxygen to separate it from other gases.
+
+They chose a MOF called MIL-101 that is known for its high surface area — making it a powerful sponge — and lack of reactivity. One teaspoon of MIL-101 has the same surface area as a football field. The high surface area comes from a MOF's pores, where reactive MOF's work their magic.
+
+MOFs that react with oxygen need to be handled carefully in the laboratory, but MIL-101 is stable at ambient temperatures and in the open atmosphere of a lab. For their helper molecule, they tried ferrocene, an inexpensive iron-containing molecule.
+
+The scientists made a composite of MIL-101 and ferrocene by mixing them and heating them up. Initial tests showed that MIL-101 took up more than its weight in ferrocene and at the same time lost surface area. This indicated that ferrocene was taking up space within the MOF's pores, where they need to be to snag the oxygen (Fig. 1).
+
+Then the team sent gases through the black composite material. The material bound up a large percentage of oxygen, but almost none of the added nitrogen, argon or carbon dioxide. The material behaved this way whether the gases went through individually or as a mix, showing that the composite could in fact separate oxygen from the others.
+
+Additional analysis showed that heating caused ferrocene to decompose in the pores to nanometer-sized clusters, which made iron available to react with oxygen. This reaction formed a stable mineral known as maghemite, all within the MOF pores. Maghemite could be removed from the MOF to use the MOF again.
+
+Together, the results on the composite showed that a MOF might be able to do unexpected things — like purify oxygen — with a little help. Future research will explore other combinations of MOF and helper molecules.
+
+In addition to PNNL, participating researchers hailed from and used analytical instruments at two DOE Office of Science User Facilities: the Environmental Molecular Sciences Laboratory at PNNL and the X-ray Science Division 11-ID-B x-ray beamline at the APS; also participating was a researcher from the University of Amsterdam.
+
+See: Wen Zhang1, Debasis Banerjee1, Jian Liu1, Herbert T. Schaef1, Jarrod V. Crum1, Carlos A. Fernandez1, Ravi K. Kukkadapu1, Zimin Nie1, Satish K. Nune1, Radha K. Motkuri1, Karena W. Chapman2, M. H. Engelhard1, James C. Hayes1, Kurt L. Silvers1, Rajamani Krishna3, B. Peter McGrail1, Jun Liu1, and Praveen K. Thallapally1*, “Redox-Active Metal-Organic Composites for Highly Selective Oxygen Separation Applications,” Adv. Mat., published online March 8, 2016. DOI: 10.1002/adma201600259.
+
+Author affiliations: 1Pacific Northwest National Laboratory, 2Argonne National Laboratory, 3University of Amsterdam
+
+Correspondence: *Praveen.thallapally@pnnl.gov
+
+This research was supported by the U.S. DOE Office of Science-Basic Energy Sciences (BES), and the DOE-BES Division of Materials Sciences and Engineering (Award No. KC020105-FWP12152). A portion of this work (XPS and Mössbauer spectroscopy) was performed at Environmental Molecular Science Laboratory (EMSL), a national scientific user facility sponsored by the DOE Office of Biological and Environmental Research and located at PNNL.
+
+This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+03.09.2016

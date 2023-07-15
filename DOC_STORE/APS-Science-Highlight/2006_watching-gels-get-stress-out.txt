@@ -1,0 +1,19 @@
+Watching Gels Get the Stress Out
+
+The macroscopic flow properties of a wide assortment of disordered soft materials―such as foams, concentrated emulsions, and colloidal suspensions―can change dramatically from fluid-like to solid-like with seemingly subtle changes in microscopic characteristics. This behavior bears strong resemblance to the liquid-glass transition that occurs in molecular fluids.
+
+Recently, the theoretical concept of jamming was developed to unify a range of fluid-solid transitions in disordered soft materials and to connect them to the glass transition. As part of the jamming phase diagram, solids can be made fluid by sufficiently large shear stress, a feature that is shared by many disordered soft materials. A central and challenging feature of liquids cooled into glass is the extremely slow subsequent evolution of their properties, a process known as aging. An important question, therefore, is whether other routes to creating disordered solids, for example changes in shear stress, lead to materials that evolve in the same way. Understanding the recovery from shear of disordered soft solids would provide important insight into the fundamental physics of these materials, give new insights into the reasons glass ages, and could also help improve technologies that exploit substances that are gel-like at rest and fluid after agitation, such as paints, foods, and personal-care products, to name a few.
+
+To investigate the microscopic mechanisms of recovery from shear in disordered soft solid materials and to compare it with aging in glasses, researchers from Johns Hopkins University, the University of Ottawa, the University of Illinois, and Florida State University have combined multispeckle x-ray photon correlation spectroscopy (XPCS) conducted at X-ray Operations and Research beamline 8-ID at the U.S. Department of Energy’s Advanced Photon Source with diffusing wave spectroscopy (DWS) studies on concentrated colloidal gels subjected to strong shear. The gels are comprised of solutions of nanometer-scale silica particles that are jammed by an entropically driven attractive force due to added polymer in the solution. The XPCS and DWS techniques provide a quantitatively coherent picture of the dynamics of these materials following the cessation of shear that indeed displays a seemingly perpetual evolution strongly reminiscent of aging in glasses. However, a detailed examination of these dynamics of recovery demonstrates that they are not directly related to traditional aging phenomena in glasses. Rather, they match predictions of recent models that describe the dynamics in disordered elastic media in terms of strain from random, local structural rearrangements. This conclusion calls into question the connection between aging in glasses and the slow equilibration that various disordered soft solids display and should motivate a rethinking of models that seek to unify these phenomena.
+
+Contact: R. L. Leheny (leheny@pha.jhu.edu) or J. L. Harden (jharden@science.uottawa.ca).
+
+See: B. Chung, S. Ramakrishnan, R. Bandyopadhyay, D. Liang, C. F. Zukoski, J. L. Harden, and R. L. Leheny, “Microscopic Dynamics of Recovery in Sheared Depletion Gels”, Phys. Rev. Lett. 96, 228301 (2006).
+
+Funding was provided by the NSF (DMR-0134377). Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. W-31-109-ENG-38.
+
+Argonne is a U.S. Department of Energy laboratory managed by The University of Chicago
+
+Published Date
+
+09.08.2006

@@ -1,0 +1,67 @@
+A Key Psychiatric Drug Target Comes Into Focus
+
+The original University of California, San Francisco, press release by Nicholas Weller can be read here.
+
+One way or another, many psychiatric drugs work by binding to receptor molecules in the brain that are sensitive to the neurotransmitter dopamine, a chemical signal that is central to how our experiences shape our behavior. But because scientists still don't understand the differences between the many kinds of dopamine receptors present on brain cells, most of these drugs are "messy," binding to multiple different dopamine receptor molecules and leading to serious side effects ranging from movement disorders to pathological gambling. Now experiments at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne National Laboratory have helped a team of researchers take a major step forward toward designing more powerful psychiatric drugs with fewer side effects.
+
+As reported online on October 19, 2017 in Science, the team has determined the crystal structure of a specific dopamine receptor called D4 at an incredibly high resolution (1.95 Å) — the highest for any dopamine, serotonin, or epinephrine (aka adrenaline) receptor to date — allowing them to design a new compound that tightly binds only to D4 and none of the other 320 receptors they tested.
+
+Earlier this year, the same team of researchers from UC San Francisco (UCSF), the University of North Carolina-Chapel Hill (UNC), and Stanford University solved the crystal structure of LSD bound to a serotonin receptor to learn why acid trips last so long and how to perhaps tweak the drug to be less potent. (See the APS science highlight, “How LSD Attaches to a Brain-Cell Serotonin Receptor,” https://www.aps.anl.gov/APS-Science-Highlight/2017/how-lsd-attaches-to-….)
+
+The D4 dopamine receptor has been implicated in attention deficit/hyperactivity disorder, cancer metastasis, and even erectile dysfunction. Similar dopamine receptor subtypes are crucial factors in conditions including schizophrenia, addiction, Alzheimer's disease, depression, and Parkinson's disease. However, there are currently few specific drugs for the D4 subtype that can target it and it alone, which has prevented researchers from isolating the specific function of D4 compared to other dopamine receptors. Current drugs that target dopamine receptors also cause side effects such as Parkinson's-like movement disorders.
+
+"We now have the ability to get a crystal-clear image of these receptors to see details like never before," said co-senior author Bryan L. Roth of the UNC School of Medicine. "That's the key. Seeing these details allowed us to create a compound that tightly binds only to one kind of receptor. Our ultimate goal is to avoid so-called 'scattershot drugs' that hit many unwanted receptors and cause serious and potentially fatal side effects."
+
+Brian Shoichet, co-senior author from UCSF said, "Our computational modeling capabilities allowed us to virtually screen over 600,000 compounds much faster than traditional screening methods and create a hierarchy of compounds that potentially bind only to the D4 dopamine receptor. Our work to create better drugs is far from over, but the computer-based screening tools used here are becoming an ever-more reliable tool in our arsenal."
+
+Dopamine receptors are part of a large family of molecules called G protein-coupled receptors, or GPCRs, which are the intended targets of approximately 35 percent of all drugs on the market. Despite their importance, very little is known about the structures of the vast majority of GPCRs, including D4 and other dopamine receptors, making it challenging to design more precise drugs with fewer side effects.
+
+Typically, scientists have solved the chemical structure of proteins using a technique called X-ray crystallography: they cause the protein to condense into a tightly packed crystal lattice, then shoot x-rays at the crystal and can calculate the protein's structure from the resulting diffraction patterns. However, getting the D4 protein to crystallize with a drug bound to it — in order to pinpoint the receptor's site of action — had proved an unsolved challenge.
+
+To solve the high-resolution structure of D4, Roth lab postdocs Sheng Wang and Daniel Wacker — two of three co-first authors  — conducted a series of intense experiments over three years to get the D4 receptor to crystallize. They dissolved receptor molecules in water-based buffers and then slowly removed the water. Then, in order to be sure the receptors were sitting perfectly still so they could be imaged, Wang and Wacker employed a variety of experimental tricks — outlined in the Science paper — to carefully draw out water at the exact right conditions until the receptors were packed tightly into crystals that could then be bombarded with high-brightness x-rays at the National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) structural biology facility at the Argonne National Laboratory APS. The x-ray diffraction data collected at the GM/CA-XSD 23-ID-B and –D beamlines resulted in the first-ever super high-resolution image of the chemical architecture of D4 bound to the antipsychotic drug nemonapride. (The APS is an Office of Science user facility.)
+
+"We had to get a high-resolution structure like this so we could see exactly how a compound can bind to D4," Wang said. "It's like seeing details in a photograph that you just couldn't see unless the photo was super high resolution. Once we had that, we teamed up with our UCSF colleagues to computationally screen for compounds that might potentially bind to this receptor but not others."
+
+Anat Levit, a postdoc in Shoichet's lab at UCSF and the third co-first author, led the computational modeling and new compound discovery, in collaboration with co-author Ron Dror and his Stanford lab.
+
+"Theoretically, there's an almost infinite number of chemical compounds that could be made, and this chemical space is enormous and largely unexplored. However, we have large libraries of virtual compounds that at least edge into this space," Levit said. "Using the new high-resolution structure and our computational modeling program, we fit each of 600,000 virtual compounds into the dopamine/nemonapride binding site of the D4 receptor, as you might fit candidate puzzle pieces into a partially constructed puzzle."
+
+Levit and colleagues in the Shoichet lab evaluated all 600,000 of these chemical "puzzle pieces" to see how well they fit into the full D4 receptor that the Roth lab team had solved. Once they had identified the top ten candidate compounds that computer modeling pointed to as likely binding partners with the D4 receptor, they sent them back to Wang and Wacker to test experimentally in the lab.
+
+The Roth lab team found that two of the compounds indeed fit into the D4 receptor, but did so relatively loosely.
+
+"The initial two compounds were just starting points," Wacker said. "A drug or even a 'probe' used to explore the biology of the receptor must fit the receptor tightly. A compound needs to stay attached for a period of time to have an effect inside the cell."
+
+The research then bounced back and forth between the computer modelers at UCSF and the experimental lab at UNC-Chapel Hill to design and test dozens of new chemical compounds that might bind tighter to the D4 receptor.
+
+Finally, by tinkering with chemical links and ionic attractions here, adding new chemical groups there, Levit identified a virtual compound -- compound UCSF924 -- that computer simulations suggested could bind extremely tightly to the D4 receptor. Upon testing this compound in the lab, Wang confirmed the molecule could bind to the D4 receptor 1000-times more powerfully than the initial virtual compounds.
+
+D4-specific compounds will help researchers understand drug-specific dopamine receptors and, one day, to design beneficial pharmaceuticals.
+
+The researchers now plan to test their new compound in animal models to determine exactly how it activates the D4 receptor, and how activating the D4 receptor alone alters brain function.
+
+"No one knows what the D4 receptor precisely does," Wang said. "The high specificity and high potency of this new compound will allow us to begin to address this for the first time."
+
+The team also plans to use the highly-selective UCSF924 compound to learn more details of how existing drugs work by altering specific cellular pathways inside cells.
+
+"This work has implications beyond D4," Wacker said. "For instance, antipsychotics are dirty drugs; they hit everything. To better understand them and improve upon them, we need to understand what they do at every single target they hit. Our work is an important step toward that goal."
+
+Shoichet added, "Whereas UCSF924 is far from a drug, it is a great probe, and we are making it openly available to the community via Sigma-Aldrich, as SML2022."
+
+Looking back on progress in this field, Shoichet said, "When structure- and computer-based screens were first developed at UCSF 30 years ago, the idea that we would have such beautiful views of drug targets as crucial and subtle as the dopamine D4 receptor, and that we could exploit it so quickly and effectively, was far from anyone's mind. But the National Institutes of Health invested in these lines of basic research for decades. Now that long-term research effort is beginning to pay off in the ability to computationally screen new GPCR targets and find new and exciting chemical leads for biology and for drug discovery."
+
+See: Sheng Wang1*, Daniel Wacker1**, Anat Levit2, Tao Che1, Robin M. Betz3,4, John D. McCorvy1, A.J. Venkatakrishnan3,4, Xi-Ping Huang1, Ron O. Dror3,4, Brian K. Shoichet2***, and Bryan L. Roth1****, “D4 dopamine receptor high-resolution structures enable the discovery of selective agonists,” Science 358, 381 (2017). DOI: 10.1126/science.aan5468
+
+Author affiliations: 1University of North Carolina at Chapel Hill, 2University of California, San Francisco, 3Stanford University, 4Stanford University School of Medicine
+
+Correspondence: *shengunc@email.unc.edu, ** dwacker@email.unc.edu, ***bshoichet@gmail.com, and ****bryan_roth@med.unc.edu
+
+This work was supported by the National Institutes of Health (NIH,  grants R01MH112205, U19MH82441, and HHSN-271-2013-00017-C), the Michael Hooker Chair for Protein Therapeutics and Translational Proteomics (to B.L.R.), and the National Institute of General Medical Sciences (NIGMS; grant R35GM122481 to B.K.S.). GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006).This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.10.2017

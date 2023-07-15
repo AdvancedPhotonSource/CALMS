@@ -1,0 +1,21 @@
+Orbital Reconstruction at a Complex Oxide Interface
+
+One of the current problems of intense interest to the condensed matter physics community is the behavior of systems with strongly interacting electrons. These systems contain a variety of competing strong interactions that create a subtle balance to define the lowest energy state (e.g., metal, insulator, superconductor, etc.). A key component of these interactions has to do with how the electrons occupy different electronic orbitals. Researchers using the Argonne Advanced Photon Source have uncovered a reconstruction of electronic orbitals confined at an interface between ferromagnetic and superconducting oxides. This insight has important implications for the behavior at interfaces between materials with strongly correlated electrons.
+
+It has been long understood that, at the interface between different materials, the system will often transfer charge between materials near the interface to balance the difference in electronic properties. For transition metal oxides, though, charge is only part of the equation. The electronic orbital in which the charge resides is of equal importance and can be crucial in determining the properties of the material. For Cu-oxide based superconductors (i.e., cuprates), the occupancy of electronic orbitals is understood to be an essential component in the formation of a superconducting oxide.
+
+Gaining an understanding of atomic-scale boundaries between different materials revolutionized our understanding of physics at interfaces, giving rise to applications such as the transistor and better basic understanding of the behavior of electrons confined in two dimensions. Key to these discoveries was the ability to fabricate high-quality interfaces. Now, through the use of state-of-the-art oxide sample fabrication, researchers can create high-quality interfaces between dissimilar, strongly correlated electron systems. But the broken symmetry at the interface can drastically upset the subtle balance of these competing energies and lead to significant deviations from the bulk properties.
+
+Writing in Science, researchers from the University of Arkansas, Argonne, Max Planck Institute for Solid State Research, and Northern Illinois University describe how they have used the interface-sensitive polarized soft x-ray absorption technique at X-ray Operations and Research beamline 4-ID-C to uncover the orbital occupancy at the interface between the superconductor (YBa2Cu3O7) and ferromagnet (La0.67Ca0.33MnO3). The unique state usual to the cuprate has a fully occupied 3z2-r2 orbital with the remaining hole sitting in a state of x2-y2 symmetry. At the interface, though, this order is drastically changed and the hole sites partially in each type of orbital. Theory shows that this can be understood to result from a covalent bond between Mn and Cu across the interface.
+
+Contact: John Freeland (freeland@anl.gov) and Jacques Chakalian (jchakhal@uark.edu)
+
+See: J. Chakalian, J.W. Freeland, H.-U. Habermeier , G. Cristiani, G. Khaliullin , M. van Veenendaal, and B. Keimer, “Orbital Reconstruction and Covalent Bonding at an Oxide Interface,” published Online October 11, 2007, Science DOI: 10.1126/science.1149338
+
+JC was supported by the U.S. DOD-ARO under Contract No. 0402-17291. Work at Argonne National Laboratory was supported by the U. S. DOE, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357. MvV was supported by the U.S. Department of Energy, No. DE-FG02-03ER46097.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC
+
+Published Date
+
+10.15.2007

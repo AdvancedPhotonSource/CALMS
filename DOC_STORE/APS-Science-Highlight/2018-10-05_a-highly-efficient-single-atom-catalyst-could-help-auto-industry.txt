@@ -1,0 +1,41 @@
+A Highly Efficient Single-Atom Catalyst Could Help Auto Industry
+
+The original Canadian Light Source press release by Victoria Martinez can be read here.
+
+A longer-lasting, higher-efficiency platinum catalyst has been developed by a Dalhousie University (Canada)-led team working at the U.S. Department of Energy’s Advanced Photon Source (APS), and at the Canadian Light Source (CLS), a result with major implications for the automobile industry.
+
+Platinum catalysts help deactivate toxic exhaust gases from traditional car engines. Platinum is also used to help drive the chemical reactions that make zero-emissions hydrogen fuel cells possible - a technology that could transform automobiles as we know them. The new catalyst combines gold and platinum to form what is known as a single-atom catalyst, resulting in nearly 100-fold increases in efficiency over market platinum catalysts, said Peng Zhang, the Dalhousie professor who led this research team from the University of Birmingham (UK); the University of California, Santa Cruz; the University of California, Riverside; Xiamen University (China); the University of York (UK), the CLS; and King Saud University (Saudi Arabia); and Dalhousie.
+
+Not only is efficiency improved at the outset, but it is maintained through the catalyst’s lifetime: normally, a platinum catalyst works less well over time as carbon monoxide molecules tightly bond to and block platinum from helping reactions along.
+
+Improvements come from two properties: the single atom structure, which maximizes platinum’s active surface area, and the unique electronic properties that adding gold to create an alloy helps to achieve. “The magic happens because of the alloy. Think about iron: it very easily gets rusty in the air, but if you have an iron alloy, like stainless steel, its properties are totally different,” said Zhang.
+
+For example, making a gold-platinum alloy stops the platinum catalyst from losing efficiency and “poisoning” over time. Catalyst poisoning is one of the major struggles. This is because if two platinum atoms are side-by-side, then carbon monoxide from the chemical reaction binds tightly to them, poisoning the catalyst and gradually degrading its efficiency. When researchers ensure that there are no platinum clusters within a larger gold lattice, the poisoning effect disappears.
+
+Zhang’s team worked with three Canadian Light Source facilities at the University of Saskatchewan 
+
+In order to understand and test their alloyed catalysts, the team carried out x-ray photoelectron spectroscopy studies at CLS x-ray beamlines SXRMB and SGM, and x-ray absorption fine structure studies at the X-ray Science Division 20-BM-B beamline of the APS as they tried various combinations and structures of platinum and gold. (The APS is an Office of Science user facility at Argonne National Laboratory.)
+
+“Synchrotrons are one of the most powerful tools to study. Alloys are super hard to study with regular tools, since it’s hard to distinguish the two metals from each other,” said Zhang. “With a synchrotron, you can easily tune the energy to take only the platinum, and then the gold.”
+
+As the researchers reduced the platinum content of their catalyst, they found great improvements in its function, until eventually they hit upon the single-atom model that maximized platinum’s surface area and minimized poisoning. Further, the team found that the simple chemical technique they used to prepare the alloy resulted in a higher overall concentration of platinum atoms than typical alloys by nearly 10 times. Alloys normally contain very low concentrations of single atoms, below 1%. Zhang’s team created an alloy with 7% single-platinum atoms.
+
+The work is not yet done. Zhang and his team built this first alloy with gold because it is highly stable, which makes it great for testing new ideas. But of course, like platinum, gold is very expensive.
+
+“Gold is a first step to show the concept. We now want to look at other, less expensive metals, which will make this more usable for industry,” said Zhang.
+
+See: Paul N. Duchesne1, Z. Y. Li 2, Christopher P. Deming3, Victor Fung 4, Xiaojing Zhao5, Jun Yuan 6, Tom Regier7, Ali Aldalbahi8, Zainab Almarhoon 8, Shaowei Chen 3, De-en Jiang4, Nanfeng Zheng 5, and Peng Zhang1*, “Golden single-atomic-site platinum electrocatalysts,” Nat. Mater., published on line 24 September 2018.  DOI: 10.1038/s41563-018-0167-5
+
+Author affiliations: 1Dalhousie University, 2University of Birmingham, 3University of California, Santa Cruz, 4University of California, Riverside, 5Xiamen University, 6University of York, 7Canadian Light Source, 8King Saud University
+
+Correspondence: * peng.zhang@dal.ca
+
+P.Z. acknowledges financial support from the Natural Sciences and Engineering Research Council (NSERC) Canada Discovery Grant  and P.N.D. was funded by an NSERC CGS scholarship. Financial supports from European COST Action MP0903 “Nanoalloy” (Z.Y.L.) and the U.S. National Science Foundation DMR-1409396 (S.C.) are acknowledged. A.A. and Z.A. acknowledge the financial support by the Deanship of Scientific Research, King Saud University. Part of this work was supported by a PCOSS Open Project Grant (Xiamen University) awarded to P.Z. and hosted by N.Z. DFT calculations were sponsored by the U.S. Department of Energy (DOE) Office of Science-Basic Energy Sciences, Chemical Sciences, Geosciences, and Biosciences Division and used resources of the National Energy Research Scientific Computing Center, a DOE Office of Science User Facility supported by the Office of Science of the U.S. Department of Energy under contract no. DE-AC02-05CH11231. The Canadian Light Source is supported by the CFI, NSERC, NRC, CIHR, the University of Saskatchewan, the Government of Saskatchewan and Western Economic Diversification Canada. We are also grateful for the assistance of Z. Finfrock and Y. Hu for synchrotron technical support. This research used resources of the Advanced Photon Source, an Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory under contract no. DE-AC02-06CH11357, and the Canadian Light Source and its funding partners.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+10.05.2018

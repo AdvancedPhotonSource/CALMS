@@ -1,0 +1,29 @@
+Doubling Estimates of Light Elements in the Earth's Core
+
+The inner core of the Earth is the remotest area on the globe, mostly impossible to study directly. It is an area of the planet that experiences both extremely high pressure ranging from 3,300,000 to 3,600,000 times atmospheric pressure, and extremely high temperatures somewhere from 5000 to 6000 K. One way to study this area is by recording how sound waves travel across the interior, matching these profiles to known information about how sound waves travel through candidate iron alloys, and attempting to discern which materials must be present. This method requires an understanding of how sound waves travel through the potential materials present in the core. A team of researchers utilized APS x-rays to develop a new model of how sound waves travel through iron and iron-silicon alloys, showing for the first time that increased temperatures will affect the sound wave profile, and that sound velocity and density correlate in a non-linear way. Their results suggest that the amount of light elements in the inner core could be two times more than estimated in previous studies without considering these effects.
+
+The researchers from the University of Texas at Austin, Argonne National Laboratory, and the Carnegie Institute of Washington studied samples of what is known as hexagonal closest-packed iron (hcp Fe), which is believed to be the high-pressure phase of iron present in the Earth’s core, as well as a hcp iron-silicon alloy because silicon is one of the most likely candidate light elements in the core.
+
+The researchers measured the compressional wave velocity (in which the wave has the same direction of vibration as its direction of travel) of the samples using high-energy inelastic x-ray scattering (HERIX) and x-ray diffraction (XRD) in a resistively-heated diamond anvil cell at XSD beamline 3-ID of the APS (Fig. 1). They made their measurements under simultaneous high-pressure and high-temperature conditions to better simulate conditions in the Earth's core.
+
+Previous studies had suggested that the compressional sound velocity of hcp Fe was generally linear with increased density. In contrast, by subjecting their samples to unprecedented extreme conditions, the team found that the effect of high temperature at a given density on the sound velocity of iron cannot be ignored. As the temperature increased for a given density at high pressures, the sound waves slowed down. In addition, the relationship between the sound wave velocity and increased density was not linear, but instead could be better described by an empirical power-law function with concave behavior at higher densities.
+
+The researchers incorporated this new information into models of the Earth's core to provide new estimates of the chemical composition there. The sound wave velocities that have been observed in the core correlate to a profile of hcp-Fe with approximately 8% of silicon by weight at temperatures of 6000 K. This number represents nearly twice the amount estimated in previous studies.
+
+The team hopes to explore additional alloys to further round out estimates of the core's composition and to explain a number of enigmatic behaviors of seismic waves in this most extreme region of the planet. Also, since this study observed temperatures and pressures that are still much lower than those of the inner core, these scientists hope future studies will push the experimental conditions even further. With direct measurements of compressional wave velocities at relevant pressure and temperature conditions on the horizon, such studies may eventually answer the long-standing question of the composition of the Earth's core. — Karen Fox
+
+See: Zhu Mao1*, Jung-Fu Lin1, Jin Liu1, Ahmet Alatas2, Lili Gao2, Jiyong Zhao2, and Ho-Kwang Mao3, “Sound velocities of Fe and Fe-Si alloy in the Earth’s core,” Proc. Natl. Acad. Sci. USA 109(26), 10239 (June 26, 2012). DOI:10.1073/pnas.1207086109
+
+Author affiliations: 1University of Texas at Austin, 2Argonne National Laboratory, 3Carnegie Institution of Washington
+
+Correspondence: *zhumao@mail.utexas.edu
+
+Work at the University of Texas, Austin, was supported by the National Science Foundation (NSF) (EAR-1056670 and EAR-1053446), and the Carnegie/ Department of Energy (DOE) Alliance Center. H.-K.M. would like to acknowledge support from NSF EAR-1119504 and EAR-0911492. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. DOE Office of Science under Contract No. DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+03.01.2013

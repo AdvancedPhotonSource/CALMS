@@ -1,0 +1,25 @@
+A High-Resolution Solution of the Ribosome Structure
+
+Researchers using high-brilliance x-ray beams from the Structural Biology Center undulator beamline 19-ID at the Advanced Photon Source have obtained a detailed picture of how the ribosome allows accurate translation of the genetic code. What they found offers new information on how proteins are formed and how they create the chain of proteins that make up an organism.
+
+The ribosome is the large molecular machine in all cells that makes proteins (the building blocks of organisms) by translating the information encoded by genes. A paper published in Science on May 4, 2001, by a team from the Medical Research Council Laboratory of Molecular Biology in United Kingdom provides insight into how ribosomes manufacture proteins from amino acids to the exact specification of the genes on DNA. The work also shows previously unknown details of how antibiotics actually work and how an antibiotic could induce a ribosome to make a "mistake" and allow the wrong amino acid to be added onto the protein chain. Such incorrectly-made proteins wouldn't function, so if this happened in bacteria during development they would be rendered ineffective.
+
+The ribosome binds to a molecule called messenger RNA, which is a copy of the gene on DNA. Other RNA molecules (transfer RNA [tRNA] ) bind to the ribosome. At one end a short strand is complementary to the code on the messenger RNA. The other end brings in the new amino acid to be attached. The ribosome's role is to ensure that the "correct" tRNA (i.e. as specified by the code from the messenger RNA) is accepted and the wrong ones are rejected. Once the tRNA is accepted, the ribosome catalyzes the formation of a peptide bond between the growing protein chain and the new amino acid, lengthening it by one. The process stops when the end of the gene is reached.
+
+The ribosome consists of two halves - a small or "30S" subunit which binds messenger RNA and a large or "50S" subunit that catalyses the peptide bond. Bacteria and human ribosomes are different and as a result, a large number of antibiotics have evolved naturally that bind to and block bacterial ribosomes more effectively than they do human ribosomes.
+
+The British researchers are the most recent of a long series of groups of scientists who are using the facilities of the Structural Biology Center at the Advanced Photon Source and elsewhere to develop crystal structures of various portions of the ribosome. The Structural Biology Center, which is funded by the DOE Office of Biological and Environmental Research, provides the latest in instruments and other equipment for x-ray crystallography, a specialized research method for determining the molecular structure of materials.
+
+Recently, several groups of researchers have been developing high-resolution three-dimensional structure of both subunits of the ribosome by using macromolecular x-ray crystallography. A group at Yale University solved the structure of the 50S subunit. Two groups have worked on the 30S subunit, one at the Max Planck Institute in Germany and the Weizmann Institute in Israel and a second at the Medical Research Council Laboratory of Molecular Biology.
+
+The U.K. group has previously solved the atomic structure of the 30S subunit and its complex with several different antibiotics. These results were published in Nature in September last year and in Cell in December. The May 5 Science paper describes how the group has solved the structure of the 30S subunit with a piece of mRNA and tRNA, both in the presence and absence of a different antibiotic, paromomycin. The work shows how the ribosome recognizes that the tRNA bound is "correct" and matches the code specified by the messenger RNA, which is in turn a copy of the gene, and how antibiotics could allow the ribosome to accept incorrect tRNAs and allow the wrong amino acid to be added on to the protein chain.
+
+Argonne's Advanced Photon Source is funded by the U.S. Department of Energy's Office of Basic Energy Sciences. The research reported here was funded by the Medical Research Council in the U.K. and the U.S. National Institutes of Health.
+
+See: "Recognition of Cognate Transfer RNA by the 30S Ribosomal Subunit," James M. Ogle, Ditlev E. Brodersen, William M. Clemons Jr., Michael J. Tarry, Andrew P. Carter, and V. Ramakrishnan, Science, 292, 5518, Issue of 4 May 2001, pp. 897-902 (2001). Copyright © 2001 by The American Association for the Advancement of Science.
+
+The article is based on the Argonne News online article "Ribosome insight could help combat antibiotic resistance" (ANL-OPA), which can be seen in its entirety at: https://www.anl.gov/OPA/news01/news010504.htm
+
+Published Date
+
+07.06.2001

@@ -1,0 +1,23 @@
+What's in the Cage Matters in Iron Antimonide Thermoelectric Materials
+
+Thermoelectric materials such as iron antimonide have drawn intense interest because they offer a pollution-free source of electricity and a vibration-free source of refrigeration. Research at the Advanced Photon Source examined how the magnetism of cage-filler lanthanides may influence the thermoelectric properties of these materials.
+
+Thermoelectric materials that possess the filled skutterudite-type structure include rare earth atoms in oversized atomic cages. The movement of the rare earth atoms within these cages dampens lattice vibrations (phonons), reducing the thermal conductivity and thereby improving thermoelectric efficiency. Magnetic ordering of rare earth and iron ions also affects electrical transport in these materials, but the presence of two magnetic sublattices has hindered progress in understanding the interplay between magnetic ordering and improved thermoelectricity.
+
+To address the origin of robust magnetic ordering in EuFe4Sb12, and how it affects the thermoelectricity, researchers from Oak Ridge National Laboratory and the Advanced Photon Source have performed x-ray magnetic circular dichroism measurements. These measurements provide valuable information on the magnetization of each individual constituent in the compound, which can be compared to local spin density calculations to infer on the effect of magnetic ordering on transport properties.
+
+This research has demonstrated that both the cage filler atom Eu, and host lattice Fe are magnetically ordered in this compound with antiparallel magnetic moments. This strong antiferromagnetic interaction between iron and europium ions in EuFe4Sb12 suppresses spin fluctuations that prevent robust ferromagnetism in similar skutterudite compounds with Ba or Sr or Yb as the cage filler. This robust magnetic ordering results in nearly half-metallic character in this material (e.g., a spin-polarized conduction band) affecting electrical transport.
+
+These and related measurements in other filled skutterudites are bound to shed significant insight into the interplay between electrical and magnetic properties of these technologically relevant materials.
+
+Contact: V.V. Krishnamurthy, vemurukv@ornl.gov
+
+See: V.V. Krishnamurthy, J. C. Lang, D. Haskel, D.J. Keavney, G. Srajer, J.L. Robertson, B.C. Sales, D. G. Mandrus, D.J. Singh, and D.I. Bilc, "Ferrimagnetism in EuFe4Sb12 due to the Interplay of f-Electron Moments and a Nearly Ferromagnetic Host," Phys. Rev. Lett. *98*, 126403 (2007). DOI: 10.1103/PhysRevLett.98.126403
+
+Research sponsored by Materials Science and Engineering Division, Experimental User Facilities Division, Office of Basic Energy Sciences, US DOE under Contract No. DE-AC05-00OR22725 with ORNL, managed by UT-Battelle, LLC, and Office of Naval Research. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC.
+
+Published Date
+
+03.29.2007

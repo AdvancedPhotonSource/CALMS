@@ -1,0 +1,69 @@
+Escape Artist
+
+The original Harvard Medical School article by Ekaterina Pesheva can be read here.
+
+The vast majority of people infected with SARS-CoV-2 clear the virus, but those with compromised immunity—such as individuals receiving immune-suppressive drugs for autoimmune diseases—can become chronically infected. As a result, their weakened immune defenses continue to attack the virus without being able to eradicate it fully. This physiological tug-of-war between human host and pathogen offers a valuable opportunity to understand how SARS-CoV-2 can survive under immune pressure and adapt to it. Now, a new multi-institution study led by Harvard Medical School scientists employing data obtained at the U.S. Department of Energy’s Advanced Photon Source (APS) offers a look into this interplay, shedding light on the ways in which compromised immunity may render SARS-CoV-2 fitter and capable of evading the immune system.
+
+The research, published in Cell, shows that a mutated SARS-CoV-2 from a chronically infected immunocompromised patient is capable of evading both naturally occurring antibodies from COVID-19 survivors as well as lab-made antibodies now in clinical use for treatment of COVID-19.
+
+The patient case was originally described December 3, 2020, as a New England Journal of Medicine report by scientists at Brigham and Women’s Hospital  a few weeks before the variants initially detected in the U.K. and South Africa were first reported to the World Health Organization. Interestingly, the patient-derived virus contained a cluster of changes on its spike protein—the current target for vaccines and antibody-based treatments—and some of these changes were later detected in viral samples in the U.K. and South Africa, where they appear to have arisen independently, the researchers said.
+
+The newly published study, which builds on the initial case report, shows something more alarming still. Some of the changes found in the patient-derived virus have not been identified yet in dominant viral variants circulating in the population at large. However, these changes have been already detected in databases of publicly available viral sequences. These mutations remain isolated, the authors of the report said, but they could be harbingers of viral mutants that may spread across the population. Crucial information for this study was derived from determination of the virus structure (Fig. 1) carried out via x-ray macromolecular x-ray diffraction at the Northeastern Collaborative Access Team 24-ID-C and 24-ID-E x-ray beamlines at the APS (the APS is an Office of Science user facility at Argonne National Laboratory).
+
+The researchers emphasize that variants initially detected in the U.K. and South Africa remain vulnerable to currently approved mRNA vaccines, which target the entire spike protein rather than just portions of it. Nonetheless, the study results could also offer a preview into a future, in which current vaccines and treatments may gradually lose their effectiveness against next-wave mutations that render the virus impervious to immune pressures. 
+
+“Our experiments demonstrated that structural changes to the viral spike protein offer workarounds that allow the virus to escape antibody neutralization,” said study senior author Jonathan Abraham, assistant professor of microbiology in the Blavatnik Institute at Harvard Medical School and an infectious disease specialist at Brigham and Women’s Hospital. “The concern here is that an accumulation of changes to the spike protein over time could impact the long-term effectiveness of monoclonal antibody therapies and vaccines that target the spike protein.”
+
+Although the scenario remains hypothetical for now, Abraham said, it underscores the importance of two things. First, reducing the growth and spread of mutations by curbing the virus’s spread both through infection-prevention measures and through widespread vaccination. Second, the need to design next-generation vaccines and therapies that target less mutable parts of the virus.
+
+“How the spike responded to persistent immune pressure in one person over a five-month period can teach us how the virus will mutate if it continues to spread across the globe,” added Abraham, who co-leads the COVID-19 therapeutics working group of the Massachusetts Consortium on Pathogen Readiness (MassCPR). “To help stop the virus from circulating, it’s critical to make sure that vaccines are rolled out in an equitable way so that everyone in every country has a chance to get immunized.”
+
+Mutations are a normal part of a virus’s life cycle. They occur when a virus makes copies of itself. Many of these mutations are inconsequential, others are harmful to the virus itself and yet others may become advantageous to the microbe, allowing it to propagate more easily from host to host. This latter change allows a variant to become more transmissible. If a change on a variant confers some type of evolutionary advantage to the virus, this variant can gradually outcompete others and become dominant.
+
+In the early months of the pandemic, the assumption—and hope—was that SARS-CoV-2 would not change too fast because, unlike most RNA viruses, it has a “proofreading” protein whose job is to prevent too many changes to the viral genome. But last fall, Abraham and colleagues became intrigued by—and then alarmed about—a patient receiving immune-suppressive treatment for an autoimmune disorder who had been infected with SARS-CoV-2. The patient had developed a chronic infection. A genomic analysis of the patient’s virus showed a cluster of eight mutations on the viral spike protein, which the virus uses to enter human cells and that is the target of current antibody treatments and vaccines. Specifically, the mutations had clustered on a segment of the spike known as the receptor-binding domain (RBD), the part that antibodies latch onto to prevent SARS-CoV-2 from entering human cells.
+
+Abraham and colleagues knew the changes were a sign that the virus had developed workarounds to the patient’s immune defenses. But would these mutations allow the virus to dodge the immune assault of antibodies that were not the patient’s own?
+
+To answer the question, Abraham and colleagues created lab-made, noninfectious replicas of the patient virus that mimicked the various structural changes that had accumulated in the span of five months.
+
+In a series of experiments, the researchers exposed the dummy virus to both antibody-rich plasma from COVID-19 survivors and to pharmaceutically made antibodies now in clinical use. The virus dodged both naturally occurring and pharmaceutical-grade antibodies.
+
+Experiments with a monoclonal antibody drug that contains two antibodies showed the virus was entirely resistant to one of the antibodies in the cocktail and somewhat, although not fully, impervious to the other. The second antibody was four-times less potent in neutralizing the mutated virus.
+
+Not all eight mutations rendered the virus equally resistant to antibodies. Two particular mutations conferred the greatest resistance to both natural and lab-grown antibodies.
+
+In a final experiment, the researchers created a super antibody by cobbling together proteins from naturally occurring antibodies that had evolved over time to become more attuned to and better at recognizing SARS-CoV-2 and capable of latching onto it more tightly. The process, known as antibody affinity maturation, is the principle behind vaccine booster shots used to fortify existing antibodies. One specific variant containing mutations that had occurred late in the course of the patient’s infection was capable of withstanding even this super-potent antibody. But the super-potent antibody did manage to neutralize viral mutations detected at a different time in the course of the infection.
+
+“This observation underscores two points: That the virus is smart enough to eventually evolve around even our most potent antibody therapies, but that we can also get ahead by ‘cooking’ new potent antibodies now, before new variants emerge,” Abraham said
+
+Taken together the findings underscore the need to further understand human antibody responses to SARS-CoV-2 and to untangle the complex interplay between virus and human host, the researchers said. Doing so would allow scientist to anticipate changes in the virus and design countermeasures around these mutations before they become widespread.
+
+In the short term, this speaks to the greater need to design antibody-based therapies and vaccines that directly target more stable, less mutable parts of the spike protein beyond its mutation-prone RBD region.
+
+Long-term, this means that scientists should pivot toward developing therapies that go beyond antibody immunity and include also so-called cellular immunity, which is driven by T cells—a separate branch of the immune system that is independent of antibody-based immunity.
+
+The most immediate implication, however, Abraham said, is to stay on top of emerging mutations through aggressive genomic surveillance. This means that instead of merely detecting whether SARS-CoV-2 is present in a patient sample, the tests should also analyze the viral genome and look for mutations. The technology to do so exists and is used in several countries as a way to monitor viral behavior and track changes to the virus across the population.
+
+“In the United States, especially, the strategy has been to test and say whether a person is infected or not infected,” Abraham said. “But there’s a lot more information in that sample that can be obtained to help us track whether the virus is mutating. I am encouraged by the concerted efforts across the world to monitor sequences more aggressively—doing so is critical.”
+
+“It is important for us to stay ahead of this virus as it continues to evolve,” said study first author Sarah Clark, member of the Abraham lab and a fourth-year student in the Ph.D. Program in Virology at Harvard University. “My hope is that our study provides insights that allow us to continue to do that.”
+
+See: Sarah A. Clark1, Lars E. Clark1, Junhua Pan1, Adrian Coscia1, Lindsay G.A. McKay2, Sundaresh Shankar1, Rebecca I. Johnson2, Vesna Brusic1, Manish C. Choudhary3, James Regan3, Jonathan Z. Li3, Anthony Griffiths2, and Jonathan Abraham1, 3, 4, 5*, “SARS-CoV-2 evolution in an immunocompromised host reveals shared neutralization escape mechanisms,” Cell 184, 2605 (May 13, 2021). DOI: 10.1016/j.cell.2021.03.027
+
+Author affiliations: 1Harvard Medical School, 2Boston University School of Medicine, 3Brigham and Women’s Hospital, 4Broad Institute of Harvard and MIT, 5Massachusetts Consortium on Pathogen Readiness
+
+Correspondence: *jonathan_abraham@hms.harvard.edu
+
+This work is based upon research conducted at the Northeastern Collaborative Access Team (NE-CAT)beamlines, which are funded by the National Institute of General Medical Sciences from the National Institutes of Health (NIH) (P30 GM124165). We thank the staff at NE-CAT for assistance with x-ray data collection. Funding was provided by the Massachusetts Consortium on Pathogen Readiness (MassCPR) and the China Evergrande Group (to J.A.). We acknowledge support for COVID-19 related structural biology research at Harvard from the Nancy Lurie Marks Family Foundation and the Massachusetts Consortium on Pathogen Readiness. The project described was also supported by the National Institute of General Medical Sciences (T32GM007753). This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility, operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02- 06CH11357.
+
+© 2021 by The President and Fellows of Harvard College
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+06.28.2021

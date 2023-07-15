@@ -1,0 +1,27 @@
+The Collagen Protein Viewed at Unprecedented Detail
+
+The structure and behavior of one of the most common proteins in our bodies has been resolved at a level of detail never before seen, thanks to new research performed at the Advanced Photon Source (APS) at the U.S. Department of Energy's Argonne National Laboratory.
+
+Illinois Institute of Technology biologist Joseph Orgel used the high-energy x-rays in research carried out at Biophysics Collaborative Access Team (Bio-CAT) beamline 18-ID-D to examine the structure of collagen, a protein that composes more than a quarter of all protein in the human body and forms the principal component of skin, teeth, ligaments, the heart, blood vessels, bones and cartilage. In these tissues, collagen molecules pack themselves into overlapping bundles called fibrils. These fibrils, which each contain billions of atoms, entwine themselves into collagen fibers that are visible to the naked eye.
+
+Scientists have known the basic molecular structure of collagen since the 1950s, when several different international groups of scientists discovered that it had a triple-stranded helical structure. However, researches had never before had the ability to study the structure of an entire fibril in the same way that they could study an individual collagen molecule, according to Orgel.
+
+Orgel and his team performed diffraction studies on intact collagen fibrils inside the tendons of rat tails in order to understand just how the protein functioned within unbroken tissue. "We tried to draw a highly accurate map of the molecular structure of tissues," Orgel said. "By doing so, we hope to transform a very basic understanding that we have of the molecular structure of tissue into a much more tangible form."
+
+Since the scientists kept the tendon tissue intact, they could see how the collagen molecule binds to collagenases, a class of enzymes which when working properly help to regulate the normal growth and development of animals but when malfunctioning can lead to the metastasis of cancerous tumors or rheumatoid arthritis. The visualization of this interaction could help drug developers to create an inhibitor to prevent the pathological action of the enzyme, Orgel said.
+
+Previous studies of the structure of collagen had looked only at crystals of small fragments of the protein, so scientists had little idea of how it looked within intact tissue. "It's impossible to get the information that we did by removing tiny chunks of the tissue," Orgel said. "We couldn't obtain this data by single-crystal crystallography. This research was made possible only because of the Bio-CAT beamline [and the high-brightness x-ray beams] provided by the APS."
+
+Contact: J. Orgel, orgel@iit.edu
+
+See: Shiamalee Perumal, Olga Antipova, and Joseph P.R.O. Orgel, “Collagen fibril architecture, domain organization, and triple-helical conformation govern its proteolysis,” Proc. Natl. acad. Sci. 105(8), 2824 (February 26, 2008). DOI: 10.1073_pnas.0710588105
+
+The original press release can be found at: http://www.anl.gov/Media_Center/News/2008/APS080222.html
+
+This work was supported by American Heart Association Greater Midwest Affiliate Grant 0435339Z, National Science Foundation Grant MCB-0644015 CAREER, and National Institutes of Health Grant RR08630. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory brings the world's brightest scientists and engineers together to find exciting and creative new solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+02.26.2008

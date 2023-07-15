@@ -1,0 +1,37 @@
+How The Immune System’s “Friendly Fire” Can Turn Malaria Deadly
+
+The original Australian Synchrotron news release can be read here.
+
+The secret to the way a dangerous form of malaria can lead to brain damage and death has been revealed by research at the U.S. Department of Energy’s Advanced Photon Source (APS) at Argonne. The work developed a new multi-modal imaging approach that could also shed light on neurodegenerative diseases including Parkinson’s and Alzheimer’s.
+
+In the research, funded by the Australian Research Council and published in Science Advances, the team from The University of Sydney, the Australian Synchrotron, the Australian Nuclear Science and Technology Organisation, and Argonne used a suite of imaging techniques to solve decades-old controversies on how the “friendly fire” of the immune system causes deadly cerebral malaria, a disease mostly affecting children under the age of five in Africa and adults in Southeast Asia, paving the way for new anti-inflammatory and anti-oxidant treatments.
+
+Mark Hackett, from The University of Sydney, said the research produced complementary information from five forms of imaging – including the spread of metals, density of haemoglobins and distribution of other biomolecules – providing conclusive evidence of how malaria-infected red blood cells can induce brain damage.
+
+“To avoid being cleansed from the body by the spleen, malaria-infected red blood cells are forced by the parasite to display sticky proteins on their surface, allowing them to anchor to the walls of small blood vessels elsewhere in the body; when this occurs in the brain it can result in cerebral malaria,” said Hackett.
+
+“Using cutting-edge imaging techniques we showed, in cerebral malaria, the biochemical damage caused when the immune system attacks to kill the infected, anchored blood cells, breaches the highly sensitive blood-brain barrier, allowing the mingling of blood and inflammatory molecules in brain tissue, leading to its destruction.”
+
+Hackett said the combined imaging approach drew on the best attributes of microscopy resources at the Australian partner organizations, and high spatial resolution x-ray fluorescence microscopy (XFM) at the X-ray Science Division 2-ID-E x-ray beamline at the APS, an Office of Science user facility to gather information without chemically interfering with brain tissue samples, enabling a more accurate reflection of the disease environment.
+
+Peter Lay, of The University of Sydney, said the new clarity around the mechanisms of deadly cerebral malaria – which claims the lives of 750,000 people globally each year – will inform new interventions for people at risk of the disease and opens up avenues of research into other brain diseases.
+
+“Previously, we did not clearly understand processes involved in the disease, but our new evidence that the immune system is to blame for the initial damage, with subsequent oxidative stress inducing the death of brain tissues, means we can develop anti-inflammatory and anti-oxidant interventions that subdue the immune attack and reduce subsequent brain damage,” said Lay.
+
+“We believe our chemical-free multi-modal approach to imaging the brain can be applied to research across all chronic neurodegenerative disease and we plan to replicate this successful experimental approach to shed new light into the molecular processes that drive multiple sclerosis, motor neurone disease and Parkinson’s and Alzheimer’s diseases.”
+
+See: Mark J. Hackett1, Jade B. Aitken1, Fatima El-Assaad1, James A. McQuillan1, Elizabeth A. Carter1, Helen J. Ball1, Mark J. Tobin2, David Paterson2, Martin D. de Jonge2, Rainer Siegele3, David D. Cohen3, Stefan Vogt4, Georges E. Grau1, Nicholas H. Hunt1, and Peter A. Lay1*, “Mechanisms of murine cerebral malaria: Multimodal imaging of altered cerebral metabolism and protein oxidation at hemorrhage sites,” Sci. Advances 1(11), e1500911. (18 December 2015) DOI: 10.1126/sciadv.1500911
+
+Author affiliations: 1The University of Sydney, 2Australian Synchrotron, 3Australian Nuclear Science and Technology Organisation, 4Argonne National Laboratory,
+
+Correspondence: *peter.lay@sydney.edu.au
+
+M.J.H. acknowledges funding from the Australian Government through an Australian Postgraduate Award scholarship, a John A. Lamberton scholarship from The University of Sydney, and an Australian Institute of Nuclear Science and Engineering (AINSE) postgraduate scholarship. We acknowledge funding support from the Australian Research Council (ARC) (PAL DP0208409, DP0664706, and DP0984722, including ARC Professorial Fellowships, GEG Discovery DP0774425, NHH Discovery DP0987074, and PAL and EAC LIEF LE0883036) and the National Health and Medical Research Council (NHH 512469, GEG 464893, and GEG 512101). We are also grateful for grants from AINSE (AINGRA08038 and ALNGRA10039) and the Australian Synchrotron for support of experiments at ANSTO, APS, and the Australian Synchrotron. This research was undertaken in part on the infrared micro-spectroscopy and XFM beamlines at the Australian Synchrotron (Victoria, Australia).
+
+This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+03.10.2016

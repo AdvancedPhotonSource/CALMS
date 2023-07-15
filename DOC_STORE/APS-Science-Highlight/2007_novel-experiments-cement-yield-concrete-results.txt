@@ -1,0 +1,21 @@
+Novel Experiments on Cement Yield Concrete Results
+
+Using a brace of the most modern tools of materials research, a team from the National Institute of Standards and Technology (NIST) and Northwestern University has shed new light on one of mankind's older construction materials—cement. Their refinements to our understanding of how cement and concrete actually work, reported this week in Nature Materials*, ultimately may make possible improvements in the formulation and use of cement that could save hundreds of millions of dollars in annual maintenance and repair costs for concrete structures and the country's infrastructure.
+
+Cement may be the world's most widely used manufactured material - more than 11 billion metric tons are consumed each year - but it also is one of the more complex. And while it was known to the Romans, who used it to good effect in the Colosseum and Pantheon, questions still remain as to just how it works, in particular how it is structured at the nano- and microscales, and how these structures affect its performance.
+
+Cement is something of a paradox. It requires just the right amount of water to form properly - technically it's held together by a gel, a complex network of nanoparticles called calcium silicate hydrate (C-S-H) that binds a significant amount of water within its structure. But once the cement has set, the C-S-H structure retains a tough, unchanging integrity for centuries, even in contact with water. To date, attempts to pinpoint the amounts and different roles of water within the C-S-H in cement paste have required taking the water out, either by drying or chemical methods. The NIST/Northwestern researchers instead combined structural data from small-angle neutron scattering experiments at the NIST Center for Neutron Research and from an ultrasmall-angle x-ray scattering instrument built by NIST at XOR/UNI beamline 33-ID at the Advanced Photon Source at Argonne National Laboratory. Their experiments are the first to classify water by its location in the cured cement.
+
+As a result, the researchers were able to distinguish - and measure - the difference between water physically bound within the internal structure of the solid C-S-H nanoparticles and absorbed or liquid water between the nanoparticles. They also measured a nanoscale calcium hydroxide structure that co-exists with the C-S-H gel. The new data, which imply significantly different values for the formula and density of the C-S-H gel than previously supposed, have implications for defining the chemically active surface area within cement, and for predicting concrete properties. They also may lead to a better understanding of the contribution of the nanoscale structure of cement to its durability, and how to improve it.
+
+Contact: Andrew Allen, andrew.allen@nist.gov
+
+See: Andrew J. Allen, Jeffrey J. Thomas, and Hamlin M. Jennings, "Composition and density of nanoscale calcium–silicate–hydrate in cement," Nat. Mater. advance online publication 25 March 2007, DOI: 10.1038/nmat1871
+
+Research at Northwestern University was supported by NSF grant CMS-0409571. SANS measurements are partly based on activities supported by NSF agreement DMR-9122444. Use of the Advanced Photon Source was supported by the U. S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC.
+
+Published Date
+
+03.27.2007

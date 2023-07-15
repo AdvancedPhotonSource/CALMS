@@ -1,0 +1,55 @@
+Teeny-Tiny Organic Films Could Enable New Electronics
+
+The original UChicago News article by Louise Lerner can be read here.
+
+The first cell phone, released in 1983, was the size of a brick and weighed two-and-a-half pounds. The newest Apple Watch, released this fall, weighs 1.1 ounces.
+
+These kind of technological leaps have been made possible by finding new and inventive ways of combining materials, which can pack more information and circuitry into smaller and smaller packages.
+
+In a first, scientists at the University of Chicago, in collaboration with researchers at Cornell University and Argonne National Laboratory, have discovered an easy, efficient way to grow extremely thin films of organic materials. The findings, published in the journal Science, could be a stepping-stone to future electronics or technologies with new abilities.
+
+Scientists have known for a long time how to make extremely thin layers—down to a few atoms thick—out of inorganic materials. That’s how cell phones have shrunk in size and solar panels have sprung up on roofs around the world. But duplicating that manufacturing process with materials that are organic (in the chemical sense, that is, something containing carbon) has been tricky.
+
+“If you can make materials into atomically thin layers, you can stack them into sequences and get new functions, and there are some great reasons to think organic films could be really useful,” said Yu Zhong, a postdoctoral researcher and co-first author on the paper. “But until now it’s been very challenging to control the thickness of the film, and to make them in large quantities.”
+
+Luckily, chemistry and molecular engineering professor Jiwoong Park is an expert in pioneering new ways to make ultra-thin films—whether it’s sewing together crystalline sheets or stacking films like Post-Its.
+
+In this case, the team took its inspiration from the stubborn separation that happens when you mix two liquids that don’t mix, like oil and water. In essence, they used the line that forms between them like a mold to create a perfect thin, flat film.
+
+They fill a reactor halfway with liquid A, then add liquid B. At the line where the two meet, they use a tiny tube to inject the rest of the ingredients, which assemble into a film. Then scientists evaporate or drain the liquids, and the film gently glides down to rest intact.
+
+“If you think about it like cloth, to date, people have only been able to make patches—and these are gigantic rolls of fabric,” Park said.
+
+Notably, the film grows in one continuous motion, so there are no awkward joints between patches. Additionally, it can be performed at room temperature, a much more efficient procedure than the extremely high temperatures usually needed to manufacture inorganic films.
+
+The method also provides an innovative way to combine organic and inorganic layers. “Inorganic and organic materials have different strengths and weaknesses that could complement each other, but the conditions to grow them are so different that it’s been a challenge to make them get along,” said graduate student Baouri Cheng, the paper’s other co-first author.
+
+In this method, though, “put an inorganic substrate on the floor of the reactor, and now you have a beautiful sandwich,” Park said.
+
+They tested how the films work as electrical capacitors, and found good performance—a heartening sign for electronics.
+
+But the team has many more ideas: nanorobots, a fabric that bends or straightens when exposed to water or light, membranes to filter water or boost batteries, sensors that detect toxins, and even bits for quantum computers of the future.
+
+“This is really a demonstration of a general platform to integrate polymers,” Zhong said. “We can see a multitude of uses and opportunities, and we’re already investigating some of them.”
+
+UChicago postdoctoral researchers Chibeom Park, Andrew Mannix, Jae-Ung Lee, Joonki Suh and Kibum Kang  and graduate students Fauzia Mujid, Sarah Brown and Kan-Heng Lee were also co-authors on the study, as well as Steven Sibener, the Carl William Eisendrath Distinguished Service Professor of Chemistry at UChicago; Professor David Muller and graduate student Ariana Ray at Cornell University; and Argonne National Laboratory scientist Hua Zhou.
+
+The team used the University of Chicago Pritzker Nanofabrication Facility and Materials Research Science and Engineering Center, as well as synchrotron x-ray diffraction measurements at the X-ray Science Division (XSD) 12-ID-D x-ray beamline and x-ray reflectivity measurements at the XSD 33-ID-D x-ray beamline at the U.S. Department of Energy’s Advanced Photon Source at Argonne National Laboratory. Park is currently working with the Polsky Center for Entrepreneurship and Innovation at the University of Chicago to advance the discovery.
+
+See: Yu Zhong1*, Baorui Cheng1*, Chibeom Park1, Ariana Ray2, Sarah Brown1, Fauzia Mujid1, Jae-Ung Lee1,3, Hua Zhou4, Joonki Suh1, Kan-Heng Lee1,2, Andrew J. Mannix1, Kibum Kang1,5, S. J. Sibener1, David A. Muller7, Jiwoong Park1†, “Wafer-scale synthesis of monolayer two-dimensional porphyrin polymers for hybrid superlattices,” Science  07 Nov 2019:eaax9385 DOI: 10.1126/science.aax9385
+
+Author affiliations: 1University of Chicago, 2Cornell University, 3Ajou University, 4Argonne National Laboratory, 5Korea Advanced Institute of Science and Technology (KAIST)
+
+Correspondence: * jwpark@uchicago.edu
+
+This work was primarily supported by the Air Force Office of Scientific Research (FA9550-16-1-0031, FA9550-16-1-0347, and FA9550-18-1-0480) and the National Science Foundation (NSF) through the University of Chicago Materials Research Science and Engineering Center (MRSEC; NSF DMR-1420709). Additional funding was provided by the Cornell Center for Materials Research (NSF DMR-1719875) and the Platform for the Accelerated Realization, Analysis, and Discovery of Interface Materials (PARADIM; NSF DMR-1539918). Material characterizations including electron microscopy were supported by the Cornell Center for Materials Research (NSF DMR-1719875) and the MRSEC Shared User Facilities at the University of Chicago (NSF DMR-1420709). Funding was provided by the National Science Foundation Grant Nos. NSF-CHE-1566364 and NSF-CHE-1900188 for UHV-STM imaging and instrumentation. This work made use of the Pritzker Nanofabrication Facility at the University of Chicago, which receives support from Soft and Hybrid Nanotechnology Experimental (SHyNE) Resource (NSF ECCS-1542205), a node of the National Science Foundation’s National Nanotechnology Coordinated Infrastructure. Y.Z. acknowledges support by the Camille and Henry Dreyfus Foundation, Inc. under the Dreyfus Environmental Postdoc award EP-16-094. F.M. acknowledges support by the National Science Foundation Graduate Research Fellowship Program under Grant No. DGE-1746045. A.J.M. was supported by the Kadanoff-Rice Postdoctoral Fellowship through the University of Chicago MRSEC.
+
+This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+11.11.2019

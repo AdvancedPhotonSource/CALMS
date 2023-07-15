@@ -1,0 +1,41 @@
+Stability vs. Activity: Characterizing Strontium Ruthenate Crystals for Electrochemical Applications
+
+Summer's heat and humidity bring us to the controls for the air conditioning unit long before we receive a government alert to monitor our use of electricity. While we may lower the thermostat setting or switch off the unit once the ambient temperature drops after sunset, we may only give a passing thought to our area's power grid. It is even less likely that we'd wonder about the fuel cells powering the grid's backup system or the electrolysers that produce the hydrogen and oxygen fuel for those cells. Researchers from Argonne National Laboratory, using the U.S. Department of Energy's (DOE's) Advanced Photon Source, have recently characterized a new electrolyser catalyst with the potential to improve the production of hydrogen for input into fuel cells. Their study is the first to focus on methods for predicting how to synthesize well-defined oxide surfaces with the specific characteristics necessary for electrolysers, and for tailoring those characteristics to different engineering needs. Their results, published in Nature Communications, speak not only to the behavior of this specific material, but also offer guidelines for designing future oxide-surface electrocatalysts.
+
+Fuel cells rely on an electrolyser (a method of using a direct electric current to drive an otherwise non-spontaneous chemical reaction) to provide their hydrogen fuel. Electrolysers depend on active, stable catalyst materials to operate. In an alkaline-based electrolyser, the anode catalyst accelerates the oxygen evolution reaction, which generates molecular oxygen through a chemical reaction.
+
+One choice for the electrolyser's anode catalyst material is a functional oxide. Since the oxide surface can degrade through a number of mechanisms, it is necessary to balance its stability and activity in order to produce cost-effective, active, stable catalysts, as shown in the figure. The results described in the team's paper provide a basis for predicting how to synthesize oxide surfaces with the desired activity and stability properties.
+
+Utilizing the X-ray Science Division x-ray beamlines 12-BM-B and 12-ID-D at the Argonne Advanced Photon Source, a DOE Office of Science user facility, the researchers investigated three orientations of a perovskite-type, single-crystal film, SrRuO3.
+
+The team began by growing films at the Argonne Materials Science Division, creating three orientations of a SrRuO3 crystal. Then they characterized and monitored changes in the films' morphology, thickness, and surface roughness using in situ x-ray scattering, finding that the films were well-defined and smooth.
+
+Working at the Argonne Center for Nanoscale Materials, they applied high voltage (> 1.23 V) to the films in alkaline environments; the films changed. These changes allowed the team to determine the stability of each crystal orientation.
+
+Unlike previous studies, this work was able to overcome the difficulties of monitoring the stability of high-surface area catalysts at the atomic thanks to the in situ x-ray scattering technique.
+
+To understand the relationship between structure and function during the oxygen evolution reaction, the team compared results from a series of measurements: oxygen evolution reaction activity, the stability of the films, the change in the cation oxidation state, and the variations in structural properties.
+
+They concluded that the degree of stability — with the (001)-oriented film being the most stable — was inversely proportional to the activity: surfaces with more defects were more active but less stable. Put another way, the activity of the oxygen evolution reaction depends on the surface energy and the number of defects.
+
+These results are the first published example of the structure-function relationship of single-crystal oxide surfaces in the electrochemical environment.
+
+In addition to characterizing the structure-function relationship of SrRuO3, this research demonstrates a viable method — usable by other research teams and applicable to other functional oxides — of investigating this relationship in other materials to assess their feasibility as catalysts for the oxygen evolution reaction in electrolyzers.
+
+Further, the researchers' results reveal the basis for a predictive ability to synthesize electrolyser oxide surfaces with characteristics tailored to electrochemical challenges. While SrRuO3 may not be supplying backup power to your town during the next heat wave, this research shows its promise for future electrolysers.
+
+— Mary Alexandra Agner
+
+See: Seo Hyoung Chang, Nemanja Danilovic, Kee-Chul Chang, Ram Subbaraman, Arvydas P. Paulikas, Dillon D. Fong, Matthew J. Highland, Peter M. Baldo, Vojislav R. Stamenkovic, John W. Freeland, Jeffrey A. Eastman, and Nenad M. Markovic*, "Functional links between stability and reactivity of strontium ruthenate single crystals during oxygen evolution," Nat. Commun. 5, 4191 (2014). DOI:10.1038/ncomms5191
+
+Author affiliation: Argonne National Laboratory
+
+Correspondence: *nmmarkovic@anl.gov
+
+This work was supported by the U.S. Department of Energy, Basic Energy Sciences, Materials Sciences and Engineering Division. This research used resources of the Advanced Photon Source and the Center for Nanoscale Materials, DOE Office of Science User Facilities operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+08.29.2014

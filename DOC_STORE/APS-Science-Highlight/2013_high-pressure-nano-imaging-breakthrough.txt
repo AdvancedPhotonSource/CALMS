@@ -1,0 +1,39 @@
+A High-Pressure Nano-imaging Breakthrough
+
+A team of researchers has made a major breakthrough in measuring the structure of nanomaterials under extremely high pressures. For the first time, they developed a way to get around the severe distortions of high-energy x-ray beams that are utilized to image the structure of a gold nanocrystal. The technique, described in the April 9, 2013, issue of Nature Communications, could lead to advancements in new nanomaterials created under high pressures and a greater understanding of what is happening in planetary interiors.
+
+“The only way to see what happens to such samples when under pressure is to use high-energy x-rays produced by synchrotron sources,” said lead author of the study, Wenge Yang of the Carnegie Institution High Pressure Synergetic Consortium. “Synchrotrons can provide highly coherent x-rays for advanced three-dimensional imaging with tens of nanometers of resolution. This is different from incoherent x-ray imaging used for medical examination that has micron spatial resolution. The high pressures fundamentally change many properties of the material.”
+
+The team, with members from the Carnegie Institution of Washington, the Center for High Pressure Science and Technology Advanced Research (P.R. China), Argonne National Laboratory, University College London (UK), and the Research Complex at Harwell (UK), found that by averaging the patterns of the bent waves—the diffraction patterns—of the same crystal using different sample alignments in the instrumentation, and by using an algorithm developed by researchers at the London Centre for Nanotechnology, they could compensate for the distortion and improve spatial resolution by two orders of magnitude. The new technique is called the “mutual coherent function” method, or MCF.
+
+“The wave distortion problem is analogous to prescribing eyeglasses for the diamond anvil cell to correct the vision of the coherent x-ray imaging system,” said Ian Robinson, leader of the London team.
+
+The researchers subjected a 400-nanometer (.000015-inch) single crystal of gold to pressures from about 8,000 times the pressure at sea level to 64,000 times that pressure, which is about the pressure in Earth’s upper mantle, the layer between the outer core and crust.
+
+The team conducted the imaging experiment at the X-ray Science Division 34-ID-C beamline at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory.
+
+They compressed the gold nanocrystal and studied it at the APS x-ray beamline, utilizing the Bragg coherent x-ray diffraction imaging (CXDI) technique. They then applied the MCF method and found at first, as expected, that the edges of the crystal became sharp and strained. But to their complete surprise, the strains disappeared upon further compression. The crystal developed a more rounded shape at the highest pressure, implying an unusual plastic-like flow.
+
+“Nanogold particles are very useful materials,” said Yang. “They are about 60% stiffer compared with other micron–sized particles and could prove pivotal for constructing improved molecular electrodes, nanoscale coatings, and other advanced engineering materials. The new technique will be critical for advances in these areas.”
+
+“Now that the distortion problem has been solved, the whole field of nanocrystal structures under pressure can be accessed,” said Robinson. “The scientific mystery of why nanocrystals under pressure are somehow up to 60% stronger than bulk material may soon be unraveled.”
+
+See: Wenge Yang1,2*, Xiaojing Huang1, Ross Harder3, Jesse N. Clark4, Ian K. Robinson4,5, and Ho-kwang Mao1,2, “Coherent diffraction imaging of nanoscale strain evolution in a single crystal under high pressure,” Nat. Comm. 4, article number 1680, published on-line 9 April 2013. DOI:10.1038/ncomms2661
+
+Author affiliations: 1Carnegie Institution of Washington, 2Center for High Pressure Science and Technology Advanced Research, 3Argonne National Laboratory, 4University College London, 5Research Complex at Harwell
+
+Correspondence: *wyang@ciw.edu
+
+This work was supported by EFree, an Energy Frontier Research Center funded by the U.S. Department of Energy Office of Science Basic-Energy Science Program under grant number DE-SC0001057, and by the ERC “nanosculpture” advanced grant 227711. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under Contract No. DE-AC02-06CH11357.
+
+The original Carnegie Institution for Science press release can be read here.
+
+The Argonne version of this article can be read here.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy’s Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+04.11.2013

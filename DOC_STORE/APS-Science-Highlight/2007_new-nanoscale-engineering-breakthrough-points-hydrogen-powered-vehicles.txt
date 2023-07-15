@@ -1,0 +1,39 @@
+New Nanoscale Engineering Breakthrough Points to Hydrogen-Powered Vehicles
+
+Researchers at the U.S. Department of Energy's Argonne National Laboratory have developed an advanced concept in nanoscale catalyst engineering – a combination of experiments and simulations that will bring polymer electrolyte membrane fuel cells for hydrogen-powered vehicles closer to massive commercialization.
+
+The results of their findings identify a clear trend in the behavior of extended and nanoscale surfaces of platinum-bimetallic alloy. Additionally, the techniques and concepts derived from the research program are expected to make overarching contributions to other areas of science well beyond the focus on electrocatalysis.
+
+The Argonne researchers, Nenad Markovic and Vojislav Stamenkovic, published related results last month in Science and this month in Nature Materials on the behavior of single-crystal and polycrystalline platinum alloy surfaces. The researchers discovered that the nanosegregated platinum-nickel alloy surface has unique catalytic properties, opening up important new directions for the development of active and stable practical cathode catalysts in fuel cells.
+
+These scientific accomplishments together provide a solid foundation for the development of hydrogen-powered vehicles, as basic research brings value to society today by helping to lay the foundation for tomorrow's technological breakthroughs. "Understanding catalysis is a grand challenge of nanoscience that is now coming within reach," said George Crabtree, director of Argonne's Materials Science Division. "The systematic work that Voya and Nenad are doing is a major step toward transforming catalysis from an empirical art to a fundamental science."
+
+Their experiments and approach sought to substantially improve and reduce platinum loading as the oxygen-reduction catalyst. The research identified a fundamental relationship in electrocatalytic trends on surfaces between the experimentally determined surface electronic structure (the d -band center) and activity for the oxygen-reduction reaction. This relationship exhibits "volcano-type" behavior, where the maximum catalytic activity is governed by a balance between adsorption energies of reactive intermediates and surface coverage by spectator (blocking) species.
+
+The electrocatalytic trends established for extended surfaces explain the activity pattern of nanocatalysts and provide a fundamental basis for the enhancement of cathode catalysts. By combining experiments with simulations in the quest for surfaces with desired activity, the researchers developed an advanced concept in nanoscale catalyst engineering.
+
+"In the past, theoretical connections have been suggested between electronic behavior and catalytic activity," explained Markovic. "Our work represents the first time that the connections have been identified experimentally. For us, this development constitutes the beginning of more breakthrough advances in nanocatalysts."
+
+According to Stamenkovic, "Our study demonstrates the potential of new analytical tools for characterizing nanoscale surfaces in order to fine tune their properties in a desired direction. We have identified a cathode surface that is capable of achieving and even exceeding the target for catalytic activity with improved stability. This discovery sets a new bar for catalytic activity of the cathodic reaction in fuel cells."
+
+Through continued research combining nanoscale fabrication, electrochemical characterization, and numerical simulation, a new generation of multi-metallic systems with engineered nanoscale surfaces is on the horizon. Argonne's Center for Nanoscale Materials, Advanced Photon Source and Electron Microscopy Center will enable some of this research.
+
+"We have got crucial support from Argonne management to set up the new labs and launch research directions, which would establish Argonne as a leading center in basic sciences related to energy conversion," said Stamenkovic.
+
+Their lab includes a custom-built three-chamber UHV system equipped with state-of-the-art surface sensitive tools, including low energy ion scattering spectroscopy, Auger electron spectroscopy, angle-resolved x-ray photoemission spectroscopy (with monochromator), ultraviolet photoelectron spectroscopy, low-energy electron diffraction optics, sputtering guns, thermal evaporators, dual hemispherical analyzers, and a chamber with scanning tunneling microscopy and atomic force microscopy. All three chambers are connected to each other but they can also work as independent chambers, making it possible to transfer samples from one to the other unit in order to get detailed surface characterization or to make desirable surface modification.
+
+"We hope that this research program will lead the nation to more secure energy independence and a cleaner environment for future generations," Markovic said.
+
+Collaborators on the research were Bongjin Mun and Philip Ross at DOE's Lawrence Berkeley National Laboratory, Matthias Arenz and Karl Mayrhofer from Technical University of Munich, Christopher Lucas from the University of Liverpool, and Guofeng Wang from the University of South Carolina.
+
+This research was funded by DOE's Office of Basic Energy Sciences and by General Motors. The Nature Materials report is on-line at www.nature.com/nmat/journal/vaop/ncurrent/index.html. The Science paper published in January is online at www.sciencemag.org/content/vol315/issue5811/index.dtl.
+
+See the entire Argonne press release here.
+
+Contact: Vojislav Stamenkovic vrstamenkovic@anl.gov; Nenad Markovic nmmarkovic@anl.gov
+
+Argonne is a U.S. Department of Energy laboratory managed by UChicago Argonne, LLC
+
+Published Date
+
+03.07.2007

@@ -1,0 +1,45 @@
+A Key Cellular Gatekeeper
+
+The original California Institute of Technology press release by Jon Nalick can be read here.
+
+Facing a challenge akin to solving a 1,000‐piece jigsaw puzzle while blindfolded—and without touching the pieces—many structural biochemists thought it would be impossible to determine the atomic structure of a massive cellular machine called the nuclear pore complex (NPC), which is vital for cell survival (see the figure. A larger version can be seen here). But after 10 years of attacking the problem, a team of researchers, with the aid of the U.S. Department of Energy’s Advanced Photon Source (APS) and Stanford Synchrotron Light Source (SSRL), recently solved almost a third of the puzzle. The approach his team developed to do so also promises to speed completion of the remainder.
+
+In an article published online February 12, 2015, by Science Express, the researchers from the California Institute of Technology (Caltech) and The University of Chicago describe the structure of a significant portion of the NPC, which is made up of many copies of about 34 different proteins, perhaps 1,000 proteins in all and a total of 10 million atoms. In eukaryotic cells (those with a membrane‐bound nucleus), the NPC forms a transport channel in the nuclear membrane. The NPC serves as a gatekeeper, essentially deciding which proteins and other molecules are permitted to pass into and out of the nucleus. The survival of cells is dependent upon the accuracy of these decisions.
+
+Understanding the structure of the NPC could lead to new classes of cancer drugs as well as antiviral medicines. "The NPC is a huge target of viruses," said lead author André Hoelz of Caltech. Indeed, pathogens such as HIV and Ebola subvert the NPC as a way to take control of cells, rendering them incapable of functioning normally. Figuring out just how the NPC works might enable the design of new drugs to block such intruders.
+
+"This is an incredibly important structure to study," Hoelz said, "but because it is so large and complex, people thought it was crazy to work on it. But 10 years ago, we hypothesized that we could solve the atomic structure with a divide‐and‐conquer approach—basically breaking the task into manageable parts—and we've shown that for a major section of the NPC, this actually worked."
+
+To map the structure of the NPC, the team relied primarily on x‐ray crystallography.
+
+It is particularly challenging to obtain x‐ray diffraction images of the intact NPC for several reasons, including that the NPC is both enormous (about 30 times larger than the ribosome, a large cellular component whose structure wasn't solved until the year 2000) and complex (with as many as 1,000 individual pieces, each composed of several smaller sections). In addition, the NPC is flexible, with many moving parts, making it difficult to capture in individual snapshots at the atomic level, as x‐ray crystallography aims to do. Finally, despite being enormous compared to other cellular components, the NPC is still vanishingly small (only 120 nanometers wide, or about 1/4000th the width of a grain of salt), and its highly flexible nature prohibits structure determination with current x‐ray crystallography methods.
+
+To overcome those obstacles, the team chose to determine the structure of the coat nucleoporin complex (CNC)—one of the two main complexes that make up the NPC—rather than tackling the whole structure at once (in total the NPC is composed of six subcomplexes, two major ones and four smaller ones, see illustration). He enlisted the support of study coauthor Anthony Kossiakoff of the University of Chicago, who helped to develop the engineered antibodies needed to essentially "superglue" the samples into place to form an ordered crystalline lattice so they could be properly imaged. The x‐ray diffraction data used for structure determination were collected at the General Medical Sciences and National Cancer Institute (GM/CA-XSD) structural biology beamlines 23-ID-D at the Argonne National Laboratory APS. “The remotely controllable, microfocus GM/CA beamline was designed to tackle challenging projects such as the NPC. We at GM/CA are thrilled to have been able to contribute to this very important work,” says Bob Fischetti of GM/CA-XSD and the Argonne X-ray Science Division.
+
+With the help of Caltech's Molecular Observatory—a facility that includes a completely automated x‐ray beamline 12-2 at the SSRL that can be controlled remotely from Caltech—Hoelz's team refined the antibody adhesives required to generate the best crystalline samples. This process alone took two years to get exactly right. (Both the APS and SSRL are Office of Science user facilities.)
+
+The research team was able to determine the precise size, shape, and position of all atoms of the CNC, and also its location within the entire NPC.
+
+The CNC is not the first component of the NPC to be fully characterized, but it is by far the largest. Hoelz says that once the other major component—known as the adaptor–channel nucleoporin complex—and the four smaller subcomplexes are mapped, the NPC's structure will be fully understood.
+
+The CNC that the team evaluated comes from baker’s yeast—a commonly used research organism—but the CNC structure is the right size and shape to dock with the NPC of a human cell. "It fits inside like a hand in a glove," Hoelz said. "That's significant because it is a very strong indication that the architecture of the NPC in both are probably the same and that the machinery is so important that evolution has not changed it in a billion years."
+
+Being able to successfully determine the structure of the CNC makes mapping the remainder of the NPC an easier proposition. "It's like climbing Mount Everest. Knowing you can do it lowers the bar, so you know you can now climb K2 and all these other mountains," says Hoelz, who is convinced that the entire NPC will be characterized soon. "It will happen. I don't know if it will be in 5 or 10 or 20 years, but I'm sure it will happen in my lifetime. We will have an atomic model of the entire nuclear pore."
+
+Still, Hoelz said, "My dream actually goes much farther. I don't really want to have a static image of the pore. What I really would like—and this is where people look at me with a bit of a smile on their face, like they're laughing a little bit—is to get an image of how the pore is moving, how the machine actually works. The pore is not a static hole, it can open up like the iris of a camera to let something through that's much bigger. How does it do it?"
+
+To understand that machine in motion, he adds, "you don't just need one snapshot, you need multiple snapshots. But once you have one, you can infer the other ones much quicker, so that's the ultimate goal. That's the dream."
+
+See: Tobias Stuwe1, Ana R. Correia1, Daniel H. Lin1, Marcin Paduch2, Vincent T. Lu2, Anthony A. Kossiakoff2, and André Hoelz1*, “Architecture of the nuclear pore complex coat,” Science Express, published online February 12 2015. DOI: 10.1126/science.aaa4136
+
+Author affiliations: 1California Institute of Technology, 2TheUniversity of Chicago
+
+Correspondence: * hoelz@caltech.edu
+
+T.S. was supported by a Postdoctoral Fellowship of the Deutsche Forschungsgemeinschaft. D.H.L. was supported by a National Institutes of Health Research Service Award (5 T32 GM07616). A.A.K. was supported by National Institutes of Health Awards (U01 GM094588, U54 GM087519) and the Chicago Biomedical Consortium. A.H. was supported by Caltech startup funds, the Albert Wyrick V Scholar Award of the V Foundation for Cancer Research, the 54th Mallinckrodt Scholar Award of the Edward Mallinckrodt, Jr. Foundation, and a Kimmel Scholar Award of the Sidney Kimmel Foundation for Cancer Research. We acknowledge the Gordon and Betty Moore Foundation, the Beckman Institute, and the Sanofi-Aventis Bioengineering Research Program for their support of the Molecular Observatory at the California Institute of Technology. GM/CA-XSD has been funded in whole or in part with Federal funds from the National Cancer Institute (ACB-12002) and the National Institute of General Medical Sciences (AGM-12006). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+02.13.2015

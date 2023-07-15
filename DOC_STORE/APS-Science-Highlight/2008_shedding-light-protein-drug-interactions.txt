@@ -1,0 +1,35 @@
+Shedding Light on Protein Drug Interactions
+
+Proteins, the biological molecules that are involved in virtually every action of every organism, may themselves move in surprising ways, according to a recent study carried out at the Biophysics Collaborative Access Team x-ray beamline 18-ID at the Advanced Photon Source, a national user facility located at the U.S. Department of Energy's Argonne National Laboratory. This work may shed new light on how proteins interact with drugs and other small molecules.
+
+The study, which relied on the intense x-ray beams available at the Advanced Photon Source, uses a new approach to characterize the ways in which proteins move around in solution to interact with other molecules, including drugs, metabolites or pieces of DNA. The results of the research appear in the January 11 issue of the Journal of Molecular Biology.
+
+"Proteins are not static, they're dynamic," said biochemist Lee Makowski of the Argonne Biosciences Division, who headed the project. "Part of the common conception of proteins as rigid bodies comes from the fact that we know huge amounts about protein structures but much less about how they move." Makowski’s colleagues on this research include, from the Argonne Biosciences Division, Diane Rodi, Suneeta Mandava, David Minh, and Robert Fischetti; and David Gore of the Biological, Chemical, and Physical Sciences Department of the Illinois Institute of Technology.
+
+The study of proteins had long focused almost exclusively on their structures, parts of which can resemble chains, sheets or helices. To determine these, scientists use high-energy x-rays to take snapshots of proteins frozen in a single conformation within a highly ordered crystal. However, biologists had made relatively little progress in using these pictures to show how proteins can reconfigure themselves in different environments.
+
+While scientists had expected proteins to behave similarly in regions of high and low protein concentration–from as high as 30 percent protein to less than 1 percent protein, respectively – they instead found that proteins had a much larger range of motion and could contort themselves into many more configurations in the dilute solutions. "The difference is comparable to skipping through an open field or being crammed into a crowded elevator," Makowski said.
+
+For more than a century, the standard model of protein behavior depicted them as inflexible "locks" that could interact only with a small set of equally rigid molecular "keys." Even today's introductory biology courses rely on descriptions of protein behavior that require them to swivel and pivot very little as they interact with other biological molecules, according to Makowski. "That's a very powerful image but it's not the whole story," he said. "We've learned that proteins in solution can take on an entire ensemble of slightly different structures and that, for most proteins, this ensemble grows much larger as you go to lower and lower concentrations."
+
+Makowski and his colleagues were also surprised to discover that environmental conditions strongly influence which state in this "ensemble" of conformations a protein prefers to enter. Most of a protein's common configurations have a functional purpose, he said, as it is "not likely to twist itself into something completely irrelevant to its function."
+
+For example, one of the five proteins examined in the study, hemoglobin, has two favored conformations: one in which it binds oxygen very readily and one in which it does not. When hemoglobin is placed in a solution that contains a great deal of available oxygen, it spends most of the time in the former state, but when oxygen is not easily accessible, it usually flips into the latter. "We now know that in dilute solutions, hemoglobin can actually take on both conformations — even in the absence of oxygen," he added.
+
+By keeping all of the environmental factors the same save for the protein concentration in the solution, Makowski and his team discovered another surprising result. Scientists had known for many years that when proteins are too concentrated, they aggregate and fall out of solution. However, biochemists previously had difficulty explaining why a similar effect also occurs in overly dilute solutions.
+
+Proteins have hydrophobic–or "water-hating"–core regions that try to avoid touching water if at all possible. Because of this characteristic, proteins will rearrange themselves to protect these regions from coming into contact with water. In dilute solutions, however, Makowski's team discovered that proteins fluctuate far more than in concentrated solutions, and these fluctuations expose the proteins' hydrophobic core, making them more likely to stick to one another or to the container walls.
+
+Contact: *lmakowski@anl.gov.
+
+See: Lee Makowski*, Diane J. Rodi, Suneeta Mandava, David D.L. Minh1, David B. Gore, and Robert F. Fischetti, “Molecular Crowding Inhibits Intramolecular Breathing Motions in Proteins,” J. Mol. Biol. 375 (2), 529 (11 January 2008). DOI: 10.1016/j.jmb.2007.07.075
+
+The original Argonne press release can be found here: http://www.anl.gov/Media_Center/News/2008/BIO080111.html
+
+This work was supported by the U.S. Department of Energy under contract DE-AC-02-06CH11357. Use of the Advanced Photon Source was supported by the U.S. Department of Energy, Basic Energy Sciences, Office of Science, under contract No. W-31-109-ENG-38. BioCAT is a National Institutes of Health-supported Research Center RR-08630.
+
+Argonne National Laboratory brings the world's brightest scientists and engineers together to find exciting and creative new solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America 's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+01.23.2008

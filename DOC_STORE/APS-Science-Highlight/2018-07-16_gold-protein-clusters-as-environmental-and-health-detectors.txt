@@ -1,0 +1,45 @@
+Gold Protein Clusters as Environmental and Health Detectors
+
+The original Canadian Light Source (CLS) news release by Victoria Martinez can be read here.
+
+Peng Zhang and his collaborators study remarkable, tiny self-assembling clusters of gold and protein that glow a bold red. And they’re useful: protein-gold nanoclusters could be used to detect harmful metals in water or to identify cancer cells in the body. “These structures are very exciting but are very, very hard to study. We tried many different tools, but none worked,” says Zhang, a Dalhousie University (Canada) professor. But, synchrotron x-ray absorption spectroscopy, or XAS, done at the Canadian Light Source and its partner facility, the U.S. Department of Energy’s Advanced Photon Source (APS), provided the necessary insight to identify the surprisingly elegant structure of the glowing protein gold nanoclusters, which might find application in a variety of areas, from environmental remediation to medicine.
+
+“Synchrotron XAS is the perfect tool, because it is very flexible, and can give you structural information about specific elements,” Zhang said. 
+
+The structure of these clusters had been a long-standing question in the field, in part because of their potential uses. In the lab, researchers have shown that introducing other metals to the protein gold solution can quench the nanogold’s bold glow, a property that could be used to detect metal pollution in rivers and other water bodies. Where metals existed in a water sample, the nanogold would stop glowing.
+
+Even more exciting are the potential health applications for these clusters. Nanogold and proteins are a natural fit for health technology, since proteins are a naturally-occurring part of the human body, and gold is completely non-toxic (which is why it can be used to decorate chocolates and can be found in some types of schnapps)
+
+Coupled with the right “detector” or “linker” proteins, glowing nanogold could be used to precisely visualize, for instance, cancerous tumors. The right linker protein would simply attach nanogold to diseased cells, which could then be located with a fluorescence microscope.
+
+All of this is possible because of the nanogold’s ability to glow.  
+
+Gold as we usually know it, in bulk, doesn’t glow, or luminesce, under UV light. Add proteins as a base for gold nanoclusters, and they will glow a bright red under UV light. In fact, the nanogold is a million times more luminescent than bulk gold. This gold luminescence is enabled by its specific structure in protein gold nanoclusters, what Zhang describes as a “beautiful and surprising structure” of ten gold atoms, forming two interlocked rings.
+
+The protein acts as a scaffold of sorts, giving the gold a strong structure with strengthens its glow. These clusters can self-assemble under the right conditions, offering a low-cost, low-energy production method. A typical nanocluster is made with a precise array of chemicals put through specific steps, and might result in pollution. The production for these clusters, by contrast, couldn't be simpler.
+
+Zhang's team, from Dalhousie University, Western Michigan University, the National University of Singapore, and Xiamen University (China) heated a mixture of a commercial gold compound and proteins in water up to body temperature, 37° C. After 10-20 hours, the luminescent nanogold clusters formed. No other steps were required to create the luminescent clusters. The process is known as “green chemical synthesis,” and cuts out the pollution that could otherwise be associated with these clusters. The team also created clusters more conventionally, to verify their technique.
+
+Using the X-ray Science Division 20-BM x-ray beamline at the APS, an Office of Science user facility at Argonne National Laboratory, and the SXRMB beamline at the Canadian Light Source the team showed that the protein not only enables self-assembly, but holds the clusters in place. “We used the synchrotron to follow how these beautiful structures are formed within the protein,” says Zhang. The protein essentially works as a mini reactor, with its cysteine amino acids linking to the gold molecules and pulling them into shape. These experiments were conducted by Daniel Chevrier, a Ph.D. student in Zhang’s group.
+
+"If you don't use proteins, yes, you get a very similar structure, but you don't see the strong fluorescence. What happened?" asks Zhang. To answer this question, his team compared conventionally-produced and self-assembled gold clusters, both with and without proteins.
+
+“Essentially the protein freezes the gold cluster so they cannot freely move, and then you can see the strong fluorescence,” said Zhang. A freely-moving cluster, by contrast, twists and moves, which weakens the fluorescence.
+
+“We are so excited about these new findings. Both gold and protein are highly interesting materials and when you combine these two you get something even more interesting, and potentially useful,” said Zhang.
+
+See: D.M. Chevrier1, V.D. Thanthirige2, Z. Luo3, S. Driscoll1, P. Cho1, M.A. MacDonald1, Q. Yao3, R. Guda2, J. Xie3, E.R. Johnson1, A. Chatt1, N. Zheng4, and P. Zhang1*, "Structure and formation of highly luminescent protein-stabilized gold clusters," Chem. Sci. 9(10) 2782 (2018). DOI: 10.1039/C7SC05086K 
+
+Author affiliations: 1Dalhousie University, 2Western Michigan University, 3National University of Singapore, 4Xiamen University
+
+Correspondence: *peng.zhang@dal.ca
+
+D.M.C. was supported by the NSERC CGS-Alexander Graham Bell scholarship during this work. P.Z., A.C. and E.R.J. acknowledge NSERC Discovery Grants for funding. Sector 20 at the Advanced Photon Source is supported by the U.S. Department of Energy (DOE), NSERC Canada, the University of Washington, the Canadian Light Source, and the APS. The CLS is financially supported by NSERC Canada, CIHR, NRC, and the University of Saskatchewan. J.X. acknowledges Ministry of Education, Singapore, for funding support (R-279-000-481-112). V.D.T. and G.R. acknowledge the support of ACS-PRF #53999-ND5 and Western Michigan University startup. Technical support at APS Sector 20 facilities from Robert Gordon and Zou Finfrock is acknowledged and greatly appreciated. Technical support at SXRMB facilities (CLS) from Yongfeng Hu and Qunfeng Xiao is also acknowledged and greatly appreciated. This research used resources of the Advanced Photon Source, a U.S. Department of Energy (DOE) Office of Science User Facility operated for the U.S. DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+07.16.2018

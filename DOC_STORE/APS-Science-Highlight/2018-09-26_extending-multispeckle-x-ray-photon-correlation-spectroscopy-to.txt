@@ -1,0 +1,43 @@
+Extending Multispeckle X-Ray Photon Correlation Spectroscopy to Sub-Microsecond Timescales
+
+X-ray photon correlation spectroscopy (XPCS) measures spontaneous thermal and quantum fluctuations at the nanoscale in condensed matter. As such, it is a probe of the complex energy landscape of emergent functional materials, providing knowledge about their potential applications. Keys to performing such measurements are a partially coherent x-ray beam and a high-frame-rate area detector with spatial resolution sufficient to resolve the finely-featured interference pattern that is obtained when making such measurements. The upcoming APS Upgrade (APS-U) makes the need for high-frame-rate detectors especially acute because the tremendous gains in coherent flux will, in principle, increase the best time resolution of XPCS by 4 orders of magnitude, allowing measurements of nanoscale fluctuations in aqueous environments such as those relevant to biochemical function [1]. To achieve such gains in practice, however, requires detectors with frame rates far higher than those available from commercially available pixel-array-detectors (PADs), which are currently limited to 9 kHz or slower.
+
+With this goal in mind, scientists in the XSD Time Resolved Research Group at beamline 8-ID-I of the APS established a collaboration with colleagues at the AGH University of Science and Technology (Poland) to apply the ultrafast x-ray camera (UFXC) to XPCS measurements. In 2016, the team demonstrated the applicability of this detector to XPCS with 11-kHz frame rates [2] and subsequently demonstrated 50-kHz frame rates in 2017 [3]. For 11-kHz and 50-kHz measurements, as illustrated by the schematic timing diagram in Fig. 1(a), there is no acquisition dead time during a measurement sequence; the two-counters-per-pixel alternate between accumulating counts and being read out. 
+
+The team’s most recent achievement was the demonstration of a “burst mode” where 12 frames were acquired at frame rates of either 390-kHz or 1.2-MHz and saved to the two counters associated with each pixel before a longer pause was used to read out each pair of counters. Following these two events, the cycle repeated itself. The timing for this mode is illustrated schematically in Fig. 1(b). 
+
+By merging otherwise identical measurements made at 50 kHz, 390 kHz, and 1.2 MHz, the team demonstrated time sensitivity to nanoscale fluctuations extending continuously from 826 ns to 60 s, or nearly 8 decades in time. Particularly noteworthy is that the 1.2-MHz frame rate corresponds to an exposure time of less than the transit time of an electron bunch around the APS storage ring, which is a significant advance toward the goal of resolving the scattering signal from individual electron bunches in the storage ring that are currently spaced 153 ns apart.
+
+As a demonstration of burst-mode operation, the team made measurements of the fluctuating interference pattern resulting from the Brownian motion of 57-nm-radius silica nanoparticles in water. Figure 2 shows the coherent x-ray scattering intensity in a single 826-ns exposure (1.2 MHz), demonstrating how sparse the data is from the APS today; the signal will improve by 2-to-3 orders of magnitude with the APS-U. Despite the sparse data, a high-quality correlation function can be calculated and is shown in Fig. 3, which presents results obtained by combining correlation decays measured in 1.2-MHz and 390-kHz burst modes with that obtained in 50-kHz continuous mode. The accuracy of the measurements on this model system was checked by fitting the time scale of the exponential decays as a function of inverse length-scale sensitivity that is referred to as the wave vector transfer, or Q.
+
+The results, as shown in the inset of Fig. 3, agree well with the anticipated inverse-length-scale-squared scaling, as first derived by Einstein. 
+
+Despite the impressive achievement demonstrated with what is now the fastest XPCS area detector in the world, the sparse signal level illustrated in Fig. 2 makes the practical application of this detector to many systems today a significant challenge. The APS-U and the XPCS feature beamline will address this shortcoming, allowing studies of dynamics that evolve with time and that are critical to understanding the physics of aging and phase transitions in many topical systems such as colloidal gels, metallic glasses, and spin and charge ordered structures.Contact Qingteng Zhang (qzhang234@anl.gov)
+
+References
+
+[1] P. Chung et al., “a-Synuclein Sterically Stabilizes Spherical Nanoparticle-Supported Lipid Bilayers,” ACS Appl. Bio. Mater. 2, 1413 (2019). DOI: 10.1021/acsabm.8b00774.
+
+[2] Q. Zhang et al., “Submillisecond x-ray photon correlation spectroscopy from a pixel array detector with fast dual gating and no readout dead-time,” J. Synchrotron Rad. 23, 679 (2016). DOI: 10.1107/S1600577516005166. 
+
+[3] Q. Zhang et al., “Dynamic scaling of colloidal gel formation at intermediate concentrations,” Phys. Rev. Lett. 119, 178006 (2017). DOI: 10.1103/PhysRevLett.119.178006.
+
+See: Qingteng Zhang1, Eric M. Dufresne1, Suresh Narayanan1, Piotr Maj2, Anna Koziol2, Robert Szczygiel2, Pawel Grybos2, Mark Sutton3, and Alec R. Sandy1*, “Sub-microsecond-resolved multi-speckle X-ray photon correlation spectroscopy with a pixel array detector,” J. Synchrotron Rad. 25, 1408 (2018). 
+
+DOI: 10.1107/S1600577518009074
+
+Author affiliations: 1Argonne National Laboratory, 2AGH University of Science and Technology, 3McGill University
+
+Correspondence: * asandy@anl.gov
+
+This material is based upon work supported by Laboratory Directed Research and Development (LDRD) funding from Argonne National Laboratory, provided by the Director, Office of Science, of the U.S. Department of Energy (DOE) under Contract No. DE-AC02-06CH11357. AGH University of Science and Technology was supported by the National Center for Research and Development, Poland, PBS1/A3/12/2012. This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract No. DE-AC02-06CH11357.
+
+The U.S. Department of Energy's APS is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+09.26.2018

@@ -1,0 +1,45 @@
+Should Drugs Be Designed “On the Fly”?
+
+-Press: Release Number: PR-UIUC-05-2-Source: University of Illinois at Urbana Champaign-Date issued: October 3, 2005-Contact: Jim Barlow, +1 217-333-5802, jebarlow@uiuc.edu
+
+CHAMPAIGN, Ill. — The first close-up look at a pro-inflammatory signaling molecule involved in immune response in mammals suggests that researchers “should rethink what they are doing” in creating drugs based on a fruit-fly model, scientists say.
+
+Reporting in the Oct. 1 issue of the Journal of Immunology, researchers at the University of Illinois at Urbana-Champaign unveiled the crystal structure of mouse interleukin-1 receptor-associated kinase-4 (IRAK-4).
+
+They found a distinct highly structured loop between two helices that is remarkably different from that found in Pelle, an IRAK-4-like “death-domain” protein from Drosophila melanogaster that was determined nearly a decade ago. The death domain is so-named because of a resemblance to proteins that are involved in programmed cell death.
+
+“It has been thought in the field that a death domain is a death domain, and molecular recognition takes place in the same fashion,” said lead author Michael V. Lasker, an M.D./Ph.D. student in the College of Medicine at Urbana-Champaign. “But the crystal structure of our death domain clearly shows that indeed this is not the case.”
+
+The crystal structure of IRAK-4, as was the case for Pelle, was determined by X-ray crystallography. Using this technique, X-rays are directed into molecules of IRAK-4 that have been coaxed to form crystals. The diffraction data from the experiments allow the structure to be visualized down to angstrom-level resolution (one hundred-millionth of a centimeter). The structure of IRAK-4 was determined to a resolution of 1.7 angstroms.
+
+The molecules in question are part of innate immune systems – an inherent immune response coded by DNA in all living things – that are crucial for survival against pathogens such as bacteria and fungi. Deficiencies in the system or an over-active response can set the stage for various infections, septic shock and numerous autoimmune disorders.
+
+Since researchers at the University of Texas Southwestern in Dallas and the Howard Hughes Medical Institute reported the structure of Pelle bound to the adapter molecule known as Tube, there has been an effort to target the similar IRAK-4 molecule in mammals, said Satish K. Nair, a U. of I. professor of biochemistry.
+
+The Pelle-Tube complex plays a crucial role in the innate immune response of fruit flies to fungal infection. IRAK-4 plays a similar role in humans and animals.
+
+The hope is that drugs can be developed to target the molecule-binding pathway, which would be beneficial for treating arthritis and reducing inflammation, said Nair, who also is a researcher in the Center for Biophysics and Computational Biology at Illinois. Signaling in the pathway uses protein molecules that contain death-domains.
+
+“What our structure tells us is that the particular arrangement that was seen in the structure that was solved by the researchers at Dallas Southwestern cannot possibly exist in humans, because of bad steric interactions that preclude the formation of this particular complex,” Nair said.
+
+Steric interactions refer to contacts that result when two protein molecules bind with each other. Bad interactions mean that the proteins cannot line up and connect properly. A tight connection is necessary to trigger an immune response.
+
+A mammalian counterpart for Drosophila’s Tube molecule has not been found, but Lasker and Nair theorize that adaptors that bind IRAK-4 will either bind at a different site, or the adapter molecule will have an interface that can handle IRAK-4’s larger loop.
+
+Researchers in Nair’s lab already are looking at the complex’s structure in humans.
+
+Mark M. Gajjar, an undergraduate student who now works in the department of biochemistry and molecular biology at the University of Chicago, also was a co-author.
+
+The research was supported through start-up funds to Nair from the Institute for Genomic Biology at Illinois. Lasker was funded by a National Institutes of Health National Research Service Award from the NIH Institute of Neurological Disorders and Stroke.
+
+###
+
+The original news release can be found here.
+
+[Note: Published in The Journal of Immunology, 2005, 175: 4175-4179. ; Michael V. Lasker, Mark M. Gajjar and Satish K. Nair; "Cutting Edge: Molecular Structure of the IL-1R-Associated Kinase-4 Death Domain and Its Implications for TLR Signaling".
+
+Beamlines 14-ID (BioCARS) and 32-ID (COMCAT) at the Advanced Photon Source (Argonne National Laboratory) were used for data collection. Argonne National Laboratory is funded by the U.S. Department of Energy's Office of Science. - lightsources.org]
+
+Published Date
+
+10.12.2005

@@ -1,0 +1,35 @@
+Molecular ballet unravels, links proteins so cell can direct own movement
+
+A protein called vinculin moves cylinder-like fingers to form a hand to which an arm extended by a protein partner called alpha-actinin can bind, according to St. Jude researchers As a cell moves forward, physical stress on its skeleton triggers molecular fingers and arms to grasp each other in reinforcing links that stabilize the skeleton, according to images produced by investigators at St. Jude Children's Research Hospital.
+
+The images show how a protein called alpha-actinin partly unravels its structure to free an internal molecular "arm" that reaches out to another protein, called vinculin. This triggers vinculin to partly unravel as well, freeing several molecular "fingers" that assume a shape that allows alpha-actinin to bind to its partner.
+
+The researchers used a technique called X-ray crystallography to create these images, which help explain how alpha-actinin recruits vinculin to help it brace the cell's skeleton during the physically stressful process of cell movement. A report on this work, scheduled for the July 15 issue of Molecular and Cellular Biology, appears in the prepublication online issue.
+
+The discovery is important because without vinculin to reinforce its skeleton, the cell would move rapidly and randomly, making purposeful motion impossible, the researchers said. That means cells could not migrate properly in the developing embryo to take up their final positions, leaving the embryo to wither and die; yet the ability to move purposefully also helps individual cancer cells break away from a tumor and spread to other parts of the body, a process called metastasis. Therefore, discovering how cells direct their movements could help researchers better understand how embryos develop and how some cancers spread.
+
+The cell's skeleton is a network of long rows of a protein called actin linked together by molecules of alpha-actinin. This configuration gives the skeleton a network structure in which many rows of actin are held together in a grid, somewhat like a checkerboard. Along the edge of the skeleton, near the cell membrane, the alpha-actinin molecules do double duty. They not only hold together rows of actin, but they also bind to proteins called integrins.
+
+Integrins are long molecules that pierce the membrane, leaving one end inside the cell and the other end firmly attached to the outside surface along which the cell is moving, according to Tina Izard, Ph.D., an associate member of Hematology-Oncology at St. Jude and the paper's senior author. Integrin's outside end is like a foot that is planted firmly on the ground but does not move, Izard said. Alpha-actinin molecules bound to the skeleton also bind to the end of integrin that is inside the cell. When the cell moves, stress on the "foot" part of the integrin outside the cell is transmitted into the cell to the other end of integrin. From there, the stress shifts to the alpha-actinin molecules that are also bound to the actin rods of the skeleton.
+
+"Each time the moving cell grabs hold of the surface along which it is moving, the skeleton must be reinforced to withstand the stress," Izard said. "This is like dragging yourself along the floor by placing the palms of your hands down and letting the rest of your body flow forward. In the cell, that sort of stress could destroy the link between alpha-actinin and actin molecules and destabilize the cell's skeleton."
+
+Such stress could pull alpha-actinin off the actin, according to Philippe Bois, Ph.D., a Van Vleet Foundation fellow in the St. Jude Department of Biochemistry and the paper's first author. Instead, the stress on alpha-actinin causes it to unravel its structure slightly and extend its arm to vinculin, he said. This triggers vinculin to unravel part of its own structure and extend its fingers. While the flexible fingers on the "head" of vinculin offer a hand for alpha-actinin to bind to, the sturdier back part of vinculin binds to the actin as well. This reinforces alpha-actinin's hold on the skeleton.
+
+"It's this ability of vinculin to reinforce the connections between alpha-actinin molecules and the actin rods of the skeleton that keeps the skeleton stiff enough to withstand the stress of cell movement," Bois said.
+
+This work is a continuation of an earlier project in which Izard and Bois demonstrated the structure of vinculin and showed that it changes its shape by moving individual "cylinders" making up its head, much like the movement of fingers on a hand. The authors named this process "helical bundle conversion" and noted that this conversion was key to cellular movement. A report on that work appeared in the January 8, 2004, issue of Nature.
+
+Other authors include Robert A. Borgon (St. Jude) and Clemens Vonrhein (Global Phasing Limited, Cambridge, UK).
+
+This work was supported in part by the National Institutes of Health, a Cancer Center Support (CORE) grant and ALSAC.
+
+St. Jude Children's Research Hospital St. Jude Children's Research Hospital is internationally recognized for its pioneering work in finding cures and saving children with cancer and other catastrophic diseases. Founded by late entertainer Danny Thomas and based in Memphis, Tenn., St. Jude freely shares its discoveries with scientific and medical communities around the world. No family ever pays for treatments not covered by insurance, and families without insurance are never asked to pay. St. Jude is financially supported by ALSAC, its fund-raising organization. For more information, please visit www.stjude.org.
+
+Note: Published in Molecular and Cellular Biology July 2005, p. 6112-6122, Vol. 25, No. 14 0270-7306/05/$08.00+0 doi:10.1128/MCB.25.14.6112-6122.2005; Philippe R. J. Bois, Robert A. Borgon, Clemens Vonrhein, and Tina Izard; "Structural Dynamics of -Actinin-Vinculin Interactions"
+
+Data was collected at the Advanced Photon Source (Argonne National Laboratory), SBC-CAT, beamline 19-ID. Argonne National Laboratory is funded by the U.S. Department of Energy's Office of Science. - lightsources.org
+
+Published Date
+
+07.11.2005

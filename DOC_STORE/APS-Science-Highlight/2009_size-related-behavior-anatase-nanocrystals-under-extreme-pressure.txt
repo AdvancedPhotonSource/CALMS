@@ -1,0 +1,29 @@
+Size-Related Behavior of Anatase Nanocrystals under Extreme Pressure
+
+From the near vacuum of outer space to the intense pressure at a planet’s core, matter behaves differently at different levels of stress. Researchers using a GeoSoilEnviroCARS(GSECARS) x-ray beamline at the U.S. Department of Energy’s Advanced Photon Source at Argonne have discovered an intriguing, size-related quirk in the behavior of nanosized particles of one phase of titanium dioxide (TiO2) at very high pressures. The combination of techniques used in this study paves the way for exploration of the behavior of other nanochemical systems under high pressure.
+
+Anatase and rutile are two forms of titania that have gained attention in the past two decades for their proven utility, and future promise, in applications such as photovoltaics, optical coatings, nano-ceramics, and environmental remediation. Of particular interest are the chemical and structural properties of nanoscale TiO2, which exhibits behavior under intense compression quite different from that of its bulk, coarse-grained counterparts.
+
+In this study, a team of researchers led by Varghese Swamy of Monash University in Australia investigated the size-related effects of high compression on the structure of nanocrystalline (nc) anatase particles measuring about 6 nm and 11 nm, focusing in particular on the behavior of the smaller nanoparticles. A diamond-anvil cell instrument was used to apply increasing pressure, from 0 GPa to 27 GPa (gigapascals), to sol-gel nc anatase samples. Structural changes were observed at room temperature using in situ high-resolution angle-dispersive synchrotron x-ray diffractometry (XRD) along with vibrational Raman scattering at the GSECARS 13-BM-D x-ray beamline. For the XRD experiments, an alcohol mixture of methanol, ethanol, and water was used as the pressure transmitting medium, and NaCl was used as the medium for the Raman measurements.
+
+Previous studies have documented size-induced changes in the lattice structure of nc anatase at dimensions less than 10 nm. In this experiment, the team concentrated its analysis on the behavior under increasing pressure of the 6-nm particles. For the XRD studies, the unknown behavior of anatase was compared to the known behavior of gold (Au) under compression (see the figure), while the ruby fluorescence shift was the standard for the Raman probes.
+
+Up to about 8-GPa of pressure, the lattice structure of 6 nm and bulk anatase follow a similar path, retaining their structural stability. At higher pressures, however, the bulk material loses its stability, while the 6-nm particles become increasingly stable. As pressure rose to 10-12 GPa, the research team observed an unusual, abrupt shift from a low-density, stable state to a high-density, amorphous state. XRD and Raman scattering revealed an unusual increase in lattice stiffness accompanied by disorder on a scale of 2-3 Ǻ. This shift in lattice structure is similar to a phase transition, in which materials change from one crystalline structure to another.
+
+As pressure approached 27 GPa, the XRD reflections gradually broadened and became less intense, indicating that the nanocrystalline material became progressively disordered. At 27 GPa, however, the nc anatase underwent a radical transformation to a completely disordered and very dense state, as revealed by the disappearance of sharp XRD reflections.
+
+“Compression studies of such ultra-small-sized crystallites are not without problems,” said Swamy. “Previous studies failed to see and capture the atomic-level implications of the abrupt lattice stiffening in this key technological material.” This observation allows tailoring of the nanomechanical properties of materials that are prone to disorder under severe stresses. “What is unique about this study is the use of the diamond-anvil cell technique as a complementary tool to other nanoscale probes to investigate the size-dependent nanomechanical properties and to directly characterize the average atomic-level structures contributing to specific modifications to these properties under nanometric size regimes.” The combination of techniques used in this study paves the way for exploration of the behavior of other nanochemical systems under high pressure. — Elise LeQuire
+
+See: Varghese Swamy1*, Alexei Y. Kuznetsov2, Leonid S. Dubrovinsky3, Alexander Kurnosov3, and Vitali B. Prakapenka4, “Unusual Compression Behavior of Anatase TiO2 Nanocrystals,” Phys. Rev. Lett. 103, 075505 (14 August 2009). DOI: 10.1103/PhysRevLett.103.075505
+
+Author Affiliations: 1Monash University, 2 INMETRO-Instituto Nacional Metrologia Normalização e Qualidade Industrial, 3University of Bayreuth, 4The University of Chicago
+
+Correspondence: *Varghese.Swamy@eng.monash.edu.au
+
+GSECARS is supported by the National Science Foundation—Earth Sciences (EAR-0622171) and the Department of Energy—Geosciences (DE-FG02-94ER14466). Use of the Advanced Photon Source is supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+09.27.2009

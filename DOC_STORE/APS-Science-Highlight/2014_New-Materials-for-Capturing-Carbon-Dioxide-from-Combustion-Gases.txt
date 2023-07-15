@@ -1,0 +1,35 @@
+New Materials for Capturing Carbon Dioxide from Combustion Gases
+
+Carbon dioxide is both a culprit in global warming and also responsible for keeping the Earth warm enough to support life as we know it. It is odorless and colorless, often represented by a smokestack plume trailing into the sky, signifying pollution and greenhouse gases. That plume is actually water vapor, which together with carbon dioxide and nitrogen makes up the majority of the gas exhausted from power plants burning fossil fuels. But water vapor turns out to be an obstacle to removing carbon dioxide from power plant emissions. The work done at the ChemMatCARS beamline 15-ID-B,C,D at the U.S. Department of Energy Office of Science's Advanced Photon Source supports the effort to quantify the ability of these new materials to capture carbon dioxide even while in the presence of water.
+
+From an engineering perspective, the metal-organic material for a post-combustion chamber must capture carbon dioxide efficiently, it must be reusable, and it must require less energy than existing solutions, which can require as much as 30% of the energy produced by the plant. In materials science terms, this means a high selectivity for carbon dioxide, just enough affinity for carbon dioxide that the gas adsorbs onto the material, but not so much the gas cannot be extracted then sequestered, and a large uptake of carbon dioxide per volume of the material.
+
+Scientists with the University of South Florida and King Abdullah University of Science and Technology (Saudi Arabia) are exploring new materials based on a pre-existing combination of copper, bipyridine (C5H4N)2, and the hexafluorosilicate anion SiF62- . Previous research by this team showed that the SiF62-  , which they refer to as SIFSIX, has strong, favorable interactions with carbon dioxide. From this base, they created three materials: SIFSIX-2-Cu, SIFSIX-2-Cu-i, and SIFSIX-3-Zn, described in the figure.
+
+The team's measurements of carbon dioxide uptake for each material allowed them to reject SIFSIX-2-Cu due to its low value. Using the Ideal Adsorbed Solution Theory (IAST) (in solution thermodynamics, a predictive model that does not require any mixture data and is independent of the actual model of physical adsorption) they confirmed that the SIFSIX-2-Cu carbon dioxide selectivity was also low, probably because the SIFSIX anions that line its cell walls are not sufficiently close together to boost each other's potential for attracting carbon dioxide. SIFSIX-2-Cu-i and SIFSIX-3-Zn have uptake values similar to those of benchmark materials.
+
+Single-crystal x-ray diffraction studies at the 15-ID-B,C,D beamline at the Argonne Advanced Photon Source, and calculations of the enthalpy of adsorption, which relates to the materials' affinity for carbon dioxide, showed that SIFSIX-2-Cu-i and SIFSIX-3-Zn adsorb carbon dioxide uniformly over a range of carbon dioxide loading. The adsorption is efficient and reversible, meaning that the CO2 is easily captured but also easily removed from the SIFSIX material, so it can be sequestered. This makes the material reusable.
+
+However, carbon dioxide selectivity is the most important characteristic for a metal-organic material to be used in post-combustion chambers. The high values for SIFSIX-2-Cu-i calculated using IAST '97 higher than any benchmark material, not just metal-organic materials '97 surprised the team. They confirmed these results using breakthrough tests. The selectivity of SIFSIX-3-Zn was even higher than SIFSIX-2-Cu-i; the team confirmed those results using both breakthrough tests and by measuring single-gas adsorption isotherms.
+
+Because water is present in the post-combustion gases of fossil fuels, the researchers needed to show the selectivity of the materials does not decrease in the presence of water. They found that the ability of SIFSIX-3-Zn to preferentially select carbon dioxide was unaffected by water, because the SiF62- anion attracts polarizable molecules — carbon dioxide is more strongly polarized than other post-combustion gases — making the SIFSIX-3-Zn hydrophobic.
+
+Both SIFSIX-2-Cu-i and SIFSIX-3-Zn have the characteristics necessary to capture carbon selectively and efficiently in a power plant's post-combustion chamber. Both materials keep a firm but not unbreakable hold on the carbon dioxide allowing it to be released through pressure or temperature changes, then sequestered into geological formations or empty oil wells. These materials are an ideal start for engineering a carbon-capture solution in post-combustion chambers.
+
+— Mary Alexandra Agner
+
+See: Patrick Nugent1, Youssef Belmabkhout2*, Stephen D. Burd1, Amy J. Cairns2, Ryan Luebke2, Katherine Forrest1, Tony Pham1, Shengqian Ma1, Brian Space1, Lukasz Wojtas1, Mohamed Eddaoudi1,2*, and Michael J. Zaworotko1**, "Porous materials with optimal adsorption thermodynamics and kinetics for CO2 separation," Nature 495, 80 (7 March 2013). DOI:10.1038/nature118933
+
+Author affiliations: 1University of South Florida, 2King Abdullah University of Science and Technology
+
+Correspondence: *mohamed.eddaoudi@kaust.edu.sa, **xtal@usf.edu
+
+This work is supported by King Abdullah University of Science and Technology (KAUST) award number FIC/2010/06 (M.E. and M.J.Z.) and KAUST start-up funds (M.E.). B.S. acknowledges computational resources made available by an XSEDE grant (number TG-DMR090028). ChemMatCARS is principally supported by the National Science Foundation/Department of Energy under grant number NSF/CHE-0822838. Use of the Advanced Photon Source at Argonne National Laboratory was supported by the U.S. Department of Energy Office of Science under contract DE-AC02-06CH11357.
+
+The Advanced Photon Source at Argonne National Laboratory is one of five national synchrotron radiation light sources supported by the U.S. Department of Energy's Office of Science to carry out applied and basic research to understand, predict, and ultimately control matter and energy at the electronic, atomic, and molecular levels, provide the foundations for new energy technologies, and support DOE missions in energy, environment, and national security. To learn more about the Office of Science x-ray user facilities, visit http://science.energy.gov/user-facilities/basic-energy-sciences/.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+Published Date
+
+04.09.2014

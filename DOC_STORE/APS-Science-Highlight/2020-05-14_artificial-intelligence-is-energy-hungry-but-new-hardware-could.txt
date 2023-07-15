@@ -1,0 +1,47 @@
+Artificial Intelligence is Energy-Hungry, But New Hardware Could Curb Its Appetite
+
+The original Purdue University press release by Kayla Wiles can be read here.
+
+To just solve a puzzle or play a game, artificial intelligence can require software running on thousands of computers. That could be the energy that three nuclear plants produce in one hour. A team of engineers has created hardware made of hydrogen-doped nickelate perovskite that can learn skills using a type of AI that currently runs on software platforms. Sharing intelligence features between hardware and software would offset the energy needed for using AI in more advanced applications such as self-driving cars or discovering drugs. The team used two U.S. Department of Energy (DOE) x-ray light sources and a DOE nanoscale science research center to understand the microscopic origins of tree-like memory in the hydrogen-doped material. The results of this study were published in the journal Nature Communications.
+
+“Software is taking on most of the challenges in AI. If you could incorporate intelligence into the circuit components in addition to what is happening in software, you could do things that simply cannot be done today,” said Shriram Ramanathan, a professor of materials engineering at Purdue University.
+
+AI hardware development is still in early research stages. Researchers have demonstrated AI in pieces of potential hardware, but haven’t yet addressed AI’s large energy demand. As AI penetrates more of daily life, a heavy reliance on software with massive energy needs is not sustainable, Ramanathan said. If hardware and software could share intelligence features, an area of silicon might be able to achieve more with a given input of energy.
+
+Ramanathan’s team is the first to demonstrate artificial “tree-like” memory in a piece of potential hardware at room temperature. Researchers in the past have only been able to observe this kind of memory in hardware at temperatures that are too low for electronic devices.
+
+The hardware that Ramanathan’s team developed is made of a so-called quantum material. These materials are known for having properties that cannot be explained by classical physics. Ramanathan’s lab has been working to better understand these materials and how they might be used to solve problems in electronics.
+
+Software uses tree-like memory to organize information into various “branches,” making that information easier to retrieve when learning new skills or tasks. The strategy is inspired by how the human brain categorizes information and makes decisions.
+
+“Humans memorize things in a tree structure of categories. We memorize ‘apple’ under the category of ‘fruit’ and ‘elephant’ under the category of ‘animal,’ for example,” said Hai-Tian Zhang, a Lillian Gilbreth postdoctoral fellow in Purdue’s College of Engineering. “Mimicking these features in hardware is potentially interesting for brain-inspired computing.”
+
+The team introduced a proton to a quantum material called neodymium nickel oxide. They discovered that applying an electric pulse to the material moves around the proton. Each new position of the proton creates a different resistance state, which creates an information storage site called a memory state. Multiple electric pulses create a branch made up of memory states.
+
+“We can build up many thousands of memory states in the material by taking advantage of quantum mechanical effects. The material stays the same. We are simply shuffling around protons,” Ramanathan said.
+
+Through simulations of the properties discovered in this material, the team showed that the material is capable of learning the numbers 0 through 9. The ability to learn numbers is a baseline test of artificial intelligence. The demonstration of these trees at room temperature in a material is a step toward showing that hardware could offload tasks from software.
+
+“This discovery opens up new frontiers for AI that have been largely ignored because implementing this kind of intelligence into electronic hardware didn’t exist,” Ramanathan said.
+
+The material might also help create a way for humans to more naturally communicate with AI. “Protons also are natural information transporters in human beings. A device enabled by proton transport may be a key component for eventually achieving direct communication with organisms, such as through a brain implant,” Zhang said.
+
+The team carried out in operando x-ray studies of the in-plane nickelate device at the 3-ID Hard X-ray Nanoprobe beamline of the DOE’s National Synchrotron Light Source II at Brookhaven National Laboratory and the X-ray Science Division (XSD)/Center for Nanoscale Materials (CNM) 26-ID Hard X-ray Nanoprobe beamline of the DOE’s Advanced Photon Source at Argonne National Laboratory to demonstrate that an electric pulse can move protons within neodymium nickel oxide. (NSLS II, APS, and CNM are Office of Science user facilities.) Additional x-ray absorption spectroscopy measurements were carried out at the XSD 33-ID-D beamline at the APS.
+
+Hai-Tian Zhang1*, Tae Joon Park1, Ivan A. Zaluzhnyy2, Qi Wang1, Shakti Nagnath Wadekar1, Sukriti Manna3,4, Robert Andrawis1, Peter O. Sprau2, Yifei Sun1, Zhen Zhang1, Chengzi Huang1, Hua Zhou3, Zhan Zhang3, Badri Narayanan5, Gopalakrishnan Srinivasan1, Nelson Hua3, Evgeny Nazaretski6, Xiaojing Huang6, Hanfei Yan6, Mingyuan Ge6, Yong S. Chu6, Mathew J. Cherukara3, Martin V. Holt3, Muthu Krishnamurthy7, Oleg G. Shpyrko2, Subramanian K.R.S. Sankaranarayanan3,4, Alex Frano2, Kaushik Roy1**, and Shriram Ramanathan1***, “Perovskite neural trees,” Nat. Commun. 11, 2245 (2020). DOI: 10.1038/s41467-020-16105-y
+
+Author affiliations: 1Purdue University, 2University of California, San Diego, 3Argonne National Laboratory, 4University of Illinois, 5University of Louisville, 6Brookhaven National Laboratory, 7University of Iowa
+
+Correspondence: * htzhang@purdue.edu, ** kaushik@purdue.edu, *** shriram@purdue.edu
+
+H.-T.Z. would like to acknowledge the support from the Gilbreth Fellowship from College of Engineering at Purdue University. We acknowledge AFOSR FA9550-19-1-0351, ARO W911NF1920237 for support. K. R.’s research was funded in part by the Center for Brain Inspired Computing (C-BRIC), funded by DARPA and SRC, and by the Vannevar Bush Fellowship. The x-ray nano-imaging aspect of this work was a collaborative effort between Shpyrko, Frano, and Ramanathan, funded as part of the “Quantum Materials for Energy Efﬁcient Neuromorphic Computing”, an Energy Frontier Research Center funded by the U.S. Department of Energy (DOE) Offce of Science-Basic Energy Sciences under Award no. DE-SC0019273, as well as x-ray microscopy technique developments supported under Award no. DE-SC0001805. Research at the Hard X-ray Nanoprobe beamline of the National Synchrotron Light Source II was supported by the U.S. DOE Office of Science under contract no. DE-SC0012704 and is operated for the DOE Ofﬁce of Science by Brookhaven National Laboratory. This research used resources of the National Energy Research Scientiﬁc Computing Center (NERSC), a U.S. DOE Ofﬁce of Science User Facility operated under Contract No. DE-AC02-05CH11231. The use of the Center for Nanoscale Materials and the Advanced Photon Source, both Ofﬁce of Science user facilities, was supported by the U.S. Department of Energy Ofﬁce of Science-Basic Energy Sciences, under contract no. DE-AC02-06CH11357.
+
+The Advanced Photon Source is one of the world’s most productive x-ray light source facilities. Each year, the APS provides high-brightness x-ray beams to a diverse community of more than 5,000 researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. Researchers using the APS produce over 2,000 publications each year detailing impactful discoveries, and solve more vital biological protein structures than users of any other x-ray light source research facility. APS x-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC, for the U.S. DOE Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+05.14.2020

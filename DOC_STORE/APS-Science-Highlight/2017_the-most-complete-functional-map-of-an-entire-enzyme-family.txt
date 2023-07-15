@@ -1,0 +1,31 @@
+The Most Complete Functional Map of an Entire Enzyme Family
+
+The original highlight from the DOE Joint Genome Institute can be read here.
+
+Researchers from two U.S. Department of Energy (DOE)-funded scientific user facilities, including the DOE Office of Science’s Advanced Photon Source at Argonne National Laboratory, collaborated with a DOE Bioenergy Research Center to develop and analyze high-resolution crystal structures of an enzyme from the laminarin-degrading GH55 family. The researchers then went further and applied a variety of techniques that resulted in the “most complete functional mapping of an entire GH family available to date.”
+
+Members of the GH55 enzyme family are known for their ability to break down glucose polymers and thus are of interest to bioenergy researchers working on advancing large-scale biofuels production. The approach described in this 2015 study, published in the Journal of Biological Chemistry, could speed up the process of studying plant cell wall-degrading enzymes by allowing researchers to study entire families at once.
+
+Many of the microbial and metagenome projects conducted at the DOE Joint Genome Institute (JGI), a DOE Office of Science user facility managed by Lawrence Berkeley National Laboratory, focus on microbial communities in the guts of insects and animals because of their roles in breaking down the plant mass consumed by these hosts for energy. When DOE JGI researchers published the cow rumen metagenome in Science, they added nearly 30,000 candidate cellulose-degrading genes that encode carbohydrate-active enzymes to the (CAZymes) database from that one project alone.
+
+The process of functionally annotating each one of these genes, however, can be time-consuming. For enzymes in the GH55 family, for example, much of the previous work has been carried out on fungi: the structure of the protein PcLam55A was derived using the white-rot fungus Phanerochaete chrysosporium, which had been sequenced by the DOE JGI.
+
+In the current study, a team including researchers from the DOE JGI and the DOE-funded Great Lakes Bioenergy Research Center characterized the structure and function of another GH55 protein — SacteLam55A. The gene SACTE_4363 encodes this protein and was isolated from the microbe SirexAA-E found in the microbial community associated with pinewood-boring wasp Sirex noctilio. The gene was found when the microbe was grown on cellobiose, xylan, and pretreated switchgrass samples, suggesting it contributed to the microbe’s cellulolytic ability.
+
+To determine the gene's structure, researchers develop high-resolution crystal structures, relying on diffraction data collected at the Life Sciences Collaborative Access Team (LS-CAT) 21-ID-G x-ray beamline at the DOE’s Advanced Photon Source (APS) at Argonne National Laboratory (the APS is also an Office of Science user facility). Through assays, and techniques such as gene synthesis and cell-free protein translation, the team was also able to characterize the biochemistry and structure of the GH55 family.
+
+"The combination of gene synthesis, cell-free translation and assays using a diagnostic panel of substrates across the entire GH55 represents, to our knowledge, the most complete functional mapping of an entire GH family available to date," the team reported. The collaboration of two DOE user facilities with a DOE Bioenergy Research Center that enabled this research, combining disparate technologies, will advance the understanding of cellulose structure and function to a depth beyond the capabilities of any one facility.
+
+See: Christopher M. Bianchetti1,2, Taichi E. Takasuka1,3, Sam Deutsch4, Hannah S. Udell1, Eric J. Yik5, Lai F. Bergeman1, and Brian G. Fox1*, “Active Site and Laminarin Binding in Glycoside Hydrolase Family 55,” J. Biol. Chem. 290, 11819 (May 8, 2015). DOI: 10.1074/jbc.M114.623579
+
+Author affiliations: 1University of Wisconsin-Madison, 2University of Wisconsin-Oshkosh, 3Hokkaido University, 4The Joint Genome Institute, 5California State University, Fullerton
+
+Correspondence: * bgfox@biochem.wisc.edu
+
+This work was supported by the DOE Great Lakes Bioenergy Research Center, Biological and Environmental Research, Office of Science, Grant DE-FC02-07ER64494. Use of the LS-CAT beamline was supported by the Michigan Economic Development Corporation and the Michigan Technology Tri-Corridor (Grant 085P1000817). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+06.15.2015

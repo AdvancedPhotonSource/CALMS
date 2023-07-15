@@ -1,0 +1,31 @@
+X-Ray Imaging with Novel Parabolic Single-Crystalline Diamond Lenses
+
+To a large degree, science in this decade is being shaped by remarkable advances in accelerator-based x-ray sources.The high degree of coherence, brilliance, and power of the radiation expected from future diffraction-limited synchrotron radiation sources and x-ray free-electron lasers call for the development of coherence-preserving optics and the use of new materials that are resistant to extreme thermal and radiation loading. In a publication that appeared in Applied Physics Letters, researchers from the U.S. and Russia describe their proof-of-principal experiment carried out at the U.S. Department of Energy’s Advanced Photon Source (APS) and introduce single-crystal diamond parabolic compound refractive lenses (CRLs) designed for just this purpose.
+
+The use of focusing lenses to concentrate synchrotron x-ray beams to a specific spot size has become routine. But there are certain physical limitations.
+
+First, refraction of x-rays in solids is very weak, with the refractive index being just less than 1 by a tiny fraction. To focus x-rays, lenses must have a shape that is reversed from convex (used for visual light) to concave, and they must feature a very small radius of curvature. Second, because of the small refraction, the focal lengths of single x-ray lenses are large. To shorten them, CRLs, assemblies of many aligned lenses, must be used. Third, the lenses must be made of a material that is transparent to x-rays, i.e., made of light elements. The choice of beryllium is natural, and beryllium lenses have been in use for two decades. However, imperfections in beryllium (polycrystalline structure, grain boundaries, voids, inclusions, etc.) make their applications for coherence-preserving optics limited. So CRLs made of a single-crystalline material would be more favorable.
+
+That leads to diamond single-crystals, which appear to be the obvious choice. Optical homogeneity, excellent thermal conductivity, mechanical hardness, low thermal expansion, and resistance to radiation damage makes single-crystal diamond a perfect candidate material for optical elements.
+
+Diamond lenses offer a unique opportunity for the realization of a new concept for low-loss beam transport and beam conditioning, which may significantly simplify the layout and components of future synchrotron light source beamlines.  Diamond optics integrated into the beamline front end can transfer the photon beams almost without losses to secondary optical systems (mirrors, crystals, lenses, etc.) or directly to the sample-containing end stations. The prefocused beams with smaller footprints will drastically reduce the length of mirrors and crystal optics. In addition, this optics may filter the unwanted power developed by the x-ray source and alleviate thermal deformation or radiation damage of the downstream optics.
+
+In the Applied Physics Letters publication, these researchers from the Technological Institute for Superhard and Novel Carbon Materials (Russia), the Immanuel Kant Baltic Federal University (Russia), and Argonne National Laboratory report on the fabrication and first commissioning of diamond single-crystalline parabolic x-ray lenses.
+
+The lenses are made of superb quality synthetic-diamond single crystals grown with the high-pressure-high-temperature technique. The diamond crystals were shaped to cups with parabolic surfaces by using picosecond laser milling. Focused laser beams ablated the diamond crystal layer by layer in a sophisticated technological process. This procedure produced mono-concave lenses of parabolic shape with approximately 1-µm accuracy in roughness and figure.  A CRL composed of six mono-concave, single-crystalline diamond lenses was characterized by imaging an undulator x-ray source at X-ray Science Division beamline 12-ID-D at the Argonne APS. CRL characteristics such as gain factor, effective aperture, transmissivity, etc. were measured. 
+
+The fact that the researchers were able to fabricate diamond lenses that focused x-rays in the first experiment to a focal spot size ~20 x 90 µm2 with a gain factor of ~50-100 constitutes a highly promising step toward the manufacture of single-crystalline diamond CRLs with the ultimate performance required for next-generation x-ray sources.
+
+See:  S. Terentyev1, V. Blank1, S. Polyakov1, S. Zholudev1, A. Snigirev2, M. Polikarpov2, T. Kolodziej3, J. Qian3, H. Zhou3, and Y. Shvyd’ko3, “Parabolic single-crystal diamond lenses for coherent x-ray imaging,” Appl. Phys. Lett. 107, 111108 (2015). DOI: http://dx.doi.org/10.1063/1.4931357
+
+Author affiliations: 1Technological Institute for Superhard and Novel Carbon Materials, 2Immanuel Kant Baltic Federal University, 3Argonne National Laboratory
+
+Correspondence: shvydko@aps.anl.gov
+
+Work at TISNCM and Baltic Federal University (BFU) was supported by the Ministry of Education and Science of the Russian Federation: scientific project RFMEF1586114X0001 Grant No. 14.586.21.0001 (TISNCM); Grant Nos. 14.Y26.31.0002 and 02.G25.31.0086 (BFU). This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory is supported by the Office of Science of the U.S. Department of Energy. The Office of Science is the single largest supporter of basic research in the physical sciences in the United States, and is working to address some of the most pressing challenges of our time. For more information, please visit science.energy.gov.
+
+Published Date
+
+10.28.2015

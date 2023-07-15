@@ -1,0 +1,35 @@
+Unlocking a Liver Receptor Puzzle
+
+The original Woodruff Health Sciences Center news release by Quinn Eastman can be read here.
+
+Imagine a key that opens a pin tumbler lock.  A very similar key can also fit into the lock, but upside down in comparison to the first key. Researchers from the Emory University School of Medicine, Emory University, the University of Southampton (UK), and the Scripps Research Institute have obtained analogous results in their study of how potential diabetes drugs interact with their target, the protein LRH-1. Their research, carried out at the U.S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory and published in the Journal of Biological Chemistry (JBC), shows that making small changes to LRH-1-targeted compounds makes a huge difference in how they fit into the protein’s binding pocket.
+
+This research was selected as "Paper of the Week" by JBC and is featured on the cover of the December 2, 2016 issue.
+
+LRH-1 (liver receptor homolog-1) is a nuclear receptor, a type of protein that turns on genes in response to small molecules like hormones or vitamins.  LRH-1 acts in the liver to regulate metabolism of fat and sugar.
+
+Previous research has shown that activating LRH-1 decreases liver fat and improves insulin sensitivity in mice. Because of this, many research teams have been trying to design synthetic compounds that activate this protein, which could have potential to treat diabetes and nonalcoholic fatty liver disease. This has been a difficult task, because not much is known about how synthetic compounds interact with LRH-1 and switch it into the active state.
+
+The researchers used x-ray crystallography at the Southeast Regional Collaborative Access Team synchrotron x-ray facility on beamline 22-ID at the APS to explore in detail how the LRH-1 protein interacts with two closely related LRH-1 activators (Fig.1), previously identified by collaborators at the University of Southampton, UK. 
+
+The first author of the paper is Suzanne Mays, a graduate student in Emory’s Molecular and Systems Pharmacology program. Ortlund is associate professor of biochemistry at Emory University School of Medicine. Nathan Jui, PhD, from Emory's Department of Chemistry and scientists at Scripps Research Institute in Florida also contributed to the paper.
+
+"We were surprised to find two synthetic activators that are structurally very similar to each other interacting with LRH-1 completely differently," said first author Suzanne Mays. "They can rotate nearly 180 degrees relative to each other in the binding pocket. This may explain why small changes to this class of molecule had unpredictable effects in previous studies."
+
+The authors discovered a new interaction made by one of the compounds that has potential to serve as an "anchor point" to keep the compound in place.  This will help researchers make compounds that better fit in the "lock" without worrying about them rotating around unpredictably. The collaboration is continuing to fine-tune the design of LRH-1 activators. 
+
+See: Suzanne G. Mays1, C. Denise Okafor1, Richard J. Whitby3, Devrishi Goswami4, Józef Stec3, Autumn R. Flynn2, Michael C. Dugan2, Nathan T. Jui2, Patrick R. Griffin4, and Eric A. Ortlund1*, “Crystal Structures of the Nuclear Receptor, Liver Receptor Homolog 1, Bound to Synthetic Agonists Reveal a Novel Mechanism of Activation,” J. Biol.Chem., in press. Published on line September 30, 2016. DOI: 10.1074/jbc.M116.753541
+
+Author affiliations: 1Emory University School of Medicine, 2Emory University, 3University of Southampton, 4Scripps Research Institute
+
+Correspondence: *eortlun@emory.edu
+
+This work was supported in part by National Institutes of Health (NIH) T32-GM008602 (S.G.M.), NIH F31DK111171 (S.G.M.), R01DK095750 (E.A.O.), and an Emory Catalyst Grant to E.A.O. and N.T.J. R.J.W. and J.S. thank GlaxoSmithKline for generous funding. Southeast Regional Collaborative Access Team supporting institutions may be found at www.ser-cat.org/members.html. This research used resources of the Advanced Photon Source, a US Department of Energy (DOE) Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under contract number DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation's first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America's scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy's Office of Science.
+
+The U.S. Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit the Office of Science website.
+
+Published Date
+
+12.07.2016

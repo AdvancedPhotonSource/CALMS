@@ -1,0 +1,33 @@
+Major Advance Made on DNA Structure
+
+One of the fundamental problems in biochemistry is to predict the structure of a molecule from its sequence – this has been referred to as the "Holy Grail" of protein chemistry.
+
+Today, the OSU scientists announced in the Proceedings of the National Academy of Sciences that they have used X-ray crystallography to determine the three-dimensional structures of nearly all the possible sequences of a macromolecule, and thereby create a map of DNA structure.
+
+As work of this type expands, it should be fundamentally important in explaining the actual biological function of genes - in particular, such issues as genetic "expression," DNA mutation and repair, and why some DNA structures are inherently prone to damage and mutation. Understanding DNA structure, the scientists say, is just as necessary as knowing gene sequence. The human genome project, with its detailed explanation of the genetic sequence of the entire human genome, is one side of the coin. The other side is understanding how the three-dimensional structure of different types of DNA are defined by those sequences, and, ultimately, how that defines biological function.
+
+"There can be 400 million nucleotides in a human chromosome, but only about 10 percent of them actually code for genes," said Pui Shing Ho, professor and chair of the OSU Department of Biochemistry and Biophysics. "The other 90 percent of the nucleotides may play different roles, such as regulating gene expression, and they often do that through variations in DNA structure."
+
+"Now, for the first time, we're really starting to see what the genome looks like in three dimensional reality, not just what the sequence of genes is," Ho said. "DNA is much more than just a string of letters, it's an actual structure that we have to explore if we ever hope to understand biological function. This is a significant step forward, a milestone in DNA structural biology."
+
+In the early 1950s, two researchers at Cambridge University – James Watson and Francis Crick – made pioneering discoveries by proposing the double-helix structure of DNA, along with another research group in England about the same time. They later received the Nobel Prize for this breakthrough, which has been called the most important biological work of the past century and revolutionized the study of biochemistry. Some of the other early and profoundly important work in protein chemistry was done by Linus Pauling, an OSU alumnus and himself the recipient of two Nobel Prizes.
+
+However, Watson and Crick actually identified only one structure of DNA, called B-DNA, when in fact there are many others – one of which was discovered and another whose structure was solved at OSU in recent years – that all have different effects on genetic function.
+
+Aside from the genetic sequence that DNA encodes, the structure of the DNA itself can have profound biological effects, scientists now understand. Until now, there has been no reliable method to identify DNA structure from sequence, and learn more about its effects on biological function.
+
+In their studies, the OSU scientists used X-ray examination of crystalline DNA to reconstruct exactly what the DNA looks like at the atomic level. By determining 63 of the 64 possible DNA sequences, they were able to ultimately determine the physical structure of the underlying DNA for all different types of sequences. Another important part of this study is the finding that the process of DNA crystallization does not distort its structure.
+
+"Essentially, this is a proof of concept, a demonstration that this approach to studying DNA structure will work, and can ultimately be used to help understand biology," Ho said.
+
+For instance, one of the unusual DNA structures called a Holliday junction, whose structure was co-solved at OSU about five years ago, apparently plays a key role in DNA's ability to repair itself – a vital biological function.
+
+A more fundamental understanding of DNA structure and its relationship to genetic sequences, researchers say, helps set the stage for applied advances in biology, biomedicine, genetic engineering, nanotechnology and other fields.
+
+The recent work was supported by grants from the National Institutes of Health and the National Science Foundation. The crystallographic studies were carried out at the BioCARS sector 14 beamline at Argonne National Laboratory’s Advanced Photon Source, and at the Advanced Light Source at Lawrence Berkeley National Laboratory, both of which are supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences.
+
+Source: Oregon State Universityand PhysOrg.com (https://phys.org/news/2005-05-major-advance-dna.html)
+
+Published Date
+
+05.01.2005
