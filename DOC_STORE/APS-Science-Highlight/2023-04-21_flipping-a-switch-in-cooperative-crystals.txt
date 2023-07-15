@@ -1,0 +1,27 @@
+Flipping a switch in cooperative crystals
+
+So-called cooperative behavior, in which molecules in a crystal change their structure in concert with one another, is common in biological molecules and metals. Such behavior, however, is rare in molecular crystals, and scientists don’t quite understand why. Now researchers using the Advanced Photon Source (APS), a U.S. Department of Energy Office of Science user facility at Argonne National Laboratory have found they can induce cooperative behavior in an organic semiconductor and have developed an explanation for why it happens.
+
+The researchers discovered they could cause a crystal to undergo a phase change simply by heating or cooling it. The change propagates rapidly through the crystal at a rate measured in millimeters per second, with the theoretical limit being the speed of sound in the material. (In practice, however, defects in the crystal slow the spread.) The transition is fast enough that it could be used to build low-power actuators and switches.
+
+The team synthesized crystals of two-dimensional quinoidal terthiophene, an electron-conducting organic semiconductor. They  heated the crystals at a rate of 5°C per minute. At 164°C, the crystals underwent a cooperative phase change, which could be reversed by cooling the material. 
+
+To see what was happening, the team performed grazing incidence X-ray diffraction (GIXD) at Beamline 8-ID-E of the APS. The GIXD showed the structure of the crystal before the phase transition, in which molecules were arranged into stacks. The stacks were packed into layers separated by alkyl side chains. When they reached the critical temperature, the side chains reoriented themselves, bending and twisting within the lattice. The side chains’ reorientation provided a driving force on the molecular cores, and they all tilted like a row of dominoes. 
+
+Grazing-Incidence X-ray Diffraction video showing both polymorph phase transitions at APS beamline 8-ID-E. Images were taken at 5 second increments while sample was heated at 5°C/min through the first transition temperature of 164°C, and the second of 223°C.
+
+To demonstrate how the behavior might be used in practice, the group fabricated thermal actuators from these organic crystals bridging a pair of electrodes. When they heated the device to the transition temperature, the cooperative transition shortened the crystal and it detached from one of the electrodes, causing a several hundred-fold drop in conductivity between the electrodes. Cooled back down below the transition temperature, the non-tilting molecules extended the crystal back into contact with the electrode and conductivity recovered. 
+
+Researchers also measured a second phase change in the material, from the second state to a third, at 223°C, when the alkyl side chains become disordered. This appeared to be the more commonly seen crystalline behavior of nucleation and growth, where a crystalline structure radiates out from a seed point, such as an edge or a defect. Unlike the cooperative behavior, this change spreads molecule to molecule, a much slower transition that took several minutes. Uncommonly, the team found that this structural transition had its origin in a change in the electronic properties of the material.
+
+The X-ray data provided constraints on how the crystal could be organized. Combining those constraints with what they knew of the structure before the transition, the scientists were able to simulate the molecular behavior and obtain good agreement with spectroscopic measurements. The results indicated that the second transition was triggered by creating biradicals, electrons that are not paired as they would be in the molecule’s lowest energy state, that cause new interactions between the molecule that destabilized the second structure. The changes in the electronic structure of the material from the biradicals create more charge carriers, increasing the conductivity of the crystal. 
+
+This third phase of the crystal was also reversible, but the change upon cooling occurred at a temperature below the first transition, and the researchers could not tell whether the crystal changed directly from its third state back to its first or rapidly passed through the second phase. 
+
+The next step will be for scientists to see whether they can lower the temperature that triggers the cooperative phase change to something closer to room temperature, which may be possible by redesigning the side chains. In any case, they say, this new understanding could provide ways to design new types of electronic devices.  – Neil Savage
+
+__________________________________________________________________________________
+
+See: D.W. Davies1,, B. Seo2,3, S.K. Park1,4, S.B. Shiring3, H. Chung1, P. Kafle1, D. Yuan5,6, J.W. Strzalka7, R. Weber8, X. Zhu6, B.M. Savoie3, Y. Diao1,9, “Unraveling Two Distinct Polymorph Transition Mechanisms in One N-Type Single Crystal for Dynamic Electronics,” Nature Communications 14 1304 (2023)
+
+Author affiliations: 1University of Illinois Urbana-Champaign; 2Seoul National University of Science and Technology; 3Purdue University; 4Korea Institute of Science and Technology; 5Hunan University; 6Chinese Academy of Sciences; 7Argonne National Laboratory; 8Bruker BioSpin Corp; 9Beckman Institute for Advanced Science and Technology

@@ -1,0 +1,27 @@
+For Some Drugs, One Water Molecule Makes All the Difference
+
+Integrins are cellular receptors that sense and respond to the extracellular environment. They consist of two subunits, α and β, that interact with extracellular molecules to transmit signals in both directions across the cell membrane to regulate cellular adhesion, migration, and communication. Researchers have developed inhibitors of these molecules in diseases where these functions are known to be involved, such as fibrosis, macular degeneration, multiple sclerosis, and cardiovascular disease. In cardiovascular disease, integrins have been targeted due to their role in platelet aggregation, an important aspect of the formation of blood clots that can block blood vessels, causing heart attacks and strokes. However, while some intravenous drugs for use in acute situations have been developed in this area, the development of chronic oral small-molecule integrin inhibitors was put on hold after failure of five phase 3 trials in the early 2000s. Recent research conducted at the U.S. Department of Energy’s Advanced Photon Source (APS) has uncovered a potential structural basis for these trial failures that could revive development of this important class of drugs in cardiovascular disease and provide a general principle for the development of other integrin-targeted drugs. This research was published in the journal Cell.
+
+The research began with two observations. First, three inhibitors of the αIIbβ3 integrin known to be involved in platelet aggregation induce a conformation change in the integrin to its open, active form. This effect appears to be responsible for the toxicity that stymied clinical trials of long-term use of oral versions of the inhibitors. With the failure of the phase-3 trials, studies focused on these inhibitors were shut down. 
+
+The second observation was that, although clinical research was shut down, pharmaceutical companies had identified a number of αIIbβ3 integrin inhibitors that did not induce this conformational change. 
+
+Starting at this point, the researchers set out to understand the structural basis for the inhibitor-induced complication observed in the trials by comparing high-resolution crystal structures of the αIIbβ3 integrin in complex with inhibitors that induce or do not induce the active integrin conformation, which is hypothesized to cause partial agonism.
+
+Their first discovery, using techniques designed to test various known conformations of the integrin structure under various conditions, was that the failed inhibitors stabilize the extended “open” conformation of the integrin. They termed these “opening” inhibitors. In contrast, other inhibitors stabilize the “closed” conformation and are termed “closing” inhibitors. 
+
+In order to determine the structural basis for the difference between opening and closing inhibitors, the investigators determined the crystal structures of all of the inhibitors in complex with the integrin using diffraction data obtained at the National Institute of General Medical Sciences and National Cancer Institute (GM/CA-XSD) structural biology facility x-ray beamline 23-ID-B at the APS, which is an Office of Science user facility at Argonne National Laboratory. 
+
+They found that the opening inhibitors displace a water molecule (water 1 in Fig. 1) that must be expelled for the integrin to adopt the open conformation while the closing inhibitors stabilize the critical water with a hydrogen bond, keeping the integrin in the closed conformation. Substituting the hydrogen-bonding atom in closing inhibitors with a carbon atom transformed them into opening inhibitors, confirming the chemical hypothesis. 
+
+Searching inhibitors of a distantly related member of the integrin family for a pharmacophore with the same hydrogen-bonding nitrogen, they found a closing inhibitor, and similarly transformed it into an opening inhibitor with a nitrogen to carbon substitution. All other integrin subtypes expel the same water when they open. This finding suggests that a general principle has been discovered for designing inhibitors of all integrins that guards against conformational change and prevents partial agonism, thereby increasing the chances that the inhibitors may be safe in clinical trials.
+
+Application to other integrin inhibitor drug-design projects promises to open the door to restarting the conversation about small-molecule integrin inhibitors as oral therapies in cardiovascular disease as well as other challenging diseases including ulcerative colitis, fibrosis, and cancer.   ― Sandy Field
+
+See: Fu-Yang Lin1‡, Jing Li1, Yonghua Xie2, Jianghai Zhu1‡‡***, Thi Thu Huong Nguyen3,4, Yonghui Zhang2**, Jieqing Zhu1,3,4*, and Timothy A. Springer1*, “A general chemical principle for creating closure-stabilizing integrin inhibitors,” Cell 185, 3533 (September 15, 2022). DOI: 10.1016/j.cell.2022.08.008
+
+Author affiliations: 1Boston Children’s Hospital, Harvard Medical School, 2Tsinghua University, 
+
+3Blood Research Institute, 4Medical College of Wisconsin Present addresses: ‡Morphic Therapeutic, ‡‡National Institute of Allergy and Infectious Diseases
+
+Correspondence: *springer@crystal.harvard.edu,  ** zhangyonghui@tsinghua.edu.cn, *** jieqing.zhu@versiti.org

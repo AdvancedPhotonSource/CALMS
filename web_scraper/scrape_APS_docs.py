@@ -16,7 +16,7 @@ requests_cache.install_cache(
 url = 'https://docs2bm.readthedocs.io/en/latest/index.html'
 baseurl = urljoin(url, '.')
 
-savedir = 'APS-Docs'
+savedir = 'DOC_STORE/APS-Docs'
 Path(f'./{savedir}').mkdir(exist_ok=True)
 
 today = date.today()  # .strftime("%Y-%b%d")
@@ -38,7 +38,7 @@ if response.from_cache:
     print('[ WARNING: page requested from cache ]\n')
 
 title = index_page.title.string
-out = open(f"{savedir}/{today}_{title.replace(' ','_')}.txt", 'w')
+out = open(f"{savedir}/{title.replace(' ','_')}.txt", 'w')
 
 
 def write(text):

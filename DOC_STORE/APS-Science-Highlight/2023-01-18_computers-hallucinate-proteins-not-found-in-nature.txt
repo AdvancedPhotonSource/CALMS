@@ -1,0 +1,29 @@
+Computers Hallucinate Proteins Not Found in Nature
+
+Proteins do most of the work in our bodies—digesting food, making muscles contract, connecting brain cells, etc. All proteins are made of strings of amino acids; the order of amino acids in the string determines a protein’s shape, and the protein’s shape determines its function. Mathematically, there are approximately 100-tredecillion ways in which the amino acids could be arranged, but life on Earth uses only a fraction of them. For the past few decades, scientists have been exploring the possibility of creating proteins out of amino acid sequences that nature has ignored. Now, using the U.S. Department of Energy’s Advanced Photon Source (APS) and a computer program that “hallucinates” new protein shapes, a team of scientists has created and verified 10 protein shapes that never existed before. The researchers are hoping to eventually create new proteins with new capacities, like gobbling up plastic in the sea or making machines at the nanoscale. These results were published in the journal Science.
+
+With the advent of anthropogenic climate change, novel emerging diseases, and technological breakthroughs, humanity is facing new challenges that synthetic biology may be able to address by designing new proteins. Scientists in this study wanted to explore the possibility of creating new cyclic protein oligomers, a class of proteins that play key roles in nearly all biological processes and are useful in biomedical and biotechnological applications. 
+
+Using only the canonical (or 20 standard) amino acids, the team set out to discover what new protein shapes could be produced by assembling the amino acids in novel sequences. They knew that chasing uncharted designs required a new approach, so they prompted a computer program to hallucinate new shapes on its own.
+
+First, they created algorithms that randomly tweaked various amino acids in the sequence step-by-step. At each step, they would ask the AlphaFold2 neural network, “Is this an oligomer of the size and shape we want?” If the answer was yes or going in the right direction, they kept the tweak and repeated the procedure. If not, they rejected it and chose another. Eventually they ended up with a potential protein structure.
+
+The procedure generated hundreds of potentially viable designs. The team then needed to test the designs in the real world. 
+
+To that end, they encoded the amino acid sequences of the hallucinated designs into synthetic genes, which they inserted into an E. coli bacterium. The bacterium produced a protein from the synthetic gene, and voila! A real-life protein generated from a sequence hallucinated by a computer. 
+
+The next step was to validate how closely the real-life proteins approximated the hallucinated design and how viable they were in terms of biophysical characteristics such as solubility and structural accuracy. 
+
+Using x-ray crystallography at Northeastern Collaborative Access Team 24-ID-C x-ray beamline at the APS, these researchers solved the structures of seven of the crystals, confirming that the hallucinated proteins were viable in the real world. The APS is a Department of Energy Office of Science user facility at Argonne National Laboratory.
+
+The proteins produced in this work have no designated biological function besides their designed symmetry—they do not perform a job in and of themselves. Rather, they could serve as scaffolds for enzymes or proteins that bind targets on cells. Alternatively, they could be included within larger protein assemblies. 
+
+This has already found real-world applications: the Institute for Protein Design at the University of Washington, home institution for several of these researchers, created a nanoparticle from a large assembly of proteins, including parts of the spike of SARS-CoV-2, the virus that causes COVID. This nanoparticle vaccine became SKYCovione, an approved vaccine in use in South Korea.
+
+Beyond the ten proteins detailed in this research, the process invented by the team unlocks the potential of generative protein design, where scientists are free to sample the structural space of proteins in an unconstrained manner, their imaginations extended into uncharted territory. Moreover, the ability to tweak the sequences as they go along gives scientists precise control over the arrangement of side chains. 
+
+Considering the fast pace of the field, exciting new developments, among them therapeutics and potentially new enzymes, could be in reach.  ― Judy Myers
+
+See: B.I.M. Wicky, L.F. Milles, A. Courbet, R.J. Ragotte, J. Dauparas, E. Kinfu, S. Tipps, R.D. Kibler, M. Baek, F. DiMaio, X. Li, L. Carter, A. Kang, H. Nguyen, A.K. Bera, D. Baker* “Hallucinating symmetric protein assemblies,” Science 378, 56 (7 October 2022). DOI: 10.1126/science.add1964
+
+Author affiliations: University of Washington

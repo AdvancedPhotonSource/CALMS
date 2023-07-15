@@ -14,7 +14,7 @@ requests_cache.install_cache(
 url = 'https://www.aps.anl.gov/APS-Science-Highlight/'
 baseurl = urljoin(url, '..')
 
-savedir = 'APS-Science-Highlight'
+savedir = 'DOC_STORE/APS-Science-Highlight'
 Path(f'./{savedir}').mkdir(exist_ok=True)
 
 

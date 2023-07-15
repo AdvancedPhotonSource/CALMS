@@ -1,0 +1,33 @@
+Shifting lithium gradients in solid-state cathodes
+
+Developing high-energy density all-solid-state lithium batteries is an important goal for the next generation of batteries. Most lithium batteries use a liquid electrolyte to conduct the flow of lithium ions between the battery electrodes, the cathode and the anode.  Because many liquid electrolytes are flammable, they can pose a safety risk.  An all-solid-state lithium battery could be safer because the flammable liquid is replaced with a solid electrolyte material. 
+
+Higher energy density batteries are desirable as they can emit a charge for longer, enabling a longer range for electric cars, for instance, or emit the same charge in a smaller, lighter package.
+
+In a new result, scientists have shown that small changes in composition can impact the function of cathodes in all-solid-state lithium-ion batteries. Their results highlight the challenges of designing cathodes for such energy-dense batteries and provide important insights for future research. The results, based on research conducted at the Advanced Photon Source (APS), a U.S. Department of Energy’s (DOE) Office of Science user facility at DOE’s Argonne National Laboratory, were published in ACS Energy Letters.
+
+The key to developing high-energy density all-solid-state batteries is designing thick cathodes that can support high charge transport rates evenly across their entire thickness. They also need to work in both directions, enabling lithium ions to move through the electrolyte to the anode when the battery is charging, and back to the cathode when the battery is discharging.
+
+For this research, scientists at Northeastern University in Boston created a composite cathode. This 110-micrometer-thick (about one-tenth of a millimeter) cathode was comprised of a mixture of the solid sulfide-based material used for the battery’s electrolyte, known as LPSC, and the cathode material NMC111, which is a lithium nickel manganese cobalt oxide.
+
+The team created cathodes with varying amounts of NMC111 and LPSC. The proportion of NMC111 in the composite, known as the cathode active material (CAM) fraction, ranged from 40 to 80 percent. The rest of the cathode consisted of LPSC.
+
+Using a high-energy depth-profiling X-ray technique known as energy dispersive X-ray diffraction (EDXRD), the researchers measured the localized lithium content through the thickness of their composite cathodes as they put them through a series of charging and discharging cycles. The X-ray work was carried out using beamline 6-BM of the APS. 
+
+The X-ray diffraction data provided information on the crystal structure of the NMC111, which showed them the amount of lithium in the material. When lithium was added to or removed from the crystal, subtle changes occurred in the size of the crystalline material.
+
+In an ideal situation deintercalation (and intercalation) of lithium ions would be distributed evenly across the thickness of the cathode material, as the battery moves through charging and discharging cycles. This would indicate that the required electrochemical reactions are occurring uniformly across the material. 
+
+The researchers found, however, that during the charge and discharge cycles substantial lithium gradients developed across the cathode, and the nature of these gradients varied depending on the CAM fraction. 
+
+In cathodes with 80 percent NMC111, the X-ray data showed that electrochemical reactions in the cathode happened closest to the electrolyte first. But when the NMC111 proportion was reduced to 70 percent the fastest reaction occurred at the furthest point from the battery’s electrolyte.
+
+The researchers said their results show that these composite cathodes are very sensitive to the CAM fraction. Even small changes in the MNC111 content of the cathode can change the microstructure and cause dramatic shifts in the way lithium ions, and therefore charge, transport through the material.
+
+Their findings have important implications for the design of cathodes for solid-state lithium batteries. While there may be an ideal CAM fraction for the cathodes, finding this would not necessarily make a good cathode. Due to the sensitivity of the material revealed it may be challenging to consistently manufacture cathodes that evenly transported charge, and as they aged and degraded lithium transport might change significantly.
+
+Instead, researchers said, a better direction for future research could be adding an electronically conductive material to the cathode composite, to improve its properties and makes it less sensitive.  – Michael Allen
+
+See: Alyssa M. Stavola1,, Xiao Sun1, Dominick P. Guida1, Andrea M. Bruck1, Daxian Cao1, John S. Okasinski2, Andrew C. Chuang2, Hongli Zhu1, Joshua W. Gallaway1, “Lithiation Gradients and Tortuosity Factors in Thick NMC111-Argyrodite Solid-State Cathodes,” ACS Energy Letters, 2023, 8, 2, 1273–1280. 
+
+Author affiliations: 1Northeastern University; 2Argonne National Laboratory

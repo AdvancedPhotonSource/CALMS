@@ -1,0 +1,25 @@
+New insights into elastic waves at Earth’s core-mantle boundary
+
+The Earth’s core is quite complex and mysterious, hidden 2,900 kilometers below the surface. The few methods we have to know what it’s like in the depths rely on measuring elastic waves from earthquakes as they travel through the planet, and analyzing the rocks produced by certain volcanoes that seem to reach all the way to the bottom of the rocky mantle where it meets the core.
+
+And those methods have found mysteries. For example, elastic waves in certain zones of the mantle just above the core slow down dramatically, and we don’t know why. And there seems to be a thin layer of solid floating in the upper layer of the metallic core, but scientists haven’t been sure what it is and why it floats instead of sinking. It’s unclear how some volcanoes can even access minerals from the core.
+
+Now, a group of researchers has taken a journey to the deep using a technique only possible at a facility such as the Advanced Photon Source (APS), a Department of Energy (DOE) Office of Science user facility at DOE’s Argonne National Laboratory. And they have discovered that the same phenomenon may explain all three of these puzzles.
+
+Geoscientists consider Earth to have three major layers: a thin crust of lightweight rocks that we live on; a thick mantle of dense, hot rock that slowly flows; and an extremely hot (above 10,000 degrees Fahrenheit) core made primarily of iron and nickel (see Figure 1). Other elements probably mix into the core in small amounts. Silicon is abundant in both the crust and mantle, and likely mixes into the core. Hydrogen stored in the mantle may also enter the core.
+
+But scientists have little understanding of how hydrogen behaves at the super high temperatures and pressures found in the core-mantle boundary. The primary way to create such high pressures in a laboratory is to squeeze a small amount of material in a diamond anvil cell. Diamond can withstand high pressures normally, up to a few million atmospheres. But when hydrogen heats up at high pressure, it infiltrates the diamond and causes it to shatter (see Figure 2). This has made it impossible to study hydrogen in truly core-like conditions.
+
+Researchers from Arizona State University and The University of Chicago used the APS and a clever trick to overcome the limitations posed by diamond anvils with hydrogen. They used GSECARS beamline 13-ID-D and its specially designed laser system to heat an alloy of iron and silicon mixed with hydrogen and squeezed to 130 Gigapascals (GPa), a pressure commonly found in the outermost core.
+
+The very powerful laser was able to heat the sample to 2,600-3000 Kelvin (nearly 5,000 degrees Fahrenheit) in just a one microsecond (one millionth of a second), so fast that the hydrogen was unable in such a short time to infiltrate the diamond anvil before cooling off. The APS’s X-ray beams were able to grab images of the atomic structure using X-ray diffraction at the exact moment the sample was heated. Beamline 13-ID-D is one of only a few locations in the world capable of doing this type of X-ray experiment with extreme heat.
+
+The X-ray diffraction images revealed that in the presence of hydrogen, silicon-rich crystals of iron form. Hydrogen encourages the silicon to concentrate in the iron. Because silicon is much lighter than iron and nickel, these silicon-rich crystals float to the top of the core instead of sinking as a solid normally would. This explains the strange solid layer detected near the surface of the core.
+
+Because the silicon-rich iron crystals are close to the core-mantle boundary, it’s likely that they mix into the lower edge of the mantle. Even if only small amounts of silicon-rich iron crystals are swept up into the core, they will still sharply slow the speed of elastic waves moving through the region, simply because iron is so much denser than the majority of minerals in the mantle. The researchers’ calculations show that just 8.4% by volume of silicon-iron crystals mixed into the lower mantle can account for the Ultra-Low Velocity Zones (ULVZs) detected by geophysicists.
+
+Finally, some oceanic volcanoes, such as the ones that form the Hawaiian Islands, produce rocks with unusual isotopes of tungsten and other minerals that suggest the source minerals for the rocks originate in the core. There is evidence indicating that the ULVZs are the source of those oceanic volcanoes. And if this study is correct, the silicon-rich iron crystals mixing into the lower mantle and causing the ULVZs show that core material is indeed mixing into the mantle in those locations.  – Kim Krieger
+
+See: Suyu Fu1, 2, Stella Chariton3, Vitali B. Prakapenka3, Sang-Heon Shim2, “Core origin of seismic velocity anomalies at Earth’s core-mantle boundary,” Nature (February 15, 2023).
+
+Author affiliations: 1University of Tokyo; 2School of Earth and Space Exploration, Arizona State University; 3Center for Advanced Radiation Sources, University of Chicago
