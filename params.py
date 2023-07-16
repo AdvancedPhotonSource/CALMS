@@ -9,7 +9,7 @@ model_name = "lmsys/vicuna-13b-v1.3"
 tokenizer_path = "./tokenizer/"
 
 chunk_size = 384 #Size of chunks to break the text store into
-chunk_overlap = 32 #How much overlap between chunks
+chunk_overlap = 64 #How much overlap between chunks
 seq_length = 2048 #LLM sequence length (Vicuna max is 2048)
 
 #Which embedding model to use?
