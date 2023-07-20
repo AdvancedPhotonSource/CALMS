@@ -36,7 +36,7 @@ def init_llm(params):
     if os.path.isdir(params.tokenizer_path):
         tokenizer = AutoTokenizer.from_pretrained(params.tokenizer_path)
     else:
-        tokenizer = AutoTokenizer.from_pretrained("model_name")
+        tokenizer = AutoTokenizer.from_pretrained(params.model_name)
         os.mkdir(params.tokenizer_path)
         tokenizer.save_pretrained(params.tokenizer_path)
 
