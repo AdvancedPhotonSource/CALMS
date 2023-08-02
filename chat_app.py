@@ -13,8 +13,6 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.document_loaders import OnlinePDFLoader
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.chains import RetrievalQA
 import gradio as gr
 import time, shutil
 
@@ -25,7 +23,8 @@ print("Using %d GPUs" %torch.cuda.device_count())
 
 #Cleanups
 gr.close_all() #Close any existing open ports
-shutil.rmtree("embeds/pdf")
+if os.path.exists(params.pdf_path):
+    shutil.rmtree(params.pdf_path) 
 
 """
 ===========================
@@ -144,7 +143,7 @@ AI:"""
         #Get context strings
         context=""
         print ("Context hits found", len(docs))
-        for i in range(max(params.N_hits, len(docs))):
+        for i in range(min(params.N_hits, len(docs))):
             context += docs[i][0].page_content +"\n"
             print (i+1, docs[i][0].page_content)
         return context
@@ -188,7 +187,7 @@ class PDFChat(Chat):
                                                            chunk_overlap=params.chunk_overlap)
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
-        embed_path = 'embeds/pdf'
+        embed_path = params.pdf_path
         db = Chroma.from_documents(all_pdfs, self.embedding, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
             persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
         db.persist()

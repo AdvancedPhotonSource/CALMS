@@ -20,4 +20,6 @@ overwrite_embeddings = True #Overwrite embeddings if already exist? -- will rais
 N_hits = 3 #How many hits of context to provide?
 
 #List of folders to add to doc store
-doc_paths = ["DOC_STORE/APS-Science-Highlight", "DOC_STORE/APS-Docs"] 
+doc_paths = ["DOC_STORE/APS-Science-Highlight", "DOC_STORE/APS-Docs"]
+#Embedding paths
+pdf_path = 'embeds/pdf'
