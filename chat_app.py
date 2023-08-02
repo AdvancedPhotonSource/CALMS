@@ -22,8 +22,10 @@ import time, shutil
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device:", device)
 print("Using %d GPUs" %torch.cuda.device_count())
-gr.close_all() #Close any existing open ports
 
+#Cleanups
+gr.close_all() #Close any existing open ports
+shutil.rmtree("embeds/pdf")
 
 """
 ===========================
@@ -141,7 +143,8 @@ AI:"""
         docs = doc_store.similarity_search_with_score(query, k=params.N_hits)
         #Get context strings
         context=""
-        for i in range(params.N_hits):
+        print ("Context hits found", len(docs))
+        for i in range(max(params.N_hits, len(docs))):
             context += docs[i][0].page_content +"\n"
             print (i+1, docs[i][0].page_content)
         return context
