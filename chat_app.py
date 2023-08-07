@@ -84,7 +84,7 @@ def init_aps_qa(embeddings, params):
                 all_texts += texts
 
         docsearch = Chroma.from_texts(
-            all_texts, embeddings, metadatas=[{"source": str(i)} for i in range(len(all_texts))],
+            all_texts, embeddings, #metadatas=[{"source": str(i)} for i in range(len(all_texts))],
             persist_directory=embed_path
         )
         docsearch.persist()
@@ -188,7 +188,7 @@ class PDFChat(Chat):
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
         embed_path = params.pdf_path
-        db = Chroma.from_documents(all_pdfs, self.embedding, metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
+        db = Chroma.from_documents(all_pdfs, self.embedding, #metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
             persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
         db.persist()
 
