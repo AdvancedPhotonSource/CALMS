@@ -215,6 +215,7 @@ class ToolChat(Chat):
                                        agent='conversational-react-description', 
                                        verbose=True, 
                                        handle_parsing_errors=True,
+                                       max_iterations=5,
                                        memory=memory)
         return memory, conversation
     
