@@ -12,9 +12,12 @@ from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.embeddings import HuggingFaceEmbeddings 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
+from langchain.agents import Tool, AgentType, initialize_agent
+from langchain.chains import LLMMathChain
 from langchain.document_loaders import OnlinePDFLoader
 import gradio as gr
 import time, shutil
+
 
 #Load embedding model and use that to embed text from source
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -195,6 +198,49 @@ class PDFChat(Chat):
         self.doc_store = db
 
         return "PDF Ready"
+    
+
+class ToolChat(Chat):
+    def _init_chain(self):
+        llm_math = LLMMathChain(llm=llm)
+        tools = [
+            Tool(name='Calculator',
+                 func=llm_math.run,
+                 description='Useful for when you need to answer questions about math.')
+        ]
+
+        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
+        conversation = initialize_agent(tools, 
+                                       self.llm, 
+                                       agent='conversational-react-description', 
+                                       verbose=True, 
+                                       handle_parsing_errors=True,
+                                       memory=memory)
+        return memory, conversation
+    
+    def generate_response(self, history, debug_output):
+        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+
+        if debug_output:
+            inputs = self.conversation.prep_inputs({'input': user_message})
+            prompt = self.conversation.prep_prompts([inputs])[0][0].text
+
+        print(f'User input: {user_message}')
+        bot_message = self.conversation.run(user_message)
+        print(bot_message)
+        #Pass user message and get context and pass to model
+        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+        if debug_output:
+            bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
+
+        for character in bot_message:
+            history[-1][1] += character
+            time.sleep(0.02)
+            yield history
+
+
+
 
 
 """
@@ -300,6 +346,22 @@ def main_interface(params, llm, embeddings):
                 chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
             )
             clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
+        
+        with gr.Tab("Tool Agent"):
+            chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
+
+            tool_qa = ToolChat(llm, embeddings, None)
+
+            #Pass an empty string to context when don't want domain specific context
+            msg.submit(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                tool_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+            )
+            submit_btn.click(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                tool_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+            )
+        
+            clear.click(lambda: tool_qa.memory.clear(), None, chatbot, queue=False)
+
     
         with gr.Tab("Tips & Tricks"):
             gr.Markdown("""
