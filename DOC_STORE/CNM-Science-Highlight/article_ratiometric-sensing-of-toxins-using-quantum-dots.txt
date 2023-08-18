@@ -1,0 +1,27 @@
+Ratiometric Sensing of Toxins using Quantum Dots
+
+December 4, 2015
+
+Fluorescence resonance energy transfer (FRET)-based toxin sensor components. Gray/purple = ribbon/space-fill diagram of botulinum neurotoxin. Dashed lines show binding locations for labeled antibody fragments sBOT1/QD (quantum dot) donors and BOT2/dye acceptors. (right) Photoluminescence spectra vs BoNT relay assay sensitivity demonstrating the radiometric sensing.
+
+Botulinum neurotoxin (BoNT) presents a significant hazard under numerous realistic scenarios. BoNT is the most toxic substance known. Current tests for BoNT are slow (2 days), lab-based, and complex. A new scheme offers quick, specific quantification by non-specialized personnel such as first responders in the field.
+
+The standard detection scheme for this fast-acting toxin is a lab-based mouse lethality assay that is sensitive and specific, but slow (∼2 days) and requires expert administration. As such, numerous efforts have aimed to decrease analysis time and reduce complexity. Here Center for Nanoscale Materials (CNM) users from Argonne’s Biosciences and Global Security Sciences divisions, Northwestern University, and University of Wisconsin at Madison, working with the CNM Nanophotonics and Nanobio Interfaces Groups, describe a sensitive ratiometric fluorescence resonance energy transfer scheme that utilizes photostable semiconductor quantum dot (QD) energy donors and chromophore conjugation to compact, single chain variable antibody fragments (scFvs) to yield a fast, fieldable sensor for BoNT with a 20–40 pM detection limit, toxin quantification, adjustable dynamic range, sensitivity in the presence of interferents, and sensing times as fast as 5 min. Through a combination of mutations, stabilized scFv denaturation temperatures of more than 60°C were achieved, which bolsters fieldability. Adaptation of the assay into a microarray format that offers persistent monitoring, reuse, and multiplexing also is described in the study.
+
+Compact antibody fragments were produced to provide thermal stability and controlled chromophore conjugation. CNM capabilities included time-resolved emission spectroscopy and nanocrystal synthesis of CdSe/ZnS core/shell quantum dots. The detection is enabled by the ratio of two fluorescence bands.
+
+J. Lee et al., ​“Fast, Ratiometric FRET from Quantum Dot Conjugated Stabilized Single Chain Variable Fragments for Quantitative Botulinum Neurotoxin Sensing,” Nano Lett., 2015, 15, 7161; DOI: 10.1021/acs.nanolett.5b03442
+
+Tags:
+
+Chemistry,
+
+                                               Physical Chemistry,
+
+                                               Materials Science and Engineering,
+
+                                               Nanoscience and Nanotechnology,
+
+                                               Physics,
+
+                                               Condensed Matter Physics

@@ -1,0 +1,39 @@
+New Automated Framework for Image Simulation
+
+June 22, 2022
+
+In a report published in Small, researchers introduce ​“ingrained”, an automated framework for the fusion of atomic-resolution materials imaging simulations into the experimental images to which they correspond.
+
+Series of panels providing an overview of the “ingrained” framework applied to an experimental interface image.
+
+Scientific Achievement
+
+An open-source automated framework (“ingrained”) has been developed for image registration that can fuse simulations of atomic resolution images of materials into the experimental images to which they correspond.
+
+Significance and Impact
+
+Scientists will be able to fully leverage the power of image simulation to corroborate and explain patterns and structures in atomic resolution microscopy.
+
+Research Details
+
+•The researchers demonstrated the ingrained capability with images of grain boundaries in CdTe, a pristine Cu2O surface, and the surface of a 2D material.
+
+•Calculations were primarily performed with the resources of the Laboratory Computing Resource Center at Argonne and the National Energy Research Scientific Computing Center.
+
+DOI: https://​doi​.org/​1​0​.​1​0​0​2​/​s​m​l​l​.​2​0​2​1​02960
+
+Download this highlight
+
+Work was performed in part at the Center for Nanoscale Materials
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Computational Science,
+
+                                               Machine Learning,
+
+                                               Nanoscience and Nanotechnology

@@ -1,0 +1,41 @@
+Near-IR stimulated emission from carbon nanotubes
+
+September 19, 2022
+
+In a report published in ACS Nano, researchers demonstrate a near-infrared nanolaser using a polymer microsphere as the microcavity and semiconducting single-walled carbon nanotubes as the gain material.
+
+(a) Illustration of the nanolaser: SWCNTs coupled to a polymer microsphere. (b) Whispering gallery modes supported by the polymer microcavity. (c) Emission from the gain material, SWCNTs. (d) Sketch of integrating gain to a polymer microcavity using a swelling-deswelling process. (e) Lasing from the nanolasers spanning a wide near-IR wavelength range.
+
+Scientific Achievement
+
+The first observation of lasing action from semiconducting carbon nanotubes (SWCNTs) was demonstrated by using a unique microcavity-emitter configuration.
+
+Significance and Impact
+
+This work has profound impact towards the development of compact, coherent light sources operating in the near-IR wavelength range that are critically needed in telecommunication, interconnects, and bio-imaging areas.
+
+Research Details
+
+A semiconductor nanolaser was developed using a polymer microsphere as the microcavity and semiconducting single-walled carbon nanotubes as the gain material.
+
+Room temperature near-IR lasing from the nanolasers was demonstrated and the lasing threshold was lowered by modifying the electronic structures of the gain through chemical modification.
+
+ 
+
+Work was performed, in part, at the Center for Nanoscale Materials (CNM).
+
+DOI: 10.1021/acsnano.2c06419
+
+Download this highlight
+
+ 
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               Quantum Information Science

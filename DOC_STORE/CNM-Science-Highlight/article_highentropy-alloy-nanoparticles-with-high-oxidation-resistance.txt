@@ -1,0 +1,49 @@
+High-entropy alloy nanoparticles with high oxidation resistance
+
+January 11, 2021
+
+In a study published in ACS Nano, researchers discovered far-reaching applications of nanoparticles made of multiple elements.
+
+Schematic of in situ gas cell TEM to study oxidation of HEA nanoparticles in real-time.
+
+Scientific Achievement
+
+High-entropy alloy (HEA) nanoparticles (FeCoNiCuPt) show significantly slower oxidation kinetics compared to monometallic and bimetallic nanoparticles due to the formation of a disordered oxide.
+
+Significance and Impact
+
+This study contributes understanding toward the design of stable metal catalysts and demonstrates the advantages of using an in situ TEM gas cell for nanodynamics studies. 
+
+Research Details
+
+During oxidation, co-segregation of metals form a disordered oxide layer that can slow oxidation kinetics compared to monometallic and bimetallic systems. Localized ordering is identified in the oxide layer that originate from Fe2O3, CoO, NiO and CuO crystallites.
+
+The JEOL-JEM 2100 electron microscope and Hummingbird in situ gas-cell TEM holder was utilized at the Center for Nanoscale Materials (CNM).
+
+Work was performed in part at CNM.
+
+DOI: 10.1021/acsnano.0c05250
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               high-entropy alloys,
+
+                                               nanoparticles,
+
+                                               oxidation,
+
+                                               phase segregation,
+
+                                               Transmission electron microscopy

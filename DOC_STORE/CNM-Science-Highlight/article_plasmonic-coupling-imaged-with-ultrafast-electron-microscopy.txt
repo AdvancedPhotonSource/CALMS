@@ -1,0 +1,51 @@
+Plasmonic coupling imaged with ultrafast electron microscopy
+
+July 9, 2021
+
+In a study published in Nano Letters, researchers used ultrafast electron microscopy to probe material dynamics at the nanoscale.
+
+Schematic of photon-induced near-field electron microscopy (PINEM) in UEM. The fundamental output from a femtosecond laser is split into two beams. One is used to excite the cathode to create electron photoemission, which is critical to working as a UEM. The other is used to photo-excite the sample.
+
+Scientific Achievement
+
+Ultrafast electron microscopy (UEM) was used to image local plasmonic coupling between single gold nanocapsules and graphene step edges at the nanometer scale.
+
+Significance and Impact
+
+An understanding of the plasmonic coupling mechanism in these hybrid systems is of vital importance to their applications for optoelectronics, surface enhanced scattering, biosensing and quantum information.
+
+Research Details
+
+Experiments were carried out on the newly established UEM at the Center for Nanoscale Materials (CNM).
+
+Results indicate the proximity of a step in the graphene to the nanocapsule causes asymmetric surface charge density at the ends of the nanocapsules.
+
+Work was performed in part at the CNM.
+
+DOI: 10.1021/acs.nanolett.1c01824
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               gold nanocapsule,
+
+                                               graphene,
+
+                                               photon-induced near-field electron microscopy,
+
+                                               plasmonic coupling,
+
+                                               quantum information,
+
+                                               Ultrafast electron microscopy

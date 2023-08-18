@@ -1,0 +1,27 @@
+Graphene Growth on Silver
+
+January 1, 2014
+
+Users from Northwestern University, working with the Center for Nanoscale Materials EMMD Group, have demonstrated the first growth of graphene on a silver substrate. 
+
+Unique wave-like electron scattering at the edges of the dendritic graphene also was observed for the first time. This behavior is consistent with an electronic structure that is not perturbed by the underlying silver, providing a new system in which graphene is decoupled from its substrate. Because the graphene is electronically decoupled from the silver substrate, the intrinsic properties of graphene can be studied directly. This new growth method may enable improved interfacing of graphene with other two-dimensional materials — a vital step for the development of graphene-based circuits and other technologies.
+
+Graphene, a one-atom-thick carbon layer with extraordinary conductivity and strength, holds promise for a range of applications. However, current methods for growing graphene on metals have been unsuccessful with silver. While graphene is conventionally grown on a metal surface by catalytically decomposing hydrocarbons at elevated temperatures, this method is ineffective for silver substrates because the substrates are chemically inert and have a relatively low melting point. Using a graphite carbon source, the team was able to grow graphene by depositing atomic carbon, rather than a carbon-based molecular precursor, onto the substrate. The growth circumvented the need for a chemically active surface and allowed the graphene growth at lower temperatures.
+
+The researchers also found the graphene they grew was electronically decoupled from the underlying silver substrate, allowing the intrinsic properties of graphene to be studied and exploited directly on the growth substrate; this characteristic has not been previously observed with graphene grown on other metals. The researchers observed unique wave-like electron scattering at the edges of the graphene that had previously been observed only on insulating substrates.
+
+Scanning tunneling microscopy (STM) was performed at CNM using an Omicron VT system with electrochemically etched tungsten tips at 55K. Scanning tunneling spectroscopy (STS) was simultaneously collected via periodic modulation to the applied voltage.  Raman spectroscopy was taken with a Renishaw InVia Raman Microscope using a 514-nm laser line. Growing graphene on silver under ultrahigh-vacuum conditions could result in exceptionally pure samples that may present opportunities for ultrafast electronics and advanced optics.
+
+B. Kiraly et al., ​“Solid-source growth and atomic-scale characterization of graphene on Ag(111),” Nat. Comm., 4, 2804 (2013).
+
+Tags:
+
+Materials Science and Engineering,
+
+                                               Nanomaterials,
+
+                                               Nanoscience and Nanotechnology,
+
+                                               Nanofabrication,
+
+                                               graphene

@@ -1,0 +1,45 @@
+Visualizing anisotropic oxygen diffusion in ceria
+
+October 15, 2020
+
+In a study published in Physical Review Letters, researchers investigate materials used for fuel cell catalysis.
+
+Serial aberration-corrected high-resolution TEM images of the (001), (110) and (111) CeO2 surfaces under reduction. A reactive oxygen atom and its real-time diffusion were directly visualized using chromatic aberration-corrected TEM.
+
+Scientific Achievement
+
+Anisotropic oxygen atom diffusion was visualized in ceria under activated conditions; the diffusion was dependent upon crystal orientation, demonstrating a preferential [001] diffusion pathway.
+
+Significance and Impact
+
+Oxygen reactivity plays a key role in the performance of ceria-based catalysts of interest for photocatalytic water splitting for hydrogen production and solid-oxide fuel cells for energy storage.
+
+Research Details
+
+The interplay between Ce and O atoms originates from Coulombic interactions as revealed by the out-of-plane buckling of cerium atoms associated with oxygen transport. 
+
+Center for Nanoscale Materials (CNM) electron microscopy capabilities included the Argonne Chromatic Aberration-corrected TEM (ACAT) and Talos TEM. 
+
+Work was performed in part at CNM.
+
+DOI: 10.1103/PhysRevLett.124.056002
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               Coulomb interaction,
+
+                                               oxygen atom diffusion,
+
+                                               Transmission electron microscopy
