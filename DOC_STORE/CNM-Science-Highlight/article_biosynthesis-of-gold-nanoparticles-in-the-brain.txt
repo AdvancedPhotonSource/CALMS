@@ -1,0 +1,51 @@
+Biosynthesis of gold nanoparticles in the brain
+
+November 11, 2019
+
+In a study published in Nanoscale, researchers demonstrated that the pathological biochemical process leading to brain hypoxia, and then to stroke, can be redirected, thereby restoring the redox status of the brain.
+
+(a) Reaction scheme depicting the transformation of AuCl3 into Au0 NPs by NADH. Rib-ADP stands for the adenosine diphosphate-ribose moiety. (b) Evolution of the UV-vis spectra of NADH upon addition of AuCl3. The molar ratios of AuCl3 to NADH were 1 : 4, 1 : 2 and 3 : 2 upon first, second and third introductions of AuCl3 solution into 100 μM NADH solution, respectively. After addition of 25, 50 and 75 μM AuCl3 aliquots, the reaction was allowed for 40, 20 and 20 min, and monitored by recording of 11 UV-vis spectra. The inset in (b) shows the cuvette with the synthesized Au NPs.
+
+Scientific Achievement
+
+The pathological biochemical process leading to brain hypoxia, and then to stroke, was redirected to the in situ synthesis of biocompatible Au nanoparticles (NPs) near the hypoxia site, restoring the brain tissue redox status.
+
+Significance and Impact
+
+The proposed approach can be implemented not only in the brain but also in transplant tissues and other organs vulnerable to oxygen deficiency (e.g., heart, liver, kidney). We note the 2019 Nobel Prize in physiology and medicine was awarded for discoveries of how cells sense and adapt to oxygen availability.
+
+Research Details
+
+Synthesis of Au NP control samples and UV-visible spectroscopy and transmission electron microscopy of extracted gold (Au) NPs from tissue samples were performed at the Center for Nanoscale Materials (CNM).
+
+X-ray scattering measurements were performed at the Advanced Photon Source (APS).
+
+Work was performed in part at CNM and APS.
+
+DOI: 10.1039/c9nr05794c
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+About the Advanced Photon Source
+
+The U. S. Department of Energy Office of Science’s Advanced Photon Source (APS) at Argonne National Laboratory is one of the world’s most productive X-ray light source facilities. The APS provides high-brightness X-ray beams to a diverse community of researchers in materials science, chemistry, condensed matter physics, the life and environmental sciences, and applied research. These X-rays are ideally suited for explorations of materials and biological structures; elemental distribution; chemical, magnetic, electronic states; and a wide range of technologically important engineering systems from batteries to fuel injector sprays, all of which are the foundations of our nation’s economic, technological, and physical well-being. Each year, more than 5,000 researchers use the APS to produce over 2,000 publications detailing impactful discoveries, and solve more vital biological protein structures than users of any other X-ray light source research facility. APS scientists and engineers innovate technology that is at the heart of advancing accelerator and light-source operations. This includes the insertion devices that produce extreme-brightness X-rays prized by researchers, lenses that focus the X-rays down to a few nanometers, instrumentation that maximizes the way the X-rays interact with samples being studied, and software that gathers and manages the massive quantity of data resulting from discovery research at the APS.
+
+This research used resources of the Advanced Photon Source, a U.S. DOE Office of Science User Facility operated for the DOE Office of Science by Argonne National Laboratory under Contract No. DE-AC02-06CH11357.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               hypoxia-induced biosynthesis,
+
+                                               nanoparticles,
+
+                                               pathological biochemical process

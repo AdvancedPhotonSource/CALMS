@@ -1,0 +1,27 @@
+Photo-Initiated Charge Separation in Nanobiohybrid Complex
+
+September 19, 2014
+
+Interface details for a self-assembled peptide/Zn-porphyrin/TiO₂ array
+
+In natural systems, electron flow is mediated by proteins that spatially organize donor and acceptor molecules with great precision. Achieving this guided, directional flow of information is a desirable feature in photovoltaic media. Researchers in the Nanobio Interfaces Group at the Center for Nanoscale Materials have designed self-assembled peptide materials that organize multiple electronic components capable of performing photo-induced charge separation.
+
+This is the first example of a complex peptide assembled from simple starting precursors to yield an organized, and functional, dye-sensitized semiconducting material. Peptides that self-assemble into fibers provide a scaffold to bind a Zn metalloporphyrin (ZnP) and to mineralize titania (TiO2). Charge separation induced by excitation of the ZnP was mediated by the peptide assembly structure. The degree of charge separation can be exquisitely controlled through variations in the peptide sequence.
+
+Two peptides, c16-AHL3K3-CO2H and c16-AHL3K9-CO2H, self-assemble into fibres and provide a scaffold capable of binding a metalloporphyrin via histidine axial ligation and mineralize TiO2 on the lysine-rich surface of the resulting fibrous structures. Electron paramagnetic resonance studies of this self-assembled material under continuous light excitation demonstrate charge separation induced by excitation of the metalloporphyrin and mediated by the peptide assembly structure. This approach to dye-sensitized semiconducting materials offers a means to spatially control the dye molecule with respect to the semiconducting material through careful, strategic peptide design. This is the first example of a complex peptide material assembled from simple starting precursors to yield an organized, and functional, dye-sensitized semiconducting material.
+
+H. C. Fry, Y. Liu, N. M. Dimitrijevic, and T. Rajh, ​“Photoinitated charge separation in a hybrid titanium dioxide metalloporphyrin peptide material,” Nature Comm., 5, 4606 (2014)
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               Materials Science and Engineering,
+
+                                               Nanomaterials,
+
+                                               Mechanical Engineering,
+
+                                               Chemistry,
+
+                                               Biochemistry

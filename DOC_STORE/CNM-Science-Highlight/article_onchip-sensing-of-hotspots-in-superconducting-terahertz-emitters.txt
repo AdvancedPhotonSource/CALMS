@@ -1,0 +1,51 @@
+On-chip sensing of hotspots in superconducting terahertz emitters
+
+June 8, 2020
+
+In a study published in Nano Letters, researchers developed a novel sensing technique that opens doors for superconducting devices for quantum information science. 
+
+Upper panel: Scanning electron microscope image of a stand-alone three-terminal superconducting terahertz emitter with five micro-nano-sized sensors located along one side of the top electrode. Lower panel: Three-dimensional structure of the emitter and sensors. The dimensions of the emitter is 300um x 50um x 1um and the dimensions of the sensors is 5um x 5um x 30nm. By measuring the critical current through the micro-sensors at different applied current of the emitter, accurate temperature distributions can be obtained.
+
+Scientific Achievement
+
+A novel technique is developed to characterize, on-chip and in-situ, the non-uniform temperature distributions on high-Tc superconductor BSCCO for achieving coherent THz photon emission.
+
+Significance and Impact
+
+This intrinsic Josephson junction sensor array provides a new element in next-generation terahertz circuits and opens a new route towards high-quality nonlinear superconducting devices for quantum information science.
+
+Research Details
+
+A micro-nanosized intrinsic Josephson-junction sensor array was fabricated on BSCCO.
+
+Temperature distribution was determined by measuring the critical current of each junction stack.
+
+Cleanroom and low-temperature facilities at the Center for Nanoscale Materials (CNM) were used for this work. 
+
+Work was performed in part at CNM.
+
+DOI: 10.1021/acs.nanolett.0c00551
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               Josephson junction,
+
+                                               quantum,
+
+                                               Quantum Information Science,
+
+                                               superconductor,
+
+                                               terahertz emitters

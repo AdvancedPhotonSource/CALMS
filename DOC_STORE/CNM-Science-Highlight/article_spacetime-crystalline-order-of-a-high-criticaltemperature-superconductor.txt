@@ -1,0 +1,33 @@
+Space-Time Crystalline Order of a High Critical-Temperature Superconductor
+
+October 15, 2021
+
+In a study published in Nature Communications, researchers theoretically demonstrate formation of space-time crystals in a high-critical temperature superconductor due to its ability to intrinsically form Josephson junction analogs.
+
+Space and time dependence of the current-current correlation in superconductor BSCCO under a periodic parametric modulation of the critical current density. The system shows a coupled spatiotemporal order. The inset shows the proposed experimental scheme with infrared laser irradiation.
+
+Scientific Achievement
+
+We theoretically demonstrated that the high-Tc superconductor BSCCO can form a discrete space-time crystal (STC). This work shows that an STC can form in a naturally occurring condensed-matter material, due to the ability of BSCCO to intrinsically form Josephson junction analogs.
+
+Significance and Impact
+
+STCs are nonequilibrium phases of matter with orders in both space and time. They may have novel applications, including as tunable emitters, for parametric generation at THz frequencies, and as novel materials for QIS.
+
+Research Details
+
+The Josephson currents develop coupled space-time crystalline order under periodic modulation of critical current density.
+
+A rigid pattern formed within a particular region in the modulation frequency and amplitude phase diagram for a so-defined spatiotemporal order parameter.
+
+A laser-modulation experiment was proposed to realize the predicted space-time crystalline behavior.
+
+Work was performed in part at CNM.
+
+DOI: 10.1038/s41467-021-26132-y
+
+Download this highlight
+
+Tags:
+
+Nanoscience and Nanotechnology

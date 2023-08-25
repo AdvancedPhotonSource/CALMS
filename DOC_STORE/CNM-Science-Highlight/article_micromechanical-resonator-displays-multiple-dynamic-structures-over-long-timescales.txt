@@ -1,0 +1,37 @@
+Micromechanical resonator displays multiple dynamic structures over long timescales
+
+March 31, 2023
+
+In a report published in Nature Communications, researchers describe a micromechanical resonator for which the response exhibits several complex long-term robust dynamic structures, even though the resonator is driven by a single harmonic drive.
+
+(Left) Simulated in-plane flexural (top) and torsional (bottom) modes of the resonator. (Right: a-c) Resonator dynamics on three timescales of the flexural mode. Red arrows indicate how the data is displayed at shorter and shorter time scales for subsequent plots.
+
+Scientific Achievement
+
+A micromechanical resonator (3 μm×10 μm×500 μm) was built. It consists of a mechanically tethered single-crystal silicon beam. The resonator response exhibits three distinct timescales that span five orders of magnitude larger than the forcing period.
+
+Significance and Impact
+
+This approach has applications in nonlinear robust dynamics related to secure communications, gait control of legged robots, lasers, cardiac response, and brain monitoring.
+
+Research Details
+
+A theoretical representation of the micromechanical resonator response accurately predicts the nonlinear dynamics. It allows one to suggest the magnitude and timing of pulses needed to control the selection of robust dynamic structures.
+
+Work was performed in part at the Center for Nanoscale Materials.
+
+DOI: 10.1038/s41467-022-35685-5
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology

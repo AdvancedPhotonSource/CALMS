@@ -1,0 +1,37 @@
+User friendly Elastemp computes temperature dependence for elasticity of materials
+
+July 13, 2023
+
+In a Computational Materials Science paper, scientists describe an automated workflow, Elastemp, to predict the temperature dependence of the thermal expansion coefficients and elastic constants for materials.
+
+Workflow to compute elasticity of material. Three major modules involve computation of elastic constants (𝐶11,𝐶12,𝐶44) at 0 K, then thermal expansion coefficients and elastic constants at temperatures up to 1000 K.
+
+Scientific Achievement
+
+A key property to know in developing new materials is their stiffness or elasticity at different temperatures. An automated workflow, Elastemp, was created to calculate the temperature dependence of the thermal expansion coefficients and elastic constants for materials.
+
+Significance and Impact
+
+Elasticity is one the properties often chosen in evaluating the suitability of materials for various applications such as tribology, energy storage, flexible electronics, and superhard materials.
+
+Research Details
+
+Experimental data agreed well with representative calculations using Elastemp for materials with different crystal symmetries (e.g., cubic aluminum, cubic diamond, cubic titanium nitride, and hexagonal 𝛼-titanium) as a function of temperature.
+
+DOI: 10.1016/j.commatsci.2023.112223
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Computational Science,
+
+                                               Nanoscience and Nanotechnology

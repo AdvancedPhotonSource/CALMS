@@ -1,0 +1,49 @@
+Microfluidic neurotransmitter-sensing probes
+
+June 9, 2021
+
+In a study published in Sensors and Actuators B: Chemical, researchers developed a device that can sense neurotransmitters in the brain.
+
+General design of the brain-implant probe.
+
+Scientific Achievement
+
+A microfluidic device was developed capable of simultaneous sensing of glutamate (GLU) and gamma-aminobutyric acid (GABA) in vivo, at faster (sub-second vs minutes) times, and higher accuracy (26x higher for GABA and 4x higher for GLU) than existing methods.
+
+Significance and Impact
+
+Allows brain-implant investigation of neurobiological mechanisms and disease symptoms of various brain disorders.
+
+Research Details
+
+Specific enzymes micro-spotted onto electrodes decompose GLU and GABA generating H2O2, which is detected amperometrically.
+
+A microchannel allows injecting calibration fluid or drugs.
+
+Center for Nanoscale Materials (CNM) cleanroom capabilities: MLA laserwriter, MA6 mask aligner, Oxford 100 ICP-RIE, March REI, XeF2 etcher, SEM, AJA sputtering system, profilometers, optical microscopes and AFM.
+
+Work was performed in part at CNM.
+
+DOI: 10.1016/j.snb.2021.129795
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               gamma-aminobutyric acid,
+
+                                               glutamate,
+
+                                               neurotransmitter,
+
+                                               ultramicroelectrode
