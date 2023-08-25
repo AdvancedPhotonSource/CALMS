@@ -27,7 +27,7 @@ def download(link):
     response = requests.get(link)
     page = BeautifulSoup(response.content, 'html.parser')
     content = page.find('main', class_='l-main--grid')
-    return response, page, content#.text
+    return response, page, content
 
 
 def strip_acknowledgement(text):
