@@ -1,0 +1,3191 @@
+url: https://docs.alcf.anl.gov/ai-testbed/
+title: ALCF User Guides
+accessed: 2023-08-25
+
+
+
+|- # ALCF AI Testbed
+
+
+
+  <image home-cerebras-sambanova.png: Cerebras and SambaNova detail photos>
+
+The ALCF AI Testbed (https://www.alcf.anl.gov/alcf-ai-testbed) houses some of the most advanced AI accelerators for scientific research.
+
+The goal of the testbed is to enable explorations into next-generation machine learning applications and workloads, enabling the ALCF and its user community to help define the role of AI accelerators in scientific computing and how to best integrate such technologies with supercomputing resources.
+
+The AI accelerators complement the ALCF's current and next-generation supercomputers to provide a state-of-the-art computing environment that supports pioneering research at the intersection of AI, big data, and high performance computing (HPC).
+
+The platforms are equipped with architectural features that support AI and data-centric workloads, making them well suited for research tasks involving the growing deluge of scientific data produced by powerful tools, such as supercomputers, light sources, telescopes, particle accelerators, and sensors. In addition, the testbed will allow researchers to explore novel workflows that combine AI methods with simulation and experimental science to accelerate the pace of discovery.
+
+
+|- ## How to Get Access
+
+Researchers interested in using the AI Testbed’s Cerebras CS-2 and SambaNova DataScale platforms can now submit project proposals via the ALCF’s Director’s Discretionary program (https://www.alcf.anl.gov/science/directors-discretionary-allocation-program). Access to additional testbed resources, including Graphcore, Groq, and Habana accelerators, will be announced at a later date.
+
+Submit your proposal requests at: Allocation Request Page (https://accounts.alcf.anl.gov/allocationRequests)
+
+
+|- ## Getting Started
+
+1. Request a Director's Discretionary project on SambaNova/Cerebras.
+2. Apply for an ALCF account after the project request is approved. Choose the SambaNova/Cerebras project that your PI has created at ALCF. If you have an active ALCF account, request to join the project after your project is approved.
+ (https://accounts.alcf.anl.gov/joinProject)
+3. Transfer data to ALCF using Globus after your account has been created.
+a. The endpoint for your data in ALCF is alcf#ai_testbed_projects with the path to your project being  /<project name>. 
+b. The endpoint for your home directory on the AI Testbeds in ALCF is alcf#ai_testbed_home.
+4. Add/invite team members to your ALCF project on SambaNova/Cerebras.
+
+
+|- ## How to Contribute to Documentation
+
+The documentation is based on MkDocs (https://www.mkdocs.org/) and source files are
+on GitHub (https://github.com/argonne-lcf/ai-testbed-userdocs). You can contribute to the documentation by creating a pull request.
+
+Learn more on how to contribute to documentation. (https://github.com/argonne-lcf/user-guides/blob/main/README.md)
+
+
+|- # System Overview
+
+The Cerebras CS-2 is a wafer-scale deep learning accelerator comprising 850,000 processing cores, each providing 48KB of dedicated SRAM memory for an on-chip total of 40GB and interconnected to optimize bandwidth and latency. Its software platform integrates popular machine learning frameworks such as TensorFlow and PyTorch.
+
+The ALCF CS-2 systems are configured as a Cerebras Wafer-Scale Cluster, designed to support large-scale models (up to and well beyond 1 billion parameters) and large-scale inputs. The cluster contains two CS-2 systems and can distribute jobs across one or both CS-2 systems in a data-parallel framework. The supporting CPU cluster consists of MemoryX, SwarmX, management, and input worker nodes. The Cerebras Wafer-Scale cluster is run as an appliance: a user submits a job to the appliance, and the appliance manages preprocessing and streaming of the data, IO, and device orchestration within the appliance. It provides programming via PyTorch and TensorFlow(estimator) with data-parallel distribution when using more than one CS-2. This installation supports both Pipelined execution for models up to 1 billion parameters and Weight Streaming execution for models up to and above 1 billion parameters.
+
+The public Cerebras documentation is available here (https://docs.cerebras.net/en/latest/index.html).
+
+A typical Cerebras Wafer-Scale Cluster is shown in the figure.
+Users connect (ssh) to one of the three login nodes. Either ssh to cerebras.ai.alcf.anl.gov, which randomly resolves to one of cer-login-0[1-3].ai.alcf.anl.gov, or ssh to a specific node, cer-login-01.ai.alcf.anl.gov, cer-login-02.ai.alcf.anl.gov, cer-login-03.ai.alcf.anl.gov.
+The rest of the nodes in the cluster infrastructure are not directly accessible, except by admins.
+The trees /home, /projects, and /software are shared across all three login nodes, the relevant cluster infrastructure nodes, and all ALCF AI testbed platforms.
+
+
+
+  <image topology-of-weight-streaming-on-wsc.png: CS-2 cluster figure>
+
+(Figure from
+https://docs.cerebras.net/en/latest/wsc/cerebras-basics/how-cerebras-works.html)
+
+As indicated in the figures, the CS-2 nodes on the right are responsible only for running and accelerating the computations for training and predictions with the model. The other work, including compilation, is performed by input nodes, and by MemoryX nodes, which are used for weight storage and broadcast, and SwarmX nodes, which are used for gradient accumulation. Some model verification work can be done on login nodes.
+
+
+|- # Getting Started
+
+
+|- ## Connection to a CS-2 node
+
+Connection to one of the CS-2 cluster login nodes requires an MFA passcode for authentication - either an 8-digit passcode generated by an app on your mobile device (e.g. MobilePASS+) or a CRYPTOCard-generated passcode prefixed by a 4-digit pin. This is the same passcode used to authenticate into other ALCF systems, such as Theta and Cooley.
+In the examples below, replace ALCFUserID with your ALCF user id.
+To connect to a CS-2 login:
+
+  <image Cerebras_Wafer-Scale_Cluster_login_diagram.png: Cerebras Wafer-Scale Cluster connection diagram>
+
+1. ssh to a desired login node:
+    ssh ALCFUserID@cer-login-01.ai.alcf.anl.gov
+
+    or
+    ssh ALCFUserID@cer-login-02.ai.alcf.anl.gov
+
+    or
+    ssh ALCFUserID@cer-login-03.ai.alcf.anl.gov
+2. Alternatively, ssh randomly to one of the above three login nodes:
+    ssh ALCFUserID@cerebras.ai.alcf.anl.gov
+
+  ssh ALCFUserID@cer-login-01.ai.alcf.anl.gov
+
+  ssh ALCFUserID@cer-login-02.ai.alcf.anl.gov
+
+  ssh ALCFUserID@cer-login-03.ai.alcf.anl.gov
+
+  ssh ALCFUserID@cerebras.ai.alcf.anl.gov
+
+
+|- # Running a Model/Program
+
+
+|- ## Getting Started
+
+
+|- #### Job submission and queuing
+
+Cerebras jobs are initiated and tracked automatically within the Python frameworks in modelzoo.common.pytorch.run_utils and modelzoo.common.tf.run_utils. These frameworks interact with the Cerebras cluster management node.
+
+
+|- #### Login nodes
+
+Jobs are launched from login nodes.
+If you expect a loss of an internet connection for any reason, for long-running jobs we suggest logging into a specific login node and using either screen or tmux to create persistent command line sessions.  For details use:
+
+  man screen
+  # or
+  man tmux
+
+
+|- ## Running jobs on the wafer
+
+Follow these instructions to compile and train the fc_mnist TensorFlow and PyTorch samples. These models are a couple of fully connected layers plus dropout and RELU.
+
+
+|- ### Cerebras virtual environments
+
+First, make virtual environments for Cerebras for PyTorch and/or TensorFlow.
+See Customizing Environments (https://docs.alcf.anl.gov/ai-testbed/cerebras/customizing-environment/) for the procedures for making PyTorch and/or TensorFlow virtual environments for Cerebras.
+If the environments are made in ~/R_1.9.1/, then they would be activated as follows:
+
+
+|-- # Customizing Environments
+
+
+|-- ## Using virtual Python environments
+
+
+|-- #### To make a PyTorch virtual environment for Cerebras
+
+  #Make your home directory navigable
+  chmod a+xr ~/
+  mkdir ~/R_1.9.1
+  chmod a+x ~/R_1.9.1/
+  cd ~/R_1.9.1
+  # Note: "deactivate" does not actually work in scripts.
+  deactivate
+  rm -r venv_pt
+  /software/cerebras/python3.8/bin/python3.8 -m venv venv_pt
+  source venv_pt/bin/activate
+  pip3 install /opt/cerebras/wheels/cerebras_pytorch-1.9.1+1cf4d0632b-cp38-cp38-linux_x86_64.whl --find-links=/opt/cerebras/wheels
+  pip install numpy==1.23.4
+  pip install datasets transformers
+
+
+|-- #### To make a TensorFlow virtual environment for Cerebras
+
+  chmod a+xr ~/
+  mkdir ~/R_1.9.1
+  chmod a+x ~/R_1.9.1/
+  cd ~/R_1.9.1
+  # Note: "deactivate" does not actually work in scripts.
+  deactivate
+  rm -r venv_tf
+  /software/cerebras/python3.8/bin/python3.8 -m venv venv_tf
+  source venv_tf/bin/activate
+  #pip install tensorflow_datasets
+  #pip install spacy
+  pip3 install /opt/cerebras/wheels/cerebras_tensorflow-1.9.1+1cf4d0632b-cp38-cp38-linux_x86_64.whl --find-links=/opt/cerebras/wheels/
+  pip install numpy==1.23.4
+
+
+|-- #### Activation and deactivation
+
+To activate one of these virtual environments,
+
+  source ~/R_1.9.1/venv_pt/bin/activate
+
+or
+
+  source ~/R_1.9.1/venv_tf/bin/activate
+
+To deactivate a virtual environment,
+
+  deactivate
+
+  source ~/R_1.9.1/venv_pt/bin/activate
+
+  source ~/R_1.9.1/vent_tf/bin/activate
+
+
+|- ### Clone the Cerebras modelzoo
+
+  mkdir ~/R_1.9.1
+  cd ~/R_1.9.1
+  git clone https://github.com/Cerebras/modelzoo.git
+  cd modelzoo
+  git tag
+  git checkout Release_1.9.1
+
+
+|- ## Running a Pytorch sample
+
+
+|- ### Activate your PyTorch virtual environment, and change to the working directory
+
+  source ~/R_1.9.1/venv_pt/bin/activate
+  cd ~/R_1.9.1/modelzoo/modelzoo/fc_mnist/pytorch
+
+Next, edit configs/params.yaml, making the following changes:
+
+  train_input:
+  -    data_dir: "./data/mnist/train"
+  +    data_dir: "/software/cerebras/dataset/fc_mnist/data/mnist/train"
+
+and
+
+  eval_input:
+  -    data_dir: "./data/mnist/val"
+  +    data_dir: "/software/cerebras/dataset/fc_mnist/data/mnist/train"
+
+If you want to have the sample download the dataset, you will need to specify absolute paths for the "data_dir"s.
+
+
+|- ### Running a sample PyTorch training job
+
+To run the sample:
+
+  export MODEL_DIR=model_dir
+  # deletion of the model_dir is only needed if sample has been previously run
+  if [ -d "$MODEL_DIR" ]; then rm -Rf $MODEL_DIR; fi
+  python run.py CSX --job_labels name=pt_smoketest --params configs/params.yaml --num_csx=1 --mode train --model_dir $MODEL_DIR --mount_dirs /home/ /software --python_paths /home/$(whoami)/R_1.9.1/modelzoo --compile_dir /$(whoami) |& tee mytest.log
+
+A successful fc_mnist PyTorch training run should finish with output resembling the following:
+
+  2023-05-15 16:05:54,510 INFO:   | Train Device=xla:0, Step=9950, Loss=2.30234, Rate=157300.30 samples/sec, GlobalRate=26805.42 samples/sec
+  2023-05-15 16:05:54,571 INFO:   | Train Device=xla:0, Step=10000, Loss=2.29427, Rate=125599.14 samples/sec, GlobalRate=26905.42 samples/sec
+  2023-05-15 16:05:54,572 INFO:   Saving checkpoint at global step 10000
+  2023-05-15 16:05:59,734 INFO:   Saving step 10000 in dataloader checkpoint
+  2023-05-15 16:06:00,117 INFO:   Saved checkpoint at global step: 10000
+  2023-05-15 16:06:00,117 INFO:   Training Complete. Completed 1280000 sample(s) in 53.11996841430664 seconds.
+  2023-05-15 16:06:04,356 INFO:   Monitoring returned
+
+
+|- # Job Queuing and Submission
+
+The CS-2 cluster has its own Kubernetes-based system for job submission and queuing.
+
+Jobs are started automatically through the Python frameworks in modelzoo.common.pytorch.run_utils and modelzoo.common.tf.run_utils
+Continuous job status for a job is output to stdout/stderr; redirect the output, or consider using a persistent session started with screen, or tmux, or both.
+
+Jobs that have not yet completed can be listed as shown. Note: this command can take over a minute to complete.
+
+  (venv_pt) $ csctl get jobs
+  NAME                          AGE  DURATION  PHASE    SYSTEMS     USER     LABELS        DASHBOARD
+  wsjob-thjj8zticwsylhppkbmjqe  13s  1s        RUNNING  cer-cs2-01  username name=unet_pt  https://grafana.cerebras1.lab.alcf.anl.gov/d/WebHNShVz/wsjob-dashboard?orgId=1&var-wsjob=wsjob-thjj8zticwsylhppkbmjqe&from=1691705374000&to=now
+  (venv_pt) $
+
+Jobs can be canceled as shown:
+
+  (venv_tf) $ csctl cancel job wsjob-eyjapwgnycahq9tus4w7id
+  Job canceled successfully
+  (venv_tf) $
+
+Jobs can be labeled in the command line that launches them, if they are written with Cerebras's Python framework for running appliance jobs, by adding a command line option of this form:
+
+  --job_labels labelname=labelvalue
+
+Jobs can also be labeled after they have been started as shown:
+
+  (venv_pt) $ csctl label job wsjob-ez6dyfronnsg2rz7f7fqw4 testlabel=test
+  job/wsjob-ez6dyfronnsg2rz7f7fqw4 was patched
+  (venv_pt) $
+
+Jobs with a particular label/label value can be listed as shown:
+
+  (venv_pt) $ csctl get jobs | grep "testlabel=test"
+  wsjob-ez6dyfronnsg2rz7f7fqw4  19m SUCCEEDED  cer-cs2-02 username testlabel=test,user=username
+  (venv_pt) $
+
+See csctl -h for more options.
+Add -h to a command for help for that command, e.g. csctl get -h or csctl cancel -h.
+
+  $ csctl -h
+  Cerebras cluster command line tool.
+
+  Usage:
+    csctl [command]
+
+  Available Commands:
+    cancel             Cancel job
+    clear-worker-cache Clear the worker cache
+    config             View csctl config files
+    get                Get resources
+    label              Label resources
+    log-export         Gather and download logs.
+    types              Display resource types
+
+  Flags:
+    -d, --debug int          higher debug values will display more fields in output objects
+    -h, --help               help for csctl
+        --namespace string   configure csctl to talk to different user namespaces
+    -v, --version            version for csctl
+
+  Use "csctl [command] --help" for more information about a command.
+
+
+|- # Example Programs
+
+
+|- ## Use a local copy of the model zoo
+
+Make a working directory and a local copy of the Cerebras modelzoo and anl_shared repository, if not previously done, as follows.
+
+  mkdir ~/R_1.9.1
+  cd ~/R_1.9.1
+  git clone https://github.com/Cerebras/modelzoo.git
+
+
+|- ## UNet
+
+An implementation of this: U-Net: Convolutional Networks for Biomedical Image Segmentation (https://arxiv.org/pdf/1505.04597.pdf), Ronneberger et.  al 2015
+To run Unet with the Severstal: Steel Defect Detection (https://www.kaggle.com/c/severstal-steel-defect-detection) kaggle dataset, using a pre-downloaded copy of the dataset:
+First, source a Cerebras PyTorch virtual environment.
+
+  source ~/R_1.9.1/venv_pt/bin/activate
+
+Then
+
+  cd ~/R_1.9.1/modelzoo/modelzoo/vision/pytorch/unet
+  cp /software/cerebras/dataset/severstal-steel-defect-detection/params_severstal_binary_rawds.yaml configs/params_severstal_binary_rawds.yaml
+  export MODEL_DIR=model_dir_unet
+  if [ -d "$MODEL_DIR" ]; then rm -Rf $MODEL_DIR; fi
+  python run.py CSX --job_labels name=unet_pt --params configs/params_severstal_binary_rawds.yaml --model_dir $MODEL_DIR --mode train --mount_dirs /home/ /software --python_paths /home/$(whoami)/R_1.9.1/modelzoo/ --compile_dir $(whoami) |& tee mytest.log
+
+
+|- ## BERT - PyTorch
+
+The modelzoo/modelzoo/transformers/pytorch/bert directory is a PyTorch implementation of BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (https://arxiv.org/abs/1810.04805)
+This BERT-large msl128 example uses a single sample dataset for both training and evaluation. See the README.md in the source directory for details on how to build a dataset from text input.
+First, source a Cerebras PyTorch virtual environment.
+
+  source ~/R_1.9.1/venv_pt/bin/activate
+
+Then
+
+  cd ~/R_1.9.1/modelzoo/modelzoo/transformers/pytorch/bert
+  cp /software/cerebras/dataset/bert_large/bert_large_MSL128_sampleds.yaml configs/bert_large_MSL128_sampleds.yaml
+  export MODEL_DIR=model_dir_bert_large_pytorch
+  if [ -d "$MODEL_DIR" ]; then rm -Rf $MODEL_DIR; fi
+  python run.py CSX --job_labels name=bert_pt --params configs/bert_large_MSL128_sampleds.yaml --num_workers_per_csx=1 --mode train --model_dir $MODEL_DIR --mount_dirs /home/ /software/ --python_paths /home/$(whoami)/R_1.9.1/modelzoo/ --compile_dir $(whoami) |& tee mytest.log
+
+The last parts of the output should resemble the following, with messages about cuda that should be ignored and are not shown.
+
+  2023-05-17 18:10:08,776 INFO:   Finished sending initial weights
+  2023-05-17 18:15:11,548 INFO:   | Train Device=xla:0, Step=100, Loss=9.46875, Rate=4597.49 samples/sec, GlobalRate=4597.49 samples/sec
+  2023-05-17 18:15:23,067 INFO:   | Train Device=xla:0, Step=200, Loss=8.94531, Rate=7173.00 samples/sec, GlobalRate=6060.68 samples/sec
+  2023-05-17 18:15:41,547 INFO:   | Train Device=xla:0, Step=300, Loss=8.79688, Rate=6193.85 samples/sec, GlobalRate=5876.98 samples/sec
+  2023-05-17 18:15:54,118 INFO:   | Train Device=xla:0, Step=400, Loss=8.28906, Rate=7365.06 samples/sec, GlobalRate=6316.84 samples/sec
+  2023-05-17 18:16:12,430 INFO:   | Train Device=xla:0, Step=500, Loss=8.14844, Rate=6301.21 samples/sec, GlobalRate=6157.22 samples/sec
+  2023-05-17 18:16:25,177 INFO:   | Train Device=xla:0, Step=600, Loss=8.06250, Rate=7340.44 samples/sec, GlobalRate=6406.58 samples/sec
+  2023-05-17 18:16:43,315 INFO:   | Train Device=xla:0, Step=700, Loss=8.00000, Rate=6323.57 samples/sec, GlobalRate=6285.55 samples/sec
+  2023-05-17 18:16:56,110 INFO:   | Train Device=xla:0, Step=800, Loss=7.96484, Rate=7331.29 samples/sec, GlobalRate=6458.82 samples/sec
+  2023-05-17 18:17:14,564 INFO:   | Train Device=xla:0, Step=900, Loss=7.89844, Rate=6261.77 samples/sec, GlobalRate=6343.22 samples/sec
+  2023-05-17 18:17:26,977 INFO:   | Train Device=xla:0, Step=1000, Loss=7.90234, Rate=7454.38 samples/sec, GlobalRate=6493.27 samples/sec
+  2023-05-17 18:17:26,978 INFO:   Saving checkpoint at global step 1000
+  2023-05-17 18:18:38,485 INFO:   Saving step 1000 in dataloader checkpoint
+  2023-05-17 18:18:38,931 INFO:   Saved checkpoint at global step: 1000
+  2023-05-17 18:18:38,932 INFO:   Training Complete. Completed 1024000 sample(s) in 229.65675950050354 seconds.
+  2023-05-17 18:18:49,293 INFO:   Monitoring returned
+
+
+|- ## GPT-J PyTorch
+
+GPT-J [github] (https://github.com/kingoflolz/mesh-transformer-jax) is an auto-regressive language model created by EleutherAI (https://www.eleuther.ai/).
+This PyTorch GPT-J 6B parameter pretraining sample uses 2 CS2s.
+
+First, source a Cerebras PyTorch virtual environment.
+
+  source ~/R_1.9.1/venv_pt/bin/activate
+
+Then
+
+  cd ~/R_1.9.1/modelzoo/modelzoo/transformers/pytorch/gptj
+  cp /software/cerebras/dataset/gptj/params_gptj_6B_sampleds.yaml configs/params_gptj_6B_sampleds.yaml
+  export MODEL_DIR=model_dir_gptj
+  if [ -d "$MODEL_DIR" ]; then rm -Rf $MODEL_DIR; fi
+  python run.py CSX --job_labels name=gptj_pt --params configs/params_gptj_6B_sampleds.yaml --num_csx=2 --mode train --model_dir $MODEL_DIR --mount_dirs /home/ /software --python_paths /home/$(whoami)/R_1.9.1/modelzoo/ --compile_dir $(whoami) |& tee mytest.log
+
+The last parts of the output should resemble the following:
+
+  2023-05-17 18:44:38,290 INFO:   Finished sending initial weights
+  2023-05-17 18:51:03,551 INFO:   | Train Device=xla:0, Step=100, Loss=8.46875, Rate=33.83 samples/sec, GlobalRate=33.83 samples/sec
+  2023-05-17 18:57:26,199 INFO:   | Train Device=xla:0, Step=200, Loss=8.06250, Rate=33.92 samples/sec, GlobalRate=33.90 samples/sec
+  2023-05-17 19:03:48,354 INFO:   | Train Device=xla:0, Step=300, Loss=7.71875, Rate=33.98 samples/sec, GlobalRate=33.94 samples/sec
+  2023-05-17 19:10:10,299 INFO:   | Train Device=xla:0, Step=400, Loss=7.46875, Rate=34.01 samples/sec, GlobalRate=33.96 samples/sec
+  2023-05-17 19:16:32,156 INFO:   | Train Device=xla:0, Step=500, Loss=7.21875, Rate=34.03 samples/sec, GlobalRate=33.98 samples/sec
+  2023-05-17 19:16:32,157 INFO:   Saving checkpoint at global step 500
+  2023-05-17 19:27:12,834 INFO:   Saving step 500 in dataloader checkpoint
+  2023-05-17 19:27:13,435 INFO:   Saved checkpoint at global step: 500
+  2023-05-17 19:27:13,436 INFO:   Training Complete. Completed 65000 sample(s) in 2554.1804394721985 seconds.
+
+
+|- # Tunneling and Forwarding Ports
+
+See ALCF's Jupyter Instructions (https://github.com/argonne-lcf/ThetaGPU-Docs/blob/master/doc_staging/jupyter.md), and
+Tunneling and forwarding ports (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/tunneling-and-forwarding-ports/). The Cerebras login nodes are direct login; tunneling and port forwarding do not involve jump hosts.
+
+
+|-- # Tunneling and Forwarding Ports
+
+Port forwarding is covered here.  This is specifically for TensorBoard.
+
+
+|-- ## TensorBoard Port Forwarding
+
+This section describes the steps to be followed to set up port forwarding for applications,
+like TensorBoard, which runs on the SambaNova system and binds to one or more ports.
+This example uses 6006 and 16006 as port numbers. Using port numbers other than these may
+avoid collisions with other users.
+
+
+|-- ### From Your Local Machine
+
+Replace ALCFUserID with your ALCF User ID.
+
+Run
+
+  # Forward a port number from sambanova.alcf.anl.gov to your local machine.
+  ssh -v -N -f -L localhost:16006:localhost:16006 ALCFUserID@sambanova.alcf.anl.gov
+  ...
+  Password: < MobilePass+ code >
+
+  # Connect to sambanova.alcf.anl.gov
+  ssh ALCFUserID@sambanova.alcf.anl.gov
+  ...
+  Password: < MobilePass+ code >
+
+
+|-- ### From 
+
+Below are the commands specific to sn30-r1-h1. You may replace sn30-r1-h1 with any other node when using the appropriate system.
+
+Run
+
+Note:  The full name is sn30-r1-h1.ai.alcf.anl.gov and it may also be used.
+
+  # Forward the port.
+  ssh -N -f -L localhost:16006:localhost:6006 ALCFUserID@sn30-r1-h1
+  # Connect to the system.
+  ssh ALCFUserID@sn30-r1-h1
+
+
+|-- ### On 
+
+Activate the venv appropriate to your project.
+
+Navigate to the appropriate directory for your model.
+Launch your model using srun or sbatch.
+
+  cd /path/to/your/project
+  sbatch --output=pef/my_model/output.log submit-my_model-job.sh
+
+
+|-- ### On Another sn30-r1-h1 Terminal Window
+
+The SambaNova system has a bash shell script to setup the required software environment.
+This sets up the SambaFlow software stack, the associated environmental variables and activates
+a pre-configured virtual environment.
+
+Use the command appropriate for your environment.
+
+For example, if you are using LogReg:
+
+  ALCFUserID@sn30-r1-h1:~$ source /opt/sambaflow/apps/starters/logreg/venv/bin/activate
+  (venv) ALCFUserID@sn30-r1-h1:~$
+
+Navigate to the appropriate directory for your model.
+
+  cd /path/to/your/project
+  tensorboard --logdir /logs --port 6006
+
+
+|-- ### Browser on Local Machine
+
+Then, navigate in your browser to, in this example, http://localhost:16006 on your local machine.
+
+
+|-- ## Notes
+
+Explanation of ssh command:
+
+  -N : no remote commands
+
+  -f : put ssh in the background
+
+  -L <machine1>:<portA>:<machine2>:<portB> :
+
+  The full command line will forward <machine2>:<portB> (remote scope) to <machine1>:<portA> (local scope)
+
+Adapted from:  How can I run Tensorboard on a remote server? (https://stackoverflow.com/questions/37987839/how-can-i-run-tensorboard-on-a-remote-server)
+
+
+|- # Miscellaneous
+
+
+|- ## Porting applications to the CS-2
+
+Cerebras documentation for porting code to run on a Cerebras CS-2 system:
+Ways to port your model (https://docs.cerebras.net/en/latest/wsc/port/index.html)
+
+
+|- # System Overview
+
+The Graphcore Bow-Pod64 system is the latest-generation AI accelerator from Graphcore. This is a one-rack system consisting of 64 Bow-class Intelligence Processing Units (IPU) with a custom interconnect. The system provides for an aggregate 22 Petaflops/s of performance in half precision. It has a total of 57.6 GB In-Processor-Memory with a total of 94,208 IPU cores. The system consists of four servers for data-processing.
+
+For more details refer to the POD64 spec (https://www.graphcore.ai/products/bow-pod64#product-spec)
+
+(Figure from
+https://www.graphcore.ai/products/poplar)
+
+  <image Poplar_sdk.png: Poplar SDK>
+
+The Graphcore software stack includes support for TensorFlow and PyTorch using the Poplar SDK. The Poplar® SDK is t is the toolchain specifically designed for creating graph software for ML applications.  It integrates with the traditional ML frameworks like PyTorch and TensorFlow allowing users to port their existing code to the IPU hardware-specific code. The various components of the poplar SDK stack are shown in the figure. It includes the PopTorch framework which is a wrapper over the PyTorch framework optimized to the IPU hardware. It also enlists the different PopLibs libraries supported, which enables to construct graphs, define tensor data and control how the code and data are mapped onto the IPU for execution.
+
+
+|- # Getting Started
+
+Connection to a Graphcore node is a two-step process.
+
+The first step is to ssh from a local machine to the login node.
+
+The second step is to log in to a Graphcore node from the login node.
+
+
+
+  <image graphcore_login.png: Graphcore System View>
+
+
+|- ## Log in to Login Node
+
+Login to the Graphcore login node from your local machine using the below command. This uses the ALCF account ID that uses the password generated from the MobilePASS+.
+
+Note:  In the examples below, replace ALCFUserID with your ALCF user id.
+
+  ssh ALCFUserID@gc-login-01.ai.alcf.anl.gov
+  # or
+  ssh ALCFUserID@gc-login-02.ai.alcf.anl.gov
+
+Note: Use the ssh "-v" option in order to debug any ssh problems.
+
+
+|- ### Log in to a Graphcore Node
+
+Once you are on the login node, ssh to one of the Graphcore nodes.
+
+  ssh gc-poplar-02.ai.alcf.anl.gov
+  # or
+  ssh gc-poplar-03.ai.alcf.anl.gov
+  # or
+  ssh gc-poplar-04.ai.alcf.anl.gov
+
+**Note: ssh gc-poplar-01.ai.alcf.anl.gov is not accessible to users. However, its IPU resources are assigned by the slurm tasks.
+
+
+|- # Virtual Environments
+
+
+|- ## Poplar SDK Setup
+
+The Poplar SDK is downloaded onto the graphcore systems at the /software/graphcore/poplar_sdk/ location. The default poplar
+version (3.1.0) is enabled automatically upon logging into a graphcore node.
+
+Check if Poplar is setup correctly:
+
+  popc --version
+
+One should see:
+
+  POPLAR version 3.1.0 (e12d5f9f01)
+  clang version 15.0.0 (bab932b4fc4cdb58bb009370384b2c41579bd9d9)
+
+If the Poplar SDK is not enabled, it can be enabled with
+
+  source /software/graphcore/poplar_sdk/3.1.0/enable
+
+To disable the current Poplar SDK, e.g. if one wants to use a different Poplar SDK,
+
+  unset POPLAR_SDK_ENABLED
+
+
+|- ## Miscellaneous Environment Variables
+
+  mkdir ~/tmp
+  export TF_POPLAR_FLAGS=--executable_cache_path=~/tmp
+  export POPTORCH_CACHE_DIR=~/tmp
+
+  export POPART_LOG_LEVEL=WARN
+  export POPLAR_LOG_LEVEL=WARN
+  export POPLIBS_LOG_LEVEL=WARN
+
+  export PYTHONPATH=/software/graphcore/poplar_sdk/3.1.0/poplar-ubuntu_20_04-3.1.0+6824-9c103dc348/python:$PYTHONPATH
+
+
+|- ## PopTorch Environment Setup
+
+PopTorch is an extension of the Pytorch framework that is optimized for the IPU specific functionality. To activate the PopTorch environment, first create a virtual environment and activate it.
+
+  mkdir -p ~/venvs/graphcore
+  virtualenv ~/venvs/graphcore/poptorch31_env
+  source ~/venvs/graphcore/poptorch31_env/bin/activate
+
+Use the following commands to install the PopTorch environment.
+
+  POPLAR_SDK_ROOT=/software/graphcore/poplar_sdk/3.1.0
+  export POPLAR_SDK_ROOT=$POPLAR_SDK_ROOT
+  pip install $POPLAR_SDK_ROOT/poptorch-3.1.0+98660_0a383de63f_ubuntu_20_04-cp38-cp38-linux_x86_64.whl
+
+
+|- ## TensorFlow 2 Environment Setup
+
+The Poplar SDK provides TensorFlow and Keras wheels built on 2.6 that includes the IPU specific functionality and optimized for the AMD processors. It can be installed as follows.
+
+Create virtual environment.
+
+  virtualenv ~/venvs/graphcore/tensorflow2_31_env
+  source ~/venvs/graphcore/tensorflow2_31_env/bin/activate
+
+Install the TensorFlow and Keras wheels.
+
+  POPLAR_SDK_ROOT=/software/graphcore/poplar_sdk/3.1.0
+  export POPLAR_SDK_ROOT=$POPLAR_SDK_ROOT
+  pip install $POPLAR_SDK_ROOT/tensorflow-2.6.3+gc3.1.0+246224+2b7af067dae+amd_znver1-cp38-cp38-linux_x86_64.whl
+  pip install $POPLAR_SDK_ROOT/keras-2.6.0+gc3.1.0+246230+88e2debf-py2.py3-none-any.whl
+
+
+|- ### Verify Installation
+
+  python -c "from tensorflow.python import ipu"
+
+You should see:
+
+  2023-04-24 23:13:36.091496: I tensorflow/compiler/plugin/poplar/driver/poplar_platform.cc:43] Poplar version: 3.1.0 (e12d5f9f01) Poplar package: 9c103dc348
+
+
+|- ## Installing Packages
+
+Install packages in the normal manner such as:
+
+  python3 -m pip install "some_package"
+
+For more details see Use pip for installing (https://packaging.python.org/en/latest/tutorials/installing-packages/#use-pip-for-installing).
+
+To install a different version of a package that is already installed in one's environment, one can use:
+
+  pip install --ignore-installed  ... # or -I
+
+Note: Conda is not supported on the Graphcore system.
+
+
+|- # Steps to Run a Model/Program
+
+Note:  Please be mindful of how you are using the system.
+For example, consider running larger jobs in the evening or on weekends.
+
+Running of any model or application includes graph compilation of the model that is then deployed on the IPUs. Below is the description of training a neural network for classification on the MNIST dataset using the PopTorch (pytorch framework optimized for IPU).
+
+
+|- ## Examples Repo
+
+Graphcore provides examples of some well-known AI applications in their repository at https://github.com/graphcore/examples.git.
+
+Clone the examples repository to your personal directory structure, and checkout the v3.1.0 release:
+
+  mkdir ~/graphcore
+  cd ~/graphcore
+  git clone https://github.com/graphcore/examples.git
+  cd examples
+
+
+|- ### MNIST
+
+
+|- #### Activate PopTorch Environment
+
+Follows the steps at Poptorch environment setup (https://docs.alcf.anl.gov/ai-testbed/graphcore/virtual-environments/) to enable the Poplar SDK.
+
+  source ~/venvs/graphcore/poptorch31_env/bin/activate
+
+
+|- #### Install Requirements
+
+Change directory and install packages specific to the MNIST model:
+
+  cd ~/graphcore/examples/tutorials/simple_applications/pytorch/mnist
+  python -m pip install torchvision==0.14.0
+
+
+|- #### Run MNIST
+
+Execute the command:
+
+  /opt/slurm/bin/srun --ipus=1 python mnist_poptorch.py
+
+All models are run using Slurm, with the --ipus indicating how many IPUs are need to be allocated for the model being run. This example uses a batchsize of 8, and run for 10 epochs. It also set the device iteration to 50 which is the number of iterations the device should run over the data before returning to the user.  The dataset used in the example is derived from the TorchVision and the PopTorch dataloader is used to load the data required for the 50 device iterations from the host to the device in a single step.
+
+The model used here is a simple CNN based model with an output from a classifier (softmax layer).
+A simple Pytorch model is translated to a PopTorch model using poptorch.Options().
+poptorch.trainingModel is the model wrapping function on the Pytorch model. The first call to trainingModel will compile the model for the IPU. You can observe the compilation process as part of output of the above command.
+
+  Graph compilation:   3%|▎         | 3/100 [00:00<00:03]2023-04-26T16:53:21.225944Z PL:POPLIN    3680893.3680893 W: poplin::preplanMatMuls() is deprecated! Use poplin::preplan() instead
+  Graph compilation: 100%|██████████| 100/100 [00:20<00:00]2023-04-26T16:53:38.241395Z popart:session 3680893.3680893
+
+The artifacts from the graph compilations is cached in the location set by the flag POPTORCH_CACHE_DIR, where the .popef file corresponding to the model under consideration is cached.
+
+
+|- #### Output
+
+The expected output will start with downloads followed by and we can observe the model used by the model, the progress bar of the compilation process, and the training progress bar.
+
+  srun: job 2623 queued and waiting for resources
+  srun: job 2623 has been allocated resources
+  /home/arnoldw/workspace/poptorch31.env/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_cuda.so: cannot open shared object file: No such file or directory
+    warn(f"Failed to load image Python extension: {e}")
+  Epochs:   0%|          | 0/10 [00:00<?,[16:58:56.683] [poptorch:cpp] [warning] [DISPATCHER] Type coerced from Long to Int for tensor id 10
+  Graph compilation: 100%|██████████| 100/100 [00:20<00:00]
+  Epochs: 100%|██████████| 10/10 [01:35<00:00,  9.57s/it]
+  Graph compilation: 100%|██████████| 100/100 [00:13<00:00]
+  TrainingModelWithLoss(%|█████████▋| 97/100 [00:13<00:01]
+    (model): Network(
+      (layer1): Block(
+        (conv): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+        (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (relu): ReLU()
+      )
+      (layer2): Block(
+        (conv): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+        (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (relu): ReLU()
+      )
+      (layer3): Linear(in_features=1600, out_features=128, bias=True)
+      (layer3_act): ReLU()
+      (layer3_dropout): Dropout(p=0.5, inplace=False)
+      (layer4): Linear(in_features=128, out_features=10, bias=True)
+      (softmax): Softmax(dim=1)
+    )
+    (loss): CrossEntropyLoss()
+  )
+  Accuracy on test set: 98.59%
+
+Refer to the script (https://github.com/graphcore/examples/blob/master/tutorials/simple_applications/pytorch/mnist/mnist_poptorch.py) to learn more about this example.
+
+Example Programs (https://docs.alcf.anl.gov/ai-testbed/graphcore/example-programs/) lists the different example applications with corresponding commands for each of the above steps.
+
+
+|-- # Example Programs
+
+Graphcore provides examples of some well-known AI applications in their repository at https://github.com/graphcore/examples.git.
+Clone the examples repository to your personal directory structure:
+
+  mkdir ~/graphcore
+  cd ~/graphcore
+  git clone https://github.com/graphcore/examples.git
+
+
+|-- ## MNIST - PopTorch
+
+
+|-- ### Activate PopTorch Environment
+
+  source ~/venvs/graphcore/poptorch31_env/bin/activate
+
+
+|-- ### Install Requirements
+
+Change directory:
+
+  cd ~/graphcore/examples/tutorials/simple_applications/pytorch/mnist
+  pip install torchvision==0.14.0
+
+
+|-- ### Run MNIST
+
+Execute the command:
+
+  /opt/slurm/bin/srun --ipus=1 python mnist_poptorch.py
+
+
+|-- ### Output
+
+The expected output will start with downloads followed by:
+
+  TrainingModelWithLoss(
+    (model): Network(
+      (layer1): Block(
+        (conv): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+        (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (relu): ReLU()
+      )
+      (layer2): Block(
+        (conv): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+        (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (relu): ReLU()
+      )
+      (layer3): Linear(in_features=1600, out_features=128, bias=True)
+      (layer3_act): ReLU()
+      (layer3_dropout): Dropout(p=0.5, inplace=False)
+      (layer4): Linear(in_features=128, out_features=10, bias=True)
+      (softmax): Softmax(dim=1)
+    )
+    (loss): CrossEntropyLoss()
+  )
+  Epochs:   0%|
+  ...
+  Graph compilation: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:16<00:00]
+  Accuracy on test set: 98.04%
+
+
+|-- ## MNIST - Tensorflow2
+
+
+|-- ### Activate Tensorflow2 Environment
+
+Create a TensorFlow2 environment as explained in the tensorflow-2-environment-setup (https://github.com/argonne-lcf/user-guides/blob/feature/Graphcore001-DNP_edits/docs/ai-testbed/graphcore/virtual-environments.md#tensorflow-2-environment-setup) and activate the same.
+
+  source ~/venvs/graphcore/tensorflow2_31_env/bin/activate
+
+
+|-- ### Install Requirements
+
+Change directory:
+
+  cd ~/graphcore/examples/tutorials/simple_applications/tensorflow2/mnist/
+
+
+|-- ### Run MNIST - TensorFlow
+
+Execute the command:
+
+  /opt/slurm/bin/srun --ipus=1 python mnist.py
+
+
+|-- ### Output
+
+The expected output will start with downloads followed by:
+
+  2023-04-26 14:42:32.179566: I tensorflow/compiler/plugin/poplar/driver/poplar_platform.cc:43] Poplar version: 3.1.0 (e12d5f9f01) Poplar package: 9c103dc348
+  2023-04-26 14:42:34.517107: I tensorflow/compiler/plugin/poplar/driver/poplar_executor.cc:1619] TensorFlow device /device:IPU:0 attached to 1 IPU with Poplar device ID: 0
+  Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+  11493376/11490434 [==============================] - 0s 0us/step
+  11501568/11490434 [==============================] - 0s 0us/step
+  2023-04-26 14:42:35.673768: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+  2023-04-26 14:42:35.947832: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:210] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+  2023-04-26 14:42:46.953720: I tensorflow/compiler/jit/xla_compilation_cache.cc:376] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+  Epoch 1/4
+  2000/2000 [==============================] - 13s 7ms/step - loss: 0.6238
+  Epoch 2/4
+  2000/2000 [==============================] - 0s 222us/step - loss: 0.3361
+  Epoch 3/4
+  2000/2000 [==============================] - 0s 225us/step - loss: 0.2894
+  Epoch 4/4
+  2000/2000 [==============================] - 0s 226us/step - loss: 0.2601
+
+
+|-- ## ResNet50
+
+
+|-- ### Activate PopTorch Environment
+
+Create and activate a fresh PopTorch environment poptorch31_resnet50_env as outlined in the virtual environment section (https://docs.alcf.anl.gov/ai-testbed/graphcore/virtual-environments/), then activate it.
+
+  source ~/venvs/graphcore/poptorch31_resnet50_env/bin/activate
+
+
+|-- ### Install Requirements
+
+Change directory
+
+  cd ~/graphcore/examples/vision/cnns/pytorch
+  make install 
+  make install-turbojpeg
+  pip install torch==1.13.0
+
+Note: For 3.1.0 sdk, use the torch=1.13.0 version for the compatible version.
+
+
+|-- #### Update configs.yml
+
+Change directory:
+
+  cd ~/graphcore/examples/vision/cnns/pytorch/train
+
+  use_bbox_info: true
+
+  use_bbox_info: false
+
+
+|-- ### Run ResNet50
+
+The scripts to train a ResNet50 PyTorch model on Pod4 is located at https://github.com/graphcore/examples/tree/master/vision/cnns/pytorch/train
+
+Set the following environmental variables.
+
+  mkdir -p ~/graphcore/tmp/pt_cache/
+  export PYTORCH_CACHE_DIR=~/graphcore/tmp/pt_cache/
+
+  /opt/slurm/bin/srun --ipus=4 poprun -vv --num-instances=1 --num-replicas=4 --executable-cache-path=$PYTORCH_CACHE_DIR python3 /home/$USER/graphcore/examples/vision/cnns/pytorch/train/train.py --config resnet50-pod4 --imagenet-data-path /mnt/localdata/datasets/imagenet-raw-dataset --epoch 2 --validation-mode none --dataloader-worker 14 --dataloader-rebatch-size 256
+
+
+|-- ### Output
+
+  04:22:59.948 3905692 POPRUN [I] V-IPU server address picked up from 'vipu': 10.1.3.101:8090
+  04:22:59.950 3905692 POPRUN [I] Using V-IPU partition slurm_2657 as it is the only one available
+  04:22:59.950 3905692 POPRUN [D] Connecting to 10.1.3.101:8090
+  04:22:59.951 3905692 POPRUN [D] Status for partition slurm_2657: OK (error 0)
+  04:22:59.951 3905692 POPRUN [I] Partition slurm_2657 already exists and is in state: PS_ACTIVE
+  04:22:59.952 3905692 POPRUN [D] The reconfigurable partition slurm_2657 is OK
+   ===========================
+  |      poprun topology      |
+  |===========================|
+  | hosts     | gc-poplar-02  |
+  |-----------|---------------|
+  | ILDs      |       0       |
+  |-----------|---------------|
+  | instances |       0       |
+  |-----------|---------------|
+  | replicas  | 0 | 1 | 2 | 3 |
+   ---------------------------
+  04:22:59.952 3905692 POPRUN [D] Target options from environment: {}
+  04:22:59.952 3905692 POPRUN [D] Target options from V-IPU partition: {"ipuLinkDomainSize":"4","ipuLinkConfiguration":"default","ipuLinkTopology":"mesh","gatewayMode":"true","instanceSize":"4"}
+  04:22:59.998 3905692 POPRUN [D] Found 1 devices with 4 IPUs
+  04:23:00.689 3905692 POPRUN [D] Attached to device 6
+  04:23:00.689 3905692 POPRUN [I] Preparing parent device 6
+  04:23:00.689 3905692 POPRUN [D] Device 6 ipuLinkDomainSize=64, ipuLinkConfiguration=Default, ipuLinkTopology=Mesh, gatewayMode=true, instanceSize=4
+  [1,0]<stdout>:[INFO] Total replicas: 4
+  [1,0]<stdout>:[INFO] Global batch size: 16416
+  [1,0]<stdout>:[INFO] Number of IPUs required: 4
+  [1,0]<stdout>:[INFO] Loading the data
+  Graph compilation: 100%|██████████| 100/100 [06:26<00:00][1,0]<stderr>:WARNING: The compile time engine option debug.branchRecordTile is set to "5887" when creating the Engine. (At compile-tile it was set to 1471)
+  [1,0]<stderr>:2023-04-27T04:30:33.475912Z PO:ENGINE   3906481.3906481 W: WARNING: The compile time engine option debug.branchRecordTile is set to "5887" when creating the Engine. (At compile-tile it was set to 1471)
+  [1,0]<stderr>:2023-04-27T04:30:36.928499Z popart:session 3906481.3906481 W: Rng state buffer was not serialized.You did not load poplar Engine.Remember that if you would like to run the model using the model runtime then you have to create your own buffer and callback in your model runtime application for rngStateTensor.
+  [1,0]<stderr>:
+  Loss:6.7615 | Accuracy:0.57%:  96%|█████████▌| 75/78 [11:07<00:10,  3.62s/it][1,0[1,0]<stdout>:[INFO] Epoch 1
+  [1,0]<stdout>:[INFO] loss: 6.7508,
+  [1,0]<stdout>:[INFO] accuracy: 0.61 %
+  [1,0]<stdout>:[INFO] throughput: 1886.4 samples/sec
+  [1,0]<stdout>:[INFO] Epoch 2/2
+  Loss:6.7508 | Accuracy:0.61%: 100%|██████████| 78/78 [11:18<00:00,  8.70s/it][1,0]<stderr>:
+  Loss:6.2860 | Accuracy:2.41%:  96%|█████████▌| 75/7[1,0]<stdout>:[INFO] Epoch 2,0]<stderr>:
+  [1,0]<stdout>:[INFO] loss: 6.2747,
+  [1,0]<stdout>:[INFO] accuracy: 2.48 %
+  [1,0]<stdout>:[INFO] throughput: 4476.7 samples/sec
+  [1,0]<stdout>:[INFO] Finished training. Time: 2023-04-27 04:40:05.821555. It took: 0:16:04.818638
+  Loss:6.2747 | Accuracy:2.48%: 100%|██████████| 78/78 [04:46<00:00,  3.67s/it][1,0]<stderr>:
+
+
+|-- ## GPT-2 PyTorch - POD16 run
+
+The scripts to train a GPT-2 pytorch model on the POD16 are located at https://github.com/graphcore/examples/tree/master/nlp/gpt2/pytorch
+
+In order to run the GPT-2 Pytorch model, create a new popTorch virtual environment poptorch31_gpt2 as described in the virtual environment section (https://docs.alcf.anl.gov/ai-testbed/graphcore/virtual-environments/) and activate it.
+
+  source ~/venvs/graphcore/poptorch31_gpt2/bin/activate
+
+
+|-- ### Install Requirements
+
+Change directory:
+
+  cd ~/graphcore/examples/nlp/gpt2/pytorch
+  pip3 install -r requirements.txt
+
+
+|-- ### Run GPT2 on 16 IPUs
+
+The command for the GPT2 model is as follows is as follows.
+
+  /opt/slurm/bin/srun --ipus=16 python /home/$USER/graphcore/examples/nlp/gpt2/pytorch/train_gpt2.py --model gpt2 --ipus-per-replica 4 --replication-factor 4 --gradient-accumulation 2048 --device-iterations 8 --batch-size 1 --layers-per-ipu 0 4 4 4 --matmul-proportion 0.15 0.15 0.15 0.15 --max-len 1024 --optimizer AdamW --learning-rate 0.00015 --lr-schedule cosine --lr-warmup 0.01 --remap-logit True --enable-sequence-serialized True --embedding-serialization-factor 4 --recompute-checkpoint-every-layer True --enable-half-partials True --replicated-tensor-sharding True --dataset 'generated' --epochs 1
+
+The effective global batch size in this example is (micro)batch-size * gradient-accumulation * replication-factor = 1 x 2048 x 4 = 8192.  The device iterations indicates the total number samples loaded in 1 training step = global batch size * device iterations = 8192*8 = 65536. To learn more about these parameters and in general batching of IPUs refer IPU batching (https://docs.graphcore.ai/projects/tutorials/en/latest/pytorch/efficient_data_loading/README.html?highlight=device%20iterations#understanding-batching-with-ipu) .
+
+The above example is running with generated or synthetic data. To use the same example with a real world dataset, refer to data setup (https://github.com/graphcore/examples/tree/master/nlp/gpt2/pytorch#dataset-setup).
+
+
+|-- ### Output
+
+  Building (if necessary) and loading remap_tensor_ce.
+  Failed to find compiled extension; rebuilding.
+  Building (if necessary) and loading residual_add_inplace_pattern.
+  Model initializing
+  -------------------- Device Allocation --------------------
+  Embedding  --> IPU 0
+  Layer 0  --> IPU 1
+  Layer 1  --> IPU 1
+  Layer 2  --> IPU 1
+  Layer 3  --> IPU 1
+  Layer 4  --> IPU 2
+  Layer 5  --> IPU 2
+  Layer 6  --> IPU 2
+  Layer 7  --> IPU 2
+  Layer 8  --> IPU 3
+  Layer 9  --> IPU 3
+  Layer 10 --> IPU 3
+  Layer 11 --> IPU 3
+  LM_head --> IPU 0
+  Arguments: Namespace(async_dataloader=False, auto_loss_scaling=False, batch_size=1, checkpoint_input_dir='', checkpoint_output_dir=None, compile_only=False, custom_ops=True, dataset='generated', device_iterations=8, embedding_serialization_factor=4, enable_half_partials=True, enable_sequence_serialized=True, epochs=1, executable_cache_dir=None, gradient_accumulation=2048, input_files=None, ipus_per_replica=4, layers_per_ipu=[0, 4, 4, 4], learning_rate=0.00015, log_steps=1, loss_scaling=50000.0, lr_decay_steps=None, lr_schedule='cosine', lr_warmup=0.01, lr_warmup_steps=None, matmul_proportion=[0.15, 0.15, 0.15, 0.15], max_len=1024, model='gpt2', num_workers=4, optimizer='AdamW', optimizer_state_offchip=True, recompute_checkpoint_every_layer=True, recompute_checkpoint_layers=None, remap_logit=True, replicated_tensor_sharding=True, replication_factor=4, resume_training_from_checkpoint=False, save_per_epochs=1, save_per_steps=None, seed=1234, serialized_seq_len=128, stride=128, training_steps=10000, use_popdist=False, use_wandb=False, val_num=0, weight_decay=0.0)
+  Model config: GPT2Config {
+    "activation_function": "gelu",
+    "architectures": [
+      "GPT2LMHeadModel"
+    ],
+    "attn_pdrop": 0.1,
+    "bos_token_id": 50272,
+    "embd_pdrop": 0.1,
+    "eos_token_id": 50272,
+    "gradient_checkpointing": false,
+    "initializer_range": 0.02,
+    "layer_norm_epsilon": 1e-05,
+    "model_type": "gpt2",
+    "n_ctx": 1024,
+    "n_embd": 768,
+    "n_head": 12,
+    "n_inner": null,
+    "n_layer": 12,
+    "n_positions": 1024,
+    "output_past": true,
+    "reorder_and_upcast_attn": false,
+    "resid_pdrop": 0.1,
+    "scale_attn_by_inverse_layer_idx": false,
+    "scale_attn_weights": true,
+    "summary_activation": null,
+    "summary_first_dropout": 0.1,
+    "summary_proj_to_labels": true,
+    "summary_type": "cls_index",
+    "summary_use_proj": true,
+    "task_specific_params": {
+      "text-generation": {
+        "do_sample": true,
+        "max_length": 400
+      }
+    },
+    "transformers_version": "4.26.1",
+    "use_cache": true,
+    "vocab_size": 50272
+  }
+
+  ------------------- Data Loading Started ------------------
+  loading training dataset and validating dataset
+  Samples per epoch: 262144
+  Steps per epoch: 4
+  Data loaded in 2.358953586081043 secs
+  -----------------------------------------------------------
+  --------------------- Training Started --------------------
+  Graph compilation:   4%|▍         | 4/100 [00:29<11:57]2023-04-27T03:39:53.291853Z PL:POPLIN    3888383.3888383 W: poplin::preplanMatMuls() is deprecated! Use poplin::preplan() instead
+  MatMuls() is deprecated! Use poplin::preplan() instead
+  2023-04-27T03:39:55.159194Z PL:POPLIN    3888383.3888383 W: poplin::preplanMatMuls() is deprecated! Use poplin::preplan() instead
+  2023-04-27T03:39:56.958834Z PL:POPLIN    3888383.3888383 W: poplin::preplanMatMuls() is deprecated! Use poplin::preplan() instead
+  2023-04-27T03:39:58.748727Z PL:POPLIN    3888383.3888383 W: poplin::preplanMatMuls() is deprecated! Use poplin::preplan() instead
+
+  Graph compilation: 100%|██████████| 100/100 [28:04<00:00]WARNING: The compile time engine option debug.branchRecordTile is set to "23551" when creating the Engine. (At compile-tile it was set to 5887)
+  2023-04-27T04:07:29.993259Z PO:ENGINE   3888383.3888383 W: WARNING: The compile time engine option debug.branchRecordTile is set to "23551" when creating the Engine. (At compile-tile it was set to 5887)
+  2023-04-27T04:07:42.941039Z popart:session 3888383.3888383 W: Rng state buffer was not serialized.You did not load poplar Engine.Remember that if you would like to run the model using the model runtime then you have to create your own buffer and callback in your model runtime application for rngStateTensor.
+
+  [04:09:02.177] [poptorch::python] [warning] Ignoring unexpected optimizer attribute in ADAMW_NO_BIAS optimizer: ['step', '_step_count']
+  Ignoring unexpected optimizer attribute in ADAMW_NO_BIAS optimizer: ['step', '_step_count']
+  [04:09:02.179] [poptorch::python] [warning] Ignoring unexpected group 0 attribute in ADAMW_NO_BIAS optimizer: ['initial_lr']
+  Ignoring unexpected group 0 attribute in ADAMW_NO_BIAS optimizer: ['initial_lr']
+  [04:09:02.179] [poptorch::python] [warning] Ignoring unexpected group 1 attribute in ADAMW_NO_BIAS optimizer: ['initial_lr']
+  Ignoring unexpected group 1 attribute in ADAMW_NO_BIAS optimizer: ['initial_lr']
+  step 0 of epoch 0, loss: 10.913212776184082, acc: 2.0116567611694336e-05, lr: 0.00012803300858899104, throughput: 36.69187444207895 samples/sec
+  step 1 of epoch 0, loss: 10.836352348327637, acc: 1.9758939743041992e-05, lr: 7.5e-05, throughput: 1064.3232077940409 samples/sec
+  step 2 of epoch 0, loss: 10.83123779296875, acc: 2.0459294319152832e-05, lr: 2.1966991411008938e-05, throughput: 1064.3064018230857 samples/sec
+  step 3 of epoch 0, loss: 10.829036712646484, acc: 1.9878149032592773e-05, lr: 0.0, throughput: 1064.4397806661352 samples/sec
+
+Note: The graph compilation for a large model like GPT-2 takes about half an hour.
+
+
+|- # Job Queueing and Submission
+
+
+|- ## Introduction
+
+ALCF's Graphcore POD64 system uses Slurm for job submission and queueing. Below are some of the important commands for using Slurm. For more information refer to Slurm Documentation (https://slurm.schedmd.com/).
+
+NOTE: Jobs that require IPUs will fail unless launched with srun or sbatch.
+NOTE: There is a single Slurm scheduler for the Graphcore POD64.
+
+
+|- ## SRun
+
+The Slurm command srun can be used to run individual Python scripts (or other programs) in parallel with other scripts on a cluster managed by Slurm. An example of srun usage is shown below. Use the --ipus= option to specify the number of IPUs required for the run.
+
+Example:
+
+  srun --ipus=1 python mnist_poptorch.py
+
+
+|- ## SBatch
+
+Alternatively, these jobs can be submitted to the Slurm workload manager through a batch script by using the sbatch command. To do this, create a bash script (submit-mnist-poptorch-job.sh here as an example) with the commands that you want to execute.
+
+  #!/bin/sh
+
+  python mnist_poptorch.py
+
+Then pass the bash script as an input to the sbatch command as shown below, requesting the number of IPUs required:
+
+  sbatch --ipus=1 --output=mnist-poptorch-output.log submit-mnist-poptorch-job.sh
+
+
+|- ## SQueue
+
+The squeue command provides information about jobs located in the Slurm scheduling queue.
+
+  $ squeue
+               JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+                2572       p64 Graphcor username  R       1:12      1 gc-poplar-02
+
+
+|- ## SInfo
+
+SInfo is used to view partition and node information for a system running Slurm.
+
+  $ sinfo
+  PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+  p64*         up   infinite      3   idle gc-poplar-[02-04]
+
+For more information, see SInfo (https://slurm.schedmd.com/sinfo.html).
+
+
+|- ## SCancel
+
+SCancel is used to signal or cancel jobs, job arrays, or job steps.
+
+  scancel job_id
+
+
+|- # Miscellaneous
+
+
+|- ## Status
+
+
+|- ### GC-Monitor
+
+The command gc-monitor is Graphcore's device usage monitor. Run it as follows for ordinary monitoring. See gc-monitor --help for other options.
+
+  export IPUOF_VIPU_API_HOST=10.1.3.101
+  gc-monitor --no-card-info --all-partitions
+  # or watch gc-monitor --no-card-info --all-partitions
+
+Note: if there are no partitions active, gc-monitor will core dump: Segmentation fault (core dumped)
+
+The output will look something like:
+
+  +--------------------------------------------------------------+-----------------------+
+  |      IPUs in slurm_2616 attached from other namespaces       |         Board         |
+  +----+------------------------------+--------------+-----------+-----------+-----------+
+  | ID |       Application host       |    Clock     |   Temp    |   Temp    |   Power   |
+  +----+------------------------------+--------------+-----------+-----------+-----------+
+  | 0  |         gc-poplar-02         |   1850MHz    |  24.2 C   |  21.1 C   |  92.3 W   |
+  +----+------------------------------+--------------+-----------+-----------+-----------+
+
+
+|- ### GC-Info
+
+The command gc-info is used to display device information. See gc-info --help for more options.
+
+To list devices,
+
+  gc-info -l
+
+The command gc-info lists the partition and different IPU Id's along with the multi-IPU configuration IDs.
+
+  -+- Id:  [0], target: [Fabric], IPU-M host:  [10.1.5.1], IPU#: [3]
+  -+- Id:  [1], target: [Fabric], IPU-M host:  [10.1.5.1], IPU#: [2]
+  -+- Id:  [2], target: [Fabric], IPU-M host:  [10.1.5.1], IPU#: [1]
+
+One may also display detailed information for a specific device.  The devices are numbered 0-63.  For example,
+
+  gc-info --device-id 0 --device-info
+
+See gc-info --help for more information.
+
+
+|- ## How busy is the system?
+
+Use one of
+
+  top
+  htop
+
+
+|- # Documentation links
+
+Poplar SDK (https://docs.graphcore.ai/projects/sdk-overview/en/latest/overview.html?highlight=poptorch#introduction)
+PyTorch for the IPU: User Guide (https://docs.graphcore.ai/projects/poptorch-user-guide/en/3.2.0/index.html)
+Targetting the IPU from Tensorflow 2 (https://docs.graphcore.ai/projects/tensorflow-user-guide/en/latest/index.html) 
+IPU programming guide (https://docs.graphcore.ai/projects/ipu-programmers-guide/en/latest/index.html) 
+Examples (https://docs.graphcore.ai/projects/tutorials/en/latest/intro.html) 
+Examples Github Repo (https://github.com/graphcore/examples) 
+POD systems (https://docs.graphcore.ai/projects/ipu-pod-getting-started/en/latest/overview.html?highlight=PopTorch#pod-overview) 
+POD64 specs (https://www.graphcore.ai/products/bow-pod64#product-spec)
+
+
+|- # System Overview
+
+
+|- ## Introduction
+
+The SambaNova DataScale system is architected around the next-generation Reconfigurable Dataflow Unit (RDU) processor for optimal dataflow processing and acceleration. The AI Testbed's SambaNova system is a half-rack system consisting of two nodes, each of which features eight RDUs interconnected to enable model and data parallelism. SambaFlow, its software stack, extracts, optimizes, and maps dataflow graphs to the RDUs from standard machine learning frameworks, like PyTorch.
+
+Here is the link to the SambaNova white paper: Accelerated Computing with a Reconfigurable Dataflow Architecture (https://sambanova.ai/wp-content/uploads/2021/06/SambaNova_RDA_Whitepaper_English.pdf)
+
+
+|- # Getting Started
+
+
+|- ## On-Boarding
+
+See Get Started (https://www.alcf.anl.gov/support-center/get-started)
+to request an account and additional information.
+
+
+|- ## Setup
+
+
+|- ### System View
+
+Connection to a SambaNova node is a two-step process. The first step is to ssh to the login node.
+This step requires an MFA passcode for authentication - an
+eight-digit passcode generated by an app on your mobile device, e.g., mobilePASS+.
+The second step is to log in to a SambaNova node from the login node.
+
+
+
+  <image sambanova_login.jpg: SambaNova System View>
+
+
+|- ### Log in to Login Node
+
+Login to the SambaNova login node from your local machine using the below command. This uses the MobilPass+ token generated every time you log in to the system. This is the same passcode used to authenticate into other ALCF systems, such as Theta and Cooley.
+
+In the examples below, replace ALCFUserID with your ALCF user id.
+
+  ssh ALCFUserID@sambanova.alcf.anl.gov
+  Password: < MobilPass+ code >
+
+Note: Use the ssh "-v" option in order to debug any ssh problems.
+
+
+|- ### Log in to a SambaNova Node
+
+Once you are on the login node, the SambaNova system can be accessed using the alias sm-01 or sm-02.
+
+  ssh sm-01
+  # or
+  ssh sm-02
+
+
+|- ### SDK setup
+
+The SambaNova system has a bash shell script to set up the required software environment.
+This sets up the SambaFlow software stack, and the associated environmental variables and starts
+a pre-configured virtual environment.
+
+Use
+
+  ALCFUserID@sm-01:~$ source /software/sambanova/envs/sn_env.sh
+  (venv) ALCFUserID@sm-01:~$
+
+The contents of the sn_env.sh script is shown below for convenience.
+
+  alias snpath='export PATH=$PATH:/opt/sambaflow/bin' # This is the path to SambaFlow which is the software stack running on SambaNova systems. This stack includes the Runtime, the compilers, and the SambaFlow Python SDK which is used to create and run models.
+
+  alias snthreads='export OMP_NUM_THREADS=16' # The OMP_NUM_THREADS environment variable sets the number of threads to use for parallel regions. The value of this environment variable must be a list of positive integer values. The values of the list set the number of threads to use for parallel regions at the corresponding nested levels. For the SambaNova system, it is usually set to 1.
+
+  alias snvenv='source /opt/sambaflow/venv/bin/activate' # This starts the pre-configured virtual environment that consists of sambaflow and other built-in libraries.
+
+NOTE:  SambaNova operations will fail unless the SambaNova venv is set
+up.
+
+You may deactivate the environment if finished.
+
+  deactivate
+
+
+|- # Virtual Environments to Customize Environment
+
+
+|- ## Using a Virtual Venv
+
+To create a virtual environment, one can use the --system-site-packages flag:
+
+  python -m venv --system-site-packages my_env
+  source my_env/bin/activate
+
+
+|- ### System Site Packages
+
+There are many packages available on the system.
+Run the following Python script to retrieve the
+location of the packages:
+
+  import sys
+  site_packages = next(p for p in sys.path if 'site-packages' in p)
+  print(site_packages)
+
+Given the location of the packages, one may list the packages.
+For example:
+
+  ls -al /opt/sambaflow/venv/lib/python3.7/site-packages
+
+
+|- ## Installing Packages
+
+Install packages in the normal manner such as:
+
+  python3 -m pip install "SomeProject"
+
+For more details see Use pip for installing (https://packaging.python.org/en/latest/tutorials/installing-packages/#use-pip-for-installing).
+
+To install a different version of a package that is already installed in one's environment, one can use:
+
+  pip install --ignore-installed  ... # or -I
+
+Note: Conda is not supported on the SambaNova system.
+
+
+|- # Steps to Run a Model/Program
+
+NOTE:  Please be mindful of how you are using the system.
+For example, consider running larger jobs in the evening or on weekends.
+
+NOTE: Please use only Slurm commands, i.e., srun and sbatch, to run your code.
+If you run your code directly using the python command, it may cause conflicts
+on the system.
+
+
+|- ## Introduction
+
+The SambaNova workflow includes the following main steps to run a model.
+
+1. Compile
+2. Run
+3. Test (optional)
+
+The system uses the Slurm job
+scheduler (https://slurm.schedmd.com/quickstart.html) to schedule the jobs and manage the workload on the system. For more information on Slurm, see Job Queueing and Submission (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen1/job-queuing-and-submission/).
+
+
+|-- # Job Queueing and Submission
+
+
+|-- ## Introduction
+
+SambaNova uses Slurm for job submission and queueing. Below are some of the important commands for using Slurm. For more information refer to Slurm Documentation (https://slurm.schedmd.com/).
+
+NOTE: Run the python scripts using srun or sbatch, to ensure that concurrent jobs do not interfere with each other.
+
+NOTE: There is just one scheduler for both sm-01 and sm-02.
+
+
+|-- ## Srun
+
+The Slurm command srun can be used to run individual python scripts in parallel with other scripts on a cluster managed by Slurm. Examples of srun usage are shown below.
+
+Slurm will assign a nodelist/host to run a job if a host is not specified.
+
+Example:
+
+  srun python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  srun python lenet.py run --pef="pef/lenet/lenet.pef"
+
+You may specify which node/host on which to run a job.
+
+Reasons to specify a node list:
+
+• One wants to test a specific node to verify function of the HW and SW  (daily smoke tests do this)
+• The nodes are at different software levels and one wants to use a node that has the needed software level for one's application.
+
+Example:
+
+  srun --nodelist=sm-02 python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+
+
+|-- ## Sbatch
+
+Alternatively, these jobs can be submitted to the Slurm workload manager through a batch script by using the sbatch command. To do this, create a bash script (submit-lenet-job.sh here as an example) with the commands that you want to execute.
+
+  #!/bin/sh
+
+  python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  python lenet.py run --pef="pef/lenet/lenet.pef"
+
+Then pass the bash script as an input to the sbatch command as shown below.
+
+  sbatch --output=pef/lenet/output.log submit-lenet-job.sh
+
+In case of the need to use multiple RDUs (2 in the example shown below), the sbatch command would be altered as:
+
+  sbatch --gres=rdu:2 <your_script.sh>
+
+
+|-- ## Squeue
+
+The squeue command provides information about jobs located in the Slurm scheduling queue.
+
+  squeue
+
+
+|-- ## Sinfo
+
+Sinfo is used to view partition and node information for a system running Slurm.
+
+Here is a suggested command:
+
+  sinfo -O AllocNodes, GresUsed, Gres, NodeList
+
+For more information, see sinfo (https://slurm.schedmd.com/sinfo.html).
+
+
+|-- ## Scancel
+
+Scancel is used to signal or cancel jobs, job arrays, or job steps.
+
+  scancel job_id
+
+Example Programs (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen1/example-programs/) lists the different example applications with corresponding commands for each of the above steps.
+
+
+|-- # Example Programs
+
+SambaNova provides examples of some well-known AI applications under the path: /opt/sambaflow/apps/starters, on both SambaNova compute nodes. Make a copy of this to your home directory:
+
+Copy starters to your personal directory structure:
+
+  cd ~/
+  mkdir apps
+  cp -r /opt/sambaflow/apps/starters apps/starters
+
+
+|-- ## LeNet
+
+Change directory
+
+  cd ~/apps/starters/lenet
+
+
+|-- ### Common Arguments
+
+Below are some of the common arguments used across most of the models in the example code.
+
+Argument         Default Help
+-----------------------------------------------------
+-b               1       Batch size for training
+
+-n,              100     Number of iterations to run
+--num-iterations         the pef for
+
+-e,              1       Number epochs for training
+--num-epochs
+
+--log-path       'check  Log path
+points'
+
+--num-workers    0       Number of workers
+
+--measure-train- None    Measure training performance
+performance
+
+
+|-- ### LeNet Arguments
+
+Argument       Default  Help
+----------------------------------------------------
+--lr           0.01     Learning rate for training
+
+--momentum     0.0      Momentum value for training
+
+--weight-decay 0.01     Weight decay for training
+
+--data-path    './data' Data path
+
+--data-folder  'mnist_  Folder containing mnist data
+data'
+
+NOTE:  If you receive an \"HTTP error\" message on any of the
+following commands, run the command again. Such errors (e.g 503) are
+commonly an intermittent failure to download a dataset.
+
+Run these commands:
+
+  srun python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  srun python lenet.py run --pef="pef/lenet/lenet.pef"
+
+To use Slurm sbatch, create submit-lenet-job.sh with the following
+contents:
+
+  #!/bin/sh
+
+  python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  python lenet.py run --pef="pef/lenet/lenet.pef"
+
+Then
+
+  sbatch --output=pef/lenet/output.log submit-lenet-job.sh
+
+Squeue will give you the queue status.
+
+  squeue
+  # One may also...
+  watch squeue
+
+The output file will look something like this:
+
+  [Info][SAMBA][Default] # Placing log files in
+  pef/lenet/lenet.samba.log
+
+  [Info][MAC][Default] # Placing log files in
+  pef/lenet/lenet.mac.log
+
+  [Warning][SAMBA][Default] #
+
+  --------------------------------------------------
+
+  Using patched version of torch.cat and torch.stack
+
+  --------------------------------------------------
+
+  [Warning][SAMBA][Default] # The dtype of "targets" to
+  CrossEntropyLoss is torch.int64, however only int16 is currently
+  supported, implicit conversion will happen
+
+  [Warning][MAC][GraphLoweringPass] # lenet__reshape skip
+  set_loop_to_air
+
+  [Warning][MAC][GraphLoweringPass] # lenet__reshape_bwd skip
+  set_loop_to_air
+
+  ...
+
+  Epoch [1/1], Step [59994/60000], Loss: 0.1712
+
+  Epoch [1/1], Step [59995/60000], Loss: 0.1712
+
+  Epoch [1/1], Step [59996/60000], Loss: 0.1712
+
+  Epoch [1/1], Step [59997/60000], Loss: 0.1712
+
+  Epoch [1/1], Step [59998/60000], Loss: 0.1712
+
+  Epoch [1/1], Step [59999/60000], Loss: 0.1712
+
+  Epoch [1/1], Step [60000/60000], Loss: 0.1712
+
+  Test Accuracy: 98.06 Loss: 0.0628
+
+  2021-6-10 10:52:28 : [INFO][SC][53607]: SambaConnector: PEF File:
+  pef/lenet/lenet.pef
+
+  Log ID initialized to: [ALCFUserID][python][53607] at
+  /var/log/sambaflow/runtime/sn.log
+
+
+|-- ## MNIST - Feed Forward Network
+
+Change directory
+
+  cd ~/apps/starters/ffn_mnist/
+
+Commands to run MNIST example:
+
+  srun python ffn_mnist.py compile --pef-name="ffn_mnist" --output-folder="pef"
+  srun python ffn_mnist.py run --pef="pef/ffn_mnist/ffn_mnist.pef" --data-path mnist_data
+
+To run the same using Slurm sbatch, create and run the submit-ffn_mnist-job.sh with the following contents.
+
+  #!/bin/sh
+  python ffn_mnist.py compile --pef-name="ffn_mnist" --output-folder="pef"
+  python ffn_mnist.py run --pef="pef/ffn_mnist/ffn_mnist.pef" --data-path mnist_data
+
+  sbatch --output=pef/ffn_mnist/output.log submit-ffn_mnist-job.sh
+
+
+|-- ## Logistic Regression
+
+Change directory
+
+  cd ~/apps/starters/logreg
+
+
+|-- ### Logistic Regression Arguments
+
+This is not an exhaustive list of arguments.
+
+Arguments
+
+Argument       Default Help                         Step
+-----------------------------------------------------------
+--lr           0.001   Learning rate for training   Compile
+
+--momentum     0.0     Momentum value for training  Compile
+
+--weight-decay 1e-4    Weight decay for training    Compile
+
+--num-features 784     Number features for training Compile
+
+--num-classes  10      Number classes for training  Compile
+
+--weight-norm  na      Enable weight normalization  Compile
+
+Run these commands:
+
+  srun python logreg.py compile --pef-name="logreg" --output-folder="pef"
+  srun python logreg.py test --pef="pef/logreg/logreg.pef"
+  srun python logreg.py run --pef="pef/logreg/logreg.pef"
+
+To use Slurm, create submit-logreg-job.sh with the following contents:
+
+  #!/bin/sh
+  python logreg.py compile --pef-name="logreg" --output-folder="pef"
+  python logreg.py test --pef="pef/logreg/logreg.pef"
+  python logreg.py run --pef="pef/logreg/logreg.pef"
+
+Then
+
+  sbatch --output=pef/logreg/output.log submit-logreg-job.sh
+
+The output, pef/logreg/output.log, will look something like this:
+
+  [Info][SAMBA][Default] # Placing log files in
+  pef/logreg/logreg.samba.log
+  [Info][MAC][Default] # Placing log files in
+  pef/logreg/logreg.mac.log
+  [Warning][SAMBA][Default] #
+  --------------------------------------------------
+  Using patched version of torch.cat and torch.stack
+  --------------------------------------------------
+
+  [Warning][SAMBA][Default] # The dtype of "targets" to
+  CrossEntropyLoss is torch.int64, however only int16 is currently
+  supported, implicit conversion will happen
+  [Warning][MAC][MemoryOpTransformPass] # Backward graph is trimmed
+  according to requires_grad to save computation.
+  [Warning][MAC][WeightShareNodeMergePass] # Backward graph is
+  trimmed according to requires_grad to save computation.
+  [Warning][MAC][ReduceCatFaninPass] # Backward graph is trimmed
+  according to requires_grad to save computation.
+  [info ] [PLASMA] Launching plasma compilation! See log file:
+  /home/ALCFUserID/apps/starters/pytorch/pef/logreg//logreg.plasma_compile.log
+  ...
+
+  [Warning][SAMBA][Default] # The dtype of "targets" to
+  CrossEntropyLoss is torch.int64, however only int16 is currently
+  supported, implicit conversion will happen
+  Epoch [1/1], Step [10000/60000], Loss: 0.4763
+  Epoch [1/1], Step [20000/60000], Loss: 0.4185
+  Epoch [1/1], Step [30000/60000], Loss: 0.3888
+  Epoch [1/1], Step [40000/60000], Loss: 0.3721
+  Epoch [1/1], Step [50000/60000], Loss: 0.3590
+  Epoch [1/1], Step [60000/60000], Loss: 0.3524
+  Test Accuracy: 90.07 Loss: 0.3361
+  2021-6-11 8:38:49 : [INFO][SC][99185]: SambaConnector: PEF File:
+  pef/logreg/logreg.pef
+  Log ID initialized to: [ALCFUserID][python][99185] at
+  /var/log/sambaflow/runtime/sn.log
+
+
+|-- ## UNet
+
+Change directory and copy files.
+
+  cp -r /opt/sambaflow/apps/image ~/apps/image
+  cd ~/apps/image/unet
+
+Using the contents of unet_compile_run_inf_rl.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen1/files/unet_compile_run_inf_rl.sh), create a file in the current directory with the same name.
+
+Export the path to the dataset which is required for the training.
+
+  export OUTDIR=~/apps/image/unet
+  export DATADIR=/software/sambanova/dataset/kaggle_3m
+
+Run these commands for training (compile + train):
+
+  sbatch unet_compile_run_inf_rl.sh compile 32 1  # Takes over 15 minutes.
+  sbatch unet_compile_run_inf_rl.sh test 32 1     # Very fast.
+  sbatch unet_compile_run_inf_rl.sh run 32 1      #
+
+The output files are named slurm-\<batch ID>.out.
+
+Using SLURM:  To use Slurm, create submit-unet-job.sh with the following
+contents:
+
+  #!/bin/sh
+  export OUTDIR=~/apps/image/unet
+  export DATADIR=/software/sambanova/dataset/kaggle_3m
+  ./unet_compile_run_inf_rl.sh compile 32 1
+  ./unet_compile_run_inf_rl.sh test 32 1
+  ./unet_compile_run_inf_rl.sh run 32 1
+
+Then
+
+  sbatch submit-unet-job.sh
+
+Squeue will give you the queue status.
+
+  squeue
+
+
+|- ## Compile
+
+Compiles the model and generates a .pef file. This file contains
+information on how to reconfigure the hardware, how many compute and
+memory resources are required and how they will be used in all subsequent steps.
+The pef files are by default saved in the 'out' directory; the
+SambaNova documentation advises saving pef files in separate
+directories with the '--output-folder' option.
+
+It is necessary to re-compile only when the model changes, or parameters specific to the model graph change, including the batch size.
+
+Compile times can be significant.
+Compile of the Unet sample, for example, when using images of size 32x32 pixels, takes 358 (s), and 1844 (s) for images of size 256x256.
+
+Example:
+
+  srun python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+
+Where
+
+Argument Default Help
+----------------------------------------
+-b       1       Batch size for training
+
+
+|- ## Run
+
+This will run the application on SN nodes.
+
+  srun python lenet.py run --pef="pef/lenet/lenet.pef"
+
+The location of the pef file generated in the compile step is passed as an argument to the run command.
+
+
+|- ## Test (Optional)
+
+This command is used to run the model on both the host CPU and the SambaNova node.  It compares the answers from the CPU and SambaNova RDU and will raise errors if any discrepancies are found. Pass the pef file generated as part of the compile step as the input to this command.
+
+  srun python lenet.py test --pef="pef/lenet/lenet.pef"
+
+
+|- # Example Multi-Node Programs
+
+SambaNova provides examples of some well-known AI applications under the path: /opt/sambaflow/apps/starters, on both SambaNova compute nodes. Make a copy of this to your home directory:
+
+Copy starters to your personal directory structure if you have not already done so.
+
+  cd ~/
+  mkdir apps
+  cp -r /opt/sambaflow/apps/starters apps/starters
+
+
+|- ## UNet
+
+
+|- ### Set-up
+
+Copy files and change directory if you have not already done so.
+
+  cp -r /opt/sambaflow/apps/image ~/apps/image
+  cd ~/apps/image
+  cp /software/sambanova/apps/image/pytorch/unet/*.sh .
+
+You just copied two bash scripts.  They are:
+
+1. unet_all.sh
+ 1.1. Compiles UNet and then submits a batch job to run the model.
+2. unet_batch.sh
+ 2.1. Runs Unet.
+
+
+|- ### Unet All
+
+Here is a breakdown of unet_all.sh.
+
+The argument -x is used to specify that each executed line is to be displayed.
+
+The second line is to stop on error.
+
+Lastly, set total time, SECONDS, to zero.
+
+  #! /bin/bash -x
+  set -e
+  #
+  # Usage: ./unet_all.sh 256 256
+  #
+  SECONDS=0
+
+Set variables.
+
+  # IMage size.
+  IM=${1}
+  # Batch Size
+  BS=${2}
+  NUM_WORKERS=1
+  export OMP_NUM_THREADS=16
+
+Activate the virtual environment.  And, establish the UNet directory.
+
+  source /opt/sambaflow/venv/bin/activate
+  UNET=$(pwd)/unet
+
+Display model name and time.
+
+  echo "Model: UNET"
+  echo "Date: " $(date +%m/%d/%y)
+  echo "Time: " $(date +%H:%M)
+
+  echo "COMPILE"
+
+This section will compile the model for multiple RDUs if it does not exist.
+
+A log file will be created at compile_${BS}_${IM}_NN.log.
+
+  # Compile for parallel RDUs
+  if [ ! -e out/unet_train_${BS}_${IM}_NN/unet_train_${BS}_${IM}_NN.pef ] ; then
+    python ${UNET}/unet.py compile -b ${BS} --in-channels=3 --in-width=${IM} --in-height=${IM} --enable-conv-tiling --mac-v2 --compiler-configs-file ${UNET}/jsons/compiler_configs/unet_compiler_configs_no_inst.json --pef-name="unet_train_${BS}_${IM}_NN"  --data-parallel -ws 2 > compile_${BS}_${IM}_NN.log 2>&1
+  fi
+
+Here, a batch job is submitted for the multi-node run.
+
+Sbatch argument definitions:
+
+1. --gres=rdu:1
+This indicates that the model fits on a single RDU.
+2. --tasks-per-node 8
+All eight RDUs per node are to be used.  Valid options are 1 through 8.
+3. --nodes 2
+The number of nodes to use.  Currently there are two nodes.
+4. --nodelist sm-02,sm-01
+The node names to use.
+5. --cpus-per-task=16
+CPUs per model.
+6. unet_batch.sh
+The bash script to be batched.
+
+Unet_batch.sh argument definitions:
+
+• NN
+Number of nodes.
+
+  # Run Multi-Node, Data Parallel
+  NN=2
+  echo "RUN"
+  echo "NN=${NN}"
+  sbatch --gres=rdu:1 --tasks-per-node 8  --nodes 2 --nodelist sm-02,sm-01 --cpus-per-task=16 ./unet_batch.sh ${NN} ${NUM_WORKERS}
+  echo "Duration: " $SECONDS
+
+
+|- ### Unet Batch
+
+Here is a description of unet_batch.sh.  This script is automatically run by unet_all.sh.
+
+This block is the same as above.
+
+  #! /bin/bash -x
+  set -e
+  #
+  # Usage: ./unet_batch.sh 2 1
+  #
+  SECONDS=0
+
+Establish variables.
+
+  # Batch Size
+  BS=256
+
+  # IMage size
+  IM=256
+  NN=${1}
+  NUM_WORKERS=${2}
+  export OMP_NUM_THREADS=16
+  DATADIR=/software/sambanova/dataset/kaggle_3m
+  UNET=$(pwd)/unet
+  export SAMBA_CCL_USE_PCIE_TRANSPORT=0
+
+Activate virtual environment.
+
+  source /opt/sambaflow/venv/bin/activate
+
+Display an informative banner.
+
+  echo "Model: UNET_TRAIN"
+  echo "Date: " $(date +%m/%d/%y)
+  echo "Time: " $(date +%H:%M)
+
+Run Unet
+
+  srun --mpi=pmi2 python ${UNET}/unet_hook.py  run --do-train --in-channels=3 --in-width=${IM} --in-height=${IM} --init-features 32 --batch-size=${BS} --epochs 2   --data-dir ${DATADIR} --log-dir log_dir_unet_${NN}_train_kaggle --pef=$(pwd)/out/unet_train_${BS}_${IM}_NN/unet_train_${BS}_${IM}_NN.pef --data-parallel --reduce-on-rdu --num-workers=${NUM_WORKERS}
+
+Display total execution time.
+
+  echo "Duration: " $SECONDS
+
+
+|- ### Compile and Run
+
+Change directory:
+
+  cd ~/apps/image/
+
+Compile and run UNet:
+
+  ./unet_all.sh 256 256
+
+Squeue will give you the queue status.
+
+  squeue
+
+
+|- # Tunneling and Forwarding Ports
+
+Port forwarding is covered here.  This is specifically for TensorBoard.
+
+
+|- ## TensorBoard Port-Forwarding
+
+This section describes the steps to be followed to set up port forwarding for applications,
+like TensorBoard, which runs on the SambaNova system and binds to one or more ports.
+This example uses 6006 and 16006 as port numbers. Using port numbers other than these may
+avoid collisions with other users.
+
+
+|- ### From your local machine
+
+Run
+
+  ssh -v -N -f -L localhost:16006:localhost:16006 ALCFUserID@sambanova.alcf.anl.gov
+  ...
+  Password: < MobilPass+ code >
+
+  ssh ALCFUserID@sambanova.alcf.anl.gov
+  ...
+  Password: < MobilPass+ code >
+
+replacing ALCFUserID with your ALCF User ID.
+
+
+|- ### From 
+
+Below are the commands specific to sm-01. You may replace sm-01 with sm-02 when using the appropriate system.
+
+Run
+
+NOTE:  The full name is sm-01.ai.alcf.anl.gov and it may also be used.
+
+  ssh -N -f -L localhost:16006:localhost:6006 ALCFUserID@sm-01
+  ssh ALCFUserID@sm-01
+
+
+|- ### On 
+
+Execute the following command:
+
+  ALCFUserID@sm-01:~$ source /software/sambanova/envs/sn_env.sh
+  (venv) ALCFUserID@sm-01:~$
+
+Navigate to the appropriate directory for your model.
+Launch your model using srun or sbatch.
+
+  cd /path/to/your/project
+  sbatch --output=pef/my_model/output.log submit-my_model-job.sh
+
+
+|- ### On Another sm-01 Terminal Window
+
+The SambaNova system has a bash shell script to setup the required software environment.
+This sets up the SambaFlow software stack, the associated environmental variables and activates
+a pre-configured virtual environment.
+
+Use
+
+  ALCFUserID@sm-01:~$ source /software/sambanova/envs/sn_env.sh
+  (venv) ALCFUserID@sm-01:~$
+
+Navigate to the appropriate directory for your model.
+
+  cd /path/to/your/project
+  tensorboard --logdir /logs --port 6006
+
+
+|- ### Browser on Local Machine
+
+Then, navigate in your browser to, in this example, http://localhost:16006 on your local machine.
+
+
+|- ## Notes
+
+Explanation of ssh command:
+
+  -N : no remote commands
+
+  -f : put ssh in the background
+
+  -L <machine1>:<portA>:<machine2>:<portB> :
+
+  The full command line will forward <machine1>:<portA> (local scope) to <machine2>:<portB> (remote scope)
+
+Adapted from:  How can I run Tensorboard on a remote server? (https://stackoverflow.com/questions/37987839/how-can-i-run-tensorboard-on-a-remote-server)
+
+
+|- # Miscellaneous
+
+
+|- ## SDK Version
+
+To find the SDK version, run the following commands
+
+  (venv) ALCFUserID@sm-01:~$ python
+  Python 3.7.6 (default, Feb 18 2020, 21:28:31) 
+  [GCC 9.3.0] on linux
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>> import sambaflow
+  >>> sambaflow.__version__
+  '1.11.5'
+  >>>
+
+
+|- ## OMP_NUM_THREADS
+
+The OMP_NUM_THREADS environment variable sets the number of threads to use for parallel regions.
+
+The value of this environment variable must be a list of positive integer values. The values of the list set the number of threads to use for parallel regions at the corresponding nested levels.
+
+For the SambaNova system it, is usually set to one.
+
+  export OMP_NUM_THREADS=1
+
+
+|- ## Where is the Model?
+
+Two copies of the model are maintained.  One in CPU memory and one in RDU
+memory. They do not interfere with each other unless you explicitly sync
+the model/parameter in between using:
+
+  SambaTensor.rdu() # Moves the CPU model to the RDU
+  SambaTensor.cpu() # Moves the RDU model to the CPU
+
+In order to run the model on the CPU, you can simply use the PyTorch model
+as if there is no RDU.
+In order to run the model on RDU, you would need to use session.run().
+
+
+|- ## Useful Commands
+
+
+|- ### SN Configuration
+
+  snconfig
+
+The snconfig utility shows the static configuration of the system. The configuration on sm-01 for the first RDU is as follows:
+
+  Platform Name: DataScale SN10-8
+  Node Name: NODE
+  Number of XRDUS: 4
+  XRDU Name: XRDU_0
+  Number of RDUS: 2
+  RDU name: RDU_0
+  Number of TILES: 4
+  TILE Name: TILE_0
+  Serial Number : N/A
+  ...
+  Number of PCIES: 4
+  PCIE Name: PCIE_0
+  Bandwidth : 32 GB/s
+  Speed : 16 GT/s
+  Width : 16
+  Serial Number : N/A
+  ...
+  Number of DDRCHs: 6
+  DDR CH Name: DDRCH_0
+  Number of DIMMS: 2
+  DIMM Name: DIMM_C0
+  Size : 64.0 GB
+  DIMM Name: DIMM_C1
+  Size : 0.0 GB
+  Serial Number : N/A
+  Current utilization can be seen with sntilestat. In this example, only
+  four tiles in one RDU are in use.
+  TILE %idle %exec %pload %aload %chkpt %quiesce PID USER COMMAND
+  /XRDU_0/RDU_0/TILE_0 80.4 7.0 10.4 2.2 0.0 0.0 49880 arnoldw python
+  res_ffn_mnist.py run --pef=pef/res_ffn_mnist/res_ffn_mnist.pef
+  --num-epochs 100
+  /XRDU_0/RDU_0/TILE_1 80.5 6.9 11.3 1.3 0.0 0.0 49880 arnoldw python
+  res_ffn_mnist.py run --pef=pef/res_ffn_mnist/res_ffn_mnist.pef
+  --num-epochs 100
+  /XRDU_0/RDU_0/TILE_2 82.1 4.7 11.4 1.8 0.0 0.0 49880 arnoldw python
+  res_ffn_mnist.py run --pef=pef/res_ffn_mnist/res_ffn_mnist.pef
+  --num-epochs 100
+  /XRDU_0/RDU_0/TILE_3 80.1 6.3 11.7 1.9 0.0 0.0 49880 arnoldw python
+  res_ffn_mnist.py run --pef=pef/res_ffn_mnist/res_ffn_mnist.pef
+  --num-epochs 100
+  /XRDU_0/RDU_1/TILE_0 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_0/RDU_1/TILE_1 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_0/RDU_1/TILE_2 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_0/RDU_1/TILE_3 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_0/TILE_0 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_0/TILE_1 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_0/TILE_2 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_0/TILE_3 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_1/TILE_0 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_1/TILE_1 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_1/TILE_2 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_1/RDU_1/TILE_3 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_0/TILE_0 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_0/TILE_1 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_0/TILE_2 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_0/TILE_3 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_1/TILE_0 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_1/TILE_1 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_1/TILE_2 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_2/RDU_1/TILE_3 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_0/TILE_0 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_0/TILE_1 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_0/TILE_2 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_0/TILE_3 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_1/TILE_0 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_1/TILE_1 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_1/TILE_2 100.0 0.0 0.0 0.0 0.0 0.0
+  /XRDU_3/RDU_1/TILE_3 100.0 0.0 0.0 0.0 0.0 0.0
+
+
+|- ### SambaNova Daemon Service
+
+The following command checks if the SambaNova daemon service is running.
+
+  systemctl status snd
+
+The output should look something like this:
+
+  * snd.service - SN Devices Service
+     Loaded: loaded (/usr/lib/systemd/system/snd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2022-02-18 11:45:15 CST; 1 months 25 days ago
+   Main PID: 3550 (snd)
+      Tasks: 10 (limit: 19660)
+     CGroup: /system.slice/snd.service
+             `-3550 /opt/sambaflow/bin/snd
+
+  Warning: Journal has been rotated since the unit was started. Log output is incomplete or unavailable.
+
+
+|- ### Tile status
+
+  sntilestat
+  watch sntilestat
+
+The output shown below is when the system is completely idle.
+
+  TILE                 %idle %exec %pload %aload %chkpt %quiesce    PID     USER COMMAND
+  /XRDU_0/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+
+
+|- ### Finding Hung Tiles
+
+  snconfig show Node dynamic | grep perfect
+
+
+|- ### How busy is the system?
+
+Use one of
+
+  top
+  htop
+
+
+|- # Documentation
+
+The SambaNova documentation is housed at /software/sambanova/docs/latest/ accessible via login node.
+
+  getting-started.pdf             # Getting Started with SambaFlow
+  accuracy-debugging-tools.pdf    # Introduction to the model accuracy debugging tools.
+  compiler-options.pdf            # Provides advanced compiler options for the compile command.
+  conversion-to-sambaflow.pdf     # Converting existing models to SambaFlow
+  intermediate-tutorial.pdf       # SambaFlow intermediate model
+  intro-tutorial-pytorch.pdf      # A peek into the code of the above example program.
+  release-notes.pdf               # Provide new feature and bug fixes updates for each release version.
+  run-examples-language.pdf       # Run BERT on RDU
+  run-examples-pytorch.pdf        # Run Power PCA and micro models like GEMM on RDU
+  run-examples-vision.pdf         # Run UNET on RDU.
+  using-layernorm.pdf             # Example to use LayerNorm instead of BatchNorm
+  using-venvs.pdf                 # Python Virtual Environment.
+
+  latest\
+      accuracy-debugging-tools.pdf
+      compiler-options.pdf
+      conversion-to-sambaflow.pdf
+      getting-started.pdf
+      intermediate-tutorial.pdf
+      intro-tutorial-pytorch.pdf
+      release-notes.pdf
+      run-examples-language.pdf
+      run-examples-pytorch.pdf
+      run-examples-vision.pdf
+      using-layernorm.pdf
+      using-venvs.pdf
+
+The documentation can be viewed on your local system by copying the files from the login node.
+
+  cd <your docs destination>
+  scp -r ALCFUserID@sambanova.alcf.anl.gov:/software/sambanova/docs/latest/* .
+
+View the PDFs in your favorite viewer or web browser on your local machine.
+
+
+|- # System Overview
+
+
+|- ## Introduction
+
+The SambaNova DataScale SN30 system is architected around the next-generation Reconfigurable Dataflow Unit (RDU) processor for optimal dataflow processing and acceleration. The AI Testbed's SambaNova SN30 system consists of eight nodes in 4 full racks, each node featuring eight RDUs interconnected to enable model and data parallelism. SambaFlow, Sambanova's software stack, extracts, optimizes, and maps the dataflow graphs to the RDUs from standard machine learning frameworks like PyTorch.
+
+Below are some of the links to SambaNova documentation.
+
+SambaNova white paper: Accelerated Computing with a Reconfigurable Dataflow Architecture (https://sambanova.ai/wp-content/uploads/2021/06/SambaNova_RDA_Whitepaper_English.pdf)
+
+SN30 documentation: SambaNova Documentation (https://docs.sambanova.ai/home/latest/index.html)
+
+
+|- # Getting Started
+
+
+|- ## On-Boarding
+
+SambaNova SN30 can be accessed using your ALCF account. See Get Started (https://www.alcf.anl.gov/support-center/get-started)
+to request an account and for additional information.
+
+
+|- ## Setup
+
+
+|- ### System View
+
+Connection to a SambaNova node is a two-step process. The first step is to ssh to the login node.
+This step requires an MFA passcode for authentication - an
+eight-digit passcode generated by an app on your mobile device, e.g., MobilePASS+.
+The second step is to log in to a SambaNova node from the login node.
+
+
+
+  <image sambanova_login.jpg: SambaNova System View>
+
+
+|- ### Log in to Login Node
+
+Log in to the SambaNova login node from your local machine using the below command. This uses the MobilePASS+ token generated every time you log in to the system. This is the same passcode used to authenticate into other ALCF systems, such as Polaris,  Theta and Cooley.
+
+In the examples below, replace ALCFUserID with your ALCF user id.
+
+  ssh ALCFUserID@sambanova.alcf.anl.gov
+  Password: < MobilePASS+ code >
+
+Note: Use the ssh "-v" option in order to debug any ssh problems.
+
+
+|- ### Log in to a SambaNova Node
+
+Once you are on the login node, a SambaNova node can be accessed using an alias, sn30-r[1-4]-h[1-2] where 'r' stands for the rack number, and 'h' stands for host. sn30-r1-h1 is the first host of the first rack.
+
+The 8 nodes are aliased as : sn30-r1-h1 , sn30-r1-h2, sn30-r2-h1, sn30-r2-h2, sn30-r3-h1, sn30-r3-h2, sn30-r4-h1, sn30-r4-h2.
+
+sn30-r1-h1 can be accessed as below.
+
+  ssh sn30-r1-h1
+
+
+|- ### SDK setup
+
+The required software environment (SambaFlow software stack and the associated environmental variables) for a SN30 node is set up automatically at login. This is unlike the SN10 where the environment had to be set up by each user.
+
+
+|- # Virtual Environments
+
+
+|- ## Using a Venv
+
+To create a virtual environment, one can use the --system-site-packages flag:
+
+  python -m venv --system-site-packages my_env
+  source my_env/bin/activate
+
+
+|- ## Installing Packages
+
+Install packages in the normal manner such as:
+
+  python3 -m pip install <package>
+
+For more details see Use pip for installing (https://packaging.python.org/en/latest/tutorials/installing-packages/#use-pip-for-installing).
+
+To install a different version of a package that is already installed in one's environment, one can use:
+
+  pip install --ignore-installed  ... # or -I
+
+
+|- ## Pre-Built Sample Venv
+
+Each of the samples or application examples provided by SambaNova has its own pre-built virtual environment which can be readily used. They are present in the /opt/sambaflow/apps/ directory tree within each of the applications.
+
+Note: Conda is not supported on the SambaNova system.
+
+
+|- # Running a Model/Program
+
+Note:  Please be mindful of how you are using the system.
+For example, consider running larger jobs in the evening or on weekends
+
+Note: Please use only Slurm commands, i.e., srun and sbatch, to run your code.
+If you run your code directly using the 'python' command, it may cause conflicts
+on the system.
+
+
+|- ## Introduction
+
+The SambaNova workflow includes the following main steps to run a model.
+
+1. Compile
+2. Run
+3. Test (optional)
+
+The system uses the Slurm job
+scheduler (https://slurm.schedmd.com/quickstart.html) to schedule the jobs and manage the workload on the system. For more information on Slurm, see Job Queueing and Submission (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/job-queuing-and-submission/).
+
+
+|-- # Job Queueing and Submission
+
+
+|-- ## Introduction
+
+SambaNova uses Slurm for job submission and queueing. Below are some of the important commands for using Slurm. For more information refer to Slurm Documentation (https://slurm.schedmd.com/).
+
+Note: Run the Python scripts using 'srun' or 'sbatch', to ensure that concurrent jobs do not interfere with each other.
+
+Note: There is just one scheduler for all of the SambaNova nodes.
+
+
+|-- ## SRun
+
+The Slurm command srun can be used to run individual Python scripts in parallel with other scripts on a cluster managed by Slurm. Examples of srun usage are shown below.
+
+Slurm will assign a nodelist/host to run a job if a host is not specified.
+
+Example:
+
+  srun python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  srun python lenet.py run --pef="pef/lenet/lenet.pef"
+
+You may specify which node/host on which to run a job.
+
+Reasons to specify a node list:
+
+• One wants to test a specific node to verify the function of the HW and SW  (daily smoke tests do this)
+• The nodes are at different software levels and one wants to use a node that has the needed software level for one's application.
+
+Example:
+
+  srun --nodelist=sn30-r1-h1 python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+
+
+|-- ## SBatch
+
+Alternatively, these jobs can be submitted to the Slurm workload manager through a batch script by using the sbatch command. To do this, create a bash script (submit-lenet-job.sh here as an example) with the commands that you want to execute.
+
+  #!/bin/sh
+
+  python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  python lenet.py run --pef="pef/lenet/lenet.pef"
+
+Then pass the bash script as an input to the sbatch command as shown below.
+
+  sbatch --output=pef/lenet/output.log submit-lenet-job.sh
+
+In case of the need to use multiple RDUs (2 in the example shown below), the sbatch command would be altered as:
+
+  sbatch --gres=rdu:2 <your_script.sh>
+
+
+|-- ## SQueue
+
+The squeue command provides information about jobs located in the Slurm scheduling queue.
+
+  squeue
+
+
+|-- ## SInfo
+
+SInfo is used to view partition and node information for a system running Slurm.
+
+Here is a suggested command:
+
+  sinfo -O AllocNodes, GresUsed, Gres, NodeList
+
+For more information, see SInfo (https://slurm.schedmd.com/sinfo.html).
+
+
+|-- ## SCancel
+
+SCancel is used to signal or cancel jobs, job arrays, or job steps.
+
+  scancel job_id
+
+Example Programs (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/example-programs/) lists the different example applications with corresponding commands for each of the above steps.
+
+
+|-- # Example Programs
+
+SambaNova provides examples of some well-known simple AI applications under the path: /opt/sambaflow/apps/starters, on all SambaNova compute nodes. Make a copy of this to your home directory:
+
+  cd ~/
+  mkdir apps
+  cp -r /opt/sambaflow/apps/starters apps/starters
+
+
+|-- ## LeNet
+
+Change directory
+
+  cd ~/apps/starters/lenet
+
+
+|-- ### Common Arguments
+
+Below are some of the common arguments used across most of the models in the example code.
+
+Argument         Default Help
+-----------------------------------------------------
+-b               1       Batch size for training
+
+-n,              100     Number of iterations to run
+--num-iterations         the pef for
+
+-e,              1       Number epochs for training
+--num-epochs
+
+--log-path       'check  Log path
+points'
+
+--num-workers    0       Number of workers
+
+--measure-train- None    Measure training performance
+performance
+
+
+|-- ### LeNet Arguments
+
+Argument       Default  Help
+----------------------------------------------------
+--lr           0.01     Learning rate for training
+
+--momentum     0.0      Momentum value for training
+
+--weight-decay 0.01     Weight decay for training
+
+--data-path    './data' Data path
+
+--data-folder  'mnist_  Folder containing mnist data
+data'
+
+Establish the Environment
+
+  source /opt/sambaflow/apps/starters/lenet/venv/bin/activate
+
+Note:  If you receive an \"HTTP error\" message on any of the
+following commands, run the command again. Such errors (e.g 503) are
+commonly an intermittent failure to download a dataset.
+
+Run these commands to compile and train the LeNet model:
+
+  srun python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  srun python lenet.py run --pef="pef/lenet/lenet.pef"
+
+Alternatively to use Slurm sbatch, create submit-lenet-job.sh with the following
+contents:
+
+  #!/bin/sh
+
+  python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+  python lenet.py run --pef="pef/lenet/lenet.pef"
+
+Then
+
+  sbatch --output=pef/lenet/output.log submit-lenet-job.sh
+
+Squeue will give you the queue status.
+
+  squeue
+  # One may also...
+  watch squeue
+
+One may see the run log using:
+
+  cat pef/lenet/output.log
+
+
+|-- ## MNIST - Feed Forward Network
+
+Establish the Environment
+
+  source /opt/sambaflow/apps/starters/ffn_mnist/venv/bin/activate
+
+Change directory
+
+  cd ~/apps/starters/ffn_mnist/
+
+Commands to run MNIST example:
+
+  srun python ffn_mnist.py  compile -b 1 --pef-name="ffn_mnist" --mac-v2
+  srun python ffn_mnist.py  run -b 1 -p out/ffn_mnist/ffn_mnist.pef
+
+To run the same using Slurm sbatch, create and run the submit-ffn_mnist-job.sh with the following contents.
+
+  #!/bin/sh
+  python ffn_mnist.py  compile -b 1 --pef-name="ffn_mnist" --mac-v2
+  python ffn_mnist.py  run -b 1 -p out/ffn_mnist/ffn_mnist.pef
+
+  sbatch --output=pef/ffn_mnist/output.log submit-ffn_mnist-job.sh
+
+
+|-- ## Logistic Regression
+
+Establish the Environment
+
+  source /opt/sambaflow/apps/starters/logreg/venv/bin/activate
+
+Change directory
+
+  cd ~/apps/starters/logreg
+
+
+|-- ### Logistic Regression Arguments
+
+This is not an exhaustive list of arguments.
+
+Arguments
+
+Argument       Default Help                         Step
+-----------------------------------------------------------
+--lr           0.001   Learning rate for training   Compile
+
+--momentum     0.0     Momentum value for training  Compile
+
+--weight-decay 1e-4    Weight decay for training    Compile
+
+--num-features 784     Number features for training Compile
+
+--num-classes  10      Number classes for training  Compile
+
+--weight-norm  na      Enable weight normalization  Compile
+
+Run these commands:
+
+  srun python logreg.py compile --pef-name="logreg" --output-folder="pef"
+  srun python logreg.py run --pef="pef/logreg/logreg.pef"
+
+To use Slurm, create submit-logreg-job.sh with the following contents:
+
+  #!/bin/sh
+  python logreg.py compile --pef-name="logreg" --output-folder="pef"
+  python logreg.py run --pef="pef/logreg/logreg.pef"
+
+Then
+
+  sbatch --output=pef/logreg/output.log submit-logreg-job.sh
+
+The output, pef/logreg/output.log, will look something like this:
+
+  2023-03-08 21:18:25.168190: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+  To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+  2023-03-08 21:18:25.334389: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+  2023-03-08 21:18:25.334430: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+  2023-03-08 21:18:26.422458: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+  2023-03-08 21:18:26.422701: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+  2023-03-08 21:18:26.422709: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+  [Info][SAMBA]# Placing log files in /home/wilsonb/apps/starters/logreg/pef/logreg/logreg.samba.log
+  [Info][MAC]# Placing log files in /home/wilsonb/apps/starters/logreg/pef/logreg/logreg.mac.log
+  ...
+
+  Epoch [1/1], Step [10000/60000], Loss: 0.4642
+  Epoch [1/1], Step [20000/60000], Loss: 0.4090
+  Epoch [1/1], Step [30000/60000], Loss: 0.3863
+  Epoch [1/1], Step [40000/60000], Loss: 0.3703
+  Epoch [1/1], Step [50000/60000], Loss: 0.3633
+  Epoch [1/1], Step [60000/60000], Loss: 0.3553
+  Test Accuracy: 91.40  Loss: 0.3014
+  2023-03-08T21:19:08 : [INFO][LIB][2688517]: sn_create_session: PEF File: pef/logreg/logreg.pef
+
+
+|-- ## UNet2D
+
+The UNet application example is provided in the the path : /opt/sambaflow/apps/image/segmentation/. As any other application, we first compile and then train the model using compile and run arguments respectively.
+The scripts containing the compile and run commands for UNet2D model can be accessed at Unet2d.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/Unet2d.sh) or at /data/ANL/scripts/Unet2d.sh on any SN30 compute node.
+
+Change directory and copy files.
+
+  mkdir -p ~/apps/image/unet
+  cd ~/apps/image/unet
+
+Copy and paste the contents of
+Unet2d.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/Unet2d.sh)
+to a file with the same name into the current directory using your favorite editor.
+
+  chmod +x Unet2d.sh
+
+Run these commands for training (compile + train):
+
+  ./Unet2d.sh compile <image size> <batch_size> <num of instances> <RunID>
+  ./Unet2d.sh run <image size> <batch_size> <num of instances> <RunID>
+
+The compile and run arguments of the script can only be run with number of instances equal to 1, indicating that this is a simple 4 tile run without data parallel framework.
+For a image size of 256x256 and batch size 256 when running just 1 instance, the commands are provided as follows.
+
+  ./Unet2d.sh compile 256 256 1 unet2d_single_compile
+  ./Unet2d.sh run 256 256 1 unet2d_single_run
+
+The above commands displays the file that contains the output for the execution of the above scripts, usually /data/ANL/results/<hostname>/<userid>/<RunID>/Unet2d.out
+
+If we inspect the compile and run commands for the UNet application provided in the script, we see that the application is compiled with --num-tiles 4, which means that the entire application fits on 4 tiles or half of a RDU.
+The pef generated from the compilation process of the above command is placed under out/Unet2d/unet_train_256_256_single_4 inside the current working directory.
+
+  python ${UNET}/compile.py compile --mac-v2 --in-channels=3 --in-width=${2} --in-height=${2} --batch-size=${BS} --enable-conv-tiling --num-tiles=4 --pef-name=unet_train_${BS}_${2}_single_${NUM_TILES} --output-folder=${OUTDIR}
+
+  srun --nodelist $(hostname) python /opt/sambaflow/apps/image/segmentation//hook.py run --data-cache=${CACHE_DIR}  --data-in-memory --num-workers=${NUM_WORKERS} --enable-tiling  --min-throughput 395 --in-channels=3 --in-width=${2} --in-height=${2} --init-features 32 --batch-size=${BS} --epochs 10 --data-dir ${DS} --log-dir log_dir_unet_${2}_${BS}_single_${NUM_TILES} --pef=${OUTDIR}/unet_train_${BS}_${2}_single_${NUM_TILES}/unet_train_${BS}_${2}_single_${NUM_TILES}.pef
+
+The performance data is located at the bottom of log file.
+
+  inner train loop time : 374.6789753437042 for 10 epochs, number of global steps: 130, e2e samples_per_sec: 88.82270474202953
+
+
+|-- ## Gpt 1.5B
+
+The Gpt 1.5B application example is provided in the the path : /opt/sambaflow/apps/nlp/transformers_on_rdu/.
+The scripts containing the compile and run commands for Gpt1.5B model can be accessed at Gpt1.5B_single.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/Gpt1.5B_single.sh) or at /data/ANL/scripts/Gpt1.5B_single.sh on any SN30 compute node. This script is compiled and run for only 1 instance and the model fits on 4 tiles or half of a RDU.
+
+Change directory and copy files.
+
+  mkdir -p ~/apps/nlp/Gpt1.5B_single
+  cd ~/apps/nlp/Gpt1.5B_single
+
+Copy and paste the contents of
+Gpt1.5B_single.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/Gpt1.5B_single.sh)
+to a file with the same name into the current directory using your favorite editor.
+
+or copy the contents from /data/ANL/scripts/Gpt1.5B_single.sh.
+
+  cp /data/ANL/scripts/Gpt1.5B_single.sh ~/apps/nlp/Gpt1.5B_single/
+
+Run the script.
+
+  chmod +x Gpt1.5B_single.sh
+  ./Gpt1.5B_single.sh
+
+You can inspect the compile and run commands in the script to learn that this model trains with a batch size of 16 for 1 instance over 4 tiles. The human decision file and the compiler config file helps to optimize the compute and memory resources specific to this Gpt 1.5B model run.
+
+  python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py compile --module_name gpt2_pretrain --task_name clm --max_seq_length 1024 -b 16 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size 16 --cache ${OUTDIR}/cache/ --tokenizer_name gpt2 --model_name gpt2 --mac-v2 --non_split_head --mac-human-decision /opt/sambaflow/apps/nlp/transformers_on_rdu/human_decisions_gm/mac_v2_overrides/gpt2_48_enc_full_recompute_training_spatialmapping_tiling16_clmerge_gm_nonpardp_lnsd.json --compiler-configs-file /opt/sambaflow/apps/nlp/transformers_on_rdu/human_decisions_gm/compiler_configs/compiler_configs_gpt2_sc_recompute_spatialmapping_tiling16_clsmerge_withcls_nonpardp_norc_e2e.json --skip_broadcast_patch --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/customer_specific/mv/configs/gpt2_config_xl_50260.json --no_index_select_patch --weight_decay 0.1  --max_grad_norm_clip 1.0 --num-tiles 4 --pef-name=gpt15_single --output-folder=${OUTDIR}
+
+  python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run  -b 16  --module_name gpt2_pretrain --task_name clm --max_seq_length 1024  --overwrite_output_dir --do_train  --per_device_train_batch_size 16 --cache ${OUTDIR}/cache/  --tokenizer_name gpt2 --model_name gpt2 --non_split_head --skip_broadcast_patch --no_index_select_patch --output_dir=${OUTDIR}/hf_output --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/customer_specific/mv/configs/gpt2_config_xl_50260.json --max_grad_norm_clip 1.0 --skip_checkpoint --data_dir /data/ANL/ss1024 --logging_steps 1 --max_steps 900000 --learning_rate 0.00025 --steps_this_run 100 --pef=${OUTDIR}/gpt15_single/gpt15_single.pef >> ${OUTPUT_PATH} 2>&1
+
+The sntilestat command shows that the application runs on 4 tiles as shown below.
+
+  /XRDU_0/RDU_0/TILE_0   2.1  96.9    0.8    0.1    0.0      0.0 796481  vsastry python /opt/sambaflow/apps/nlp/transformers_on_rdu/
+  /XRDU_0/RDU_0/TILE_1   2.1  96.9    0.8    0.1    0.0      0.0 796481  vsastry python /opt/sambaflow/apps/nlp/transformers_on_rdu/
+  /XRDU_0/RDU_0/TILE_2   2.5  96.9    0.4    0.1    0.0      0.0 796481  vsastry python /opt/sambaflow/apps/nlp/transformers_on_rdu/
+  /XRDU_0/RDU_0/TILE_3   2.5  96.9    0.4    0.1    0.0      0.0 796481  vsastry python /opt/sambaflow/apps/nlp/transformers_on_rdu/
+  /XRDU_0/RDU_0/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  ...
+
+
+|- ## Compile
+
+Compiles the model and generates a .pef file. This file contains
+information on how to reconfigure the hardware, and map the compute and
+memory resources required to run an application on RDUs.
+The pef files are by default saved in the 'out' directory; the
+SambaNova documentation advises saving pef files in separate
+directories with the '--output-folder' option.
+
+It is necessary to re-compile only when the model changes, or parameters specific to the model graph change, including the batch size.
+
+Compile times can be significant. Compiling the UNet sample, for example, when using images of size 32x32 pixels, takes 358(s), and 1844(s) for images of size 256x256.
+
+The entire compile process is executed on the host and no RDUs are involved in the compile step.
+
+Example of compiling the LeNet application:
+
+  srun python lenet.py compile -b=1 --pef-name="lenet" --output-folder="pef"
+
+where
+
+Argument Default Help
+----------------------------------------
+-b       1       Batch size for training
+
+
+|- ## Run
+
+As part of this step, the model is trained on the RDUs by passing in the PEF file and the training dataset. The location of the pef file generated in the compile step is passed as an argument to the run command. Below is the example of the run command that trains a LeNet model.
+
+  srun python lenet.py run --pef="pef/lenet/lenet.pef"
+
+The location of the pef file generated in the compile step is passed as an argument to the run command.
+
+
+|- ## Test (Optional)
+
+This command is used to run the model on both the host CPU and a SambaNova RDU.  It compares the results from the CPU and RDU and will report if any discrepancies are found. Pass the pef file generated as part of the compile step as the input to this command.
+
+  srun python lenet.py test --pef="pef/lenet/lenet.pef"
+
+
+|- # Example Multi-Node Programs
+
+In this section we will learn how to extend the UNet2d and Gpt1.5B applications scripts that we introduced in the Example Programs (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/example-programs/) to compile and run multiple instances of the model in a data parallel fashion across multiple tiles or across multiple nodes.
+
+
+|- ## UNet2d
+
+
+|- ### Set Up
+
+Create the following directory and change to it if you have not already done so.
+
+  mkdir -p ~/apps/image/unet
+  cd ~/apps/image/unet
+
+
+|- ### Create Unet2d.sh and unet_batch.sh
+
+Create the file Unet2d.sh and unet_batch.sh in the current directory using your favorite editor.
+Copy and paste the contents of Unet2d.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/Unet2d.sh) and unet_batch.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/unet_batch.sh)
+to files with the same name into the current directory using your favorite editor.
+
+  chmod +x Unet2d.sh
+  chmod +x unet_batch.sh
+
+
+|- ### Compile and run
+
+Run these commands for training (compile + train):
+The compile and run scripts have the following input arguments.
+
+1. image size:  The images are square.  Valid sizes include 256, 512, and 1024.
+2. Batch size: local batch size.  The global batch size is local batch size * Num of instances.
+3. num of instances: Total number of instances of Unet2d run in data parallel framework.
+4. RunID: A unique Id for the compile or run process.
+
+The script uses the arguments pcompile and prun for the data parallel compile and run.
+
+  ./Unet2d.sh pcompile <image size> <batch_size> <num of instances> <RunID>
+  ./Unet2d.sh prun <image size> <batch_size> <num of instances> <RunID>
+
+For a image size of 256x256 and local batch size of 256 when running 8 instance, the commands are provided as follows.
+
+  ./Unet2d.sh pcompile 256 256 8 unet2d_8inst_pcompile
+  ./Unet2d.sh prun 256 256 8 unet2d_8inst_prun
+
+The above commands displays the file that contains the output for the execution of the above scripts, usually /data/ANL/results/<hostname>/<userId>/<RunID>/Unet2d.out
+
+You can inspect the compile command that contains --data-parallel -ws 2 arguments to ensure that the pef file is compatible for data parallel runs. The pef generated from the compilation process for the above compile command is placed under out/Unet2d/unet_train_256_256_NP_4 inside the current working directory.
+
+  python /opt/sambaflow/apps/image/segmentation/compile.py compile --mac-v2 --in-channels=3 --in-width=${2} --in-height=${2} --batch-size=${BS} --enable-conv-tiling --num-tiles=4 --pef-name=unet_train_${BS}_${2}_NP_${NUM_TILES}  --data-parallel -ws 2 --output-folder=${OUTDIR}
+
+Once the model is compiled, sbatch is used to launch the multiple instances. The below example shows that a total of 8 tasks or instances are launched over the host on which the script is launched.
+
+  sbatch --gres=rdu:1 --tasks-per-node ${NP} --nodes 1 --nodelist $(hostname) --cpus-per-task=${cpus} $(pwd)/unet_batch.sh ${NP} ${NUM_WORKERS} ${BS} ${2} ${5}
+
+The run command has --data-parallel --reduce-on-rdu arguments that is compatible with data parallel run.
+
+  srun --mpi=pmi2 python /opt/sambaflow/apps/image/segmentation//hook.py run --data-cache=${CACHE_DIR}  --data-in-memory --num-workers=${NUM_WORKERS} --enable-tiling  --min-throughput 395 --in-channels=3 --in-width=${IM} --in-height=${IM} --init-features 32 --batch-size=${BS} --epochs 10 --data-dir ${DS} --log-dir log_dir_unet_${IM}_${BS}_${NP} --data-parallel --reduce-on-rdu --pef=${OUTDIR}/unet_train_${BS}_${IM}_NP_4/unet_train_${BS}_${IM}_NP_4.pef
+
+The throughput is calculated by averaging the e2e samples_per_sec over the different instances.
+
+  inner train loop time : 36.314290046691895 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 563.9653143065
+  inner train loop time : 33.36756229400635 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 613.7697389922524
+  inner train loop time : 33.94625234603882 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 603.3066563941279
+  inner train loop time : 32.309499979019165 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 633.8692958200872
+  inner train loop time : 31.418426036834717 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 651.8467849404489
+  inner train loop time : 28.164129495620728 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 727.1660927132315
+  inner train loop time : 30.29698896408081 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 675.9747651583616
+  inner train loop time : 25.332663536071777 for 10 epochs, number of global steps: 10, e2e samples_per_sec: 808.442427336472
+
+
+|- ## Gpt 1.5B
+
+
+|- ### Set up
+
+  mkdir ~/nlp-multiNodetest
+  cd ~/nlp-multiNodetest
+
+
+|- ### Create and run Gpt1.5B_compile.sh and Gpt1.5B_run.sh
+
+Create the files Gpt1.5B_compile.sh and Gpt1.5B_run.sh in the current directory.
+Copy the contents of Gpt1.5B_compile.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/Gpt1.5B_compile.sh) and Gpt1.5B_run.sh (https://docs.alcf.anl.gov/ai-testbed/sambanova_gen2/files/Gpt1.5B_run.sh). Alternatively, the files can be accessed at /data/ANL/scripts/Gpt1.5B_compile.sh and /data/ANL/scripts/Gpt1.5B_run.sh on any of the compute node and can be copied over to the working directory.
+
+
+|- ### Compile and Run
+
+This script consists of commands to compile and run multiple instances of Gpt1.5B model across multiple nodes. Run the Gpt1.5B_compile.sh to first compile and generate the pef file for the model and it in turn launches the Gpt1.5B_run.sh script to run multiple instances of the model over the different nodes.
+
+  chmod +x Gpt1.5B_compile.sh
+  chmod +x Gpt1.5B_run.sh
+  ./Gpt1.5B_compile.sh
+
+You can see the log file path displayed on the screen as seen in the example below. You can use the tail command to check the progress of the run.
+
+  vsastry@sn30-r1-h1:~/nlp-multiNodetest$ ./Gpt1.5B_compile.sh
+  Using /data/ANL/results/sn30-r1-h1/vsastry/041823.19/GPT1.5B.out for output
+
+The artifacts of the compile process is produced in the path : /data/scratch/<userId>.
+
+Inspect the compile command in the script to see that it includes additional arguments --data-parallel and -ws 2 to generate a pef that is compatible for data parallel runs.
+
+  python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py compile --module_name gpt2_pretrain --task_name clm --max_seq_length 1024 -b 16 --output_dir=${OUTDIR}/hf_output --overwrite_output_dir --do_train  --per_device_train_batch_size 16 --cache ${OUTDIR}/cache/ --tokenizer_name gpt2 --model_name gpt2 --mac-v2 --non_split_head --mac-human-decision /opt/sambaflow/apps/nlp/transformers_on_rdu/human_decisions_gm/mac_v2_overrides/gpt2_48_enc_full_recompute_training_spatialmapping_tiling16_clmerge_gm_nonpardp_lnsd.json --compiler-configs-file /opt/sambaflow/apps/nlp/transformers_on_rdu/human_decisions_gm/compiler_configs/compiler_configs_gpt2_sc_recompute_spatialmapping_tiling16_clsmerge_withcls_nonpardp_norc_e2e.json --skip_broadcast_patch --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/customer_specific/mv/configs/gpt2_config_xl_50260.json --no_index_select_patch --data-parallel -ws 2 --weight_decay 0.1  --max_grad_norm_clip 1.0 --num-tiles 4 --pef-name=gpt15 --output-folder=${OUTDIR}
+
+Once the model is compiled, sbatch is used to launch the multiple instances across the nodes. The below example shows that a total of 32 tasks or instances are launched over 2 nodes with each node having a maximum of 16 tasks. Slurm allocates any 2 of the available nodes in this example.
+
+  /usr/local/bin/sbatch --output=${HOME}/slurm-%A.out --ntasks 32 --gres=rdu:1 --ntasks-per-node 16  --nodes 2 --cpus-per-task=8  Gpt1.5B_run.sh ${1} >> ${OUTPUT_PATH} 2>&1
+
+The run command for each of this instance is present in the Gpt1.5B_run.sh script. You can inspect the command in the script to see that --data-parallel --reduce-on-rdu arguments are present to ensure that the model is run in a data parallel fashion and that the gradient accumulation takes place on the RDU.
+
+  /usr/local/bin/srun --mpi=pmi2 python /opt/sambaflow/apps/nlp/transformers_on_rdu/transformers_hook.py run  -b 16  --module_name gpt2_pretrain --task_name clm --max_seq_length 1024  --overwrite_output_dir --do_train  --per_device_train_batch_size 16 --cache ${OUTDIR}/cache/  --tokenizer_name gpt2 --model_name gpt2 --non_split_head --skip_broadcast_patch --no_index_select_patch --output_dir=${OUTDIR}/hf_output --config_name /opt/sambaflow/apps/nlp/transformers_on_rdu/customer_specific/mv/configs/gpt2_config_xl_50260.json --max_grad_norm_clip 1.0 --skip_checkpoint --data-parallel --reduce-on-rdu --data_dir /data/ANL/ss1024 --data_dir /data/ANL/ss1024  --logging_steps 1 --max_steps 900000 --learning_rate 0.00025 --steps_this_run 800 --min_throughput 299000 --max_throughput 600000 --pef=${OUTDIR}/gpt15/gpt15.pef >> ${OUTPUT_PATH} 2>&1
+
+squeue shows that the model is run on 2 nodes sn30-r1-h1 and sn30-r2-h2.
+
+  JOBID PARTITION                      NAME     USER ST       TIME  NODES NODELIST(REASON)
+  10191 sambanova            Gpt1.5B_run.sh  vsastry  R      23:18      2 sn30-r1-h1,sn30-r2-h2
+
+sntilestat can also be used to check the total numbers of tiles used for the runs.
+
+  TILE                 %idle %exec %pload %aload %chkpt %quiesce    PID     USER COMMAND
+  /XRDU_0/RDU_0/TILE_0   8.0  91.6    0.3    0.1    0.0      0.0 2750333  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_0/TILE_1   8.0  91.6    0.3    0.1    0.0      0.0 2750333  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_0/TILE_2   7.9  91.6    0.3    0.3    0.0      0.0 2750333  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_0/TILE_3   7.7  91.8    0.3    0.3    0.0      0.0 2750333  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_0/TILE_4   7.6  91.9    0.4    0.1    0.0      0.0 2750339  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_0/TILE_5   7.5  91.9    0.5    0.1    0.0      0.0 2750339  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_0/TILE_6   7.5  91.8    0.5    0.3    0.0      0.0 2750339  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_0/TILE_7   7.3  92.0    0.6    0.0    0.0      0.0 2750339  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_0   8.9  89.9    1.0    0.1    0.0      0.0 2750338  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_1   9.0  89.9    0.9    0.1    0.0      0.0 2750338  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_2   8.6  89.8    1.4    0.1    0.0      0.0 2750338  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_3   8.5  89.9    1.4    0.1    0.0      0.0 2750338  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_4   7.9  90.9    0.9    0.4    0.0      0.0 2750343  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_5   7.7  90.9    0.9    0.5    0.0      0.0 2750343  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_6   7.7  91.0    0.9    0.4    0.0      0.0 2750343  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_0/RDU_1/TILE_7   8.0  91.0    0.6    0.4    0.0      0.0 2750343  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_0   7.6  92.0    0.3    0.1    0.0      0.0 2750345  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_1   7.6  92.0    0.3    0.1    0.0      0.0 2750345  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_2   7.5  92.1    0.3    0.1    0.0      0.0 2750345  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_3   7.5  92.1    0.3    0.1    0.0      0.0 2750345  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_4   7.5  92.1    0.3    0.1    0.0      0.0 2750335  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_5   7.5  92.1    0.3    0.1    0.0      0.0 2750335  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_6   7.5  92.1    0.3    0.1    0.0      0.0 2750335  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_0/TILE_7   7.5  92.1    0.3    0.1    0.0      0.0 2750335  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_0   7.7  91.5    0.4    0.4    0.0      0.0 2750330  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_1   7.9  91.5    0.3    0.4    0.0      0.0 2750330  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_2   7.9  91.5    0.3    0.4    0.0      0.0 2750330  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_3   7.6  91.8    0.4    0.3    0.0      0.0 2750330  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_4   7.7  91.9    0.4    0.0    0.0      0.0 2750334  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_5   7.7  91.9    0.4    0.0    0.0      0.0 2750334  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_6   7.9  91.9    0.3    0.0    0.0      0.0 2750334  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_1/RDU_1/TILE_7   7.9  91.9    0.3    0.0    0.0      0.0 2750334  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_0   8.0  91.8    0.1    0.1    0.0      0.0 2750346  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_1   8.0  91.8    0.1    0.1    0.0      0.0 2750346  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_2   8.0  91.8    0.1    0.1    0.0      0.0 2750346  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_3   7.7  91.9    0.1    0.3    0.0      0.0 2750346  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_4   7.5  92.0    0.5    0.0    0.0      0.0 2750336  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_5   7.6  91.9    0.5    0.0    0.0      0.0 2750336  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_6   7.6  91.9    0.4    0.1    0.0      0.0 2750336  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_0/TILE_7   7.5  91.9    0.4    0.3    0.0      0.0 2750336  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_0   7.5  91.8    0.6    0.1    0.0      0.0 2750331  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_1   7.5  91.8    0.6    0.1    0.0      0.0 2750331  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_2   7.7  91.6    0.5    0.1    0.0      0.0 2750331  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_3   7.7  91.6    0.5    0.1    0.0      0.0 2750331  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_4   7.9  91.4    0.8    0.0    0.0      0.0 2750329  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_5   7.9  91.4    0.8    0.0    0.0      0.0 2750329  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_6   8.1  91.4    0.5    0.0    0.0      0.0 2750329  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_2/RDU_1/TILE_7   8.2  91.4    0.4    0.0    0.0      0.0 2750329  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_0   7.5  91.8    0.4    0.4    0.0      0.0 2750344  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_1   7.5  91.8    0.4    0.4    0.0      0.0 2750344  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_2   7.5  91.8    0.4    0.4    0.0      0.0 2750344  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_3   7.5  91.8    0.4    0.4    0.0      0.0 2750344  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_4   7.6  91.8    0.3    0.4    0.0      0.0 2750337  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_5   7.7  91.8    0.1    0.4    0.0      0.0 2750337  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_6   7.7  91.8    0.3    0.3    0.0      0.0 2750337  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_0/TILE_7   7.7  91.9    0.3    0.1    0.0      0.0 2750337  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_0   7.7  92.0    0.1    0.1    0.0      0.0 2750347  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_1   7.7  92.0    0.1    0.1    0.0      0.0 2750347  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_2   7.7  92.1    0.1    0.0    0.0      0.0 2750347  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_3   7.7  92.1    0.1    0.0    0.0      0.0 2750347  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_4   7.3  91.9    0.5    0.3    0.0      0.0 2750332  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_5   7.3  91.9    0.5    0.3    0.0      0.0 2750332  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_6   7.3  91.9    0.5    0.3    0.0      0.0 2750332  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+  /XRDU_3/RDU_1/TILE_7   7.3  92.0    0.5    0.1    0.0      0.0 2750332  vsastry /opt/sambaflow/apps/nlp/transformers_on_rdu/venv/b
+
+The Slurm log associated with the JOBID (10191 in the above example) is located in the home directory. You can use the tail command to check the progress of the training.
+
+  vsastry@sn30-r1-h1:~$ tail -f ~/slurm-10191.out
+  Using /data/ANL/results/sn30-r1-h1/vsastry/041823.03/Gpt1.5B.out for output
+
+  vsastry@sn30-r1-h1:~$ tail -f /data/ANL/results/sn30-r1-h1/vsastry/041823.03/Gpt1.5B.out
+
+Once the run is completed, check the log file for the performance results.
+
+  {'e2e_train_time': 2179.2292835712433, 'training_sequences_per_second': 192467.31088004305, 'final_loss': 4.781678199768066}
+  247/3247 [01:03<00:00, 50.76it/s]
+
+
+|- # Miscellaneous
+
+
+|- ## SDK Version
+
+To find the SDK version, run the following commands
+
+  # TODO
+  (venv) ALCFUserID@sn30-r1-h1:~$ python
+  Python 3.7.6 (default, Feb 18 2020, 21:28:31)
+  [GCC 9.3.0] on linux
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>> import sambaflow
+  >>> sambaflow.__version__
+  '1.11.5'
+  >>>
+
+
+|- ## OMP_NUM_THREADS
+
+The OMP_NUM_THREADS environment variable sets the number of threads to use for parallel regions.
+
+The value of this environment variable must be a list of positive integer values. The values of the list set the number of threads to use for parallel regions at the corresponding nested levels.
+
+For the SambaNova system it, is usually set to one.
+
+  export OMP_NUM_THREADS=16
+
+
+|- ## Where is the Model?
+
+Two copies of the model are maintained.  One in host CPU memory and one in RDU
+memory. They do not interfere with each other unless you explicitly sync
+the model/parameter in between using:
+
+  SambaTensor.rdu() # Moves the CPU model to the RDU
+  SambaTensor.cpu() # Moves the RDU model to the CPU
+
+In order to run the model on the CPU, you can simply use the PyTorch model
+as if there is no RDU.
+In order to run the model on RDU, you would need to use session.run().
+
+
+|- ## Useful Commands
+
+
+|- ### SN Configuration
+
+  snconfig show Node static
+
+The snconfig utility shows the static configuration of the system. The configuration for the first node is as follows:
+
+  ======================================================
+  =======                NODE Info               =======
+  ======================================================
+  =======                Static Info             =======
+  Timestamp: 2023-03-16 17:00:04
+  Platform Name: DataScale SN30-8
+  Node Name: NODE
+      Number of XRDUS: 4
+      XRDU Name: XRDU_0
+          Number of RDUS: 2
+          RDU name: RDU_0
+              Serial Number     : 205057B469B35895
+              Number of TILES: 8
+              TILE Name: TILE_0
+                  Serial Number     : N/A
+              TILE Name: TILE_1
+                  Serial Number     : N/A
+
+
+  ...
+
+
+                      Size              : 128.0 GB
+                      Serial Number     : 1F5BC22
+              DDR CH Name: DDRCH_6
+                  Number of DIMMS: 1
+                  DIMM Name: DIMM_L0
+                      Size              : 128.0 GB
+                      Serial Number     : 1F5BC99
+              DDR CH Name: DDRCH_7
+                  Number of DIMMS: 1
+                  DIMM Name: DIMM_M0
+                      Size              : 128.0 GB
+                      Serial Number     : 1F5BB68
+          Total XRDU_3 memory size (GB): 2048.0
+
+
+|- ### SambaNova Daemon Service
+
+The following command checks if the SambaNova daemon service is running.
+
+  systemctl status snd
+
+The output should look something like this:
+
+  ● snd.service - SN Devices Service
+       Loaded: loaded (/lib/systemd/system/snd.service; enabled; vendor preset: enabled)
+      Drop-In: /etc/systemd/system/snd.service.d
+               └─override.conf
+       Active: active (running) since Fri 2023-01-27 04:03:14 UTC; 1 months 18 days ago
+     Main PID: 5635 (snd)
+        Tasks: 9 (limit: 629145)
+       Memory: 156.8M
+       CGroup: /system.slice/snd.service
+               └─5635 /opt/sambaflow/bin/snd
+
+  Warning: some journal files were not opened due to insufficient permissions.
+
+
+|- ### Tile status
+
+  sntilestat
+  watch sntilestat
+
+The output shown below is when the system is completely idle.
+
+  TILE                 %idle %exec %pload %aload %chkpt %quiesce    PID     USER COMMAND
+  /XRDU_0/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_0/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_0/RDU_1/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_0/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_1/RDU_1/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_0/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_2/RDU_1/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_0/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_0 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_1 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_2 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_3 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_4 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_5 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_6 100.0   0.0    0.0    0.0    0.0      0.0
+  /XRDU_3/RDU_1/TILE_7 100.0   0.0    0.0    0.0    0.0      0.0
+
+
+|- ### Finding Hung Tiles
+
+  snconfig show Node dynamic | grep perfect
+
+
+|- ### How busy is the system?
+
+Use one of
+
+  top
+  htop
+
+
+|- # Documentation
+
+The SambaNova documentation is now available online SambaNova Documentation (https://docs.sambanova.ai/developer/latest/sambaflow-intro.html).
+
+The documentation for the SambaTune (a profiling and performance tuning tool for SambaNova systems) is now available at SambaTune Documentation (https://docs.sambanova.ai/sambatune/latest/index.html).
+
+
+|- # Data Management for the AI Testbed
+
+
+|- ## Home File System Space
+
+Users have a shared home filesystem /home shared across the ALCF AI testbed systems, including the login and compute nodes. Default user quota is 1 TB storage and 1,000,000 files. This space is backed up.
+
+
+|- ## Project File System Space
+
+The team project/campaign file system /projects is intended to facilitate project collaboration and is accessible to the team members of your project that have an ALCF account.  Default group storage quota is 2 TB and 2,000,000 files. Please note that this space isn't backed up.  Our policy is that data will be purged from disk 6 months after project completion.
+
+
+|- ## Data Transfer
+
+Users can transfer data to and from the AI testbed using Globus or tools such as scp or rsync.
+
+
+|- ## Using Globus
+
+We have a Globus endpoint each to move data to and from the /projects and /home filesystem respectively.
+
+• Use alcf#ai_testbed_projects for the /projects file system
+• Use alcf#ai_testbed_home for the /home files system
+
+Relevant information regarding using globus can be found here (https://www.alcf.anl.gov/support-center/theta-and-thetagpu/using-globus-theta)
+
+
+|- ## ALCF Storage Policies
+
+ALCF data policies is available here  (https://docs.alcf.anl.gov/policies/data-and-software-policies/data-policy/)
+
+Please Note: The basic level of protection provided is UNIX file level permissions; it is the user's responsibility to ensure that file permissions and umasks are set to match their needs.
+
