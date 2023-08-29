@@ -222,8 +222,8 @@ def main_interface(params, llm, embeddings):
 
         #Header
         gr.Markdown("""
-        ## Hi! I am CALMS, the APS' AI Assistant
-        I was trained at Meta, taught to follow instructions at Stanford and am now learning about the APS. AMA!
+        ## Hi! I am CALMS, a Scientific AI Assistant
+        #### I was trained at Meta, taught to follow instructions at Stanford and am now learning about the DOE User Facilities. AMA!
         """
         )
         gr.Markdown("""
@@ -247,7 +247,7 @@ def main_interface(params, llm, embeddings):
             clear.click(lambda: chat_general.memory.clear(), None, chatbot, queue=False)
 
         #APS Q&A tab
-        with gr.Tab("APS Q&A"):
+        with gr.Tab("Facility Q&A"):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
             aps_qa_docstore = init_aps_qa(embeddings, params)
