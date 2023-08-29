@@ -49,6 +49,7 @@ def init_llm(params):
         "text-generation",
         model=model, 
         tokenizer=tokenizer, 
+        do_sample = True,
         max_length=params.seq_length,
         temperature=0.6,
         top_p=0.95,
@@ -170,8 +171,9 @@ AI:"""
 
         for character in bot_message:
             history[-1][1] += character
-            time.sleep(0.02)
-            yield history
+            #time.sleep(0.02)
+            #yield history
+        return history
 
     def add_message(self, user_message, history):
         return "", history + [[user_message, None]]
