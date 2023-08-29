@@ -1,12 +1,23 @@
 # Env settings
-set_visible_devices = True
+set_visible_devices = False
 visible_devices = '2,3'
 
 #LLM parameters
+
+#Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
+llm_type = 'anl'
+
+# hf params
 #model_name = "eachadea/vicuna-13b-1.1"
 model_name = "lmsys/vicuna-13b-v1.3"
+#model_name = "ToolBench/ToolLLaMA-2-7b"
 tokenizer_path = "./tokenizer/"
 seq_length = 2048 #LLM sequence length (Llama 2 max is 4k, Vicuna : 2048)
+
+# anl params
+anl_llm_url_path = 'keys/ANL_LLM_URL'
+anl_llm_debug = True
+anl_llm_debug_fp = 'anl_outputs.log'
 
 
 #Embedding model parameters
@@ -23,3 +34,6 @@ N_hits = 3 #How many hits of context to provide?
 doc_paths = ["DOC_STORE/APS-Science-Highlight", "DOC_STORE/APS-Docs"]
 #Embedding paths
 pdf_path = 'embeds/pdf'
+
+#Materials Project Key
+mp_key_path = 'keys/MP_API_KEY'

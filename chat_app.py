@@ -5,6 +5,9 @@ if params.set_visible_devices:
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from pydantic import Extra
+import requests
+import datetime
 
 from langchain.llms import HuggingFacePipeline
 from langchain import PromptTemplate, LLMChain
@@ -15,6 +18,9 @@ from langchain.vectorstores import Chroma
 from langchain.agents import Tool, AgentType, initialize_agent
 from langchain.chains import LLMMathChain
 from langchain.document_loaders import OnlinePDFLoader
+from ops_demo.lattice_tools import LatticeSearchTool
+from langchain.callbacks.manager import CallbackManagerForLLMRun
+from langchain.llms.base import LLM
 import gradio as gr
 import time, shutil
 
@@ -34,8 +40,47 @@ if os.path.exists(params.pdf_path):
 Initialization
 ===========================
 """
+class AnlLLM(LLM, extra=Extra.allow):
 
-def init_llm(params):
+    def __init__(self, params):
+        super().__init__()
+
+        self.debug = params.anl_llm_debug 
+        self.debug_fp = params.anl_llm_debug_fp
+        
+        with open(params.anl_llm_url_path, 'r') as url_f:
+            self.anl_url = url_f.read().strip()
+
+    @property
+    def _llm_type(self) -> str:
+        return "ANL LLM API"
+
+    def _call(
+        self,
+        prompt: str,
+        stop = None,
+        run_manager = None,
+    ) -> str:
+        if stop is not None:
+            raise ValueError("stop kwargs are not permitted.")
+        
+        req_obj = {'user':'aps', 'prompt': prompt}
+        result = requests.post(self.anl_url, json=req_obj)
+
+        response = result.json()['response']
+
+        if self.debug:
+            with open(self.debug_fp, 'a+') as debug_f:
+                debug_f.write(f'\n\n{datetime.datetime.now()}\nPrompt:{prompt}\nResponse:{response}')
+
+        return response
+
+    @property
+    def _identifying_params(self):
+        return {}
+
+
+def init_local_llm(params):
     #Create a local tokenizer copy the first time
     if os.path.isdir(params.tokenizer_path):
         tokenizer = AutoTokenizer.from_pretrained(params.tokenizer_path)
@@ -58,11 +103,13 @@ def init_llm(params):
         repetition_penalty=1.2
     )
 
-    #Embeddings
-    embeddings = HuggingFaceEmbeddings(model_name=params.embedding_model_name)
 
     #Setup LLM chain with memory and context
-    return HuggingFacePipeline(pipeline=pipe), embeddings
+    return HuggingFacePipeline(pipeline=pipe)
+
+
+def init_local_embeddings(params):
+    return HuggingFaceEmbeddings(model_name=params.embedding_model_name)
 
 
 def init_aps_qa(embeddings, params):
@@ -206,8 +253,11 @@ class ToolChat(Chat):
         tools = [
             Tool(name='Calculator',
                  func=llm_math.run,
-                 description='Useful for when you need to answer questions about math.')
+                 description='Useful for when you need to answer questions about math.'),
+            LatticeSearchTool()
         ]
+
+        # Chat zero shot agent
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 
@@ -387,7 +437,12 @@ def main_interface(params, llm, embeddings):
 
 
 if __name__ == '__main__':
-    llm, embeddings = init_llm(params)
+    if params.llm_type == 'anl':
+        llm = AnlLLM(params)
+    elif params.llm_type == 'hf':
+        llm = init_local_llm(params)
+    
+    embeddings = init_local_embeddings(params)
     main_interface(params, llm, embeddings)
 
 
