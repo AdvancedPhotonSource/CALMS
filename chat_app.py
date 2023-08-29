@@ -230,7 +230,7 @@ def main_interface(params, llm, embeddings):
         )
         gr.Markdown("""
         * Use the General Chat to AMA. E.g. write some code for you, create a recipe from ingredients etc. 
-        * Use the APS Q&A to ask me questions specific to the APS, I will look up answers using the documentation my trainers have provided me. 
+        * Use the Facility Q&A to ask me questions specific to the DOE facilities, I will look up answers using the documentation my trainers have provided me. 
         * Use the Document Q&A to ask me questions about a document you provide.
         """)
 
