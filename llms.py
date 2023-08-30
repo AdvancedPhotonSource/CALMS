@@ -31,8 +31,9 @@ class AnlLLM(LLM, extra=Extra.allow):
         stop = None,
         run_manager = None,
     ) -> str:
-        if run_manager is not None:
-            raise ValueError('run manager not implemented')
+        if self.debug:
+            with open(self.debug_fp, 'a+') as debug_f:
+                debug_f.write(f'\n\n{datetime.datetime.now()}\nPrompt:{prompt}')
 
         if stop is not None:
             print(stop)
@@ -45,7 +46,7 @@ class AnlLLM(LLM, extra=Extra.allow):
 
         if self.debug:
             with open(self.debug_fp, 'a+') as debug_f:
-                debug_f.write(f'\n\n{datetime.datetime.now()}\nPrompt:{prompt}\nResponse:{response}')
+                debug_f.write(f'Response:{response}')
 
         return response
 

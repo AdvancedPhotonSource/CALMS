@@ -13,7 +13,7 @@ from langchain.vectorstores import Chroma
 from langchain.agents import Tool, AgentType, initialize_agent
 from langchain.chains import LLMMathChain
 from langchain.document_loaders import OnlinePDFLoader
-from tools import LatticeSearchTool
+import dfrac_tools
 import gradio as gr
 import time, shutil
 
@@ -166,12 +166,8 @@ class PDFChat(Chat):
 
 class ToolChat(Chat):
     def _init_chain(self):
-        llm_math = LLMMathChain(llm=llm)
         tools = [
-            Tool(name='Calculator',
-                 func=llm_math.run,
-                 description='Useful for when you need to answer questions about math.'),
-            LatticeSearchTool()
+            dfrac_tools.DiffractometerAIO()   
         ]
 
         # Chat zero shot agent
@@ -181,7 +177,7 @@ class ToolChat(Chat):
                                        self.llm, 
                                        agent='conversational-react-description', 
                                        verbose=True, 
-                                       handle_parsing_errors=True,
+                                       handle_parsing_errors='Check your output and make sure it conforms!',
                                        max_iterations=5,
                                        memory=memory)
         return memory, conversation

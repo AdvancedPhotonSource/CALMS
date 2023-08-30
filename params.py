@@ -5,7 +5,7 @@ visible_devices = '2,3'
 #LLM parameters
 
 #Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
-llm_type = 'anl'
+llm_type = 'hf'
 
 # hf params
 #model_name = "eachadea/vicuna-13b-1.1"
