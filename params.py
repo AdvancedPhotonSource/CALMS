@@ -24,5 +24,8 @@ doc_paths = ["DOC_STORE/APS-Science-Highlight",
              "DOC_STORE/APS-Docs", 
              "DOC_STORE/ALCF-Docs",
              "DOC_STORE/CNM-Science-Highlight"]
+
 #Embedding paths
-pdf_path = 'embeds/pdf'
+base_path = 'embeds2'
+embed_path = '%s/%s' %(base_path, embedding_model_name)
+pdf_path = '%s/pdf' %base_path

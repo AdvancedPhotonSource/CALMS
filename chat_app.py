@@ -64,7 +64,7 @@ def init_llm(params):
 
 
 def init_aps_qa(embeddings, params):
-    embed_path = 'embeds/%s' %(params.embedding_model_name)
+    embed_path = params.embed_path
 
     if params.init_docs:
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, chunk_overlap=params.chunk_overlap)
