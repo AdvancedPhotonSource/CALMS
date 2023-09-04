@@ -14,7 +14,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.document_loaders import OnlinePDFLoader
 import gradio as gr
-import time, shutil
+import shutil
 
 #Load embedding model and use that to embed text from source
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -63,7 +63,7 @@ def init_llm(params):
     return HuggingFacePipeline(pipeline=pipe), embeddings
 
 
-def init_aps_qa(embeddings, params):
+def init_facility_qa(embeddings, params):
     embed_path = params.embed_path
 
     if params.init_docs:
@@ -252,8 +252,8 @@ def main_interface(params, llm, embeddings):
         with gr.Tab("Facility Q&A"):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
-            aps_qa_docstore = init_aps_qa(embeddings, params)
-            chat_qa = Chat(llm, embeddings, doc_store=aps_qa_docstore)
+            facility_qa_docstore = init_facility_qa(embeddings, params)
+            chat_qa = Chat(llm, embeddings, doc_store=facility_qa_docstore)
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
