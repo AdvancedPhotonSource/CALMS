@@ -63,11 +63,20 @@ def init_llm(params):
     return HuggingFacePipeline(pipeline=pipe), embeddings
 
 
+def init_text_splitter():
+    text_splitter = RecursiveCharacterTextSplitter( chunk_size=params.chunk_size, 
+                                                    chunk_overlap=params.chunk_overlap,
+                                                    length_function = len,
+                                                    separators = ['\n\n','\n', '.']
+                                                    )
+    return text_splitter
+
+
 def init_facility_qa(embeddings, params):
     embed_path = params.embed_path
 
     if params.init_docs:
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, chunk_overlap=params.chunk_overlap)
+        text_splitter = init_text_splitter()
 
         if os.path.exists(embed_path):
             if params.overwrite_embeddings:
@@ -146,7 +155,7 @@ AI:"""
         print ("Context hits found", len(docs))
         for i in range(min(params.N_hits, len(docs))):
             context += docs[i][0].page_content +"\n"
-            print (i+1, docs[i][0].page_content)
+            print (i+1, len(docs[i][0].page_content), docs[i][0].page_content)
         return context
     
     
@@ -185,8 +194,7 @@ class PDFChat(Chat):
         for pdf_doc in pdf_docs:
             loader = OnlinePDFLoader(pdf_doc.name)
             documents = loader.load()
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, 
-                                                           chunk_overlap=params.chunk_overlap)
+            text_splitter = init_text_splitter()
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
         embed_path = params.pdf_path

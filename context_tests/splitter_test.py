@@ -9,6 +9,6 @@ text_splitter = RecursiveCharacterTextSplitter(
 )
 
 texts = text_splitter.split_text(text)
-print(len(texts)) # 11
+print(len(texts))
 for text in texts:
     print(len(text), text)

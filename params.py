@@ -16,8 +16,8 @@ seq_length = seq_lengths[model_name]
 #Embedding model parameters
 embedding_model_name =   "all-mpnet-base-v2" #Highest scoring all-round, does 2800 sentences/s
 #embedding_model_name = "all-MiniLM-L6-v2" #93% of best score, 5X faster
-chunk_size = 384 #Size of chunks to break the text store into
-chunk_overlap = 96 #How much overlap between chunks
+chunk_size = 1024 #Size of chunks to break the text store into
+chunk_overlap = 128 #How much overlap between chunks
 
 init_docs = True #Recompute embeddings?
 overwrite_embeddings = True #Overwrite embeddings if already exist? -- will raise val error of init_docs is True and this is not
