@@ -14,7 +14,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.document_loaders import OnlinePDFLoader
 import gradio as gr
-import time, shutil
+import shutil
 
 #Load embedding model and use that to embed text from source
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -63,11 +63,20 @@ def init_llm(params):
     return HuggingFacePipeline(pipeline=pipe), embeddings
 
 
-def init_aps_qa(embeddings, params):
-    embed_path = 'embeds/%s' %(params.embedding_model_name)
+def init_text_splitter():
+    text_splitter = RecursiveCharacterTextSplitter( chunk_size=params.chunk_size, 
+                                                    chunk_overlap=params.chunk_overlap,
+                                                    length_function = len,
+                                                    separators = ['\n\n','\n', '.']
+                                                    )
+    return text_splitter
+
+
+def init_facility_qa(embeddings, params):
+    embed_path = params.embed_path
 
     if params.init_docs:
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, chunk_overlap=params.chunk_overlap)
+        text_splitter = init_text_splitter()
 
         if os.path.exists(embed_path):
             if params.overwrite_embeddings:
@@ -146,7 +155,7 @@ AI:"""
         print ("Context hits found", len(docs))
         for i in range(min(params.N_hits, len(docs))):
             context += docs[i][0].page_content +"\n"
-            print (i+1, docs[i][0].page_content)
+            print (i+1, len(docs[i][0].page_content), docs[i][0].page_content)
         return context
     
     
@@ -185,8 +194,7 @@ class PDFChat(Chat):
         for pdf_doc in pdf_docs:
             loader = OnlinePDFLoader(pdf_doc.name)
             documents = loader.load()
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, 
-                                                           chunk_overlap=params.chunk_overlap)
+            text_splitter = init_text_splitter()
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
         embed_path = params.pdf_path
@@ -252,8 +260,8 @@ def main_interface(params, llm, embeddings):
         with gr.Tab("Facility Q&A"):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
-            aps_qa_docstore = init_aps_qa(embeddings, params)
-            chat_qa = Chat(llm, embeddings, doc_store=aps_qa_docstore)
+            facility_qa_docstore = init_facility_qa(embeddings, params)
+            chat_qa = Chat(llm, embeddings, doc_store=facility_qa_docstore)
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
