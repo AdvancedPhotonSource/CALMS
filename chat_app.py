@@ -17,7 +17,6 @@ import dfrac_tools
 import gradio as gr
 import time, shutil
 
-
 #Load embedding model and use that to embed text from source
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device:", device)
@@ -29,11 +28,20 @@ if os.path.exists(params.pdf_path):
     shutil.rmtree(params.pdf_path) 
 
 
-def init_aps_qa(embeddings, params):
-    embed_path = 'embeds/%s' %(params.embedding_model_name)
+def init_text_splitter():
+    text_splitter = RecursiveCharacterTextSplitter( chunk_size=params.chunk_size, 
+                                                    chunk_overlap=params.chunk_overlap,
+                                                    length_function = len,
+                                                    separators = ['\n\n','\n', '.']
+                                                    )
+    return text_splitter
+
+
+def init_facility_qa(embeddings, params):
+    embed_path = params.embed_path
 
     if params.init_docs:
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, chunk_overlap=params.chunk_overlap)
+        text_splitter = init_text_splitter()
 
         if os.path.exists(embed_path):
             if params.overwrite_embeddings:
@@ -112,17 +120,21 @@ AI:"""
         print ("Context hits found", len(docs))
         for i in range(min(params.N_hits, len(docs))):
             context += docs[i][0].page_content +"\n"
-            print (i+1, docs[i][0].page_content)
+            print (i+1, len(docs[i][0].page_content), docs[i][0].page_content)
         return context
     
     
     def generate_response(self, history, debug_output):
         user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+        all_user_messages = [x[0] for x in history]
+        print(all_user_messages)
 
         if self.doc_store is None:
             context = ""
         else:
-            context = self._get_context(user_message, self.doc_store)
+            context = ""
+            for message in all_user_messages:
+             context += self._get_context(message, self.doc_store)
 
         if debug_output:
             inputs = self.conversation.prep_inputs({'input': user_message, 'context':context})
@@ -137,8 +149,9 @@ AI:"""
 
         for character in bot_message:
             history[-1][1] += character
-            time.sleep(0.02)
-            yield history
+            #time.sleep(0.02)
+            #yield history
+        return history
 
     def add_message(self, user_message, history):
         return "", history + [[user_message, None]]
@@ -150,8 +163,7 @@ class PDFChat(Chat):
         for pdf_doc in pdf_docs:
             loader = OnlinePDFLoader(pdf_doc.name)
             documents = loader.load()
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=params.chunk_size, 
-                                                           chunk_overlap=params.chunk_overlap)
+            text_splitter = init_text_splitter()
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
         embed_path = params.pdf_path
@@ -232,13 +244,13 @@ def main_interface(params, llm, embeddings):
 
         #Header
         gr.Markdown("""
-        ## Hi! I am CALMS, the APS' AI Assistant
-        I was trained at Meta, taught to follow instructions at Stanford and am now learning about the APS. AMA!
+        ## Hi! I am CALMS, a Scientific AI Assistant
+        #### I was trained at Meta, taught to follow instructions at Stanford and am now learning about the DOE User Facilities. AMA!
         """
         )
         gr.Markdown("""
         * Use the General Chat to AMA. E.g. write some code for you, create a recipe from ingredients etc. 
-        * Use the APS Q&A to ask me questions specific to the APS, I will look up answers using the documentation my trainers have provided me. 
+        * Use the Facility Q&A to ask me questions specific to the DOE facilities, I will look up answers using the documentation my trainers have provided me. 
         * Use the Document Q&A to ask me questions about a document you provide.
         """)
 
@@ -257,11 +269,11 @@ def main_interface(params, llm, embeddings):
             clear.click(lambda: chat_general.memory.clear(), None, chatbot, queue=False)
 
         #APS Q&A tab
-        with gr.Tab("APS Q&A"):
+        with gr.Tab("Facility Q&A"):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
-            aps_qa_docstore = init_aps_qa(embeddings, params)
-            chat_qa = Chat(llm, embeddings, doc_store=aps_qa_docstore)
+            facility_qa_docstore = init_facility_qa(embeddings, params)
+            chat_qa = Chat(llm, embeddings, doc_store=facility_qa_docstore)
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(

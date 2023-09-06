@@ -5,7 +5,7 @@
     "__type": "AddedToken",
     "content": "<s>",
     "lstrip": false,
-    "normalized": true,
+    "normalized": false,
     "rstrip": false,
     "single_word": false
   },
@@ -14,20 +14,24 @@
     "__type": "AddedToken",
     "content": "</s>",
     "lstrip": false,
-    "normalized": true,
+    "normalized": false,
     "rstrip": false,
     "single_word": false
   },
-  "model_max_length": 1000000000000000019884624838656,
+  "legacy": false,
+  "model_max_length": 16384,
   "pad_token": null,
+  "padding_side": "right",
   "sp_model_kwargs": {},
+  "spaces_between_special_tokens": false,
   "tokenizer_class": "LlamaTokenizer",
   "unk_token": {
     "__type": "AddedToken",
     "content": "<unk>",
     "lstrip": false,
-    "normalized": true,
+    "normalized": false,
     "rstrip": false,
     "single_word": false
-  }
+  },
+  "use_default_system_prompt": true
 }
