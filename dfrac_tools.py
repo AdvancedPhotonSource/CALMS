@@ -1,6 +1,7 @@
 import ops_demo.func as func
 from langchain.chat_models import ChatOpenAI
 from langchain.tools import BaseTool, StructuredTool, Tool, tool
+from pydantic import Extra
 from typing import Optional, Type
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForToolRun,
@@ -11,17 +12,16 @@ import pexpect
 MP_API_KEY = open('keys/MP_API_KEY').read().strip()
 
 
-class DiffractometerAIO(BaseTool):
-    name = "set_diffractometer"
+class DiffractometerAIO(BaseTool, extra=Extra.allow):
+    name = "setdiffractometer"
     description = "tool to set the diffractometer based on the material being analyzed"
 
-    def __init__(self):
+    def __init__(self, init_spec_ext):
         super().__init__()
-        # TODO: Refactor this to be global.
-        try:
+        self.init_spec = init_spec_ext
+        
+        if self.init_spec:
             self.spec_session = pexpect.spawn("sixcsim", timeout=3)
-        except Exception as e:
-            print("WARNING: Spec session not created. Continuing startup.")
 
 
     def _run(
@@ -29,27 +29,28 @@ class DiffractometerAIO(BaseTool):
     ) -> str:
         ENERGY = 10 # ASSUMED, could be parameterized later
         BRAGG_PEAK = 2 # ASSUMED, ...
+        try:
+            lattice = func.mp_get_lattice(query.upper(), MP_API_KEY)
+        except KeyError:
+            return f"Unable to find material {query.upper()}"
 
-        lattice = func.mp_get_lattice(query, MP_API_KEY)
         print(f'\nDEBUG: --- get lattice from Materials Project ---\n{lattice}')
 
-        result = func.aps7id_calculate_angle(ENERGY, BRAGG_PEAK, lattice)
-
-        print(f"\nDEBUG: angle = {result['angle']}")
-
         # TODO: add conversion to abc/abg conversion here and uncomment: 
+        spec_lattice = [lattice['a'], lattice['b'], lattice['c'], 
+                        lattice['alpha'], lattice['beta'], lattice['gamma']]
+        print(f'DEBUG: Setting SPEC: {spec_lattice}')
 
-        """
-        self.spec_session.sendline("setlat")
-        self.spec_session.expect("real space lattice")
-        self.spec_session.readline()
-        # lats has 6 numbers, a,b,c,alf,bet,gam                                                                        
-        for i in range(6):
-            self.spec_session.sendline("{0}".format(lats[i]))
+        if self.init_spec:
+            self.spec_session.sendline("setlat")
+            self.spec_session.expect("real space lattice")
             self.spec_session.readline()
-        """
+            # lats has 6 numbers, a,b,c,alf,bet,gam                                                                        
+            for i in range(6):
+                self.spec_session.sendline("{0}".format(spec_lattice[i]))
+                print(self.spec_session.readline())
 
-        return 'Diffractometer moved'
+        return 'Diffractometer Moved'
 
     async def _arun(
         self, query: str, run_manager: Optional[AsyncCallbackManagerForToolRun] = None

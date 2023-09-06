@@ -179,7 +179,7 @@ class PDFChat(Chat):
 class ToolChat(Chat):
     def _init_chain(self):
         tools = [
-            dfrac_tools.DiffractometerAIO()   
+            dfrac_tools.DiffractometerAIO(params.spec_init)   
         ]
 
         # Chat zero shot agent
@@ -358,7 +358,7 @@ def main_interface(params, llm, embeddings):
         """
         )
     demo.queue()
-    demo.launch(server_name="0.0.0.0", server_port=2023)
+    demo.launch(server_name="0.0.0.0", server_port=2025)
 
 
 if __name__ == '__main__':
