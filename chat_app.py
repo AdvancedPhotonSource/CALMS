@@ -154,8 +154,12 @@ AI:"""
         context=""
         print ("Context hits found", len(docs))
         for i in range(min(params.N_hits, len(docs))):
-            context += docs[i][0].page_content +"\n"
-            print (i+1, len(docs[i][0].page_content), docs[i][0].page_content)
+            if docs[i][1]<params.similarity_cutoff:
+                context += docs[i][0].page_content +"\n"
+                print (i+1, len(docs[i][0].page_content), docs[i][1], docs[i][0].page_content)
+            else:
+                print ("\n\nIGNORING CONTENT of score %.2f" %docs[i][1],len(docs[i][0].page_content), docs[i][0].page_content)
+                
         return context
     
     
