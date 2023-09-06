@@ -21,7 +21,7 @@ chunk_overlap = 128 #How much overlap between chunks
 
 init_docs = True #Recompute embeddings?
 overwrite_embeddings = True #Overwrite embeddings if already exist? -- will raise val error of init_docs is True and this is not
-N_hits = 6 #How many hits of context to provide?
+N_hits = 4 #How many hits of context to provide?
 
 
 #List of folders to add to doc store

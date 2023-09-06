@@ -161,11 +161,15 @@ AI:"""
     
     def generate_response(self, history, debug_output):
         user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+        all_user_messages = [x[0] for x in history]
+        print(all_user_messages)
 
         if self.doc_store is None:
             context = ""
         else:
-            context = self._get_context(user_message, self.doc_store)
+            context = ""
+            for message in all_user_messages:
+             context += self._get_context(message, self.doc_store)
 
         if debug_output:
             inputs = self.conversation.prep_inputs({'input': user_message, 'context':context})
