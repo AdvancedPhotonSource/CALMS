@@ -177,12 +177,14 @@ class PDFChat(Chat):
     
 
 class ToolChat(Chat):
+    """
+    Implements an agentexector in a chat context. The agentexecutor is called in a fundimentally
+    differnet way than the other chains, so custom implementaiton for much of the class.
+    """
     def _init_chain(self):
         tools = [
             dfrac_tools.DiffractometerAIO(params.spec_init)   
         ]
-
-        # Chat zero shot agent
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 
@@ -197,25 +199,16 @@ class ToolChat(Chat):
     def generate_response(self, history, debug_output):
         user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
 
-        if debug_output:
-            inputs = self.conversation.prep_inputs({'input': user_message})
-            prompt = self.conversation.prep_prompts([inputs])[0][0].text
-
+        # TODO: Implement debug output for langchain agents. Might have to use a callback?
         print(f'User input: {user_message}')
         bot_message = self.conversation.run(user_message)
-        print(bot_message)
         #Pass user message and get context and pass to model
         history[-1][1] = "" #Replaces None with empty string -- Gradio code
-
-        if debug_output:
-            bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
 
         for character in bot_message:
             history[-1][1] += character
             time.sleep(0.02)
             yield history
-
-
 
 
 
