@@ -355,7 +355,7 @@ def main_interface(params, llm, embeddings):
         """
         )
     demo.queue()
-    demo.launch(server_name="0.0.0.0", server_port=2025)
+    demo.launch(server_name="0.0.0.0", server_port=2023)
 
 
 if __name__ == '__main__':
