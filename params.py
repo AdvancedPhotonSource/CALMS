@@ -1,5 +1,5 @@
 # Env settings
-set_visible_devices = False
+set_visible_devices = True
 visible_devices = '2,3'
 
 #LLM parameters
@@ -32,6 +32,7 @@ chunk_overlap = 128 #How much overlap between chunks
 init_docs = True #Recompute embeddings?
 overwrite_embeddings = True #Overwrite embeddings if already exist? -- will raise val error of init_docs is True and this is not
 N_hits = 4 #How many hits of context to provide?
+similarity_cutoff = 1.4 #Ignore context hits greater than this distance away. Empirical number.
 
 
 #List of folders to add to doc store
