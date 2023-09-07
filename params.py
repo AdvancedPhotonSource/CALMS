@@ -48,4 +48,4 @@ embed_path = '%s/%s' %(base_path, embedding_model_name)
 pdf_path = '%s/pdf' %embed_path
 
 #Spec Params
-spec_init = True
+spec_init = False
