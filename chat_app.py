@@ -321,16 +321,16 @@ def main_interface(params, llm, embeddings):
             clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
         
         with gr.Tab("Tool Agent"):
-            chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
+            chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
             tool_qa = ToolChat(llm, embeddings, None)
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
             )
             submit_btn.click(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
             )
         
             clear.click(lambda: tool_qa.memory.clear(), None, chatbot, queue=False)

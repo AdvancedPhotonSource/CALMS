@@ -1,4 +1,5 @@
 from langchain.chat_models import ChatOpenAI
+import requests
 from langchain.tools import BaseTool, StructuredTool, Tool, tool
 from pydantic import Extra
 from typing import Optional, Type
