@@ -1,6 +1,6 @@
-import os
-import params
-import llms
+import os, time, shutil
+import params, dfrac_tools, llms
+
 if params.set_visible_devices:
     os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
 
@@ -8,16 +8,16 @@ import torch
 
 from langchain import PromptTemplate, LLMChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.agents import Tool, AgentType, initialize_agent
-from langchain.chains import LLMMathChain
 from langchain.document_loaders import OnlinePDFLoader
-import dfrac_tools
-import gradio as gr
-import time, shutil
+from langchain.llms import HuggingFacePipeline
+from langchain.embeddings import HuggingFaceEmbeddings 
 
-#Load embedding model and use that to embed text from source
+import gradio as gr
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+
+#Setup device
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device:", device)
 print("Using %d GPUs" %torch.cuda.device_count())
@@ -28,46 +28,36 @@ if os.path.exists(params.pdf_path):
     shutil.rmtree(params.pdf_path) 
 
 
-def init_text_splitter():
-    text_splitter = RecursiveCharacterTextSplitter( chunk_size=params.chunk_size, 
-                                                    chunk_overlap=params.chunk_overlap,
-                                                    length_function = len,
-                                                    separators = ['\n\n','\n', '.']
-                                                    )
-    return text_splitter
-
-
-def init_facility_qa(embeddings, params):
-    embed_path = params.embed_path
-
-    if params.init_docs:
-        text_splitter = init_text_splitter()
-
-        if os.path.exists(embed_path):
-            if params.overwrite_embeddings:
-                shutil.rmtree(embed_path)
-            else:
-                raise ValueError("Existing Chroma Collection")
-
-        all_texts = []
-        for doc_path in params.doc_paths: #Iterate over text files in each path
-            print ("Reading docs from", doc_path)
-            for text_fp in os.listdir(doc_path):
-                with open(os.path.join(doc_path, text_fp), 'r') as text_f:
-                    book = text_f.read()
-                texts = text_splitter.split_text(book)
-                all_texts += texts
-
-        docsearch = Chroma.from_texts(
-            all_texts, embeddings, #metadatas=[{"source": str(i)} for i in range(len(all_texts))],
-            persist_directory=embed_path
-        )
-        docsearch.persist()
+def init_local_llm(params):
+    #Create a local tokenizer copy the first time
+    if os.path.isdir(params.tokenizer_path):
+        tokenizer = AutoTokenizer.from_pretrained(params.tokenizer_path)
     else:
-        docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
-    print ("Finished embedding documents")
+        tokenizer = AutoTokenizer.from_pretrained(params.model_name)
+        os.mkdir(params.tokenizer_path)
+        tokenizer.save_pretrained(params.tokenizer_path)
 
-    return docsearch
+    #Setup pipeline
+    model = AutoModelForCausalLM.from_pretrained(params.model_name, 
+                                                 device_map="auto", 
+                                                 torch_dtype=torch.bfloat16)#, load_in_8bit=True)
+    pipe = pipeline(
+        "text-generation",
+        model=model, 
+        tokenizer=tokenizer, 
+        max_length=params.seq_length,
+        temperature=0.6,
+        top_p=0.95,
+        repetition_penalty=1.2
+    )
+
+    #Setup LLM chain with memory and context
+    return HuggingFacePipeline(pipeline=pipe)
+
+#Setup embedding model
+def init_local_embeddings(params):
+    return HuggingFaceEmbeddings(model_name=params.embedding_model_name)
+
 
 
 """
@@ -167,7 +157,7 @@ class PDFChat(Chat):
         for pdf_doc in pdf_docs:
             loader = OnlinePDFLoader(pdf_doc.name)
             documents = loader.load()
-            text_splitter = init_text_splitter()
+            text_splitter = llms.init_text_splitter()
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
         embed_path = params.pdf_path
@@ -269,7 +259,7 @@ def main_interface(params, llm, embeddings):
         with gr.Tab("Facility Q&A"):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
-            facility_qa_docstore = init_facility_qa(embeddings, params)
+            facility_qa_docstore = llms.init_facility_qa(embeddings, params)
             chat_qa = Chat(llm, embeddings, doc_store=facility_qa_docstore)
 
             #Pass an empty string to context when don't want domain specific context
@@ -362,9 +352,9 @@ if __name__ == '__main__':
     if params.llm_type == 'anl':
         llm = llms.AnlLLM(params)
     elif params.llm_type == 'hf':
-        llm = llms.init_local_llm(params)
+        llm = init_local_llm(params)
     
-    embeddings = llms.init_local_embeddings(params)
+    embeddings = init_local_embeddings(params)
     main_interface(params, llm, embeddings)
 
 

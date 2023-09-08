@@ -1,6 +1,6 @@
 # Env settings
 set_visible_devices = True
-visible_devices = '2,3'
+visible_devices = '1,2,3'
 
 #LLM parameters
 

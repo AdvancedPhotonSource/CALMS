@@ -1,14 +1,13 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+
 from pydantic import Extra
 import requests
-import datetime
-import os
-import torch
+import datetime, os, shutil
+import params
 
-from langchain.llms import HuggingFacePipeline
-from langchain.embeddings import HuggingFaceEmbeddings 
 from langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.llms.base import LLM
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.vectorstores import Chroma
 
 class AnlLLM(LLM, extra=Extra.allow):
 
@@ -55,33 +54,43 @@ class AnlLLM(LLM, extra=Extra.allow):
         return {}
 
 
-def init_local_llm(params):
-    #Create a local tokenizer copy the first time
-    if os.path.isdir(params.tokenizer_path):
-        tokenizer = AutoTokenizer.from_pretrained(params.tokenizer_path)
+def init_text_splitter():
+    text_splitter = RecursiveCharacterTextSplitter( chunk_size=params.chunk_size, 
+                                                    chunk_overlap=params.chunk_overlap,
+                                                    length_function = len,
+                                                    separators = ['\n\n','\n', '.']
+                                                    )
+    return text_splitter
+
+
+def init_facility_qa(embeddings, params):
+    embed_path = params.embed_path
+
+    if params.init_docs:
+        text_splitter = init_text_splitter()
+
+        if os.path.exists(embed_path):
+            if params.overwrite_embeddings:
+                shutil.rmtree(embed_path)
+            else:
+                raise ValueError("Existing Chroma Collection")
+
+        all_texts = []
+        for doc_path in params.doc_paths: #Iterate over text files in each path
+            print ("Reading docs from", doc_path)
+            for text_fp in os.listdir(doc_path):
+                with open(os.path.join(doc_path, text_fp), 'r') as text_f:
+                    book = text_f.read()
+                texts = text_splitter.split_text(book)
+                all_texts += texts
+
+        docsearch = Chroma.from_texts(
+            all_texts, embeddings, #metadatas=[{"source": str(i)} for i in range(len(all_texts))],
+            persist_directory=embed_path
+        )
+        docsearch.persist()
     else:
-        tokenizer = AutoTokenizer.from_pretrained(params.model_name)
-        os.mkdir(params.tokenizer_path)
-        tokenizer.save_pretrained(params.tokenizer_path)
+        docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
+    print ("Finished embedding documents")
 
-    #Setup pipeline
-    model = AutoModelForCausalLM.from_pretrained(params.model_name, 
-                                                 device_map="auto", 
-                                                 torch_dtype=torch.bfloat16)#, load_in_8bit=True)
-    pipe = pipeline(
-        "text-generation",
-        model=model, 
-        tokenizer=tokenizer, 
-        max_length=params.seq_length,
-        temperature=0.6,
-        top_p=0.95,
-        repetition_penalty=1.2
-    )
-
-
-    #Setup LLM chain with memory and context
-    return HuggingFacePipeline(pipeline=pipe)
-
-
-def init_local_embeddings(params):
-    return HuggingFaceEmbeddings(model_name=params.embedding_model_name)
+    return docsearch
