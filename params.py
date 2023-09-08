@@ -1,8 +1,13 @@
 # Env settings
 set_visible_devices = True
-visible_devices = '1,2,3'
+visible_devices = '2,3'
 
 #LLM parameters
+
+#Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
+llm_type = 'hf'
+
+# hf params
 #model_name = "eachadea/vicuna-13b-1.1"
 #model_name = "lmsys/vicuna-13b-v1.3"
 model_name = "lmsys/vicuna-13b-v1.5-16k"
@@ -11,6 +16,11 @@ tokenizer_path = "./tokenizer/%s" %model_name.split("/")[1]
 seq_lengths = {"lmsys/vicuna-13b-v1.3" : 2048,
                "lmsys/vicuna-13b-v1.5-16k" : 16384}
 seq_length = seq_lengths[model_name]
+
+# anl params
+anl_llm_url_path = 'keys/ANL_LLM_URL'
+anl_llm_debug = True
+anl_llm_debug_fp = 'anl_outputs.log'
 
 
 #Embedding model parameters
@@ -36,3 +46,6 @@ doc_paths = ["DOC_STORE/APS-Science-Highlight",
 base_path = 'embeds/' 
 embed_path = '%s/%s' %(base_path, embedding_model_name)
 pdf_path = '%s/pdf' %embed_path
+
+#Spec Params
+spec_init = False

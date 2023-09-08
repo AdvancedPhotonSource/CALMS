@@ -1,20 +1,21 @@
 import os
 import params
+import llms
 if params.set_visible_devices:
     os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
 
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
-from langchain.llms import HuggingFacePipeline
 from langchain import PromptTemplate, LLMChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
-from langchain.embeddings import HuggingFaceEmbeddings 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
+from langchain.agents import Tool, AgentType, initialize_agent
+from langchain.chains import LLMMathChain
 from langchain.document_loaders import OnlinePDFLoader
+import dfrac_tools
 import gradio as gr
-import shutil
+import time, shutil
 
 #Load embedding model and use that to embed text from source
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -25,42 +26,6 @@ print("Using %d GPUs" %torch.cuda.device_count())
 gr.close_all() #Close any existing open ports
 if os.path.exists(params.pdf_path):
     shutil.rmtree(params.pdf_path) 
-
-"""
-===========================
-Initialization
-===========================
-"""
-
-def init_llm(params):
-    #Create a local tokenizer copy the first time
-    if os.path.isdir(params.tokenizer_path):
-        tokenizer = AutoTokenizer.from_pretrained(params.tokenizer_path)
-    else:
-        tokenizer = AutoTokenizer.from_pretrained(params.model_name)
-        os.mkdir(params.tokenizer_path)
-        tokenizer.save_pretrained(params.tokenizer_path)
-
-    #Setup pipeline
-    model = AutoModelForCausalLM.from_pretrained(params.model_name, 
-                                                 device_map="auto", 
-                                                 torch_dtype=torch.bfloat16)#, load_in_8bit=True)
-    pipe = pipeline(
-        "text-generation",
-        model=model, 
-        tokenizer=tokenizer, 
-        do_sample = True,
-        max_length=params.seq_length,
-        temperature=0.6,
-        top_p=0.95,
-        repetition_penalty=1.2
-    )
-
-    #Embeddings
-    embeddings = HuggingFaceEmbeddings(model_name=params.embedding_model_name)
-
-    #Setup LLM chain with memory and context
-    return HuggingFacePipeline(pipeline=pipe), embeddings
 
 
 def init_text_splitter():
@@ -213,6 +178,42 @@ class PDFChat(Chat):
         self.doc_store = db
 
         return "PDF Ready"
+    
+
+class ToolChat(Chat):
+    """
+    Implements an agentexector in a chat context. The agentexecutor is called in a fundimentally
+    differnet way than the other chains, so custom implementaiton for much of the class.
+    """
+    def _init_chain(self):
+        tools = [
+            dfrac_tools.DiffractometerAIO(params.spec_init)   
+        ]
+
+        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
+        conversation = initialize_agent(tools, 
+                                       self.llm, 
+                                       agent='conversational-react-description', 
+                                       verbose=True, 
+                                       handle_parsing_errors='Check your output and make sure it conforms!',
+                                       max_iterations=5,
+                                       memory=memory)
+        return memory, conversation
+    
+    def generate_response(self, history, debug_output):
+        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+
+        # TODO: Implement debug output for langchain agents. Might have to use a callback?
+        print(f'User input: {user_message}')
+        bot_message = self.conversation.run(user_message)
+        #Pass user message and get context and pass to model
+        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+        for character in bot_message:
+            history[-1][1] += character
+            time.sleep(0.02)
+            yield history
+
 
 
 """
@@ -318,6 +319,22 @@ def main_interface(params, llm, embeddings):
                 chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
             )
             clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
+        
+        with gr.Tab("Tool Agent"):
+            chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
+
+            tool_qa = ToolChat(llm, embeddings, None)
+
+            #Pass an empty string to context when don't want domain specific context
+            msg.submit(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+            )
+            submit_btn.click(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+            )
+        
+            clear.click(lambda: tool_qa.memory.clear(), None, chatbot, queue=False)
+
     
         with gr.Tab("Tips & Tricks"):
             gr.Markdown("""
@@ -342,7 +359,12 @@ def main_interface(params, llm, embeddings):
 
 
 if __name__ == '__main__':
-    llm, embeddings = init_llm(params)
+    if params.llm_type == 'anl':
+        llm = llms.AnlLLM(params)
+    elif params.llm_type == 'hf':
+        llm = llms.init_local_llm(params)
+    
+    embeddings = llms.init_local_embeddings(params)
     main_interface(params, llm, embeddings)
 
 
