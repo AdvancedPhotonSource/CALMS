@@ -19,8 +19,8 @@ class DiffractometerAIO(BaseTool, extra=Extra.allow):
 
     To disable the connection to to spec, the init_spec_ext parameter can be set to false.
     """
-    name = "setdiffractometer"
-    description = "tool to set the diffractometer based on the material being analyzed"
+    name = "calculator"
+    description = "tool to set the diffractometer based on the material being analyzed, the parameters are first the material then the peak sepearted by a space"
 
     def __init__(self, init_spec_ext):
         super().__init__()
@@ -33,18 +33,33 @@ class DiffractometerAIO(BaseTool, extra=Extra.allow):
     def _run(
         self, query: str, run_manager: Optional[CallbackManagerForToolRun] = None
     ) -> str:
-        ENERGY = 10 # ASSUMED, could be parameterized later
-        BRAGG_PEAK = 2 # ASSUMED, ...
+        query_params = query.split(' ')
+        # TODO: Make more rhobust
+
+        material = query_params[0]
+        peak = query_params[-3:]
+        print(peak)
+
         try:
-            lattice = mp_get_lattice(query.upper(), MP_API_KEY)
+            print(query)
+            lattice = mp_get_lattice(material, MP_API_KEY)
         except KeyError:
-            return f"Unable to find material {query.upper()}"
+            return f"Unable to find material {material}"
 
         print(f'\nDEBUG: --- get lattice from Materials Project ---\n{lattice}')
 
         spec_lattice = [lattice['a'], lattice['b'], lattice['c'], 
                         lattice['alpha'], lattice['beta'], lattice['gamma']]
         print(f'DEBUG: Setting SPEC: {spec_lattice}')
+
+        self.spec_session.sendline(f"ubr {peak[0]} {peak[1]} {peak[2]}")
+
+        self.spec_session.sendline("wh")
+        while(1):
+            try:
+                print(self.spec_session.readline())
+            except:
+                break 
 
         if self.init_spec:
             self.spec_session.sendline("setlat")
@@ -53,9 +68,25 @@ class DiffractometerAIO(BaseTool, extra=Extra.allow):
             # lats has 6 numbers, a,b,c,alf,bet,gam                                                                        
             for i in range(6):
                 self.spec_session.sendline("{0}".format(spec_lattice[i]))
-                print(self.spec_session.readline())
+                self.spec_session.readline().decode()
 
-        return 'Diffractometer Moved'
+
+            self.spec_session.sendline("p LAMBDA")
+            while(1):
+                try:
+                    print(self.spec_session.readline().decode())
+                except:
+                    break 
+
+        wh_output = []
+        self.spec_session.sendline("wh")
+        while(1):
+            try:
+                wh_output.append(self.spec_session.readline().decode())
+            except:
+                break 
+
+        return ' '.join(wh_output)
 
     async def _arun(
         self, query: str, run_manager: Optional[AsyncCallbackManagerForToolRun] = None
