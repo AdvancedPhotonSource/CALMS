@@ -12,6 +12,35 @@ import pexpect
 MP_API_KEY = open('keys/MP_API_KEY').read().strip()
 
 
+def get_lattice(material: str):
+    try:
+        lattice = mp_get_lattice(material, MP_API_KEY)
+    except KeyError:
+        return f"Unable to find material {material}"
+    
+
+    return f"{lattice['a']}, {lattice['b']}, {lattice['c']}, {lattice['alpha']}, {lattice['beta']}, {lattice['gamma']}"
+
+
+def set_diffractometer(a: float, b: float, c: float,
+                       alpha: float, beta: float, gamma: float):
+    
+    print(a, b, c, alpha, beta, gamma)
+
+    return "Diffractometer Set"
+
+
+lattice_tool = StructuredTool.from_function(get_lattice,
+                                            name="GetLattice",
+                                            description="Gets the lattice parameters for the specified material")
+
+diffractometer_tool = StructuredTool.from_function(set_diffractometer,
+                                                   name="SetInstrument",
+                                            description="Sets the instrument to a material's lattice. Requires the 6 lattice parameters: a,b,c,alp,bet,gam. Do not assume these paramters. Use the getLattice tools to retrieve them.")
+
+
+
+
 class DiffractometerAIO(BaseTool, extra=Extra.allow):
     """
     Tool to query the lattice parameters from the materials project
@@ -19,7 +48,7 @@ class DiffractometerAIO(BaseTool, extra=Extra.allow):
 
     To disable the connection to to spec, the init_spec_ext parameter can be set to false.
     """
-    name = "calculator"
+    name = "setdetector"
     description = "tool to set the diffractometer based on the material being analyzed, the parameters are first the material then the peak sepearted by a space"
 
     def __init__(self, init_spec_ext):
