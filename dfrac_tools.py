@@ -23,9 +23,13 @@ def get_lattice(material: str):
 
 
 def set_diffractometer(a: float, b: float, c: float,
-                       alpha: float, beta: float, gamma: float):
+                       alpha: float, beta: float, gamma: float, peak:list[int]):
     
+    if len(peak) != 3:
+        return "Peak parameters were incorrect. Instrument was NOT set"
+
     print(a, b, c, alpha, beta, gamma)
+    print(peak[0], peak[1], peak[2])
 
     return "Diffractometer Set"
 
@@ -36,7 +40,9 @@ lattice_tool = StructuredTool.from_function(get_lattice,
 
 diffractometer_tool = StructuredTool.from_function(set_diffractometer,
                                                    name="SetInstrument",
-                                            description="Sets the instrument to a material's lattice. Requires the 6 lattice parameters: a,b,c,alp,bet,gam. Do not assume these paramters. Use the getLattice tools to retrieve them.")
+                                                    description="Sets the instrument to a material's lattice. Requires the 6 lattice parameters: a,b,c,alp,bet,gam."
+                                                                + " Do not assume these parameters. Use the GetLattice tool to retrieve them."
+                                                                + " The peak parameters are supplied by the user. They are 3 integers. Query the user if they are not provided in the initial request and do not set the instrument.")
 
 
 
