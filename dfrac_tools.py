@@ -42,7 +42,7 @@ diffractometer_tool = StructuredTool.from_function(set_diffractometer,
                                                    name="SetInstrument",
                                                     description="Sets the instrument to a material's lattice. Requires the 6 lattice parameters: a,b,c,alp,bet,gam."
                                                                 + " Do not assume these parameters. Use the GetLattice tool to retrieve them."
-                                                                + " The peak parameters are supplied by the user. They are 3 integers. Query the user if they are not provided in the initial request and do not set the instrument.")
+                                                                + " The peak parameters are supplied by the user. They are 3 integers.")
 
 
 
