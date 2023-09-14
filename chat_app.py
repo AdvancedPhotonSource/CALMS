@@ -176,14 +176,18 @@ class ToolChat(Chat):
     differnet way than the other chains, so custom implementaiton for much of the class.
     """
     def _init_chain(self):
+        """
         tools = [
             dfrac_tools.DiffractometerAIO(params.spec_init)   
         ]
+        """
+
+        tools = [dfrac_tools.lattice_tool, dfrac_tools.diffractometer_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 
                                        self.llm, 
-                                       agent='conversational-react-description', 
+                                       agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
                                        verbose=True, 
                                        handle_parsing_errors='Check your output and make sure it conforms!',
                                        max_iterations=5,
@@ -345,7 +349,7 @@ def main_interface(params, llm, embeddings):
         """
         )
     demo.queue()
-    demo.launch(server_name="0.0.0.0", server_port=2023)
+    demo.launch(server_name="0.0.0.0", server_port=params.port)
 
 
 if __name__ == '__main__':

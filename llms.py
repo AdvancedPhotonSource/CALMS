@@ -34,11 +34,12 @@ class AnlLLM(LLM, extra=Extra.allow):
             with open(self.debug_fp, 'a+') as debug_f:
                 debug_f.write(f'\n\n{datetime.datetime.now()}\nPrompt:{prompt}')
 
-        if stop is not None:
-            print(stop)
-            raise ValueError("stop kwargs are not permitted.")
+        if stop is None:
+            stop_param = []
+        else:
+            stop_param = stop
         
-        req_obj = {'user':'aps', 'prompt': prompt}
+        req_obj = {'user':'APS', 'prompt':[prompt], "stop":stop_param}
         result = requests.post(self.anl_url, json=req_obj)
 
         response = result.json()['response']

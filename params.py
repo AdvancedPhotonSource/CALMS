@@ -29,7 +29,7 @@ embedding_model_name =   "all-mpnet-base-v2" #Highest scoring all-round, does 28
 chunk_size = 1024 #Size of chunks to break the text store into
 chunk_overlap = 128 #How much overlap between chunks
 
-init_docs = True #Recompute embeddings?
+init_docs = False #Recompute embeddings?
 overwrite_embeddings = True #Overwrite embeddings if already exist? -- will raise val error of init_docs is True and this is not
 N_hits = 4 #How many hits of context to provide?
 similarity_cutoff = 1.4 #Ignore context hits greater than this distance away. Empirical number.
@@ -48,4 +48,6 @@ embed_path = '%s/%s' %(base_path, embedding_model_name)
 pdf_path = '%s/pdf' %embed_path
 
 #Spec Params
-spec_init = False
+spec_init = True
+
+port = 2023
