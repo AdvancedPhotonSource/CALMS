@@ -30,6 +30,14 @@ def download(link):
     return response, page, content
 
 
+def strip_cnm_description(text, substring):
+    index = text.find(substring)
+    if index != -1:  # Only strip if the substring exists
+        return text[:index]
+    else:
+        return text  # If substring is not found, return the original text
+
+
 def strip_acknowledgement(text):
     for keep, s in [
         (0, '\nThis work was supported by '),
@@ -41,13 +49,15 @@ def strip_acknowledgement(text):
         (0, '\nThis work was financially supported by '),
         (1, '\nCorrespondence: '),
         (1, '\nAuthor affiliations: '),
+        (0, '\nDownload this highlight '),  
+        (0, '\nAbout Argonne’s Center for Nanoscale Materials '),  
         (1, '\nSee: '),
     ]:
         cut = text.find(s)
         if cut > 0:
             lastline = text[cut:].lstrip().split('\n', 1)[0]
             text = text[:cut].rstrip() + keep * f'\n\n{lastline}'
-            break
+            # break
     return text
 
 
@@ -72,7 +82,11 @@ def save_html_text(link):
         f.write(to_text(title))
         f.write('\n\n')
         # f.write(content)
-        f.write(strip_acknowledgement(to_text(article)))
+        
+        # Using the function to strip everything after the specific substring
+        substring = "Download this highlight"
+        stripped_text =strip_cnm_description(to_text(article), substring)
+        f.write(strip_acknowledgement(stripped_text))#strip_acknowledgement(to_text(article)))
 
 
 def get_soup_from_request(url: str) -> BeautifulSoup:

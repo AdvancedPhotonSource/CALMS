@@ -1,0 +1,22 @@
+Nonlinear vibrations achieved in resonators cooled to the quantum ground state
+
+August 21, 2023
+
+In a Nature Physics paper, scientists demonstrate that mechanical resonators can be made into a nonlinear system with vibrations approaching the quantum ground state.
+
+Vibration amplitudes for which nonlinearities emerge divided by zero-point motion as a function of mass for this work (nanotube in quantum dot) compared with other systems. Different colors correspond to different vibrational systems. Stars correspond to systems that have been experimentally cooled to the quantum ground state.
+
+Scientific Achievement
+
+A new mechanism has been demonstrated to boost vibration nonlinearity by coupling the vibrations of a nanotube resonator to single-electron tunnelling in a quantum dot and cooling to subkelvin temperature.
+
+Significance and Impact
+
+From this discovery may emerge novel qubits for manipulating quantum information, the ability to realize mechanical ​“Schrödinger cat” states with improved quantum sensing of force and mass, and quantum simulators able to emulate the rich physics of electron–phonon coupling.
+
+Research Details
+
+The average vibration amplitude at subkelvin temperatures was determined to be 13 times the zero-point motion for a vibrating nanotube in a quantum dot.
+
+DOI: 10.1038/s41567-023-02065-9
+

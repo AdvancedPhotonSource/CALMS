@@ -1,0 +1,45 @@
+Merging rotating Bose-Einstein condensates
+
+April 9, 2020
+
+In a study published in the Physical Review Letters, researchers simulated the transfer of angular momentum between rotating and stationary samples of a quantum fluid, revealing a corkscrew mechanism responsible for the transfer. 
+
+Merging dynamics of two BECs with one static and the other rotating. Angular momentum (bottom plots in blue) is efficiently transferred due to the spontaneously emergence of a “corkscrew soliton sheet” at the interface. This transfer does not need any conventional fluid convection or vortex diffusion.
+
+Scientific Achievement
+
+A new mechanism of angular momentum transfer via a ​“corkscrew soliton sheet” in Bose-Einstein condensed (BEC) quantum fluids is theoretically demonstrated.
+
+Significance and Impact
+
+This finding may impact the study of rotating quantum fluids, from nanoscale ultracold atoms to cosmological-scale neutron-pair superfluids in neutron stars and galactic dark matter halos.
+
+Research Details
+
+Simulated a static BEC merging with a rotating BEC in 3D space
+
+Showed that a soliton-like sheet (a topological quantum structure), resembling a corkscrew, spontaneously emerges at the interface and dominates in highly efficient angular momentum transfer
+
+Used the Center for Nanoscale Materials’s (CNM) Carbon cluster for part of the simulation work
+
+Work was performed in part at CNM.
+
+DOI: 10.1103/PhysRevLett.124.105302
+
+Download this highlight
+
+About Argonne’s Center for Nanoscale Materials
+
+The Center for Nanoscale Materials is one of the five DOE Nanoscale Science Research Centers, premier national user facilities for interdisciplinary research at the nanoscale supported by the DOE Office of Science. Together the NSRCs comprise a suite of complementary facilities that provide researchers with state-of-the-art capabilities to fabricate, process, characterize and model nanoscale materials, and constitute the largest infrastructure investment of the National Nanotechnology Initiative. The NSRCs are located at DOE’s Argonne, Brookhaven, Lawrence Berkeley, Oak Ridge, Sandia and Los Alamos National Laboratories. For more information about the DOE NSRCs, please visit https://​sci​ence​.osti​.gov/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​/​U​s​e​r​-​F​a​c​i​l​i​t​i​e​s​-​a​t​-​a​-​G​lance.
+
+Argonne National Laboratory seeks solutions to pressing national problems in science and technology. The nation’s first national laboratory, Argonne conducts leading-edge basic and applied scientific research in virtually every scientific discipline. Argonne researchers work closely with researchers from hundreds of companies, universities, and federal, state and municipal agencies to help them solve their specific problems, advance America’s scientific leadership and prepare the nation for a better future. With employees from more than 60 nations, Argonne is managed by UChicago Argonne, LLC for the U.S. Department of Energy’s Office of Science.
+
+The U.S. Department of Energy’s Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time. For more information, visit https://​ener​gy​.gov/​s​c​ience.
+
+Tags:
+
+Nanoscience and Nanotechnology,
+
+                                               solitons,
+
+                                               quantum fluids
