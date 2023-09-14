@@ -34,13 +34,12 @@ def download(link, selection):
 
 
 response, index_page, content = download(url, 'div.mw-body')
-print('content', content)
 
 if response.from_cache:
     print('[ WARNING: page requested from cache ]\n')
 
 title = index_page.title.string
-out = open(f"{savedir}/{title.replace(' ','_')}.txt", 'w')
+out = open(f"{savedir}/{title.replace(' ','_')}.txt", 'w', encoding='utf-8')
 
 
 def write(text):
@@ -165,7 +164,7 @@ def format_list(tag, baseurl):
 
 def read(content, base=baseurl, hlevel=0):
 
-    for tag in content.descendants:
+    for tag in content.descendants:        
 
         name = str(tag.name)
 
@@ -212,49 +211,26 @@ def read(content, base=baseurl, hlevel=0):
 
         elif name == 'a':
 
-            href = format_link(tag, baseurl=base)
-            is_internal_link = href.startswith(baseurl)
-            is_html = Path(href).suffix[:4] == '.htm'
+            try:
+                href = format_link(tag, baseurl=base)
+                print('href', href)
+                is_internal_link = href.startswith(baseurl)
+                # is_html = Path(href).suffix[:4] == '.htm'  
+                # print('is_html', is_html)
 
-            # scrap internal links only
-            if is_internal_link and is_html and href not in visited:
+                if is_internal_link and href not in visited:
+                    response, page, content = download(href, 'div.mw-body')
+                    if response.status_code != 200:
+                        yield f"<{href}> (cannot access)\n\n"
+                        continue
 
-                response, page, content = download(href)
-                if response.status_code != 200:
-                    yield f"<{href}> (cannot access)\n\n"
-                    continue
-
-                # title = page.title.string
-                # yield f"url: {href}\ntitle: {title}\n\n"
-                newbase = urljoin(href, '.')
-                for line in read(content, newbase, hlevel=hlevel + 1):
-                    yield line
-                visited.add(href)
-
-        # elif name == 'a': 
-        #     print('tag', tag)
-
-        #     href = format_link(tag, baseurl=base)
-        #     is_internal_link = href.startswith(baseurl)
-            
-        #     is_testbed_link = (href.find('ai-testbed') >= 0) and (href.find('files') < 0)
-        #     is_html = Path(href).suffix[:4] == '.htm'
-
-        #     # scrap internal links only
-        #     if is_internal_link and is_testbed_link and href not in visited:
-                
-        #         response, page, content = download(href, 'div.md-content')
-        #         if response.status_code != 200:
-        #             yield f"<{href}> (cannot access)\n\n"
-        #             continue
-
-        #         visited.add(href)
-        #         # title = page.title.string
-        #         # yield f"url: {href}\ntitle: {title}\n\n"
-        #         newbase = urljoin(href, '.')
-        #         for line in read(content, newbase, hlevel=hlevel + 1):
-        #             yield line
-
+                    visited.add(href)
+                    newbase = urljoin(href, '.')
+                    for line in read(content, newbase, hlevel=hlevel + 1):
+                        yield line
+                          
+            except:
+                pass
 
 visited = set([url])
 for line in read(content):
