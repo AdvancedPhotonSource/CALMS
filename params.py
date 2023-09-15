@@ -39,7 +39,8 @@ similarity_cutoff = 1.4 #Ignore context hits greater than this distance away. Em
 doc_paths = ["DOC_STORE/APS-Science-Highlight", 
              "DOC_STORE/APS-Docs", 
              "DOC_STORE/ALCF-Docs",
-             "DOC_STORE/CNM-Science-Highlight"]
+             "DOC_STORE/CNM-Science-Highlight", 
+             "DOC_STORE/CNM-Docs"]
 
 
 #Embedding paths
