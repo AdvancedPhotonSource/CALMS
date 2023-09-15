@@ -244,6 +244,22 @@ def main_interface(params, llm, embeddings):
         * Use the Document Q&A to ask me questions about a document you provide.
         """)
 
+        if params.llm_type == 'hf':
+            model_descr = f"local model: {params.model_name}"
+        elif params.llm_type == 'anl':
+            model_descr = f"ANL Hosted Model (OpenAI)"
+        else:
+            model_descr = "Error! Unknown model"
+
+        if params.embed_type == 'hf':
+            embed_descr = f"Local model: {params.embedding_model_name}"
+        elif params.llm_type == 'anl':
+            embed_descr = f"ANL Hosted Model (OpenAI)"
+        else:
+            embed_descr = "Error! Unknown model"
+
+        gr.Markdown(f"LLM Model: {model_descr}\n\nEmbedding Model: {embed_descr}")
+
         #General chat tab
         with gr.Tab("General Chat"):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
@@ -357,7 +373,10 @@ if __name__ == '__main__':
     elif params.llm_type == 'hf':
         llm = init_local_llm(params)
     
-    embeddings = init_local_embeddings(params)
+    if params.embed_type == 'hf':
+        embeddings = init_local_embeddings(params)
+    elif params.embed_type == 'anl':
+        embeddings = llms.ANLEmbeddingModel(params)
     main_interface(params, llm, embeddings)
 
 
