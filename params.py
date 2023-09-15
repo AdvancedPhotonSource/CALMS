@@ -5,7 +5,7 @@ visible_devices = '1,2,3'
 #LLM parameters
 
 #Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
-llm_type = 'anl'
+llm_type = 'hf'
 
 # hf params
 #model_name = "eachadea/vicuna-13b-1.1"
@@ -24,12 +24,20 @@ anl_llm_debug_fp = 'anl_outputs.log'
 
 
 #Embedding model parameters
+
+#Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
+embed_type = 'hf'
+anl_embed_url_path = 'keys/ANL_EMBED_URL'
+
 embedding_model_name =   "all-mpnet-base-v2" #Highest scoring all-round, does 2800 sentences/s
 #embedding_model_name = "all-MiniLM-L6-v2" #93% of best score, 5X faster
 chunk_size = 1024 #Size of chunks to break the text store into
 chunk_overlap = 128 #How much overlap between chunks
 
 init_docs = True #Recompute embeddings?
+if embed_type == 'anl' and init_docs:
+    input('WARNING: WILL INIT ALL DOCS WITH OPENAI EMBEDS. Press enter to continue')
+
 overwrite_embeddings = True #Overwrite embeddings if already exist? -- will raise val error of init_docs is True and this is not
 N_hits = 4 #How many hits of context to provide?
 similarity_cutoff = 1.4 #Ignore context hits greater than this distance away. Empirical number.
@@ -45,10 +53,13 @@ doc_paths = ["DOC_STORE/APS-Science-Highlight",
 
 #Embedding paths
 base_path = 'embeds/' 
-embed_path = '%s/%s' %(base_path, embedding_model_name)
+if embed_type == 'hf':
+    embed_path = '%s/%s' %(base_path, embedding_model_name)
+elif embed_type == 'anl':
+    embed_path = f"{base_path}/anl_openai"
 pdf_path = '%s/pdf' %embed_path
 
 #Spec Params
 spec_init = True
 
-port = 2023
+port = 2030

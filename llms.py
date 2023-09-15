@@ -1,4 +1,5 @@
 
+from typing import List
 from pydantic import Extra
 import requests
 import datetime, os, shutil
@@ -8,6 +9,7 @@ from langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.llms.base import LLM
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
+from langchain.embeddings.base import Embeddings
 
 class AnlLLM(LLM, extra=Extra.allow):
 
@@ -53,6 +55,27 @@ class AnlLLM(LLM, extra=Extra.allow):
     @property
     def _identifying_params(self):
         return {}
+
+
+class ANLEmbeddingModel(Embeddings):
+    def __init__(self, params):
+        super().__init__()
+        with open(params.anl_embed_url_path, 'r') as url_f:
+            self.embed_url = url_f.read().strip()
+        
+    def embed_query(self, text: str):
+        return self._query_api_single(text)
+
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        output_embeds = []
+        for text in texts:
+            output_embeds.append(self._query_api_single(text))
+        return output_embeds
+    
+    def _query_api_single(self, text: str):
+        req_obj = {'user':'APS', 'prompt':[text], 'stop':[]}
+        result = requests.post(self.embed_url, json=req_obj)
+        return result.json()['embedding']
 
 
 def init_text_splitter():
