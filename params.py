@@ -1,11 +1,16 @@
-# Env settings
+def check_model_type(model):
+    if model != 'hf' and model !='anl':
+        raise AssertionError("LLM type must be hf or anl")
+
+# Env settings -- used for local model (hf)
 set_visible_devices = True
 visible_devices = '1,2,3'
 
 #LLM parameters
 
 #Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
-llm_type = 'hf'
+llm_type = 'anl'
+check_model_type(llm_type)
 
 # hf params
 #model_name = "eachadea/vicuna-13b-1.1"
@@ -26,11 +31,11 @@ anl_llm_debug_fp = 'anl_outputs.log'
 #Embedding model parameters
 
 #Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
-embed_type = 'hf'
+embed_type = 'anl'
+check_model_type(embed_type)
 anl_embed_url_path = 'keys/ANL_EMBED_URL'
 
 embedding_model_name =   "all-mpnet-base-v2" #Highest scoring all-round, does 2800 sentences/s
-#embedding_model_name = "all-MiniLM-L6-v2" #93% of best score, 5X faster
 chunk_size = 1024 #Size of chunks to break the text store into
 chunk_overlap = 128 #How much overlap between chunks
 
@@ -62,4 +67,8 @@ pdf_path = '%s/pdf' %embed_path
 #Spec Params
 spec_init = True
 
-port = 2030
+#Web UI port
+if llm_type == 'hf':
+    port = 2023
+else:
+    port = 2024
