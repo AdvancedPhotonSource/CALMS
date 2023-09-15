@@ -1,7 +1,7 @@
 import os, time, shutil
 import params, dfrac_tools, llms
 
-if params.set_visible_devices:
+if params.set_visible_devices and params.llm_type=='hf':
     os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
 
 import torch
@@ -236,7 +236,6 @@ def main_interface(params, llm, embeddings):
         #Header
         gr.Markdown("""
         ## Hi! I am CALMS, a Scientific AI Assistant
-        #### I was trained at Meta, taught to follow instructions at Stanford and am now learning about the DOE User Facilities. AMA!
         """
         )
         gr.Markdown("""
