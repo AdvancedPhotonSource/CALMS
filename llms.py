@@ -4,6 +4,7 @@ from pydantic import Extra
 import requests
 import datetime, os, shutil
 import params
+import time
 
 from langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.llms.base import LLM
@@ -62,20 +63,30 @@ class ANLEmbeddingModel(Embeddings):
         super().__init__()
         with open(params.anl_embed_url_path, 'r') as url_f:
             self.embed_url = url_f.read().strip()
+        self.pagination = 16 # Limit imposed by OpenAI
         
     def embed_query(self, text: str):
         return self._query_api_single(text)
 
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         output_embeds = []
-        for text in texts:
-            output_embeds.append(self._query_api_single(text))
+        for i in range(0, len(texts), self.pagination):
+            embeds_page = self._query_api_multiple(texts[i:i+self.pagination])
+            if len(texts) > self.pagination:
+                time.sleep(0.5) # Prevent from overloading the API. 
+            output_embeds += embeds_page
+
         return output_embeds
+    
+    def _query_api_multiple(self, texts: List[str]):
+        req_obj = {'user':'APS', 'prompt':texts, 'stop':[]}
+        result = requests.post(self.embed_url, json=req_obj)
+        return result.json()['embedding']
     
     def _query_api_single(self, text: str):
         req_obj = {'user':'APS', 'prompt':[text], 'stop':[]}
         result = requests.post(self.embed_url, json=req_obj)
-        return result.json()['embedding']
+        return result.json()['embedding'][0]
 
 
 def init_text_splitter():
