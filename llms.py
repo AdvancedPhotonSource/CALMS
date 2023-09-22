@@ -1,6 +1,7 @@
 
 from typing import List
 from pydantic import Extra
+from tqdm import tqdm
 import requests
 import datetime, os, shutil
 import params
@@ -70,11 +71,17 @@ class ANLEmbeddingModel(Embeddings):
 
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         output_embeds = []
+        if len(texts) > self.pagination:
+            pbar = tqdm(total=(len(texts)//self.pagination), desc='Batch Embed Calls')
         for i in range(0, len(texts), self.pagination):
             embeds_page = self._query_api_multiple(texts[i:i+self.pagination])
             if len(texts) > self.pagination:
                 time.sleep(0.5) # Prevent from overloading the API. 
+                pbar.update(1)
             output_embeds += embeds_page
+
+        if len(texts) > self.pagination:
+            pbar.close() 
 
         return output_embeds
     
