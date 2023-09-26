@@ -4,6 +4,7 @@ log.txt
 
 #Doc stores
 #DOC_STORE/
+*.sqlite
 
 #Keys
 keys

@@ -1,0 +1,3008 @@
+url: https://yongtaoliu.github.io/aecroscopy.pyae/welcome_intro.html
+title: Welcome to AEcroscopy — AEcroscopy
+accessed: 2023-09-26
+
+
+
+|- # Get Started
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{July}\) \(_{2023}\)
+
+
+|- ## Install
+
+This introduction shows how to install AEcroscopy
+
+Attention
+
+AEcroscopy is a Python package for seamless communications with Application Program Interface (API), PyAE and/or PyScanner. PyAE and PyScanner are crafted using ActiveX controls for Windows operating system. Therefore, for compatibility, we recommand install AEcroscopy in your Windows environment.
+
+
+|- ### Using pip
+
+The following code will install the latest version AEcroscopy
+
+  !pip install AEcroscopy
+
+To install a specific version AEcroscopy, e.g., 0.0.1
+
+  !pip install AEcroscopy==0.0.1
+
+
+|- ### Install from source
+
+You can also install AEcroscopy from source.
+
+Download from source first:
+
+  git clone https://github.com/aecroscopy/aecroscopy.git
+
+Change directory to downloaded AEcroscopy:
+
+  cd ../../aecroscopy
+
+Install:
+
+  pip install -e '.[dev]'
+
+Trouble
+
+If you have trouble, please reach out on the forum or via email.
+
+
+|- # Experiments
+
+
+|- ## Guide to Essential Commands and Functionalities for Experiment in AEcroscopy
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{June}\) \(_{2023}\)
+
+Welcome to our comprehensive guide to the AEcroscopy for scanning probe microscopy (SPM). AEcroscopy is a decdicated Python package incorporating a wide range of commands and functions that facilitate basic microscope operations with BEPyAE.exe, enabling users to perform tasks with ease.
+
+Here, we will introduce you to the essential Python commands and functions available within the AEcroscopy. We will explore their capabilities, syntax, and usage, empowering you to harness the full potential of the AEcroscopy-BEPyAE-SPM system.
+Whether you are a seasoned Python developer or new to the world of programming, a experienced SPM users or new to the microscope society, this chapter will serve as a foundation for your journey into the exciting realm of Python-controlled SPM.
+
+By utilizing AEcroscopy, you will gain the ability to write and execute SPM experiments in Python, revolutionizing the way we perform the microscope experiments.
+
+
+|- ### Install and Import
+
+First thing first, we need to install and import necessary packages, including AEcroscopy.
+
+  import os
+  import win32com.client
+  import numpy as np
+  import time
+  import h5py
+  import sidpy
+  import pyNSID
+  import matplotlib.pyplot as plt
+  from tqdm import tqdm
+  from AEcroscopy import Acquisition
+
+  # # import acquition.py
+  # from Acquisition_v0_9 import Acquisition   # include the Acquistion_v.py in the same directory
+
+
+|- ### Start BEPyAE.exe and set VI
+
+Then, we need to start the Python API BEPyAE.exe.
+
+• Start BEPyAE.exe
+• Set VI of BEPyAE; if this version includes PyScanner, also set VIs for PyScanner
+
+  newexp = Acquisition(exe_path = r"C:\Users\BEPyAE 060523 01\BEPyAE.exe")  # exe_path is the directory of BEPyAE;
+
+
+|- ### Initialize Igor AR18
+
+Here, we connect BEPyAE with the microscope
+
+• Set offline development. If you are doing offline development, set offline_development=True, otherwise, if you are running microscope measurement, set offline_development=False
+
+Executing \(init\_BEPyAE()\) command will also:
+
+• Build a connection between BEPyAE and AR18
+• Get parameters in AR18
+
+  newexp.init_BEPyAE(offline_development = True) # set offline_development=True if doing offline development
+                                                 # executing this will also initlize AR18
+
+
+|- #### Hereinafter
+
+• if no parameter is input in a function, when you execute the function, it will take the default parameters in BEPyAE.exe
+• Some functions print feedback after execution. This feedback can be turned off by setting feedbackon = False. You can turn off feedback when you include this function in some iterations.
+• Note: Tip locations: -1 is the left handside for x-axis and bottom side for y-axis, 1 is the right handside for x-axis and top side for y-axis
+
+
+|- ### Set tip parameters
+
+Here, we use \(tip\_control()\) function to set setpoint.
+
+\(tip\_control()\) function also allows us to move tip to a specific location [next_x_pos_00, next_y_pos_01], e.g., in the below example, the tip will be moved to locaiton [0.5, 0.5]
+
+  <image chapter1_image1.png: ../_images/chapter1_image1.png>
+
+  newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1, "next_x_pos_00": 0.5, "next_y_pos_01": 0.5},
+                     do_move_tip = True, 
+                     do_set_setpoint = True,
+                     feedbackon=False) # Executing this code will set setpoint to 1 V, 
+                                       # and move tip to location [0.5, 0.5]
+
+
+|- ### Set IO
+
+In order for the Python code to provide the correct commands, it is essential to provide the hardware components (e.g., AFM platform, voltage amplifiers, channel data, etc.) involved in our experiment. Thus, here we set information about hardwares with function \(define\_io\_cluster()\).
+
+  newexp.define_io_cluster(IO_cluster_parms_dict = {"analog_output_amplifier_06": 1, 
+                                                    "channel_01_type_07": 1, 
+                                                    "channel_02_type_08": 2,
+                                                    "channel_03_type_09": 3})
+
+  ('0 Cypher AR18',
+   '6124',
+   4000000.0,
+   10.0,
+   10.0,
+   'AC and DC on AO0',
+   1.0,
+   'none',
+   'none',
+   'none',
+   'external')
+
+  BEPFM Measurement
+
+
+|- ### Set BE pulse parameters
+
+One of the most popular experiment we can perform with AEcroscopy-BEPyAE.exe is the band excition (BE) piezoresponse force microscopy experiments. Here we use \(define\_be\_parms()\) to set BE pulse parameters.
+
+  # set BE parameters
+  newexp.define_be_parms(be_parms_dict = {"center_frequency_Hz_00": 335, "band_width_Hz_01": 100,
+                                         "amplitude_V_02": 1, "phase_variation_03": 1,
+                                         "repeats_04": 4, "req_pulse_duration_s_05": 4,
+                                         "auto_smooth_ring_06": 1}, 
+                        do_create_be_waveform = True, feedbackon=False)
+
+
+|- ### BE Line scan
+
+After setting BE pulse parameters, we can start to do BE line measurement with the function \(do\_line\_scan()\). In this function, we will need to provide the BE line scan pixel (i.e., num_BE_Pulses_01) and BE line scan locations (i.e. start location and stop location).
+
+Note that
+
+• This fucntion is just a single BE line scan, not a raster image
+• This fucntion returns 5 datasets: quick_fitting, complex spectra, and 3 channel data
+
+  # Do a single line scan
+  qk_fit, com_spec, chn1, chn2, chn3 = newexp.do_line_scan(line_scan_parms_dict = {"num_BE_pulses_01": 32,
+                                                                                   "start_x_pos_00": -0.5, "start_y_pos_01": 0,
+                                                                                   "stop_x_pos_02": 0.5, "stop_y_pos_03": 0},
+                                                           upload_to_daq = True, do_line_scan = True)
+
+  voltage offset and number of BE pulse are:  (0.0, 32)
+  line scan start and end positions:  (-0.5, 0.0, 0.5, 0.0)
+
+
+|- ### BE Raster Scan
+
+We can also perform a square raster scan BE measurement using the function \(raster\_scan()\). In this function, we need to provide the raster scan pixel (i.e., \(scan\_pixel\)) and scan region (i.e., scan start and stop points).
+
+Note that
+
+• raster_scan returns 3 sidpy datasets: BEPFM quick fitting, channels, and BE complex spectra
+• raster_scan also saves these 3 sidpy dataset in a h5 file named \(file\_name\)
+
+  # Do a 64*64 raster scan
+  dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 32, "scan_x_start": -0.8,
+                                                                         "scan_y_start": -0.8,"scan_x_stop": 0.8,
+                                                                         "scan_y_stop": 0.8}, file_name = "test")
+
+  # if you see below error, check if you set IO channels manually---this has to be done manually now
+   ### TypeError: When specifying values over which a parameter is varied, values should not be an empty array
+
+  <image 0734bf6626009374ad4f539e857bc50b47fe476c2dbf2d850fc4494e845c141d.png: ../_images/0734bf6626009374ad4f539e857bc50b47fe476c2dbf2d850fc4494e845c141d.png>
+
+  [progress: 0:00:38] |************************************  | (ETA:   0:00:01) C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+
+|- #### BE Raster Scan Results
+
+We can visualize BE raster scan results inlcuding quick fitting images and channel images.
+
+  # Quick fit BE images
+  print(dset_pfm)  # sidpy dataset of BE quick fit
+
+  # plot BEPFM quick fit data
+  f, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4, figsize = (20, 5), dpi = 100)
+  ax1.imshow(dset_pfm[:,:,0])
+  ax2.imshow(dset_pfm[:,:,1])
+  ax3.imshow(dset_pfm[:,:,2])
+  ax4.imshow(dset_pfm[:,:,3])
+
+  sidpy.Dataset of type IMAGE_STACK with:
+   dask.array<array, shape=(32, 32, 5), dtype=float64, chunksize=(32, 32, 5), chunktype=numpy.ndarray>
+   data contains: quick fit pfm (generic)
+   and Dimensions: 
+  y axis:  y axis (m) of size (32,)
+  x axis:  x axis (m) of size (32,)
+  BE responses:  channels (generic) of size (5,)
+
+  <matplotlib.image.AxesImage at 0x1ba0b485a50>
+
+  <image 0283c8e77cae6fd069f536a71f1a7e49a9f8d655f00733cf2852fbd260864813.png: ../_images/0283c8e77cae6fd069f536a71f1a7e49a9f8d655f00733cf2852fbd260864813.png>
+
+  # Channel images
+  print(dset_chns)  # sidpy dataset of channels
+
+  # plot channel data
+  f, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize = (15, 5), dpi = 100)
+  ax1.imshow(dset_chns[0,:,:])
+  ax2.imshow(dset_chns[1,:,:])
+  ax3.imshow(dset_chns[2,:,:])
+
+  sidpy.Dataset of type IMAGE_STACK with:
+   dask.array<array, shape=(3, 32, 32, 1), dtype=float64, chunksize=(3, 32, 32, 1), chunktype=numpy.ndarray>
+   data contains: channels (generic)
+   and Dimensions: 
+  y axis:  y axis (m) of size (3,)
+  x axis:  x axis (m) of size (32,)
+  channels images:  channels (generic) of size (32,)
+  d:  generic (generic) of size (1,)
+
+  <matplotlib.image.AxesImage at 0x1ba0b4448e0>
+
+  <image 75e4e0f2d4fcda71ee094f9a53328bf0ee4f0b72d1374dc7e7a4391977b53472.png: ../_images/75e4e0f2d4fcda71ee094f9a53328bf0ee4f0b72d1374dc7e7a4391977b53472.png>
+
+  # sidpy dataset of complex spectra
+  dset_cs
+
+Array 
+ Chunk 
+
+
+
+
+ Bytes 
+ 0.97 MiB 
+ 0.97 MiB 
+
+
+ Shape 
+ (32, 32, 62) 
+ (32, 32, 62) 
+
+
+ Count 
+ 1 Tasks 
+ 1 Chunks 
+
+
+ Type 
+ complex128 
+ numpy.ndarray              Array
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Array        Chunk
+Bytes                                                                                                                                                        0.97 MiB     0.97 MiB
+Shape                                                                                                                                                        (32, 32, 62) (32, 32, 62)
+Count                                                                                                                                                        1 Tasks      1 Chunks
+Type                                                                                                                                                         complex128   numpy.ndarray
+
+Array        Chunk
+--------------------------------
+Bytes 0.97 MiB     0.97 MiB
+Shape (32, 32, 62) (32, 32, 62)
+Count 1 Tasks      1 Chunks
+Type  complex128   numpy.ndarray
+
+We can also load the saved h5 file and analyze it after experiments
+
+  hf = h5py.File('test_0.hf5', 'r+')
+  sidpy.hdf.hdf_utils.print_tree(hf)
+
+  /
+  ├ BE Channels
+    -----------
+    ├ Channels
+      --------
+      ├ Channels
+      ├ channels images
+      ├ d
+      ├ x axis
+      ├ y axis
+  ├ BE Complex Spectra
+    ------------------
+    ├ Complex Spectra
+      ---------------
+      ├ Complex Spectra
+      ├ c
+      ├ location index x
+      ├ location index y
+  ├ BE Parameters
+    -------------
+    ├ frequency
+    ├ pulse parameters
+    ├ scan size
+  ├ BE Quick Fitting
+    ----------------
+    ├ Quick Fitting
+      -------------
+      ├ BE responses
+      ├ Quick Fitting
+      ├ x axis
+      ├ y axis
+
+  be = hf["BE Quick Fitting/Quick Fitting/Quick Fitting"]
+
+  be = np.asarray(be)
+  plt.imshow(be[:,:,0])
+
+  <matplotlib.image.AxesImage at 0x1ba0c06efb0>
+
+  <image 5e64bbef97361d3db534bb44350893f8ff41003caf03c8531d5ca8ec55e252ef.png: ../_images/5e64bbef97361d3db534bb44350893f8ff41003caf03c8531d5ca8ec55e252ef.png>
+
+  BEPS Measurements
+
+
+|- ### Set BEPS parameters
+
+In addition to BE piezoresponce force microscopy image measurement, we can also do BE piezoresponse spectroscopy (BEPS) measurement with the function \(do\_BEPS\_xxx()\).
+
+However, before doing BEPS measurement, we first need to define BEPS measurement parameters with the function \(define\_BEPS\_parameters()\). In this function, we need to provide BEPS wavefrom parameters, such as amplitude, steps, cycle numbers, etc.
+
+  # Define BEPS parameters
+  newexp.define_BEPS_parameters(beps_parms_dict = {"amplitude_V_00": 8, "offset_V_01":0, 
+                                                   "read_voltage_V_02": 0, "step_per_cycle_03": 32, 
+                                                   "num_cycles_04": 3, "cycle_fraction_05": 0,
+                                                   "cycle_phase_shift_06": 0, "measure_loops_07": 0, 
+                                                   "transition_time_s_08": 1E-3, "delay_after_step_s_09": 0},
+                               do_create_waveform = True)
+
+  BEPS parameters are:  (8.0, 0.0, 0.0, 32, 3, 0, 0, 0, 0.001, 0.0, 0.0, 0.0, 1, 0, 8.0, 8.0, 7.0, -7.0, False, False, False)
+
+
+|- ### Do grid BEPS
+
+After defining BEPS parameters, we can execute \(do\_BEPS\_grid()\) function to perform a BEPS measurement. In the \(do\_BEPS\_grid()\) function, we can provide grid pixel number in \(beps\_grid\_parms\_dict()\)
+
+  # do BEPS
+  beps_waveform, beps_quick_fit, beps_cx, beps_chns = newexp.do_beps_grid(beps_grid_parms_dict = {"pixel_num_x": 5, 
+                                                                                                  "pixel_num_y": 5},
+                                                                         file_name = "BEPS_grid")
+
+  [progress: 0:00:39] |************************************  | (ETA:   0:00:01) C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+Plot the BEPS waveform used in the experiments.
+
+  f, ax = plt.subplots(figsize = (3, 2))
+  ax.plot(beps_waveform)
+  ax.set_ylabel("Voltage (V)")
+  ax.set_xlabel("Step")
+
+  Text(0.5, 0, 'Step')
+
+  <image 5102bd2b5f52bffcb4e761d7335f86d9ea6dd288a5ca7fe7c9a5d19fb310aae8.png: ../_images/5102bd2b5f52bffcb4e761d7335f86d9ea6dd288a5ca7fe7c9a5d19fb310aae8.png>
+
+Druing experiments, BEPS loops can be visualized in \(BEPyAE.exe\). After experiments, we can also plot all BEPS loops as below.
+
+  # convert sidpy dataset to numpy array
+  quick_fit = np.asarray(beps_quick_fit)
+
+  # if measure_loops_07 is on and off, we need to seperate on field and off field responses.
+  on_field_quick_fit = np.zeros((quick_fit.shape[0], quick_fit.shape[1], len(beps_waveform)))
+  off_field_quick_fit = np.zeros((quick_fit.shape[0], quick_fit.shape[1], len(beps_waveform)))
+  for i in range (len(beps_waveform)):
+      on_field_quick_fit[:,:,i] = quick_fit[:,:,2*i]
+      off_field_quick_fit[:,:,i] = quick_fit[:,:,1+2*i]
+    
+  ###### Plot on field and off responses ######
+  idx = 0  # index of the loop to plot
+  f, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4, figsize = (18, 3), dpi = 100)
+  f.subplots_adjust(wspace = 0.4)
+  ax1.set_title("Off Field, Amplitude vs. Voltage")
+  ax1.plot(beps_waveform, off_field_quick_fit[idx, 0, ])  
+  ax1.set_xlabel("Voltage (V)")
+  ax1.set_ylabel("Amplitude (a.u.)")
+
+  ax2.set_title("Off Field, Phase vs. Voltage")
+  ax2.plot(beps_waveform, off_field_quick_fit[idx, 3, ])  
+  ax2.set_xlabel("Voltage (V)")
+  ax2.set_ylabel("Phase (rad)")
+
+  ax3.set_title("On Field, Amplitude vs. Voltage")
+  ax3.plot(beps_waveform, on_field_quick_fit[idx, 0, ])  
+  ax3.set_xlabel("Voltage (V)")
+  ax3.set_ylabel("Amplitude (a.u.)")
+
+  ax4.set_title("On Field, Phase vs. Voltage")
+  ax4.plot(beps_waveform, on_field_quick_fit[idx, 3, ])  
+  ax4.set_xlabel("Voltage (V)")
+  ax4.set_ylabel("Phase (rad)")
+
+  Text(0, 0.5, 'Phase (rad)')
+
+  <image 906182fd1cabfd81f6973956b231b9024dae1c4b296a8b544f6b6574daa0841d.png: ../_images/906182fd1cabfd81f6973956b231b9024dae1c4b296a8b544f6b6574daa0841d.png>
+
+
+|- ### Do BEPS at a specific locations
+
+In addition to BEPS measurement at grid locations, the \(do\_BEPS\_specific()\) function also enables BEPS measurement at specified locations by providing specified coordinates to \(coordinates\)
+
+  # do BEPS at specific locations
+  beps_waveform, beps_quick_fit, beps_cx, beps_chns = newexp.do_beps_specific(coordinates = np.asarray([0.5, 0.5]),
+                                                                              file_name = "BEPS_at_specific_location")
+
+However, when you want to want to measure a feature observed in an image, you often need to convert the location from the image to the coordiante for tip. Here we can use the \(convert\_coordinates()\) function.
+
+  # e.g. convert the location [100, 130] at an image to the coordinate of tip.
+  locations = np.asarray([100, 130])
+  converted_coor = newexp.convert_coordinates(original_coordinates = locations, num_pix_x = 256, num_pix_y = 256)
+  print(converted_coor)
+
+  [-0.21875   0.015625]
+
+After we have the coordiante for tip location, we can use the \(do\_BEPS\_specific()\) to perform BEPS measurement here
+
+  # do BEPS at specific locations
+  beps_waveform, beps_quick_fit, beps_cx, beps_chns = newexp.do_beps_specific(coordinates = converted_coor,
+                                                                              file_name = "BEPS_at_specific_location")
+
+  [progress: 0:00:01] |                                      | (ETA:  --:--:--) C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+
+|- ### Apply a pulse
+
+In addition to characterization, SPM also allows to manipulate objects. For example, applying a DC pulse via SPM tip to a ferroelectric film allows to flip the ferroelectric polarization.
+
+In AEcroscopy, we can apply a pulse by using \(define\_apply\_pulse()\) function. We can set the pulse amplitude and pulse duration in this function, as shown below.
+
+  # Apply DC pulse
+  pulse, time = newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": 3,
+                                                              "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": 20E-3,
+                                                              "rise_time_s_05": 1E-3, "pulse_final_duration_s_04": 10E-3,
+                                                              "pulse_repeats_06": 3}, 
+                                          do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = False)
+  # Plot applied pulse
+  f, ax = plt.subplots(figsize = (3, 2))
+  f.suptitle("Applied Pulse")
+  ax.plot(time, pulse)
+  ax.set_xlabel("Time (s)")
+  ax.set_ylabel("Voltage (V)")
+
+  Text(0, 0.5, 'Voltage (V)')
+
+  <image 8a08e98521c33b3f21a22162da5ccf0163343ba7103b97135dcbb0a565b7217f.png: ../_images/8a08e98521c33b3f21a22162da5ccf0163343ba7103b97135dcbb0a565b7217f.png>
+
+
+|- ### Progress bar
+
+AEcroscopy is designed for automated and autonomous microscopy measurements, so we also include a progress function \(progress\_bar()\) that assists users to track the experiment progress. For example, when we perform 5 iterations BEPS measurement, we can use the progress bar to track the experiment progress as below.
+
+  iteration = 5
+  progress_bar = newexp.progress_bar(max_value = iteration)
+  for i in range (iteration):
+      newexp.define_BEPS_parameters(do_VS_waveform = True, feedbackon = False)
+      progress_bar.update(i)
+
+  [progress: 0:00:02] |******************************        | (ETA:   0:00:00)
+
+  Capability with FPGA
+
+In AEcroscopy-BEPyAE.exe system, users have various options of scan trajectories when equiped with FPGA, such as sprial scan or any customized trajectories.
+
+
+|- ### Spiral Scan
+
+Here we will show how to do spiral scan with the \(fpga\_spiral\_scan()\) function. Using this function, we set the spiral parameters, e.g., inner radius, outer radius, spiral cycles, duration, etc; the function will return the spiral result and save the result as a H5 file.
+
+  sprial_results = newexp.fpga_spiral_scan(spiral_parms_dict = {"spiral_inner_radius_x_V_00": 0, "spiral_outer_radius_x_V_01": 2,
+                                                                "spiral_inner_radius_y_V_02": 0, "spiral_outer_radius_y_V_03": 2,
+                                                                "spiral_N_cycles_04": 5, "spiral_duration_05": 5,
+                                                                "spiral_dose_distribution_06": 1, "spiral_direction_07": 0,
+                                                                "spiral_return_opt_08": 0, "scan_x_offset_V": 0, 
+                                                                "scan_y_offset_V": 0, "scan_rotation_deg": 0},
+                                           do_scan_update = True, do_scan = True,
+                                           file_name = "spiral_scan")
+
+
+|- ### BE Spiral Scan
+
+If we apply BE excitation waveform during spiral scan, we can also perform BE spiral measurement. The function to perform BE spiral measurement is \(fpga\_spiral\_scan\_BE()\). The BE waveform parameters can be set either in this function or beforehand.
+
+  # set BE parameters, set spiral parameters, and do spiral BE
+  fpga_results, be_results = newexp.fpga_spiral_scan_BE(be_parms_dict = {"center_frequency_Hz_00": 335, "band_width_Hz_01": 100,
+                                                                         "amplitude_V_02": 1, "phase_variation_03": 1,
+                                                                         "repeats_04": 4, "req_pulse_duration_s_05": 4},
+                                                        do_create_be_waveform = True,
+                                                        spiral_parms_dict = {"spiral_inner_radius_x_V_00": 0, 
+                                                                             "spiral_outer_radius_x_V_01": 0.5,
+                                                                             "spiral_inner_radius_y_V_02": 0, 
+                                                                             "spiral_outer_radius_y_V_03": 0.5,
+                                                                             "spiral_N_cycles_04": 10},
+                                                        num_BE_pulse = 128, do_scan_update = True, do_BE_arb_line_update_00 = True,
+                                                        do_BE_arb_line_scan_01 = True, spiral_reconstruction = False)
+
+  BE parameters are:  (335000.0, 100000.0, 1.0, 1.0, 4, 0.004, 1, 3352.2952763920002, 0.12159459061880915)
+
+
+|- ### Tip Control by FPGA
+
+FPGA can also drive the probe to a specific location with the function \(fpga\_tip\_control()\). We need to input the tip location parameters when using this function, as shown below, executing the below command will move tip from [0, 0] to [0.5, 0.5].
+
+  newexp.fpga_tip_control(fpga_tip_parms_dict={"strat_x_position_V_00": 0, "strat_y_position_V_01": 0,
+                                               "final_x_position_V_02": 0.5, "final_y_position_V_03": 0.5},
+                          make_cur_pos_start_pos=False, do_probe_move_update=True, do_probe_move=True)
+
+If we are moving the tip from current location, we can set the \(make\_cur\_pos\_start\_pos = True\) and provide the final location, as shown below.
+
+  newexp.fpga_tip_control(fpga_tip_parms_dict={"final_x_position_V_02": 0.5, "final_y_position_V_03": 0.5},
+                          make_cur_pos_start_pos=True, do_probe_move_update=True, do_probe_move=True)
+
+
+|- ### FPGA Driven Line by Line Raster Scan
+
+We can also use \(fpga\_linebyline\_raster\_scan()\) function to perform slow raster scan or line by line scan.
+
+• when we set \(do\_full\_raster\_scan = True\), \(wait\_to\_advance\_to\_next\_line = False\), and \(do\_next\_raster\_line\_only = False\), this function can be used to perform a full raster scan, as shown below.
+
+  raster_full = newexp.fpga_linebyline_raster_scan(line_by_line_raster_dict = {"raster_scan_size_x_V_00": 1, 
+                                                                               "raster_scan_size_y_V_01": 1, 
+                                                                               "raster_N_scan_lines_02": 64, 
+                                                                               "raster_line_duration_s_03": 1,
+                                                                               "scan_x_offset_V_04": 0, 
+                                                                               "scan_y_offset_V_05": 0,
+                                                                               "scan_rotation_deg_06": 0}, 
+                                                   initialize_line_by_line_raster=True, do_full_raster_scan=True, 
+                                                   wait_to_advance_to_next_line=False, do_next_raster_line_only=False,
+                                                   stop_full_raster_scan=False)
+
+• Alternatively, when we set \(do\_full\_raster\_scan = False\), \(wait\_to\_advance\_to\_next\_line = True\), and \(do\_next\_raster\_line\_only = True\), this function can be used to perform scan line by line, as shown below.
+
+  raster_line = newexp.fpga_linebyline_raster_scan(line_by_line_raster_dict = {"raster_scan_size_x_V_00": 1, 
+                                                                               "raster_scan_size_y_V_01": 1, 
+                                                                               "raster_N_scan_lines_02": 64, 
+                                                                               "raster_line_duration_s_03": 1,
+                                                                               "scan_x_offset_V_04": 0, 
+                                                                               "scan_y_offset_V_05": 0,
+                                                                               "scan_rotation_deg_06": 0}, 
+                                                   initialize_line_by_line_raster=True, do_full_raster_scan=False, 
+                                                   wait_to_advance_to_next_line=True, do_next_raster_line_only=True,
+                                                   stop_full_raster_scan=False)
+
+
+|- # About Data Process
+
+This chapter is still under construction, stay tuned.
+
+
+|- # About Edge Computing
+
+This chapter is still under construction, stay tuned.
+
+
+|- # About Using LLM in AEcroscopy
+
+This chapter is still under construction, we will show how to use LLM to prepare AEcroscopy workflows. stay tuned.
+
+
+|- # About Automated Experiment
+
+Automated experiments perform tasks with minimum or no human intervention to improve efficiency and precision. An example of automated experiment is high-throughput experiment, which automates and accelerates data acquisition and analysis, allowing researchers to rapidly gather substantial data and gain valuable insights into materials properties. In high-throughput microscopy experiments, data can be efficiently collected from multiple sample sites, or in a significantly faster sequential manner. The automated data acquisition manner minimizes human intervention, reducing the risk of errors caused by human factors, improving reproducibility, and enhancing the efficiency.
+
+In this chapter, we will introduce workflows constructed with AEcroscopy for automated microscopy experiments.
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{July}\) \(_{2023}\)
+
+
+|- # Domain Writing Workflow
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{June}\) \(_{2023}\)
+
+Switching ferroelectric polarization by applying a pulse bias in piezoresponse force microscopy (PFM) allows researchers to investigate and characterize ferroelectric properties, e.g., understanding ferroelectric domain structure and switching dynamics.
+
+Here, we will show you a high-throughput workflow allowing to investigate the parameters of pulse bias and ferroelectric polarization switching.
+
+This notebook contains two parts: first is experimentation, second is data analysis. Both parts work independently.
+
+
+|- ## Experiments
+
+
+|- ### Install and Import
+
+  import os
+  import win32com.client
+  import numpy as np
+  import time
+  import h5py
+  import sidpy
+  import pyNSID
+  import matplotlib.pyplot as plt
+  from tqdm import tqdm
+  from AEcroscopy import Acquisition
+
+  # # import acquition.py
+  # from Acquisition_v0_9 import Acquisition   # include the Acquistion_v.py in the same directory
+
+
+|- ### Start BEPyAE.exe and set VI
+
+• Start BEPyAE.ext
+• Set VI of BEPyAE; if this version includes PyScanner, also set VIs for PyScanner
+
+  newexp = Acquisition(exe_path = r"C:\Users\BEPyAE 060523 01\BEPyAE.exe")   
+  # exe_path is the directory of BEPyAE;
+
+
+|- ### Initialize Igor AR18
+
+• Set offline development
+• Build a connection between BEPyAE and AR18
+• Get parameters in AR18
+
+  newexp.init_BEPyAE(offline_development = True) # set offline_development=True if doing offline development
+                                                  # executing this will also initlize AR18
+
+
+|- ### Set tip parameters
+
+• set setpoint, tip locations
+
+  newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1, "next_x_pos_00": -0.5, "next_y_pos_01": 0.5},
+                     do_move_tip = True, 
+                     do_set_setpoint = True) # Executing this code will set setpoint to 1 V, 
+                                             # and move tip to location [0.5, 0.5]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.5, 0.5, 0.2)
+
+
+|- ### Set IO
+
+This defines IO parameters, such as AFM platform: AR18, amplifiers, channel data types, etc
+
+  newexp.define_io_cluster(IO_cluster_parms_dict = {"analog_output_amplifier_06": 1, 
+                                                    "channel_01_type_07": 1, 
+                                                    "channel_02_type_08": 2,"channel_03_type_09": 3,})
+
+  ('0 Cypher AR18',
+   '6124',
+   4000000.0,
+   10.0,
+   10.0,
+   'AC and DC on AO0',
+   10.0,
+   'topography',
+   'current',
+   'aux',
+   'external')
+
+
+|- ### Set BE pulse parameters
+
+  # set BE parameters
+  newexp.define_be_parms(be_parms_dict = {"center_frequency_Hz_00": 335, "band_width_Hz_01": 100,
+                                         "amplitude_V_02": 1, "phase_variation_03": 1,
+                                         "repeats_04": 4, "req_pulse_duration_s_05": 4,
+                                         "auto_smooth_ring_06": 1}, 
+                        do_create_be_waveform = True)
+
+  BE parameters are:  (335000.0, 100000.0, 1.0, 1.0, 4, 0.004, 1, 3352.2952763920002, 0.12159459061880915)
+
+
+|- ### Run a BE Line scan to test parameters
+
+• This is a single BE line scan
+• This returns 5 datasets: quick_fitting, complex spectra, and 3 channels
+
+  # Do a single line scan
+  qk_fit, com_spec, chn1, chn2, chn3 = newexp.do_line_scan(line_scan_parms_dict = {"num_BE_pulses_01": 32,
+                                                                                   "start_x_pos_00": -0.5, "start_y_pos_01": 0,
+                                                                                   "stop_x_pos_02": 0.5, "stop_y_pos_03": 0},
+                                                           upload_to_daq = True, do_line_scan = True)
+
+  voltage offset and number of BE pulse are:  (0.0, 32)
+  line scan start and end positions:  (-0.5, 0.0, 0.5, 0.0)
+
+Tests Done
+
+
+|- ## Experiment Starts
+
+In this experiment, we begin by applying a DC pulse to switch the ferroelectric polarization. Subsequently, a BEPFM (Bias-Enhanced Piezoresponse Force Microscopy) measurement is conducted to image the domain structure.
+
+1. To initiate the measurement process, we first need to determine the location for each individual measurement. There are two scenarios to consider:
+
+• For each measurement, a new location is chosen, requiring a location array to record all the measurements as demonstrated below.
+
+  <image chapter2_image1.png: ../_images/chapter2_image1.png>
+
+• Alternatively, all measurements are conducted at the same location. In this case, the measurement location needs to be initialized each time a new measurement is started, as shown below.
+
+  <image chapter2_image2.png: ../_images/chapter2_image2.png>
+
+1. Prior to experiments, we also need to establish the DC pulse parameters including pulse magnitude \(A\) and pulse length \(t\) , as shown below. Again, there are two scenarios to consider here:
+
+  <image chapter2_image3.png: ../_images/chapter2_image3.png>
+
+• The pulse parameters can be pre-defined, e.g., the parameter values can be uniformly distributed within a specified range or customized to suit the experimental requirements.
+• The pulse parameters can be random values within a defined space, typically these random values is a uniform distribution across that space in principle.
+
+
+|- ## Experiment 1. Perform each measurement at a new location with pre-defined pulse parameters
+
+
+|- ### Prior to expeirment, set a directory to save data
+
+  os.chdir(r"C:\Users\yla\Dropbox (ORNL)\My Files\AEcroscopy_BEPyAE")
+
+
+|- ### Step 1. Generate a location array
+
+  # All locations span across [start_point_x, end_point_x] in x-direction and [start_point_y, end_point_y] in y-direction.
+  # There are num_x rows and num_y columns in the locations array
+
+  start_point_x = -0.9   # Define location array parameters
+  end_point_x = 0.9
+  start_point_y = -0.9
+  end_point_y = 0.9
+  num_x = 2
+  num_y = 2
+
+  # Generate location array
+  pos_x = np.linspace(-0.9, 0.9, num_x)
+  pos_y = np.linspace(-0.9, 0.9, num_y)
+  pulse_pos = np.meshgrid(pos_x, pos_y)
+  pulse_pos_x = pulse_pos[0].reshape(-1)
+  pulse_pos_y = pulse_pos[1].reshape(-1)  # pulse_pos_x and pulse_pos_y are the coordinates of all locations
+
+  # Set BEPFM image size
+  img_size = 0.1
+
+  # Check
+  if img_size > np.abs(pos_x[0]-pos_x[1]):
+      print ("Alert: there will be image overlap along x-direction")
+  elif img_size > np.abs(pos_y[0]-pos_y[1]):
+      print ("Alert: there will be image overlap along y-direction")
+  else:
+      print("{} locations are ready for experiments".format(len(pulse_pos_x)))
+
+  4 locations are ready for experiments
+
+
+|- ### Step 2. Establish pulse parameters
+
+  # uniformly distributed pulse parameters
+  min_voltage = 5
+  max_voltage = 9
+  Vdc_amp = np.linspace(min_voltage, max_voltage, num_x)  # pulse magnitude
+
+  min_time_log = -4
+  max_time_log = 1
+  Vdc_time = np.linspace(min_time_log, max_time_log, num_y, dtype = np.float32())
+  Vdc_time = np.power(10, Vdc_time)                 # pulse time
+
+  # Establish pulse parameters
+  Vdc = np.meshgrid(Vdc_amp, Vdc_time)
+  Vdc_amp = Vdc[0].reshape(-1)
+  Vdc_time = Vdc[1].reshape(-1)
+
+  if len(Vdc_amp) > len(pulse_pos_x):
+      print ("Error: No enough locations to test all pulse conditions")
+  else:
+      print ("{} pulse parameters are ready for expierments".format(len(Vdc_amp)))
+    
+  # save pulse condition
+  np.save("Vdc_list.npy", np.asarray([Vdc_amp, Vdc_time]))
+
+  4 pulse parameters are ready for expierments
+
+
+|- ### Step 3. Start experiment
+
+  for i in tqdm(range(len(Vdc_amp))):
+      #####################----------- Move tip to the pulse location -----------##################### 
+      newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1,
+                                           "next_x_pos_00": pulse_pos_x[i],
+                                           "next_y_pos_01": pulse_pos_y[i]},
+                         do_move_tip = True, do_set_setpoint = True)
+      time.sleep(0.2)
+    
+      #####################----------- Apply pulse -----------##################### 
+      V_amp = Vdc_amp[i]
+      V_time = Vdc_time[i]
+      newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                    "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                    "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                    "pulse_repeats_06": 1},
+                                do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = False)
+      # 
+      time.sleep(1)
+      newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                    "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                    "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                    "pulse_repeats_06": 1},
+                                do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = True)
+    
+      time.sleep(2)
+    
+      #####################----------- Do BEPFM to image domain -----------#####################
+      dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 16,
+                                                                             "scan_x_start": pulse_pos_x[i]-(img_size/2), 
+                                                                             "scan_y_start": pulse_pos_y[i]-(img_size/2),
+                                                                             "scan_x_stop": pulse_pos_x[i]+(img_size/2), 
+                                                                             "scan_y_stop": pulse_pos_y[i]+(img_size/2)},
+                                                        file_name = "Domain_Writing_{}".format(i), 
+                                                        progress_on = False, ploton = False)
+      time.sleep(0.5)
+    
+      # Plot BEPFM images
+      f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+      ax1.imshow(dset_pfm[:,:,0])
+      ax2.imshow(dset_pfm[:,:,1])
+      ax3.imshow(dset_pfm[:,:,2])
+      ax4.imshow(dset_pfm[:,:,3])
+      ax5.imshow(dset_chns[0,:,:])
+      ax6.imshow(dset_chns[1,:,:])
+      plt.show()
+
+  0%|                                                                                            | 0/4 [00:00<?, ?it/s]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.9, -0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image fb4fb5cf61c8e826000c32c31e37249c95aff65ed8b7bef3c0d58862d0ebdf0e.png: ../_images/fb4fb5cf61c8e826000c32c31e37249c95aff65ed8b7bef3c0d58862d0ebdf0e.png>
+
+  25%|█████████████████████                                                               | 1/4 [00:28<01:25, 28.36s/it]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (0.9, -0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image 53d7a8f2ca0548a3857271955039281b3c0f5dd3a6339144b983a77bd685e423.png: ../_images/53d7a8f2ca0548a3857271955039281b3c0f5dd3a6339144b983a77bd685e423.png>
+
+  50%|██████████████████████████████████████████                                          | 2/4 [00:56<00:56, 28.33s/it]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.9, 0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image 59f83bcfaae5d2da79e3b17c3ae6a58457cae1d1c4dd0616ea14b9557fd07dae.png: ../_images/59f83bcfaae5d2da79e3b17c3ae6a58457cae1d1c4dd0616ea14b9557fd07dae.png>
+
+  75%|███████████████████████████████████████████████████████████████                     | 3/4 [01:55<00:42, 42.22s/it]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (0.9, 0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image 2395919f85fa986850245beff62cf41bb66c336828852712b9c6c73c41c04deb.png: ../_images/2395919f85fa986850245beff62cf41bb66c336828852712b9c6c73c41c04deb.png>
+
+  100%|████████████████████████████████████████████████████████████████████████████████████| 4/4 [02:53<00:00, 43.50s/it]
+
+
+|- ### Step 4. Do a BEPFM at the whole experiment area
+
+  dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 32, "scan_x_start": -1.0,
+                                                                         "scan_y_start": -1.0,"scan_x_stop": 1.0,
+                                                                         "scan_y_stop": 1.0}, 
+                                                    file_name = "pfm_whole", ploton = False)
+
+  f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+  ax1.imshow(dset_pfm[:,:,0])
+  ax2.imshow(dset_pfm[:,:,1])
+  ax3.imshow(dset_pfm[:,:,2])
+  ax4.imshow(dset_pfm[:,:,3])
+  ax5.imshow(dset_chns[0,:,:])
+  ax6.imshow(dset_chns[1,:,:])
+  plt.show()
+
+  [progress: 0:00:35] |************************************  | (ETA:   0:00:01) C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image 7f211d22563f6e82ef741a1cfa6e48043baaf68d1e146693ec43b32bea0104c0.png: ../_images/7f211d22563f6e82ef741a1cfa6e48043baaf68d1e146693ec43b32bea0104c0.png>
+
+
+|- ## Experiment 2. Perform measurement with random pulse parameters
+
+
+|- ### Prior to expeirment, set a directory to save data
+
+  os.chdir(r"C:\Users\My Files")
+
+
+|- ### Step 1. Generate a location array
+
+  # All locations span across [start_point_x, end_point_x] in x-direction and [start_point_y, end_point_y] in y-direction.
+  # There are num_x rows and num_y columns in the locations array
+
+  start_point_x = -0.9   # Define location array parameters
+  end_point_x = 0.9
+  start_point_y = -0.9
+  end_point_y = 0.9
+  num_x = 2
+  num_y = 2
+
+  # Generate location array
+  pos_x = np.linspace(-0.9, 0.9, num_x)
+  pos_y = np.linspace(-0.9, 0.9, num_y)
+  pulse_pos = np.meshgrid(pos_x, pos_y)
+  pulse_pos_x = pulse_pos[0].reshape(-1)
+  pulse_pos_y = pulse_pos[1].reshape(-1)  # pulse_pos_x and pulse_pos_y are the coordinates of all locations
+
+  # Set BEPFM image size
+  img_size = 0.1
+
+  # Check
+  if img_size > np.abs(pos_x[0]-pos_x[1]):
+      print ("Alert: there will be image overlap along x-direction")
+  elif img_size > np.abs(pos_y[0]-pos_y[1]):
+      print ("Alert: there will be image overlap along y-direction")
+  else:
+      print("{} locations are ready for experiments".format(len(pulse_pos_x)))
+
+  4 locations are ready for experiments
+
+
+|- ### Step 2. Establish pulse space
+
+  # pulse magnitude space
+  min_voltage = 5
+  max_voltage = 9
+
+  # pulse time space
+  min_time_log = -4
+  max_time_log = 1
+
+
+|- ### Step 3. Start experiment
+
+  # Set measurement iteration number
+  iterations = 100
+  # Set lists to save pulse parameters
+  Vdc_amp = []
+  Vdc_time = []
+
+  # Measurement starts
+  for i in tqdm(range(iterations)):
+      #####################----------- Move tip to the pulse location -----------##################### 
+      newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1,
+                                           "next_x_pos_00": pulse_pos_x[i],
+                                           "next_y_pos_01": pulse_pos_y[i]},
+                         do_move_tip = True, do_set_setpoint = True)
+      time.sleep(0.2)
+    
+      #####################----------- Apply pulse -----------##################### 
+      # Random pulse parameters
+      V_amp = np.random.uniform(min_voltage, max_voltage)
+      V_time = np.random.uniform(min_time_log, max_time_log)
+      V_time = np.power(10, V_time)
+      # Add parameters to Vdc lists
+      Vdc_amp.append(V_amp)
+      Vdc_time.append(V_time)
+    
+      # Apply pulse
+      newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                    "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                    "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                    "pulse_repeats_06": 1},
+                                do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = False)
+      # 
+      time.sleep(1)
+      newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                    "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                    "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                    "pulse_repeats_06": 1},
+                                do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = True)
+    
+      time.sleep(2)
+    
+      #####################----------- Do BEPFM to image domain -----------#####################
+      dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 16,
+                                                                             "scan_x_start": pulse_pos_x[i]-(img_size/2), 
+                                                                             "scan_y_start": pulse_pos_y[i]-(img_size/2),
+                                                                             "scan_x_stop": pulse_pos_x[i]+(img_size/2), 
+                                                                             "scan_y_stop": pulse_pos_y[i]+(img_size/2)},
+                                                        file_name = "Domain_Writing_{}".format(i), 
+                                                        progress_on = False, ploton = False)
+      time.sleep(0.5)
+    
+      # Plot BEPFM images
+      f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+      ax1.imshow(dset_pfm[:,:,0])
+      ax2.imshow(dset_pfm[:,:,1])
+      ax3.imshow(dset_pfm[:,:,2])
+      ax4.imshow(dset_pfm[:,:,3])
+      ax5.imshow(dset_chns[0,:,:])
+      ax6.imshow(dset_chns[1,:,:])
+      plt.show()
+
+  # Save pulse parameters
+  np.save("Vdc_list.npy", np.asarray([Vdc_amp, Vdc_time]))
+
+  0%|                                                                                          | 0/100 [00:00<?, ?it/s]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.9, -0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image 3d84e0ba77e009181c4d1cdd7edf13ff2b5f31912882ecfc7210c43e661a8cef.png: ../_images/3d84e0ba77e009181c4d1cdd7edf13ff2b5f31912882ecfc7210c43e661a8cef.png>
+
+  1%|▊                                                                               | 1/100 [00:39<1:04:42, 39.22s/it]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (0.9, -0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image 2187a4d9d837ef6108998af2ad3711d69791fcb6ffc26edb3bcae92af94f4cf8.png: ../_images/2187a4d9d837ef6108998af2ad3711d69791fcb6ffc26edb3bcae92af94f4cf8.png>
+
+  2%|█▌                                                                              | 2/100 [01:16<1:02:08, 38.05s/it]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.9, 0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image f86384310ce63b2add66689cc7d09066efc2c6cc6734a1abf77df4e5fc45157a.png: ../_images/f86384310ce63b2add66689cc7d09066efc2c6cc6734a1abf77df4e5fc45157a.png>
+
+  3%|██▍                                                                               | 3/100 [01:45<54:46, 33.88s/it]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (0.9, 0.9, 0.5)
+
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+  C:\Users\yla\AppData\Local\anaconda3\lib\site-packages\pyNSID\io\hdf_utils.py:376: FutureWarning: validate_h5_dimension may be removed in a future version
+    warn('validate_h5_dimension may be removed in a future version',
+
+  <image e698c3ffcf114057251bf7da629ba8217a35a4729aa64fc35d07061bc3785399.png: ../_images/e698c3ffcf114057251bf7da629ba8217a35a4729aa64fc35d07061bc3785399.png>
+
+  4%|███▎                                                                              | 4/100 [02:19<55:50, 34.90s/it]
+
+  ---------------------------------------------------------------------------
+  IndexError                                Traceback (most recent call last)
+  Cell In[19], line 11
+        7 # Measurement starts
+        8 for i in tqdm(range(iterations)):
+        9     #####################----------- Move tip to the pulse location -----------##################### 
+       10     newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1,
+  ---> 11                                          "next_x_pos_00": pulse_pos_x[i],
+       12                                          "next_y_pos_01": pulse_pos_y[i]},
+       13                        do_move_tip = True, do_set_setpoint = True)
+       14     time.sleep(0.2)
+       16     #####################----------- Apply pulse -----------##################### 
+       17     # Random pulse parameters
+
+  IndexError: index 4 is out of bounds for axis 0 with size 4
+
+
+|- ### Step 4. Do a BEPFM at the whole experiment area
+
+  dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 32, "scan_x_start": -1.0,
+                                                                         "scan_y_start": -1.0,"scan_x_stop": 1.0,
+                                                                         "scan_y_stop": 1.0}, 
+                                                    file_name = "pfm_whole", ploton = False)
+
+  f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+  ax1.imshow(dset_pfm[:,:,0])
+  ax2.imshow(dset_pfm[:,:,1])
+  ax3.imshow(dset_pfm[:,:,2])
+  ax4.imshow(dset_pfm[:,:,3])
+  ax5.imshow(dset_chns[0,:,:])
+  ax6.imshow(dset_chns[1,:,:])
+  plt.show()
+
+
+|- ## Post Experiment Data Analysis
+
+
+|- ## Import
+
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import os
+  import h5py
+  import sidpy
+  import cv2
+  import imutils
+
+
+|- ## Set the directory and root name of your dataset
+
+  # directory
+  path = r"C:\Users\Experiment1"
+
+  # name
+  file_name = "Domain_Writing_"
+
+  # spot numbers
+  num_x = 8
+  num_y = 8
+
+
+|- ## Load all data
+
+  count_imgs = 64 # variable of how many images you have in the directory
+  pixel = 64  # pixel of your image
+
+  # change working directory
+  os.chdir(path)
+
+  # create arrays for all data
+  amplitude = np.zeros((count_imgs, pixel, pixel))
+  phase = np.zeros((count_imgs, pixel, pixel))
+  frequency = np.zeros((count_imgs, pixel, pixel))
+  qfactor = np.zeros((count_imgs, pixel, pixel))
+  topography = np.zeros((count_imgs, pixel, pixel))
+
+  for i in range (count_imgs):
+      h5 = h5py.File('Domain_Writing_{}_0.hf5'.format(i), 'r+')
+      be_qf = h5["BE Quick Fitting/Quick Fitting/Quick Fitting"]
+      be_ch = h5["BE Channels/Channels/Channels"]
+      amplitude[i,] = be_qf[:,:,0]
+      phase[i,] = be_qf[:,:,3]
+      frequency[i,] = be_qf[:,:,1]
+      qfactor[i,] = be_qf[:,:,2]
+      topography[i,] = be_ch[0,:,:,0]
+
+  nor_amplitude = (amplitude-amplitude.min())/amplitude.ptp()
+  nor_phase = (phase - phase.min())/phase.ptp()
+  nor_frequency = (frequency - frequency.min())/frequency.ptp()
+  nor_topography = (topography - topography.min())/topography.ptp()
+
+
+|- ## Plot data
+
+Plot all results
+
+  for i in range (count_imgs):
+
+      fig, axs = plt.subplots(1, 4, figsize=(16, 4), dpi = 100)
+      fig.subplots_adjust(left=0.02, bottom=0.06, right=0.95, top=0.99, wspace=0.25)
+      cm = 'viridis'
+      shrink = 0.6
+
+      im0 = axs[0].imshow(amplitude[i, ]*1000, origin = "lower", interpolation='nearest', cmap=cm)
+      fig.colorbar(im0, ax=axs[0], shrink = shrink, label = "Amplitude (a.u.)")
+      axs[0].axis("off")
+
+      im1 = axs[1].imshow(phase[i, ], origin = "lower", interpolation='nearest', cmap=cm)
+      fig.colorbar(im1, ax=axs[1], shrink = shrink, label = "Phase (rad)")
+      axs[1].axis("off")
+
+      im2 = axs[2].imshow(frequency[i, ]/1000, origin = "lower", interpolation='nearest', cmap=cm)
+      fig.colorbar(im2, ax=axs[2], shrink = shrink, label = "Frequency (kHz)")
+      axs[2].axis("off")
+
+      im3 = axs[3].imshow(qfactor[i, ], origin = "lower", vmin = 0, vmax = 250, interpolation='nearest', cmap=cm)
+      fig.colorbar(im0, ax=axs[3], shrink = shrink, label = "Q Factor")
+      axs[3].axis("off")
+    
+      plt.show()
+
+Example
+
+Below is an example of a single experiment data.
+
+  <image chapter2_image4.png: ../_images/chapter2_image4.png>
+
+Plot a specific channel together
+
+  fig, axes = plt.subplots(num_y, num_x, figsize=(num_x, num_y),
+                           subplot_kw={'xticks':[], 'yticks':[]},
+                           gridspec_kw=dict(hspace=0.02, wspace=0.02))
+
+  for ax, i in zip(axes.flat, range(count_imgs)):
+      ax.imshow(amplitude[i,], origin = "lower") # We are plotting amplitude now, you can change the channel to phase, frequency,etc
+
+Example
+
+Below is an example of plotting all amplitude image together for comparison.
+
+  <image chapter2_image5.png: ../_images/chapter2_image5.png>
+
+
+|- # Wall Thickness Workflow
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{July}\) \(_{2023}\)
+
+Piezoresponse force microscopy (PFM) is a powerful technique to study ferroelectrics at the nanoscale. In PFM measurements, an AC voltage is applied to the sample surface through tip and the response of the material is detected, allowing researchers to characterize ferroelectric domains and domain walls. However, the behavior of ferroelectric domain walls can be influenced by the AC voltage and the force (i.e., driven amplitude and set point) applied to the sample surface. We have the chance to optimize the imaging conditions to better characterize and study ferroelectric domain walls by carefully choosing these parameters.
+
+This notebook is the workflow to study ferroelectric domain walls as a function of drive amplitude and setpoint. This notebook contains two parts: first is experimentation, second is data analysis. Both parts work independently.
+
+
+|- ## Experiment
+
+
+|- ### Import
+
+  import os
+  import win32com.client
+  import numpy as np
+  import time
+  import h5py
+  import sidpy
+  import pyNSID
+  import matplotlib.pyplot as plt
+  from tqdm import tqdm
+  from AEcroscopy import Acquisition
+
+
+|- ### Start BEPyAE.exe and set VI
+
+• Start BEPyAE.ext
+• Set VI of BEPyAE; if this version includes PyScanner, also set VIs for PyScanner
+
+  newexp = Acquisition(exe_path = r"C:\Users\BEPyAE 060523 01\BEPyAE.exe")   
+  # exe_path is the directory of BEPyAE;
+
+
+|- ### Initialize Igor AR18
+
+• Set offline development
+• Build a connection between BEPyAE and AR18
+• Get parameters in AR18
+
+  newexp.init_BEPyAE(offline_development = False) # set offline_development=True if doing offline development
+                                                  # executing this will also initlize AR18
+
+
+|- ### Set tip parameters
+
+• set setpoint, tip locations
+
+  newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1, "next_x_pos_00": 0, "next_y_pos_01": 0},
+                     do_move_tip = True, 
+                     do_set_setpoint = True) # Executing this code will set setpoint to 1 V, 
+                                             # and move tip to location [0, 0]
+
+
+|- ### Set IO
+
+This defines IO parameters, such as AFM platform: AR18, amplifiers, channel data types, etc
+
+  newexp.define_io_cluster(IO_cluster_parms_dict = {"analog_output_amplifier_06": 1, 
+                                                    "channel_01_type_07": 1, 
+                                                    "channel_02_type_08": 2,
+                                                    "channel_03_type_09": 3,})
+
+
+|- ### Set BE pulse parameters
+
+  # set BE parameters
+  newexp.define_be_parms(be_parms_dict = {"center_frequency_Hz_00": 350, "band_width_Hz_01": 100, "amplitude_V_02": 1, 
+                                          "phase_variation_03": 1, "repeats_04": 4, "req_pulse_duration_s_05": 4,
+                                          "auto_smooth_ring_06": 1},
+                         do_create_be_waveform = True)
+
+
+|- ### BE Line scan to check BE parameters
+
+• This is a single BE line scan
+• This returns 5 datasets: quick_fitting, complex spectra, and 3 channels
+
+  # Do a single line scan
+  qk_fit, com_spec, chn1, chn2, chn3 = newexp.do_line_scan(line_scan_parms_dict = {"num_BE_pulses_01": 32,
+                                                                                   "start_x_pos_00": -1, "start_y_pos_01": -1,
+                                                                                   "stop_x_pos_02": 1, "stop_y_pos_03": 1},
+                                                           upload_to_daq = True, do_line_scan = True)
+
+
+|- ### Prior to expeirment, set a directory to save data
+
+  os.chdir(r"D:\WEST User data\Experiment")
+
+
+|- ## Experiment starts
+
+
+|- ### Step 1. Establish AC Amplitude and Setpoint Parameters
+
+  # uniformly distributed AC amplitude
+  min_ac = 0.5
+  max_ac = 5
+  num_ac = 10
+  Vac = np.linspace(min_ac, max_ac, num_x)  # AC amplitude
+
+  # uniformly distributed setpoint values
+  min_setpoint = 0.5
+  max_setpoint = 5
+  num_setpoint = 10
+  setpoint = np.linspace(min_setpoint, max_setpoint, num_setpoint)  # Setpoint
+
+  # Establish AC and setpoint parameters array
+  Vac_setpoint = np.meshgrid(Vac, setpoint)
+  Vac = Vac_setpoint[0].reshape(-1)
+  setpoint = Vac_setpoint[1].reshape(-1)
+
+  print ("{} AC and setpoint parameters are ready for expierments".format(len(Vac)))
+    
+  # save pulse condition
+  np.save("Vac_setpoint.npy", np.asarray([Vac, setpoint]))
+
+
+|- ### Step 2. Perform BEPFM to image the domain wall with various AC and setpoint
+
+  for i in tpdm(range(len(Vac))):
+      # select AC and setpoint
+      be_amp = Vac[i]
+      spoint = setpoint[i]
+      # Set setpoint
+      newexp.tip_control(tip_parms_dict = {"set_point_V_00": spoint}, do_move_tip = False, do_set_setpoint = True)
+      # Set BE pulse amplitude
+      newexp.define_be_parms(be_parms_dict = {"center_frequency_Hz_00": 335, "band_width_Hz_01": 100, "amplitude_V_02": be_amp},
+                             do_create_be_waveform = True)
+    
+      # Perform BEPFM image measurement
+      dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"tip_voltage": 0, "scan_pixel": 128, 
+                                                                             "scan_x_start": -1.0, "scan_y_start": -1.0,
+                                                                             "scan_x_stop": 1.0, "scan_y_stop": 1.0},
+                                                        file_name = "Domain_wall_width", ploton = False)
+
+      f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+      ax1.imshow(dset_pfm[:,:,0], origin = "lower"); ax1.set_title("Amplitude")
+      ax2.imshow(dset_pfm[:,:,1], origin = "lower"); ax2.set_title("Frequency")
+      ax3.imshow(dset_pfm[:,:,2], origin = "lower"); ax3.set_title("Q Factor")
+      ax4.imshow(dset_pfm[:,:,3], origin = "lower"); ax4.set_title("Phase")
+      ax5.imshow(dset_chns[0,:,:], origin = "lower"); ax5.set_title("Topography")
+      ax6.imshow(dset_chns[1,:,:], origin = "lower"); ax6.set_title("Deflection")
+      plt.show()
+
+
+|- ## Post Experiment Data Analysis
+
+
+|- ## Import
+
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import os
+  import h5py
+  import sidpy
+  import cv2
+  import imutils
+
+
+|- ## Set the directory and root name of your dataset
+
+  # directory
+  path = r"C:\Users\Experiment"
+
+
+|- ## Load all data
+
+  count_imgs = 64 # variable of how many images you have in the directory
+  pixel = 64  # pixel of your image
+
+  # change working directory
+  os.chdir(path)
+
+  # create arrays for all data
+  amplitude = np.zeros((count_imgs, pixel, pixel))
+  phase = np.zeros((count_imgs, pixel, pixel))
+  frequency = np.zeros((count_imgs, pixel, pixel))
+  qfactor = np.zeros((count_imgs, pixel, pixel))
+  topography = np.zeros((count_imgs, pixel, pixel))
+
+  for i in range (count_imgs):
+      h5 = h5py.File('Domain_wall_width_1um_{}_0.hf5'.format(i), 'r+')
+      be_qf = h5["BE Quick Fitting/Quick Fitting/Quick Fitting"]
+      be_ch = h5["BE Channels/Channels/Channels"]
+      amplitude[i,] = be_qf[:,:,0]
+      phase[i,] = be_qf[:,:,3]
+      frequency[i,] = be_qf[:,:,1]
+      qfactor[i,] = be_qf[:,:,2]
+      topography[i,] = be_ch[0,:,:,0]
+
+  nor_amplitude = (amplitude-amplitude.min())/amplitude.ptp()
+  nor_phase = (phase - phase.min())/phase.ptp()
+  nor_frequency = (frequency - frequency.min())/frequency.ptp()
+  nor_topography = (topography - topography.min())/topography.ptp()
+
+
+|- ## Load Vac and Setpoint
+
+  vac_setpoint = np.load("Vac_setpoint.npy")
+  vac_setpoint
+
+  array([[0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 0.5, 1. , 1.5, 2. , 2.5,
+          3. , 3.5, 4. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 0.5, 1. ,
+          1.5, 2. , 2.5, 3. , 3.5, 4. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5,
+          4. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 0.5, 1. , 1.5, 2. ,
+          2.5, 3. , 3.5, 4. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. ],
+         [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1. , 1. , 1. , 1. , 1. ,
+          1. , 1. , 1. , 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 2. , 2. ,
+          2. , 2. , 2. , 2. , 2. , 2. , 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5,
+          2.5, 3. , 3. , 3. , 3. , 3. , 3. , 3. , 3. , 3.5, 3.5, 3.5, 3.5,
+          3.5, 3.5, 3.5, 3.5, 4. , 4. , 4. , 4. , 4. , 4. , 4. , 4. ]])
+
+
+|- ## Plot data
+
+Plot all results
+
+  for i in range (count_imgs):
+
+      fig, axs = plt.subplots(1, 4, figsize=(16, 4), dpi = 100)
+      fig.subplots_adjust(left=0.02, bottom=0.06, right=0.95, top=0.99, wspace=0.1)
+      cm = 'viridis'
+      shrink = 0.6
+
+      im0 = axs[0].imshow(amplitude[i, ]*1000, origin = "lower", interpolation='nearest', cmap=cm)
+      fig.colorbar(im0, ax=axs[0], shrink = shrink, label = "Amplitude (a.u.)")
+      axs[0].axis("off")
+
+      im1 = axs[1].imshow(phase[i, ], origin = "lower", interpolation='nearest', cmap=cm)
+      fig.colorbar(im1, ax=axs[1], shrink = shrink, label = "Phase (rad)")
+      axs[1].axis("off")
+
+      im2 = axs[2].imshow(frequency[i, ]/1000, origin = "lower", interpolation='nearest', cmap=cm)
+      fig.colorbar(im2, ax=axs[2], shrink = shrink, label = "Frequency (kHz)")
+      axs[2].axis("off")
+
+      im3 = axs[3].imshow(qfactor[i, ], origin = "lower", vmin = 0, vmax = 250, interpolation='nearest', cmap=cm)
+      fig.colorbar(im3, ax=axs[3], shrink = shrink, label = "Q Factor")
+      axs[3].axis("off")
+    
+      plt.show()
+
+  <image 78a4f901ad1f7edfe252252cf24a86d05d96b84dff96b389f7071c0fdc36e6e7.png: ../_images/78a4f901ad1f7edfe252252cf24a86d05d96b84dff96b389f7071c0fdc36e6e7.png>
+
+  <image 36a0c6e06cff0eae254345904c8fe4716b0252fc7bca1eb504815a044a436854.png: ../_images/36a0c6e06cff0eae254345904c8fe4716b0252fc7bca1eb504815a044a436854.png>
+
+  <image 2fae8c8e47936dd0f149895a0d625774769549b8bcb423f052cb014e168c5258.png: ../_images/2fae8c8e47936dd0f149895a0d625774769549b8bcb423f052cb014e168c5258.png>
+
+  <image 90919471272fcdf5e816689a8391913be435a1f9ee2f78f5ea0b655e2ae514d1.png: ../_images/90919471272fcdf5e816689a8391913be435a1f9ee2f78f5ea0b655e2ae514d1.png>
+
+  <image 89f073371ed672cc9a60ee3db5ae1053c8fb4e78a14c357bb1342adbe67786c0.png: ../_images/89f073371ed672cc9a60ee3db5ae1053c8fb4e78a14c357bb1342adbe67786c0.png>
+
+  <image d1a04409f726af0fba93d85e574b4ac454ab1341fa62039bee09be680b453f15.png: ../_images/d1a04409f726af0fba93d85e574b4ac454ab1341fa62039bee09be680b453f15.png>
+
+  <image 3278109f28426bac7c454a9ad7971e7758dd56da01cbe4fb08f2e40f2e5211ba.png: ../_images/3278109f28426bac7c454a9ad7971e7758dd56da01cbe4fb08f2e40f2e5211ba.png>
+
+  <image d3e19d7f8fdbe540760ea75d67b6320325a4f6b5abf29887990da1dc30218714.png: ../_images/d3e19d7f8fdbe540760ea75d67b6320325a4f6b5abf29887990da1dc30218714.png>
+
+  <image d5b6808ef18a399ccbc7892950f948c4ebb9e7c3f96bcdf846df582bde040177.png: ../_images/d5b6808ef18a399ccbc7892950f948c4ebb9e7c3f96bcdf846df582bde040177.png>
+
+  <image e749f9ac281f64af5f7a466122fd33f7cf5ce477a412ab223782dc12d4697765.png: ../_images/e749f9ac281f64af5f7a466122fd33f7cf5ce477a412ab223782dc12d4697765.png>
+
+  <image 1925970eed751252d6967f6e95b7bbe05df875b420c96d5874652061634157b9.png: ../_images/1925970eed751252d6967f6e95b7bbe05df875b420c96d5874652061634157b9.png>
+
+  <image b1a2654e07f81d5dfc3333bc2601a1c2ad72710d805e3cf9accc25041b83a926.png: ../_images/b1a2654e07f81d5dfc3333bc2601a1c2ad72710d805e3cf9accc25041b83a926.png>
+
+  <image 03e12251561eacaff7720b4b21c9f0a39937776eec277d146cc1bb8244b200d9.png: ../_images/03e12251561eacaff7720b4b21c9f0a39937776eec277d146cc1bb8244b200d9.png>
+
+  <image 856c5a93a715c6fbaa0ee6d776638d5729511f35ba8853588ce19f1ba16c5bac.png: ../_images/856c5a93a715c6fbaa0ee6d776638d5729511f35ba8853588ce19f1ba16c5bac.png>
+
+  <image 4ad8f0134040248d5f68c9333bddd19b8c803eadce24c25d0a525a3cb52ad8ae.png: ../_images/4ad8f0134040248d5f68c9333bddd19b8c803eadce24c25d0a525a3cb52ad8ae.png>
+
+  <image 60b11ede50893daa0623cdb8407832b99c9742bfc2a4d4af88aa4a7723d5bb68.png: ../_images/60b11ede50893daa0623cdb8407832b99c9742bfc2a4d4af88aa4a7723d5bb68.png>
+
+  <image c68fb5e983c0bf27532a7f80c4edf42058ea57d3769682e9ded87d8910b4c7cd.png: ../_images/c68fb5e983c0bf27532a7f80c4edf42058ea57d3769682e9ded87d8910b4c7cd.png>
+
+  <image a9ba0f025fc39c02a8c74352d85faf9be6bba0c267f3d3b9f0804318205fbbb0.png: ../_images/a9ba0f025fc39c02a8c74352d85faf9be6bba0c267f3d3b9f0804318205fbbb0.png>
+
+  <image bb3b228426bf3b0c5c69a8a68dc8a7f466e1969ddbbff6f30b353a5153a1a9bf.png: ../_images/bb3b228426bf3b0c5c69a8a68dc8a7f466e1969ddbbff6f30b353a5153a1a9bf.png>
+
+  <image 684b7280a1c89333cc3651ecfaadd4dcca5348bb63bccebf88ee91d71152d2c4.png: ../_images/684b7280a1c89333cc3651ecfaadd4dcca5348bb63bccebf88ee91d71152d2c4.png>
+
+  <image 98ed9d7400afdbbf246d62932acbf94887fc2ea809a896f5e68a614d4cef852f.png: ../_images/98ed9d7400afdbbf246d62932acbf94887fc2ea809a896f5e68a614d4cef852f.png>
+
+  <image b6162a87de919da74c3332c22b409207324b236bdd83c43150e1bb3fe117f2e2.png: ../_images/b6162a87de919da74c3332c22b409207324b236bdd83c43150e1bb3fe117f2e2.png>
+
+  <image b211e738527629eda70cf93a1ac6d847c65de140e4291893cb55824a31d418dc.png: ../_images/b211e738527629eda70cf93a1ac6d847c65de140e4291893cb55824a31d418dc.png>
+
+  <image 110dd98b7ce5637e50724aff3c86549f6d10a64fd3f547091b5c76179943162e.png: ../_images/110dd98b7ce5637e50724aff3c86549f6d10a64fd3f547091b5c76179943162e.png>
+
+  <image 82f89b2ab4252544aa8a240573617998bdcc21b367411c1a4a4d1198c6424736.png: ../_images/82f89b2ab4252544aa8a240573617998bdcc21b367411c1a4a4d1198c6424736.png>
+
+  <image c9dd6d1aeb7c4525c82814ab24610af24b55ca8825ffca2fc5a9cd688cfe41e0.png: ../_images/c9dd6d1aeb7c4525c82814ab24610af24b55ca8825ffca2fc5a9cd688cfe41e0.png>
+
+  <image af73f893c7cd6894c5a3351b3185d6ff082c9bd041fd2df3b1fd70c6f484e757.png: ../_images/af73f893c7cd6894c5a3351b3185d6ff082c9bd041fd2df3b1fd70c6f484e757.png>
+
+  <image 350488626dda19a11793d087bcffeec4a38b499f2dbcec71309958b9a0c25a1d.png: ../_images/350488626dda19a11793d087bcffeec4a38b499f2dbcec71309958b9a0c25a1d.png>
+
+  <image 6af2bd374123b2ebc803e6748a845bd791abffff89b02415cee61f359aef411f.png: ../_images/6af2bd374123b2ebc803e6748a845bd791abffff89b02415cee61f359aef411f.png>
+
+  <image fdaca0e51a258d75819406b84a579890ee862284356f8fc2a84ca3a78e9ece1f.png: ../_images/fdaca0e51a258d75819406b84a579890ee862284356f8fc2a84ca3a78e9ece1f.png>
+
+  <image a484980a5d18f950e929a04df949d8d7c47364c175cf9d6520ae0edafbb56ae2.png: ../_images/a484980a5d18f950e929a04df949d8d7c47364c175cf9d6520ae0edafbb56ae2.png>
+
+  <image f091d109294d4f95c4a58b0133b6fab2e7163b20164f2075422d44945fc9e50b.png: ../_images/f091d109294d4f95c4a58b0133b6fab2e7163b20164f2075422d44945fc9e50b.png>
+
+  <image 1231dea71a6ca117da74d3894fd76d1499ae8aa804a7fc3012c1983165b07133.png: ../_images/1231dea71a6ca117da74d3894fd76d1499ae8aa804a7fc3012c1983165b07133.png>
+
+  <image 30c8446ca944a99fb434e2e774b61c6d43ac5e043cda8b4c1b76c7d6ed205ea0.png: ../_images/30c8446ca944a99fb434e2e774b61c6d43ac5e043cda8b4c1b76c7d6ed205ea0.png>
+
+  <image f3fc69ba0bf789d27a90926861feb88023149907d952a2321f8e7de0d04f05bd.png: ../_images/f3fc69ba0bf789d27a90926861feb88023149907d952a2321f8e7de0d04f05bd.png>
+
+  <image 84398e6c7993c6163ef874a6a604c93e62e25208bb06d9d1b7e5433862d38d26.png: ../_images/84398e6c7993c6163ef874a6a604c93e62e25208bb06d9d1b7e5433862d38d26.png>
+
+  <image 5b479b678865bf7ed51423d4b7facacb985b874ce9cfcc9dd8a413cac9ef7afb.png: ../_images/5b479b678865bf7ed51423d4b7facacb985b874ce9cfcc9dd8a413cac9ef7afb.png>
+
+  <image 563a2cee75c023b4b4ef8bad84de230d344900abbc003e8e850ea5f479f023a4.png: ../_images/563a2cee75c023b4b4ef8bad84de230d344900abbc003e8e850ea5f479f023a4.png>
+
+  <image 37641ac959c138a783879c630ae0ee5f83c854185e9a90e21879d749c3a85c24.png: ../_images/37641ac959c138a783879c630ae0ee5f83c854185e9a90e21879d749c3a85c24.png>
+
+  <image 20caa8c2b6ab51429cbb1e7860c724ed6def4b92c75c85beb53f4c6d5ce340b7.png: ../_images/20caa8c2b6ab51429cbb1e7860c724ed6def4b92c75c85beb53f4c6d5ce340b7.png>
+
+  <image ee55dd9cbb09e9c9030869ec021e87e7caee57b0e395df100202b0bc15a1cfbb.png: ../_images/ee55dd9cbb09e9c9030869ec021e87e7caee57b0e395df100202b0bc15a1cfbb.png>
+
+  <image 5a937390e1338c205eaa04ae6981dc51791ac390aa6ecca434f6e7d519ea924d.png: ../_images/5a937390e1338c205eaa04ae6981dc51791ac390aa6ecca434f6e7d519ea924d.png>
+
+  <image d3b656c95c32e74bbd36f3ec031a157a614aa6da85f3dfed4d8aff2144dd511d.png: ../_images/d3b656c95c32e74bbd36f3ec031a157a614aa6da85f3dfed4d8aff2144dd511d.png>
+
+  <image 3eacef7dd5f37c2cc969a1c0b9d9d72667b47dfa5685b402e35dc3fe5335b652.png: ../_images/3eacef7dd5f37c2cc969a1c0b9d9d72667b47dfa5685b402e35dc3fe5335b652.png>
+
+  <image 0080f2d161ab0178dff6b44b9c878d9fc2a52bf2a6e19de156a82f0f537fdd95.png: ../_images/0080f2d161ab0178dff6b44b9c878d9fc2a52bf2a6e19de156a82f0f537fdd95.png>
+
+  <image 1dcbc716ea2b0fcce213c6db888e87c9ff478fe9917ed4b6290fe66e623c746d.png: ../_images/1dcbc716ea2b0fcce213c6db888e87c9ff478fe9917ed4b6290fe66e623c746d.png>
+
+  <image fafa6ada6360ee36031528af16996c920417fc7a494e6367e100d30154fcaf32.png: ../_images/fafa6ada6360ee36031528af16996c920417fc7a494e6367e100d30154fcaf32.png>
+
+  <image b2fea95018cd6ae34e4a732b9dc4dcecf1a36d74c15157bfad201fbe9d1e975a.png: ../_images/b2fea95018cd6ae34e4a732b9dc4dcecf1a36d74c15157bfad201fbe9d1e975a.png>
+
+  <image 382aceab81a536498d617b52f34ebfda80b445547b4d99eedd5d1f05bdb59906.png: ../_images/382aceab81a536498d617b52f34ebfda80b445547b4d99eedd5d1f05bdb59906.png>
+
+  <image c5d5afd06c019008953029c2684f515f5da5de1a65eca4deb28516137f59780c.png: ../_images/c5d5afd06c019008953029c2684f515f5da5de1a65eca4deb28516137f59780c.png>
+
+  <image 7de76b3c3fcbe93e8e95d267e16b3602c57812dc61bf34ecab8cc29428dbd900.png: ../_images/7de76b3c3fcbe93e8e95d267e16b3602c57812dc61bf34ecab8cc29428dbd900.png>
+
+  <image 3a84908160e19491162f2b8f02509d6222072c03354385d7b69e2c9527cfcd75.png: ../_images/3a84908160e19491162f2b8f02509d6222072c03354385d7b69e2c9527cfcd75.png>
+
+  <image 8e164e900016eba72a378a4265f3beacd804213b93271fdea2b226aef4cddb80.png: ../_images/8e164e900016eba72a378a4265f3beacd804213b93271fdea2b226aef4cddb80.png>
+
+  <image 1efe6e66670188bba026b7edecefce3e66f635953d3b736ce5e3b640b31e5ea0.png: ../_images/1efe6e66670188bba026b7edecefce3e66f635953d3b736ce5e3b640b31e5ea0.png>
+
+  <image 0416f123d7f79f28b068521d10e8d0260afa7748f865309dffc9b668e2631685.png: ../_images/0416f123d7f79f28b068521d10e8d0260afa7748f865309dffc9b668e2631685.png>
+
+  <image 41f2478c7f67d5055db7e289ed765270f362657f614dec5db7bcc98c17e49dde.png: ../_images/41f2478c7f67d5055db7e289ed765270f362657f614dec5db7bcc98c17e49dde.png>
+
+  <image 57ca71143f0ed80ccc7885225e02b8fb52cd92c80cf6253e4c353f558212a9f0.png: ../_images/57ca71143f0ed80ccc7885225e02b8fb52cd92c80cf6253e4c353f558212a9f0.png>
+
+  <image ca01d029d19b7da0b2adedec75c8bdcf9bc8e916cdc7495e3a2e81641a19b25c.png: ../_images/ca01d029d19b7da0b2adedec75c8bdcf9bc8e916cdc7495e3a2e81641a19b25c.png>
+
+  <image b20a17f8a493d9f50b2f1e8736c4403e8cc40f9ad581685932830470364ab7c2.png: ../_images/b20a17f8a493d9f50b2f1e8736c4403e8cc40f9ad581685932830470364ab7c2.png>
+
+  <image 72a4de4349908cdac6007330db2f6a2725665002e4517e4cd11d8f22fae43ecb.png: ../_images/72a4de4349908cdac6007330db2f6a2725665002e4517e4cd11d8f22fae43ecb.png>
+
+  <image 1c558436881bdb3c39ced1be21c6b94225fc25a865aa3b856fab163bd533a3d5.png: ../_images/1c558436881bdb3c39ced1be21c6b94225fc25a865aa3b856fab163bd533a3d5.png>
+
+  <image 55614e3dad021042659b3196cfcf667fb4aa5d31d8422ff84f241b9ca9829dd2.png: ../_images/55614e3dad021042659b3196cfcf667fb4aa5d31d8422ff84f241b9ca9829dd2.png>
+
+  <image a5964d9e0a4c805c5f5001034466da6d7a7b731ad3811ef071c5e3020d2c1cfb.png: ../_images/a5964d9e0a4c805c5f5001034466da6d7a7b731ad3811ef071c5e3020d2c1cfb.png>
+
+  <image ef5dddfcd6c07fc15be15be4589051623396d8a9aa98030b8a3f575317221a02.png: ../_images/ef5dddfcd6c07fc15be15be4589051623396d8a9aa98030b8a3f575317221a02.png>
+
+Plot a specific channel together
+
+  num_vac = 8
+  num_stp = 8
+  fig, axes = plt.subplots(num_y, num_x, figsize=(num_vac, num_stp),
+                           subplot_kw={'xticks':[], 'yticks':[]},
+                           gridspec_kw=dict(hspace=0.02, wspace=0.02))
+
+  for ax, i in zip(axes.flat, range(count_imgs)):
+      ax.imshow(amplitude[i,]*1000) # We are plotting amplitude now, you can change the channel to phase, frequency,etc
+
+  <image 260c71135b97ce3025f02a44a01f4cab5e22ca0e9684941ce90cd5b9b07c15ef.png: ../_images/260c71135b97ce3025f02a44a01f4cab5e22ca0e9684941ce90cd5b9b07c15ef.png>
+
+  num_vac = 8
+  num_stp = 8
+  fig, axes = plt.subplots(num_y, num_x, figsize=(num_vac, num_stp),
+                           subplot_kw={'xticks':[], 'yticks':[]},
+                           gridspec_kw=dict(hspace=0.02, wspace=0.02))
+
+  for ax, i in zip(axes.flat, range(count_imgs)):
+      ax.imshow(phase[i,], origin = "lower")
+
+  <image 208594e302f80f242ca199dab38eec39368ec3073fe61315f24ea3822c8aa08c.png: ../_images/208594e302f80f242ca199dab38eec39368ec3073fe61315f24ea3822c8aa08c.png>
+
+
+|- # About Autonomous Experiment
+
+Autonomous experiments integrate artifical intelligence (AI) and machine learning (ML) for data analysis, decision-making, optimization, and adaption to enable experiments without human intervention.
+
+In this chapter, we will introduce ML-driven experiment workflows constructed with AEcroscopy for autonomous microscopy experiments.
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{July}\) \(_{2023}\)
+
+
+|- # Deep Kernel Learning driven piezoresponse spectroscopy
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{July}\) \(_{2023}\)
+
+
+|- ## Install and Import
+
+  import os
+  import win32com.client
+  import numpy as np
+  import time
+  import h5py
+  import sidpy
+  import pyNSID
+  import matplotlib.pyplot as plt
+  from tqdm import tqdm
+
+  import numpy as np
+  from scipy.signal import find_peaks
+  import h5py
+  from mlsocket import MLSocket
+
+  # import acquition.py
+  from Acquisition_v0_5 import Acquisition   # include the Acquistion_v0.py in the same directory
+
+
+|- ## Start BEPyAE.exe and set VI
+
+• Start BEPyAE.ext
+• Set VI of BEPyAE; if this version includes PyScanner, also set VIs for PyScanner
+
+  newexp = Acquisition(exe_path = r"C:\BEPyAE 060123 01\BEPyAE.exe")   # exe_path is the directory of BEPyAE;
+
+
+|- ## Initialize Igor AR18
+
+• Set offline development
+• Build a connection between BEPyAE and AR18
+• Get parameters in AR18
+
+  newexp.init_BEPyAE(offline_development = True) # set offline_development=True if doing offline development
+                                                  # executing this will also initlize AR18
+
+
+|- ## Set tip parameters
+
+• set setpoint, tip locations
+
+  newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1, "next_x_pos_00": -0.5, "next_y_pos_01": 0.5},
+                     do_move_tip = True, 
+                     do_set_setpoint = True) # Executing this code will set setpoint to 1 V, 
+                                             # and move tip to location [0.5, 0.5]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.5, 0.5, 0.5)
+  Please reset if some parameters are incorrect
+
+
+|- ## Set IO
+
+This defines IO parameters, such as AFM platform: AR18, amplifiers, channel data types, etc
+
+  newexp.define_io_cluster(IO_cluster_parms_dict = {"analog_output_amplifier_06": 1, 
+                                                    "channel_01_type_07": 1, 
+                                                    "channel_02_type_08": 2,"channel_03_type_09": 3,})
+
+  IO control parameters are:  ('0 Cypher AR18', '6124', 4000000.0, 10.0, 10.0, 'AC and DC on AO0', 10.0, 'topography', 'current', 'aux', 'external')
+  Please reset if some parameters are incorrect
+
+
+|- ## Set BE pulse parameters
+
+  # set BE parameters
+  newexp.define_be_parms(be_parms_dict = {"center_frequency_Hz_00": 335, "band_width_Hz_01": 100,
+                                         "amplitude_V_02": 1, "phase_variation_03": 1,
+                                         "repeats_04": 4, "req_pulse_duration_s_05": 4,
+                                         "auto_smooth_ring_06": 1}, 
+                        do_create_be_waveform = True)
+
+  BE parameters are:  (335000.0, 100000.0, 1.0, 1.0, 4, 0.004, 1, 3352.2952763920002, 0.12159459061880915)
+  Please reset if some parameters are incorrect
+
+  (335000.0,
+   100000.0,
+   1.0,
+   1.0,
+   4,
+   0.004,
+   1,
+   3352.2952763920002,
+   0.12159459061880915)
+
+
+|- ## BE Line scan to test BE parameters
+
+• This is a single BE line scan
+• This returns 5 datasets: quick_fitting, complex spectra, and 3 channels
+
+  # Do a single line scan
+  qk_fit, com_spec, chn1, chn2, chn3 = newexp.do_line_scan(line_scan_parms_dict = {"num_BE_pulses_01": 32,
+                                                                                   "start_x_pos_00": -0.5, "start_y_pos_01": 0,
+                                                                                   "stop_x_pos_02": 0.5, "stop_y_pos_03": 0},
+                                                           upload_to_daq = True, do_line_scan = True)
+
+  voltage offset and number of BE pulse are:  (0.0, 32)
+  line scan start and end positions:  (-0.5, 0.0, 0.5, 0.0)
+
+
+|- # Experiment Starts
+
+Run on local PC
+
+Run below code on microscope computer.
+
+
+|- ## Prior to expeirment, set a directory to save data
+
+  os.chdir("/content/save directory/")
+
+  ---------------------------------------------------------------------------
+  FileNotFoundError                         Traceback (most recent call last)
+  ~\AppData\Local\Temp/ipykernel_25324/3425510952.py in <module>
+  ----> 1 os.chdir("/content/save directory/")
+
+  FileNotFoundError: [WinError 3] The system cannot find the path specified: '/content/save directory/'
+
+
+|- ## Step 1. Perform a BEPFM measurement
+
+  dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 256, "scan_x_start": -1.0,
+                                                                         "scan_y_start": -1.0,"scan_x_stop": 1.0,
+                                                                         "scan_y_stop": 1.0}, file_name = "BEPFM")
+
+  f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+  ax1.imshow(dset_pfm[:,:,0])
+  ax2.imshow(dset_pfm[:,:,1])
+  ax3.imshow(dset_pfm[:,:,2])
+  ax4.imshow(dset_pfm[:,:,3])
+  ax5.imshow(dset_chns[0,:,:])
+  ax6.imshow(dset_chns[1,:,:])
+  plt.show()
+
+  20 locations are ready for experiments
+
+
+|- ## Step 2. Prepare structure patch
+
+  # normalize structure data
+  norm_ = lambda x: (x - x.min()) / (x.max() - x.min())
+  struc_img = np.asarray(dset_pfm[:,:,0])          # set structure image
+  struc_img = norm_(struc_img)   # normalize
+
+  np.save('structure_image.npy', struc_img)  # send this to GPU server later
+
+  print ("Structure image shape:", struc_img.shape)
+
+  # prepare structure image patches
+  coordinates = utils.get_coord_grid(struc_img, 1)
+
+  # patch size
+  window_size = 20
+  pix = struc_img.shape[1] - window_size + 1
+
+  # extract subimage for each point on a grid
+  features_all, coords, _ = utils.extract_subimages(struc_img, coordinates, window_size)
+  features_all = features_all[:,:,:,0]
+  # indices = coords.reshape(pix,pix,2)
+  indices = coords
+
+  print("Patch shape:", features_all.shape)
+  print("Indices list shape: ", indices.shape)
+
+  # plot structure image and an example patch
+  _, (ax1, ax2) = plt.subplots(1, 2, dpi = 100)
+  k = 20
+  ax1.imshow(struc_img, origin = "lower")
+  ax1.scatter(indices.reshase(-1, 2)[k, 1], indices.reshape(-1, 2)[k, 0], c = 'r')
+  ax2.imshow(features_all[k], origin = "lower")
+  plt.show()
+
+
+|- ## Step 3. Send struc_img.npy to GPU server via sftp
+
+Run on GPU server
+
+Run below code on GPU server.
+
+
+|- ## Step 4. Install, import, and define help functions
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  import time
+  import os
+  import numpy as np
+  import pylab as pl
+  import torch
+  import gpytorch
+  import botorch
+  import atomai as aoi
+  from atomai import utils
+  # from scipy.signal import find_peaks
+  # from sklearn.model_selection import train_test_split
+  from typing import Union, Type
+  from mlsocket import MLSocket
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  ############---DKL Acquistion function---###########
+  def EI(model: Type[aoi.models.dklGPR], X: Union[np.ndarray, torch.Tensor],
+         best_f: Union[float, torch.Tensor], xi: Union[float, torch.Tensor] = 0.01,
+         batch_size: int = 100) -> np.ndarray:
+      """
+      Expected Improvement
+      """
+      tt = torch.tensor
+      types = (np.ndarray, np.float32, np.float64, float)
+      tor = lambda a: tt(a) if isinstance(a, types) else a    
+      device=model.device
+      dtype = model.dtype
+      X, best_f, xi = tor(X), tor(best_f), tor(xi)
+      mean, var = model.predict(X.to(dtype).to(device), batch_size=batch_size)
+      mean, var = tor(mean), tor(var)  # have to translate them back to torch tensors
+      sigma = var.sqrt()
+      u = (mean - best_f.expand_as(mean) - xi.expand_as(mean)) / sigma
+      normal = torch.distributions.Normal(torch.zeros_like(u), torch.ones_like(u))
+      ucdf = normal.cdf(u)
+      updf = torch.exp(normal.log_prob(u))
+      obj = sigma * (updf + u * ucdf)
+      return obj.detach().cpu().numpy()
+
+
+|- ## Step 5. Prepare image patches
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  # prepare structure image patches
+  coordinates = utils.get_coord_grid(struc_img, 1)
+
+  # patch size
+  window_size = 20
+  pix = struc_img.shape[1] - window_size + 1
+
+  # extract subimage for each point on a grid
+  features_all, coords, _ = utils.extract_subimages(struc_img, coordinates, window_size)
+  features_all = features_all[:,:,:,0]
+  # indices = coords.reshape(pix,pix,2)
+  indices = coords
+
+  print("Patch shape:", features_all.shape)
+  print("Indices list shape: ", indices.shape)
+
+Run on local PC
+
+Run below code on microscope computer.
+
+
+|- ## Step 6. Do first BEPS at random location
+
+  # first BEPS measurement is performed at a random location
+  np.random.seed(0)
+  index = np.random.randint(len(indices)) # random location
+  print ("First location index: ", index)
+
+  # Do beps
+  do_beps(indices[index])
+  print("measurement done")
+    
+  # Read data and calculate scalarizer
+  new_spec = 
+  new_scalarizer = 
+
+  # Define a list to save scalarizer
+  y_train_raw = np.asarray([])
+  y_train_raw = np.append(y_train_raw, new_scalarizer)    
+  print('Now, the y_train_raw is {}'.format(y_train_raw))
+        
+  # Normalize y_train
+  y_train_normalize = np.asarray([0.5]) # Since there is just a single value, we set it as 0.5
+
+
+|- ## Step 7. Request connection to GPU server and start DKL exploration
+
+  # Define exploration step
+  exploration_step = 200
+
+  HOST = 'localhost'
+  PORT = 9000
+  with MLSocket() as s:
+      s.connect((HOST, PORT))
+      for i in range (exploration_step):
+          print("##########----step {}/{}----##########".format(i+1, exploration_step))
+          starttime = time.time()
+        
+          # Send the measured data to GPU server
+          new_data = np.asarray(y_train_normalize[-1])
+          s.send(new_data)
+          time.sleep(0.01)
+
+          # Listen next location
+          next_location = s.recv(920)
+          time.sleep(0.01)
+          print("predicted point ready", next_location)
+        
+          ###### Do BEPS Measurement at predicted location ########
+          newexp.do_beps(next_location)
+          print("measurement done")
+    
+          # Read data and calculate scalarizer
+          new_spec = 
+          new_scalarizer = 
+    
+          y_train_raw = np.append(y_train_raw, new_scalarizer)    
+          print('Now, the y_train_raw is {}'.format(y_train_raw))
+        
+          # Normalize y_train
+          y_train_normalize = (y_train_raw - y_train_raw.min())/y_train_raw.ptp()
+        
+          # Plot figure
+          clear_output(wait=True)
+          plt.figure()
+          plt.imshow(struc_img, cmap = 'gray')
+          plt.scatter(next_loc[0], next_loc[1], c = 'r')
+          plt.show()
+    
+          print("time in this step: ", time.time()-starttime)
+
+      s.close()
+
+Run on GPU server
+
+Run below code on GPU server.
+
+
+|- ## Step 8. Connect to local PC and start DKL exploration
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  data_dim = X_train.shape[-1]
+  exploration_step = 200
+  xi = 0.01
+
+  HOST = ''
+  PORT = 3446
+
+  with MLSocket() as s:
+      s.bind((HOST, PORT))
+      print("bounding......\nplease bound the other end")
+      s.listen()
+      conn, address = s.accept()
+      with conn:
+          print('DKL starts')
+          for step in range(exploration_steps):
+              print("##########----step {}/{}----##########".format(step+1, exploration_steps))
+
+              if step == 0:
+                  np.random.seed(0)
+                  index = np.random.randint(len(indices))   # may need to manually added the random index here
+                  print("First index: ", index)
+
+                  # Update train and test data
+                  X_train [0,] = X[idx,]
+                  X_test = np.delete(X_test, idx, 0)
+                  indices_train[0,] = indices_test[idx,]
+                  indices_test = np.delete(indices_test, idx, 0)
+                
+                  # Listen to client for measurement result
+                  measured_point = conn.recv(920)
+                  print("Received new point data")
+                  #update training data
+                  y_train = np.append(y_train, measured_point)
+              else:
+                  #listen to client for measurement result
+                  measured_point = conn.recv(920)
+                  print("received new point data")
+                  #update training data
+                  y_train = np.append(y_train, measured_point)
+
+                  X_med[0,] = X_test[next_point_idx,]
+                  X_train = np.append(X_train, X_med, axis = 0)
+                  X_test = np.delete(X_test, next_point_idx, 0)
+                  indices_med[0,] = indices_test[next_point_idx]
+                  indices_train = np.append(indices_train, indices_med, axis = 0)
+                  indices_test = np.delete(indices_test, next_point_idx, 0)
+
+              dklgp = aoi.models.dklGPR(data_dim, embedim=2, precision="single")
+              dklgp.fit(X_train, y_train, training_cycles=200)
+              # Compute acquisition function
+              # best_f = torch.tensor(dklgp.predict(X_train)[0].max(), device=dklgp.device)
+              # obj_mean = EI(dklgp, X_test, best_f, xi, batch_size = 2000)
+              # Select next point to "measure"
+              _, var_ = dklgp.predict(X_test, batch_size = len(X_test))
+              next_point_idx = var_.argmax()
+              next_points = np.asarray(indices_test[next_point_idx])
+              #send next point to client
+              conn.send(next_points)
+              print("Send next point index and next point: ", next_point_idx, next_points)
+
+              #save step record
+              np.savez(os.path.join(savedir, "record{}.npz".format(step)), x_train = X_train, y_train = y_train, 
+              indice_train = indices_train, indice_test=indices_test, var=var_, nextpoint=next_points)
+              # np.savez(("/exp_record/record{}.npz".format(step)), indicestest=indices_test, 
+              # objmean=obj_mean, nextpoint=next_points)
+
+Run on local PC
+
+Run below code on microscope computer.
+
+
+|- ## Step 8. Do a BEPFM at the whole experiment area
+
+  dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 256, "scan_x_start": -1.0,
+                                                                         "scan_y_start": -1.0,"scan_x_stop": 1.0,
+                                                                         "scan_y_stop": 1.0}, file_name = "pfm_whole")
+
+  f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+  ax1.imshow(dset_pfm[:,:,0])
+  ax2.imshow(dset_pfm[:,:,1])
+  ax3.imshow(dset_pfm[:,:,2])
+  ax4.imshow(dset_pfm[:,:,3])
+  ax5.imshow(dset_chns[0,:,:])
+  ax6.imshow(dset_chns[1,:,:])
+  plt.show()
+
+
+|- # Hypothesis Leanring Domain Growth
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{July}\) \(_{2023}\)
+
+
+|- ## Install and Import
+
+  import os
+  import win32com.client
+  import numpy as np
+  import time
+  import h5py
+  import sidpy
+  import pyNSID
+  import matplotlib.pyplot as plt
+  from tqdm import tqdm
+
+  # import acquition.py
+  from Acquisition_v0_5 import Acquisition   # include the Acquistion_v0.py in the same directory
+
+
+  import cv2
+  # import imutils
+  from os.path import exists
+  # from jupyterthemes import jtplot
+  # jtplot.style()
+
+
+|- ## Start BEPyAE.exe and set VI
+
+• Start BEPyAE.ext
+• Set VI of BEPyAE; if this version includes PyScanner, also set VIs for PyScanner
+
+  newexp = Acquisition(exe_path = r"C:\BEPyAE 060123 01\BEPyAE.exe")   # exe_path is the directory of BEPyAE;
+
+
+|- ## Initialize Igor AR18
+
+• Set offline development
+• Build a connection between BEPyAE and AR18
+• Get parameters in AR18
+
+  newexp.init_BEPyAE(offline_development = True) # set offline_development=True if doing offline development
+                                                  # executing this will also initlize AR18
+
+
+|- ## Set tip parameters
+
+• set setpoint, tip locations
+
+  newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1, "next_x_pos_00": -0.5, "next_y_pos_01": 0.5},
+                     do_move_tip = True, 
+                     do_set_setpoint = True) # Executing this code will set setpoint to 1 V, 
+                                             # and move tip to location [0.5, 0.5]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.5, 0.5, 1.0)
+  Please reset if some parameters are incorrect
+
+
+|- ## Set IO
+
+This defines IO parameters, such as AFM platform: AR18, amplifiers, channel data types, etc
+
+  newexp.define_io_cluster(IO_cluster_parms_dict = {"analog_output_amplifier_06": 1, 
+                                                    "channel_01_type_07": 1, 
+                                                    "channel_02_type_08": 2,"channel_03_type_09": 3,})
+
+  IO control parameters are:  ('0 Cypher AR18', '6124', 4000000.0, 10.0, 10.0, 'AC and DC on AO0', 1.0, 'none', 'none', 'none', 'external')
+  Please reset if some parameters are incorrect
+
+
+|- ## Set BE pulse parameters
+
+  # set BE parameters
+  newexp.define_be_parms(be_parms_dict = {"center_frequency_Hz_00": 335, "band_width_Hz_01": 100,
+                                         "amplitude_V_02": 1, "phase_variation_03": 1,
+                                         "repeats_04": 4, "req_pulse_duration_s_05": 4,
+                                         "auto_smooth_ring_06": 1}, 
+                        do_create_be_waveform = True)
+
+  BE parameters are:  (335000.0, 100000.0, 1.0, 1.0, 4, 0.004, 1, 3352.2952763920002, 0.12159459061880915)
+  Please reset if some parameters are incorrect
+
+  (335000.0,
+   100000.0,
+   1.0,
+   1.0,
+   4,
+   0.004,
+   1,
+   3352.2952763920002,
+   0.12159459061880915)
+
+
+|- ## BE Line scan to test BE parameters
+
+• This is a single BE line scan
+• This returns 5 datasets: quick_fitting, complex spectra, and 3 channels
+
+  # Do a single line scan
+  qk_fit, com_spec, chn1, chn2, chn3 = newexp.do_line_scan(line_scan_parms_dict = {"num_BE_pulses_01": 32,
+                                                                                   "start_x_pos_00": -0.5, "start_y_pos_01": 0,
+                                                                                   "stop_x_pos_02": 0.5, "stop_y_pos_03": 0},
+                                                           upload_to_daq = True, do_line_scan = True)
+
+  voltage offset and number of BE pulse are:  (0.0, 32)
+  line scan start and end positions:  (-0.5, 0.0, 0.5, 0.0)
+
+
+|- # Experiment Starts
+
+
+|- ## In this experiment, we begin by applying a DC pulse to switch the ferroelectric polarization. Subsequently, a BEPFM (Bias-Enhanced Piezoresponse Force Microscopy) measurement is conducted to image the domain structure.
+
+1. To initiate the measurement process, we first need to determine the location for each individual measurement. For each measurement, a new location is chosen, requiring a location array to record all the measurements as demonstrated below.
+
+  <image chapter3_imageHypoAL1.png: ../_images/chapter3_imageHypoAL1.png>
+
+Run on local PC
+
+Run below code on microscope computer.
+
+
+|- ## Prior to expeirment, set a directory to save data
+
+  os.chdir(r"C:\Hypothesis_learning\Test")
+
+  def domain_size (img, thresh):
+      thresh_img = np.copy(img)
+      thresh_img [img > thresh] = 1
+      thresh_img [img < thresh] = 0
+    
+      # find contours in the thresholded image
+      thresh_img = thresh_img.astype(np.uint8)
+      cnts = cv2.findContours(thresh_img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+      cnts = imutils.grab_contours(cnts)
+
+      center = np.zeros((len(cnts), 2))
+      radius = np.zeros(len(cnts))
+      for num_domain in range (len(cnts)):
+          (x,y),r = cv2.minEnclosingCircle(cnts[num_domain])
+          #center location
+          center[num_domain,0] = x
+          center[num_domain,1] = y
+          #radius of minimum circle
+          radius[num_domain] = r
+    
+      #calculate the distance between domain center and image center (writing point)
+      img_size = img.shape[0]
+      img_center_x = int(img_size/2)
+      img_center_y = int(img_size/2)
+      #away_writing_point = np.sqrt((center[:,0]-img_center_x)**2 + (center[:,1]-img_center_y)**2)
+      away_writing_point = np.sqrt((center[:,0]-32)**2 + (center[:,1]-32)**2)
+
+      #then, calculate the total area of residue domains
+      if len(radius) == 0:
+          print ("domain size is 0.0")
+          f, ax = plt.subplots()
+          ax.imshow(thresh_img)
+          plt.show()
+          plt.close()
+          return 0.0      #if no domains, return domain size as 0
+      elif away_writing_point.min() > 20:   #if the nearest domain is away (13) from the center, treat it as noise or the domains originally in the region
+          print ("domain size is 0.0")
+          f, ax = plt.subplots()
+          ax.imshow(thresh_img)
+          plt.show()
+          plt.close()
+          return 0.0      #return domain size as 0
+      else:
+          #return_domain_size = np.sqrt((radius[away_writing_point.argmin()]**2))   # we use square root as area, treat the neareast domain as the written domain
+          return_domain_size = (radius.max())
+        
+          f, ax = plt.subplots()
+          ax.imshow(thresh_img, origin = "lower")
+  #         for c in range(len(radius)):
+  #             Drawing_colored_circle=plt.Circle(center[c], radius[c], fill = False, color = 'white', linewidth = 4);
+  #             ax.add_artist(Drawing_colored_circle)
+          Drawing_colored_circle=plt.Circle(center[away_writing_point.argmin()], radius[away_writing_point.argmin()], 
+                                            fill = False, color = 'white', linewidth = 4);
+          ax.add_artist(Drawing_colored_circle)    
+          plt.show()
+          plt.close()
+          return return_domain_size
+
+
+|- ## Step 1. Generate a location array
+
+  # All locations span across [start_point_x, end_point_x] in x-direction and [start_point_y, end_point_y] in y-direction.
+  # There are num_x rows and num_y columns in the locations array
+
+  start_point_x = -0.9   # Define location array parameters
+  end_point_x = 0.9
+  start_point_y = -0.9
+  end_point_y = 0.9
+  num_x = 10
+  num_y = 10
+
+  # Generate location array
+  pos_x = np.linspace(-0.9, 0.9, num_x)
+  pos_y = np.linspace(-0.9, 0.9, num_y)
+  pulse_pos = np.meshgrid(pos_x, pos_y)
+  pulse_pos_x = pulse_pos[0].reshape(-1)
+  pulse_pos_y = pulse_pos[1].reshape(-1)  # pulse_pos_x and pulse_pos_y are the coordinates of all locations
+
+  # Set BEPFM image size
+  img_size = 0.1
+
+  # Check
+  if img_size > np.abs(pos_x[0]-pos_x[1]):
+      print ("Alert: there will be image overlap along x-direction")
+  elif img_size > np.abs(pos_y[0]-pos_y[1]):
+      print ("Alert: there will be image overlap along y-direction")
+  else:
+      print("{} locations are ready for experiments".format(len(pulse_pos_x)))
+
+  100 locations are ready for experiments
+
+Run on GPU server
+
+Run below code on GPU server.
+
+
+|- ## Step 2. Install and import @ GPU server, and define help functions
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  !pip install --upgrade jax==0.2.25
+  !pip install -q git+https://github.com/ziatdinovmax/gpax.git
+  !pip install numpy --upgrade
+
+
+  from typing import Dict
+
+  import gpax
+  import numpyro
+  import numpy as onp
+  import jax.numpy as jnp
+  import jax.random as jra
+  import matplotlib.pyplot as plt
+  import time
+  from mlsocket import MLSocket
+
+  print('jax device: ', jax.devices())
+
+  gpax.utils.enable_x64()
+
+  File "C:\Users\yla\AppData\Local\Temp/ipykernel_21664/3515848405.py", line 3
+      -------------------------------------------------------------------
+                                                                         ^
+  SyntaxError: invalid syntax
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  def model_data(x: jnp.ndarray, params: Dict[str, float]) -> jnp.ndarray:
+      """
+      r = r_c + r_0 * ((V/V_c)^2 - 1)^{1/3}
+      """
+      return params["r_c"] + params["r_0"] * jnp.cbrt((x[:, 0] / params["V_c"])**2 - 1)
+
+  def grid2xy(X1, X2):
+      """
+      Maps (M, N) grid to (M*N, 2) xy coordinates.
+      Removes NaNs (if any)
+      """
+      X = jnp.concatenate((X1[None], X2[None]), 0)
+      d0, d1 = X.shape[0], X.shape[1] * X.shape[2]
+      X = X.reshape(d0, d1).T
+      X = X[~jnp.isnan(X).any(axis=1)]
+      return X
+
+  #data initialization and update functions
+  def init_training_data_exp(X, Y, num_seed_points=2, rng_seed=42, list_of_indices=None):
+      onp.random.seed(rng_seed)
+      indices = jnp.arange(len(X))
+      idx = list_of_indices
+      if idx is not None:
+          idx = onp.array(idx)
+      else:
+          idx = onp.random.randint(0, len(X), num_seed_points)
+      #idx = onp.unique(idx)
+      X_train, y_train = X[idx], Y
+      indices_train = indices[idx]
+      X_test = jnp.delete(X, idx, axis = 0)
+      #y_test = jnp.delete(Y, idx)
+      indices_test = jnp.delete(indices, idx)
+      return X_train, y_train, X_test, indices_train, indices_test
+
+  def update_datapoints_exp(next_point_idx, train, test, y_new):
+      """Update "measured" dummy data points"""
+      X_train, y_train, indices_train = train
+      X_test, indices_test = test
+      X_train = jnp.append(X_train, X_test[next_point_idx][None], axis = 0)
+      X_test = jnp.delete(X_test, next_point_idx, axis = 0)
+      y_train = jnp.append(y_train, y_new[0])
+      #y_test = jnp.delete(y_test, next_point_idx)
+      indices_train = jnp.append(indices_train, next_point_idx)
+      indices_test = jnp.delete(indices_test, next_point_idx)
+      return (X_train, y_train, indices_train), (X_test, indices_test)
+
+  params = {"r_c": 1, "r_0": 1.5 , "V_c": 2}
+  #params = {"alpha": 1.1, "beta": .4}
+
+  d1 = 20
+  d2 = 20
+
+  V = jnp.linspace(1, 10, d1)
+  log_tau = jnp.linspace(-3, 2, d2)
+  V, log_tau = onp.meshgrid(V, log_tau)
+  X = grid2xy(V, log_tau)
+  y = model_data(X, params) + .4 * jra.normal(jra.PRNGKey(1), shape=(len(X),))
+  print ("Parameter space: ", X)
+
+
+|- ## Step 3. Generate random seedings
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  # Generate seed write parameters
+
+  onp.random.seed(5)
+  seed_step = 20
+
+  # random index
+  idx = []
+  onp.random.seed(10)
+
+  idx = onp.random.choice(len(y), size = seed_step, replace=False)
+
+  print(len(set(idx)))
+  idx = onp.asarray(idx)
+  indx = jnp.asarray(idx).tolist()
+  print(len(idx))
+
+  X_measured = X[idx]
+  y_measured = y[idx]
+  X_unmeasured = jnp.delete(X, idx, axis=0)
+
+  onp.save("seed_write_paras.npy", X_measured)  # send this to local
+
+Run on local PC
+
+Run below code on local PC.
+
+
+|- ## Step 4. Transferseeding parameters from GPU server to local PC via sftp
+
+
+|- ## Step 5. Load seed writing parameters
+
+  # load seed parameters from GPU-server
+  seed_paras_file = "/content/seed_write_paras.npy"
+  seed_write_paras = np.load(seed_paras_file)
+
+  # check seed parameters
+  print ("Seed Parameters: ", seed_write_paras)
+
+
+|- ## Step 6. Start seed measurements
+
+  seed_domain_size = []
+  for i in tqdm(range(len(seed_write_paras))):
+      #####################----------- Move tip to the pulse location -----------##################### 
+      newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1,
+                                           "next_x_pos_00": pulse_pos_x[i],
+                                           "next_y_pos_01": pulse_pos_y[i]},
+                         do_move_tip = True, do_set_setpoint = True)
+      time.sleep(0.2)
+    
+      #####################----------- Apply pulse -----------##################### 
+      # load pulse
+      V_amp = -seed_write_paras[0][i]
+      V_time_log = seed_write_paras[1][i]
+      V_time = math.pow(1o, V_time)
+      print ("Write Parameters: {} V, {} s".format(V_amp, V_time))
+    
+      # apply pulse
+      newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                    "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                    "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                    "pulse_repeats_06": 1},
+                                do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = False)
+      # 
+      time.sleep(1)
+      newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                    "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                    "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                    "pulse_repeats_06": 1},
+                                do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = True)
+      time.sleep(2)
+    
+      #####################----------- Do BEPFM to image domain -----------#####################
+      dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 64,
+                                                                             "scan_x_start": pulse_pos_x[i]-(img_size/2), 
+                                                                             "scan_y_start": pulse_pos_y[i]-(img_size/2),
+                                                                             "scan_x_stop": pulse_pos_x[i]+(img_size/2), 
+                                                                             "scan_y_stop": pulse_pos_y[i]+(img_size/2)},
+                                                        file_name = "HypoAl_Domain_Writing_{}".format(i), 
+                                                        progress_on = False, plot_on = False)
+      time.sleep(0.5)
+    
+      # Plot BEPFM images
+      f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+      ax1.imshow(dset_pfm[:,:,0])
+      ax2.imshow(dset_pfm[:,:,1])
+      ax3.imshow(dset_pfm[:,:,2])
+      ax4.imshow(dset_pfm[:,:,3])
+      ax5.imshow(dset_chns[0,:,:])
+      ax6.imshow(dset_chns[1,:,:])
+      plt.show()
+    
+      # Calculate domain size
+      pha = np.asarray(dset_pfm[:,:,3])
+      ds = domain_size (pha, 0.3)
+      seed_domain_size.append(ds)  # add domain size to list
+    
+  # Save seed domain size
+  np.save("seed_domain_size.npy", np.asarray(seed_domain_size)) # send this to GPU server
+
+Run on GPU server
+
+Run below code on GPU server.
+
+
+|- ## Step 7. Send seeding results to GPU server via sftp
+
+
+|- ## Step 8. Prepare seeding train data
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  y_measured = onp.load("seed_domain_size.npy")
+
+  (X_train, y_train, X_test, 
+   indices_train, indices_test) = init_training_data_exp(X, y_measured, list_of_indices = indx)
+
+  onp.savez("dataset_seed.npz", X_measured=X_train, y_measured=y_train, 
+            indices_measured=indices_train, X_unmeasured=X_test, indices_unmeasured=indices_test)
+  onp.savez("dataset.npz", X_measured=X_train, y_measured=y_train, 
+            indices_measured=indices_train, X_unmeasured=X_test, indices_unmeasured=indices_test)
+
+
+|- ## Step 9. Start Hypothesis Active Learning exploration
+
+  Please run this code @ GPU server
+  -------------------------------------------------------------------
+
+  exploration_step = 100
+  HOST = ''
+  PORT = 3446
+
+  # Bind to local PC
+  with MLSocket() as s:
+      s.bind((HOST, PORT))
+      s.listen()
+      conn, address = s.accept()
+      print("Bind successfully")
+      with conn:
+          # Warm-up phase
+          print('Warm-up starts')
+        
+          # HypoAl Starts
+          for i in range(exploration_steps):
+              %run sGP_AL_domains_v1b.py dataset.npz
+              next_point_idx = onp.load("next_idx.npy")
+              nextpoint = onp.asarray(indices_test[next_point_idx])
+              print ("Next measurement location is: ", nextpoint)
+            
+              # Send next point to local PC
+              time.sleep(0.01)
+              conn.send(nextpoint)
+              time.sleep(0.01)
+            
+              print ("Waiting for new experiment result")
+              # Accept new experiment results
+              written_domain_size = conn.recv(920)
+              time.sleep(0.01)
+            
+              # Update measured and unmeasured dataset
+              y_new = jnp.asarray([written_domain_size])
+              ((X_train, y_train, indices_train), (X_test, indices_test)) = update_datapoints_exp(
+                  next_point_idx, (X_train, y_train, indices_train), (X_test, indices_test), y_new)
+            
+              # Save results
+              onp.savez("dataset{}.npz".format(i), X_measured=X_train, y_measured=y_train,
+                        indices_measured=indices_train, X_unmeasured=X_test, indices_unmeasured=indices_test)
+              onp.savez("dataset.npz", X_measured=X_train, y_measured=y_train,
+                        indices_measured=indices_train, X_unmeasured=X_test, indices_unmeasured=indices_test)
+    
+              data = onp.load('dataset.npz')
+    
+              print (data['X_measured'], '\n', data['y_measured'], '\n', data['indices_measured'])
+              print (data['X_unmeasured'], '\n', data['indices_unmeasured'])
+        
+      # disconnet and shut down socket
+      conn.close()
+      s.shutdown(1)
+      s.close()
+
+Run on local PC
+
+Run below code on microscope computer.
+
+
+|- ## Step 10. Connect to GPU server and start hypothesis driven active learning measurements
+
+  exploration_step = 100
+  exploration_domain_size = []
+
+  HOST = 'localhost'
+  PORT = 9000
+
+  with MLSocket() as s:
+      s.connect((HOST, PORT))
+      for i in tqdm(range(exploration_step)):
+          #####################----------- Move tip to the pulse location -----------##################### 
+          measure_loc = len (seed_write_paras) + i
+          newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1,
+                                               "next_x_pos_00": pulse_pos_x[measure_loc],
+                                               "next_y_pos_01": pulse_pos_y[measure_loc]},
+                             do_move_tip = True, do_set_setpoint = True)
+          time.sleep(0.2)
+    
+          #####################----------- Apply pulse -----------##################### 
+          # receive the first write parameters from Sockets
+          write_paras = s.recv(920)
+          V_amp = write_paras[0]
+          V_time = math.pow(10, write_paras[1])
+    
+          # apply pulse
+          newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                        "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                        "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                        "pulse_repeats_06": 1},
+                                    do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = False)
+        
+          time.sleep(1)
+          newexp.define_apply_pulse(pulse_parms_dict = {"pulse_init_amplitude_V_00": 0, "pulse_mid_amplitude_V_01": V_amp,
+                                                        "pulse_final_amplitude_V_02": 0, "pulse_on_duration_s_03": V_time,
+                                                        "rise_time_s_05": 1E-4, "pulse_final_duration_s_04": 20E-3,
+                                                        "pulse_repeats_06": 1},
+                                    do_create_pulse = True, do_upload_pulse = True, do_apply_pulse = True)
+    
+          time.sleep(1)
+    
+           #####################----------- Do BEPFM to image domain -----------#####################
+          dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 64,
+                                                                                 "scan_x_start": pulse_pos_x[measure_loc]-(img_size/2),
+                                                                                 "scan_y_start": pulse_pos_y[measure_loc]-(img_size/2),
+                                                                                 "scan_x_stop": pulse_pos_x[measure_loc]+(img_size/2),
+                                                                                 "scan_y_stop": pulse_pos_y[measure_loc]+(img_size/2)},
+                                                            file_name = "Domain_Writing_{}".format(i), 
+                                                            progress_on = False, plot_on = False)
+          time.sleep(0.5)
+    
+          # Plot BEPFM images
+          f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+          ax1.imshow(dset_pfm[:,:,0])
+          ax2.imshow(dset_pfm[:,:,1])
+          ax3.imshow(dset_pfm[:,:,2])
+          ax4.imshow(dset_pfm[:,:,3])
+          ax5.imshow(dset_chns[0,:,:])
+          ax6.imshow(dset_chns[1,:,:])
+          plt.show()
+    
+    
+          # Calculate domain size
+          pha = np.asarray(dset_pfm[:,:,3])
+          ds = domain_size (pha, 0.3)
+    
+          # send domain size to GPU server
+          ds = np.asarray(ds)
+          time.sleep(0.01)
+          s.send(measured_point)
+          time.sleep(0.01)
+    
+          exploration_domain_size.append(ds)  # add domain size to list
+    
+      # Save seed domain size
+      np.save("exploration_domain_size.npy", np.asarray(exploration_domain_size))
+    
+      s.close()
+
+
+|- ## Step 11. Do a BEPFM at the whole experiment area
+
+  dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 256, "scan_x_start": -1.0,
+                                                                         "scan_y_start": -1.0,"scan_x_stop": 1.0,
+                                                                         "scan_y_stop": 1.0}, file_name = "pfm_whole")
+
+  f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+  ax1.imshow(dset_pfm[:,:,0])
+  ax2.imshow(dset_pfm[:,:,1])
+  ax3.imshow(dset_pfm[:,:,2])
+  ax4.imshow(dset_pfm[:,:,3])
+  ax5.imshow(dset_chns[0,:,:])
+  ax6.imshow(dset_chns[1,:,:])
+  plt.show()
+
+
+|- # Ensemble ResNet for in-situ Spectroscopy
+
+\(_{Yongtao}\) \(_{Liu,}\) \(_{liuy3@ornl.gov}\)
+
+\(_{July}\) \(_{2023}\)
+
+
+|- ## Install and Import
+
+  import os
+  import win32com.client
+  import numpy as np
+  import time
+  import h5py
+  import sidpy
+  import pyNSID
+  import matplotlib.pyplot as plt
+  from tqdm import tqdm
+  import atomai as aoi
+
+  from scipy.ndimage import gaussian_filter
+  from IPython.display import clear_output
+  from skimage.morphology import skeletonize
+  from sklearn.metrics import euclidean_distances
+
+
+  # import acquition.py
+  from Acquisition_v0_6 import Acquisition   # include the Acquistion_v0.py in the same directory
+
+
+|- ## Start BEPyAE.exe and set VI
+
+• Start BEPyAE.ext
+• Set VI of BEPyAE; if this version includes PyScanner, also set VIs for PyScanner
+
+  newexp = Acquisition(exe_path = r"G:\My Drive\AE\PyAE\BEPyAE 060123 01\BEPyAE.exe")   # exe_path is the directory of BEPyAE;
+
+
+|- ## Initialize Igor AR18
+
+• Set offline development
+• Build a connection between BEPyAE and AR18
+• Get parameters in AR18
+
+  newexp.init_BEPyAE(offline_development = True) # set offline_development=True if doing offline development
+                                                  # executing this will also initlize AR18
+
+
+|- ## Set tip parameters
+
+• set setpoint, tip locations
+
+  newexp.tip_control(tip_parms_dict = {"set_point_V_00": 1, "next_x_pos_00": -0.5, "next_y_pos_01": 0.5},
+                     do_move_tip = True, 
+                     do_set_setpoint = True) # Executing this code will set setpoint to 1 V, 
+                                             # and move tip to location [0.5, 0.5]
+
+  Setpoint is:  1.0
+  Tip parameters are:  (-0.5, 0.5, 0.5)
+  Please reset if some parameters are incorrect
+
+
+|- ## Set IO
+
+This defines IO parameters, such as AFM platform: AR18, amplifiers, channel data types, etc
+
+  newexp.define_io_cluster(IO_cluster_parms_dict = {"analog_output_amplifier_06": 1, 
+                                                    "channel_01_type_07": 1, 
+                                                    "channel_02_type_08": 2,"channel_03_type_09": 3,})
+
+  IO control parameters are:  ('0 Cypher AR18', '6124', 4000000.0, 10.0, 10.0, 'AC and DC on AO0', 10.0, 'topography', 'current', 'aux', 'external')
+  Please reset if some parameters are incorrect
+
+
+|- ## Set BE pulse parameters
+
+  # set BE parameters
+  newexp.define_be_parms(be_parms_dict = {"center_frequency_Hz_00": 335, "band_width_Hz_01": 100,
+                                         "amplitude_V_02": 1, "phase_variation_03": 1,
+                                         "repeats_04": 4, "req_pulse_duration_s_05": 4,
+                                         "auto_smooth_ring_06": 1}, 
+                        do_create_be_waveform = True)
+
+  BE parameters are:  (335000.0, 100000.0, 1.0, 1.0, 4, 0.004, 1, 3352.2952763920002, 0.12159459061880915)
+  Please reset if some parameters are incorrect
+
+  (335000.0,
+   100000.0,
+   1.0,
+   1.0,
+   4,
+   0.004,
+   1,
+   3352.2952763920002,
+   0.12159459061880915)
+
+
+|- ## BE Line scan to test BE parameters
+
+• This is a single BE line scan
+• This returns 5 datasets: quick_fitting, complex spectra, and 3 channels
+
+  # Do a single line scan
+  qk_fit, com_spec, chn1, chn2, chn3 = newexp.do_line_scan(line_scan_parms_dict = {"num_BE_pulses_01": 32,
+                                                                                   "start_x_pos_00": -0.5, "start_y_pos_01": 0,
+                                                                                   "stop_x_pos_02": 0.5, "stop_y_pos_03": 0},
+                                                           upload_to_daq = True, do_line_scan = True)
+
+  voltage offset and number of BE pulse are:  (0.0, 32)
+  line scan start and end positions:  (-0.5, 0.0, 0.5, 0.0)
+
+
+|- # Experiment Starts
+
+
+|- ## Prior to expeirment, set a directory for saving data
+
+  os.chdir("/content/save directory/")
+
+  ---------------------------------------------------------------------------
+  FileNotFoundError                         Traceback (most recent call last)
+  ~\AppData\Local\Temp/ipykernel_25324/3425510952.py in <module>
+  ----> 1 os.chdir("/content/save directory/")
+
+  FileNotFoundError: [WinError 3] The system cannot find the path specified: '/content/save directory/'
+
+
+|- ## Step 1. Perform an image measurement, e.g., BEPFM
+
+  dset_pfm, dset_chns, dset_cs = newexp.raster_scan(raster_parms_dict = {"scan_pixel": 256, "scan_x_start": -1.0,
+                                                                         "scan_y_start": -1.0,"scan_x_stop": 1.0,
+                                                                         "scan_y_stop": 1.0}, file_name = "BEPFM")
+
+  f, (ax1, ax2, ax3, ax4, ax5, ax6) = plt.subplots(1, 6, figsize = (30, 5), dpi = 100)
+  ax1.imshow(dset_pfm[:,:,0])
+  ax2.imshow(dset_pfm[:,:,1])
+  ax3.imshow(dset_pfm[:,:,2])
+  ax4.imshow(dset_pfm[:,:,3])
+  ax5.imshow(dset_chns[0,:,:])
+  ax6.imshow(dset_chns[1,:,:])
+  plt.show()
+
+  20 locations are ready for experiments
+
+
+|- ## Step 2. Pick the image channel involving the target objects
+
+  # Load target image
+  target_raw = dset_pfm[:,:,0]
+  target_raw = np.copy(target_raw)
+  # normalize target_img
+  target_raw = (target_raw-target_raw.min())/(target_raw.ptp())
+
+
+|- ## Step 3. Pre-trained ResNet idenfies target objects
+
+  # Load pre-trained ResNet weights
+  smodel, ensemble= aoi.models.load_ensemble("MHP_Grainboundry_ensemble_metadict.tar")
+
+  # Prediction
+  predictor = aoi.predictors.EnsemblePredictor(smodel, ensemble, nb_classes=1)
+  pred_mean, pred_var = predictor.predict(obtained_amp)
+  target_object = pred_mean.squeeze()
+  target_uncertainty = pred_var.squeeze()
+    
+  # Plot prediction and uncertainty
+  f,(ax0, ax1, ax2) = plt.subplots(1, 3, dpi = 100)
+  ax0.imshow(target_img)
+  ax0.axis ('off')
+  ax0.set_title('Raw Image')
+  ax1.imshow(target_object, cmap = 'gray')
+  ax1.axis('off')
+  ax1.set_title('Prediction')
+  ax2.imshow(target_uncertainty, cmap = 'gray')
+  ax2.axis('off')
+  ax2.set_title('Uncertainty')
+  plt.show()
+
+
+|- ## Step 4. Extract coordinates of target objects
+
+  # convert the target object image to a binary image
+  _, target_object_binary = cv2.threshold(target_object, 0.4, 1, cv2.THRESH_BINARY)
+  # skeletonzie the lines to avoide duplicated coordinates corresponding to the same object
+  target_object_img = skeletonize(target_object_binary==1)
+
+  # plot binary image and skeletonize image
+  _, (ax1, ax2) = plt.subplots(1, 2, dpi = 100)
+  ax1.imshow(target_object_binary, origin = 'lower')
+  ax1.set_title("Binary")
+  ax1.set_axis("off")
+  ax2.imshow(target_object_img, origin = 'lower')
+  ax2.set_title("Skeletonize")
+  ax2.set_axis("off")
+
+  # Obtain all target coordinates
+  target_coordinates = np.asarray(np.where(target_object_img==1)).T 
+
+  # Rearange the coordinates to make the route along the object
+  # start at the default first location, ususally this is the lcoation near the bottom left corner
+  current_location = np.zeros((1,2))
+  current_location[:,] = target_coordinates[0,] 
+
+  pristine_route = np.copy(target_coordinates[1:,])
+  new_route = np.copy(current_location)
+
+  while len(pristine_route) != 0:  # Iterate until move all coordiantes in prisinte route to new route
+      dist = euclidean_distances(current_location,pristine_route) 
+      next_location = np.asarray(np.where(dist==dist.min())) # The next location is the one closest to the current location
+      current_location [:,] = route[next_location[-1][-1]] # Update current location as the next location
+      new_route = np.append (new_route, current_location, 0) # Append next location to the new route
+      pristine_route = np.delete(pristine_route, next_loccation[:][1], 0) # Remove this locaiton from the prinstine route
+  
+  ## Plot the new route
+  plt.figure(dpi = 100)
+  c = np.arange (len(new_route[:,0]))
+  plt.scatter(new_route[:,1], new_route[:,0], c = c, cmap = "jet")
+  plt.show()
+  print("Total locations are: ", len(new_route[:,0]))
+
+  # In some cases, it is not necessary to measure all target locations, so we can skip some.
+  skip_every = 5
+  skip_index = np.arange(0, len(new_route[:,0]), skip_every)  
+  measure_coordinates = new_route[skip_index]  # skip every 'skip_every' step to create a measurement coordiantes 
+
+  plt.figure(dpi = 100)
+  c = np.arange(len(measure_coordinates[:,0]))
+  plt.scatter(measure_coordinates[:,1], measure_coordinates[:,0], c = c, cmap = "jet")
+  plt.show()
+  print ("Total measurement locations are: ", len(measure_coordinates[:,0]))
+
+
+|- ## Step 5. Perform pre-planned measurements (e.g., BEPS) at target locations
+
+  # Convert image coordinates to parameters for probe location
+  measure_locations = newexp.convert_coordinates(measure_coordinates)
+
+  measure_steps = len(measure_coordinates[:,0])
+
+  for i in tqdm(range (measure_steps)):
+      print("Step {}/{}".format(i, measure_steps))
+    
+      # Measurement location
+      next_coordinate = measure_locations[i]
+    
+      # Do measurement
+      newexp.do_beps(measure_locations)
+      clear_output()
+
+
+|- ## Step 6. Save all results as an h5 file
+
+  hf = h5py.File("Processing_Result", 'a')
+  hf['Images/Raw'] = np.asarray(target_raw)
+  hf['Images/Prediction'] = np.asarray(target_object)
+  hf['Images/Uncertainty'] = np.asarray(target_uncertainty)
+  hf['Images/Binary Object'] = np.asarray(object_binary)
+  hf['Images/Skeletonize Object'] = np.asarray(target_object_img)
+  hf['Coordinates/Target'] = np.asarray(target_coordinates)
+  hf['Coordinates/Rearange'] = np.asarray(new_route)
+  hf['Coordinates/Measure'] = np.asarray(measure_coordinates)
+  hf['Coordinates/Convert'] = np.asarray(measure_locations)
+
+
+|- # About User Contribution
+
+We will include users contributed workflows in this chapter. stay tuned.
+
+
+|- # Publications
+
+List of publications of automated and autonomous microscopy that take advantage of AEcroscopy or can be done with AEcroscopy.
+
+1. Liu, Yongtao, et al. “Disentangling electronic transport and hysteresis at individual grain boundaries in hybrid perovskites via automated scanning probe microscopy.” ACS nano (2023). (https://pubs.acs.org/doi/full/10.1021/acsnano.3c03363)
+2. Biswas, Arpan, et al. “A dynamic Bayesian optimized active recommender system for curiosity-driven Human-in-the-loop automated experiments.” arXiv preprint arXiv:2304.02484 (2023). (https://arxiv.org/abs/2304.02484)
+3. Liu, Yongtao, et al. “Learning the right channel in multimodal imaging: automated experiment in piezoresponse force microscopy.” npj Computational Materials 9.1 (2023): 34. (https://www.nature.com/articles/s41524-023-00985-x)
+4. Liu, Yongtao, et al. “Exploring the Relationship of Microstructure and Conductivity in Metal Halide Perovskites via Active Learning-Driven Automated Scanning Probe Microscopy.” The Journal of Physical Chemistry Letters 14.13 (2023): 3352-3359. (https://pubs.acs.org/doi/full/10.1021/acs.jpclett.3c00223)
+5. Liu, Yongtao, et al. “Autonomous scanning probe microscopy with hypothesis learning: Exploring the physics of domain switching in ferroelectric materials.” Patterns 4.3 (2023). (https://www.cell.com/patterns/pdf/S2666-3899(23)00041-7.pdf)
+6. Liu, Yongtao, et al. “Experimental discovery of structure–property relationships in ferroelectric materials via active learning.” Nature Machine Intelligence 4.4 (2022): 341-350. (https://www.nature.com/articles/s42256-022-00460-0)
+7. Ziatdinov, Maxim A., et al. “Hypothesis learning in automated experiment: application to combinatorial materials libraries.” Advanced Materials 34.20 (2022): 2201345. (https://onlinelibrary.wiley.com/doi/full/10.1002/adma.202201345)
+8. Liu, Yongtao, et al. “Exploring physics of ferroelectric domain walls in real time: deep learning enabled scanning probe microscopy.” Advanced Science 9.31 (2022): 2203957. (https://onlinelibrary.wiley.com/doi/10.1002/advs.202203957)
+9. Liu, Yongtao, et al. “Exploring leakage in dielectric films via automated experiments in scanning probe microscopy.” Applied Physics Letters 120.18 (2022). (https://pubs.aip.org/aip/apl/article/120/18/182903/2833638)
+10. Vasudevan, Rama K., et al. “Autonomous experiments in scanning probe microscopy and spectroscopy: choosing where to explore polarization dynamics in ferroelectrics.” ACS nano 15.7 (2021): 11253-11262. (https://pubs.acs.org/doi/full/10.1021/acsnano.0c10239)
+

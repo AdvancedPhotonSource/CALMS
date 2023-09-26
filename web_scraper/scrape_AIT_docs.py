@@ -13,17 +13,20 @@ requests_cache.install_cache(
 )
 
 
-url = 'https://docs.alcf.anl.gov/ai-testbed/'
+url = 'https://yongtaoliu.github.io/aecroscopy.pyae/welcome_intro.html'
+navigator_selector = 'div.bd-sidebar'
+article_selector = 'article.bd-article'
 
 baseurl = urljoin(url, '.')
 
-savedir = 'DOC_STORE/ALCF-Docs'
+savedir = 'DOC_STORE/AIT-Docs'
 Path(f'./{savedir}').mkdir(exist_ok=True)
 
 today = date.today()  # .strftime("%Y-%b%d")
 
 
 # -------- start scraping ----------
+
 
 def download(link, selection):
     print(f'scraping {link}')
@@ -33,13 +36,13 @@ def download(link, selection):
     return response, page, content
 
 
-response, index_page, content = download(url, 'div.md-container')
+response, index_page, content = download(url, navigator_selector)
 
 if response.from_cache:
     print('[ WARNING: page requested from cache ]\n')
 
 title = index_page.title.string
-out = open(f"{savedir}/{title.replace(' ','_')}.txt", 'w')
+out = open(f"{savedir}/{title.replace(' ','_')}.txt", 'w', encoding='utf-8')
 
 
 def write(text):
@@ -92,7 +95,6 @@ def get_text_with_link(tag, newline=2, baseurl=baseurl):
 
 
 def format_table(tag):
-
     # extract text from cell and max width of columns
     trs = [tr.find_all(['td', 'th']) for tr in tag.find_all('tr')]
     ws = [0] * len(trs[0])
@@ -123,13 +125,11 @@ def format_table(tag):
 
 
 def format_list(tag, baseurl):
-
     list_str = ''
     levels = [0]
     items = tag.find_all(['li'])
 
     for item in items:
-
         current_level = len(item.find_parents(['ul', 'ol'])) - 1
 
         # remove sublist
@@ -163,15 +163,17 @@ def format_list(tag, baseurl):
 
 
 def read(content, base=baseurl, hlevel=0):
+    if content is None:
+        # TODO: this happened when scarping ipynb, nbconvert can do ipynb to html
+        return
 
     for tag in content.descendants:
-
         name = str(tag.name)
 
         if name != 'a' and base == baseurl:
             continue
 
-        if name[0] == 'h':
+        if name[0] == 'h' and tag.contents:
             heading = tag.contents[0].string
             pgindent = ('\n|' + '-' * hlevel + ' ') * (hlevel > 0)
             yield pgindent + '#' * int(name[1:]) + f" {heading}\n\n"
@@ -198,7 +200,6 @@ def read(content, base=baseurl, hlevel=0):
             else:
                 yield f"  <image {imgfile}: {tag['class']}>\n\n"
 
-
         elif name in ('ul', 'ol'):
             if tag.parent.name in ('li',):
                 continue
@@ -210,17 +211,13 @@ def read(content, base=baseurl, hlevel=0):
             yield table_str + '\n\n' * bool(table_str)
 
         elif name == 'a':
-
             href = format_link(tag, baseurl=base)
             is_internal_link = href.startswith(baseurl)
-            
-            is_testbed_link = (href.find('ai-testbed') >= 0) and (href.find('files') < 0)
-            is_html = Path(href).suffix[:4] == '.htm'
+            # is_html = Path(href).suffix[:4] == '.htm'
 
             # scrap internal links only
-            if is_internal_link and is_testbed_link and href not in visited:
-                
-                response, page, content = download(href, 'div.md-content')
+            if is_internal_link and href not in visited:
+                response, page, content = download(href, article_selector)
                 if response.status_code != 200:
                     yield f"<{href}> (cannot access)\n\n"
                     continue
