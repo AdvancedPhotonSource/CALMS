@@ -1,6 +1,6 @@
 #Run logs
 logs/
-log.txt
+*log.txt
 
 #Doc stores
 #DOC_STORE/

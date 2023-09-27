@@ -31,7 +31,7 @@ anl_llm_debug_fp = 'anl_outputs.log'
 #Embedding model parameters
 
 #Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
-embed_type = 'anl'
+embed_type = llm_type # Can be different from llm_type
 check_model_type(embed_type)
 anl_embed_url_path = 'keys/ANL_EMBED_URL'
 
