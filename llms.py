@@ -136,3 +136,89 @@ def init_facility_qa(embeddings, params):
     print ("Finished embedding documents")
 
     return docsearch
+
+def write_list(all_texts):
+    with open(params.pdf_text_path+'/pdf.txt', 'w') as file:
+        for text in all_texts:
+            file.write(text.page_content + '\n')
+    file.close()
+
+"""
+===========================
+NER Functionality
+===========================
+"""
+
+import spacy
+
+nlp = spacy.load('en_core_web_lg')
+
+def get_subject(doc): #Extract subject
+    for token in doc:
+        if ("subj" in token.dep_):
+            subtree = list(token.subtree)
+            start = subtree[0].i
+            end = subtree[-1].i + 1
+            return doc[start:end]
+
+def get_object(doc): #Extract object
+    for token in doc:
+        if ("dobj" in token.dep_):
+            subtree = list(token.subtree)
+            start = subtree[0].i
+            end = subtree[-1].i + 1
+            return doc[start:end]
+
+def extract_proper_nouns(doc): #Extract proper nouns
+    pos = [tok.i for tok in doc if tok.pos_ == "PROPN"]
+    consecutives = []
+    current = []
+    for elt in pos:
+        if len(current) == 0:
+            current.append(elt)
+        else:
+            if current[-1] == elt - 1:
+                current.append(elt)
+            else:
+                consecutives.append(current)
+                current = [elt]
+    if len(current) != 0:
+        consecutives.append(current)
+    return [doc[consecutive[0]:consecutive[-1]+1] for consecutive in consecutives]
+
+
+def ner_hits(query): #Extract subject, object and NER strings
+
+    doc = nlp(query)
+    nouns = extract_proper_nouns(doc)
+    subject = get_subject(doc)
+    object = get_object(doc)
+
+    all_nouns = []
+    if nouns is not None:
+        nouns = [noun.text.strip() for noun in nouns] #Spacy object to string
+        for noun in nouns: 
+            if len(noun)>params.min_NER_length: all_nouns.append(noun)
+
+    if subject is not None:
+        subject = subject.text.strip()
+    else : subject = ""
+
+    if object is not None:
+        object = object.text.strip()
+    else : object = ""
+        
+    print("Subject:", subject)
+    print("Object:", object)
+    print("Proper Nouns", all_nouns)
+
+    uniques = list(set(all_nouns + [subject] + [object])) #Merge unique elements
+    print ("Merged NER list: ", uniques)
+
+    uniques = list(filter(lambda i: len(i) >= params.min_NER_length , uniques))
+    print ("Filtered NER list: ", uniques) #Only consider NERs > a set length
+    
+    return uniques
+
+
+    

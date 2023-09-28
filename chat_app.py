@@ -1,8 +1,10 @@
-import os, time, shutil
-import params, dfrac_tools, llms
+import os, time, shutil, subprocess
+import params
 
 if params.set_visible_devices and params.llm_type=='hf':
     os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
+
+import dfrac_tools, llms
 
 import torch
 
@@ -24,8 +26,11 @@ print("Using %d GPUs" %torch.cuda.device_count())
 
 #Cleanups
 gr.close_all() #Close any existing open ports
-if os.path.exists(params.pdf_path):
-    shutil.rmtree(params.pdf_path) 
+if os.path.exists(params.pdf_path): #Remove any PDF embeddings
+    shutil.rmtree(params.pdf_path)
+if os.path.exists(params.pdf_text_path): #Remove any raw PDF text
+    shutil.rmtree(params.pdf_text_path)
+os.mkdir(params.pdf_text_path)
 
 
 def init_local_llm(params):
@@ -104,6 +109,8 @@ AI:"""
 
     #Method to find text with highest likely context
     def _get_context(self, query, doc_store):
+
+        # Context retrieval from embeddings
         docs = doc_store.similarity_search_with_score(query, k=params.N_hits)
         #Get context strings
         context=""
@@ -114,7 +121,30 @@ AI:"""
                 print (i+1, len(docs[i][0].page_content), docs[i][1], docs[i][0].page_content)
             else:
                 print ("\n\nIGNORING CONTENT of score %.2f" %docs[i][1],len(docs[i][0].page_content), docs[i][0].page_content)
-                
+
+        #Context retrieval from NER
+        ners = llms.ner_hits(query) #Get unique named entities of > some length from query
+        ner_hits = []
+
+        for ner in ners: #Grep NEs from raw text
+            try: 
+                hit = subprocess.check_output("grep -r -i -h '%s' DOC_STORE/" %ner, shell=True).decode()
+                hits = hit.split("\n") #split all the grep results into indiv strings
+                ner_hits.extend(hits)
+            except subprocess.CalledProcessError as err:
+                if err.returncode > 1:
+                    print ("No hits found for: ", ner) 
+                    continue
+                #Exit values: 0 One or more lines were selected. 1 No lines were selected. >1 An error occurred.
+        #print ("NERs", ner_hits)
+
+        ner_hits.sort(key=len, reverse=True) #Sort by length of hits
+        #print ("Sorted NERs", ner_hits)
+
+        for i in range(min(params.N_NER_hits, len(ner_hits))):
+            print ("Selected NER hit %d : " %i, ner_hits[i])
+            context += ner_hits[i]
+
         return context
     
     
@@ -160,6 +190,7 @@ class PDFChat(Chat):
             text_splitter = llms.init_text_splitter()
             texts = text_splitter.split_documents(documents)
             all_pdfs += texts
+        llms.write_list(all_pdfs) #Write raw split text to file
         embed_path = params.pdf_path
         db = Chroma.from_documents(all_pdfs, self.embedding, #metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
             persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
