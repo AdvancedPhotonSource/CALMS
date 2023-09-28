@@ -43,7 +43,7 @@ class AnlLLM(LLM, extra=Extra.allow):
         else:
             stop_param = stop
         
-        req_obj = {'user':'APS', 'prompt':[prompt], "stop":stop_param}
+        req_obj = {'user':'APS', 'model':params.anl_llm_model, 'prompt':[prompt], "stop":stop_param}
         result = requests.post(self.anl_url, json=req_obj)
 
         response = result.json()['response']
@@ -86,12 +86,12 @@ class ANLEmbeddingModel(Embeddings):
         return output_embeds
     
     def _query_api_multiple(self, texts: List[str]):
-        req_obj = {'user':'APS', 'prompt':texts, 'stop':[]}
+        req_obj = {'user':'APS', 'model':'', 'prompt':texts, 'stop':[]}
         result = requests.post(self.embed_url, json=req_obj)
         return result.json()['embedding']
     
     def _query_api_single(self, text: str):
-        req_obj = {'user':'APS', 'prompt':[text], 'stop':[]}
+        req_obj = {'user':'APS', 'model':'', 'prompt':[text], 'stop':[]}
         result = requests.post(self.embed_url, json=req_obj)
         return result.json()['embedding'][0]
 

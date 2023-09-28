@@ -26,6 +26,8 @@ seq_length = seq_lengths[model_name]
 anl_llm_url_path = 'keys/ANL_LLM_URL'
 anl_llm_debug = True
 anl_llm_debug_fp = 'anl_outputs.log'
+# One of: gpt35, gpt35large, gpt4, gpt4large
+anl_llm_model = 'gpt35large' 
 
 
 #Embedding model parameters
@@ -39,7 +41,7 @@ embedding_model_name =   "all-mpnet-base-v2" #Highest scoring all-round, does 28
 chunk_size = 1024 #Size of chunks to break the text store into
 chunk_overlap = 128 #How much overlap between chunks
 
-init_docs = True #Recompute embeddings?
+init_docs = False #Recompute embeddings?
 if embed_type == 'anl' and init_docs:
     input('WARNING: WILL INIT ALL DOCS WITH OPENAI EMBEDS. Press enter to continue')
 
