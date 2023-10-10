@@ -8,8 +8,12 @@ from langchain.callbacks.manager import (
     CallbackManagerForToolRun,
 )
 import pexpect
+import params
 
 MP_API_KEY = open('keys/MP_API_KEY').read().strip()
+
+if params.spec_init:
+    SPEC_SESSION = pexpect.spawn("sixc", timeout=3)
 
 
 def get_lattice(material: str):
@@ -28,8 +32,49 @@ def set_diffractometer(a: float, b: float, c: float,
     if len(peak) != 3:
         return "Peak parameters were incorrect. Instrument was NOT set"
 
+    spec_lattice = [a, b, c, alpha, beta, gamma]
+
+    print('DEBUG: Setting lattice parameters to:')
     print(a, b, c, alpha, beta, gamma)
     print(peak[0], peak[1], peak[2])
+    input('Press Enter to Continue')
+
+    if params.spec_init:
+        SPEC_SESSION.sendline("setlat")
+        SPEC_SESSION.expect("real space lattice")
+        SPEC_SESSION.readline()
+        # lats has 6 numbers, a,b,c,alf,bet,gam                                                                        
+        for i in range(6):
+            SPEC_SESSION.sendline("{0}".format(spec_lattice[i]))
+            SPEC_SESSION.readline().decode()
+
+        wh_output = []
+        SPEC_SESSION.sendline("p U")
+        while(1):
+            try:
+                wh_output.append(SPEC_SESSION.readline().decode())
+            except:
+                break 
+        print(' '.join(wh_output))
+
+        wh_output = []
+        SPEC_SESSION.sendline(f"ubr {peak[0]} {peak[1]} {peak[2]}")
+        while(1):
+            try:
+                wh_output.append(SPEC_SESSION.readline().decode())
+            except:
+                break 
+        print(' '.join(wh_output))
+
+        wh_output = []
+        SPEC_SESSION.sendline("wh")
+        while(1):
+            try:
+                wh_output.append(SPEC_SESSION.readline().decode())
+            except:
+                break 
+        print(' '.join(wh_output))
+
 
     return "Diffractometer Set"
 
