@@ -20,6 +20,9 @@ class AnlLLM(LLM, extra=Extra.allow):
 
         self.debug = params.anl_llm_debug 
         self.debug_fp = params.anl_llm_debug_fp
+
+        self.temperature = 0.9
+        self.top_p = 0.1
         
         with open(params.anl_llm_url_path, 'r') as url_f:
             self.anl_url = url_f.read().strip()
@@ -43,8 +46,14 @@ class AnlLLM(LLM, extra=Extra.allow):
         else:
             stop_param = stop
         
-        req_obj = {'user':'APS', 'model':params.anl_llm_model, 'prompt':[prompt], "stop":stop_param}
+        req_obj = {'user': 'APS', 
+                   'model': params.anl_llm_model, 
+                   'prompt': [prompt], 
+                   'stop': stop_param, 
+                   'temperature': self.temperature,
+                   'top_p': self.top_p}
         result = requests.post(self.anl_url, json=req_obj)
+        print(result)
 
         response = result.json()['response']
 
