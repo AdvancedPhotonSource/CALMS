@@ -4,7 +4,7 @@ def check_model_type(model):
 
 # Env settings -- used for local model (hf)
 set_visible_devices = True
-visible_devices = '1,2,3'
+visible_devices = '1'
 
 #LLM parameters
 

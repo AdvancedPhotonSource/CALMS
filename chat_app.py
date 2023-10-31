@@ -341,8 +341,7 @@ def main_interface(params, llm, embeddings):
                 gr.HTML(title)
             
             with gr.Column():
-                pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
-                #repo_id = gr.Dropdown(label="LLM", choices=["eachadea/vicuna-13b-1.1", "bigscience/bloomz"], value="eachadea/vicuna-13b-1.1")
+                pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="filepath", file_count = 'multiple')
                 with gr.Row():
                     langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
                     load_pdf = gr.Button("Load PDF")
