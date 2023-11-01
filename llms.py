@@ -49,11 +49,11 @@ class AnlLLM(LLM, extra=Extra.allow):
         req_obj = {'user': 'APS', 
                    'model': params.anl_llm_model, 
                    'prompt': [prompt], 
+                   'system': "",
                    'stop': stop_param, 
                    'temperature': self.temperature,
                    'top_p': self.top_p}
         result = requests.post(self.anl_url, json=req_obj)
-        print(result)
 
         response = result.json()['response']
 
