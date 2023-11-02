@@ -24,6 +24,8 @@ seq_length = seq_lengths[model_name]
 anl_llm_url_path = 'keys/ANL_LLM_URL'
 anl_llm_debug = True
 anl_llm_debug_fp = 'anl_outputs.log'
+# One of: gpt35, gpt35large, gpt4, gpt4large
+anl_llm_model = 'gpt35large' 
 
 
 #Embedding model parameters

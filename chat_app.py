@@ -278,7 +278,7 @@ def main_interface(params, llm, embeddings):
         if params.llm_type == 'hf':
             model_descr = f"local model: {params.model_name}"
         elif params.llm_type == 'anl':
-            model_descr = f"ANL Hosted Model (OpenAI)"
+            model_descr = f"ANL Hosted Model [{params.anl_llm_model}] (OpenAI)"
         else:
             model_descr = "Error! Unknown model"
 
