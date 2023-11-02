@@ -341,7 +341,7 @@ def main_interface(params, llm, embeddings):
                 gr.HTML(title)
             
             with gr.Column():
-                pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="filepath", file_count = 'multiple')
+                pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
                 with gr.Row():
                     langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
                     load_pdf = gr.Button("Load PDF")
