@@ -394,7 +394,7 @@ def main_interface(params, llm, embeddings):
         """
         )
     demo.queue()
-    demo.launch(server_name="0.0.0.0", server_port=params.port)
+    demo.launch(server_name="0.0.0.0", server_port=params.port, ssl_verify=False)
 
 
 if __name__ == '__main__':
