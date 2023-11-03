@@ -4,17 +4,15 @@ def check_model_type(model):
 
 # Env settings -- used for local model (hf)
 set_visible_devices = True
-visible_devices = '1,2,3'
+visible_devices = '1'
 
 #LLM parameters
 
 #Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
-llm_type = 'anl'
+llm_type = 'hf'
 check_model_type(llm_type)
 
 # hf params
-#model_name = "eachadea/vicuna-13b-1.1"
-#model_name = "lmsys/vicuna-13b-v1.3"
 model_name = "lmsys/vicuna-13b-v1.5-16k"
 tokenizer_path = "./tokenizer/%s" %model_name.split("/")[1]
 
@@ -48,7 +46,8 @@ if embed_type == 'anl' and init_docs:
 overwrite_embeddings = True #Overwrite embeddings if already exist? -- will raise val error of init_docs is True and this is not
 N_hits = 4 #How many hits of context to provide?
 similarity_cutoff = 1.4 #Ignore context hits greater than this distance away. Empirical number.
-
+N_NER_hits = 2 #How many NER hits to provide
+min_NER_length = 5 #Only consider entities > 5 characters
 
 #List of folders to add to doc store
 doc_paths = ["DOC_STORE/APS-Science-Highlight", 
@@ -56,7 +55,9 @@ doc_paths = ["DOC_STORE/APS-Science-Highlight",
              "DOC_STORE/ALCF-Docs",
              "DOC_STORE/AIT-Docs",
              "DOC_STORE/CNM-Docs",
-             "DOC_STORE/CNM-Science-Highlight"]
+             "DOC_STORE/CNM-Science-Highlight"
+            ]
+pdf_text_path = "DOC_STORE/PDFs" #Store raw text from PDF for NER
 
 
 #Embedding paths

@@ -3,7 +3,7 @@ import spacy
 nlp = spacy.load('en_core_web_lg')
 
 #sentences=["The big black cat stared at the small dog.", "Jane watched her brother in the evenings."]
-sentences=["Who is the APS director?", "Who is Jonathan Lang?", "What is AEcroscopy?", "How can I perform a spiral scan using AEcroscopy?", "How can I perform spectroscopy using AEcroscopy? What are the available options?"]
+sentences=["Who is the APS director?", "Who is Jonathan Lang?", "What is AEcroscopy and CNMS?", "How can I perform a spiral scan using AEcroscopy?", "How can I perform spectroscopy using AEcroscopy? What are the available options?"]
 
 def get_subject_phrase(doc):
     for token in doc:
@@ -63,7 +63,25 @@ for sentence in sentences:
     nouns = extract_proper_nouns(doc)
     subject_phrase = get_subject_phrase(doc)
     object_phrase = get_object_phrase(doc)
-    print("Subject:", subject_phrase)
-    print("Object:", object_phrase)
-    print("Nouns", nouns)
+
+    if nouns is not None:
+        nouns = [noun.text.strip() for noun in nouns]
+        for noun in nouns:
+            print("Nouns", noun, len(noun))
+
+    if subject_phrase is not None:
+        subject_phrase = subject_phrase.text.strip()
+        print("Subject:", subject_phrase, len(subject_phrase))
+    else : subject_phrase = ""
+
+    if object_phrase is not None:
+        object_phrase = object_phrase.text.strip()
+        print("Object:", object_phrase, len(object_phrase))
+    else : object_phrase = ""
+
+    uniques = list(set(nouns + [subject_phrase] + [object_phrase]))
+    print ("Merged list: ", uniques)
+    uniques = list(filter(lambda i: len(i) >= 5 , uniques))
+    print ("Filtered list: ", uniques)
+
 
