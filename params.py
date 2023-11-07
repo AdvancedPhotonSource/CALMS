@@ -50,14 +50,15 @@ N_NER_hits = 2 #How many NER hits to provide
 min_NER_length = 5 #Only consider entities > 5 characters
 
 #List of folders to add to doc store
-doc_paths = ["DOC_STORE/APS-Science-Highlight", 
-             "DOC_STORE/APS-Docs", 
-             "DOC_STORE/ALCF-Docs",
-             "DOC_STORE/AIT-Docs",
-             "DOC_STORE/CNM-Docs",
-             "DOC_STORE/CNM-Science-Highlight"
+doc_path_root = "DOC_STORE"
+doc_paths = ["%s/APS-Science-Highlight" %doc_path_root, 
+             "%s/APS-Docs" %doc_path_root, 
+             "%s/ALCF-Docs" %doc_path_root,
+             "%s/AIT-Docs" %doc_path_root,
+             "%s/CNM-Docs" %doc_path_root,
+             "%s/CNM-Science-Highlight" %doc_path_root
             ]
-pdf_text_path = "DOC_STORE/PDFs" #Store raw text from PDF for NER
+pdf_text_path = "%s/PDFs"  %doc_path_root#Store raw text from PDF for NER
 
 
 #Embedding paths

@@ -25,12 +25,16 @@ print("Device:", device)
 print("Using %d GPUs" %torch.cuda.device_count())
 
 #Cleanups
-gr.close_all() #Close any existing open ports
-if os.path.exists(params.pdf_path): #Remove any PDF embeddings
-    shutil.rmtree(params.pdf_path)
-if os.path.exists(params.pdf_text_path): #Remove any raw PDF text
-    shutil.rmtree(params.pdf_text_path)
-os.mkdir(params.pdf_text_path)
+gr.close_all() #Close any existing open ports'
+
+def clean_pdf_paths():
+    if os.path.exists(params.pdf_path): #Remove any PDF embeddings
+        shutil.rmtree(params.pdf_path)
+    if os.path.exists(params.pdf_text_path): #Remove any raw PDF text
+        shutil.rmtree(params.pdf_text_path)
+    os.mkdir(params.pdf_text_path)
+
+clean_pdf_paths()
 
 
 def init_local_llm(params):
@@ -77,6 +81,7 @@ class Chat():
         self.embedding = embedding
         self.memory, self.conversation = self._init_chain()
         self.doc_store = doc_store
+        self.is_PDF = False #Flag to use NER over right set of docs. Changed in update_pdf_docstore
 
 
     def _init_chain(self):
@@ -126,9 +131,18 @@ AI:"""
         ners = llms.ner_hits(query) #Get unique named entities of > some length from query
         ner_hits = []
 
+        #Set path from where to get NER context hits
+        if self.is_PDF:
+            doc_path = params.pdf_text_path
+            print("Getting NER hits from PDF context")
+        else: 
+            doc_path = params.doc_path_root
+            clean_pdf_paths() #Make sure PDF folders are clean to avoid context leak
+            print("Getting NER hits from facility context")
+
         for ner in ners: #Grep NEs from raw text
             try: 
-                hit = subprocess.check_output("grep -r -i -h '%s' DOC_STORE/" %ner, shell=True).decode()
+                hit = subprocess.check_output("grep -r -i -h '%s' %s/" %(ner, doc_path), shell=True).decode()
                 hits = hit.split("\n") #split all the grep results into indiv strings
                 ner_hits.extend(hits)
             except subprocess.CalledProcessError as err:
@@ -197,6 +211,7 @@ class PDFChat(Chat):
         db.persist()
 
         self.doc_store = db
+        self.is_PDF = True #Used in _get_context
 
         return "PDF Ready"
     
@@ -290,6 +305,7 @@ def main_interface(params, llm, embeddings):
             embed_descr = "Error! Unknown model"
 
         gr.Markdown(f"LLM Model: {model_descr}\n\nEmbedding Model: {embed_descr}")
+        gr.Markdown(f"Context hits: {params.N_hits}\nNER hits: {params.N_NER_hits}")
 
         #General chat tab
         with gr.Tab("General Chat"):
@@ -394,7 +410,7 @@ def main_interface(params, llm, embeddings):
         """
         )
     demo.queue()
-    demo.launch(server_name="0.0.0.0", server_port=params.port, ssl_verify=False)
+    demo.launch(server_name="0.0.0.0", server_port=params.port)
 
 
 if __name__ == '__main__':
