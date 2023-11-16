@@ -1,7 +1,7 @@
 import os, time, shutil, subprocess
 import params
 
-if params.set_visible_devices and params.llm_type=='hf':
+if params.set_visible_devices:
     os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
 
 import dfrac_tools, llms
@@ -33,8 +33,6 @@ def clean_pdf_paths():
     if os.path.exists(params.pdf_text_path): #Remove any raw PDF text
         shutil.rmtree(params.pdf_text_path)
     os.mkdir(params.pdf_text_path)
-
-clean_pdf_paths()
 
 
 def init_local_llm(params):
@@ -290,16 +288,16 @@ def main_interface(params, llm, embeddings):
         * Use the Document Q&A to ask me questions about a document you provide.
         """)
 
-        if params.llm_type == 'hf':
+        if llm_type.huggingface:
             model_descr = f"local model: {params.model_name}"
-        elif params.llm_type == 'anl':
+        elif llm_type.openai:
             model_descr = f"ANL Hosted Model [{params.anl_llm_model}] (OpenAI)"
         else:
             model_descr = "Error! Unknown model"
 
-        if params.embed_type == 'hf':
+        if embed_type.huggingface:
             embed_descr = f"Local model: {params.embedding_model_name}"
-        elif params.llm_type == 'anl':
+        elif embed_type.openai:
             embed_descr = f"ANL Hosted Model (OpenAI)"
         else:
             embed_descr = "Error! Unknown model"
@@ -414,15 +412,48 @@ def main_interface(params, llm, embeddings):
 
 
 if __name__ == '__main__':
-    if params.llm_type == 'anl':
-        llm = llms.AnlLLM(params)
-    elif params.llm_type == 'hf':
-        llm = init_local_llm(params)
     
-    if params.embed_type == 'hf':
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True) #One of mutuallu exclusive args is required
+    group.add_argument('-hf', '--huggingface', action='store_true', help='Open-source model')
+    group.add_argument('-o', '--openai', action='store_true', help='OpenAI Model')
+
+    llm_type = parser.parse_args()
+    print(llm_type)
+    
+    if llm_type.openai:
+        llm = llms.AnlLLM(params)
+    elif llm_type.huggingface:
+        llm = init_local_llm(params)
+    else:
+        raise AssertionError("LLM type must be huggingface or openai")
+
+    #Embedding model parameters
+    embed_type = llm_type # Can be different from llm_type
+
+    #Embedding paths
+    if embed_type.huggingface:
+        params.embed_path = '%s/%s' %(params.base_path, params.embedding_model_name)
         embeddings = init_local_embeddings(params)
-    elif params.embed_type == 'anl':
+
+    elif embed_type.openai:
+        if params.init_docs:
+            input('WARNING: WILL INIT ALL DOCS WITH OPENAI EMBEDS. Press enter to continue')
+        params.embed_path = f"{params.base_path}/anl_openai"
         embeddings = llms.ANLEmbeddingModel(params)
+    
+    params.pdf_path = '%s/pdf' %params.embed_path
+    clean_pdf_paths() #Clear any PDF embeds and NER text
+
+    #Web UI port
+    if llm_type.huggingface:
+        params.port = 2023
+    else:
+        params.port = 2024
+    
+        
     main_interface(params, llm, embeddings)
 
 
