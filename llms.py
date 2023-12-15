@@ -85,7 +85,7 @@ class ANLEmbeddingModel(Embeddings):
         for i in range(0, len(texts), self.pagination):
             embeds_page = self._query_api_multiple(texts[i:i+self.pagination])
             if len(texts) > self.pagination:
-                time.sleep(0.5) # Prevent from overloading the API. 
+                time.sleep(3) # Prevent from overloading the API. 
                 pbar.update(1)
             output_embeds += embeds_page
 
