@@ -23,12 +23,15 @@ pip install -r requirements_H100.txt
 5. Start the app:
    
 - python chat_app.py --openai
+  
 -- for OpenAI models (choose which one in params.py)
 
 (OR)
 
-- python chat_app.py —hf 
+- python chat_app.py —hf
+  
 -- for open-source models (choose which one in params.py)
+
 -- Recommend at least 50 GB of GPU memory for LLAMA family of models
 
 Please note you will have to provide your own OpenAI and Materials Project API keys
