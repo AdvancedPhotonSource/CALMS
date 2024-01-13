@@ -17,10 +17,11 @@ pip install -r requirements_H100.txt
 
 4. git checkout argparse
 
-The VERY FIRST time you run each model, you will have to compute embeddings over the document stores. You can do this by setting init_docs = True in params.py before starting the chat app
-— this will take a LONG time but only needs to be run once
+- The VERY FIRST time you run each model, you will have to compute embeddings over the document stores. You can do this by setting init_docs = True in params.py before starting the chat app
+—- this will take a LONG time but only needs to be run once
 
-5. Start the app
+5. Start the app:
+   
 python chat_app.py --openai
 -- for OpenAI models (choose which one in params.py)
 
