@@ -13,9 +13,10 @@ https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffa
 2. git clone https://github.com/mcherukara/CALMS
 
 3. Navigate to the folder, activate your conda environment, then:
-pip install -r requirements_H100.txt 
+   
+   pip install -r requirements_H100.txt 
 
-4. git checkout argparse
+5. git checkout argparse
 
 - The VERY FIRST time you run each model, you will have to compute embeddings over the document stores. You can do this by setting init_docs = True in params.py before starting the chat app. This will take a LONG time but only needs to be run once
 
