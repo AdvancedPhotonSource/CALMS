@@ -14,6 +14,10 @@ MP_API_KEY = open('keys/MP_API_KEY').read().strip()
 with open('S26_commandline.py', 'r') as s26_file:
     S26_FILE = ''.join(s26_file.readlines())
 
+# Filters for langchain seems to be parsing the description as a fstring
+S26_FILE = S26_FILE.replace("{", "")
+S26_FILE = S26_FILE.replace("}", "")
+
 
 """
 ===============================
