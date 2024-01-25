@@ -9,7 +9,7 @@ visible_devices = '1'
 #LLM parameters
 
 #Options: 'hf' (local huggingface), 'anl' (anl-hosted LLM)
-llm_type = 'hf'
+llm_type = 'anl'
 check_model_type(llm_type)
 
 # hf params
@@ -25,7 +25,7 @@ anl_llm_url_path = 'keys/ANL_LLM_URL'
 anl_llm_debug = True
 anl_llm_debug_fp = 'anl_outputs.log'
 # One of: gpt35, gpt35large, gpt4, gpt4large
-anl_llm_model = 'gpt35large' 
+anl_llm_model = 'gpt4large' 
 
 
 #Embedding model parameters

@@ -11,6 +11,37 @@ import pexpect
 
 MP_API_KEY = open('keys/MP_API_KEY').read().strip()
 
+with open('S26_commandline.py', 'r') as s26_file:
+    S26_FILE = ''.join(s26_file.readlines())
+
+
+"""
+===============================
+S26 Tools
+===============================
+"""
+
+def exec_cmd(py_str: str):
+    """
+    Placeholder for the function. While in testing, just keeping it as a print statement
+    """
+    print(py_str)
+    
+    return "Command Executed"
+
+
+exec_cmd_tool = StructuredTool.from_function(exec_cmd,
+                                            name="ExecPython",
+                                            description="Takes in a python string and execs it in the envionment described by the script."
+                                            + "The script will contain objects and functions used to interact with the instrument. " 
+                                            + "The script is described below \n\n" + S26_FILE)
+
+
+"""
+===============================
+Diffrac Tools
+===============================
+"""
 
 def get_lattice(material: str):
     try:
