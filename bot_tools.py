@@ -37,8 +37,11 @@ def exec_cmd(py_str: str):
 exec_cmd_tool = StructuredTool.from_function(exec_cmd,
                                             name="ExecPython",
                                             description="Takes in a python string and execs it in the envionment described by the script."
-                                            + "The script will contain objects and functions used to interact with the instrument. " 
-                                            + "The script is described below \n\n" + S26_FILE)
+                                            + "The script will contain objects and functions used to interact with the instrument. "
+                                            + "Here are some rules to follow: \n"
+                                            + "unlock_hybrid() and lock_hybrid() must be called before and after all motor movements"
+                                            + " and scans."
+                                            + " The script is described below \n\n" + S26_FILE)
 
 
 """
