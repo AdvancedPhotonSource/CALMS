@@ -107,8 +107,7 @@ def scan1d(motor,startpos,endpos,numpts,dettime, absolute=False):
      """
     pass
 
-
-# add scan2d
-
-# Prompt: I want to perform the same scan at different focuses. 
-# Make it more casual over time
+def scan2d(motor1,startpos1,endpos1,numpts1,motor2,startpos2,endpos2,numpts2,dettime, absolute=False):
+     # if absolute flag is set to True, move one motor (motor1) from start position (startpos1) to end position (endpos), with number of steps determined by numpts1. At each of those steps, scan another motor (motor2) from start position (startpos2) to end position (endpos2), with number of steps determined by numpts2. The exposure time is set by dettime, and its unit is in seconds.
+     # if absolute flag is set to False, move one motor (motor1) from current position minus startpos1 to current position plus endpos1, with number of steps determined by numpts1. At each of those steps, scan another motor (motor2) from current position minus startpos2 to current position plus endpos2, with number of steps determined by numpts2. The exposure time is set by dettime, and its unit is in seconds.
+    pass
