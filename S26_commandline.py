@@ -99,15 +99,115 @@ def unlock_hybrid():
     tempy = hybridy.RBV
     print("after unlock: x = {0} and y = {1}".format(tempx, tempy))
 
+def postscan():
+
+    # post scan macro
+    
+    pathname = epics.caget(scanrecord+':saveData_fullPathName',as_string=True)
+    epics.caput("QMPX3:TIFF1:FilePath",pathname[:-4]+'Images/')
+    time.sleep(1)
+    epics.caput("QMPX3:TIFF1:FileName",'image')
+    time.sleep(1)
+    for i in range(1,5):
+        det_name = epics.caget("26idbSOFT:scan1.T{0}PV".format(i))
+        if 'pilatus' in det_name:
+            epics.caput("dp_pilatus4:cam1:FilePath",'/home/det/s26data/'+pathname[15:-4]+'Images/')
+            time.sleep(1)
+            epics.caput("dp_pilatus4:cam1:FileName",'pilatus')
+            time.sleep(1)
+    epics.caput("26idc:filter:Fi1:Set",1)
+    time.sleep(1)
 
 def scan1d(motor,startpos,endpos,numpts,dettime, absolute=False):
     """
      # if absolute flag is set to True, scan a single motor from start position (startpos) to end position (endpos), with number of points (numpts) and count time in seconds (dettime) 
      # if absolute flag is set to False, scan a single motor from current position minux startpos to current position plus endpos, with number of points (numpts) and count time in seconds (dettime) 
      """
-    pass
+    if motor in [fomx, fomy, samy]:
+        epics.caput('26idcnpi:m34.STOP',1)
+        epics.caput('26idcnpi:m35.STOP',1)
+    if ( (motor in [hybridx, hybridy]) and ( (abs(hybridx.RBV-hybridx.VAL)>100) or (abs(hybridy.RBV-hybridy.VAL)>100) ) ):
+        print("Please use lock_hybrid() to lock piezos at current position first...")
+        return
+    sc1.P1PV = motor.NAME+'.VAL'
+    if absolute:
+        sc1.P1AR=0
+    else:
+        sc1.P1AR=1
+    sc1.P1SP = startpos
+    sc1.P1EP = endpos
+    sc1.NPTS = numpts
+    count_time(dettime)
+    fp = open(logbook,"a")
+    fp.write(' ----- \n')
+    fp.write('SCAN #: '+epics.caget(scanrecord+':saveData_scanNumber',as_string=True)+' ---- '+str(datetime.datetime.now())+'\n')
+    if absolute:
+        fp.write('Scanning '+motor.DESC+' from '+str(startpos)+' ---> '+str(endpos)+' in '+str(numpts)+' points at '+str(dettime)+' seconds acquisition\n')
+    else:
+        fp.write('Scanning '+motor.DESC+' from '+str(startpos+motor.VAL)+' ---> '+str(endpos+motor.VAL))
+        fp.write(' in '+str(numpts)+' points at '+str(dettime)+' seconds acquisition\n')
+    fp.write(' ----- \n')
+    fp.close()
+    time.sleep(1)
+    stopnow = prescan();
+    if (stopnow):
+        return
+    sc1.execute=1
+    print("Scanning...")
+    time.sleep(1)
+    while(sc1.BUSY == 1):
+        time.sleep(1)
+    postscan()
 
 def scan2d(motor1,startpos1,endpos1,numpts1,motor2,startpos2,endpos2,numpts2,dettime, absolute=False):
      # if absolute flag is set to True, move one motor (motor1) from start position (startpos1) to end position (endpos), with number of steps determined by numpts1. At each of those steps, scan another motor (motor2) from start position (startpos2) to end position (endpos2), with number of steps determined by numpts2. The exposure time is set by dettime, and its unit is in seconds.
      # if absolute flag is set to False, move one motor (motor1) from current position minus startpos1 to current position plus endpos1, with number of steps determined by numpts1. At each of those steps, scan another motor (motor2) from current position minus startpos2 to current position plus endpos2, with number of steps determined by numpts2. The exposure time is set by dettime, and its unit is in seconds.
-    pass
+    if (motor1 in [fomx, fomy, samy]) or (motor2 in [fomx, fomy, samy]):
+        epics.caput('26idcnpi:m34.STOP',1)
+        epics.caput('26idcnpi:m35.STOP',1)
+    if ( ( (motor1 in [hybridx, hybridy]) or (motor2 in [hybridx,hybridy]) ) and ( (abs(hybridx.RBV-hybridx.VAL)>100) or (abs(hybridy.RBV-hybridy.VAL)>100) ) ):
+        print("Please use lock_hybrid() to lock piezos at current position first...")
+        return
+    sc2.P1PV = motor1.NAME+'.VAL'
+    sc1.P1PV = motor2.NAME+'.VAL'
+    if absolute:
+        sc1.P1AR=0
+        sc2.P1AR=0
+    else:
+        sc1.P1AR=1
+        sc2.P1AR=1
+    sc2.P1SP = startpos1
+    sc1.P1SP = startpos2
+    sc2.P1EP = endpos1
+    sc1.P1EP = endpos2
+    sc2.NPTS = numpts1
+    sc1.NPTS = numpts2
+    count_time(dettime)
+    fp = open(logbook,"a")
+    fp.write(' ----- \n')
+    fp.write('SCAN #: '+epics.caget(scanrecord+':saveData_scanNumber',as_string=True)+' ---- '+str(datetime.datetime.now())+'\n')
+    if absolute:
+        fp.write('2D Scan:\n')
+        fp.write('Inner loop: '+motor2.DESC+' from '+str(startpos2)+' ---> '+str(endpos2))
+        fp.write(' in '+str(numpts2)+' points at '+str(dettime)+' seconds acquisition\n')
+        fp.write('Outer loop: '+motor1.DESC+' from '+str(startpos1)+' ---> '+str(endpos1))
+        fp.write(' in '+str(numpts1)+' points at '+str(dettime)+' seconds acquisition\n')   
+    else:
+        fp.write('2D Scan:\n')
+        fp.write('Outer loop: '+motor1.DESC+' from '+str(startpos1+motor1.VAL)+' ---> '+str(endpos1+motor1.VAL))
+        fp.write(' in '+str(numpts1)+' points at '+str(dettime)+' seconds acquisition\n')
+        fp.write('Inner loop: '+motor2.DESC+' from '+str(startpos2+motor2.VAL)+' ---> '+str(endpos2+motor2.VAL))
+        fp.write(' in '+str(numpts2)+' points at '+str(dettime)+' seconds acquisition\n')
+    fp.write(' ----- \n')
+    fp.close()
+    time.sleep(1)
+    stopnow = prescan();
+    if (stopnow):
+        return
+    sc2.execute=1
+    print("Scanning...")
+    time.sleep(1)
+    while(sc2.BUSY == 1):
+        time.sleep(1)
+    postscan()
+
