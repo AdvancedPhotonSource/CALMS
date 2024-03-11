@@ -37,4 +37,4 @@ https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffa
 **Please note you will have to provide your own OpenAI and Materials Project API keys**
 
 6. Navigate to localhost:2023 for the open-source model and localhost:2024 for the openai model
-   > Ports can be chat in chat_app.py
+   > Ports can be set in chat_app.py
