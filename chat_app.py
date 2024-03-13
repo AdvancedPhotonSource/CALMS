@@ -425,6 +425,9 @@ if __name__ == '__main__':
     
     if llm_type.openai:
         llm = llms.AnlLLM(params)
+        if params.anl_user == "":
+            print("The ANL OpenAI API user parameter (anl_user) must be set in params.py! Exiting.")
+            exit()
     elif llm_type.huggingface:
         llm = init_local_llm(params)
     else:
