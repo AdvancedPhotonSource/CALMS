@@ -33,10 +33,25 @@ def exec_cmd(py_str: str):
     
     return "Command Executed"
 
+import os
+
+os.environ["WOLFRAM_ALPHA_APPID"] = ""
+
+
+from langchain_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
+
+wolfram = WolframAlphaAPIWrapper()
+
+wolfram_tool = StructuredTool.from_function(wolfram.run,
+                                            name="Calculator",
+                                            description="When performing an arithmatic operation don't assume, run them through this tool as a seperate action. Examples may include addition, subtraction, multiplicaiton, and divison.")
+
+
 
 exec_cmd_tool = StructuredTool.from_function(exec_cmd,
                                             name="ExecPython",
                                             description="Takes in a python string and execs it in the envionment described by the script."
+                                            + "Before executing the command think through all steps of the problem and use supporting tools when appropriate. "
                                             + "The script will contain objects and functions used to interact with the instrument. "
                                             + "Here are some rules to follow: \n"
                                             + "unlock_hybrid() and lock_hybrid() must be called before and after all motor movements"

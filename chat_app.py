@@ -267,7 +267,7 @@ class S26ExecChat(Chat):
         ]
         """
 
-        tools = [bot_tools.exec_cmd_tool]
+        tools = [bot_tools.exec_cmd_tool, bot_tools.wolfram_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 
