@@ -9,6 +9,38 @@ from langchain.callbacks.manager import (
 )
 import pexpect
 
+def exec_cmd(py_str: str):
+    """
+    Placeholder for the function. While in testing, just keeping it as a print statement
+    """
+    print(py_str)
+    
+    return "Command Executed"
+
+
+"""
+===============================
+Polybot Tools
+===============================
+"""
+with open('polybot_commands.py', 'r') as polybot_file:
+    POLYBOT_FILE = ''.join(polybot_file.readlines())
+
+POLYBOT_FILE = POLYBOT_FILE.replace("{", "")
+POLYBOT_FILE = POLYBOT_FILE.replace("}", "")
+
+exec_polybot_tool = StructuredTool.from_function(exec_cmd,
+                                            name="ExecPython",
+                                            description="Takes in a python string and execs it in the envionment described by the script."
+                                            + "The script will contain objects and functions used to interact with the instrument. "
+                                            + "Here are some rules to follow: \n"
+                                            + "unlock_hybrid() and lock_hybrid() must be called before and after all motor movements"
+                                            + " and scans."
+                                            + " The script is described below \n\n" + POLYBOT_FILE)
+
+
+
+
 MP_API_KEY = open('keys/MP_API_KEY').read().strip()
 
 with open('S26_commandline.py', 'r') as s26_file:
@@ -25,13 +57,7 @@ S26 Tools
 ===============================
 """
 
-def exec_cmd(py_str: str):
-    """
-    Placeholder for the function. While in testing, just keeping it as a print statement
-    """
-    print(py_str)
-    
-    return "Command Executed"
+
 
 
 exec_cmd_tool = StructuredTool.from_function(exec_cmd,
