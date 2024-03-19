@@ -60,6 +60,17 @@ S26 Tools
 
 
 
+
+from langchain_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
+
+wolfram = WolframAlphaAPIWrapper()
+
+wolfram_tool = StructuredTool.from_function(wolfram.run,
+                                            name="Calculator",
+                                            description="When performing an arithmatic operation don't assume, run them through this tool as a seperate action. Examples may include addition, subtraction, multiplicaiton, and divison.")
+
+
+
 exec_cmd_tool = StructuredTool.from_function(exec_cmd,
                                             name="ExecPython",
                                             description="Takes in a python string and execs it in the envionment described by the script."

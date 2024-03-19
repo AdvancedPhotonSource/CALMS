@@ -267,7 +267,7 @@ class S26ExecChat(Chat):
         ]
         """
 
-        tools = [bot_tools.exec_cmd_tool, bot_tools.exec_polybot_tool]
+        tools = [bot_tools.exec_cmd_tool, bot_tools.wolfram_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 
@@ -293,6 +293,20 @@ class S26ExecChat(Chat):
             time.sleep(0.02)
             yield history
 
+
+class PolybotExecChat(S26ExecChat):
+    def _init_chain(self):
+        tools = [bot_tools.exec_cmd_tool, bot_tools.exec_polybot_tool]
+
+        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
+        conversation = initialize_agent(tools, 
+                                       self.llm, 
+                                       agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
+                                       verbose=True, 
+                                       handle_parsing_errors='Check your output and make sure it conforms!',
+                                       max_iterations=5,
+                                       memory=memory)
+        return memory, conversation
 
 
 """
@@ -396,7 +410,7 @@ def main_interface(params, llm, embeddings):
                 gr.HTML(title)
             
             with gr.Column():
-                pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="file", file_count = 'multiple')
+                pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="filepath", file_count = 'multiple')
                 with gr.Row():
                     langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
                     load_pdf = gr.Button("Load PDF")
@@ -447,17 +461,17 @@ def main_interface(params, llm, embeddings):
         with gr.Tab("Polybot Exec"):
             chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
-            s26_exec = S26ExecChat(llm, embeddings, None)
+            polybot_exec = PolybotExecChat(llm, embeddings, None)
 
             #Pass an empty string to context when don't want domain specific context
-            msg.submit(s26_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                s26_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+            msg.submit(polybot_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                polybot_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
             )
-            submit_btn.click(s26_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                s26_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+            submit_btn.click(polybot_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+                polybot_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
             )
         
-            clear.click(lambda: s26_exec.memory.clear(), None, chatbot, queue=False)
+            clear.click(lambda: polybot_exec.memory.clear(), None, chatbot, queue=False)
 
 
     
@@ -480,7 +494,7 @@ def main_interface(params, llm, embeddings):
         """
         )
     demo.queue()
-    demo.launch(server_name="0.0.0.0", server_port=5000, share=True)
+    demo.launch(server_name="0.0.0.0", server_port=params.port)
 
 
 if __name__ == '__main__':

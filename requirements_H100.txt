@@ -67,6 +67,7 @@ jsonschema-specifications==2023.7.1
 kiwisolver==1.4.5
 kubernetes==28.1.0
 langchain==0.0.327
+langchain_community==0.0.28
 langcodes==3.3.0
 langdetect==1.0.9
 langsmith==0.0.54
@@ -192,6 +193,7 @@ watchfiles==0.21.0
 weasel==0.3.3
 websocket-client==1.6.4
 websockets==11.0.3
+wolframalpha==5.0.0
 wrapt==1.15.0
 xxhash==3.4.1
 yarl==1.9.2
