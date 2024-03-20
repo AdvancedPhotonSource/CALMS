@@ -23,7 +23,7 @@ def exec_cmd(py_str: str):
 Polybot Tools
 ===============================
 """
-with open('polybot_commands.py', 'r') as polybot_file:
+with open('polybot_coating_experiment.py', 'r') as polybot_file:
     POLYBOT_FILE = ''.join(polybot_file.readlines())
 
 POLYBOT_FILE = POLYBOT_FILE.replace("{", "")
