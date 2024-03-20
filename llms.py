@@ -55,6 +55,9 @@ class AnlLLM(LLM, extra=Extra.allow):
                    'temperature': self.temperature,
                    'top_p': self.top_p}
         result = requests.post(self.anl_url, json=req_obj)
+        if not result.ok:
+            print(f"error {result.status_code} ({result.reason})")
+            return
 
         response = result.json()['response']
 
@@ -98,12 +101,16 @@ class ANLEmbeddingModel(Embeddings):
     def _query_api_multiple(self, texts: List[str]):
         req_obj = {'user':params.anl_user, 'model':'', 'prompt':texts, 'stop':[]}
         result = requests.post(self.embed_url, json=req_obj)
-        return result.json()['embedding']
-    
+        if result.ok:
+            return result.json()['embedding']
+        print(f"error {result.status_code} ({result.reason})")
+
     def _query_api_single(self, text: str):
         req_obj = {'user':params.anl_user, 'model':'', 'prompt':[text], 'stop':[]}
         result = requests.post(self.embed_url, json=req_obj)
-        return result.json()['embedding'][0]
+        if result.ok:
+            return result.json()['embedding'][0]
+        print(f"error {result.status_code} ({result.reason})")
 
 
 def init_text_splitter():
