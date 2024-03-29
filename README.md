@@ -16,12 +16,9 @@ https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffa
    
    pip install -r requirements_H100.txt 
 
-5. git checkout argparse
-
+4. Start the app:
 - The VERY FIRST time you run each model, you will have to compute embeddings over the document stores. You can do this by setting init_docs = True in params.py before starting the chat app. This will take a LONG time but only needs to be run once
-
-5. Start the app:
-   
+  
 - python chat_app.py --openai
   
    > for OpenAI models (choose which one (GPT3.5, GPT4 etc. ) in params.py)
