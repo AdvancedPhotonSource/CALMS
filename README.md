@@ -6,6 +6,8 @@ CALMS is a retrieval and tool augmented large language model (LLM) to assist sci
 
 https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffab525b4b6
 
+<br/><br/>
+
 ### Getting started
 
 1. conda create --name calms python=3.11.5
@@ -35,3 +37,8 @@ https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffa
 
 6. Navigate to localhost:2023 for the open-source model and localhost:2024 for the openai model
    > Ports can be set in chat_app.py
+
+<br/><br/>
+
+#### DISCLAIMER
+The content presented in this paper has been generated using pre-trained Large Language Models (LLMs), specifically GPT 3.5 and [Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/), by injecting contextual prompts into these LLM pipelines through a retrieval and augmentation tool. The generated content is reported as is, without any manipulation or alteration of the LLM outputs. The authors acknowledge that LLM-generated content may contain errors, biases, or inaccuracies, which could significantly impact the scientific workflows in which they are incorporated. It is important to note that the current code base is not production-ready and requires additional checks and balances before being used for large-scale deployment. Furthermore, the authors disclaim any responsibility or liability for the accuracy, completeness, or reliability of LLM-generated content presented in this paper.
