@@ -18,7 +18,7 @@ anl_llm_debug = True
 anl_llm_debug_fp = 'anl_outputs.log'
 anl_user = ""
 # One of: gpt35, gpt35large, gpt4, gpt4large
-anl_llm_model = 'gpt4large' 
+anl_llm_model = 'gpt35' 
 
 anl_embed_url_path = 'keys/ANL_EMBED_URL'
 

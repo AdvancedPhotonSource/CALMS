@@ -260,7 +260,8 @@ UI/Frontend
 ===========================
 """
 def init_chat_layout():
-    chatbot = gr.Chatbot(show_label=False, elem_id="chatbot")#.style(height="500")
+    chatbot = gr.Chatbot(show_label=False, elem_id="chatbot",
+                         show_copy_button=True)#.style(height="500")
     with gr.Row():
         with gr.Column(scale=0.85):
             msg = gr.Textbox(show_label = False,
