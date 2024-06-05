@@ -77,7 +77,6 @@ class Chat():
     def __init__(self, llm, embedding, doc_store):
         self.llm = llm 
         self.embedding = embedding
-        self.memory, self.conversation = self._init_chain()
         self.doc_store = doc_store
         self.is_PDF = False #Flag to use NER over right set of docs. Changed in update_pdf_docstore
 
@@ -107,7 +106,7 @@ AI:"""
                 memory=memory
         )
 
-        return memory, conversation
+        return conversation
 
 
     #Method to find text with highest likely context
@@ -160,10 +159,16 @@ AI:"""
         return context
     
     
-    def generate_response(self, history, debug_output):
+    def generate_response(self, history, debug_output, convo_state):
+        print(history)
         user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
         all_user_messages = [x[0] for x in history]
         print(all_user_messages)
+        print(convo_state)
+
+        if convo_state is None:
+            convo_state = self._init_chain()
+
 
         if self.doc_store is None:
             context = ""
@@ -173,10 +178,10 @@ AI:"""
              context += self._get_context(message, self.doc_store)
 
         if debug_output:
-            inputs = self.conversation.prep_inputs({'input': user_message, 'context':context})
-            prompt = self.conversation.prep_prompts([inputs])[0][0].text
+            inputs = convo_state.prep_inputs({'input': user_message, 'context':context})
+            prompt = convo_state.prep_prompts([inputs])[0][0].text
 
-        bot_message = self.conversation.predict(input=user_message, context=context)
+        bot_message = convo_state.predict(input=user_message, context=context)
         #Pass user message and get context and pass to model
         history[-1][1] = "" #Replaces None with empty string -- Gradio code
 
@@ -187,14 +192,21 @@ AI:"""
             history[-1][1] += character
             #time.sleep(0.02)
             #yield history
-        return history
+        return history, convo_state
 
     def add_message(self, user_message, history):
         return "", history + [[user_message, None]]
+    
+    def clear_memory(self, convo_state):
+        if convo_state is not None:
+            convo_state.memory.clear()
+            return convo_state, None
+        else:
+            return None, None
 
 
 class PDFChat(Chat):
-    def update_pdf_docstore(self, pdf_docs):
+    def update_pdf_docstore(self, pdf_docs, pdf_state):
         all_pdfs = []
         for pdf_doc in pdf_docs:
             loader = OnlinePDFLoader(pdf_doc.name)
@@ -208,10 +220,7 @@ class PDFChat(Chat):
             persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
         db.persist()
 
-        self.doc_store = db
-        self.is_PDF = True #Used in _get_context
-
-        return "PDF Ready"
+        return "PDF Ready", db
     
 
 class ToolChat(Chat):
@@ -311,14 +320,15 @@ def main_interface(params, llm, embeddings):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
             chat_general = Chat(llm, embeddings, doc_store=None)
+            chat_general_state = gr.State(None)
 
             msg.submit(chat_general.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_general.generate_response, [chatbot, disp_prompt], chatbot #Use bot without context
+                chat_general.generate_response, [chatbot, disp_prompt, chat_general_state], [chatbot, chat_general_state] #Use bot without context
             )
             submit_btn.click(chat_general.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_general.generate_response, [chatbot, disp_prompt], chatbot #Use bot without context
+                chat_general.generate_response, [chatbot, disp_prompt, chat_general_state], [chatbot, chat_general_state] #Use bot without context
             )
-            clear.click(lambda: chat_general.memory.clear(), None, chatbot, queue=False)
+            clear.click(chat_general.clear_memory, [chat_general_state], [chat_general_state, chatbot])
 
         #APS Q&A tab
         with gr.Tab("Facility Q&A"):
@@ -326,16 +336,16 @@ def main_interface(params, llm, embeddings):
 
             facility_qa_docstore = llms.init_facility_qa(embeddings, params)
             chat_qa = Chat(llm, embeddings, doc_store=facility_qa_docstore)
+            chat_qa_state = gr.State(None)
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+                chat_qa.generate_response, [chatbot, disp_prompt, chat_qa_state], [chatbot, chat_qa_state] #Use bot with context
             )
             submit_btn.click(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+                chat_qa.generate_response, [chatbot, disp_prompt, chat_qa_state], [chatbot, chat_qa_state] #Use bot with context
             )
-        
-            clear.click(lambda: chat_qa.memory.clear(), None, chatbot, queue=False)
+            clear.click(chat_qa.clear_memory, [chat_qa_state], [chat_qa_state, chatbot])
 
         #Document Q&A tab
         with gr.Tab("Document Q&A"):
@@ -364,30 +374,33 @@ def main_interface(params, llm, embeddings):
             chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
             chat_pdf = PDFChat(llm, embeddings, doc_store=None)
+            chat_pdf_state = gr.State(None)
+            pdf_store_state = gr.State(None)
 
             load_pdf.click(chat_pdf.update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
             msg.submit(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+                chat_pdf.generate_response, [chatbot, disp_prompt, chat_pdf_state], [chatbot, chat_pdf_state] #Use bot with context
             )
             submit_btn.click(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+                chat_pdf.generate_response, [chatbot, disp_prompt, chat_pdf_state], [chatbot, chat_pdf_state] #Use bot with context
             )
-            clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
+            clear.click(chat_general.clear_memory, [chat_pdf_state], [chat_pdf_state, chatbot])
         
         with gr.Tab("Tool Agent"):
             chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
             tool_qa = ToolChat(llm, embeddings, None)
+            tool_qa_state = gr.State(None)
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+                tool_qa.generate_response, [chatbot, disp_prompt_tool, tool_qa_state], [chatbot, tool_qa_state] #Use bot with context
             )
             submit_btn.click(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+                tool_qa.generate_response, [chatbot, disp_prompt_tool, tool_qa_state], [chatbot, tool_qa_state] #Use bot with context
             )
-        
-            clear.click(lambda: tool_qa.memory.clear(), None, chatbot, queue=False)
+            clear.click(tool_qa.clear_memory, [tool_qa_state], [tool_qa_state, chatbot])
+
 
     
         with gr.Tab("Tips & Tricks"):
@@ -455,7 +468,7 @@ if __name__ == '__main__':
     if llm_type.huggingface:
         params.port = 2023
     else:
-        params.port = 2024
+        params.port = 2352
     
         
     main_interface(params, llm, embeddings)
