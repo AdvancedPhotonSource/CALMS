@@ -13,6 +13,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.embeddings.base import Embeddings
 
+
 class AnlLLM(LLM, extra=Extra.allow):
 
     def __init__(self, params):
@@ -46,7 +47,7 @@ class AnlLLM(LLM, extra=Extra.allow):
         else:
             stop_param = stop
         
-        req_obj = {'user': 'APS', 
+        req_obj = {'user': params.anl_user, 
                    'model': params.anl_llm_model, 
                    'prompt': [prompt], 
                    'system': "",
@@ -54,6 +55,9 @@ class AnlLLM(LLM, extra=Extra.allow):
                    'temperature': self.temperature}
                    #'top_p': self.top_p}
         result = requests.post(self.anl_url, json=req_obj)
+        if not result.ok:
+            print(f"error {result.status_code} ({result.reason})")
+            return
 
         response = result.json()['response']
 
@@ -85,7 +89,7 @@ class ANLEmbeddingModel(Embeddings):
         for i in range(0, len(texts), self.pagination):
             embeds_page = self._query_api_multiple(texts[i:i+self.pagination])
             if len(texts) > self.pagination:
-                time.sleep(0.5) # Prevent from overloading the API. 
+                #time.sleep(3) # Prevent from overloading the API. 
                 pbar.update(1)
             output_embeds += embeds_page
 
@@ -95,14 +99,18 @@ class ANLEmbeddingModel(Embeddings):
         return output_embeds
     
     def _query_api_multiple(self, texts: List[str]):
-        req_obj = {'user':'APS', 'model':'', 'prompt':texts, 'stop':[]}
+        req_obj = {'user':params.anl_user, 'model':'', 'prompt':texts, 'stop':[]}
         result = requests.post(self.embed_url, json=req_obj)
-        return result.json()['embedding']
-    
+        if result.ok:
+            return result.json()['embedding']
+        print(f"error {result.status_code} ({result.reason})")
+
     def _query_api_single(self, text: str):
-        req_obj = {'user':'APS', 'model':'', 'prompt':[text], 'stop':[]}
+        req_obj = {'user':params.anl_user, 'model':'', 'prompt':[text], 'stop':[]}
         result = requests.post(self.embed_url, json=req_obj)
-        return result.json()['embedding'][0]
+        if result.ok:
+            return result.json()['embedding'][0]
+        print(f"error {result.status_code} ({result.reason})")
 
 
 def init_text_splitter():
