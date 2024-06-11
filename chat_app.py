@@ -159,23 +159,24 @@ AI:"""
         return context
     
     
-    def generate_response(self, history, debug_output, convo_state):
-        print(history)
+    def generate_response(self, history, debug_output, convo_state, doc_state = None):
         user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
         all_user_messages = [x[0] for x in history]
-        print(all_user_messages)
-        print(convo_state)
 
         if convo_state is None:
             convo_state = self._init_chain()
 
 
-        if self.doc_store is None:
-            context = ""
-        else:
+        if self.doc_store is not None:
             context = ""
             for message in all_user_messages:
              context += self._get_context(message, self.doc_store)
+        elif doc_state is not None:
+            context = ""
+            for message in all_user_messages:
+                context += self._get_context(message, doc_state)
+        else:
+            context = ""
 
         if debug_output:
             inputs = convo_state.prep_inputs({'input': user_message, 'context':context})
@@ -377,12 +378,12 @@ def main_interface(params, llm, embeddings):
             chat_pdf_state = gr.State(None)
             pdf_store_state = gr.State(None)
 
-            load_pdf.click(chat_pdf.update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
+            load_pdf.click(chat_pdf.update_pdf_docstore, inputs=[pdf_doc, pdf_store_state], outputs=[langchain_status, pdf_store_state], queue=False)
             msg.submit(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_pdf.generate_response, [chatbot, disp_prompt, chat_pdf_state], [chatbot, chat_pdf_state] #Use bot with context
+                chat_pdf.generate_response, [chatbot, disp_prompt, chat_pdf_state, pdf_store_state], [chatbot, chat_pdf_state] #Use bot with context
             )
             submit_btn.click(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_pdf.generate_response, [chatbot, disp_prompt, chat_pdf_state], [chatbot, chat_pdf_state] #Use bot with context
+                chat_pdf.generate_response, [chatbot, disp_prompt, chat_pdf_state, pdf_store_state], [chatbot, chat_pdf_state] #Use bot with context
             )
             clear.click(chat_general.clear_memory, [chat_pdf_state], [chat_pdf_state, chatbot])
         
