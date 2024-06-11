@@ -246,9 +246,12 @@ class ToolChat(Chat):
                                        handle_parsing_errors='Check your output and make sure it conforms!',
                                        max_iterations=5,
                                        memory=memory)
+        self.memory = memory
+        self.conversation = conversation
+
         return memory, conversation
     
-    def generate_response(self, history, debug_output):
+    def generate_response(self, history, debug_output, chat_state):
         user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
 
         # TODO: Implement debug output for langchain agents. Might have to use a callback?
@@ -391,16 +394,16 @@ def main_interface(params, llm, embeddings):
             chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
             tool_qa = ToolChat(llm, embeddings, None)
-            tool_qa_state = gr.State(None)
+            tool_qa._init_chain()
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt_tool, tool_qa_state], [chatbot, tool_qa_state] #Use bot with context
+                tool_qa.generate_response, [chatbot, disp_prompt_tool], [chatbot] #Use bot with context
             )
             submit_btn.click(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt_tool, tool_qa_state], [chatbot, tool_qa_state] #Use bot with context
+                tool_qa.generate_response, [chatbot, disp_prompt_tool], [chatbot] #Use bot with context
             )
-            clear.click(tool_qa.clear_memory, [tool_qa_state], [tool_qa_state, chatbot])
+            clear.click(lambda: tool_qa.memory.clear(), None, chatbot, queue=False)
 
 
     
