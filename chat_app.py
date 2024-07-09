@@ -409,10 +409,9 @@ def main_interface(params, llm, embeddings):
     
         with gr.Tab("Tips & Tricks"):
             gr.Markdown("""
-            1. I am not as powerful as GPT-4 or ChatGPT and I am running on cheap GPUs, if I get stuck, you can type "please continue" or similar and I will attempt to complete my thought.
-            2. If I don't give a satisfactory answer, try rephrasing your question. For e.g. 'Can I do high energy diffraction at the APS?' instead of 'Where can I do high energy diffraction at the APS?
-            3. Avoid using acronyms, e.g. say coherent diffraction imaging instead of CDI.
-            4. CALMS is an acronym for Context-Aware Language Model for Science. 
+            1. If I don't give a satisfactory answer, try rephrasing your question. For e.g. 'Can I do high energy diffraction at the APS?' instead of 'Where can I do high energy diffraction at the APS?
+            2. Avoid using acronyms, e.g. say coherent diffraction imaging instead of CDI.
+            3. CALMS is an acronym for Context-Aware Language Model for Science. 
                         
             """
             )
