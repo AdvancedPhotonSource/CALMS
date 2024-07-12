@@ -33,6 +33,7 @@ def exec_cmd(py_str: str):
     
     return "Command Executed"
 
+"""
 import os
 
 os.environ["WOLFRAM_ALPHA_APPID"] = ""
@@ -45,7 +46,7 @@ wolfram = WolframAlphaAPIWrapper()
 wolfram_tool = StructuredTool.from_function(wolfram.run,
                                             name="Calculator",
                                             description="When performing an arithmatic operation don't assume, run them through this tool as a seperate action. Examples may include addition, subtraction, multiplicaiton, and divison.")
-
+"""
 
 
 exec_cmd_tool = StructuredTool.from_function(exec_cmd,
