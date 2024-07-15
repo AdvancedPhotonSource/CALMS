@@ -268,6 +268,12 @@ class S26ExecChat(Chat):
     Implements an agentexector in a chat context. The agentexecutor is called in a fundimentally
     differnet way than the other chains, so custom implementaiton for much of the class.
     """
+    def  __init__(self, llm, embedding, doc_store):
+        super().__init__(llm, embedding, doc_store)
+        self.memory = None
+        self.conversation = None
+        self._init_chain()
+
     def _init_chain(self):
         """
         tools = [
@@ -275,7 +281,7 @@ class S26ExecChat(Chat):
         ]
         """
 
-        tools = [bot_tools.exec_cmd_tool]
+        tools = [bot_tools.exec_s26_cmd_tool, bot_tools.exec_s26_lint_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 

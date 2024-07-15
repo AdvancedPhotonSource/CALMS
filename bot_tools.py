@@ -8,23 +8,16 @@ from langchain.callbacks.manager import (
     CallbackManagerForToolRun,
 )
 import pexpect
+import subprocess
+import os
 
 MP_API_KEY = open('keys/MP_API_KEY').read().strip()
 
-with open('S26_commandline.py', 'r') as s26_file:
-    S26_FILE = ''.join(s26_file.readlines())
-
-# Filters for langchain seems to be parsing the description as a fstring
-S26_FILE = S26_FILE.replace("{", "")
-S26_FILE = S26_FILE.replace("}", "")
-
-
 """
 ===============================
-S26 Tools
+Python Execution Tools
 ===============================
 """
-
 def exec_cmd(py_str: str):
     """
     Placeholder for the function. While in testing, just keeping it as a print statement
@@ -33,14 +26,66 @@ def exec_cmd(py_str: str):
     
     return "Command Executed"
 
+
+
+def lint_cmd(py_str: str, py_pfx = None, lint_fp = 'agent_scripts/tmp_lint.py'):
+    """
+    Helper function to enable linting. 
+    Creates a file, prepends text to it, lints it, then removes the file.
+
+        py_str: string to lint
+        py_pfx: prefix to add to string. Used if appending py_str to an existing python file
+    """
+    with open(lint_fp, 'w') as lint_file:
+        if py_pfx is not None:
+            lint_file.write(py_pfx)
+            lint_file.write("\n")
+        lint_file.write(py_str)
+
+
+    # Pylint's internal reporter API fails on so just use subprocess which seesm to be more reliable
+    result = subprocess.run(["pylint", "agent_scripts/tmp_lint.py", "-d R,C,W"], stdout=subprocess.PIPE)
+    result_str = result.stdout.decode('utf-8')
+
+    os.remove(lint_fp)
+
+    return result_str
+
+def filter_pylint_lines(lint_output, start_ln):
+    """
+    Filter out the pylint lines that are not needed for the output
+    """
+    filtered_ouput = []
+    for line in lint_output.split('\n'):
+        if line.startswith("*********"):
+            filtered_ouput.append(line)
+
+        line_split = line.split(':') 
+        if len(line_split) > 1:
+            if line_split[1].isdigit():
+                if int(line.split(':')[1]) > start_ln:
+                    filtered_ouput.append(line)
+
+    return '\n'.join(filtered_ouput)
+
+
+
+"""
+===============================
+Wolfram Tools
+
+NOTE: Requires a wolfram alpha appid. Uncomment and add to program to use.
+===============================
+"""
+
 """
 import os
 
-os.environ["WOLFRAM_ALPHA_APPID"] = ""
+WF_API_KEY = open('keys/WF_API_KEY').read().strip()
+os.environ["WOLFRAM_ALPHA_APPID"] = WF_API_KEY
 
 
-from langchain_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper
-
+from langchain_community.utilities.wolfram_alpha import WolframAlphaAPIWrapper"\n"
 wolfram = WolframAlphaAPIWrapper()
 
 wolfram_tool = StructuredTool.from_function(wolfram.run,
@@ -49,7 +94,24 @@ wolfram_tool = StructuredTool.from_function(wolfram.run,
 """
 
 
-exec_cmd_tool = StructuredTool.from_function(exec_cmd,
+"""
+===============================
+S26 Tools
+===============================
+"""
+
+with open('agent_scripts/S26_commandline.py', 'r') as s26_file:
+    S26_FILE = ''.join(s26_file.readlines())
+
+# Filters for langchain seems to be parsing the description as a fstring
+S26_FILE_FILTER = S26_FILE.replace("{", "")
+S26_FILE_FILTER = S26_FILE_FILTER.replace("}", "")
+
+S26_FILE_LINES = len(S26_FILE.split('\n'))
+
+
+
+exec_s26_cmd_tool = StructuredTool.from_function(exec_cmd,
                                             name="ExecPython",
                                             description="Takes in a python string and execs it in the envionment described by the script."
                                             + "Before executing the command think through all steps of the problem and use supporting tools when appropriate. "
@@ -57,7 +119,25 @@ exec_cmd_tool = StructuredTool.from_function(exec_cmd,
                                             + "Here are some rules to follow: \n"
                                             + "unlock_hybrid() and lock_hybrid() must be called before and after all motor movements"
                                             + " and scans."
-                                            + " The script is described below \n\n" + S26_FILE)
+                                            + " The script is described below \n\n" + S26_FILE_FILTER)
+
+
+
+def s26_linter(py_str: str):
+    """
+    Linting tool for the S26 instrument. Prepends the s26 file.
+    """
+    lint_fp = 'agent_scripts/tmp_lint.py'
+    lint_output = lint_cmd(py_str, py_pfx=S26_FILE, lint_fp=lint_fp)
+    lint_output = filter_pylint_lines(lint_output, S26_FILE_LINES)
+    return lint_output
+
+
+
+exec_s26_lint_tool = StructuredTool.from_function(s26_linter,
+                                            name="LintPython",
+                                            description="Takes in a python string and lints it. The output will provide suggestions on how to improve the code."
+                                            + " Use the linter before attempting to run any code")
 
 
 """
