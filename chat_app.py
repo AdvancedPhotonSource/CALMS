@@ -16,6 +16,15 @@ from langchain.document_loaders import OnlinePDFLoader
 from langchain.llms import HuggingFacePipeline
 from langchain.embeddings import HuggingFaceEmbeddings 
 
+from langchain_community.document_loaders.generic import GenericLoader
+from langchain_community.document_loaders.parsers import LanguageParser
+from langchain_text_splitters import Language
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.chains import create_history_aware_retriever, create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
+
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
@@ -53,7 +62,7 @@ def init_local_llm(params):
         model=model, 
         tokenizer=tokenizer, 
         max_length=params.seq_length,
-        temperature=0.6,
+        temperature=0,
         top_p=0.95,
         repetition_penalty=1.2
     )
@@ -234,7 +243,7 @@ class ToolChat(Chat):
                                        agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
                                        verbose=True, 
                                        handle_parsing_errors='Check your output and make sure it conforms!',
-                                       max_iterations=5,
+                                       max_iterations=10,
                                        memory=memory)
         return memory, conversation
     
@@ -265,7 +274,7 @@ class S26ExecChat(Chat):
         ]
         """
 
-        tools = [bot_tools.exec_cmd_tool, bot_tools.wolfram_tool]
+        tools = [bot_tools.exec_cmd_tool] #, bot_tools.wolfram_tool
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 
@@ -292,11 +301,11 @@ class S26ExecChat(Chat):
             yield history
 
 
-class PolybotExecChat(S26ExecChat):
+class PolybotExecChat(Chat):
     def _init_chain(self):
-        tools = [bot_tools.exec_cmd_tool, bot_tools.exec_polybot_tool]
+        tools = [bot_tools.exec_polybot_tool, bot_tools.exec_polybot_lint_tool]
 
-        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
+        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=7)
         conversation = initialize_agent(tools, 
                                        self.llm, 
                                        agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
@@ -305,7 +314,22 @@ class PolybotExecChat(S26ExecChat):
                                        max_iterations=5,
                                        memory=memory)
         return memory, conversation
+    
 
+    def generate_response(self, history, debug_output):
+        user_message = history[-1][0]
+
+        # TODO: Implement debug output for langchain agents. Might have to use a callback?
+        print(f'User input: {user_message}')
+        bot_message = self.conversation.run(user_message)
+        #Pass user message and get context and pass to model
+        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+        for character in bot_message:
+            history[-1][1] += character
+            time.sleep(0.02)
+            yield history
+    
 
 """
 ===========================
