@@ -29,9 +29,9 @@ gr.close_all() #Close any existing open ports'
 
 def clean_pdf_paths():
     if os.path.exists(params.pdf_path): #Remove any PDF embeddings
-        shutil.rmtree(params.pdf_path)
+        shutil.rmtree(params.pdf_path, ignore_errors=True)
     if os.path.exists(params.pdf_text_path): #Remove any raw PDF text
-        shutil.rmtree(params.pdf_text_path)
+        shutil.rmtree(params.pdf_text_path, ignore_errors=True)
     os.mkdir(params.pdf_text_path)
 
 
@@ -471,7 +471,7 @@ if __name__ == '__main__':
     if llm_type.huggingface:
         params.port = 2023
     else:
-        params.port = 2352
+        params.port = 2024
     
         
     main_interface(params, llm, embeddings)
