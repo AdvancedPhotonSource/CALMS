@@ -1,4 +1,4 @@
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 import requests
 from langchain.tools import BaseTool, StructuredTool, Tool, tool
 from pydantic import Extra
@@ -54,8 +54,8 @@ class DiffractometerAIO(BaseTool, extra=Extra.allow):
 
     To disable the connection to to spec, the init_spec_ext parameter can be set to false.
     """
-    name = "setdetector"
-    description = "tool to set the diffractometer based on the material being analyzed, the parameters are first the material then the peak sepearted by a space"
+    name: str = "setdetector"
+    description: str = "tool to set the diffractometer based on the material being analyzed, the parameters are first the material then the peak sepearted by a space"
 
     def __init__(self, init_spec_ext):
         super().__init__()

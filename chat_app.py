@@ -8,13 +8,14 @@ import dfrac_tools, llms
 
 import torch
 
-from langchain import PromptTemplate, LLMChain
+from langchain_core.prompts import PromptTemplate
+from langchain.chains import LLMChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain.agents import Tool, AgentType, initialize_agent
-from langchain.document_loaders import OnlinePDFLoader
-from langchain.llms import HuggingFacePipeline
-from langchain.embeddings import HuggingFaceEmbeddings 
+from langchain_community.document_loaders import OnlinePDFLoader
+from langchain_community.llms import HuggingFacePipeline
+from langchain_community.embeddings import HuggingFaceEmbeddings 
 
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -467,13 +468,6 @@ if __name__ == '__main__':
     params.pdf_path = '%s/pdf' %params.embed_path
     clean_pdf_paths() #Clear any PDF embeds and NER text
 
-    #Web UI port
-    if llm_type.huggingface:
-        params.port = 2023
-    else:
-        params.port = 2024
-    
-        
     main_interface(params, llm, embeddings)
 
 
