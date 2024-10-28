@@ -4,7 +4,7 @@ import params
 if params.set_visible_devices:
     os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
 
-import dfrac_tools, llms
+import dfrac_tools, llms, prompts
 
 import torch
 
@@ -16,8 +16,16 @@ from langchain.agents import Tool, AgentType, initialize_agent
 from langchain_community.document_loaders import OnlinePDFLoader
 from langchain_community.llms import HuggingFacePipeline
 from langchain_community.embeddings import HuggingFaceEmbeddings 
+from langchain import hub
+from langchain.agents import AgentExecutor, create_json_chat_agent
+from langchain_core.messages import AIMessage, HumanMessage
+
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.graph import START, MessagesState, StateGraph
+
 
 import gradio as gr
+from gradio import ChatMessage
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
 #Setup device
@@ -161,12 +169,11 @@ AI:"""
     
     
     def generate_response(self, history, debug_output, convo_state, doc_state = None):
-        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-        all_user_messages = [x[0] for x in history]
+        user_message = history[-1]['content'] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+        all_user_messages = [x['content'] for x in history]
 
         if convo_state is None:
             convo_state = self._init_chain()
-
 
         if self.doc_store is not None:
             context = ""
@@ -184,20 +191,24 @@ AI:"""
             prompt = convo_state.prep_prompts([inputs])[0][0].text
 
         bot_message = convo_state.predict(input=user_message, context=context)
-        #Pass user message and get context and pass to model
-        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+        
 
         if debug_output:
             bot_message = f'---Prompt---\n\n {prompt} \n\n---Response---\n\n {bot_message}'
 
-        for character in bot_message:
-            history[-1][1] += character
-            #time.sleep(0.02)
-            #yield history
+        print(history)
+        print(convo_state)
+        history.append(
+            ChatMessage(role='assistant', content=bot_message)
+        )
+      
         return history, convo_state
 
     def add_message(self, user_message, history):
-        return "", history + [[user_message, None]]
+        history.append(
+            ChatMessage(role='user', content=user_message)
+        )
+        return "", history
     
     def clear_memory(self, convo_state):
         if convo_state is not None:
@@ -220,7 +231,6 @@ class PDFChat(Chat):
         embed_path = params.pdf_path
         db = Chroma.from_documents(all_pdfs, self.embedding, #metadatas=[{"source": str(i)} for i in range(len(all_pdfs))],
             persist_directory=embed_path) #Compute embeddings over pdf using embedding model specified in params file
-        db.persist()
 
         return "PDF Ready", db
     
@@ -236,35 +246,56 @@ class ToolChat(Chat):
             dfrac_tools.DiffractometerAIO(params.spec_init)   
         ]
         """
-
+        # TODO: CHANGE CREATION TYPE
         tools = [dfrac_tools.lattice_tool, dfrac_tools.diffractometer_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
-        conversation = initialize_agent(tools, 
-                                       self.llm, 
-                                       agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
-                                       verbose=True, 
-                                       handle_parsing_errors='Check your output and make sure it conforms!',
-                                       max_iterations=5,
-                                       memory=memory)
-        self.memory = memory
-        self.conversation = conversation
+        agent = create_json_chat_agent(
+                                       tools=tools, 
+                                       llm=self.llm,
+                                       prompt=prompts.json_tool_prompt)
 
-        return memory, conversation
+        agent_executor = AgentExecutor(
+            agent=agent, tools=tools, handle_parsing_errors=True,
+            max_iterations = 15,
+            verbose=True
+        )
+        
+        self.memory = memory
+        self.conversation = agent_executor
+
+        return memory, agent_executor
     
-    def generate_response(self, history, debug_output, chat_state):
-        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+    def generate_response(self, history, debug_output):
+        user_message = history[-1]['content'] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+
+        # Convert to langchain history
+        lang_hist = []
+        for message in history:
+            if message['role'] == 'user':
+                lang_hist.append(HumanMessage(content=message['content']))
+            elif message['role'] == 'assistant':
+                lang_hist.append(AIMessage(content=message['content']))
+            else:
+                raise ValueError(f'Unknown role in history {history}, {message['role']}. Add way to reolve.')
 
         # TODO: Implement debug output for langchain agents. Might have to use a callback?
         print(f'User input: {user_message}')
-        bot_message = self.conversation.run(user_message)
-        #Pass user message and get context and pass to model
-        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+        response = self.conversation.invoke(
+            {
+                "input": user_message,
+                "chat_history": lang_hist,
+            }
+        )
 
-        for character in bot_message:
-            history[-1][1] += character
-            time.sleep(0.02)
-            yield history
+        bot_message = response['output']
+        #Pass user message and get context and pass to model
+        history.append(
+            ChatMessage(role='assistant', content=bot_message)
+        )
+
+        return history
+        
 
 
 
@@ -274,13 +305,13 @@ UI/Frontend
 ===========================
 """
 def init_chat_layout():
-    chatbot = gr.Chatbot(show_label=False, elem_id="chatbot",
+    chatbot = gr.Chatbot(show_label=False, elem_id="chatbot", type='messages',
                          show_copy_button=True)#.style(height="500")
     with gr.Row():
-        with gr.Column(scale=0.85):
+        with gr.Column(scale=8):
             msg = gr.Textbox(show_label = False,
                 placeholder="Send a message with Enter")
-        with gr.Column(scale=0.15, min_width=0):
+        with gr.Column(scale=2, min_width=0):
             submit_btn = gr.Button("Send")
     clear = gr.Button("Clear")
     disp_prompt = gr.Checkbox(label='Debug: Display Prompt')
@@ -391,7 +422,7 @@ def main_interface(params, llm, embeddings):
             )
             clear.click(chat_general.clear_memory, [chat_pdf_state], [chat_pdf_state, chatbot])
         
-        with gr.Tab("Tool Agent"):
+        with gr.Tab("S26 Agent"):
             chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
             tool_qa = ToolChat(llm, embeddings, None)
