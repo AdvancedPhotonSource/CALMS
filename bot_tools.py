@@ -10,6 +10,7 @@ from langchain.callbacks.manager import (
 import pexpect
 import os
 import subprocess
+import params
 
 
 """
@@ -94,7 +95,12 @@ POLYBOT_FILE_FILTER = POLYBOT_FILE.replace("{", "")
 POLYBOT_FILE_FILTER = POLYBOT_FILE_FILTER.replace("}", "")
 POLYBOT_FILE_LINES = len(POLYBOT_FILE.split('\n'))
 
-POLYBOT_RUN_FILE = ''.join(open("C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots.py").readlines())
+
+POLY_RUNF_FP = "C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots.py"
+if os.path.exists(POLY_RUNF_FP):
+    POLYBOT_RUN_FILE = ''.join(open(POLY_RUNF_FP).readlines())
+else:
+    POLYBOT_RUN_FILE = ""
 POLYBOT_RUN_FILE_FILTER = POLYBOT_RUN_FILE.replace("{", "").replace("}", "")
 POLYBOT_RUN_FILE_LINES = len(POLYBOT_RUN_FILE.split('\n'))
 
@@ -153,12 +159,12 @@ with open('S26_commandline.py', 'r') as s26_file:
 S26_FILE = S26_FILE.replace("{", "")
 S26_FILE = S26_FILE.replace("}", "")
 
+if params.use_wolfram:
+    wolfram = WolframAlphaAPIWrapper()
 
-wolfram = WolframAlphaAPIWrapper()
-
-wolfram_tool = StructuredTool.from_function(wolfram.run,
-                                            name="Calculator",
-                                            description="When performing an arithmatic operation don't assume, run them through this tool as a seperate action. Examples may include addition, subtraction, multiplicaiton, and divison.")
+    wolfram_tool = StructuredTool.from_function(wolfram.run,
+                                                name="Calculator",
+                                                description="When performing an arithmatic operation don't assume, run them through this tool as a seperate action. Examples may include addition, subtraction, multiplicaiton, and divison.")
 
 
 exec_cmd_tool = StructuredTool.from_function(exec_cmd,
@@ -219,8 +225,8 @@ class DiffractometerAIO(BaseTool, extra=Extra.allow):
 
     To disable the connection to to spec, the init_spec_ext parameter can be set to false.
     """
-    name = "setdetector"
-    description = "tool to set the diffractometer based on the material being analyzed, the parameters are first the material then the peak sepearted by a space"
+    name: str = "setdetector"
+    description: str = "tool to set the diffractometer based on the material being analyzed, the parameters are first the material then the peak sepearted by a space"
 
     def __init__(self, init_spec_ext):
         super().__init__()

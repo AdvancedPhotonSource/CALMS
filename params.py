@@ -1,3 +1,6 @@
+#UI Params
+port = 2024
+
 # Env settings -- used for local model (hf)
 set_visible_devices = True
 visible_devices = '1'
@@ -50,3 +53,6 @@ pdf_text_path = "%s/PDFs"  %doc_path_root#Store raw text from PDF for NER
 
 #Spec Params
 spec_init = True
+
+# Tool Params
+use_wolfram = False

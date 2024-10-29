@@ -46,6 +46,8 @@ class AnlLLM(LLM, extra=Extra.allow):
             stop_param = []
         else:
             stop_param = stop
+
+        print(f'Model = {params.anl_llm_model}')
         
         req_obj = {'user': params.anl_user, 
                    'model': params.anl_llm_model, 

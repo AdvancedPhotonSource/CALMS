@@ -4,7 +4,7 @@ import params
 if params.set_visible_devices:
     os.environ["CUDA_VISIBLE_DEVICES"] = params.visible_devices
 
-import dfrac_tools, llms, prompts, bot_tools
+import llms, prompts, bot_tools
 
 import torch
 
@@ -31,7 +31,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_openai import ChatOpenAI
 
 import gradio as gr
 from gradio import ChatMessage
@@ -90,6 +89,11 @@ def init_local_embeddings(params):
 Chat Functionality
 ===========================
 """
+def get_model():
+    return params.anl_llm_model
+
+def change_model(model_id):
+    params.anl_llm_model = model_id
 
 class Chat():
     def __init__(self, llm, embedding, doc_store):
@@ -259,45 +263,6 @@ class ToolChat(Chat):
         tools = [bot_tools.lattice_tool, bot_tools.diffractometer_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
-        conversation = initialize_agent(tools, 
-                                       self.llm, 
-                                       agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
-                                       verbose=True, 
-                                       handle_parsing_errors='Check your output and make sure it conforms!',
-                                       max_iterations=10,
-                                       memory=memory)
-        return memory, conversation
-    
-    def generate_response(self, history, debug_output):
-        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
-
-        # TODO: Implement debug output for langchain agents. Might have to use a callback?
-        print(f'User input: {user_message}')
-        bot_message = self.conversation.run(user_message)
-        #Pass user message and get context and pass to model
-        history[-1][1] = "" #Replaces None with empty string -- Gradio code
-
-        for character in bot_message:
-            history[-1][1] += character
-            time.sleep(0.02)
-            yield history
-
-
-class S26ExecChat(Chat):
-    """
-    Implements an agentexector in a chat context. The agentexecutor is called in a fundimentally
-    differnet way than the other chains, so custom implementaiton for much of the class.
-    """
-    def _init_chain(self):
-        """
-        tools = [
-            dfrac_tools.DiffractometerAIO(params.spec_init)   
-        ]
-        """
-
-        tools = [bot_tools.exec_cmd_tool] #, bot_tools.wolfram_tool
-
-        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         agent = create_json_chat_agent(
                                        tools=tools, 
                                        llm=self.llm,
@@ -308,7 +273,7 @@ class S26ExecChat(Chat):
             max_iterations = 15,
             verbose=True
         )
-        
+
         self.memory = memory
         self.conversation = agent_executor
 
@@ -343,37 +308,63 @@ class S26ExecChat(Chat):
         )
 
         return history
+       
+
+class S26ExecChat(ToolChat):
+    """
+    Implements an agentexector in a chat context. The agentexecutor is called in a fundimentally
+    differnet way than the other chains, so custom implementaiton for much of the class.
+    """
+    def _init_chain(self):
+        """
+        tools = [
+            dfrac_tools.DiffractometerAIO(params.spec_init)   
+        ]
+        """
+
+        tools = [bot_tools.exec_cmd_tool] #, bot_tools.wolfram_tool
+
+        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
+        agent = create_json_chat_agent(
+                                       tools=tools, 
+                                       llm=self.llm,
+                                       prompt=prompts.json_tool_prompt)
+
+        agent_executor = AgentExecutor(
+            agent=agent, tools=tools, handle_parsing_errors=True,
+            max_iterations = 15,
+            verbose=True
+        )
+        
+        self.memory = memory
+        self.conversation = agent_executor
+
+        return memory, agent_executor
+    
         
 
 
-class PolybotExecChat(Chat):
+class PolybotExecChat(ToolChat):
     def _init_chain(self):
         tools = [bot_tools.exec_polybot_tool, bot_tools.exec_polybot_lint_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=7)
-        conversation = initialize_agent(tools, 
-                                       self.llm, 
-                                       agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
-                                       verbose=True, 
-                                       handle_parsing_errors='Check your output and make sure it conforms!',
-                                       max_iterations=5,
-                                       memory=memory)
-        return memory, conversation
-    
 
-    def generate_response(self, history, debug_output):
-        user_message = history[-1][0]
+        agent = create_json_chat_agent(
+                                       tools=tools, 
+                                       llm=self.llm,
+                                       prompt=prompts.json_tool_prompt)
 
-        # TODO: Implement debug output for langchain agents. Might have to use a callback?
-        print(f'User input: {user_message}')
-        bot_message = self.conversation.run(user_message)
-        #Pass user message and get context and pass to model
-        history[-1][1] = "" #Replaces None with empty string -- Gradio code
-
-        for character in bot_message:
-            history[-1][1] += character
-            time.sleep(0.02)
-            yield history
+        agent_executor = AgentExecutor(
+            agent=agent, tools=tools, handle_parsing_errors=True,
+            max_iterations = 15,
+            verbose=True
+        )
+        
+        self.memory = memory
+        self.conversation = agent_executor
+        
+        return memory, agent_executor
     
 
 """
@@ -425,7 +416,18 @@ def main_interface(params, llm, embeddings):
         else:
             embed_descr = "Error! Unknown model"
 
-        gr.Markdown(f"LLM Model: {model_descr}\n\nEmbedding Model: {embed_descr}")
+        with gr.Row():
+            openai_model_dd = gr.Dropdown(
+                choices=['gpt35', 'gpt35large', 'gpt4', 'gpt4large', 'gpt4turbo', 'gpto1preview'],
+                label='openai_model', 
+                value=get_model,
+                interactive=True,
+                scale=1
+            )
+            openai_model_dd.change(change_model, inputs=[openai_model_dd])
+
+            gr.Markdown('', scale=5)
+        
         gr.Markdown(f"Context hits: {params.N_hits}\nNER hits: {params.N_NER_hits}")
 
         #General chat tab
@@ -502,7 +504,7 @@ def main_interface(params, llm, embeddings):
         with gr.Tab("S26 Agent"):
             chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
-            tool_qa = ToolChat(llm, embeddings, None)
+            tool_qa = S26ExecChat(llm, embeddings, None)
             tool_qa._init_chain()
 
             #Pass an empty string to context when don't want domain specific context
@@ -518,6 +520,7 @@ def main_interface(params, llm, embeddings):
             chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
             polybot_exec = PolybotExecChat(llm, embeddings, None)
+            polybot_exec._init_chain()
 
             #Pass an empty string to context when don't want domain specific context
             msg.submit(polybot_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
