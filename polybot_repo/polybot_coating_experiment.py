@@ -1,6 +1,3 @@
-# add descriptions for the location of the solvents
-# Final goal: create a thin film with polymer_A (that exists in the rack) and a prompt with polymer B that doesn't
-
 import loca  # location information
 import pandas as pd
 import robotics as ro

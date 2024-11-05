@@ -16,14 +16,14 @@ from langchain.document_loaders import OnlinePDFLoader
 from langchain.llms import HuggingFacePipeline
 from langchain.embeddings import HuggingFaceEmbeddings 
 
-from langchain_community.document_loaders.generic import GenericLoader
-from langchain_community.document_loaders.parsers import LanguageParser
-from langchain_text_splitters import Language
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.chains import create_history_aware_retriever, create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_openai import ChatOpenAI
+# from langchain_community.document_loaders.generic import GenericLoader
+# from langchain_community.document_loaders.parsers import LanguageParser
+# from langchain_text_splitters import Language
+# from langchain_text_splitters import RecursiveCharacterTextSplitter
+# from langchain.chains import create_history_aware_retriever, create_retrieval_chain
+# from langchain.chains.combine_documents import create_stuff_documents_chain
+# from langchain_core.prompts import ChatPromptTemplate
+# from langchain_openai import ChatOpenAI
 
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -135,36 +135,36 @@ AI:"""
                 print ("\n\nIGNORING CONTENT of score %.2f" %docs[i][1],len(docs[i][0].page_content), docs[i][0].page_content)
 
         #Context retrieval from NER
-        ners = llms.ner_hits(query) #Get unique named entities of > some length from query
-        ner_hits = []
+        # ners = llms.ner_hits(query) #Get unique named entities of > some length from query
+        # ner_hits = []
 
-        #Set path from where to get NER context hits
-        if self.is_PDF:
-            doc_path = params.pdf_text_path
-            print("Getting NER hits from PDF context")
-        else: 
-            doc_path = params.doc_path_root
-            clean_pdf_paths() #Make sure PDF folders are clean to avoid context leak
-            print("Getting NER hits from facility context")
+        # #Set path from where to get NER context hits
+        # if self.is_PDF:
+        #     doc_path = params.pdf_text_path
+        #     print("Getting NER hits from PDF context")
+        # else: 
+        #     doc_path = params.doc_path_root
+        #     clean_pdf_paths() #Make sure PDF folders are clean to avoid context leak
+        #     print("Getting NER hits from facility context")
 
-        for ner in ners: #Grep NEs from raw text
-            try: 
-                hit = subprocess.check_output("grep -r -i -h '%s' %s/" %(ner, doc_path), shell=True).decode()
-                hits = hit.split("\n") #split all the grep results into indiv strings
-                ner_hits.extend(hits)
-            except subprocess.CalledProcessError as err:
-                if err.returncode > 1:
-                    print ("No hits found for: ", ner) 
-                    continue
-                #Exit values: 0 One or more lines were selected. 1 No lines were selected. >1 An error occurred.
-        #print ("NERs", ner_hits)
+        # for ner in ners: #Grep NEs from raw text
+        #     try: 
+        #         hit = subprocess.check_output("grep -r -i -h '%s' %s/" %(ner, doc_path), shell=True).decode()
+        #         hits = hit.split("\n") #split all the grep results into indiv strings
+        #         ner_hits.extend(hits)
+        #     except subprocess.CalledProcessError as err:
+        #         if err.returncode > 1:
+        #             print ("No hits found for: ", ner) 
+        #             continue
+        #         #Exit values: 0 One or more lines were selected. 1 No lines were selected. >1 An error occurred.
+        # #print ("NERs", ner_hits)
 
-        ner_hits.sort(key=len, reverse=True) #Sort by length of hits
-        #print ("Sorted NERs", ner_hits)
+        # ner_hits.sort(key=len, reverse=True) #Sort by length of hits
+        # #print ("Sorted NERs", ner_hits)
 
-        for i in range(min(params.N_NER_hits, len(ner_hits))):
-            print ("Selected NER hit %d : " %i, ner_hits[i])
-            context += ner_hits[i]
+        # for i in range(min(params.N_NER_hits, len(ner_hits))):
+        #     print ("Selected NER hit %d : " %i, ner_hits[i])
+        #     context += ner_hits[i]
 
         return context
     
@@ -235,7 +235,7 @@ class ToolChat(Chat):
         ]
         """
 
-        tools = [bot_tools.lattice_tool, bot_tools.diffractometer_tool]
+        tools = None#[bot_tools.lattice_tool, bot_tools.diffractometer_tool]
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=6)
         conversation = initialize_agent(tools, 
@@ -303,17 +303,42 @@ class S26ExecChat(Chat):
 
 class PolybotExecChat(Chat):
     def _init_chain(self):
-        tools = [bot_tools.exec_polybot_tool, bot_tools.exec_polybot_lint_tool]
+        tools = [bot_tools.exec_polybot_lint_tool, bot_tools.exec_polybot_tool]
 
-        memory = ConversationBufferWindowMemory(memory_key="chat_history", k=7)
-        conversation = initialize_agent(tools, 
+        self.memory = ConversationBufferWindowMemory(memory_key="chat_history", k=7)
+        self.conversation = initialize_agent(tools, 
                                        self.llm, 
                                        agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
                                        verbose=True, 
                                        handle_parsing_errors='Check your output and make sure it conforms!',
                                        max_iterations=5,
-                                       memory=memory)
-        return memory, conversation
+                                       memory=self.memory)
+        return self.memory, self.conversation
+    
+    def sync_gradio_with_langchain(self, history):
+        """
+        Synchronize Gradio history with LangChain memory.
+        This function updates the LangChain memory with previous Gradio history if it exists.
+        """
+        for user_message, bot_message in history:
+            if user_message and bot_message:
+                # Add both user and bot messages to memory
+                self.memory.chat_memory.add_user_message(user_message)
+                self.memory.chat_memory.add_ai_message(bot_message)
+
+    def generate_response(self, history, debug_output):
+        user_message = history[-1][0] #History is list of tuple list. E.g. : [['Hi', 'Test'], ['Hello again', '']]
+        self.sync_gradio_with_langchain(history)
+        # TODO: Implement debug output for langchain agents. Might have to use a callback?
+        print(f'User input: {user_message}')
+        bot_message = self.conversation.run(user_message)
+        #Pass user message and get context and pass to model
+        history[-1][1] = "" #Replaces None with empty string -- Gradio code
+
+        for character in bot_message:
+            history[-1][1] += character
+            time.sleep(0.02)
+            yield history
     
 
     def generate_response(self, history, debug_output):
@@ -340,10 +365,10 @@ def init_chat_layout():
     chatbot = gr.Chatbot(show_label=False, elem_id="chatbot",
                          show_copy_button=True)#.style(height="500")
     with gr.Row():
-        with gr.Column(scale=0.85):
+        with gr.Column(scale=1):
             msg = gr.Textbox(show_label = False,
                 placeholder="Send a message with Enter")
-        with gr.Column(scale=0.15, min_width=0):
+        with gr.Column(scale=1, min_width=0):
             submit_btn = gr.Button("Send")
     clear = gr.Button("Clear")
     disp_prompt = gr.Checkbox(label='Debug: Display Prompt')
@@ -398,88 +423,88 @@ def main_interface(params, llm, embeddings):
             clear.click(lambda: chat_general.memory.clear(), None, chatbot, queue=False)
 
         #APS Q&A tab
-        with gr.Tab("Facility Q&A"):
-            chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
+        # with gr.Tab("Facility Q&A"):
+        #     chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
-            facility_qa_docstore = llms.init_facility_qa(embeddings, params)
-            chat_qa = Chat(llm, embeddings, doc_store=facility_qa_docstore)
+        #     facility_qa_docstore = llms.init_facility_qa(embeddings, params)
+        #     chat_qa = Chat(llm, embeddings, doc_store=facility_qa_docstore)
 
-            #Pass an empty string to context when don't want domain specific context
-            msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
-            )
-            submit_btn.click(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
-            )
+        #     #Pass an empty string to context when don't want domain specific context
+        #     msg.submit(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+        #     )
+        #     submit_btn.click(chat_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         chat_qa.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+        #     )
         
-            clear.click(lambda: chat_qa.memory.clear(), None, chatbot, queue=False)
+        #     clear.click(lambda: chat_qa.memory.clear(), None, chatbot, queue=False)
 
         #Document Q&A tab
-        with gr.Tab("Document Q&A"):
-            gr.Markdown("""
-            """
-            )
+        # with gr.Tab("Document Q&A"):
+        #     gr.Markdown("""
+        #     """
+        #     )
 
-            title = """
-            <div style="text-align: center;max-width: 700px;">
-                <h1>Chat with PDF</h1>
-                <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs" button, <br />
-                when everything is ready, you can start asking questions about the pdf</p>
-                <a style="display:inline-block; margin-left: 1em"></a>
-            </div>
-            """
+        #     title = """
+        #     <div style="text-align: center;max-width: 700px;">
+        #         <h1>Chat with PDF</h1>
+        #         <p style="text-align: center;">Upload one or more PDFs from your computer, click the "Load PDFs" button, <br />
+        #         when everything is ready, you can start asking questions about the pdf</p>
+        #         <a style="display:inline-block; margin-left: 1em"></a>
+        #     </div>
+        #     """
 
-            with gr.Column(elem_id="col-container"):
-                gr.HTML(title)
+        #     with gr.Column(elem_id="col-container"):
+        #         gr.HTML(title)
             
-            with gr.Column():
-                pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="filepath", file_count = 'multiple')
-                with gr.Row():
-                    langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
-                    load_pdf = gr.Button("Load PDF")
+        #     with gr.Column():
+        #         pdf_doc = gr.File(label="Load PDFs", file_types=['.pdf'], type="filepath", file_count = 'multiple')
+        #         with gr.Row():
+        #             langchain_status = gr.Textbox(label="Status", placeholder="", interactive=False)
+        #             load_pdf = gr.Button("Load PDF")
             
-            chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
+        #     chatbot, msg, clear, disp_prompt, submit_btn = init_chat_layout() #Init layout
 
-            chat_pdf = PDFChat(llm, embeddings, doc_store=None)
+        #     chat_pdf = PDFChat(llm, embeddings, doc_store=None)
 
-            load_pdf.click(chat_pdf.update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
-            msg.submit(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
-            )
-            submit_btn.click(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
-            )
-            clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
+        #     load_pdf.click(chat_pdf.update_pdf_docstore, inputs=[pdf_doc], outputs=[langchain_status], queue=False)
+        #     msg.submit(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+        #     )
+        #     submit_btn.click(chat_pdf.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         chat_pdf.generate_response, [chatbot, disp_prompt], chatbot #Use bot with context
+        #     )
+        #     clear.click(lambda: chat_pdf.memory.clear(), None, chatbot, queue=False)
         
-        with gr.Tab("Tool Agent"):
-            chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
+        # with gr.Tab("Tool Agent"):
+        #     chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
-            tool_qa = ToolChat(llm, embeddings, None)
+        #     tool_qa = ToolChat(llm, embeddings, None)
 
-            #Pass an empty string to context when don't want domain specific context
-            msg.submit(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
-            )
-            submit_btn.click(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
-            )
+        #     #Pass an empty string to context when don't want domain specific context
+        #     msg.submit(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+        #     )
+        #     submit_btn.click(tool_qa.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         tool_qa.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+        #     )
         
-            clear.click(lambda: tool_qa.memory.clear(), None, chatbot, queue=False)
+        #     clear.click(lambda: tool_qa.memory.clear(), None, chatbot, queue=False)
 
-        with gr.Tab("S26 Exec"):
-            chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
+        # with gr.Tab("S26 Exec"):
+        #     chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
 
-            s26_exec = S26ExecChat(llm, embeddings, None)
+        #     s26_exec = S26ExecChat(llm, embeddings, None)
 
-            #Pass an empty string to context when don't want domain specific context
-            msg.submit(s26_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                s26_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
-            )
-            submit_btn.click(s26_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
-                s26_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
-            )
+        #     #Pass an empty string to context when don't want domain specific context
+        #     msg.submit(s26_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         s26_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+        #     )
+        #     submit_btn.click(s26_exec.add_message, [msg, chatbot], [msg, chatbot], queue=False).then(
+        #         s26_exec.generate_response, [chatbot, disp_prompt_tool], chatbot #Use bot with context
+        #     )
         
-            clear.click(lambda: s26_exec.memory.clear(), None, chatbot, queue=False)
+        #     clear.click(lambda: s26_exec.memory.clear(), None, chatbot, queue=False)
 
         with gr.Tab("Polybot Exec"):
             chatbot, msg, clear, disp_prompt_tool, submit_btn = init_chat_layout() #Init layout
@@ -567,5 +592,3 @@ if __name__ == '__main__':
     
         
     main_interface(params, llm, embeddings)
-
-

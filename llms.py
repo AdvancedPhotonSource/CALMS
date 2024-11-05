@@ -22,7 +22,7 @@ class AnlLLM(LLM, extra=Extra.allow):
         self.debug = params.anl_llm_debug 
         self.debug_fp = params.anl_llm_debug_fp
 
-        self.temperature = 0.1
+        self.temperature = 0
         self.top_p = 0.1
         
         with open(params.anl_llm_url_path, 'r') as url_f:
@@ -168,7 +168,7 @@ NER Functionality
 
 import spacy
 
-nlp = spacy.load('en_core_web_lg')
+# nlp = spacy.load('en_core_web_lg')
 
 def get_subject(doc): #Extract subject
     for token in doc:
