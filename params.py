@@ -1,3 +1,6 @@
+#UI Params
+port = 2025
+
 # Env settings -- used for local model (hf)
 set_visible_devices = True
 visible_devices = '1'
@@ -17,8 +20,8 @@ anl_llm_url_path = 'keys/ANL_LLM_URL'
 anl_llm_debug = True
 anl_llm_debug_fp = 'anl_outputs.log'
 anl_user = "avriza"
-# One of: gpt35, gpt35large, gpt4, gpt4large
-anl_llm_model = 'gpt4large'
+# One of: gpt35, gpt35large, gpt4, gpt4large, gpt4turbo
+anl_llm_model = 'gpt4turbo' 
 
 anl_embed_url_path = 'keys/ANL_EMBED_URL'
 
@@ -50,3 +53,6 @@ pdf_text_path = "%s/PDFs"  %doc_path_root#Store raw text from PDF for NER
 
 #Spec Params
 spec_init = True
+
+# Tool Params
+use_wolfram = False

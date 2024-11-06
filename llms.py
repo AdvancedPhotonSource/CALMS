@@ -10,7 +10,7 @@ import time
 from langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.llms.base import LLM
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain.embeddings.base import Embeddings
 
 
@@ -22,7 +22,7 @@ class AnlLLM(LLM, extra=Extra.allow):
         self.debug = params.anl_llm_debug 
         self.debug_fp = params.anl_llm_debug_fp
 
-        self.temperature = 0
+        self.temperature = 0.1
         self.top_p = 0.1
         
         with open(params.anl_llm_url_path, 'r') as url_f:
@@ -46,6 +46,8 @@ class AnlLLM(LLM, extra=Extra.allow):
             stop_param = []
         else:
             stop_param = stop
+
+        print(f'Model = {params.anl_llm_model}')
         
         req_obj = {'user': params.anl_user, 
                    'model': params.anl_llm_model, 
@@ -168,7 +170,7 @@ NER Functionality
 
 import spacy
 
-# nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('en_core_web_lg')
 
 def get_subject(doc): #Extract subject
     for token in doc:

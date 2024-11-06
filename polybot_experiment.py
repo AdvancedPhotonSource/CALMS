@@ -3,6 +3,7 @@ import loca  # location information
 import pandas as pd
 import robotics as ro
 from robotics import procedure as proc
+import rack_status
 
 # These are the location settings for the rack that contains the existing polymers 
 # If a polymer does not exist in this list, then respond "Experiment cannot be initiated."
@@ -38,7 +39,6 @@ ro.runtime['rack_status'] = {
         ]
     ),
 }
-
 # --------------------------------------------------------------
 # hardware modules
 # example: hardware = ro.system.init('hardware_module')
@@ -109,12 +109,3 @@ c9.position = loca.substrate_rack_seq[0, 0]  # move substrate to the substrate r
 coater.position = 45  # move coater blade to the starting position
 coater.velocity = 1  # set the coating velocity
 coater.position = 75  # move blade all the way to the right
-
-
-# The process for creating a polymer thin film is the following actions: 
-# 1. Use the bernoulli gripper to pick up an available substrate from the substrate rack
-# 2. Place the substrate to the slide_coater and release the bernoulli gripper.
-# 3. Pick up the polymer from the vials rack and move it to the clamp
-# 4. Before releasing the vial, close the clamp, and then open the gripper.
-# 5. Uncap the clamp and aspirate the polymer with the pipette.
-# 6. dropcast the polymer to the substrate and blade coate it.
