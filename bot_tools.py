@@ -1,3 +1,4 @@
+
 # from langchain.chat_models import ChatOpenAI
 import requests
 from langchain.tools import BaseTool, StructuredTool#, Tool, tool
@@ -10,6 +11,7 @@ from langchain.callbacks.manager import (
 import pexpect
 import os
 import subprocess
+import params
 import params
 
 
@@ -27,7 +29,7 @@ def exec_cmd(py_str: str):
     return "Command Executed"
 
 
-def lint_cmd(py_str: str, py_pfx = None, lint_fp = 'agent_scripts/tmp_lint.py'):
+def lint_cmd(py_str: str, lint_fp, py_pfx = None): # = 'agent_scripts/tmp_lint.py'
     """
     Helper function to enable linting.
     Creates a file, prepends text to it, lints it, then removes the file.
@@ -42,10 +44,14 @@ def lint_cmd(py_str: str, py_pfx = None, lint_fp = 'agent_scripts/tmp_lint.py'):
 
 
     # Pylint's internal reporter API fails on so just use subprocess which seesm to be more reliable
-    result = subprocess.run([r"C:\Users\cnmuser\.conda\envs\calms\python.exe", "-m", "pylint", "agent_scripts/tmp_lint.py", "-d R,C,W"], stdout=subprocess.PIPE)
+    result = subprocess.run([r"c:/Users/Public/robot/polybot-env/python.exe", "-m", "pylint", lint_fp, "-d R,C,W"], stdout=subprocess.PIPE)
+    
+    #"C:\Users\cnmuser\.conda\envs\calms\python.exe"
     result_str = result.stdout.decode('utf-8')
 
-    os.remove(lint_fp)
+    with open(lint_fp, 'w') as lint_file:
+        pass
+    # os.remove(lint_fp)
 
     result_str_split = result_str.split('\n')
     result_str = '\n'.join(result_str_split[1:])
@@ -79,7 +85,7 @@ Polybot Tools
 
 def polybot_exec_cmd(py_str: str):
 
-    file_path = "C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots.py"
+    file_path = POLYBOT_RUN_FILE_PATH
     
     # Write the command to the file
     with open(file_path, 'a') as file:
@@ -87,6 +93,17 @@ def polybot_exec_cmd(py_str: str):
     
     return "Command Executed and Saved"
 
+def python_exec_cmd(py_str: str):
+    """function to execute simple python commands"""
+
+    print(py_str)
+    return "Command Executed and Saved"
+
+# with open('polybot_experiment.py', 'r') as polybot_file:
+#     POLYBOT_FILE = ''.join(polybot_file.readlines())
+
+# POLYBOT_FILE_FILTER = POLYBOT_FILE.replace("{", "")
+# POLYBOT_FILE_FILTER = POLYBOT_FILE_FILTER.replace("}", "")
 
 with open('polybot_experiment.py', 'r') as polybot_file:
     POLYBOT_FILE = ''.join(polybot_file.readlines())
@@ -95,28 +112,18 @@ POLYBOT_FILE_FILTER = POLYBOT_FILE.replace("{", "")
 POLYBOT_FILE_FILTER = POLYBOT_FILE_FILTER.replace("}", "")
 POLYBOT_FILE_LINES = len(POLYBOT_FILE.split('\n'))
 
-
-POLY_RUNF_FP = "C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots.py"
-if os.path.exists(POLY_RUNF_FP):
-    POLYBOT_RUN_FILE = ''.join(open(POLY_RUNF_FP).readlines())
-else:
-    POLYBOT_RUN_FILE = ""
+POLYBOT_RUN_FILE_PATH = "C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots.py"
+POLYBOT_RUN_FILE = ''.join(open(POLYBOT_RUN_FILE_PATH).readlines())
 POLYBOT_RUN_FILE_FILTER = POLYBOT_RUN_FILE.replace("{", "").replace("}", "")
 POLYBOT_RUN_FILE_LINES = len(POLYBOT_RUN_FILE.split('\n'))
 
 exec_polybot_tool = StructuredTool.from_function(polybot_exec_cmd,
-                                            name="ExecPython",
-                                            description="Takes in a python string and execs it in the envionment described by the script."
+                                            name="WritePython",
+                                            description="Takes in a python string and execs it in the environment described by the script."
                                             + "The script will contain objects and functions used to interact with the instrument. "
                                             + "Here are some rules to follow: \n"
-                                            + "The process for creating a polymer thin film is as follows:"
-                                            + "1. Use the bernoulli gripper to pick up an available substrate from the substrate rack"
-                                            + "2. Place the substrate to the slide_coater and release the bernoulli gripper."
-                                            + "3. Pick up the polymer from the vials rack and move it to the clamp." 
-                                            + "4. Uncap the clamp and aspirate the polymer with the pipette."
-                                            + "5. dropcast the polymer to the substrate and blade coate it."
-                                            + "6. Always return to the initial possition once you complete a task."
-                                            + "Before running the experiment create a new python file with all the library imports or any other list that is required."
+                                            + "Before running the experiment create a new python file with all the library imports (robotics, loca, rack_status, proc, pandas, etc.) or any other list that is required."
+                                            + "Check if the requested polymer is available in the rack_status and then directly proceed with the experimental excecution"
                                             + "Some useful commands and instructions are provided below \n\n" + POLYBOT_FILE_FILTER)
                                             
 
@@ -124,9 +131,10 @@ def polybot_linter(py_str: str):
     """
     Linting tool for Polybot. Prepends the Polybot file.
     """
-    lint_fp = 'agent_scripts/tmp_lint.py'
-    lint_output = lint_cmd(py_str, py_pfx=POLYBOT_RUN_FILE, lint_fp=lint_fp)
-    lint_output = filter_pylint_lines(lint_output, POLYBOT_RUN_FILE_LINES)
+    print("running linter......")
+    lint_fp = POLYBOT_RUN_FILE_PATH # 'agent_scripts/tmp_lint.py' #POLYBOT_RUN_FILE_PATH
+    lint_output = lint_cmd(py_str, lint_fp, py_pfx=POLYBOT_RUN_FILE_FILTER)
+    # lint_output = filter_pylint_lines(lint_output, POLYBOT_RUN_FILE_LINES)
     
     if ':' not in lint_output:
         lint_output += '\nNo errors.'
@@ -134,15 +142,19 @@ def polybot_linter(py_str: str):
     return lint_output
 
 
+exec_polybot_lint_tool = StructuredTool.from_function(
+    polybot_linter,
+    name="LintPython",
+    description="Takes in a python string and lints it."
+    + " Always run the linter to check the code before running it."
+    + " The output will provide suggestions on how to improve the code."
+    + " Attempt to correct the code based on the linter output."
+    + " Rewrite the code until there are no errors. "
+    + " Otherwise, fix the code and check again using linter."
+)
 
-exec_polybot_lint_tool = StructuredTool.from_function(polybot_linter,
-                                            name="LintPython",
-                                            description="Takes in a python string and lints it. The output will provide suggestions on how to improve the code."
-                                            + " Use the linter before attempting to run any code")
 
 
-
- 
 """
 ===============================
 S26 Tools

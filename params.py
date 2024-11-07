@@ -1,5 +1,5 @@
 #UI Params
-port = 2024
+port = 2025
 
 # Env settings -- used for local model (hf)
 set_visible_devices = True

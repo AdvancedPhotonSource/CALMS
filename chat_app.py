@@ -1,3 +1,4 @@
+
 import os, time, shutil, subprocess
 import params
 
@@ -290,7 +291,9 @@ class ToolChat(Chat):
             elif message['role'] == 'assistant':
                 lang_hist.append(AIMessage(content=message['content']))
             else:
-                raise ValueError(f'Unknown role in history {history}, {message['role']}. Add way to reolve.')
+                raise ValueError(f"Unknown role in history {history}, {message['role']}. Add way to resolve.")
+
+                #raise ValueError(f'Unknown role in history {history}, {message['role']}. Add way to resolve.')
 
         # TODO: Implement debug output for langchain agents. Might have to use a callback?
         print(f'User input: {user_message}')
@@ -350,6 +353,7 @@ class PolybotExecChat(ToolChat):
 
         memory = ConversationBufferWindowMemory(memory_key="chat_history", k=7)
 
+
         agent = create_json_chat_agent(
                                        tools=tools, 
                                        llm=self.llm,
@@ -376,7 +380,7 @@ def init_chat_layout():
     chatbot = gr.Chatbot(show_label=False, elem_id="chatbot", type='messages',
                          show_copy_button=True)#.style(height="500")
     with gr.Row():
-        with gr.Column(scale=8):
+        with gr.Column(): 
             msg = gr.Textbox(show_label = False,
                 placeholder="Send a message with Enter")
         with gr.Column(scale=2, min_width=0):
@@ -426,7 +430,7 @@ def main_interface(params, llm, embeddings):
             )
             openai_model_dd.change(change_model, inputs=[openai_model_dd])
 
-            gr.Markdown('', scale=5)
+            gr.Markdown('')#, scale=5)
         
         gr.Markdown(f"Context hits: {params.N_hits}\nNER hits: {params.N_NER_hits}")
 
@@ -595,5 +599,3 @@ if __name__ == '__main__':
     clean_pdf_paths() #Clear any PDF embeds and NER text
 
     main_interface(params, llm, embeddings)
-
-
