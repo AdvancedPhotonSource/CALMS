@@ -380,7 +380,7 @@ def init_chat_layout():
     chatbot = gr.Chatbot(show_label=False, elem_id="chatbot", type='messages',
                          show_copy_button=True)#.style(height="500")
     with gr.Row():
-        with gr.Column(): 
+        with gr.Column(scale=8): 
             msg = gr.Textbox(show_label = False,
                 placeholder="Send a message with Enter")
         with gr.Column(scale=2, min_width=0):

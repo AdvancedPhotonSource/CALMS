@@ -113,7 +113,10 @@ POLYBOT_FILE_FILTER = POLYBOT_FILE_FILTER.replace("}", "")
 POLYBOT_FILE_LINES = len(POLYBOT_FILE.split('\n'))
 
 POLYBOT_RUN_FILE_PATH = "C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots.py"
-POLYBOT_RUN_FILE = ''.join(open(POLYBOT_RUN_FILE_PATH).readlines())
+if os.path.exists(POLYBOT_RUN_FILE_PATH):
+    POLYBOT_RUN_FILE = ''.join(open(POLYBOT_RUN_FILE_PATH).readlines())
+else:
+    POLYBOT_RUN_FILE = ''
 POLYBOT_RUN_FILE_FILTER = POLYBOT_RUN_FILE.replace("{", "").replace("}", "")
 POLYBOT_RUN_FILE_LINES = len(POLYBOT_RUN_FILE.split('\n'))
 
