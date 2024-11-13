@@ -12,11 +12,11 @@ https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffa
 
 1. conda create --name calms python=3.11.5
 
-2. git clone https://github.com/mcherukara/CALMS
+2. git clone https://github.com/AdvancedPhotonSource/CALMS
 
-3. Navigate to the folder, activate your conda environment, then:
+3. Navigate to the folder, activate your conda environment, then depending on your OS:
    
-   pip install -r requirements_H100.txt 
+   pip install -r requirements_linux.txt (or) requirements_win.txt
 
 4. Start the app:
 - The VERY FIRST time you run each model, you will have to compute embeddings over the document stores. You can do this by setting init_docs = True in params.py before starting the chat app. This will take a LONG time but only needs to be run once
