@@ -149,7 +149,6 @@ def init_facility_qa(embeddings, params):
             all_texts, embeddings, #metadatas=[{"source": str(i)} for i in range(len(all_texts))],
             persist_directory=embed_path
         )
-        docsearch.persist()
     else:
         docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
     print ("Finished embedding documents")
