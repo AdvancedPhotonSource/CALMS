@@ -20,7 +20,9 @@ https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffa
 
 5. Navigate to the folder, activate your conda environment, then depending on your OS:
    
-   pip install -r requirements_linux.txt (or) requirements_win.txt
+   pip install --no-deps -r requirements_linux.txt (or) requirements_win.txt
+
+- No deps is required due to tight versioning with a couple of packages. 
 
 6. Go to https://pytorch.org/get-started/locally/ and run the appropriate command to install torch
 
