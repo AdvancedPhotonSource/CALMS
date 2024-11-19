@@ -21,7 +21,7 @@ anl_llm_debug = True
 anl_llm_debug_fp = 'anl_outputs.log'
 anl_user = "avriza"
 # One of: gpt35, gpt35large, gpt4, gpt4large, gpt4turbo
-anl_llm_model = 'gpt4turbo' 
+anl_llm_model = 'gpt4o' 
 
 anl_embed_url_path = 'keys/ANL_EMBED_URL'
 

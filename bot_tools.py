@@ -117,8 +117,8 @@ POLYBOT_RUN_FILE_FILTER = POLYBOT_RUN_FILE.replace("{", "").replace("}", "")
 POLYBOT_RUN_FILE_LINES = len(POLYBOT_RUN_FILE.split('\n'))
 
 exec_polybot_tool = StructuredTool.from_function(polybot_exec_cmd,
-                                            name="WritePython",
-                                            description="Takes in a python string and execs it in the environment described by the script."
+                                            name="ExecPython",
+                                            description="After the code is checked for error. It takes in a python string and execs it in the environment described by the script."
                                             + "The script will contain objects and functions used to interact with the instrument. "
                                             + "Here are some rules to follow: \n"
                                             + "Before running the experiment create a new python file with all the library imports (robotics, loca, rack_status, proc, pandas, etc.) or any other list that is required."
@@ -144,7 +144,8 @@ def polybot_linter(py_str: str):
 exec_polybot_lint_tool = StructuredTool.from_function(
     polybot_linter,
     name="LintPython",
-    description="Takes in a python string and lints it."
+    description="Tool for checking the quality and correctness of the code. Always call this tool first before writing or executing any code."
+    +  "Takes in a python string and lints it."
     + " Always run the linter to check the code before running it."
     + " The output will provide suggestions on how to improve the code."
     + " Attempt to correct the code based on the linter output."

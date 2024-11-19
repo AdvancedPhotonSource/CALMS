@@ -1,4 +1,3 @@
-
 from typing import List
 from pydantic import Extra
 from tqdm import tqdm
@@ -149,7 +148,6 @@ def init_facility_qa(embeddings, params):
             all_texts, embeddings, #metadatas=[{"source": str(i)} for i in range(len(all_texts))],
             persist_directory=embed_path
         )
-        docsearch.persist()
     else:
         docsearch = Chroma(embedding_function=embeddings, persist_directory=embed_path)
     print ("Finished embedding documents")
@@ -238,6 +236,3 @@ def ner_hits(query): #Extract subject, object and NER strings
     print ("Filtered NER list: ", uniques) #Only consider NERs > a set length
     
     return uniques
-
-
-    

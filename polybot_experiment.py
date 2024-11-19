@@ -5,7 +5,7 @@ import robotics as ro
 from robotics import procedure as proc
 import rack_status
 
-# These are the location settings for the rack that contains the existing polymers 
+# These are the location settings for the rack that contains the existing polymers which are imported when import loca is called
 # If a polymer does not exist in this list, then respond "Experiment cannot be initiated."
 ro.runtime['rack_status'] = {
     'vial': pd.DataFrame(
