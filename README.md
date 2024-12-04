@@ -2,7 +2,7 @@
 
 CALMS is a retrieval and tool augmented large language model (LLM) to assist scientists, design experiments around and perform science using complex scientific instrumentation. 
 
-
+Paper: https://www.nature.com/articles/s41524-024-01423-2
 
 https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffab525b4b6
 
