@@ -14,16 +14,11 @@ from autogen import (
     GroupChat,
     GroupChatManager
 )
-# Add the project root directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-# from custom_tools.paper_scraper_tool import html_scraper_tool
-# from custom_tools.multimodal_data_retriever import multimodal_data_retriever_tool
 from autogen.agentchat.contrib.retrieve_assistant_agent import RetrieveAssistantAgent
 from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProxyAgent
 from chromadb.utils import embedding_functions
 from autogen.agentchat.contrib.multimodal_conversable_agent import MultimodalConversableAgent
-# from custom_tools.claude_abs_extraction import ImageAnalysisAgent
-# from custom_tools.molecular_structure_segmentation_tool import *
 import pandas as pd
 from autogen.coding import LocalCommandLineCodeExecutor
 
@@ -32,7 +27,6 @@ from config.settings import OPENAI_API_KEY, anthropic_api_key
 
 # config_list = [{'model': 'gpt-4o', 'api_key': OPENAI_API_KEY}]
 llm_config = {"model": "gpt-4-turbo", 'api_key': OPENAI_API_KEY}
-# from langchain.chat_models import ChatOpenAI
 import requests
 from langchain.tools import BaseTool, StructuredTool#, Tool, tool
 from pydantic import Extra
@@ -153,23 +147,7 @@ def polybot_exec_cmd(py_str: str):
     
     return "Command Saved"
 
-# def python_exec_cmd(py_str: str):
-#     """function to execute simple python commands"""
 
-#     print(py_str)
-#     return "Command Executed and Saved"
-
-
-# exec_polybot_tool = StructuredTool.from_function(polybot_exec_cmd,
-#                                             name="ExecPython",
-#                                             description="After the code is checked for error. It takes in a python string and execs it in the environment described by the script."
-#                                             + "The script will contain objects and functions used to interact with the instrument. "
-#                                             + "Here are some rules to follow: \n"
-#                                             + "Before running the experiment create a new python file with all the library imports (robotics, loca, rack_status, proc, pandas, etc.) or any other list that is required."
-#                                             + "Check if the requested polymer is available in the rack_status and then directly proceed with the experimental excecution"
-#                                             + "Some useful commands and instructions are provided below \n\n" + POLYBOT_FILE_FILTER)
-                                            
-# import polybot_n9_robot
 def polybot_linter(py_str: str):
     """
     Linting tool for Polybot. Prepends the Polybot file.
@@ -193,34 +171,13 @@ def polybot_linter(py_str: str):
         
     return lint_output
 
-
-# exec_polybot_lint_tool = StructuredTool.from_function(
-#     polybot_linter,
-#     name="LintPython",
-#     description="Tool for checking the quality and correctness of the code. Always call this tool first before writing or executing any code."
-#     +  "Takes in a python string and lints it."
-#     + " Always run the linter to check the code before running it."
-#     + " The output will provide suggestions on how to improve the code."
-#     + " Attempt to correct the code based on the linter output."
-#     + " Rewrite the code until there are no errors. "
-#     + " Otherwise, fix the code and check again using linter."
-# )
-
-# executor = LocalCommandLineCodeExecutor(
-#     timeout=60,
-#     work_dir="src/polybot_screenshots.py",
-# )
-
-
-
-# Create a temporary directory to store the code files.
 temp_dir = tempfile.TemporaryDirectory()
 workdir = "C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots_run"
 
-# Create a local command line code executor.
+# Local command line code executor.
 executor = LocalCommandLineCodeExecutor(
     timeout=10,  # Timeout for each code execution in seconds.
-    work_dir=workdir,  # Use this directory to store the code files.
+    work_dir=workdir,  
     functions=[polybot_exec_cmd, polybot_linter],
 )
 
