@@ -171,7 +171,7 @@ def polybot_linter(py_str: str):
         
     return lint_output
 
-temp_dir = tempfile.TemporaryDirectory()
+# temp_dir = tempfile.TemporaryDirectory()
 workdir = "C:/Users/Public/robot/N9_demo_3d/polybot_screenshots/polybot_screenshots_run"
 
 # Local command line code executor.
