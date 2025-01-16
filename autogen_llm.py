@@ -41,6 +41,7 @@ class ArgoModelClient:
                    'model': self.model, 
                    'prompt': [prompt], 
                    'system': "",
+                   'stop': [],
                    'temperature': self.temp}
         result = requests.post(ANL_URL, json=req_obj)
         if not result.ok:
