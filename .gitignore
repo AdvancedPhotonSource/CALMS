@@ -1,5 +1,6 @@
 #Run logs
 logs/
+config/
 *log.txt
 
 #Doc stores
