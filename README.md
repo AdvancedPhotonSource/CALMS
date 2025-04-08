@@ -1,44 +1,48 @@
-# CALMS : Context-Aware Language Model for Science
-
-CALMS is a retrieval and tool augmented large language model (LLM) to assist scientists, design experiments around and perform science using complex scientific instrumentation. 
+A repository for implementing and testing an autonomous agentic pipeline on a real robotic environment using an N9 robotic station (https://www.northrobotics.com/robots).
 
 
 
-https://github.com/mcherukara/CALMS/assets/20727490/6ed99a11-7923-4d44-9684-bffab525b4b6
+### Installation
 
-<br/><br/>
+1. Clone the repository:
+```bash
+git clone https://github.com/katerinavr/SDL-Agents.git
+cd SDL-Agents
+```
 
-### Getting started
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-1. conda create --name calms python=3.11.5
+3. Add the API keys (config/settings.py):
+```bash
+OPENAI_API_KEY = ""
+anthropic_api_key = ""
+```
 
-2. git clone https://github.com/mcherukara/CALMS
+4. Run the Gradio app:
+```bash
+python app.py
+```
 
-3. Navigate to the folder, activate your conda environment, then:
-   
-   pip install -r requirements_H100.txt 
+## Components
 
-4. Start the app:
-- The VERY FIRST time you run each model, you will have to compute embeddings over the document stores. You can do this by setting init_docs = True in params.py before starting the chat app. This will take a LONG time but only needs to be run once
-  
-- python chat_app.py --openai
-  
-   > for OpenAI models (choose which one (GPT3.5, GPT4 etc. ) in params.py)
+### Core Files
+- `app.py`: Gradio app integrating an option for using human feedback, and an option for displaying live video of the robotic station when a USB camera is connected and has an associated URL address. 
+- `n9_robot_operation_commands.py`: Defines the set of available robot operation commands
+- `params.py`: Contains configuration parameters and settings for the system
+- `sdl_agents.py`: Main implementation of SDL agents
 
-(OR)
+### Teachability Databases
+- `teachability_db_gpt4o/`: Contains the ChromaDB with the saved input-output pairs after the human teachings using as a base model GPT-4o
+- `teachability_db_gpt4o-mini/`: Contains the ChromaDB with the saved input-output pairs after the human teachings using as a base model GPT-4o-mini
 
-- python chat_app.py —hf
-  
-   > for open-source models (choose which one (Vicuna etc.) in params.py)
+## Examples
 
-   > Recommend at least 50 GB of GPU memory for LLAMA family of models
+- `notebooks`: Contain examples of using the agentic pipeline to operate the N9 robot will tasks of increased complexity.
 
-**Please note you will have to provide your own OpenAI and Materials Project API keys**
 
-6. Navigate to localhost:2023 for the open-source model and localhost:2024 for the openai model
-   > Ports can be set in chat_app.py
+- `videos`: A video showing the agentic interface to operate the robotic equipment using a simple prompt can be found under assets\sdl_agents_calms_task1.mp4.
 
-<br/><br/>
-
-#### DISCLAIMER
-The content presented in this paper has been generated using pre-trained Large Language Models (LLMs), specifically GPT 3.5 and [Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/), by injecting contextual prompts into these LLM pipelines through a retrieval and augmentation tool. The generated content is reported as is, without any manipulation or alteration of the LLM outputs. The authors acknowledge that LLM-generated content may contain errors, biases, or inaccuracies, which could significantly impact the scientific workflows in which they are incorporated. It is important to note that the current code base is not production-ready and requires additional checks and balances before being used for large-scale deployment. Furthermore, the authors disclaim any responsibility or liability for the accuracy, completeness, or reliability of LLM-generated content presented in this paper.
+![demo](https://raw.githubusercontent.com/katerinavr/SDL-Agents/refs/heads/main/assets/sdl_agents_.gif)
