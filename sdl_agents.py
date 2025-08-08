@@ -199,7 +199,6 @@ class AutoGenSystem:
         
     def _setup_group_chat(self):
         """Set up group chat and manager."""
-        from backup.human_memos import get_messages
         self.groupchat = autogen.GroupChat(
             agents=[self.polybot_admin, self.code_writer_agent, self.code_review_agent, self.scraper_agent],
             messages=[], 

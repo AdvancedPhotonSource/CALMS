@@ -10,6 +10,8 @@ polybot_screenshots_run
 polybot_workcell
 teachability_db__gpt4o
 teachability_db_gpt4o-mini
+beamline_run
+n9_run
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
