@@ -1,9 +1,6 @@
 # Enables command line scripting for HXN microscope operation
 # start this with /APSshare/anaconda/x86_64/bin/ipython -i S26_commandline.py
-
-
-
-
+# When you create a code script for execution always import the libraries and define the motors to be used
 import sys
 import epics
 import epics.devices
@@ -25,23 +22,22 @@ osax = epics.Motor('26idcnpi:m13.')
 osay = epics.Motor('26idcnpi:m14.')
 osaz = epics.Motor('26idcnpi:m15.')
 condx = epics.Motor('26idcnpi:m5.')
-attox = epics.Motor('atto2:m4.') # motor for moving the sample in the x direction, a positive value move the sample outboard if samth is at 0 degree. 
-attoz = epics.Motor('atto2:m3.') # motor for moving the sample in the z direction, a positive value move the sample downstream if samth is at 0 degree.
 objx = epics.Motor('26idcnpi:m1.')
 xrfx = epics.Motor('26idcDET:m7.') # motor for moving the XRF detector in	
 
 
 DCMenergy = epics.Motor("26idbDCM:sm8")
-hybridx = epics.Device('26idcnpi:X_HYBRID_SP.', attrs=('VAL','DESC')) # motor for moving the x-ray beam in the x direction. A positive value moves the beam outboard.
-hybridx.add_pv('26idcnpi:m34.RBV', attr='RBV')
-hybridy  = epics.Device('26idcnpi:Y_HYBRID_SP.', attrs=('VAL','DESC')) # motor for moving the x-ray beam in the y direction. A positive value moves the beam up in the lab frame.
-hybridy.add_pv('26idcnpi:m35.RBV', attr='RBV')
+zpx = epics.Device('26idcnpi:X_HYBRID_SP.', attrs=('VAL','DESC')) # motor for moving the x-ray beam in the x direction. A positive value moves the beam outboard. The range is from -50 um to 50 um.
+zpx.add_pv('26idcnpi:m34.RBV', attr='RBV')
+zpy  = epics.Device('26idcnpi:Y_HYBRID_SP.', attrs=('VAL','DESC')) # motor for moving the x-ray beam in the y direction. A positive value moves the beam up in the lab frame. The range is from -50 um to 50 um.
+zpy.add_pv('26idcnpi:m35.RBV', attr='RBV')
 twotheta = epics.Motor('26idcSOFT:sm3.')
-not_epics_motors = [hybridx.NAME, hybridy.NAME, twotheta.NAME]
+not_epics_motors = [zpx.NAME, zpy.NAME, twotheta.NAME]
 
 
 
 def mov(motor,position):
+    # move motor to absolute position defined by the 2nd argument.
     
     if motor in [fomx, fomy, samy]:
         epics.caput('26idcnpi:m34.STOP',1)
@@ -65,16 +61,10 @@ def mov(motor,position):
         else:
             print("Motion failed")
         
-
-
 def movr(motor,tweakvalue):
     """
-    Move motor to absolute position, tweakvalue is in um
+    Tweak motor relatively by value defined by the 2nd argument, tweakvalue is in um   
     
-    Dependencies: lock_hybrid(), unlock_hybrid()
-        Whenever a hybrid motor needs to be moved, the unlock_hybrid() command
-        must be called, and the lock_hybrid() command must be called afterwards
-
     """
 
     # move motor by tweakvalue
@@ -82,7 +72,7 @@ def movr(motor,tweakvalue):
     if motor in [fomx, fomy, samy]:
         epics.caput('26idcnpi:m34.STOP',1)
         epics.caput('26idcnpi:m35.STOP',1)
-    if ( (motor in [hybridx, hybridy]) and ( (abs(hybridx.RBV-hybridx.VAL)>100) or (abs(hybridy.RBV-hybridy.VAL)>100) ) ):
+    if ( (motor in [zpx, zpy]) and ( (abs(zpx.RBV-zpx.VAL)>100) or (abs(zpy.RBV-zpy.VAL)>100) ) ):
         print("Please use lock_hybrid() to lock piezos at current position first...")
         return
     if motor.NAME in not_epics_motors:
@@ -135,39 +125,6 @@ def zp_out():
     epics.caput('26idcSOFT:userCalc1.SCAN',5);
     epics.caput('26idcSOFT:userCalc3.SCAN',5);
     epics.caput('26idbSOFT:userCalc3.SCAN',5);
-
-
-def lock_hybrid():
-    """
-    must be applied after whenever the hybridy motor position changes 
-    lock in the interferrometer
-    """
-    
-    tempx = hybridx.RBV
-    time.sleep(1)
-    mov(hybridx,tempx)
-    time.sleep(1)
-    tempy = hybridy.RBV
-    time.sleep(1)
-    mov(hybridy,tempy)
-    time.sleep(1)
-
-def unlock_hybrid():
-    # must be applied before the hybridy motor position changes 
-    # disable interferrometer lock in 
-    
-    tempx = hybridx.RBV
-    tempy = hybridy.RBV
-    print("before unlock: x = {0} and y = {1}".format(tempx, tempy))
-    epics.caput('26idcnpi:m34.STOP',1)
-    epics.caput('26idcnpi:m35.STOP',1)
-    if ( (abs(fomx.RBV-optic_in_x)<100) and (abs(fomy.RBV-optic_in_y)<100) ):  
-        mov(fomx,optic_in_x);
-        mov(fomy,optic_in_y);
-    time.sleep(1)
-    tempx = hybridx.RBV
-    tempy = hybridy.RBV
-    print("after unlock: x = {0} and y = {1}".format(tempx, tempy))
 
 
 def set_zp_in():
@@ -332,7 +289,7 @@ def scan1d(motor,startpos,endpos,numpts,dettime, absolute=False):
     if motor in [fomx, fomy, samy]:
         epics.caput('26idcnpi:m34.STOP',1)
         epics.caput('26idcnpi:m35.STOP',1)
-    if ( (motor in [hybridx, hybridy]) and ( (abs(hybridx.RBV-hybridx.VAL)>100) or (abs(hybridy.RBV-hybridy.VAL)>100) ) ):
+    if ( (motor in [zpx, zpy]) and ( (abs(zpx.RBV-zpx.VAL)>100) or (abs(zpy.RBV-zpy.VAL)>100) ) ):
         print("Please use lock_hybrid() to lock piezos at current position first...")
         return
     sc1.P1PV = motor.NAME+'.VAL'
@@ -365,14 +322,17 @@ def scan1d(motor,startpos,endpos,numpts,dettime, absolute=False):
         time.sleep(1)
     postscan()
 
-def scan2d(motor1,startpos1,endpos1,numpts1,motor2,startpos2,endpos2,numpts2,dettime, absolute=False):
-
+def fly2d(motor1,startpos1,endpos1,numpts1,motor2,startpos2,endpos2,numpts2,dettime, absolute=False):
     # scan two motors for a mesh scan
+    # the unit of the scan is in um
+    # motor1 is the outer loop motor, and is scanned in step mode. The step size or resolution in this case is defined as the difference between endpos1 and startpos1, divided by (numpts1-1)
+    # notor2 is the inner loop motor, and is scanned continuously in fly mode. The step size or resolution in this case is defined as the difference between endpos2 and startpos2, divided by numpts2
+
     
     if (motor1 in [fomx, fomy, samy]) or (motor2 in [fomx, fomy, samy]):
         epics.caput('26idcnpi:m34.STOP',1)
         epics.caput('26idcnpi:m35.STOP',1)
-    if ( ( (motor1 in [hybridx, hybridy]) or (motor2 in [hybridx,hybridy]) ) and ( (abs(hybridx.RBV-hybridx.VAL)>100) or (abs(hybridy.RBV-hybridy.VAL)>100) ) ):
+    if ( ( (motor1 in [zpx, zpy]) or (motor2 in [zpx,zpy]) ) and ( (abs(zpx.RBV-zpx.VAL)>100) or (abs(zpy.RBV-zpy.VAL)>100) ) ):
         print("Please use lock_hybrid() to lock piezos at current position first...")
         return
     sc2.P1PV = motor1.NAME+'.VAL'
@@ -418,7 +378,7 @@ def scan2d(motor1,startpos1,endpos1,numpts1,motor2,startpos2,endpos2,numpts2,det
         time.sleep(1)
     postscan()
 
-def focalseries(z_range,numptsz,y_range,numptsy,dettime,motor1=fomz,motor2=hybridy):
+def focalseries(z_range,numptsz,y_range,numptsy,dettime,motor1=fomz,motor2=zpy):
 
     # a 2D scan with the zone plate position (fomz) as one of the motors, to determine if sample is at focus
     
@@ -434,15 +394,15 @@ def focalseries(z_range,numptsz,y_range,numptsy,dettime,motor1=fomz,motor2=hybri
     sc2.P1AR = 1
     sc2.P2AR = 1
     sc2.P3AR = 1
-    sc2.P2PV = hybridy.NAME+'.VAL'
+    sc2.P2PV = zpy.NAME+'.VAL'
     sc2.P2SP = 1.177*z_range/400   #change y offset here
     sc2.P2EP = -1.177*z_range/400
-    sc2.P3PV = hybridx.NAME+'.VAL'
+    sc2.P3PV = zpx.NAME+'.VAL'
     sc2.P3SP = 0.3125*z_range/400   #change x offset here
     sc2.P3EP = -0.3125*z_range/400
     count_time(dettime)
     time.sleep(1)
-    if ( (abs(hybridx.RBV-hybridx.VAL)>50) or (abs(hybridy.RBV-hybridy.VAL)>50) ):
+    if ( (abs(zpx.RBV-zpx.VAL)>50) or (abs(zpy.RBV-zpy.VAL)>50) ):
         print("Please use lock_hybrid() to lock piezos at current position first...")
         sc2.P2PV = ''
         sc2.P3PV = ''
@@ -508,7 +468,7 @@ def spiralsquare(spiral_step, spiral_ctime):
     print("if you abort this scan, please make sure the scanmode is switched back and sc1.P2PV cleared !")
     # add this to my cleanup macro so that it is done automatically in the future
 
-    if abs(hybridx.RBV-hybridx.VAL)>100 or abs(hybridy.RBV-hybridy.VAL)>100:
+    if abs(zpx.RBV-zpx.VAL)>100 or abs(zpy.RBV-zpy.VAL)>100:
         print("Please use lock_hybrid() to lock piezos at current position first...")
         return
 
@@ -518,8 +478,8 @@ def spiralsquare(spiral_step, spiral_ctime):
     sc1.P1AR = 0  # absolute, not sure it is useful, but be safe
     sc1.P2AR = 0  # absolute, not sure it is useful, but be safe
 
-    spiral_x0 = hybridx.RBV
-    spiral_y0 = hybridy.RBV 
+    spiral_x0 = zpx.RBV
+    spiral_y0 = zpy.RBV 
 
     spiral_traj = np.load("optimized_route.npz")
 
@@ -555,3 +515,11 @@ def spiralsquare(spiral_step, spiral_ctime):
 
 
 
+# Move the beam to the bright-spot location and verify the final position
+target_zpx = 0.0     # µm
+target_zpy = -39.0   # µm
+tolerance  = 1.0     # µm
+
+# 1) Move
+mov(zpx, target_zpx)
+mov(zpy, target_zpy)

@@ -1,7 +1,0 @@
-Characterizing Complex Metal-Cluster Proteins
-
-TeAn article on the application of nuclear resonance vibrational spectroscopy (NRVS) to the study of complex metal-cluster proteins is featured on the cover of Inorganic Chemistry 44(16) 5562 (2005). This work, which was carried out at X-ray Operations and Research beamline 3-ID, shows NRVS to be a promising tool for the investigation of metalloxide protein clusters that have, to date, resisted study with other techniques. These clusters are of great interest due to their potential use as molecular switches that might be used to regulate protein biosynthesis or enzyme stability.
-
-Published Date
-
-08.05.2005

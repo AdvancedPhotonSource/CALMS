@@ -1,0 +1,9 @@
+ag2
+anthropic
+autogen
+autogen-agentchat
+autogen-core
+chromadb
+tokenizers
+PyPDF2
+gradio
