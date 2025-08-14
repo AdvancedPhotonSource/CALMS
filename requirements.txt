@@ -6,3 +6,4 @@ autogen-core
 chromadb
 tokenizers
 PyPDF2
+gradio

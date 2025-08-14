@@ -12,6 +12,7 @@ teachability_db__gpt4o
 teachability_db_gpt4o-mini
 beamline_run
 n9_run
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
